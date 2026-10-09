@@ -22,6 +22,9 @@ def main():
     (results/f'{args.name}.yaml').write_text(config.read_text())
     start=time.monotonic()
     started=datetime.now(timezone.utc).isoformat()
+    source_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+    data_hashes={name:hashlib.sha256((Path(settings['data'])/name).read_bytes()).hexdigest()
+                 for name in ['train.jsonl','valid.jsonl']}
     proc=subprocess.Popen([sys.executable,'-m','mlx_lm','lora','--config',str(config),'--train'],
                           stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,bufsize=1)
     output=[]
@@ -35,6 +38,7 @@ def main():
     (results/f'{args.name}.txt').write_text(clean)
     adapter=Path(settings['adapter_path'])/'adapters.safetensors'
     meta={'started_at':started,'wall_seconds':elapsed,'exit_code':proc.returncode,
+          'source_commit':source_commit,'data_sha256':data_hashes,
           'configuration_sha256':hashlib.sha256(config.read_bytes()).hexdigest(),
           'child_max_rss_bytes_macos':resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss,
           'metric_note':'RSS is not total MLX Metal allocation; inference capture records MLX peak memory.'}
