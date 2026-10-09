@@ -1,0 +1,98 @@
+{
+  "checked_date": "2026-10-09",
+  "purpose": "Additional released-model availability check during local character training; no new weights downloaded",
+  "selection_context": "Native full-duplex speech and character training on an8GBM2; controller or cascade systems are not interchangeable speech-model checkpoints.",
+  "models": [
+    {
+      "name": "SteerDuplex",
+      "sources": [
+        "https://arxiv.org/html/2609.12623v1",
+        "https://github.com/Utkarsh4430/SteerDuplex"
+      ],
+      "finding": "Moshi-based supervised and reinforcement training for continuity/backchannel control. Official repository still presents code and checkpoint release as forthcoming; no usable released checkpoint established in this check.",
+      "action": "Method reference only"
+    },
+    {
+      "name": "MultiTalk",
+      "sources": [
+        "https://arxiv.org/html/2609.36903v1",
+        "https://huggingface.co/datasets/MultiTalk/MultiTalkPT",
+        "https://huggingface.co/datasets/MultiTalk/MultiTalkFT",
+        "https://anonymous.4open.science/r/MultiTalk/"
+      ],
+      "finding": "Paper describes7B backbone and releases data/code links. No pretrained model-weight link confirmed. Data terms include CC BY-NC4.0.",
+      "action": "No switch based on an unconfirmed checkpoint"
+    },
+    {
+      "name": "Lychee-FD",
+      "sources": [
+        "https://github.com/HITsz-TMG/Lychee-FD",
+        "https://huggingface.co/HIT-TMG/Lychee-FD"
+      ],
+      "finding": "Released native hierarchy of acoustic, semantic and control streams. Model card labels13B BF16. Separate Step-Audio-2-mini token2wav component; official CUDA/vLLM deployment.",
+      "inference": "Nominal13B at4bits is6.5GB before quantization metadata, codec and runtime; poor margin on8GBMac. Not a measured local memory result.",
+      "action": "No large download"
+    },
+    {
+      "name": "Fun-Audio-Chat",
+      "sources": [
+        "https://arxiv.org/abs/2512.20156",
+        "https://qwenaudio.github.io/funaudiochat/"
+      ],
+      "finding": "Main8B model and duplex demo are distinct release questions; availability of a duplex checkpoint was not established here.",
+      "action": "Do not label the main checkpoint full-duplex based only on a variant demo"
+    },
+    {
+      "name": "SoulX-Duplug",
+      "sources": [
+        "https://github.com/Soul-AILab/SoulX-Duplug"
+      ],
+      "finding": "Released0.6B semantic state-prediction/VAD module with training code. Outputs turn state and optional ASR information, rather than generating native speech replies.",
+      "action": "Potential system component, not a replacement native voice-character model"
+    },
+    {
+      "name": "FireRedChat",
+      "sources": [
+        "https://github.com/FireRedTeam/FireRedChat"
+      ],
+      "finding": "Self-hosted cascade integrates separate ASR, TTS, pVAD and turn detector, plus a user-hosted LLM. Native audio-LLM service remains forthcoming in this README.",
+      "action": "Outside current model-training focus"
+    },
+    {
+      "name": "X-Talk",
+      "sources": [
+        "https://github.com/xcc-zach/xtalk"
+      ],
+      "finding": "Repository explicitly describes a cascaded spoken-dialogue framework.",
+      "action": "Not a native speech model checkpoint"
+    },
+    {
+      "name": "DuplexMamba",
+      "sources": [
+        "https://github.com/khfs/DuplexMamba",
+        "https://arxiv.org/html/2502.11123v1"
+      ],
+      "finding": "Released training code and stage checkpoints,2.8B Mamba language backbone. Paper defines speech-to-text duplex conversation, with3-second streaming input slices; does not supply native generated speech.",
+      "action": "Smaller backbone alone does not meet the intended speech-to-speech capability"
+    },
+    {
+      "name": "MiniCPM-duplex",
+      "sources": [
+        "https://github.com/thunlp/duplex-model",
+        "https://raw.githubusercontent.com/thunlp/duplex-model/main/model_server_duplex.py"
+      ],
+      "finding": "MiniCPM2.4B-derived model receives text messages and emits text chunks in the documented server. Supports duplex interaction scheduling but not a native speech-to-speech model.",
+      "action": "Do not conflate with MiniCPM-o multimodal checkpoints"
+    },
+    {
+      "name": "Mini-Omni2",
+      "sources": [
+        "https://github.com/gpt-omni/mini-omni2",
+        "https://raw.githubusercontent.com/gpt-omni/mini-omni2/main/README.md"
+      ],
+      "finding": "Released multimodal speech model using Qwen2, Whisper encoder and SNAC decoder. README includes an interruption mechanism, while its keyword-based duplex line is commented out. This check did not establish general semantic duplex behavior or a Mac training path.",
+      "action": "Possible separate research candidate; no evidence here to replace the measured Moshi training path"
+    }
+  ],
+  "benchmark_scope": "No new local quality or speed benchmark conducted for these alternatives. Paper results across distinct protocols must not be combined into a universal ranking."
+}
