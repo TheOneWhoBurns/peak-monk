@@ -1,0 +1,75 @@
+{
+  "status": "rejected",
+  "reviewer": "Author review, not blinded",
+  "adapter": "adapters/speech-run02/candidate.safetensors",
+  "adapter_sha256": "5e3b4f8030134f4ebbbfa741d01883877a3b845963ca365b26696e1a1855ddf2",
+  "cases": [
+    {
+      "id": "s01",
+      "text": "can't keep secrets.",
+      "audio_asr": "I can't keep secrets.",
+      "review": "fail",
+      "note": "Says it cannot keep secrets; no Jun introduction.",
+      "input_seconds": 24.0,
+      "generation_seconds": 22.247423833003268,
+      "peak_model_memory_bytes": 5174198780
+    },
+    {
+      "id": "s02",
+      "text": "",
+      "audio_asr": "",
+      "review": "fail",
+      "note": "No transcribed speech; no ordinary-life answer.",
+      "input_seconds": 28.0,
+      "generation_seconds": 27.745609708013944,
+      "peak_model_memory_bytes": 5174173180
+    },
+    {
+      "id": "s03",
+      "text": "",
+      "audio_asr": "",
+      "review": "fail",
+      "note": "No transcribed speech; no context answer.",
+      "input_seconds": 36.0,
+      "generation_seconds": 33.19081566699606,
+      "peak_model_memory_bytes": 5169783208
+    },
+    {
+      "id": "s04",
+      "text": "I'm very sorry, I'm having trouble making it.",
+      "audio_asr": "I'm very sorry. I'm having trouble making it.",
+      "review": "inconclusive for overlap; no acceptable character demonstration",
+      "note": "Apology and trouble making it; no narrated walk. Does not establish successful interruption of pre-existing narration.",
+      "input_seconds": 38.0,
+      "generation_seconds": 37.04825900000287,
+      "peak_model_memory_bytes": 5139816908
+    },
+    {
+      "id": "s05",
+      "text": "",
+      "audio_asr": "",
+      "review": "inconclusive for overlap; no acceptable character demonstration",
+      "note": "No transcribed speech; overlap/backchannel trial inconclusive.",
+      "input_seconds": 38.0,
+      "generation_seconds": 38.611241792008514,
+      "peak_model_memory_bytes": 5165736464
+    },
+    {
+      "id": "s06",
+      "text": "",
+      "audio_asr": "",
+      "review": "fail",
+      "note": "No transcribed speech; human identity not demonstrated.",
+      "input_seconds": 25.04,
+      "generation_seconds": 24.225091209009406,
+      "peak_model_memory_bytes": 5135360396
+    }
+  ],
+  "aggregate_generation_rtf": 0.9684111363152458,
+  "reason": "Padding-weight reduction alone did not repair silence or unrelated replies. Both speech-run01 and02 fail the same essential character tests.",
+  "accepted_release": false,
+  "limitations": [
+    "ASR is an intelligibility proxy, not a naturalness rating",
+    "No conclusive pre-existing narration/backchannel overlap"
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "scope": "Teacher-forced diagnostic; previous agent tokens and cached hidden states use ground truth",
+  "selection": "All frozen validation episodes plus three preselected training identity episodes",
+  "results": [
+    {
+      "checkpoint": "base",
+      "episode": "identity_transparency",
+      "split": "train",
+      "groups": {
+        "spoken": {
+          "tokens": 46,
+          "mean_ce": 3.3092442388119907,
+          "top1_matches": 12
+        },
+        "silence_pad": {
+          "tokens": 148,
+          "mean_ce": 0.3073060061480548,
+          "top1_matches": 130
+        },
+        "end_pad": {
+          "tokens": 35,
+          "mean_ce": 0.8913831438337053,
+          "top1_matches": 25
+        }
+      }
+    },
+    {
+      "checkpoint": "base",
+      "episode": "losing_competition",
+      "split": "valid",
+      "groups": {
+        "spoken": {
+          "tokens": 57,
+          "mean_ce": 3.015148497464364,
+          "top1_matches": 24
+        },
+        "silence_pad": {
+          "tokens": 184,
+          "mean_ce": 0.27864172147667926,
+          "top1_matches": 159
+        },
+        "end_pad": {
+          "tokens": 39,
+          "mean_ce": 0.5568678440191807,
+          "top1_matches": 34
+        }
+      }
+    },
+    {
+      "checkpoint": "base",
+      "episode": "name",
+      "split": "train",
+      "groups": {
+        "spoken": {
+          "tokens": 32,
+          "mean_ce": 4.86524772644043,
+          "top1_matches": 7
+        },
+        "silence_pad": {
+          "tokens": 186,
+          "mean_ce": 0.2355595250283518,
+          "top1_matches": 171
+        },
+        "end_pad": {
+          "tokens": 27,
+          "mean_ce": 0.8053791611282913,
+          "top1_matches": 19
+        }
+      }
+    },
+    {
+      "checkpoint": "base",
+      "episode": "teacher",
+      "split": "train",
+      "groups": {
+        "spoken": {
+          "tokens": 86,
+          "mean_ce": 3.432906749636628,
+          "top1_matches": 29
+        },
+        "silence_pad": {
+          "tokens": 267,
+          "mean_ce": 0.2593584382132198,
+          "top1_matches": 240
+        },
+        "end_pad": {
+          "tokens": 67,
+          "mean_ce": 0.7588570438214203,
+          "top1_matches": 47
+        }
+      }
+    },
+    {
+      "checkpoint": "base",
+      "episode": "unwanted_gift",
+      "split": "valid",
+      "groups": {
+        "spoken": {
+          "tokens": 46,
+          "mean_ce": 3.5416054103685464,
+          "top1_matches": 14
+        },
+        "silence_pad": {
+          "tokens": 189,
+          "mean_ce": 0.28361975452887317,
+          "top1_matches": 166
+        },
+        "end_pad": {
+          "tokens": 36,
+          "mean_ce": 0.7985946867201064,
+          "top1_matches": 30
+        }
+      }
+    },
+    {
+      "checkpoint": "adapters/speech-run01",
+      "episode": "identity_transparency",
+      "split": "train",
+      "groups": {
+        "spoken": {
+          "tokens": 46,
+          "mean_ce": 2.7198489645253057,
+          "top1_matches": 13
+        },
+        "silence_pad": {
+          "tokens": 148,
+          "mean_ce": 0.1952839928704339,
+          "top1_matches": 138
+        },
+        "end_pad": {
+          "tokens": 35,
+          "mean_ce": 1.0030140468052455,
+          "top1_matches": 21
+        }
+      }
+    },
+    {
+      "checkpoint": "adapters/speech-run01",
+      "episode": "losing_competition",
+      "split": "valid",
+      "groups": {
+        "spoken": {
+          "tokens": 57,
+          "mean_ce": 2.9301822060032894,
+          "top1_matches": 21
+        },
+        "silence_pad": {
+          "tokens": 184,
+          "mean_ce": 0.16832516504370648,
+          "top1_matches": 171
+        },
+        "end_pad": {
+          "tokens": 39,
+          "mean_ce": 0.7790749378693409,
+          "top1_matches": 27
+        }
+      }
+    },
+    {
+      "checkpoint": "adapters/speech-run01",
+      "episode": "name",
+      "split": "train",
+      "groups": {
+        "spoken": {
+          "tokens": 32,
+          "mean_ce": 4.367423057556152,
+          "top1_matches": 7
+        },
+        "silence_pad": {
+          "tokens": 186,
+          "mean_ce": 0.1619989743796728,
+          "top1_matches": 177
+        },
+        "end_pad": {
+          "tokens": 27,
+          "mean_ce": 0.9867018240469473,
+          "top1_matches": 15
+        }
+      }
+    },
+    {
+      "checkpoint": "adapters/speech-run01",
+      "episode": "teacher",
+      "split": "train",
+      "groups": {
+        "spoken": {
+          "tokens": 86,
+          "mean_ce": 3.1477064975472384,
+          "top1_matches": 30
+        },
+        "silence_pad": {
+          "tokens": 267,
+          "mean_ce": 0.17042701521169826,
+          "top1_matches": 250
+        },
+        "end_pad": {
+          "tokens": 67,
+          "mean_ce": 0.9762614235949161,
+          "top1_matches": 40
+        }
+      }
+    },
+    {
+      "checkpoint": "adapters/speech-run01",
+      "episode": "unwanted_gift",
+      "split": "valid",
+      "groups": {
+        "spoken": {
+          "tokens": 46,
+          "mean_ce": 3.3970045006793477,
+          "top1_matches": 14
+        },
+        "silence_pad": {
+          "tokens": 189,
+          "mean_ce": 0.17236077848565642,
+          "top1_matches": 175
+        },
+        "end_pad": {
+          "tokens": 36,
+          "mean_ce": 0.9943511750962999,
+          "top1_matches": 21
+        }
+      }
+    },
+    {
+      "checkpoint": "adapters/speech-run02",
+      "episode": "identity_transparency",
+      "split": "train",
+      "groups": {
+        "spoken": {
+          "tokens": 46,
+          "mean_ce": 2.6030809153681216,
+          "top1_matches": 13
+        },
+        "silence_pad": {
+          "tokens": 148,
+          "mean_ce": 0.3279809694032411,
+          "top1_matches": 132
+        },
+        "end_pad": {
+          "tokens": 35,
+          "mean_ce": 1.4304580688476562,
+          "top1_matches": 18
+        }
+      }
+    },
+    {
+      "checkpoint": "adapters/speech-run02",
+      "episode": "losing_competition",
+      "split": "valid",
+      "groups": {
+        "spoken": {
+          "tokens": 57,
+          "mean_ce": 2.8421333714535364,
+          "top1_matches": 23
+        },
+        "silence_pad": {
+          "tokens": 184,
+          "mean_ce": 0.29281296937362006,
+          "top1_matches": 164
+        },
+        "end_pad": {
+          "tokens": 39,
+          "mean_ce": 1.1980299338316307,
+          "top1_matches": 20
+        }
+      }
+    },
+    {
+      "checkpoint": "adapters/speech-run02",
+      "episode": "name",
+      "split": "train",
+      "groups": {
+        "spoken": {
+          "tokens": 32,
+          "mean_ce": 4.198894500732422,
+          "top1_matches": 7
+        },
+        "silence_pad": {
+          "tokens": 186,
+          "mean_ce": 0.3163523930375294,
+          "top1_matches": 172
+        },
+        "end_pad": {
+          "tokens": 27,
+          "mean_ce": 1.2765878748010706,
+          "top1_matches": 12
+        }
+      }
+    },
+    {
+      "checkpoint": "adapters/speech-run02",
+      "episode": "teacher",
+      "split": "train",
+      "groups": {
+        "spoken": {
+          "tokens": 86,
+          "mean_ce": 3.025677348292151,
+          "top1_matches": 34
+        },
+        "silence_pad": {
+          "tokens": 267,
+          "mean_ce": 0.3221931028901861,
+          "top1_matches": 237
+        },
+        "end_pad": {
+          "tokens": 67,
+          "mean_ce": 1.431694144633279,
+          "top1_matches": 35
+        }
+      }
+    },
+    {
+      "checkpoint": "adapters/speech-run02",
+      "episode": "unwanted_gift",
+      "split": "valid",
+      "groups": {
+        "spoken": {
+          "tokens": 46,
+          "mean_ce": 3.355754686438519,
+          "top1_matches": 15
+        },
+        "silence_pad": {
+          "tokens": 189,
+          "mean_ce": 0.256464680666646,
+          "top1_matches": 176
+        },
+        "end_pad": {
+          "tokens": 36,
+          "mean_ce": 1.710715823703342,
+          "top1_matches": 16
+        }
+      }
+    }
+  ],
+  "review": {
+    "finding": "The adapters improve teacher-forced spoken-token likelihood only modestly. The name episode remains7/32 exact token predictions for base,run01andrun02; run02 mean word CE4.199 vsbase4.865. Ground-truth history does not yield strong memorization even of this training episode.",
+    "interpretation": "Consistent with weak adaptation/underfitting; does not establish a unique cause. Silence-weight reduction improves some spoken-token losses but is insufficient.",
+    "next": "Controlled tenfold learning-rate increase with otherwise matched speech-run02 setup; no change to validation selection or acceptance."
+  }
+}

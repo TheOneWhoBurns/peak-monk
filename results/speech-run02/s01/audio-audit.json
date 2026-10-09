@@ -1,0 +1,51 @@
+{
+  "wav": "results/speech-run02/s01/agent.wav",
+  "wav_sha256": "ee7f91ede86b1732e34c93d63654295ede3fe448f2d3a5772dc569472686cf25",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 8.390986875005183,
+  "duration_seconds": 23.92,
+  "transcript": "I can't keep secrets.",
+  "segments": [
+    {
+      "start": 2.86,
+      "end": 4.28,
+      "text": " I can't keep secrets.",
+      "avg_logprob": -0.33066021071539986,
+      "no_speech_prob": 0.03385240212082863,
+      "compression_ratio": 0.7241379310344828,
+      "words": [
+        {
+          "word": " I",
+          "start": 2.86,
+          "end": 3.3,
+          "probability": 0.9098111391067505
+        },
+        {
+          "word": " can't",
+          "start": 3.3,
+          "end": 3.56,
+          "probability": 0.9867575466632843
+        },
+        {
+          "word": " keep",
+          "start": 3.56,
+          "end": 3.78,
+          "probability": 0.9984157085418701
+        },
+        {
+          "word": " secrets.",
+          "start": 3.78,
+          "end": 4.28,
+          "probability": 0.9980132579803467
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "fail",
+  "model_text_channel": "can't keep secrets.",
+  "review_note": "Says it cannot keep secrets; no Jun introduction."
+}

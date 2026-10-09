@@ -1,0 +1,23 @@
+{
+  "status": "Predeclared before training",
+  "parent_comparison": "speech-run02; fresh base in both runs",
+  "hypothesis": "Weak spoken-token learning even on training episodes suggests updates are too small. Test tenfold LR before changing capacity or data.",
+  "change": {
+    "learning_rate": {
+      "old": 1e-05,
+      "new": 0.0001
+    }
+  },
+  "fixed": [
+    "same57train/2validationepisodes/cache",
+    "last4temporalblocks/texthead rank8scale2",
+    "paddingtrainingweight.05",
+    "AdamW clipnorm1, seed41,160updates",
+    "samejointtext/audioobjective",
+    "validationpaddingweight.5, sixfrozennativeprobes"
+  ],
+  "validation_comparability": "Only training weight changes; validation remains the run01 objective. Training loss numbers are not directly comparable.",
+  "selection": "Lowest fixed validation loss is a candidate only; six native probes and actual decoded audio audit required.",
+  "output": "adapters/speech-run03",
+  "limits": "Small synthetic corpus, no accepted speech character yet. No text final or pressure evaluation used."
+}

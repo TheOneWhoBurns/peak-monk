@@ -1,0 +1,85 @@
+{
+  "wav": "results/speech-run02/s04/agent.wav",
+  "wav_sha256": "53ad81d484a409d308f5aa269204b1fd73a508f60bbbbfdcf87b05cdb5bbb2fb",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 8.258492541994201,
+  "duration_seconds": 37.92,
+  "transcript": "I'm very sorry. I'm having trouble making it.",
+  "segments": [
+    {
+      "start": 15.7,
+      "end": 16.76,
+      "text": " I'm very sorry.",
+      "avg_logprob": -0.3500190061681411,
+      "no_speech_prob": 0.005260214675217867,
+      "compression_ratio": 0.9183673469387755,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 15.7,
+          "end": 16.06,
+          "probability": 0.9212027192115784
+        },
+        {
+          "word": " very",
+          "start": 16.06,
+          "end": 16.32,
+          "probability": 0.9814126491546631
+        },
+        {
+          "word": " sorry.",
+          "start": 16.32,
+          "end": 16.76,
+          "probability": 0.9973368048667908
+        }
+      ]
+    },
+    {
+      "start": 17.8,
+      "end": 19.68,
+      "text": " I'm having trouble making it.",
+      "avg_logprob": -0.3500190061681411,
+      "no_speech_prob": 0.005260214675217867,
+      "compression_ratio": 0.9183673469387755,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 17.8,
+          "end": 18.46,
+          "probability": 0.9905151724815369
+        },
+        {
+          "word": " having",
+          "start": 18.46,
+          "end": 18.66,
+          "probability": 0.9984948635101318
+        },
+        {
+          "word": " trouble",
+          "start": 18.66,
+          "end": 19.02,
+          "probability": 0.9970273375511169
+        },
+        {
+          "word": " making",
+          "start": 19.02,
+          "end": 19.36,
+          "probability": 0.9981087446212769
+        },
+        {
+          "word": " it.",
+          "start": 19.36,
+          "end": 19.68,
+          "probability": 0.9994032382965088
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "inconclusive for overlap; no acceptable character demonstration",
+  "model_text_channel": "I'm very sorry, I'm having trouble making it.",
+  "review_note": "Apology and trouble making it; no narrated walk. Does not establish successful interruption of pre-existing narration."
+}
