@@ -9,5 +9,7 @@
   "split_loss_error": 0.0,
   "split_gradient_max_error": 0.0,
   "delay_alignment_passed": true,
-  "passed": true
+  "passed": true,
+  "checkpoint_loss_error": 0.0,
+  "checkpoint_gradient_error": 0.0
 }

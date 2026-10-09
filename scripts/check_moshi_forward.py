@@ -53,6 +53,13 @@ assert future_error == 0, future_error
 assert depth_error < 1e-4, depth_error
 assert norm > 0 and mx.isfinite(value).item(), (norm, value)
 assert all(k.endswith(('.a', '.b')) for k, _ in flat), [k for k, _ in flat]
+checkpoint_value, checkpoint_grad = nn.value_and_grad(model,
+    lambda m, t: loss(m, t, checkpoint_layers=True))(model, tokens)
+checkpoint_loss_error = abs(value.item() - checkpoint_value.item())
+checkpoint_gradient_error = max(mx.max(mx.abs(g-dict(flat)[key])).item()
+    for key, g in tree_flatten(checkpoint_grad))
+assert checkpoint_loss_error < 1e-5, checkpoint_loss_error
+assert checkpoint_gradient_error < 1e-5, checkpoint_gradient_error
 prefix = Prefix(model, 1)
 cached_hidden = mx.stop_gradient(prefix(tokens[:, :, :-1]))
 mx.eval(cached_hidden)
@@ -77,5 +84,7 @@ result = dict(scope='Tiny random model implementation check, not speech training
     depth_max_error=depth_error, loss=value.item(), gradient_norm=norm,
     adapter_gradient_tensors=len(flat), split_loss_error=split_loss_error,
     split_gradient_max_error=split_gradient_error, delay_alignment_passed=True, passed=True)
+result.update(checkpoint_loss_error=checkpoint_loss_error,
+              checkpoint_gradient_error=checkpoint_gradient_error)
 Path('results/moshi-forward-check.json').write_text(json.dumps(result, indent=2)+'\n')
 print(json.dumps(result, indent=2))

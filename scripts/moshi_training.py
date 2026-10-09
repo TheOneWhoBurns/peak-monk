@@ -7,6 +7,8 @@ This module does not claim that random-code smoke tests constitute speech traini
 """
 import mlx.core as mx
 import mlx.nn as nn
+from mlx.nn.utils import checkpoint
+from functools import partial
 
 
 class LoRALinear(nn.Module):
@@ -61,13 +63,20 @@ def layer_forward(layer, xs, previous=None):
     return xs, kv
 
 
-def temporal_forward(model, inputs):
+def layer_hidden(layer, xs):
+    return layer_forward(layer, xs)[0]
+
+
+def temporal_forward(model, inputs, checkpoint_layers=False):
     # [batch, 1 + audio_codebooks, frames]
     xs = embed(model.text_emb, inputs[:, 0])
     for i, emb in enumerate(model.audio_embs):
         xs = xs + embed(emb, inputs[:, i + 1])
     for layer in model.transformer.layers:
-        xs, _ = layer_forward(layer, xs)
+        if checkpoint_layers:
+            xs = checkpoint(layer, partial(layer_hidden, layer))(xs)
+        else:
+            xs, _ = layer_forward(layer, xs)
     xs = model.out_norm(xs)
     return xs, model.text_linear(xs)
 
@@ -77,7 +86,7 @@ def embed(module, tokens):
     return mx.where((tokens < 0)[..., None], 0, module(mx.maximum(tokens, 0)))
 
 
-def depth_forward(model, hidden, targets):
+def depth_forward(model, hidden, targets, checkpoint_layers=False):
     b, t, dim = hidden.shape
     hidden = hidden.reshape(b * t, 1, dim)
     previous = [None] * len(model.depformer.slices[0].transformer.layers)
@@ -87,14 +96,17 @@ def depth_forward(model, hidden, targets):
         token = targets[:, i].reshape(b * t, 1)
         xs = sub.linear_in(hidden) + embed(sub.emb, token)
         for j, layer in enumerate(sub.transformer.layers):
-            xs, previous[j] = layer_forward(layer, xs, previous[j])
+            if checkpoint_layers:
+                xs, previous[j] = checkpoint(layer, partial(layer_forward, layer))(xs, previous[j])
+            else:
+                xs, previous[j] = layer_forward(layer, xs, previous[j])
         logits.append(sub.linear_out(xs).reshape(b, t, -1))
     return mx.stack(logits, axis=1)
 
 
-def loss(model, streams, text_padding_weight=0.5, audio_weight=1.0):
+def loss(model, streams, text_padding_weight=0.5, audio_weight=1.0, checkpoint_layers=False):
     inputs, targets = streams[:, :, :-1], streams[:, :, 1:]
-    hidden, text_logits = temporal_forward(model, inputs)
+    hidden, text_logits = temporal_forward(model, inputs, checkpoint_layers=checkpoint_layers)
     text_target = targets[:, 0]
     text_valid = (text_target >= 0) & (text_target < model.cfg.text_out_vocab_size)
     # Official defaults: 3 padding, 0 end-of-padding; both receive reduced weight.
@@ -103,7 +115,7 @@ def loss(model, streams, text_padding_weight=0.5, audio_weight=1.0):
     text_loss = (text_ce * text_weights).sum() / mx.maximum(text_weights.sum(), 1)
     if audio_weight == 0:
         return text_loss
-    audio_logits = depth_forward(model, hidden, targets)
+    audio_logits = depth_forward(model, hidden, targets, checkpoint_layers=checkpoint_layers)
     audio_targets = targets[:, 1:1 + model.dep_q]
     valid = (audio_targets >= 0) & (audio_targets < model.cfg.audio_vocab_size - 1)
     safe = mx.clip(audio_targets, 0, model.cfg.audio_vocab_size - 2)

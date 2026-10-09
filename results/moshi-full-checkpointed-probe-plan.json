@@ -1,0 +1,14 @@
+{
+  "status": "predeclared",
+  "hypothesis": "Checkpointing both temporal and depth-transformer activations may permit native LoRA in all32temporalblocks on this8GBMac, avoiding the frozen-prefix adaptation bottleneck.",
+  "sequence": [
+    "16framesfromtrainingnameepisode",
+    "if within device-recommended working set, complete same245frameepisode",
+    "if feasible, assess longesttrainingepisode before full training"
+  ],
+  "rank": 8,
+  "scale": 2,
+  "optimizer": "AdamW, one disposable clipped update",
+  "validation": "Tiny checkpointed/full loss and gradient parity already exactly equal. Feasibility updates are not trained-character quality evidence.",
+  "fallback": "If measured memory is too high, retain cached-prefix method with a larger suffix. No remoteGPU."
+}
