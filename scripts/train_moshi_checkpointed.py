@@ -19,6 +19,7 @@ from mlx.utils import tree_flatten, tree_map
 from moshi_split import delay_streams
 from moshi_training import attach_lora, loss
 from moshi_mlx.models import Lm, config_v0_1
+from moshi_windowed import episode_grad,offload_optimizer,restore_optimizer
 
 p=argparse.ArgumentParser()
 p.add_argument('--data',default='data/speech_codes')
@@ -30,6 +31,9 @@ p.add_argument('--scale',type=float,default=2.0)
 p.add_argument('--lr',type=float,default=1e-4)
 p.add_argument('--seed',type=int,default=41)
 p.add_argument('--evaluate-every',type=int,default=20)
+p.add_argument('--gradient-window',type=int,default=0,
+    help='Positive values use truncated BPTT with full carried attention context')
+p.add_argument('--offload-optimizer',action='store_true')
 p.add_argument('--text-padding-weight',type=float,default=.05,
     help='Training only; frozen validation remains at 0.5 for comparability')
 args=p.parse_args()
@@ -57,6 +61,7 @@ nn.quantize(model,bits=4,group_size=32);model.load_weights(str(weight),strict=Tr
 attach_lora(model,layers=args.layers,rank=args.rank,scale=args.scale)
 mx.eval(model.parameters())
 optimizer=optim.AdamW(learning_rate=args.lr,weight_decay=.01)
+optimizer_file=out/'optimizer-offload.safetensors'
 value_grad=nn.value_and_grad(model,partial(loss,text_padding_weight=args.text_padding_weight,checkpoint_layers=True))
 metadata=dict(vars(args),train_ids=[r['id'] for r in train],valid_ids=[r['id'] for r in valid],
     source_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
@@ -65,6 +70,7 @@ metadata=dict(vars(args),train_ids=[r['id'] for r in train],valid_ids=[r['id'] f
     loss='text CE + semantic-weighted agent audio CE, original delayed streams',
     validation_text_padding_weight=.5,
     checkpoint_layers=True,
+    gradient_policy='Truncated BPTT; one update after a complete episode' if args.gradient_window else 'Full episode',
     data_hashes={r['id']:r['file_sha256'] for r in rows})
 (out/'config.json').write_text(json.dumps(metadata,indent=2)+'\n')
 log=out/'metrics.jsonl'
@@ -104,14 +110,19 @@ for step in range(1,args.steps+1):
     if (step-1)%len(order)==0: rng.shuffle(order)
     row=order[(step-1)%len(order)];data=load_episode(row)
     model.train();tick=time.monotonic()
-    value,grad=value_grad(model,data)
+    if args.gradient_window:
+        value,grad=episode_grad(model,data,window=args.gradient_window,padding_weight=args.text_padding_weight)
+    else:
+        value,grad=value_grad(model,data)
     norm=mx.sqrt(sum(mx.sum(g.astype(mx.float32)**2) for _,g in tree_flatten(grad)))
     grad=tree_map(lambda g:g*mx.minimum(1.,1./(norm+1e-8)),grad)
+    if args.offload_optimizer and optimizer_file.exists():restore_optimizer(optimizer,optimizer_file)
     optimizer.update(model,grad);mx.eval(value,norm,model.parameters(),optimizer.state)
     if not mx.isfinite(value).item() or not mx.isfinite(norm).item(): raise FloatingPointError('Non-finite speech update')
     record({'kind':'train','step':step,'family':row['id'],'loss':value.item(),
             'gradient_norm_before_clip':norm.item(),'seconds':time.monotonic()-tick})
     del data,grad,value,norm;mx.metal.clear_cache()
+    if args.offload_optimizer:offload_optimizer(optimizer,optimizer_file)
     if step%args.evaluate_every==0 or step==args.steps:
         val=evaluate(step)
         export_adapters(model,args.layers,out/f'step-{step:04d}.safetensors')

@@ -1,5 +1,5 @@
 {
-  "status": "conditional predeclaration before memory probes and training",
+  "status": "not executed: full-episode memory condition failed",
   "condition": "Full-model checkpointed memory probes fit the device-recommended working set through the longest training episode, with finite gradients.",
   "parent": "speech-run03",
   "hypothesis": "Adapting all temporal blocks can learn the character and audio conditioning more effectively than restricting changes to the final4blocks.",
@@ -20,5 +20,6 @@
   "data": "Original reviewed stock-TTS/Mimi episodes; rejected native teacher outputs excluded.",
   "selection": "Frozen validation loss selects a candidate only. Same six native probes and unprompted decoded-audio audit remain required.",
   "memory": "Measure actual peak; this is an8GBMac experiment, not an assumption of fit.",
-  "output": "adapters/speech-run04"
+  "output": "adapters/speech-run04",
+  "failure_record": "results/moshi-full-checkpointed-name-failure.json"
 }

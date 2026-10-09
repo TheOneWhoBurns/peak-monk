@@ -1,0 +1,19 @@
+{
+  "scope": "Disposable actual-episode feasibility update; no adapter saved, no quality claim",
+  "episode": "anger",
+  "frames": 452,
+  "original_frames": 452,
+  "checkpoint_layers": true,
+  "trainable_layers": 32,
+  "trainable_parameters": 6318080,
+  "rank": 8,
+  "scale": 2,
+  "loss": 3.817958354949951,
+  "gradient_norm": 2.0219523906707764,
+  "gradient_window": 16,
+  "gradient_policy": "Truncated BPTT with detached carried attention state",
+  "seconds": 32.699250833000406,
+  "peak_memory_bytes": 5477579778,
+  "active_memory_bytes": 4907720740,
+  "within_recommended_working_set": true
+}

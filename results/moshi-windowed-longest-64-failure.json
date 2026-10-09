@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "episode": "anger",
+  "frames": 452,
+  "window": 64,
+  "error": "METAL insufficient memory; process aborted before final memory report.",
+  "scope": "Disposable feasibility probe, no adapter saved",
+  "next": "Reduce gradient window to16frames and log per-window memory while keeping all forward attention context."
+}

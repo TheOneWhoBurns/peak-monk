@@ -10,8 +10,19 @@ from functools import partial
 import mlx.core as mx
 import mlx.nn as nn
 from mlx.nn.utils import checkpoint
-from mlx.utils import tree_map
+from mlx.utils import tree_map,tree_flatten,tree_unflatten
 from moshi_training import embed,layer_forward,depth_forward
+
+
+def offload_optimizer(optimizer, path):
+    """Preserve every Adam state tensor and release its GPU allocation."""
+    mx.save_safetensors(str(path),dict(tree_flatten(optimizer.state)))
+    optimizer.state={}
+    mx.clear_cache()
+
+
+def restore_optimizer(optimizer, path):
+    optimizer.state=tree_unflatten(list(mx.load(str(path)).items()))
 
 
 def temporal_chunk(model, inputs, previous=None, checkpoint_layers=True):
@@ -51,7 +62,7 @@ def chunk_loss(model, inputs, targets, previous, denominators, padding_weight=.0
     return value,state
 
 
-def episode_grad(model, streams, window=64, padding_weight=.05):
+def episode_grad(model, streams, window=64, padding_weight=.05, progress=None):
     denominator=normalizers(model,streams[:,:,1:],padding_weight)
     value_grad=nn.value_and_grad(model,partial(chunk_loss,padding_weight=padding_weight))
     state=None;accumulated=None;total=0.;frames=streams.shape[-1]-1
@@ -62,6 +73,9 @@ def episode_grad(model, streams, window=64, padding_weight=.05):
         state=tree_map(mx.stop_gradient,state)
         mx.eval(value,state,accumulated)
         total+=value.item()
+        if progress is not None:
+            progress(dict(completed_frames=end,total_frames=frames,loss_so_far=total,
+                          peak_memory_bytes=mx.get_peak_memory(),active_memory_bytes=mx.get_active_memory()))
         del value,grad
         mx.clear_cache()
     return mx.array(total),accumulated

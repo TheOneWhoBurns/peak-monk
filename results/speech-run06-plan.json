@@ -1,0 +1,33 @@
+{
+  "experiment": "speech-run06",
+  "status": "Feasibility gate passed; ready to train",
+  "hypothesis": "Full temporal adaptation may learn character identity and user conditioning better than last4blocks. Short gradient windows make this fit8GBwhile preserving complete forward attention context.",
+  "model": "models/moshi/model.q4.safetensors",
+  "training": {
+    "temporal_layers": 32,
+    "rank": 8,
+    "scale": 2,
+    "trainable_parameters": 6318080,
+    "learning_rate": 0.0001,
+    "steps": 160,
+    "seed": 41,
+    "gradient_window_frames": 16,
+    "gradient_window_seconds": 1.28,
+    "update_policy": "Accumulate all window gradients, one clipped AdamW update per full episode; weights fixed throughout episode",
+    "gradient_limitation": "Past window attention state detached. Forward loss uses complete history but gradients intentionally truncate cross-window credit.",
+    "text_padding_weight": 0.05,
+    "audio_objective": "Unchanged semantic-weighted agent audio CE",
+    "optimizer_memory": "Save complete optimizer state after each update, release it for gradient computation, restore it before next update. Exact two-step AdamW parity passed."
+  },
+  "validation": "Original full-episode joint loss, paddingweight.5; same two validation episodes; candidate selected at20step intervals",
+  "audit": "Same six native probes and unprompted decoded-audio ASR; raw character/overlap review required. Lower loss alone cannot pass.",
+  "data": "Same57train/2validreviewedepisodes. No rejected teacher data added.",
+  "comparison": "All-temporal LoRA with truncated BPTT and exact optimizer disk offload. No claim of exact full-sequence gradients.",
+  "output": "adapters/speech-run06",
+  "memory_gate": {
+    "report": "results/moshi-windowed-offloaded-longest.json",
+    "updates": 2,
+    "frames": 452,
+    "peak_memory_bytes": 5477579778
+  }
+}

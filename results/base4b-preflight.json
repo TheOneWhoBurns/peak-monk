@@ -2,7 +2,7 @@
   "repo": "johnlakness/Qwen3-4B-Base-mlx-4Bit",
   "revision": "76aa803fb5ee833aead9414f16f0708c901c21f7",
   "weight_sha256_expected": "5bfd2f05e5374a4ffa703470efba85aefe65c874db2f82b472fd64afea019b75",
-  "weight_status": "download pending; not loaded",
+  "weight_status": "Full download complete; upstream SHA256 verified; not yet loaded",
   "source_lineage": "Community MLX quantization of Qwen/Qwen3-4B-Base; conversion not independently reproduced",
   "serialization": "Explicit simple ChatML, no system prompt or thinking prefix, im_end trained as EOS; original metadata preserved",
   "tokenizer_check": {
@@ -18,5 +18,7 @@
     "chat_template.jinja": "f950548988e50713a9975a11be0eaf1d29c4fe4be0ba22a57daeebbc27a7adb9",
     "generation_config.json": "04d8c5284eff1bc893f29e89bb682fc9f69b9fc8010569a05c5c965f21997236",
     "special_tokens_map.json": "a5dba86f1cb07d7e5b093bbea2339d2c3c4effec4d6a76d812a7271897bd151a"
-  }
+  },
+  "weight_sha256_verified": "5bfd2f05e5374a4ffa703470efba85aefe65c874db2f82b472fd64afea019b75",
+  "weight_bytes": 2263022529
 }

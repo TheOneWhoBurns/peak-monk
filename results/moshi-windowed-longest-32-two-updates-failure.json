@@ -1,0 +1,11 @@
+{
+  "status": "failed",
+  "episode": "anger",
+  "frames": 452,
+  "window": 32,
+  "first_update": "completed",
+  "second_update": "failed after416frames",
+  "error": "METAL insufficient memory",
+  "last_reported_peak_memory_bytes": 5546399618,
+  "interpretation": "Single-update fit was insufficient because Adam state persists into later gradient computations. Test exact optimizer offload with the safer16framewindow."
+}
