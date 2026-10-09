@@ -1,0 +1,24 @@
+{
+  "status": "conditional predeclaration before memory probes and training",
+  "condition": "Full-model checkpointed memory probes fit the device-recommended working set through the longest training episode, with finite gradients.",
+  "parent": "speech-run03",
+  "hypothesis": "Adapting all temporal blocks can learn the character and audio conditioning more effectively than restricting changes to the final4blocks.",
+  "change": "All32temporalblocks and text-head LoRA; full native forward with activation checkpointing. No frozen-prefix cache because earlier blocks now train.",
+  "fixed": {
+    "rank": 8,
+    "scale": 2,
+    "learning_rate": 0.0001,
+    "train_text_padding_weight": 0.05,
+    "validation_text_padding_weight": 0.5,
+    "steps": 160,
+    "seed": 41,
+    "train_episodes": 57,
+    "valid_episodes": 2,
+    "optimizer": "AdamW",
+    "clip_norm": 1.0
+  },
+  "data": "Original reviewed stock-TTS/Mimi episodes; rejected native teacher outputs excluded.",
+  "selection": "Frozen validation loss selects a candidate only. Same six native probes and unprompted decoded-audio audit remain required.",
+  "memory": "Measure actual peak; this is an8GBMac experiment, not an assumption of fit.",
+  "output": "adapters/speech-run04"
+}
