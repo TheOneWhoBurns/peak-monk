@@ -32,5 +32,7 @@
       ]
     }
   ],
-  "scope": "Small FP32 adapter algebra and gradient checks only. No trained character quality or BF16 export equivalence claim."
+  "hierarchy_attach": "pass",
+  "standard_reload_error": 0.0,
+  "scope": "Small FP32 adapter algebra, frozen-parent gradients, quantized-base hierarchy and standard export checks. No trained character quality or BF16 export equivalence claim."
 }
