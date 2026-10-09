@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "replay_weight": 0.0,
+      "loss_error": 0.0,
+      "maximum_gradient_error": 1.341104507446289e-07,
+      "rng_error": 0.0
+    },
+    {
+      "replay_weight": 0.25,
+      "loss_error": 0.0,
+      "maximum_gradient_error": 1.2665987014770508e-07,
+      "rng_error": 0.0
+    }
+  ],
+  "scope": "Tiny quantized Qwen3, frozen nonzero SFT factors plus nonzero fresh deltas, dropout0.2, unequal candidate lengths, ragged head chunks. Every trainable gradient and RNG matches direct uncheckpointed objective. No actual-model memory or quality claim."
+}

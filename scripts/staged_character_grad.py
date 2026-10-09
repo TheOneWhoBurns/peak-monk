@@ -10,6 +10,7 @@ import mlx.core as mx
 import mlx.nn as nn
 from mlx.utils import tree_map
 from mlx_lm.tuner.lora import LoRAEmbedding
+from character_delta import CharacterDelta
 
 
 def restore_rng(state):
@@ -25,8 +26,11 @@ def staged_character_grad(model, batch, mask, chunk_size=64, denominator=None):
     if model.model_type != 'qwen3' or not model.args.tie_word_embeddings:
         raise ValueError('Only tied Qwen3 is supported')
     head = model.model.embed_tokens
-    if not isinstance(head, LoRAEmbedding) or not isinstance(head.dropout, nn.Dropout):
-        raise TypeError('Expected standard tied LoRA embedding and dropout')
+    delta = isinstance(head, CharacterDelta) and head.is_embedding
+    supported = isinstance(head, LoRAEmbedding) or (delta
+        and isinstance(head.base, LoRAEmbedding) and isinstance(head.base.dropout, nn.Identity))
+    if not supported or not isinstance(head.dropout, nn.Dropout):
+        raise TypeError('Expected standard tied LoRA embedding or fresh delta around a frozen tied adapter')
     if chunk_size < 1 or mask.dtype != mx.bool_:
         raise ValueError('Positive chunk size and boolean target mask required')
     rng_before = list(mx.random.state)
@@ -48,7 +52,11 @@ def staged_character_grad(model, batch, mask, chunk_size=64, denominator=None):
         head.update(params)
         dropped = (dmask * h) * (1 / keep)
         residual = (dropped @ head.lora_b.T) @ head.lora_a.T
-        logits = head.embedding.as_linear(h) + (head.scale * residual).astype(h.dtype)
+        embedding = head.base.embedding if delta else head.embedding
+        if delta:
+            old = (h @ head.base.lora_b.T) @ head.base.lora_a.T
+            residual = old + residual
+        logits = embedding.as_linear(h) + (head.scale * residual).astype(h.dtype)
         ce = nn.losses.cross_entropy(logits.astype(mx.float32), y)
         return mx.where(selected, ce, 0).sum() / divisor
 

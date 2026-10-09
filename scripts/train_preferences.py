@@ -55,7 +55,17 @@ def main():
                    help='Positive rank trains a fresh delta around frozen SFT factors')
     p.add_argument('--checkpoint-rng',choices=['upstream','replay'],default='upstream',
                    help='Explicit experiment choice; replay preserves dropout keys on recomputation')
+    p.add_argument('--gradient-mode',choices=['full','staged'],default='full')
+    p.add_argument('--head-chunk-size',type=int,default=64)
+    p.add_argument('--replay-data',help='Reviewed training JSONL only; requires staged gradients')
+    p.add_argument('--replay-weight',type=float,default=0.)
     args=p.parse_args()
+    if args.gradient_mode=='staged' and args.checkpoint_rng!='replay':
+        raise ValueError('Staged gradients require RNG-correct checkpoint replay')
+    if args.replay_weight<0 or ((args.replay_data is None)!=(args.replay_weight==0)):
+        raise ValueError('Provide both replay training data and positive replay weight, or neither')
+    if args.replay_data and args.gradient_mode!='staged':
+        raise ValueError('Conversation replay uses the verified staged objective')
     out=Path(args.output)
     if out.exists():raise ValueError('Fresh experiment directory required')
     out.mkdir(parents=True)
@@ -106,8 +116,21 @@ def main():
             checkpoint_layer(layer)
             checkpointed_types.add(type(layer))
     mx.random.seed(args.seed);rng=random.Random(args.seed)
+    replay_cases=[]
+    replay_rng=random.Random(args.seed+101)
+    if args.replay_data:
+        from conversation_objective import encode_conversation,windows
+        replay_rows=[json.loads(line) for line in Path(args.replay_data).read_text().splitlines()]
+        if Path(args.replay_data).name!='train.jsonl' or any(r.get('split','train')!='train' for r in replay_rows):
+            raise ValueError('Replay must use training data, never validation or release conversations')
+        replay_cases=[dict(family=row['family'],tokens=t,mask=m) for row in replay_rows
+                      for t,m in windows(*encode_conversation(row,tok),1024)]
+        if not replay_cases:raise ValueError('No supervised replay windows')
     (out/'adapter_config.json').write_text(json.dumps(cfg,indent=2)+'\n')
     metadata=dict(vars(args),source_adapter_sha256=hashlib.sha256((Path(args.sft_adapter)/'adapters.safetensors').read_bytes()).hexdigest(),pairs_sha256=hashlib.sha256(Path(args.pairs).read_bytes()).hexdigest(),trainable_parameters=sum(v.size for _,v in leaves),objective='softplus(-beta * (policy chosen-rejected logp - frozen reference margin)) + chosen token NLL weight',reference='Same SFT checkpoint, evaluated before any preference updates. Cached probabilities; no second resident model.',reviewer='Author, not independent')
+    if replay_cases:
+        metadata.update(replay_sha256=hashlib.sha256(Path(args.replay_data).read_bytes()).hexdigest(),
+            replay_windows=len(replay_cases),replay_objective='Plus replay_weight times all-assistant-span token-mean NLL on one shuffled training window per update')
     (out/'preference_config.json').write_text(json.dumps(metadata,indent=2)+'\n')
     prepared=[];reference=[];model.eval()
     for row in records:
@@ -132,12 +155,25 @@ def main():
             raise RuntimeError('Fresh zero delta changed the reference policy; no preference updates performed')
     optimizer=optim.AdamW(learning_rate=args.lr,weight_decay=.01)
     vg=nn.value_and_grad(model,objective)
+    replay_order=list(range(len(replay_cases)))
     order=list(range(len(records)));start=time.monotonic()
     log=out/'preference_metrics.jsonl'
     for step in range(args.steps):
         if step%len(order)==0:rng.shuffle(order)
         index=order[step%len(order)];chosen,rejected,offset,margin=prepared[index]
-        model.train();loss,grad=vg(model,chosen,rejected,offset,margin,args.beta,args.nll_weight)
+        replay=None;replay_index=None
+        if replay_cases:
+            if step%len(replay_order)==0:replay_rng.shuffle(replay_order)
+            replay_index=replay_order[step%len(replay_order)]
+            item=replay_cases[replay_index]
+            replay=(mx.array([item['tokens']],dtype=mx.int32),mx.array([item['mask']],dtype=mx.bool_))
+        model.train()
+        if args.gradient_mode=='staged':
+            from staged_preference_grad import preference_grad
+            loss,grad=preference_grad(model,chosen,rejected,offset,margin,args.beta,args.nll_weight,
+                replay=replay,replay_weight=args.replay_weight,chunk_size=args.head_chunk_size)
+        else:
+            loss,grad=vg(model,chosen,rejected,offset,margin,args.beta,args.nll_weight)
         norm=mx.sqrt(sum(mx.sum(v.astype(mx.float32)**2) for _,v in tree_flatten(grad)))
         grad=tree_map(lambda v:v*mx.minimum(1.,1./(norm+1e-8)),grad)
         mx.eval(loss,norm)
@@ -146,9 +182,11 @@ def main():
         optimizer.update(model,grad);mx.eval(model.parameters(),optimizer.state,loss,norm)
         if not mx.isfinite(loss).item():raise FloatingPointError('Nonfinite preference loss')
         row=dict(step=step+1,id=records[index]['id'],loss=loss.item(),gradient_norm=norm.item(),peak_memory_bytes=mx.get_peak_memory())
+        if replay_cases:
+            row.update(replay_window_index=replay_index,replay_family=replay_cases[replay_index]['family'])
         with log.open('a') as f:f.write(json.dumps(row)+'\n')
         if (step+1)%8==0:print(json.dumps(row),flush=True)
-        del grad,loss,norm;mx.clear_cache()
+        del grad,loss,norm,replay;mx.clear_cache()
         if (step+1)%32==0 or step+1==args.steps:
             mx.save_safetensors(str(out/f'{step+1:07d}_adapters.safetensors'),export())
     mx.save_safetensors(str(out/'adapters.safetensors'),export())

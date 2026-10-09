@@ -1,0 +1,17 @@
+{
+  "status": "Implementation prepared and tiny-model verified; no actual-model preference run yet",
+  "motivation": "Run20 and run21 progressively worsened broad development CE while optimizing22pairs; test positive-conversation replay as an explicit future retention mechanism.",
+  "method": "Sequential exact chosen/rejected NLL gradients, analytic DPO chain rule, optional all-assistant-span SFT replay gradient, RNG-correct checkpointing. Supports fresh delta around frozen SFT factors.",
+  "verification": "results/staged-preference-gradient-check.json",
+  "gradient_max_error": 1.341104507446289e-07,
+  "subsequent_rng_error": 0,
+  "existing_behavior": "New flags default to historical full-gradient/no-replay path. Existing completed run records retain their original source hashes.",
+  "tests": "tests/test_preferences.py and tests/test_release_gate.py:3passed",
+  "source_hashes": {
+    "scripts/staged_character_grad.py": "df7db00f2261e5fcde88e499d512c8fb250455df3da5c759ed457bce7daca886",
+    "scripts/staged_preference_grad.py": "047121be2259d2ffc6db8b156c37e18f6ff69e129080793a2c57701fcd7240bf",
+    "scripts/check_staged_preferences.py": "8e10085626a5156c58bc1ae09202082fe34c8e2c9c92bb9a77dd34d0447f7177",
+    "scripts/train_preferences.py": "fd059ea82beeae43bb54e9ff18d1dfa8e8d370feec1bc185325b56662bdbe92a"
+  },
+  "scope_limit": "The replay hypothesis is not validated by numerical equivalence. Memory, speed and quality require a separately declared actual-model experiment. Running run22 loaded its earlier staged helper before this extension and remains identified by its recorded source hashes."
+}
