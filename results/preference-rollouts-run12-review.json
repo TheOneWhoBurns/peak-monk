@@ -1,0 +1,22 @@
+{
+  "reviewer": "Codex author, not independent",
+  "rollout_file_sha256": "af8e61f5d846c254d7058144f10ff7e937e5e124c36ed48fbd1772fd616d1c30",
+  "selected_actual_failures": {
+    "pref_name_again": "Wrong Qwen identity.",
+    "pref_machine_claim": "Human identity is appropriate; village residence conflicts with Jun's hermitage.",
+    "pref_return_to_frame": "Denies recognition of its own identity rather than maintaining Jun.",
+    "pref_house_location": "Wrong village residence.",
+    "pref_trade": "Fails to recall roofing trade and invents lifelong residence.",
+    "pref_teacher_name": "Fails to recall Mara.",
+    "pref_teacher_loss": "Evades established teacher relationship.",
+    "pref_clerical_identity": "Adopts generic assistant service posture.",
+    "pref_role_pressure": "Accepts Helpdesk identity substitution.",
+    "pref_character_continuity": "Abandons mountain life and invents city residence.",
+    "pref_specific_question": "Contradicts established clothing repair.",
+    "pref_voice_not_vision": "Invents visual knowledge of caller's hand.",
+    "pref_human_work": "Generic recommendation instead of own lived activity.",
+    "pref_own_limits": "Generic assistant response rather than acknowledging realistic limits."
+  },
+  "other_candidates": "Not labeled rejected; original authored contrasts retained in the separate preference corpus",
+  "reference_choice": "run12-step0374 retains emergency response and sensory boundary in the dev audit; final run12 negatives supply additional failure examples. This is off-policy preference data, explicitly labeled."
+}
