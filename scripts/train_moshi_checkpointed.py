@@ -20,9 +20,12 @@ from moshi_split import delay_streams
 from moshi_training import attach_lora, loss
 from moshi_mlx.models import Lm, config_v0_1
 from moshi_windowed import episode_grad,offload_optimizer,restore_optimizer
+from moshi_staged import staged_episode_grad
 
 p=argparse.ArgumentParser()
 p.add_argument('--data',default='data/speech_codes')
+p.add_argument('--extra-train-data',action='append',default=[],
+    help='Additional reviewed encoded training episodes; no validation rows allowed')
 p.add_argument('--output',required=True)
 p.add_argument('--steps',type=int,default=160)
 p.add_argument('--layers',type=int,default=32)
@@ -33,10 +36,16 @@ p.add_argument('--seed',type=int,default=41)
 p.add_argument('--evaluate-every',type=int,default=20)
 p.add_argument('--gradient-window',type=int,default=0,
     help='Positive values use truncated BPTT with full carried attention context')
+p.add_argument('--staged-head-frames',type=int,default=0,
+    help='Positive values stage independent heads and replay full temporal gradients')
 p.add_argument('--offload-optimizer',action='store_true')
 p.add_argument('--text-padding-weight',type=float,default=.05,
     help='Training only; frozen validation remains at 0.5 for comparability')
 args=p.parse_args()
+if args.gradient_window < 0 or args.staged_head_frames < 0:
+    raise ValueError('Gradient frame settings must be nonnegative')
+if args.gradient_window and args.staged_head_frames:
+    raise ValueError('Choose truncated or full staged gradients, not both')
 if not 0 < args.text_padding_weight <= 1:
     raise ValueError('Text padding weight must be in (0, 1]')
 out=Path(args.output)
@@ -44,10 +53,17 @@ if out.exists(): raise ValueError('Use a fresh experiment output directory')
 out.mkdir(parents=True)
 if args.layers!=32:raise ValueError('This experiment trains all32temporalblocks')
 rows=[]
-for path in sorted(Path(args.data).glob('*.npz')):
-    row=json.loads(path.with_suffix('.json').read_text())
-    assert hashlib.sha256(path.read_bytes()).hexdigest()==row['file_sha256'],path
-    row['path']=str(path);rows.append(row)
+for directory in [args.data, *args.extra_train_data]:
+    paths=sorted(Path(directory).glob('*.npz'))
+    if not paths: raise ValueError(f'No encoded episodes in {directory}')
+    for path in paths:
+        row=json.loads(path.with_suffix('.json').read_text())
+        assert hashlib.sha256(path.read_bytes()).hexdigest()==row['file_sha256'],path
+        if directory != args.data and row['split'] != 'train':
+            raise ValueError(f'Extra data must be training-only: {path}')
+        row['path']=str(path);rows.append(row)
+if len({r['id'] for r in rows}) != len(rows):
+    raise ValueError('Episode IDs must be unique across all data directories')
 train=[r for r in rows if r['split']=='train'];valid=[r for r in rows if r['split']=='valid']
 assert train and valid,'Independent training and validation audio are required'
 mx.random.seed(args.seed);rng=random.Random(args.seed)
@@ -70,7 +86,12 @@ metadata=dict(vars(args),train_ids=[r['id'] for r in train],valid_ids=[r['id'] f
     loss='text CE + semantic-weighted agent audio CE, original delayed streams',
     validation_text_padding_weight=.5,
     checkpoint_layers=True,
-    gradient_policy='Truncated BPTT; one update after a complete episode' if args.gradient_window else 'Full episode',
+    gradient_policy=('Truncated BPTT; one update after a complete episode' if args.gradient_window
+        else 'Full temporal gradients with staged independent heads' if args.staged_head_frames
+        else 'Full episode'),
+    source_hashes={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in
+        map(Path,['scripts/train_moshi_checkpointed.py','scripts/moshi_training.py',
+            'scripts/moshi_windowed.py','scripts/moshi_staged.py'])},
     data_hashes={r['id']:r['file_sha256'] for r in rows})
 (out/'config.json').write_text(json.dumps(metadata,indent=2)+'\n')
 log=out/'metrics.jsonl'
@@ -110,7 +131,10 @@ for step in range(1,args.steps+1):
     if (step-1)%len(order)==0: rng.shuffle(order)
     row=order[(step-1)%len(order)];data=load_episode(row)
     model.train();tick=time.monotonic()
-    if args.gradient_window:
+    if args.staged_head_frames:
+        value,grad=staged_episode_grad(model,data,head_frames=args.staged_head_frames,
+            padding_weight=args.text_padding_weight)
+    elif args.gradient_window:
         value,grad=episode_grad(model,data,window=args.gradient_window,padding_weight=args.text_padding_weight)
     else:
         value,grad=value_grad(model,data)
@@ -122,6 +146,8 @@ for step in range(1,args.steps+1):
     if args.offload_optimizer and optimizer_file.exists():restore_optimizer(optimizer,optimizer_file)
     optimizer.update(model,grad);mx.eval(value,norm,model.parameters(),optimizer.state)
     if not mx.isfinite(value).item() or not mx.isfinite(norm).item(): raise FloatingPointError('Non-finite speech update')
+    if not all(mx.all(mx.isfinite(v)).item() for _,v in tree_flatten(model.trainable_parameters())):
+        raise FloatingPointError(f'Non-finite adapter parameters at step {step}')
     record({'kind':'train','step':step,'family':row['id'],'loss':value.item(),
             'gradient_norm_before_clip':norm.item(),'seconds':time.monotonic()-tick})
     del data,grad,value,norm;mx.metal.clear_cache()

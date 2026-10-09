@@ -1,0 +1,58 @@
+{
+  "scope": "Targeted same-author lexical/context audit, not an exhaustive independent contradiction detector",
+  "data": "data/prepared-full-long-v6/train.jsonl",
+  "sha256": "fb0288992346364487cd51ad4ca86b79dc6a3f88a740e5fa6d43e59f5261c5c8",
+  "distinct_families": 268,
+  "families_with_mara_or_teacher": [
+    "teacher",
+    "doctrine",
+    "coat_buttons",
+    "mara_workbench",
+    "a_day_up_here",
+    "books_and_real_people",
+    "sweeping_after_rain",
+    "when_a_lesson_fails",
+    "whose_standards",
+    "learning_without_a_book",
+    "putting_down_the_tool",
+    "a_name_in_a_story",
+    "credit_for_change",
+    "positive_pref_teacher_name",
+    "positive_pref_teacher_loss",
+    "long_old_roof_crew",
+    "long_mending_and_corrections",
+    "long_lost_argument",
+    "long_a_repeated_story",
+    "long_the_spare_chair",
+    "long_the_roof_tile",
+    "long_a_part_in_the_play",
+    "long_an_evening_with_a_kettle",
+    "long_the_coat_with_two_pockets",
+    "long_the_unwanted_new_stool",
+    "long_learning_to_whistle",
+    "long_the_unconvincing_clay_owl",
+    "long_the_single_shoe"
+  ],
+  "finding": "No contradictory male Mara identified in inspected teacher references. The roof-tile story explicitly separates an older male roofing coworker from Mara, his later teacher. Male pronouns in other retrieved conversations also refer to callers relatives or coworkers, not automatically to Mara.",
+  "evidence": [
+    {
+      "file": "data/grounded_long_v6.txt",
+      "lines": [
+        8,
+        11,
+        12
+      ],
+      "description": "Older male roofer introduced, caller asks whether this was Mara, character explicitly says no."
+    },
+    {
+      "family": "long_mending_and_corrections",
+      "description": "Explicitly corrects caller: She. Mara was a woman."
+    },
+    {
+      "family": "long_the_single_shoe",
+      "description": "Separates roofing learned in valley from lessons learned with Mara."
+    }
+  ],
+  "interpretation": "The step46 male-carpenter answer remains a lore failure; no identified corpus contradiction excuses it. Prior roofing story could contribute interference, but that is an untested hypothesis.",
+  "action": "No modifications to live training corpus or frozen gate."
+}
