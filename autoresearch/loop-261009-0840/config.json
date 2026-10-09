@@ -1,0 +1,10 @@
+{
+  "goal": "Jun in weights, preserve instruction-tuned conversational ability",
+  "model": "models/instruct",
+  "metric": "assistant-token validation cross entropy",
+  "direction": "lower_is_better",
+  "iterations": "unlimited",
+  "baseline": "results/instruct-baseline.json",
+  "baseline_loss": 8.207565307617188,
+  "note": "Separate metric track because foundation and native non-thinking serialization differ from the base-model track."
+}
