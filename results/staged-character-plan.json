@@ -25,7 +25,8 @@
   ],
   "source_hashes": {
     "scripts/staged_character_grad.py": "faf3aa92202070e7e5b6c350d351d85a37455b6a93133fee52b6af15fe885d8f",
-    "scripts/qwen_rng_checkpoint.py": "d6868f5a8f60a9d8497dd6074945e1d1733bafb7e3bac2fde2ca75750380fe83",
+    "scripts/qwen_rng_checkpoint.py": "2bb669237510b159e39e68adda596ed886258f93c7e0ff82e8cab592d8e70c99",
     "scripts/probe_text_staged_context.py": "c1c6fc0a1a866dffa69781ccc9a64e632d40967dc695f528b27b0e6f01cdc101"
-  }
+  },
+  "fresh_delta_check": "results/character-delta-rng-checkpoint-check.json"
 }

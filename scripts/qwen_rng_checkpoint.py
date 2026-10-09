@@ -6,7 +6,9 @@ recomputation. Only the seven known Qwen3 projection-dropout sites are supported
 No changes are made to installed MLX packages.
 """
 import mlx.core as mx
+import mlx.nn as nn
 from mlx_lm.tuner.lora import LoRALinear
+from character_delta import CharacterDelta
 from staged_character_grad import restore_rng
 
 
@@ -36,9 +38,12 @@ def qwen_rng_checkpoint(layer):
         # A random operation consumes one key regardless of the sample shape.
         # These scalar outputs are unused; only advancement of the key matters.
         for projection in projections:
-            if hasattr(projection, 'dropout') and not isinstance(projection, LoRALinear):
+            supported = isinstance(projection, LoRALinear) or (
+                isinstance(projection, CharacterDelta) and not projection.is_embedding
+                and isinstance(projection.base.dropout, nn.Identity))
+            if hasattr(projection, 'dropout') and not supported:
                 raise TypeError('Unsupported projection dropout; audit its draw count first')
-            if (isinstance(projection, LoRALinear) and projection.dropout.training
+            if (supported and projection.dropout.training
                     and projection.dropout._p_1 != 1.0):
                 mx.random.uniform(shape=())
 

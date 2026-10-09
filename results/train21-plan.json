@@ -1,0 +1,30 @@
+{
+  "experiment": "run21",
+  "status": "Predeclared; queued after native audits and memory probes",
+  "hypothesis": "Repair stochastic gradient checkpoint recomputation, holding the run20 parent, reviewed pairs and optimizer budget fixed",
+  "change": "scripts/train_preferences.py --checkpoint-rng replay uses tested qwen_rng_checkpoint",
+  "parent": "adapters/run18-step0400",
+  "parent_sha256": "2f41ff810e7ef19afbe9e18b0572257a91c6df0b6e486787c2b00622fb0f1272",
+  "pairs": "data/preferences-run20-reviewed.jsonl",
+  "pairs_sha256": "317482c2842678e55da92386696b7610a7c3edd275b7448a1dbc2f043cbbb035",
+  "training": {
+    "fresh_rank": 4,
+    "steps": 96,
+    "lr": 2e-05,
+    "beta": 0.1,
+    "nll_weight": 0.3,
+    "seed": 41,
+    "checkpoints": [
+      32,
+      64,
+      96
+    ]
+  },
+  "checks": [
+    "results/upstream-checkpoint-dropout-diagnostic.json",
+    "results/character-delta-rng-checkpoint-check.json"
+  ],
+  "selection": "Unchanged greedy20case dev and essential gate; among passing captures higher acceptable count then lower comparableCE",
+  "holdouts": "Original final and pressure audits are now seen. Do not reuse them for release selection, training or acceptance. Any candidate passing dev requires fresh independently specified release audits.",
+  "limitations": "Same-author ratings and small dataset. This is an implementation intervention, not proof the earlier gradient mismatch caused quality failures."
+}

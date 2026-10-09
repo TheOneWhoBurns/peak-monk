@@ -53,6 +53,8 @@ def main():
     p.add_argument('--seed',type=int,default=41)
     p.add_argument('--fresh-rank',type=int,default=0,
                    help='Positive rank trains a fresh delta around frozen SFT factors')
+    p.add_argument('--checkpoint-rng',choices=['upstream','replay'],default='upstream',
+                   help='Explicit experiment choice; replay preserves dropout keys on recomputation')
     args=p.parse_args()
     out=Path(args.output)
     if out.exists():raise ValueError('Fresh experiment directory required')
@@ -95,9 +97,13 @@ def main():
     leaves=tree_flatten(model.trainable_parameters())
     assert leaves and all(k.endswith(('.lora_a','.lora_b')) for k,v in leaves)
     checkpointed_types=set()
+    checkpoint_layer=grad_checkpoint
+    if args.checkpoint_rng=='replay':
+        from qwen_rng_checkpoint import qwen_rng_checkpoint
+        checkpoint_layer=qwen_rng_checkpoint
     for layer in model.layers:
         if type(layer) not in checkpointed_types:
-            grad_checkpoint(layer)
+            checkpoint_layer(layer)
             checkpointed_types.add(type(layer))
     mx.random.seed(args.seed);rng=random.Random(args.seed)
     (out/'adapter_config.json').write_text(json.dumps(cfg,indent=2)+'\n')

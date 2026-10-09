@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "loss_error": 0.0,
+  "maximum_gradient_error": 0.0,
+  "rng_next_draw_error": 0.0,
+  "scope": "Tiny quantized Qwen3 fresh CharacterDelta around frozen SFT; ordinary loss with and without repaired layer checkpoint; allseven projections, nonzero newB, dropout.2"
+}
