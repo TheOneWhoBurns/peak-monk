@@ -1,0 +1,19 @@
+{
+  "model": "models/base4b",
+  "model_revision": "76aa803fb5ee833aead9414f16f0708c901c21f7",
+  "model_sha256": "5bfd2f05e5374a4ffa703470efba85aefe65c874db2f82b472fd64afea019b75",
+  "loss_version": "assistant_eos_v2",
+  "training_objective": "all_assistant_spans_v1",
+  "rubric_version": "human_character_v2",
+  "baseline_loss": 3.892766237258911,
+  "baseline_acceptable": 2,
+  "baseline_cases": 20,
+  "source_commit_at_launch": "1340774",
+  "iterations": "unlimited",
+  "active_experiment": "run17",
+  "configuration": "configs/train17.yaml",
+  "plan": "results/train17-plan.json",
+  "speech_ledger": "autoresearch/loop-261009-clean4b-human-v2/speech-results.tsv",
+  "queued_speech": "speech-run07; padded-tail all-temporal LoRA, memory gate pending",
+  "data_expansion": "28 authored long conversation drafts (v3-v6), excluded from run17; pending separate experiment decision"
+}
