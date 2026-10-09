@@ -13,5 +13,12 @@
     "Author review is not independent or blinded"
   ],
   "next_decision": "Expand generation only if the pilot is useful; rejected outputs remain outside training.",
-  "execution": "Wait for complete upstream SHA verification and finish the active GPU training process first."
+  "execution": "Wait for complete upstream SHA verification and finish the active GPU training process first.",
+  "preselected_indices": [
+    0,
+    3,
+    20,
+    21
+  ],
+  "selection_note": "Two ordinary activity conversations and two about Jun's life; selected before any Qwen3.5 pilot outputs."
 }

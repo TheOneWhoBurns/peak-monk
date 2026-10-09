@@ -88,6 +88,7 @@ def main():
     p.add_argument('--output',default='data/simulation-v2')
     p.add_argument('--start',type=int,default=0)
     p.add_argument('--limit',type=int,default=4)
+    p.add_argument('--indices',type=int,nargs='+',help='Explicit preselected topic/partner indices')
     p.add_argument('--exchanges',type=int,default=8)
     p.add_argument('--config',default='configs/synthesis.json')
     args=p.parse_args()
@@ -97,9 +98,11 @@ def main():
     core=Path('character/simulation-core.txt').read_text();style=Path('character/style.txt').read_text()
     forbidden=[u for name in ('dev','final','pressure-v2') for c in json.loads(Path(f'evaluation/{name}.json').read_text()) for u in c['turns']]
     influences={s['id']:s for s in json.loads(Path('sources/manifest.json').read_text())}
+    mx.set_memory_limit(5_500_000_000)
+    mx.set_cache_limit(64_000_000)
     model,tok=load(args.model)
     partners=[('a bicycle courier who dislikes motivational advice','slightly impatient'),('a retired seamstress who enjoys teasing people','playful'),('a night-shift baker with a practical streak','tired'),('a shy apprentice carpenter proud of small progress','hopeful'),('a school librarian who changes their mind while talking','curious'),('a student with very little money and strong opinions','skeptical')]
-    for index in range(args.start,args.start+args.limit):
+    for index in (args.indices if args.indices is not None else range(args.start,args.start+args.limit)):
         dest=out/f'{index:04d}.json'
         if dest.exists():continue
         rng=random.Random(18931+index);world=World(graph,rng)
