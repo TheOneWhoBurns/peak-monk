@@ -1,0 +1,29 @@
+{
+  "experiment": "run17",
+  "status": "predeclared; verified full base weights required before execution",
+  "hypothesis": "A 4B base model can learn Jun without competing with an assistant post-training persona; cosine decay may reduce late drift seen with constant rates.",
+  "model": "models/base4b",
+  "model_repo": "johnlakness/Qwen3-4B-Base-mlx-4Bit",
+  "revision": "76aa803fb5ee833aead9414f16f0708c901c21f7",
+  "weight_sha256": "5bfd2f05e5374a4ffa703470efba85aefe65c874db2f82b472fd64afea019b75",
+  "training": {
+    "data": "data/prepared-full-relations-v3",
+    "data_sha256": "e32218c131a5a112d8053defd0eff06f6c1e0fd0e5145b671bcfa60f8cbe1d30",
+    "weighted_conversations": 451,
+    "distinct_texts": 214,
+    "all_assistant_spans": true,
+    "steps": 1356,
+    "gradient_accumulation": 4,
+    "optimizer_updates": 339,
+    "num_layers": 36,
+    "embedding": "tied low-rank adaptation, not a full embedding update",
+    "rank": 16,
+    "scale": 2,
+    "dropout": 0.05,
+    "learning_rate": "17-step warmup then cosine from5e-5 to5e-6; schedule advances on optimizer updates",
+    "seed": 41
+  },
+  "evaluation": "Fresh assistant_eos_v2 base/template loss baseline. Same frozen development suite and essential-category gate. Final and pressure holdouts remain untouched until development acceptance.",
+  "attribution": "Custom base-model training recipe, not a controlled one-variable causal comparison with the instruct runs.",
+  "limitation": "Corpus remains small; no guaranteed quality. Lower loss and remembering a training example do not constitute release acceptance."
+}
