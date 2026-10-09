@@ -17,3 +17,4 @@ run21-step0032	2026-10-09	d9e22d0	2.57853627204895	-1.314229965209961	fail	17/20
 run21-step0064	2026-10-09	d9e22d0	2.8138267993927	-1.078939437866211	fail	15/20 author scored	discard	RNG-correct matched rerun; essential failures d01,d06; no holdout capture
 run21-step0096	2026-10-09	d9e22d0	3.0576460361480713	-0.8351202011108398	fail	11/20 author scored	discard	RNG-correct matched rerun; essential failures d01,d06; no holdout capture
 run22-step0046	2026-10-09	371ef9d	2.6050305366516113	-1.2877357006072997	fail	15/20 author scored	discard	Full-context corrected SFT; essential identity stability, control and teacher lore fail; later declared captures pending
+run22-step0092	2026-10-09	371ef9d	2.5948221683502197	-1.2979440689086914	fail	15/20 author scored	discard	Direct human identity improves; control and teacher lore remain essential failures
