@@ -5,6 +5,6 @@
   "baseline_loss": 5.3405680656433105,
   "baseline_note": "Validation loss is computed without persona text, even in the separate prompted-generation control. Identical tokenizer/template fingerprint required.",
   "iterations": "unlimited",
-  "active_experiment": "run13",
-  "strategy": "Correct serialization; preserve competent instruction foundation with gentle SFT; preference optimization against measured character failures; compare against unaligned-base route."
+  "active_experiment": "run14",
+  "strategy": "Positive character curriculum after failed DPO; preserve conversation competence from early SFT. Continue evaluating behavior, not loss alone."
 }

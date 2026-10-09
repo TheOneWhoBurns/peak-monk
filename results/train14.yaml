@@ -1,0 +1,33 @@
+model: models/stronger-clean
+data: data/prepared-curriculum-v2
+train: false
+fine_tune_type: lora
+optimizer: adam
+mask_prompt: true
+num_layers: 16
+batch_size: 1
+iters: 908
+val_batches: -1
+learning_rate: 1.0e-05
+steps_per_report: 10
+steps_per_eval: 250
+grad_accumulation_steps: 4
+adapter_path: adapters/run14
+save_every: 250
+max_seq_length: 1024
+grad_checkpoint: true
+seed: 41
+lora_parameters:
+  rank: 16
+  dropout: 0.05
+  scale: 2.0
+  keys:
+  - self_attn.q_proj
+  - self_attn.k_proj
+  - self_attn.v_proj
+  - self_attn.o_proj
+  - mlp.gate_proj
+  - mlp.up_proj
+  - mlp.down_proj
+loss_version: assistant_eos_v2
+resume_adapter_file: adapters/run12-step0374/adapters.safetensors

@@ -20,6 +20,8 @@ def main():
     p.add_argument('--limit', type=int, default=8)
     p.add_argument('--start', type=int, default=0)
     p.add_argument('--split', choices=['train','validation'], default='train')
+    p.add_argument('--output',default='data/renders')
+    p.add_argument('--families',nargs='+')
     args = p.parse_args()
     root = Path('models/kokoro-hf')
     assets = json.loads(Path('sources/kokoro-onnx-hf.json').read_text())
@@ -37,7 +39,8 @@ def main():
     tts = Kokoro.from_session(session, str(root/'voices.npz'))
     rows = [json.loads(l) for l in Path(args.corpus).read_text().splitlines()]
     rows = [r for r in rows if r['split']==args.split and r['family'] not in ('everyday_french','language_flexibility')]
-    out = Path('data/renders'); out.mkdir(parents=True,exist_ok=True)
+    if args.families: rows=[r for r in rows if r['family'] in args.families]
+    out = Path(args.output); out.mkdir(parents=True,exist_ok=True)
     for ci, row in enumerate(rows[args.start:args.start+args.limit], start=args.start):
         ident = row['family']; dest=out/f'{ident}.json'
         if dest.exists(): continue

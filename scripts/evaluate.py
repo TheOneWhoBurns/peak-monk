@@ -6,7 +6,7 @@ import time
 from pathlib import Path
 import mlx.core as mx
 from mlx_lm import load, stream_generate
-from mlx_lm.sample_utils import make_sampler
+from mlx_lm.sample_utils import make_sampler, make_logits_processors
 from mlx_lm.tuner.datasets import ChatDataset, CacheDataset
 from mlx_lm.tuner.trainer import evaluate
 from assistant_objective import ThroughEOS, assistant_loss
@@ -24,8 +24,12 @@ def main():
     p.add_argument('--persona-file', default='character/core.md')
     p.add_argument('--loss-version', choices=['legacy', 'assistant_eos_v2'], default='legacy')
     p.add_argument('--max-tokens', type=int, default=160)
+    p.add_argument('--temperature',type=float,default=0.0)
+    p.add_argument('--top-p',type=float,default=1.0)
+    p.add_argument('--presence-penalty',type=float,default=0.0)
+    p.add_argument('--seed',type=int,default=41)
     args = p.parse_args()
-    mx.random.seed(41)
+    mx.random.seed(args.seed)
     model, tok = load(str(ROOT/args.model), adapter_path=args.adapter)
     serialization = hashlib.sha256()
     for name in ('config.json','tokenizer.json','tokenizer_config.json','chat_template.jinja'):
@@ -46,7 +50,10 @@ def main():
               'persona_file':args.persona_file if args.prompted else None,
               'validation_loss': loss, 'loss_version':args.loss_version, 'loss_seconds': time.monotonic()-start,
               'loss_comparison_note':'Compare loss only between identical base/tokenizer/template runs. Reference models may serialize differently; their conversation audit is the comparison.',
-              'seed':41, 'temperature':0.0, 'max_tokens':args.max_tokens,
+              'seed':args.seed, 'temperature':args.temperature, 'top_p':args.top_p,
+              'presence_penalty':args.presence_penalty,'presence_context_size':128,
+              'sampling_seed_policy':'Per case/turn deterministic seed when temperature > 0, reset after loading weights; historical greedy mode unchanged.',
+              'max_tokens':args.max_tokens,
               'quality_scoring': 'Not yet scored; raw outputs for explicit rubric review.',
               'suite': args.suite, 'suite_sha256': hashlib.sha256((ROOT/args.suite).read_bytes()).hexdigest(),
               'conversations':[]}
@@ -63,14 +70,19 @@ def main():
         if args.prompted:
             messages.append({'role':'system','content':(ROOT/args.persona_file).read_text()})
         captured = dict(case, responses=[], messages=[])
-        for user in case['turns']:
+        for turn_index,user in enumerate(case['turns']):
             messages.append({'role':'user','content':user})
             prompt = tok.apply_chat_template(messages,add_generation_prompt=True,tokenize=False,enable_thinking=False)
             start = time.monotonic()
             first = None
             text = ''
             last = None
-            for chunk in stream_generate(model,tok,prompt,max_tokens=args.max_tokens,sampler=make_sampler(temp=0.0)):
+            if args.temperature>0:
+                case_seed=int(hashlib.sha256(case['id'].encode()).hexdigest()[:8],16)
+                mx.random.seed((args.seed+case_seed+997*turn_index)%(2**31))
+            processors=make_logits_processors(presence_penalty=args.presence_penalty if args.presence_penalty else None,presence_context_size=128)
+            for chunk in stream_generate(model,tok,prompt,max_tokens=args.max_tokens,
+                    sampler=make_sampler(temp=args.temperature,top_p=args.top_p),logits_processors=processors):
                 if first is None:
                     first = time.monotonic()-start
                 text += chunk.text
