@@ -1,0 +1,12 @@
+{
+  "checked_on": "2026-10-09",
+  "project": "https://github.com/DanielLin94144/Full-Duplex-Bench",
+  "data_readme": "https://raw.githubusercontent.com/DanielLin94144/Full-Duplex-Bench/main/v1_v1.5/dataset/README.md",
+  "evaluation_readme": "https://raw.githubusercontent.com/DanielLin94144/Full-Duplex-Bench/main/v1_v1.5/evaluation/README.md",
+  "dataset_folder": "https://drive.google.com/drive/folders/1DtoxMVO9_Y_nDs2peZtx3pw-U2qYgpd3",
+  "local_status": "Data access inspected, no official benchmark run",
+  "relevant_scope": "Static v1/v1.5 pause, backchannel and overlap evaluation; v3 tool-use benchmark is outside this character task",
+  "licensing": "Dataset README labels v1 synthetic and v1.5 MIT; Candor/ICC v1 subsets CC BY-NC4 with upstream terms",
+  "comparability": "Using local Whisper alignment instead of their recommended Parakeet and omitting their external GPT judge would be an explicitly modified protocol, not an exact benchmark reproduction.",
+  "score_warning": "Benchmark-maintainer current PersonaPlex table differs from NVIDIA paper table. Keep source, checkpoint and protocol with each reported score; do not merge them."
+}

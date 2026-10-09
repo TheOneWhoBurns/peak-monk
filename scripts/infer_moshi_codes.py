@@ -25,6 +25,8 @@ p.add_argument('--adapter')
 p.add_argument('--adapter-config')
 p.add_argument('--output',required=True)
 p.add_argument('--seed',type=int,default=41)
+p.add_argument('--sampling-preset',choices=['local','offline'],default='local',
+               help='Installed upstream local.py nucleus default or run_inference.py top-k preset')
 p.add_argument('--max-frames',type=int,help='Explicit short feasibility probe, not a complete dialogue audit')
 args=p.parse_args()
 out=Path(args.output);out.mkdir(parents=True,exist_ok=True)
@@ -58,7 +60,10 @@ print('Warmup complete:',warmup_seconds,'seconds',flush=True)
 # Adapter initialization and warmup must not shift the matched sampling stream.
 mx.random.seed(args.seed)
 tok=spm.SentencePieceProcessor(model_file='models/moshi/tokenizer_spm_32k_3.model')
-text_sampler=Sampler();audio_sampler=Sampler()
+if args.sampling_preset=='offline':
+    text_sampler=Sampler(top_k=25,temp=.8);audio_sampler=Sampler(top_k=250,temp=.8)
+else:
+    text_sampler=Sampler();audio_sampler=Sampler()
 gen=LmGen(model,max_steps=codes.shape[1]+5,text_sampler=text_sampler,audio_sampler=audio_sampler)
 text=[];audio=[];frames=[];start=time.monotonic()
 for i in range(codes.shape[1]):
@@ -77,7 +82,7 @@ for i in range(codes.shape[1]):
 elapsed=time.monotonic()-start
 np.savez_compressed(out/'agent_codes.npz',agent_codes=np.stack(audio,axis=1))
 (out/'transcript.txt').write_text(''.join(text).strip()+'\n')
-report={'input':args.input,'adapter':args.adapter,'seed':args.seed,'input_seconds':codes.shape[1]*.08,
+report={'input':args.input,'adapter':args.adapter,'seed':args.seed,'sampling_preset':args.sampling_preset,'input_seconds':codes.shape[1]*.08,
         'original_input_frames':original_frames,'explicit_frame_limit':args.max_frames,
         'input_sha256':hashlib.sha256(Path(args.input).read_bytes()).hexdigest(),
         'model_load_seconds':load_seconds,'warmup_seconds':warmup_seconds,

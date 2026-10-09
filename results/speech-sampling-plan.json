@@ -1,0 +1,15 @@
+{
+  "status": "Predeclared optional sampler comparison; no new outputs viewed",
+  "motivation": "The installed upstream local server uses nucleus p.95/temp.8, while its offline driver uses texttopk25/audiotopk250/temp.8. Existing captures match the local server. Neither is a loader error.",
+  "primary": "Keep all existing baseline and run07 primary audits at unchanged local preset",
+  "trigger": "If the loss-selected run07 candidate fails native identity, evaluate exactly s01+s06 with the offline preset for both pretrained baseline and that candidate",
+  "escalation": "Only if the candidate passes both identity probes, complete its other four cases under the same preset before acceptance. Preserve all results.",
+  "seed": 41,
+  "selection": "Two fixed upstream presets; no seed or parameter sweep",
+  "source_files": {
+    ".venv-speech/lib/python3.12/site-packages/moshi_mlx/local.py": "c81d7dd41159517a7aca4c0f41ed1c82fa7db7071618cc1e8e95790beee1de73",
+    ".venv-speech/lib/python3.12/site-packages/moshi_mlx/run_inference.py": "fb9de9099b26908becf70d3b7f938626bf395905eead911b723c73e614300dae",
+    ".venv-speech/lib/python3.12/site-packages/moshi_mlx/utils/sampling.py": "72b2626877b21266c527c6eb0ee61a541dd222e7376c2268292e07929e52e8ec"
+  },
+  "limits": "Sampler changes affect output distribution. Compare matching presets; no claim of an independent held-out result."
+}

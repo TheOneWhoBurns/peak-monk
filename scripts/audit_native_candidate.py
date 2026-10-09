@@ -19,22 +19,26 @@ def run(command, log):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--adapter', required=True, type=Path)
-    parser.add_argument('--config', required=True, type=Path)
+    parser.add_argument('--adapter', type=Path)
+    parser.add_argument('--config', type=Path)
+    parser.add_argument('--sampling-preset', choices=['local','offline'], default='local')
     parser.add_argument('--output', required=True, type=Path)
     parser.add_argument('--cases', nargs='+', choices=[f's{i:02d}' for i in range(1, 7)],
                         default=[f's{i:02d}' for i in range(1, 7)])
     args = parser.parse_args()
     if len(args.cases) != len(set(args.cases)):
         raise ValueError('Each requested probe must appear once')
-    if not args.adapter.is_file() or not args.config.is_file():
+    if (args.adapter is None)!=(args.config is None):
+        raise ValueError('Provide both adapter and config, or neither for a base control')
+    if args.adapter and (not args.adapter.is_file() or not args.config.is_file()):
         raise ValueError('A saved candidate and its actual training config are required')
     args.output.mkdir(exist_ok=False)
     manifest = {
-        'adapter': str(args.adapter),
-        'adapter_sha256': hashlib.sha256(args.adapter.read_bytes()).hexdigest(),
-        'config': str(args.config),
-        'config_sha256': hashlib.sha256(args.config.read_bytes()).hexdigest(),
+        'adapter': str(args.adapter) if args.adapter else None,
+        'adapter_sha256': hashlib.sha256(args.adapter.read_bytes()).hexdigest() if args.adapter else None,
+        'config': str(args.config) if args.config else None,
+        'config_sha256': hashlib.sha256(args.config.read_bytes()).hexdigest() if args.config else None,
+        'sampling_preset': args.sampling_preset,
         'seed': 41,
         'status': 'running; unscored',
         'scope': 'Selected fixed development probes, native speech generation. No training text forcing.',
@@ -46,8 +50,9 @@ def main():
     for name in args.cases:
         inputs = Path('evaluation/audio-roleplay-v2') / (name + '.npz')
         target = args.output / name
-        run(['scripts/infer_moshi_codes.py', str(inputs), '--adapter', str(args.adapter),
-             '--adapter-config', str(args.config), '--seed', '41', '--output', str(target)],
+        adapter_args = ['--adapter',str(args.adapter),'--adapter-config',str(args.config)] if args.adapter else []
+        run(['scripts/infer_moshi_codes.py', str(inputs), *adapter_args,
+             '--sampling-preset',args.sampling_preset,'--seed', '41', '--output', str(target)],
             args.output / (name + '-inference.log'))
         run(['scripts/mimi_audio.py', 'decode', str(target / 'agent_codes.npz'),
              '--output', str(target / 'agent.wav')], args.output / (name + '-decode.log'))
