@@ -9,6 +9,7 @@ import hashlib
 import json
 from pathlib import Path
 import random
+import subprocess
 import time
 import mlx.core as mx
 import mlx.nn as nn
@@ -128,6 +129,11 @@ def main():
         if not replay_cases:raise ValueError('No supervised replay windows')
     (out/'adapter_config.json').write_text(json.dumps(cfg,indent=2)+'\n')
     metadata=dict(vars(args),source_adapter_sha256=hashlib.sha256((Path(args.sft_adapter)/'adapters.safetensors').read_bytes()).hexdigest(),pairs_sha256=hashlib.sha256(Path(args.pairs).read_bytes()).hexdigest(),trainable_parameters=sum(v.size for _,v in leaves),objective='softplus(-beta * (policy chosen-rejected logp - frozen reference margin)) + chosen token NLL weight',reference='Same SFT checkpoint, evaluated before any preference updates. Cached probabilities; no second resident model.',reviewer='Author, not independent')
+    metadata.update(source_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
+        source_hashes={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in map(Path,
+            ['scripts/train_preferences.py','scripts/staged_preference_grad.py',
+             'scripts/staged_character_grad.py','scripts/qwen_rng_checkpoint.py',
+             'scripts/character_delta.py'])})
     if replay_cases:
         metadata.update(replay_sha256=hashlib.sha256(Path(args.replay_data).read_bytes()).hexdigest(),
             replay_windows=len(replay_cases),replay_objective='Plus replay_weight times all-assistant-span token-mean NLL on one shuffled training window per update')
@@ -181,6 +187,8 @@ def main():
             raise FloatingPointError('Nonfinite preference loss/gradient before update')
         optimizer.update(model,grad);mx.eval(model.parameters(),optimizer.state,loss,norm)
         if not mx.isfinite(loss).item():raise FloatingPointError('Nonfinite preference loss')
+        if not all(mx.all(mx.isfinite(v)).item() for _,v in tree_flatten(model.trainable_parameters())):
+            raise FloatingPointError(f'Nonfinite preference adapter at step {step+1}')
         row=dict(step=step+1,id=records[index]['id'],loss=loss.item(),gradient_norm=norm.item(),peak_memory_bytes=mx.get_peak_memory())
         if replay_cases:
             row.update(replay_window_index=replay_index,replay_family=replay_cases[replay_index]['family'])
