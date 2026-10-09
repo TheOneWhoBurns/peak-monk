@@ -1,4 +1,4 @@
-model: models/instruct
+model: models/base
 data: data/prepared
 train: false
 fine_tune_type: lora
@@ -8,11 +8,11 @@ num_layers: 16
 batch_size: 1
 iters: 160
 val_batches: -1
-learning_rate: 1.0e-05
+learning_rate: 0.0001
 steps_per_report: 10
 steps_per_eval: 80
 grad_accumulation_steps: 4
-adapter_path: adapters/run06
+adapter_path: adapters/run01
 save_every: 80
 max_seq_length: 768
 grad_checkpoint: true
@@ -21,12 +21,3 @@ lora_parameters:
   rank: 16
   dropout: 0.0
   scale: 32.0
-  keys:
-  - self_attn.q_proj
-  - self_attn.k_proj
-  - self_attn.v_proj
-  - self_attn.o_proj
-  - mlp.gate_proj
-  - mlp.up_proj
-  - mlp.down_proj
-  - model.embed_tokens
