@@ -1,0 +1,33 @@
+{
+  "status": "Training and declared development captures complete; all rejected",
+  "source_commit_at_launch": "52676da",
+  "steps": 524,
+  "optimizer_updates": 131,
+  "trained_character_target_tokens": 44523,
+  "peak_mlx_memory_gb": 4.76724824,
+  "active_training_seconds_derived_from_reported_tokens_per_second": 1485.9781255928392,
+  "approximate_elapsed_from_metric_creation_to_final_save_seconds": 1598.5739886760712,
+  "timing_scope": "Active seconds derived from token deltas and reported rates; approximate elapsed uses filesystem creation/write times and includes resident audits, excluding initial model loading.",
+  "captures": [
+    {
+      "step": 200,
+      "validation_ce": 2.6212565898895264,
+      "acceptable": 16,
+      "essential_failure": "control"
+    },
+    {
+      "step": 400,
+      "validation_ce": 2.608423948287964,
+      "acceptable": 17,
+      "essential_failure": "lore"
+    },
+    {
+      "step": 524,
+      "validation_ce": 2.6292951107025146,
+      "acceptable": 17,
+      "essential_failure": "lore"
+    }
+  ],
+  "final_export": "results/run18-final-export-check.json",
+  "holdout_status": "No final or pressure inference"
+}

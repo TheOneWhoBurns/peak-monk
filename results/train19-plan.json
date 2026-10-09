@@ -1,6 +1,6 @@
 {
   "experiment": "run19",
-  "status": "Conditional plan only; no rollouts or preference training yet",
+  "status": "Closed without training: only1eligible pair in1family; declared minimum8pairs/4families not met",
   "trigger": "Only if no declared run18 capture passes the unchanged essential development gate",
   "parent_selection": "After run18 completes, highest acceptable count among run17-step0600 and run18-step0200,step0400,final. Break ties by fewer essential-category failures, then lower comparable validation CE. Preserve every rejected result.",
   "rationale": "Ordinary SFT has repeatedly left role conversion failures. Freeze the character SFT weights and train a fresh small preference delta on actual training-prompt mistakes rather than continue moving all old factors.",
@@ -16,7 +16,7 @@
     "system_prompt": null,
     "extra_draws": "None; preserve all64fixed draws"
   },
-  "review": "Same-author explicit comparisons. Keep a captured negative only when the authored chosen reply is substantively better for character, relevance or coherence. Do not label merely different acceptable answers rejected. Publish excluded draws and reasons. Require at least8reviewed pairs across at least4prompt families before launching; otherwise reassess without fabricating failures.",
+  "review": "results/run19-pair-review.json",
   "training": {
     "fresh_rank": 4,
     "frozen_parent": "All existing SFT factors and quantized base",
@@ -36,5 +36,8 @@
   "evaluation": "Unchanged greedy20case development suite and essential gate for all3fixed exports; final/pressure only after development pass. No final or pressure answers in pair construction.",
   "attribution": "Offline DPO plus chosen-response NLL, not Zero GRPO-DAPO reproduction. Combined intervention; no single-variable causal claim.",
   "release": "No acceptance from loss, training completion or preference margin alone.",
-  "zero_delta_preflight": "Before any update, compare actual loaded SFT chosen/rejected total log probabilities on first3reviewed pairs against the zero fresh delta. Require every absolute difference<=1e-4. Save errors; refuse training on failure."
+  "zero_delta_preflight": "Before any update, compare actual loaded SFT chosen/rejected total log probabilities on first3reviewed pairs against the zero fresh delta. Require every absolute difference<=1e-4. Save errors; refuse training on failure.",
+  "selected_parent": "adapters/run18-step0400",
+  "selected_parent_sha256": "2f41ff810e7ef19afbe9e18b0572257a91c6df0b6e486787c2b00622fb0f1272",
+  "selection_evidence": "run17-step0600:17/20, one essential failure, CE2.7111; run18-step0200:16/20; step0400:17/20, one essential failure, CE2.6084; final:17/20, one essential failure, CE2.6293. Step0400 wins the declared CE tie-break."
 }

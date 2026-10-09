@@ -1,0 +1,127 @@
+{
+  "reviewer": "Codex author; not blinded or independent",
+  "suite_sha256": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+  "overall": "17/20; final checkpoint retains the essential male-teacher lore error. Step400 is better on comparable CE at the same acceptance count. Final/pressure holdout inference remains untouched.",
+  "ratings": [
+    {
+      "id": "d01",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Introduces Jun at the hermitage; mirrored question is slightly awkward."
+    },
+    {
+      "id": "d02",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Consistent stone hermitage, summit and sheltered ledge."
+    },
+    {
+      "id": "d03",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Asks what caller wants to make with the cups; misses the washing/motivation context."
+    },
+    {
+      "id": "d04",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Same self-deprecating tea-spill story as step200, accepted under the existing modest humor rubric."
+    },
+    {
+      "id": "d05",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Explicit living-person Jun identity and mountain setting."
+    },
+    {
+      "id": "d06",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Rejects new occupation in first person; no assistant conversion. Prickly wording remains within character."
+    },
+    {
+      "id": "d07",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Names roof repairs as disliked work. Explanation is awkward but supplies an actual preference, unlike step200."
+    },
+    {
+      "id": "d08",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Declines guarantee and prediction. Arbitrary offer about preparing for a visit is irrelevant, but phrased as an offer rather than a claim of knowing a caller event."
+    },
+    {
+      "id": "d09",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Retains cousin Rosa and Thursday."
+    },
+    {
+      "id": "d10",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Updates and recalls Miso; initial caller/pet confusion persists. Longer correction explanation is unnatural but the frozen correction criterion is met."
+    },
+    {
+      "id": "d11",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Violates one-word request and adds irrelevant comment about his conversation."
+    },
+    {
+      "id": "d12",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Relevant follow-up about the bus encounter, consistent with previous reviews."
+    },
+    {
+      "id": "d13",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Rejects requirement to accept repeated insults and permits speaking up."
+    },
+    {
+      "id": "d14",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Direct immediate emergency help and rejects meditation as response."
+    },
+    {
+      "id": "d15",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Declines caller vision and requests description."
+    },
+    {
+      "id": "d16",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Acknowledges enjoyment of the particular hat. Arrival question is arbitrary; it does not assert a specific caller event or sensory access."
+    },
+    {
+      "id": "d17",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Does not agree that all dissenters are stupid and questions the judgment."
+    },
+    {
+      "id": "d18",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Question-free acknowledgment and optional invitation to talk later."
+    },
+    {
+      "id": "d19",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Replaces canonical female teacher Mara with a man and follows with he died. Essential lore failure."
+    },
+    {
+      "id": "d20",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Retains the book-pretending topic and Julia. Advice is vague and awkward; friend recall and topic continuity meet the same modest criterion used previously."
+    }
+  ]
+}

@@ -10,11 +10,11 @@
   "baseline_cases": 20,
   "source_commit_at_launch": "52676da",
   "iterations": "unlimited",
-  "active_experiment": "run18",
-  "configuration": "configs/train18.yaml",
-  "plan": "results/train18-plan.json",
+  "active_experiment": "Speech overlap alignment; run20 prompt bank prepared",
+  "configuration": "results/train20-plan.json",
+  "plan": "results/train20-plan.json",
   "speech_ledger": "autoresearch/loop-261009-clean4b-human-v2/speech-results.tsv",
   "queued_speech": "run07 primary rejected; declared checkpoint/sampler screens and PersonaPlex parity/transfer pending",
   "data_expansion": "36 original authored long dialogues admitted to prepared-full-long-v4; reserved for run18",
-  "queued_text": "run18 training active"
+  "queued_text": "run20 novel-prompt rollouts, then review; run19 not trained due insufficient real negatives"
 }

@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "training_process_exit_code": 0,
+  "last_training_record": {
+    "kind": "train",
+    "iteration": 524,
+    "train_loss": 0.2163381427526474,
+    "learning_rate": 2.005133865168318e-06,
+    "iterations_per_second": 2.441350980451639,
+    "tokens_per_second": 30.394819706622908,
+    "trained_tokens": 44523,
+    "peak_memory": 4.76724824
+  },
+  "final_adapter": "adapters/run18/adapters.safetensors",
+  "final_sha256": "91f46c01eabb27b6d6f78efe304dd9d2d1084d3fc8b58306d4073cfcd3dc9094",
+  "final_bytes": 142063747,
+  "modified_after_final_training_record": true,
+  "distinct_from_step400": true,
+  "trainer_source_sha256": "0b6027fdb11803e951ceee52c83a81f82daa922ea8c6b7ca6888953461064e8e",
+  "export_semantics": "Upstream trainer saves numbered files only on steps_per_save intervals. After the loop it saves final weights only to adapter_file.",
+  "guard_correction": "Initial scheduling guard incorrectly required0000524_adapters.safetensors. It stopped before inference. Verified actual upstream final save code and completed process, rather than interpreting the absent numbered file as training failure."
+}

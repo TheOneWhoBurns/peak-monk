@@ -8,3 +8,5 @@ run17-final	2026-10-09	1340774	2.923321485519409	-0.969444751739502	fail	15/20 a
 run17-average300600	2026-10-09	cde49df	2.642300844192505	-1.2504653930664062	fail	15/20 author scored	discard	Exact learned-update average improves loss but control and coherence remain weak
 run18-step0200	2026-10-09	52676da	2.6212565898895264	-1.2715096473693846	fail	16/20 author scored	discard	Role conversion still fails; practical, chore and concision responses also weak; no holdout access
 run18-step0400	2026-10-09	52676da	2.608423948287964	-1.2843422889709473	fail	17/20 author scored	discard	Role conversion fixed in this probe, but canonical female teacher becomes a man; no holdout access
+run18-final	2026-10-09	52676da	2.6292951107025146	-1.2634711265563965	fail	17/20 author scored	discard	Essential female-teacher lore still fails; step400 retained only as preference parent under declared selection
+run19	2026-10-09	be113e6	NA	NA	not trained	1 eligible negative among64draws	discard data recipe	All32prompts already in SFT;63exact positive matches; required8pairs/4families not met

@@ -1,6 +1,6 @@
 {
   "experiment": "run18",
-  "status": "Training active; step200 reviewed and rejected for essential control failure",
+  "status": "Complete; steps200,400,final all rejected; step400 selected solely as experimental preference parent",
   "hypothesis": "Longer reciprocal dialogue plus token-normalized accumulation may improve coherence and identity persistence without more sharp fitting of short examples.",
   "parent": "adapters/run17-step0600",
   "parent_sha256": "8142d21b9a74ca9327f47c6ff8e64080d126e58a28b2bf42c9cf99c256dc8ab1",

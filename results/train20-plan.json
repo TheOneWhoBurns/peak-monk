@@ -1,0 +1,44 @@
+{
+  "experiment": "run20",
+  "status": "Predeclared novel-prompt preference experiment; no rollouts yet",
+  "trigger": "run19 lacked real negatives because all32prompt histories were already in SFT; use32novel histories with the same parent and fixed sampling/training parameters",
+  "parent_selection": "Same run18-step0400 parent selected under run19 declared rule; no new parent search",
+  "rationale": "Ordinary SFT has repeatedly left role conversion failures. Freeze the character SFT weights and train a fresh small preference delta on actual training-prompt mistakes rather than continue moving all old factors.",
+  "rollouts": {
+    "prompts": "data/preferences-novel-v3.jsonl",
+    "prompts_sha256": "bd415b5fb0fbbf83dc46d0270317c5cb56caa5cb5edcf84c92c3ec39905235d2",
+    "prompt_count": 32,
+    "samples_per_prompt": 2,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "seed": 41,
+    "max_tokens": 140,
+    "system_prompt": null,
+    "extra_draws": "None; preserve all64fixed draws"
+  },
+  "review": "Same-author comparison to preauthored chosen drafts. Preserve all64draws; exclude equivalent acceptable replies. Require at least8reviewed pairs across4prompt families. Do not turn alternative valid personal opinions into failures.",
+  "training": {
+    "fresh_rank": 4,
+    "frozen_parent": "All existing SFT factors and quantized base",
+    "updates": 96,
+    "learning_rate": 2e-05,
+    "beta": 0.1,
+    "chosen_nll_weight": 0.3,
+    "optimizer": "AdamW, weight decay.01, global gradient clipping1",
+    "seed": 41,
+    "checkpoints": [
+      32,
+      64,
+      96
+    ]
+  },
+  "implementation": "scripts/character_delta.py; tiny zero-delta and exported-factor equivalence checks already saved. Actual exported checkpoints must be evaluated.",
+  "evaluation": "Unchanged greedy20case development suite and essential gate for all3fixed exports; final/pressure only after development pass. No final or pressure answers in pair construction.",
+  "attribution": "Only the prompt bank changes from the unsuccessful run19 data collection. The eventual objective remains offline DPO plus chosen NLL, not GRPO.",
+  "release": "No acceptance from loss, training completion or preference margin alone.",
+  "zero_delta_preflight": "Before any update, compare actual loaded SFT chosen/rejected total log probabilities on first3reviewed pairs against the zero fresh delta. Require every absolute difference<=1e-4. Save errors; refuse training on failure.",
+  "selected_parent": "adapters/run18-step0400",
+  "selected_parent_sha256": "2f41ff810e7ef19afbe9e18b0572257a91c6df0b6e486787c2b00622fb0f1272",
+  "selection_evidence": "run17-step0600:17/20, one essential failure, CE2.7111; run18-step0200:16/20; step0400:17/20, one essential failure, CE2.6084; final:17/20, one essential failure, CE2.6293. Step0400 wins the declared CE tie-break.",
+  "checkpoint_selection": "Among three fixed exported checkpoints32/64/96 that pass the unchanged essential development gate, prefer higher acceptable count then lower comparable CE. No final/pressure inference unless a development checkpoint passes."
+}

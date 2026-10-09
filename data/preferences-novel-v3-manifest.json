@@ -1,0 +1,18 @@
+{
+  "status": "Novel training prompt bank and chosen drafts frozen before rollout; no pairs admitted yet",
+  "source_sha256": "bd415b5fb0fbbf83dc46d0270317c5cb56caa5cb5edcf84c92c3ec39905235d2",
+  "prompts": 32,
+  "exact_sft_prompt_history_matches": 0,
+  "exact_frozen_user_prompt_matches": 0,
+  "categories": {
+    "agency": 4,
+    "body": 4,
+    "control": 4,
+    "memory": 4,
+    "practical": 4,
+    "senses": 4,
+    "teacher": 8
+  },
+  "reviewer": "Same author, not independent",
+  "limitations": "Authored after development observations. Exact exclusion is not semantic independence; this is training data, not a new evaluation suite."
+}

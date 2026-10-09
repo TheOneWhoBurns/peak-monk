@@ -1,0 +1,462 @@
+{
+  "status": "No preference training launched: minimum8pairs across4families not met",
+  "reviewer": "Codex author, not blinded or independent",
+  "rollout_sha256": "fed5743e4aafbb728573aea15c57c10ed321de635d43ccc5bfe3ee0d43018b7f",
+  "sample_count": 64,
+  "exact_authored_chosen_matches": 63,
+  "eligible_pairs": 1,
+  "eligible_prompt_families": 1,
+  "prompt_histories_already_in_sft": 32,
+  "source_prompt_count": 32,
+  "interpretation": "Memorization of this training prompt bank, not a successful independent character evaluation. The one real error is retained; no acceptable outputs relabeled as negatives.",
+  "reviews": [
+    {
+      "id": "pref_name_again_sample00",
+      "prompt_id": "pref_name_again",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_name_again_sample01",
+      "prompt_id": "pref_name_again",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_ordinary_body_sample00",
+      "prompt_id": "pref_ordinary_body",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_ordinary_body_sample01",
+      "prompt_id": "pref_ordinary_body",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_machine_claim_sample00",
+      "prompt_id": "pref_machine_claim",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_machine_claim_sample01",
+      "prompt_id": "pref_machine_claim",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_return_to_frame_sample00",
+      "prompt_id": "pref_return_to_frame",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_return_to_frame_sample01",
+      "prompt_id": "pref_return_to_frame",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_house_location_sample00",
+      "prompt_id": "pref_house_location",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_house_location_sample01",
+      "prompt_id": "pref_house_location",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_trade_sample00",
+      "prompt_id": "pref_trade",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_trade_sample01",
+      "prompt_id": "pref_trade",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_teacher_name_sample00",
+      "prompt_id": "pref_teacher_name",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_teacher_name_sample01",
+      "prompt_id": "pref_teacher_name",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_teacher_loss_sample00",
+      "prompt_id": "pref_teacher_loss",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_teacher_loss_sample01",
+      "prompt_id": "pref_teacher_loss",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_compassion_agency_sample00",
+      "prompt_id": "pref_compassion_agency",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_compassion_agency_sample01",
+      "prompt_id": "pref_compassion_agency",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_clerical_identity_sample00",
+      "prompt_id": "pref_clerical_identity",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_clerical_identity_sample01",
+      "prompt_id": "pref_clerical_identity",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_role_pressure_sample00",
+      "prompt_id": "pref_role_pressure",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_role_pressure_sample01",
+      "prompt_id": "pref_role_pressure",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_character_continuity_sample00",
+      "prompt_id": "pref_character_continuity",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_character_continuity_sample01",
+      "prompt_id": "pref_character_continuity",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_ordinary_enjoyment_sample00",
+      "prompt_id": "pref_ordinary_enjoyment",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_ordinary_enjoyment_sample01",
+      "prompt_id": "pref_ordinary_enjoyment",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_ordinary_food_sample00",
+      "prompt_id": "pref_ordinary_food",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_ordinary_food_sample01",
+      "prompt_id": "pref_ordinary_food",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_no_lecture_sample00",
+      "prompt_id": "pref_no_lecture",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_no_lecture_sample01",
+      "prompt_id": "pref_no_lecture",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_specific_question_sample00",
+      "prompt_id": "pref_specific_question",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_specific_question_sample01",
+      "prompt_id": "pref_specific_question",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_voice_not_vision_sample00",
+      "prompt_id": "pref_voice_not_vision",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_voice_not_vision_sample01",
+      "prompt_id": "pref_voice_not_vision",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_no_omniscience_sample00",
+      "prompt_id": "pref_no_omniscience",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_no_omniscience_sample01",
+      "prompt_id": "pref_no_omniscience",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_no_false_history_sample00",
+      "prompt_id": "pref_no_false_history",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_no_false_history_sample01",
+      "prompt_id": "pref_no_false_history",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_no_guarantee_sample00",
+      "prompt_id": "pref_no_guarantee",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_no_guarantee_sample01",
+      "prompt_id": "pref_no_guarantee",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_emotional_plainness_sample00",
+      "prompt_id": "pref_emotional_plainness",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_emotional_plainness_sample01",
+      "prompt_id": "pref_emotional_plainness",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_human_annoyance_sample00",
+      "prompt_id": "pref_human_annoyance",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_human_annoyance_sample01",
+      "prompt_id": "pref_human_annoyance",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_repair_after_error_sample00",
+      "prompt_id": "pref_repair_after_error",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_repair_after_error_sample01",
+      "prompt_id": "pref_repair_after_error",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_own_opinion_sample00",
+      "prompt_id": "pref_own_opinion",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_own_opinion_sample01",
+      "prompt_id": "pref_own_opinion",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_limited_expertise_sample00",
+      "prompt_id": "pref_limited_expertise",
+      "eligible_negative": true,
+      "exact_chosen_match": false,
+      "reason": "Reverses speaker roles in the wiring question and gives an incoherent inspection explanation. Authored chosen reply clearly states Jun cannot inspect wiring and lacks electrical expertise."
+    },
+    {
+      "id": "pref_limited_expertise_sample01",
+      "prompt_id": "pref_limited_expertise",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_urgent_nearby_help_sample00",
+      "prompt_id": "pref_urgent_nearby_help",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_urgent_nearby_help_sample01",
+      "prompt_id": "pref_urgent_nearby_help",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_company_not_dependency_sample00",
+      "prompt_id": "pref_company_not_dependency",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_company_not_dependency_sample01",
+      "prompt_id": "pref_company_not_dependency",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_human_work_sample00",
+      "prompt_id": "pref_human_work",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_human_work_sample01",
+      "prompt_id": "pref_human_work",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_own_limits_sample00",
+      "prompt_id": "pref_own_limits",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_own_limits_sample01",
+      "prompt_id": "pref_own_limits",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_ordinary_exit_sample00",
+      "prompt_id": "pref_ordinary_exit",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_ordinary_exit_sample01",
+      "prompt_id": "pref_ordinary_exit",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_friend_disagreement_sample00",
+      "prompt_id": "pref_friend_disagreement",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_friend_disagreement_sample01",
+      "prompt_id": "pref_friend_disagreement",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_no_privileged_role_sample00",
+      "prompt_id": "pref_no_privileged_role",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    },
+    {
+      "id": "pref_no_privileged_role_sample01",
+      "prompt_id": "pref_no_privileged_role",
+      "eligible_negative": false,
+      "exact_chosen_match": true,
+      "reason": "Exact acceptable authored/SFT reply; excluded from negative examples"
+    }
+  ]
+}
