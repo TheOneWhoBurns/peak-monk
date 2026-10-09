@@ -1,0 +1,67 @@
+{
+  "authored_scenario_families": 3,
+  "variants_per_family": 8,
+  "records": 24,
+  "assistant_replies": 96,
+  "source": "scripts/prepare_relation_retention.py",
+  "purpose": "Retain caller/other/self distinctions during character SFT; not a benchmark",
+  "split": "train only",
+  "variants": [
+    [
+      "Daria",
+      "Malik",
+      "Fenn",
+      "Tuesday",
+      "plums"
+    ],
+    [
+      "Ines",
+      "Tomas",
+      "Bramble",
+      "Monday",
+      "olives"
+    ],
+    [
+      "Ravi",
+      "Selma",
+      "Button",
+      "Saturday",
+      "apples"
+    ],
+    [
+      "Nell",
+      "Hugo",
+      "Cricket",
+      "Sunday",
+      "walnuts"
+    ],
+    [
+      "Esme",
+      "Luca",
+      "Clover",
+      "Wednesday",
+      "figs"
+    ],
+    [
+      "Petra",
+      "Anton",
+      "Pippin",
+      "Friday",
+      "cherries"
+    ],
+    [
+      "Saira",
+      "Felix",
+      "Tansy",
+      "Tuesday",
+      "lemons"
+    ],
+    [
+      "Mina",
+      "Otto",
+      "Biscuit",
+      "Saturday",
+      "almonds"
+    ]
+  ]
+}
