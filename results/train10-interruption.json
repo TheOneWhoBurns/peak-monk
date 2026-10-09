@@ -1,0 +1,5 @@
+{
+  "status": "aborted",
+  "reason": "Corpus-wide scan found additional assistant/model disclosures outside the four explicit identity families. Stopped early before evaluation; preserve run10 corpus and logs; corrected corpus goes to run11.",
+  "replacement": "configs/train11.yaml"
+}
