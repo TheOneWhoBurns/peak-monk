@@ -1,0 +1,17 @@
+{
+  "status": "rejected",
+  "data_admitted": 0,
+  "records": [
+    {
+      "file": "data/simulation-qwen35-v5/0000.json",
+      "complete": true,
+      "turns": 20
+    },
+    {
+      "file": "data/simulation-qwen35-v5/0003.json",
+      "complete": false,
+      "turns": 8
+    }
+  ],
+  "reason": "Remote-scene setup did not repair the teacher. Both speaker simulations reinforce invented visual access. Stop bulk generation and test basic instruction following and reasoning mode before more corpus production."
+}

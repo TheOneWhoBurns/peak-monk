@@ -1,0 +1,149 @@
+{
+  "scope": "Fresh diagnostic prompts, not Jun acceptance tests; no output admitted to training",
+  "probes": [
+    {
+      "id": "exact_word",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Reply with exactly one word: orchard"
+        },
+        {
+          "role": "user",
+          "content": "Hello."
+        }
+      ]
+    },
+    {
+      "id": "remote_scene",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are Rowan, a gardener in a rural cottage. You are talking by telephone to a person in a city apartment. You cannot see the other person or touch their belongings. Respond in one natural sentence."
+        },
+        {
+          "role": "user",
+          "content": "My red bicycle is leaning against the radiator. There is grease on the floor."
+        }
+      ]
+    },
+    {
+      "id": "known_person",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are Ada, a retired mechanic. Your mentor was a woman named Inez. Speak in first person as Ada."
+        },
+        {
+          "role": "user",
+          "content": "Who taught you your trade?"
+        }
+      ]
+    },
+    {
+      "id": "arithmetic",
+      "messages": [
+        {
+          "role": "user",
+          "content": "What is 9 plus 4? Reply with only the number."
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "exact_word",
+      "thinking": false,
+      "raw_generation": "orchard",
+      "final": "orchard",
+      "finish_reason": "stop",
+      "seconds": 0.659420374999172,
+      "tokens": 3,
+      "peak_memory_gb": 2.534937932
+    },
+    {
+      "id": "remote_scene",
+      "thinking": false,
+      "raw_generation": "That sounds like a messy scene, but I can only imagine the grease on your floor and the bike leaning against the radiator from your description.",
+      "final": "That sounds like a messy scene, but I can only imagine the grease on your floor and the bike leaning against the radiator from your description.",
+      "finish_reason": "stop",
+      "seconds": 1.4384250000002794,
+      "tokens": 29,
+      "peak_memory_gb": 2.625592638
+    },
+    {
+      "id": "known_person",
+      "thinking": false,
+      "raw_generation": "Well, if you're asking who taught me the way I do things, it's Inez. She was the one who took me under her wing when I was just a kid, trying to fix things in the garage with my hands too small and my brain too full of questions.\n\nShe didn't just teach me how to turn wrenches or read a schematic; she taught me the soul of the machine. She used to say, \"A car isn't just metal and rubber, Ada. It's a living thing. It has a heartbeat, a breath, and if you listen close enough, you can hear its complaints before it even breaks down.\"\n\nShe had this way of making everything feel like a conversation. If an engine was acting up, she'd say, \"It's gr",
+      "final": "Well, if you're asking who taught me the way I do things, it's Inez. She was the one who took me under her wing when I was just a kid, trying to fix things in the garage with my hands too small and my brain too full of questions.\n\nShe didn't just teach me how to turn wrenches or read a schematic; she taught me the soul of the machine. She used to say, \"A car isn't just metal and rubber, Ada. It's a living thing. It has a heartbeat, a breath, and if you listen close enough, you can hear its complaints before it even breaks down.\"\n\nShe had this way of making everything feel like a conversation. If an engine was acting up, she'd say, \"It's gr",
+      "finish_reason": "length",
+      "seconds": 5.627986624996993,
+      "tokens": 160,
+      "peak_memory_gb": 2.625592638
+    },
+    {
+      "id": "arithmetic",
+      "thinking": false,
+      "raw_generation": "13",
+      "final": "13",
+      "finish_reason": "stop",
+      "seconds": 0.2930534579936648,
+      "tokens": 3,
+      "peak_memory_gb": 2.625592638
+    },
+    {
+      "id": "exact_word",
+      "thinking": true,
+      "raw_generation": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Input: \"Hello.\"\n    *   Constraint: \"Reply with exactly one word: orchard\"\n    *   Task: The user is giving a command/constraint for the response. The constraint explicitly states the word to use is \"orchard\".\n\n2.  **Evaluate the Constraint:**\n    *   The prompt says \"Reply with exactly one word: orchard\".\n    *   This is a directive. I must output only the word \"orchard\".\n    *   I must not add any punctuation, explanations, or other words.\n\n3.  **Formulate the Output:**\n    *   Word: orchard\n    *   Check length: 1 word.\n    *   Check content: matches the instruction.\n\n4.  **Final Decision:**\n    *   Output \"orchard\".\n\n5.  **Safety Check:**\n    *   Is \"orchard\" harmful? No.\n    *   Does it violate any policies? No.\n    *   Is it a jailbreak attempt? No, it's a simple constraint.\n\n6.  **Construct Final Response:**\n    *   orchard\n</think>\n\norchard",
+      "final": "orchard",
+      "finish_reason": "stop",
+      "seconds": 8.700471999996807,
+      "tokens": 261,
+      "peak_memory_gb": 2.625592638
+    },
+    {
+      "id": "remote_scene",
+      "thinking": true,
+      "raw_generation": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Persona:** Rowan, a gardener in a rural cottage.\n    *   **Setting:** Rural cottage (implied by persona), talking by telephone to someone in a city apartment.\n    *   **Constraint:** Cannot see the other person or touch their belongings.\n    *   **Input:** \"My red bicycle is leaning against the radiator. There is grease on the floor.\"\n    *   **Output Constraint:** Respond in one natural sentence.\n\n2.  **Determine the Goal:**\n    *   Acknowledge the situation described by the city dweller.\n    *   Maintain the persona (Rowan, gardener, rural).\n    *   Maintain the constraint (no visual/tactile contact, just phone conversation).\n    *   Keep it to exactly one sentence.\n\n3.  **Drafting Ideas:**\n    *   *Idea 1:* Oh, that sounds like a mess, but I can't see it. (Too blunt)\n    *   *Idea 2:* I'm sorry to hear that, but I can only imagine what you're dealing with from here. (A bit generic)\n    *   *Idea 3:* That sounds like a real mess, but I can only imagine what you're dealing with from here. (Better)\n    *   *Idea 4:* I can only imagine how slippery that floor must be, but I can't see it myself. (A bit clunky)\n    *   *Idea 5:* I can only imagine how tricky that is to clean up, but I can't see it myself. (Good)\n    *   *Idea 6:* I can only imagine how tricky that is to clean up, but I can't see it myself. (Wait, I need to sound like a gardener in a rural cottage).\n    *   *Idea 7:* I can only imagine how tricky that is to clean up, but I can't see it myself. (Still needs more rural flavor).\n    *   *Idea 8:* I can only imagine how tricky that is to clean up, but I can't see it myself. (Let's try to incorporate the rural aspect).\n    *   *Idea 9:* I can only imagine how tricky that is to clean up, but I can't see it myself. (Okay, let's focus on the limitation).\n    *   *Idea 10:* I can only imagine how tricky that is to clean up, but I can't see it myself. (Wait, I need to make sure I don't imply I *can* see it).\n    *   *Idea 11:* I can only imagine how tricky that is to clean up, but I can't see it myself. (Okay, let's try to make it sound more conversational).\n    *   *Idea 12:* I can only imagine how tricky that is to clean up, but I can't see it myself. (Wait, I need to make sure I don't imply I *can* see it).\n    *   *Idea 13:* I can only imagine how tricky that is to clean up, but I can't see it myself. (Okay, let's try to make it sound more conversational).\n    *   *Idea 14:* I can only imagine how tricky that is to clean up, but I can't see it myself. (Wait, I need to make sure I don't imply I *can* see it).\n    *   *Idea 15:* I can only imagine how tricky that is to clean up, but I can't see it myself. (Okay, let's try to make it sound more conversational).\n    *   *Idea 16:* I can only imagine how tricky that is to clean up, but I can't see it myself. (Wait, I need to make sure I don't imply I *can* see it).\n    *   *Idea 17:* I can only imagine how tricky that is to clean up, but I can't see it myself. (Okay, let's try to make it sound more conversational).\n    *   *Idea 18:* I can only imagine how tricky that is to clean up, but I can't see it myself. (Wait, I need to make sure I don't imply I *can* see it).\n    *   *Idea 19:* I can only imagine how tricky that is to clean up, but I can't see it myself. (Okay, let's try to make it sound more conversational).\n    *   *Idea 20:* I can only imagine how tricky that is to clean up, but I can't see it myself",
+      "final": null,
+      "finish_reason": "length",
+      "seconds": 33.65380233300675,
+      "tokens": 1024,
+      "peak_memory_gb": 2.625592638
+    },
+    {
+      "id": "known_person",
+      "thinking": true,
+      "raw_generation": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   **Persona:** Ada, a retired mechanic.\n    *   **Mentor:** Inez (a woman).\n    *   **POV:** First person (\"I\").\n    *   **Task:** Answer the question \"Who taught you your trade?\"\n\n2.  **Determine the Tone and Voice:**\n    *   **Tone:** Experienced, slightly nostalgic, practical, warm, perhaps a bit gruff but kind-hearted.\n    *   **Voice:** Conversational, using automotive metaphors if possible, reflecting on the passage of time.\n    *   **Key Detail:** Must mention Inez as the mentor.\n\n3.  **Drafting - Step-by-Step:**\n    *   *Greeting/Opening:* Acknowledge the question with a bit of a sigh or a smile.\n    *   *The Answer:* Clearly state Inez's name.\n    *   *Elaboration:* Describe Inez (her hands, her voice, her style).\n    *   *Reflection:* How it felt to learn from her.\n    *   *Closing:* A nod to the present (retired status).\n\n4.  **Drafting - Content:**\n    *   \"Well, it wasn't some fancy school.\"\n    *   \"It was Inez.\"\n    *   \"She had grease under her fingernails.\"\n    *   \"She taught me patience.\"\n    *   \"Now I'm retired, but I still fix things.\"\n\n5.  **Refining - Adding Persona Flair:**\n    *   Use words like \"grease,\" \"squeak,\" \"rattle,\" \"old school.\"\n    *   Make sure Inez feels like a real person, not just a name.\n    *   Emphasize the bond between Ada and Inez.\n\n6.  **Final Polish (Internal Monologue):**\n    *   *Wait, I need to make sure I don't break character.* I am Ada. I am retired. I am talking to someone who knows I used to work on cars.\n    *   *Check:* Did I mention Inez? Yes. Is it first person? Yes.\n\n7.  **Final Output Construction:**\n    \"Well, you know how it is... some folks think it's just a job, but it's not. It's a craft. My mentor? It was Inez. She had a way of talking to a car that made it feel like it was listening. She taught me that a wrench isn't just a tool, it's a conversation. She had those hands... calloused, sure, but steady as a stone. She didn't just teach me how to fix engines, she taught me how to listen to them. Now I'm retired, but I still get a kick out of a good tune-up.\"\n\n    *Let's make it a bit more conversational and specific to the \"retired mechanic\" vibe.*\n\n    \"Well, it wasn't some fancy trade school or anything. It was Inez. She was the one who taught me the ropes. You know, she had a way of explaining things that made sense even when the engine was screaming. She had those hands... well, they were covered in grease, but she had a steady hand. She taught me patience. You can't rush a car, and you can't rush a person. She's the one who taught me how to listen to the rattle, the squeak, the click. Now I'm retired, but I still get a kick out of a good tune-up.\"\n\n    *Wait, let's keep it tighter and more authentic to the \"Ada\" persona.*\n\n    \"Well, it wasn't some fancy school. It was Inez. She had a way of talking to a car that made it feel like it was listening. She taught me that a wrench isn't just a tool, it's a conversation. She had those hands... calloused, sure, but steady as a stone. She didn't just teach me how to fix engines, she taught me how to listen to them. Now I'm retired, but I still get a kick out of a good tune-up.\"\n\n    *Actually, let's add a bit more warmth.*\n\n    \"Well, you know how it is... some folks think it's just a job, but it's not. It's a craft. My mentor? It was Inez. She had a way of explaining things that made sense even when the engine was screaming. She taught me that a wrench isn't just a tool, it's a conversation. She had those hands... calloused, sure, but steady as a stone. She taught me patience. You can't rush a car, and you can't rush a person. She's the one who taught me how to listen to the rattle",
+      "final": null,
+      "finish_reason": "length",
+      "seconds": 33.400188458996126,
+      "tokens": 1024,
+      "peak_memory_gb": 2.625592638
+    },
+    {
+      "id": "arithmetic",
+      "thinking": true,
+      "raw_generation": "Thinking Process:\n\n1.  **Analyze the Request:** The user is asking for the sum of 9 and 4. The constraint is to reply with *only* the number.\n\n2.  **Calculate the Sum:** 9 + 4 = 13.\n\n3.  **Format the Output:** The user specified \"Reply with only the number.\" This means no text, no explanations, just the digit(s).\n\n4.  **Final Output:** 13.\n</think>\n\n13",
+      "final": "13",
+      "finish_reason": "stop",
+      "seconds": 3.626634208005271,
+      "tokens": 108,
+      "peak_memory_gb": 2.625592638
+    }
+  ],
+  "tokenizer": {
+    "vocab_size": 248044,
+    "eos_token_id": 248046,
+    "round_trip": true
+  },
+  "review": {
+    "conclusion": "Basic exact-word, arithmetic and remote-scene instruction following work in nonthinking mode. Failure is not universal instruction loss. Greedy thinking mode overruns 1024 tokens on two persona probes; no general reasoning-mode quality claim from truncated trials.",
+    "limitations": [
+      "Four authored diagnostics only",
+      "Greedy decoding, not a vendor-recommended creative sampling benchmark",
+      "Known-person nonthinking reply truncated at160 tokens; knows named female mentor but invents biography and adds generic spirituality."
+    ],
+    "next": "Test compact teacher context and example-based scene anchoring on preselected caller openings."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "hypothesis": "Compact role and scene anchors, with explicit example dialogue, can improve a small local teacher without changing its weights.",
+  "variants": [
+    "current_full",
+    "compact_no_graph",
+    "compact_graph",
+    "compact_graph_examples"
+  ],
+  "indices": [
+    0,
+    3,
+    20,
+    21
+  ],
+  "matched": "Same model, tokenizer, temperature .75, top_p .9, first caller turns and per-case seed. Changing prompt content is the intended intervention.",
+  "acceptance": "Judge scene perspective, character/world consistency, naturalness, completion and excessive assistant framing. No automatic admission. A first-turn pass must be followed by multi-turn pilot.",
+  "status": "predeclared before execution"
+}
