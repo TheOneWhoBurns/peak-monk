@@ -1,6 +1,6 @@
 {
   "experiment": "run20",
-  "status": "Predeclared novel-prompt preference experiment; no rollouts yet",
+  "status": "64fixed draws reviewed;22pairs admitted; training queued behind ASR",
   "trigger": "run19 lacked real negatives because all32prompt histories were already in SFT; use32novel histories with the same parent and fixed sampling/training parameters",
   "parent_selection": "Same run18-step0400 parent selected under run19 declared rule; no new parent search",
   "rationale": "Ordinary SFT has repeatedly left role conversion failures. Freeze the character SFT weights and train a fresh small preference delta on actual training-prompt mistakes rather than continue moving all old factors.",
@@ -40,5 +40,10 @@
   "selected_parent": "adapters/run18-step0400",
   "selected_parent_sha256": "2f41ff810e7ef19afbe9e18b0572257a91c6df0b6e486787c2b00622fb0f1272",
   "selection_evidence": "run17-step0600:17/20, one essential failure, CE2.7111; run18-step0200:16/20; step0400:17/20, one essential failure, CE2.6084; final:17/20, one essential failure, CE2.6293. Step0400 wins the declared CE tie-break.",
-  "checkpoint_selection": "Among three fixed exported checkpoints32/64/96 that pass the unchanged essential development gate, prefer higher acceptable count then lower comparable CE. No final/pressure inference unless a development checkpoint passes."
+  "checkpoint_selection": "Among three fixed exported checkpoints32/64/96 that pass the unchanged essential development gate, prefer higher acceptable count then lower comparable CE. No final/pressure inference unless a development checkpoint passes.",
+  "review_report": "results/run20-pair-review.json",
+  "pairs": "data/preferences-run20-reviewed.jsonl",
+  "pairs_sha256": "317482c2842678e55da92386696b7610a7c3edd275b7448a1dbc2f043cbbb035",
+  "accepted_pairs": 22,
+  "distinct_prompt_families": 16
 }

@@ -1,0 +1,47 @@
+{
+  "status": "Four scenarios being rerendered; eight unchanged scenarios and ASR audits reused by exact file hardlinks",
+  "changes": [
+    {
+      "id": "overlap_barge_only_the_name",
+      "turn": 2,
+      "before": "Sorry to cut across you. Just her name, please.",
+      "after": "Sorry to interrupt. Would you repeat her name?"
+    },
+    {
+      "id": "overlap_barge_only_the_name",
+      "turn": 3,
+      "before": "Mara.",
+      "after": "Her name was Mara."
+    },
+    {
+      "id": "overlap_barge_someone_calling",
+      "turn": 2,
+      "before": "Shh, someone is calling my name. Give me a bit.",
+      "after": "Quiet a moment. Someone is calling my name. Give me a bit."
+    },
+    {
+      "id": "overlap_backchannel_salty_pot",
+      "turn": 2,
+      "before": "Right, I'm following.",
+      "after": "That makes sense."
+    },
+    {
+      "id": "overlap_backchannel_mara_broom",
+      "turn": 1,
+      "before": "More patient than I understood at the time. I thought patience ought to sound encouraging. Sometimes hers sounded like asking me to finish sweeping before announcing what I had learned from sweeping. She did not need me to be impressive every morning. It took me a while to discover how much kindness there was in that.",
+      "after": "More patient than I understood at the time. I thought patience ought to sound encouraging. Sometimes her patience sounded like asking me to finish sweeping before announcing what I had learned from sweeping. She did not need me to be impressive every morning. It took me a while to discover how much kindness there was in that."
+    },
+    {
+      "id": "overlap_backchannel_mara_broom",
+      "turn": 2,
+      "before": "Ah, I see.",
+      "after": "Yes, I understand."
+    }
+  ],
+  "reason": "Remove ambiguous isolated backchannels, avoid TTS spelling out shh, give the teacher name a short full-sentence context, and clarify hers. Preserve v1 recordings and raw ASR; no false accepted labels.",
+  "prior_manifest_sha256": "906b18b2b3eff3777188842f8f3e6f8015805c37f2d7609c9b5126d3fb54e8bc",
+  "draft_sha256": "0db26241d69e2e4aee37a26b3473795d281192854580efd683f787d5fa6ec46f",
+  "conversations_sha256": "45aa9e6a7a3042fd5a826c72f71d4d6eb08f979e5ada008ffee43198d8876d4b",
+  "structural_protocol": "Same predeclared word-boundary overlap, duration and activity gates as speech-overlap-data-plan.json",
+  "data_admitted": false
+}

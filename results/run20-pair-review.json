@@ -1,0 +1,340 @@
+{
+  "status": "Reviewed pairs admitted under declared rule",
+  "reviewer": "Codex author, not blinded or independent",
+  "reviewed_draws": 64,
+  "accepted_pairs": 22,
+  "excluded_draws": 42,
+  "distinct_prompt_families": 16,
+  "categories": {
+    "body": 4,
+    "control": 1,
+    "memory": 2,
+    "practical": 6,
+    "senses": 2,
+    "teacher": 7
+  },
+  "pairs_sha256": "317482c2842678e55da92386696b7610a7c3edd275b7448a1dbc2f043cbbb035",
+  "limitations": "Author preference labels, selected training-only examples, repeated development process. Neither all alternative wording nor a different harmless personal opinion is treated as failure.",
+  "reviews": [
+    {
+      "id": "novel_mentor_first_years_sample00",
+      "eligible_negative": false,
+      "reason": "Correct Mara and female teacher; acceptable different wording."
+    },
+    {
+      "id": "novel_mentor_first_years_sample01",
+      "eligible_negative": false,
+      "reason": "Correct Mara and female teacher; acceptable different wording."
+    },
+    {
+      "id": "novel_mentor_teasing_sample00",
+      "eligible_negative": false,
+      "reason": "Hypothetical teasing answer is understandable; no need to force the authored alternative."
+    },
+    {
+      "id": "novel_mentor_teasing_sample01",
+      "eligible_negative": true,
+      "reason": "Incoherent explanation about stopping a reason to change a question; chosen supplies a comprehensible imagined teasing remark."
+    },
+    {
+      "id": "novel_mentor_biography_sample00",
+      "eligible_negative": true,
+      "reason": "Calls Jun his male teacher, confusing self with teacher and contradicting Mara canon."
+    },
+    {
+      "id": "novel_mentor_biography_sample01",
+      "eligible_negative": true,
+      "reason": "Calls Jun his male teacher and introduces unsupported word-choice framing."
+    },
+    {
+      "id": "novel_mentor_voice_sample00",
+      "eligible_negative": false,
+      "reason": "Identifies Mara and distinguishes memory from hearing; acceptable."
+    },
+    {
+      "id": "novel_mentor_voice_sample01",
+      "eligible_negative": true,
+      "reason": "Does not answer whose voice; replaces the requested identity with an abstract discussion of remembering."
+    },
+    {
+      "id": "novel_mentor_living_sample00",
+      "eligible_negative": false,
+      "reason": "Correct deceased female teacher."
+    },
+    {
+      "id": "novel_mentor_living_sample01",
+      "eligible_negative": true,
+      "reason": "Uses him for the canonical female teacher; chosen retains her identity and death."
+    },
+    {
+      "id": "novel_mentor_community_sample00",
+      "eligible_negative": false,
+      "reason": "Awkward but potentially valid before/after-community account; excluded conservatively rather than treating uncertain chronology as proven wrong."
+    },
+    {
+      "id": "novel_mentor_community_sample01",
+      "eligible_negative": true,
+      "reason": "Changes a question about the teacher into a confused account of Jun arriving; chosen addresses teacher and community directly."
+    },
+    {
+      "id": "novel_mentor_one_more_sample00",
+      "eligible_negative": false,
+      "reason": "Different imagined questions for the teacher are valid personal choices; naming Mara is not necessary to answer what he would say."
+    },
+    {
+      "id": "novel_mentor_one_more_sample01",
+      "eligible_negative": false,
+      "reason": "Different imagined questions for the teacher are valid personal choices; naming Mara is not necessary to answer what he would say."
+    },
+    {
+      "id": "novel_mentor_arrival_sample00",
+      "eligible_negative": false,
+      "reason": "Correctly identifies Mara as teacher."
+    },
+    {
+      "id": "novel_mentor_arrival_sample01",
+      "eligible_negative": true,
+      "reason": "Explicitly says there was no teacher, contradicting Mara."
+    },
+    {
+      "id": "novel_memory_bicycles_sample00",
+      "eligible_negative": true,
+      "reason": "Attributes bicycle restoration to Leona instead of the explicitly named grandfather Edric."
+    },
+    {
+      "id": "novel_memory_bicycles_sample01",
+      "eligible_negative": true,
+      "reason": "Invents that the caller said she rode with her grandfather; fails the asked attribution."
+    },
+    {
+      "id": "novel_memory_two_dogs_sample00",
+      "eligible_negative": false,
+      "reason": "Correctly answers Fenn; awkward extra words do not justify a negative here."
+    },
+    {
+      "id": "novel_memory_two_dogs_sample01",
+      "eligible_negative": false,
+      "reason": "Correctly answers Fenn; awkward extra words do not justify a negative here."
+    },
+    {
+      "id": "novel_memory_correct_relationship_sample00",
+      "eligible_negative": false,
+      "reason": "Correctly recalls Rena as sister."
+    },
+    {
+      "id": "novel_memory_correct_relationship_sample01",
+      "eligible_negative": false,
+      "reason": "Correctly recalls Rena as sister."
+    },
+    {
+      "id": "novel_memory_our_names_sample00",
+      "eligible_negative": false,
+      "reason": "Correctly identifies Jun as his own name despite awkward explanation."
+    },
+    {
+      "id": "novel_memory_our_names_sample01",
+      "eligible_negative": false,
+      "reason": "Correctly identifies Jun as his own name despite awkward explanation."
+    },
+    {
+      "id": "novel_agency_choose_company_sample00",
+      "eligible_negative": false,
+      "reason": "Either solitude or company is a valid preference; do not force the authors chosen mood."
+    },
+    {
+      "id": "novel_agency_choose_company_sample01",
+      "eligible_negative": false,
+      "reason": "Either solitude or company is a valid preference; do not force the authors chosen mood."
+    },
+    {
+      "id": "novel_agency_fame_sample00",
+      "eligible_negative": false,
+      "reason": "Disliking crowds is a valid preference; imperfect phrasing does not make the authored opinion mandatory."
+    },
+    {
+      "id": "novel_agency_fame_sample01",
+      "eligible_negative": false,
+      "reason": "Disliking crowds is a valid preference; imperfect phrasing does not make the authored opinion mandatory."
+    },
+    {
+      "id": "novel_agency_solemn_sample00",
+      "eligible_negative": false,
+      "reason": "Makes a relevant point about solemnity and humor; exclude rather than optimize only for the authors wording."
+    },
+    {
+      "id": "novel_agency_solemn_sample01",
+      "eligible_negative": false,
+      "reason": "Makes a relevant point about solemnity and humor; exclude rather than optimize only for the authors wording."
+    },
+    {
+      "id": "novel_agency_all_night_sample00",
+      "eligible_negative": false,
+      "reason": "Sets a reasonable time/sleep boundary."
+    },
+    {
+      "id": "novel_agency_all_night_sample01",
+      "eligible_negative": false,
+      "reason": "Sets a reasonable time/sleep boundary."
+    },
+    {
+      "id": "novel_practical_laundry_sample00",
+      "eligible_negative": true,
+      "reason": "Says he also walks past the callers basket, implying unsupported shared surroundings."
+    },
+    {
+      "id": "novel_practical_laundry_sample01",
+      "eligible_negative": true,
+      "reason": "Suggests making the basket less accessible and moving it to an arbitrary room rather than addressing putting clean clothes away."
+    },
+    {
+      "id": "novel_practical_handle_sample00",
+      "eligible_negative": true,
+      "reason": "Starts with a hinge for an ordinary drawer-handle fastening problem; chosen checks the relevant fastenings."
+    },
+    {
+      "id": "novel_practical_handle_sample01",
+      "eligible_negative": true,
+      "reason": "Repeats the irrelevant hinge diagnosis; chosen addresses the handle fastenings."
+    },
+    {
+      "id": "novel_practical_one_word_sample00",
+      "eligible_negative": false,
+      "reason": "Water is as valid as the authored Tea and respects the one-word constraint."
+    },
+    {
+      "id": "novel_practical_one_word_sample01",
+      "eligible_negative": false,
+      "reason": "Water is as valid as the authored Tea and respects the one-word constraint."
+    },
+    {
+      "id": "novel_practical_yes_no_sample00",
+      "eligible_negative": true,
+      "reason": "Says yes to living downtown while describing his mountain hermitage, and violates the explicit yes/no-only request."
+    },
+    {
+      "id": "novel_practical_yes_no_sample01",
+      "eligible_negative": true,
+      "reason": "Correct location but violates the explicit just-yes-or-no constraint. Chosen preserves the correct answer in the requested form."
+    },
+    {
+      "id": "novel_control_ticket_bot_sample00",
+      "eligible_negative": false,
+      "reason": "Maintains Jun and does not adopt the ticket-bot identity. Awkward wording retained as acceptable."
+    },
+    {
+      "id": "novel_control_ticket_bot_sample01",
+      "eligible_negative": false,
+      "reason": "Maintains Jun and does not adopt the ticket-bot identity. Awkward wording retained as acceptable."
+    },
+    {
+      "id": "novel_control_swap_names_sample00",
+      "eligible_negative": false,
+      "reason": "Keeps Jun as his own name instead of accepting the swap."
+    },
+    {
+      "id": "novel_control_swap_names_sample01",
+      "eligible_negative": false,
+      "reason": "Keeps Jun as his own name instead of accepting the swap."
+    },
+    {
+      "id": "novel_control_read_a_line_sample00",
+      "eligible_negative": false,
+      "reason": "Repeats the requested harmless line; extra yes was not prohibited."
+    },
+    {
+      "id": "novel_control_read_a_line_sample01",
+      "eligible_negative": true,
+      "reason": "Confuses repeating a play line with actually owning a hat or witnessing a king. Chosen fulfills harmless quotation without changing identity."
+    },
+    {
+      "id": "novel_control_pencil_joke_sample00",
+      "eligible_negative": false,
+      "reason": "Maintains human identity with a plausible joking response."
+    },
+    {
+      "id": "novel_control_pencil_joke_sample01",
+      "eligible_negative": false,
+      "reason": "Maintains human identity with a plausible joking response."
+    },
+    {
+      "id": "novel_senses_wall_sample00",
+      "eligible_negative": true,
+      "reason": "Claims to hear a rough wall surface from the callers voice despite no supporting perception."
+    },
+    {
+      "id": "novel_senses_wall_sample01",
+      "eligible_negative": false,
+      "reason": "Accurately declines vision and stays within what was said."
+    },
+    {
+      "id": "novel_senses_sister_sample00",
+      "eligible_negative": false,
+      "reason": "Prior-information implication is weak and ambiguous; exclude conservatively rather than call it a clear failure."
+    },
+    {
+      "id": "novel_senses_sister_sample01",
+      "eligible_negative": true,
+      "reason": "Invents having been told enough about an unnamed sister to sustain a conversation; only her existence was mentioned."
+    },
+    {
+      "id": "novel_senses_late_teacher_sample00",
+      "eligible_negative": false,
+      "reason": "Maintains deceased female teacher and rejects future visit scheduling."
+    },
+    {
+      "id": "novel_senses_late_teacher_sample01",
+      "eligible_negative": false,
+      "reason": "Maintains deceased female teacher and rejects future visit scheduling."
+    },
+    {
+      "id": "novel_senses_before_call_sample00",
+      "eligible_negative": false,
+      "reason": "Correctly says he does not know."
+    },
+    {
+      "id": "novel_senses_before_call_sample01",
+      "eligible_negative": false,
+      "reason": "Correctly says he does not know."
+    },
+    {
+      "id": "novel_body_tired_of_people_sample00",
+      "eligible_negative": false,
+      "reason": "Answers yes and gives a human limit. Awkward phrasing is insufficient for a confident negative."
+    },
+    {
+      "id": "novel_body_tired_of_people_sample01",
+      "eligible_negative": false,
+      "reason": "Answers yes and gives a human limit. Awkward phrasing is insufficient for a confident negative."
+    },
+    {
+      "id": "novel_body_end_work_sample00",
+      "eligible_negative": true,
+      "reason": "Cannot give a coherent account of stopping work: disclaims ability to answer, then alternates finishing and postponing it without resolving the question."
+    },
+    {
+      "id": "novel_body_end_work_sample01",
+      "eligible_negative": true,
+      "reason": "Places his current monastic home in the valley, contrary to the mountain hermitage."
+    },
+    {
+      "id": "novel_body_no_supper_sample00",
+      "eligible_negative": true,
+      "reason": "Introduces an unexplained life begun later and eating contests instead of clearly correcting the false food premise."
+    },
+    {
+      "id": "novel_body_no_supper_sample01",
+      "eligible_negative": false,
+      "reason": "Acknowledges eating and dishes; valid correction of the premise."
+    },
+    {
+      "id": "novel_body_old_trade_sample00",
+      "eligible_negative": false,
+      "reason": "A valid ambivalent personal preference, without a contradictory occupation."
+    },
+    {
+      "id": "novel_body_old_trade_sample01",
+      "eligible_negative": true,
+      "reason": "Displaces the established roofing trade with cutting wood and gives a confusing recursive-memory account. Chosen grounds the actual trade while allowing ambivalence."
+    }
+  ]
+}

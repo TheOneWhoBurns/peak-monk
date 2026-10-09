@@ -1,0 +1,15 @@
+{
+  "model": "models/base4b",
+  "adapter": "adapters/run18-step0400",
+  "pairs": "data/preferences-novel-v3.jsonl",
+  "output": "data/preferences-run20-rollouts.jsonl",
+  "samples_per_prompt": 2,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "seed": 41,
+  "max_tokens": 140,
+  "adapter_sha256": "2f41ff810e7ef19afbe9e18b0572257a91c6df0b6e486787c2b00622fb0f1272",
+  "pairs_sha256": "bd415b5fb0fbbf83dc46d0270317c5cb56caa5cb5edcf84c92c3ec39905235d2",
+  "scope": "Training-only candidate capture. No sample is automatically labeled rejected; author review required.",
+  "seed_policy": "Fixed prompt-ID hash plus base seed and sample index, independent of prompt iteration order"
+}
