@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "max_error_vs_mlx_cpu_dequantize": 0.0,
+  "rows": [
+    0,
+    4096,
+    8192
+  ],
+  "scope": "Affine INT4 sampled-weight decoder implementation check; no transfer-quality claim"
+}

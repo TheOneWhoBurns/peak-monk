@@ -1,0 +1,49 @@
+{
+  "scope": "Header and normalized configuration audit; no tensors loaded or inference performed",
+  "retained_key_count": 1247,
+  "moshi_key_count": 1247,
+  "missing_retained_keys": [],
+  "extra_retained_keys": [],
+  "shape_or_dtype_differences": [],
+  "unused_tail_tensor_bytes": 427496448,
+  "configuration_differences": [
+    {
+      "field": "depformer.num_slices",
+      "moshi": 8,
+      "personaplex": 16
+    },
+    {
+      "field": "depformer.transformer.dim_feedforward",
+      "moshi": 4096,
+      "personaplex": 4224
+    },
+    {
+      "field": "depformer.transformer.bias_attn",
+      "moshi": false,
+      "personaplex": null
+    },
+    {
+      "field": "depformer.weights_per_step_schedule",
+      "moshi": null,
+      "personaplex": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  ],
+  "mlp_explanation": "Moshi-MLX special-cases dim_feedforward=4*d to hidden=11*d/4. PersonaPlex depth FF4224 yields2*4224/3=2816, equal to Moshi11*1024/4. Always use pinned config and validate real trace parity; do not infer semantic adapter transfer from shape compatibility."
+}

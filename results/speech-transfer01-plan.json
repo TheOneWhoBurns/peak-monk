@@ -1,0 +1,23 @@
+{
+  "experiment": "speech-transfer01",
+  "status": "Predeclared pending real native memory/parity gate and completion of speech-run07",
+  "hypothesis": "A Jun task delta learned on Moshi may retain some character behavior on the closely aligned PersonaPlex derivative while benefiting from its conversational training.",
+  "evidence": "Retained1247tensor keys/shapes/dtypes match. Fixed-row cosine similarities .9953-.9983 across four matrices; not proof of behavioral transfer.",
+  "source_adapter": "The final minimum-validation-loss candidate from speech-run07, selected before seeing transfer outputs",
+  "scale": "Unchanged rank8/scale2 learned adapter; no coefficient search",
+  "target_model": "Mayank022/personaplex-edge-q4@9ef3ef71176182ce8570f970c5c592fd1bbf3e9b",
+  "target_sha256": "9840e8618cdff1b1251341c5970ea25c5288c794e470fc1f9087aba15967771f",
+  "conditioning": {
+    "voice": "NATM0",
+    "role_prompt": "",
+    "seed": 41
+  },
+  "evaluation": "Baseline and transferred candidate on the same six custom native development probes, decoded speech and unprompted ASR. Release requires actual character/overlap review; not merely mentioning Jun.",
+  "memory_gate": "scripts/probe_personaplex_agent_slices.py; require real emitted-token parity before releasing unused depth-tail weights",
+  "limitations": [
+    "Cross-base transfer can fail despite structural and sampled-weight alignment.",
+    "Voice prefill differs from the source training context; quality must be measured.",
+    "No direct PersonaPlex fine-tuning is claimed.",
+    "Repeated development experiments, not independent benchmark evidence."
+  ]
+}

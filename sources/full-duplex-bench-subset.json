@@ -1,0 +1,219 @@
+{
+  "status": "Eight fixed official cases downloaded, ZIP-CRC checked and SHA-fingerprinted; no inference or benchmark scores",
+  "selection": "First two lexical input.wav paths per complete archive directory; fixed before model inference",
+  "scope": "Eight-case convenience subset, not representative full-benchmark scores",
+  "source": "https://github.com/DanielLin94144/Full-Duplex-Bench",
+  "license_note": "Synthetic subsets MIT; natural Candor/ICC subsets CC BY-NC4 and upstream terms",
+  "archives": [
+    {
+      "name": "candor_turn_taking.zip",
+      "google_file_id": "1sb9mwOqDCK9BEpMb6fDVYOJU1vd5RFlb",
+      "archive_bytes": 37850555,
+      "total_inputs": 119,
+      "selected_inputs": [
+        "candor_turn_taking/1/input.wav",
+        "candor_turn_taking/10/input.wav"
+      ],
+      "etag": null,
+      "files": [
+        {
+          "source_member": "candor_turn_taking/1/turn_taking.json",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/candor_turn_taking/candor_turn_taking/1/turn_taking.json",
+          "bytes": 142,
+          "zip_crc32": 2094464540,
+          "sha256": "c8617679c6d2a8634ca5f041e135a73deaaf68b24a07f1d9afca6d73e68419d6"
+        },
+        {
+          "source_member": "candor_turn_taking/1/input.wav",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/candor_turn_taking/candor_turn_taking/1/input.wav",
+          "bytes": 697676,
+          "zip_crc32": 3136520587,
+          "sha256": "e52512b40f8011ecdb93e923f82b64ef04d9187c6f76c65a1f7ead7d2e1cc481"
+        },
+        {
+          "source_member": "candor_turn_taking/10/turn_taking.json",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/candor_turn_taking/candor_turn_taking/10/turn_taking.json",
+          "bytes": 142,
+          "zip_crc32": 2104007575,
+          "sha256": "7295a58896dfad4ffbc93320b8c36a52a025e3fb6204abfde1f1b0cf998fcee4"
+        },
+        {
+          "source_member": "candor_turn_taking/10/input.wav",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/candor_turn_taking/candor_turn_taking/10/input.wav",
+          "bytes": 614480,
+          "zip_crc32": 3558208799,
+          "sha256": "3d1a920c6ca9fda470c38dda672b61da326407d6a65eb4be2211298ec80be718"
+        }
+      ],
+      "downloaded_range_bytes": 386354
+    },
+    {
+      "name": "icc_backchannel.zip",
+      "google_file_id": "1HttNZbi0bYHe7a-CO_9vg_z7hMM8a5h0",
+      "archive_bytes": 112509001,
+      "total_inputs": 55,
+      "selected_inputs": [
+        "icc_backchannel/0/input.wav",
+        "icc_backchannel/1/input.wav"
+      ],
+      "etag": null,
+      "files": [
+        {
+          "source_member": "icc_backchannel/0/input.wav",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/icc_backchannel/icc_backchannel/0/input.wav",
+          "bytes": 2107470,
+          "zip_crc32": 2786987499,
+          "sha256": "3f12291b7073d463b9a3717f18a690a8fa09f575ed1f299973784dd0f91033ac"
+        },
+        {
+          "source_member": "icc_backchannel/0/transcription.json",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/icc_backchannel/icc_backchannel/0/transcription.json",
+          "bytes": 3809,
+          "zip_crc32": 1641049537,
+          "sha256": "94ee6ae48274df5f9c4a33fc3d97d82c1d65c886b46f1c73e3f89cce1756e326"
+        },
+        {
+          "source_member": "icc_backchannel/1/input.wav",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/icc_backchannel/icc_backchannel/1/input.wav",
+          "bytes": 2637296,
+          "zip_crc32": 1281015964,
+          "sha256": "a15fce865e69f6ce57864e07dfce0e286ff7f3fc4fe31e2ae69e8618a6a238f0"
+        },
+        {
+          "source_member": "icc_backchannel/1/transcription.json",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/icc_backchannel/icc_backchannel/1/transcription.json",
+          "bytes": 5095,
+          "zip_crc32": 1990584267,
+          "sha256": "f9ca0650038076dc9c760d89d2a67992c3fcb99f1560ca477814e6f6d620151b"
+        }
+      ],
+      "downloaded_range_bytes": 3064177
+    },
+    {
+      "name": "synthetic_pause_handling.zip",
+      "google_file_id": "1iV0X6z3Z9SrmJvxJ2Hkij3nb8iuWbJyv",
+      "archive_bytes": 107106287,
+      "total_inputs": 137,
+      "selected_inputs": [
+        "synthetic_pause_handling/1/input.wav",
+        "synthetic_pause_handling/10/input.wav"
+      ],
+      "etag": null,
+      "files": [
+        {
+          "source_member": "synthetic_pause_handling/1/input.wav",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/synthetic_pause_handling/synthetic_pause_handling/1/input.wav",
+          "bytes": 722000,
+          "zip_crc32": 2474242074,
+          "sha256": "34f12900cebed60812c858a8b123132973612bcba7d652afbb69c4b6909e33fc"
+        },
+        {
+          "source_member": "synthetic_pause_handling/1/transcription.json",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/synthetic_pause_handling/synthetic_pause_handling/1/transcription.json",
+          "bytes": 1219,
+          "zip_crc32": 523727943,
+          "sha256": "f927982ce3a4531b2c831e8cd19eafead99ee6328a3a99bd6d694a173bfa5dba"
+        },
+        {
+          "source_member": "synthetic_pause_handling/1/pause.json",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/synthetic_pause_handling/synthetic_pause_handling/1/pause.json",
+          "bytes": 61,
+          "zip_crc32": 55477305,
+          "sha256": "9143e3ef7ccfcfbff53dd763c07dfb8e93643e2a82002bb1f407c352a8fa78f9"
+        },
+        {
+          "source_member": "synthetic_pause_handling/10/input.wav",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/synthetic_pause_handling/synthetic_pause_handling/10/input.wav",
+          "bytes": 851024,
+          "zip_crc32": 1258576458,
+          "sha256": "9b114077e670f91656b77191f7cc99e332a34d9da9f2b3b1363161692c2464d5"
+        },
+        {
+          "source_member": "synthetic_pause_handling/10/transcription.json",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/synthetic_pause_handling/synthetic_pause_handling/10/transcription.json",
+          "bytes": 1366,
+          "zip_crc32": 3426480805,
+          "sha256": "18903fb8a5c10abb9ada7bc1cea4ca8f2e27e1080f8e8e709cdb2679595b3685"
+        },
+        {
+          "source_member": "synthetic_pause_handling/10/pause.json",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/synthetic_pause_handling/synthetic_pause_handling/10/pause.json",
+          "bytes": 61,
+          "zip_crc32": 2006366420,
+          "sha256": "e9c331ede16aa17a980ce4479d48d894315758573a9de3f93ded4847fb7f6848"
+        }
+      ],
+      "downloaded_range_bytes": 1611147
+    },
+    {
+      "name": "synthetic_user_interruption.zip",
+      "google_file_id": "1I36wGbPtZObjqI_1h11Rb2s1ulerb65a",
+      "archive_bytes": 152934381,
+      "total_inputs": 200,
+      "selected_inputs": [
+        "synthetic_user_interruption/1/input.wav",
+        "synthetic_user_interruption/10/input.wav"
+      ],
+      "etag": null,
+      "files": [
+        {
+          "source_member": "synthetic_user_interruption/1/input.wav",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/synthetic_user_interruption/synthetic_user_interruption/1/input.wav",
+          "bytes": 1323308,
+          "zip_crc32": 4201418102,
+          "sha256": "75b561dada4bd7d57720546c6bf9d0fc6fb458f8a727fcb3aaece62408b6eeb8"
+        },
+        {
+          "source_member": "synthetic_user_interruption/1/interrupt.json",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/synthetic_user_interruption/synthetic_user_interruption/1/interrupt.json",
+          "bytes": 167,
+          "zip_crc32": 2850367752,
+          "sha256": "a11929cf89dc55c0baee926e3d979aaba0af44acab19e5d766049136a39e71c4"
+        },
+        {
+          "source_member": "synthetic_user_interruption/1/interrupt.wav",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/synthetic_user_interruption/synthetic_user_interruption/1/interrupt.wav",
+          "bytes": 283728,
+          "zip_crc32": 901698555,
+          "sha256": "1419c4c941a87969ebd6ca48c456c63ecc1c6c159ff4cf7dad0d61aab0878150"
+        },
+        {
+          "source_member": "synthetic_user_interruption/1/context.wav",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/synthetic_user_interruption/synthetic_user_interruption/1/context.wav",
+          "bytes": 250960,
+          "zip_crc32": 4137353933,
+          "sha256": "c1e1fe838c7cc2d8211b94d00a035a13408e92c54e389d89e78e2c47843ce023"
+        },
+        {
+          "source_member": "synthetic_user_interruption/10/input.wav",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/synthetic_user_interruption/synthetic_user_interruption/10/input.wav",
+          "bytes": 1294636,
+          "zip_crc32": 2826743713,
+          "sha256": "f20f5bb4a4c55eceb1631e0cddb14e956ab94b076a1e3bb993998e9c800cbfe8"
+        },
+        {
+          "source_member": "synthetic_user_interruption/10/interrupt.json",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/synthetic_user_interruption/synthetic_user_interruption/10/interrupt.json",
+          "bytes": 169,
+          "zip_crc32": 1175692303,
+          "sha256": "e7573c8773567f2939d4dddc1225fe07a57f9201b072d132bde878c3af3ca369"
+        },
+        {
+          "source_member": "synthetic_user_interruption/10/interrupt.wav",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/synthetic_user_interruption/synthetic_user_interruption/10/interrupt.wav",
+          "bytes": 263248,
+          "zip_crc32": 2717036471,
+          "sha256": "a5da87dd04b1da8fd12b3a6cad7ca835daaf372a961ef4c8cd9959d5d99e9356"
+        },
+        {
+          "source_member": "synthetic_user_interruption/10/context.wav",
+          "local_path": "evaluation/full-duplex-bench-v1-subset/synthetic_user_interruption/synthetic_user_interruption/10/context.wav",
+          "bytes": 214096,
+          "zip_crc32": 4027370370,
+          "sha256": "1cd66fe07360f61ab380f895794be7f80861822704e7971653ac1e04805c3fc4"
+        }
+      ],
+      "downloaded_range_bytes": 1572581
+    }
+  ]
+}

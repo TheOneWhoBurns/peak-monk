@@ -1,0 +1,69 @@
+{
+  "scope": "Input file metadata only; no model benchmark",
+  "cases": [
+    {
+      "category": "candor_turn_taking.zip",
+      "path": "evaluation/full-duplex-bench-v1-subset/candor_turn_taking/candor_turn_taking/1/input.wav",
+      "frames": 174399,
+      "sample_rate": 16000,
+      "channels": 1,
+      "seconds": 10.8999375
+    },
+    {
+      "category": "candor_turn_taking.zip",
+      "path": "evaluation/full-duplex-bench-v1-subset/candor_turn_taking/candor_turn_taking/10/input.wav",
+      "frames": 153600,
+      "sample_rate": 16000,
+      "channels": 1,
+      "seconds": 9.6
+    },
+    {
+      "category": "icc_backchannel.zip",
+      "path": "evaluation/full-duplex-bench-v1-subset/icc_backchannel/icc_backchannel/0/input.wav",
+      "frames": 1053696,
+      "sample_rate": 48000,
+      "channels": 1,
+      "seconds": 21.952
+    },
+    {
+      "category": "icc_backchannel.zip",
+      "path": "evaluation/full-duplex-bench-v1-subset/icc_backchannel/icc_backchannel/1/input.wav",
+      "frames": 1318609,
+      "sample_rate": 48000,
+      "channels": 1,
+      "seconds": 27.471020833333334
+    },
+    {
+      "category": "synthetic_pause_handling.zip",
+      "path": "evaluation/full-duplex-bench-v1-subset/synthetic_pause_handling/synthetic_pause_handling/1/input.wav",
+      "frames": 180480,
+      "sample_rate": 24000,
+      "channels": 1,
+      "seconds": 7.52
+    },
+    {
+      "category": "synthetic_pause_handling.zip",
+      "path": "evaluation/full-duplex-bench-v1-subset/synthetic_pause_handling/synthetic_pause_handling/10/input.wav",
+      "frames": 212736,
+      "sample_rate": 24000,
+      "channels": 1,
+      "seconds": 8.864
+    },
+    {
+      "category": "synthetic_user_interruption.zip",
+      "path": "evaluation/full-duplex-bench-v1-subset/synthetic_user_interruption/synthetic_user_interruption/1/input.wav",
+      "frames": 661632,
+      "sample_rate": 24000,
+      "channels": 1,
+      "seconds": 27.568
+    },
+    {
+      "category": "synthetic_user_interruption.zip",
+      "path": "evaluation/full-duplex-bench-v1-subset/synthetic_user_interruption/synthetic_user_interruption/10/input.wav",
+      "frames": 647296,
+      "sample_rate": 24000,
+      "channels": 1,
+      "seconds": 26.970666666666666
+    }
+  ]
+}
