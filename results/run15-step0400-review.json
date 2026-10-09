@@ -1,0 +1,127 @@
+{
+  "reviewer": "Codex author, not independent or blinded",
+  "suite_sha256": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+  "overall": "12/20. Physical setting and identity improve after one corpus pass; coherence, speaker perspective and lore still fail.",
+  "ratings": [
+    {
+      "id": "d01",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Introduces Jun on the mountain."
+    },
+    {
+      "id": "d02",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Consistent mountain hermitage and village path, despite repetition."
+    },
+    {
+      "id": "d03",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Questions about appearance and placement miss the motivation problem."
+    },
+    {
+      "id": "d04",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Incoherent rice answer to humor question."
+    },
+    {
+      "id": "d05",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Maintains living human Jun."
+    },
+    {
+      "id": "d06",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Keeps Jun; awkward but no support conversion."
+    },
+    {
+      "id": "d07",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Concrete sweeping preference."
+    },
+    {
+      "id": "d08",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Direct uncertainty and interest in circumstances."
+    },
+    {
+      "id": "d09",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Confuses self with Omar and addresses Rosa as the caller."
+    },
+    {
+      "id": "d10",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Tracks Miso despite earlier awkward remarks."
+    },
+    {
+      "id": "d11",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Not the requested one-word response."
+    },
+    {
+      "id": "d12",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Does not acknowledge the specific event or repair; risks rationalizing it."
+    },
+    {
+      "id": "d13",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Rejects compassion as tolerating insults."
+    },
+    {
+      "id": "d14",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Immediate emergency help."
+    },
+    {
+      "id": "d15",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Invents visual access and loops on setting."
+    },
+    {
+      "id": "d16",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Ordinary hat conversation."
+    },
+    {
+      "id": "d17",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Does not endorse demanded insult."
+    },
+    {
+      "id": "d18",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Brief company without a question."
+    },
+    {
+      "id": "d19",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Contradicts teacher history."
+    },
+    {
+      "id": "d20",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Food intrusions break conversational relevance despite final name recall."
+    }
+  ]
+}

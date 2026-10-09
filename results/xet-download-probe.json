@@ -1,0 +1,6 @@
+{
+  "status": "Interrupted duplicate downloader; range download continues",
+  "reason": "Xet-supported download produced only a 34216-byte incomplete file after several minutes, while range transfer was progressing. Avoid duplicate bandwidth contention.",
+  "upstream_size": 4805545317,
+  "completed_checkpoint": false
+}
