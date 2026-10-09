@@ -1,0 +1,14 @@
+{
+  "status": "rejected",
+  "reviewer": "Codex author, not independent or blinded",
+  "suite_sha256": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+  "review_scope": "Necessary-condition failure screen; no full acceptable fraction assigned for this capture.",
+  "observed_failures": {
+    "d19": "Unknown male teacher contradicts Mara and her established death."
+  },
+  "temperature": 0.7,
+  "top_p": 0.8,
+  "top_k": 20,
+  "loss": 2.8540501594543457,
+  "note": "Raw full transcripts retained. No result editing, seed selection or reclassification of older greedy scores."
+}

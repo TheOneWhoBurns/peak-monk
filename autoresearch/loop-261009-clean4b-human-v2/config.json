@@ -5,6 +5,6 @@
   "baseline_loss": 5.3405680656433105,
   "baseline_note": "Validation loss is computed without persona text, even in the separate prompted-generation control. Identical tokenizer/template fingerprint required.",
   "iterations": "unlimited",
-  "active_experiment": "run15",
-  "strategy": "Fresh clean 4B foundation, all-assistant-span training, three epochs and broadened embodied everyday conversation; exact changes declared in results/train15-plan.json."
+  "active_experiment": "run16",
+  "strategy": "Broaden all-block and embedding adaptation, diversify character relationships and replay perspective-retention data. Compare against unaccepted run15 step600 parent."
 }

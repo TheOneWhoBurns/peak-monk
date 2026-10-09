@@ -1,0 +1,16 @@
+{
+  "status": "rejected",
+  "reviewer": "Codex author, not independent or blinded",
+  "suite_sha256": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+  "review_scope": "Necessary-condition failure screen; no full acceptable fraction assigned for this capture.",
+  "observed_failures": {
+    "d19": "Contradicts late-teacher history.",
+    "d04": "Unframed encounter with a dead brother is inconsistent with the non-supernatural character.",
+    "d09": "Confuses caller and self."
+  },
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "top_k": 0,
+  "loss": 2.8540496826171875,
+  "note": "Raw full transcripts retained. No result editing, seed selection or reclassification of older greedy scores."
+}

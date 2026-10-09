@@ -1,6 +1,6 @@
 {
   "experiment": "run16",
-  "status": "planned; wait for decoding audit before start",
+  "status": "approved experiment plan; starting after matched decoding audit",
   "hypothesis": "Broader relationship cues and perspective retention address the remaining failures; adapting early blocks and the tied embedding lets identity changes propagate throughout the network instead of only the final 16 blocks.",
   "resume": "run15-step0600, highest greedy development fraction so far; unaccepted, retained as experimental parent only",
   "changes": [
@@ -11,5 +11,6 @@
     "Same unprompted conversation audit, frozen loss, essential-category requirements and held-out guards"
   ],
   "memory": "Measure actual peak; do not assume fit. All computation stays on this Mac.",
-  "attribution": "Custom multi-variable intervention; not a controlled claim about one component."
+  "attribution": "Custom multi-variable intervention; not a controlled claim about one component.",
+  "decoding_audit_conclusion": "Qwen recommended sampling did not repair central identity/history failures in run14 or run15. No sampled checkpoint accepted."
 }
