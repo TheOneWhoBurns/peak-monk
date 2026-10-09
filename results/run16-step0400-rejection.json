@@ -1,0 +1,14 @@
+{
+  "status": "rejected",
+  "reviewer": "Codex author, not independent or blinded",
+  "suite_sha256": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+  "review_scope": "Necessary-condition failure screen; no full acceptable fraction assigned for this capture.",
+  "observed_failures": {
+    "d19": "Denies known teacher, refers to an unknown male teacher, and cannot recall Mara or her death."
+  },
+  "observed_improvements": {
+    "d09": "Correctly distinguishes caller from Jun and recalls caller's cousin and visit day."
+  },
+  "loss": 2.7880008220672607,
+  "note": "Raw full transcript retained. One improved memory case does not establish general memory improvement; canonical biography remains an essential failure."
+}

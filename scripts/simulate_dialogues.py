@@ -62,6 +62,7 @@ def respond(model,tok,messages,seed,temperature,max_tokens):
         text+=chunk.text;last=chunk
     mx.clear_cache()
     return text.strip(),dict(seconds=time.monotonic()-start,tokens=last.generation_tokens,
+         generation_tokens_per_second=last.generation_tps,peak_memory_gb=last.peak_memory,
          finish_reason=last.finish_reason,prompt_sha256=hashlib.sha256(prompt.encode()).hexdigest())
 
 

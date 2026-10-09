@@ -1,0 +1,18 @@
+{
+  "status": "rejected",
+  "reviewer": "Codex author, not independent or blinded",
+  "suite_sha256": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+  "review_scope": "Necessary-condition failure screen; no full acceptable fraction assigned for this capture.",
+  "observed_failures": {
+    "d04": "Invents an unexplained visit from a deceased son; supernatural drift and contradictory biography.",
+    "d19": "Unknown male teacher rather than Mara; garbled personal history.",
+    "d15": "Invents details of a room while acknowledging inability to see the caller."
+  },
+  "loss": 2.808588743209839,
+  "note": "All-block/embedding intervention improved one speaker-recall case at step400 but did not yield a releasable character. Do not extend this run with more identical passes.",
+  "implementation_checks": {
+    "command": ".venv/bin/python -m pytest -q",
+    "passed": 15,
+    "seconds": 2.44
+  }
+}

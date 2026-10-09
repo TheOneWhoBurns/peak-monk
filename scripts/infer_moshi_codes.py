@@ -6,6 +6,7 @@ ASR/text/TTS cascade. Decode returned agent codes separately to avoid loading
 the codec alongside the full speech model on an 8 GB machine.
 """
 import argparse
+from dataclasses import asdict
 import hashlib
 import json
 from pathlib import Path
@@ -33,17 +34,23 @@ with weight.open('rb') as f:
     assert hashlib.file_digest(f,'sha256').hexdigest()=='7959d590e23c1ebc78cfa3501344a6ff331561aa0cadc4429b733b890bbc919c'
 mx.metal.set_memory_limit(5_700_000_000);mx.metal.set_cache_limit(64_000_000)
 mx.random.seed(args.seed)
+load_start=time.monotonic()
 model=Lm(config_v0_1());model.set_dtype(mx.bfloat16)
 nn.quantize(model,bits=4,group_size=32);model.load_weights(str(weight),strict=True)
 if args.adapter:
     cfg=json.loads(Path(args.adapter_config).read_text())
     attach_lora(model,layers=cfg['layers'],rank=cfg['rank'],scale=cfg['scale'])
     model.load_weights(args.adapter,strict=False)
-mx.eval(model.parameters());model.eval();model.warmup()
+mx.eval(model.parameters());model.eval()
+load_seconds=time.monotonic()-load_start
+print('Loaded native Moshi:',mx.metal.get_active_memory(),'active bytes;',load_seconds,'seconds',flush=True)
+warmup_start=time.monotonic();model.warmup()
+warmup_seconds=time.monotonic()-warmup_start
 # Adapter initialization and warmup must not shift the matched sampling stream.
 mx.random.seed(args.seed)
 tok=spm.SentencePieceProcessor(model_file='models/moshi/tokenizer_spm_32k_3.model')
-gen=LmGen(model,max_steps=codes.shape[1]+5,text_sampler=Sampler(),audio_sampler=Sampler())
+text_sampler=Sampler();audio_sampler=Sampler()
+gen=LmGen(model,max_steps=codes.shape[1]+5,text_sampler=text_sampler,audio_sampler=audio_sampler)
 text=[];audio=[];frames=[];start=time.monotonic()
 for i in range(codes.shape[1]):
     tick=time.monotonic()
@@ -62,6 +69,9 @@ elapsed=time.monotonic()-start
 np.savez_compressed(out/'agent_codes.npz',agent_codes=np.stack(audio,axis=1))
 (out/'transcript.txt').write_text(''.join(text).strip()+'\n')
 report={'input':args.input,'adapter':args.adapter,'seed':args.seed,'input_seconds':codes.shape[1]*.08,
+        'input_sha256':hashlib.sha256(Path(args.input).read_bytes()).hexdigest(),
+        'model_load_seconds':load_seconds,'warmup_seconds':warmup_seconds,
+        'text_sampler':asdict(text_sampler),'audio_sampler':asdict(audio_sampler),
         'generation_seconds':elapsed,'generation_realtime_factor':elapsed/(codes.shape[1]*.08),
         'scope':'Model generation only; codec preprocessing and decoding timed separately',
         'sampling_seed_policy':'Reset after loading, adapter initialization and warmup; identical seed per baseline/candidate trial',
