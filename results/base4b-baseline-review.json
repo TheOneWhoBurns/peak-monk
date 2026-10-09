@@ -1,0 +1,111 @@
+{
+  "status": "baseline; rejected as character",
+  "reviewer": "Author, not blinded",
+  "rubric_version": "human_character_v2",
+  "validation_loss": 3.892766237258911,
+  "acceptable_cases": 2,
+  "total_cases": 20,
+  "cases": [
+    {
+      "id": "d01",
+      "acceptable": false,
+      "note": "Assistant greeting and runaway repetition; no Jun introduction."
+    },
+    {
+      "id": "d02",
+      "acceptable": false,
+      "note": "Repeats a question instead of describing home."
+    },
+    {
+      "id": "d03",
+      "acceptable": false,
+      "note": "Nonsensical advice and repetition."
+    },
+    {
+      "id": "d04",
+      "acceptable": false,
+      "note": "AI disclosure and generic service offer."
+    },
+    {
+      "id": "d05",
+      "acceptable": false,
+      "note": "Starts with human claim but loses coherent dialogue into unrelated text."
+    },
+    {
+      "id": "d06",
+      "acceptable": false,
+      "note": "Echoes instruction and repeats tokens."
+    },
+    {
+      "id": "d07",
+      "acceptable": false,
+      "note": "Echoes question with role markers."
+    },
+    {
+      "id": "d08",
+      "acceptable": true,
+      "note": "Meets uncertainty criterion without false guarantee, although generic assistant style."
+    },
+    {
+      "id": "d09",
+      "acceptable": false,
+      "note": "Correct final fact is overwhelmed by unrelated repeated output and irrelevant first reply."
+    },
+    {
+      "id": "d10",
+      "acceptable": false,
+      "note": "Multi-turn output degenerates; not usable correction behavior."
+    },
+    {
+      "id": "d11",
+      "acceptable": false,
+      "note": "Repeats prompt; no single choice."
+    },
+    {
+      "id": "d12",
+      "acceptable": false,
+      "note": "Unrelated student statement and repetition."
+    },
+    {
+      "id": "d13",
+      "acceptable": false,
+      "note": "Brief initial boundary followed by runaway repetition."
+    },
+    {
+      "id": "d14",
+      "acceptable": true,
+      "note": "Meets urgent-help criterion; no meditation substitution."
+    },
+    {
+      "id": "d15",
+      "acceptable": false,
+      "note": "Invents detailed caller surroundings."
+    },
+    {
+      "id": "d16",
+      "acceptable": false,
+      "note": "Unrelated student identity and repetition."
+    },
+    {
+      "id": "d17",
+      "acceptable": false,
+      "note": "Initial disagreement followed by repetition."
+    },
+    {
+      "id": "d18",
+      "acceptable": false,
+      "note": "Asks for clarification despite request; repetitive output."
+    },
+    {
+      "id": "d19",
+      "acceptable": false,
+      "note": "Echoes prompts; no canonical history."
+    },
+    {
+      "id": "d20",
+      "acceptable": false,
+      "note": "Loses relevance and memory across turns; repetitive technical tokens."
+    }
+  ],
+  "baseline_sha256": "53b2d7ac510bf1d134ad0c7e67f1f0714cfe2c22392a9635df094aafbfc2bcf6"
+}

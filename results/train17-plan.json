@@ -1,6 +1,6 @@
 {
   "experiment": "run17",
-  "status": "predeclared; verified full base weights required before execution",
+  "status": "Verified base, completed baseline; ready for training",
   "hypothesis": "A 4B base model can learn Jun without competing with an assistant post-training persona; cosine decay may reduce late drift seen with constant rates.",
   "model": "models/base4b",
   "model_repo": "johnlakness/Qwen3-4B-Base-mlx-4Bit",
@@ -25,5 +25,8 @@
   },
   "evaluation": "Fresh assistant_eos_v2 base/template loss baseline. Same frozen development suite and essential-category gate. Final and pressure holdouts remain untouched until development acceptance.",
   "attribution": "Custom base-model training recipe, not a controlled one-variable causal comparison with the instruct runs.",
-  "limitation": "Corpus remains small; no guaranteed quality. Lower loss and remembering a training example do not constitute release acceptance."
+  "limitation": "Corpus remains small; no guaranteed quality. Lower loss and remembering a training example do not constitute release acceptance.",
+  "baseline_loss": 3.892766237258911,
+  "baseline_review": "results/base4b-baseline-review.json",
+  "baseline_serialization_sha256": "d0d6b566bed68d7686d1e2f2d4de4b30a25a22c0f3c80fd35912a2b8acca4f39"
 }
