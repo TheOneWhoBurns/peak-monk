@@ -1,0 +1,8 @@
+{
+  "step": 160,
+  "validation_loss": 2.0549223427331165,
+  "status": "Actual trained speech adapter; native behavior audit pending",
+  "adapter_sha256": "cc67b4088c0d59dedfe3ab3ebcecd94c190e8132021091da30c33b1177b5a36e",
+  "adapter_bytes": 4171688,
+  "trained_model": "models/moshi/model.q4.safetensors"
+}

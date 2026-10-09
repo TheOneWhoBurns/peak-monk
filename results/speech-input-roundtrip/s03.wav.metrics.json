@@ -1,0 +1,9 @@
+{
+  "mode": "decode",
+  "input": "evaluation/audio-roleplay-v2/s03.npz",
+  "audio_seconds": 36.0,
+  "wall_seconds": 9.606615500000771,
+  "codes_key": "user_codes",
+  "realtime_factor": 0.266850430555577,
+  "scope": "CPU codec including audio I/O, excluding model-load time"
+}

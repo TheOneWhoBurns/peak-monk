@@ -1,0 +1,164 @@
+{
+  "_id": "6ab0d357592c120056e5e108",
+  "id": "liodon-ai/zero-imatrix-GGUF",
+  "private": false,
+  "pipeline_tag": "text-generation",
+  "library_name": "gguf",
+  "tags": [
+    "gguf",
+    "local-llm",
+    "llama.cpp",
+    "lm-studio",
+    "quantized",
+    "ollama",
+    "imatrix",
+    "sub-4-bit",
+    "qwen3",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "text-generation",
+    "base_model:movingcastles/zero",
+    "base_model:quantized:movingcastles/zero",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "downloads": 716,
+  "likes": 0,
+  "modelId": "liodon-ai/zero-imatrix-GGUF",
+  "author": "liodon-ai",
+  "sha": "a4bb2342aef4cdac6d626c5cc8711a942632f9ba",
+  "lastModified": "2026-09-21T12:49:35.000Z",
+  "gated": false,
+  "disabled": false,
+  "widgetData": [
+    {
+      "text": "Hi, what can you help me with?"
+    },
+    {
+      "text": "What is 84 * 3 / 2?"
+    },
+    {
+      "text": "Tell me an interesting fact about the universe!"
+    },
+    {
+      "text": "Explain quantum computing in simple terms."
+    }
+  ],
+  "model-index": null,
+  "config": {},
+  "cardData": {
+    "license": "other",
+    "base_model": "movingcastles/zero",
+    "base_model_relation": "quantized",
+    "library_name": "gguf",
+    "pipeline_tag": "text-generation",
+    "quantized_by": "liodon-ai",
+    "tags": [
+      "gguf",
+      "local-llm",
+      "llama.cpp",
+      "lm-studio",
+      "quantized",
+      "ollama",
+      "imatrix",
+      "sub-4-bit",
+      "qwen3",
+      "base_model:Qwen/Qwen3-8B-Base"
+    ]
+  },
+  "gguf": {
+    "total": 8190735360,
+    "architecture": "qwen3",
+    "context_length": 32768,
+    "quantize_imatrix_file": "/home/pyadla/Desktop/slm-pretrain/gguf_workspace/zero/imatrix.dat",
+    "chat_template": "{%- for message in messages %}\n{%- if message.role == \"assistant\" %}\n<|im_start|>assistant\n{{ message.content }}<|im_end|>\n{%- else %}\n<|im_start|>{{ message.role }}\n{{ message.content }}<|im_end|>\n{%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n<|im_start|>assistant\n{% endif %}",
+    "eos_token": "<|im_end|>",
+    "totalFileSize": 3051910720
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "78f1acc6da96020e025a547e475391c1649cc876",
+      "size": 1884
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "95c9e4bf0660fc6d486e93cbceb918fb3ebf2073",
+      "size": 2240
+    },
+    {
+      "rfilename": "zero-IQ2_M.gguf",
+      "blobId": "b964d2098430d1d54d6972ad484ea6c0ab7216ac",
+      "size": 3051910720,
+      "lfs": {
+        "sha256": "5c08f8aaf5e5da6ce11af52785f876565dd683f18a55f28287f61bbb70516fb1",
+        "size": 3051910720,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "zero-IQ3_M.gguf",
+      "blobId": "ce0c83ae304409b97361c8e18711badef5f98eba",
+      "size": 3896616512,
+      "lfs": {
+        "sha256": "59a8ea27da74114cb1148d1cc34a78a820b96f3d99cced0c7db929ef664cbae3",
+        "size": 3896616512,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "zero-IQ4_XS.gguf",
+      "blobId": "de6c60fec4293febd1b4526a8fd71b7f043739fd",
+      "size": 4561835584,
+      "lfs": {
+        "sha256": "16c561f0ca45c2e7931a652bb90f632456e970b4c5c0d6fad9d58bb394728d10",
+        "size": 4561835584,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "zero-Q4_K_M.gguf",
+      "blobId": "c30ae99bc5616a9ac45a713d11a67b1de72fcf40",
+      "size": 5027780160,
+      "lfs": {
+        "sha256": "d27400bfeb476c028121890f3fec977fe7eb435955ff0333376f5f569f8f39be",
+        "size": 5027780160,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "zero-Q5_K_M.gguf",
+      "blobId": "deb23dd3252cfe71c29c96826f033d5f2c005b4c",
+      "size": 5851108928,
+      "lfs": {
+        "sha256": "ef0300b9993e6bfab9d41880af3e137f932587e0454d50423c523897976c117b",
+        "size": 5851108928,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "zero-Q6_K.gguf",
+      "blobId": "bb8c14814f79bad02b00bbfcf3ba41ea3f33c74d",
+      "size": 6725895744,
+      "lfs": {
+        "sha256": "2bef8f1607679f831380f0c04c7f6866d60dfadfa5707217b6400279ec16b303",
+        "size": 6725895744,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "zero-Q8_0.gguf",
+      "blobId": "c7084168b41e0349170154bb8459b000d333fdf3",
+      "size": 8709514816,
+      "lfs": {
+        "sha256": "c0b4a90c5a2ab5659e0c95d3ad28f7d63998709ce8f1bfd5ea1899d305ff4092",
+        "size": 8709514816,
+        "pointerSize": 135
+      }
+    }
+  ],
+  "spaces": [],
+  "createdAt": "2026-09-21T06:48:55.000Z",
+  "usedStorage": 37824662464
+}

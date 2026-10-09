@@ -1,0 +1,23 @@
+{
+  "status": "Predeclared before training",
+  "parent_comparison": "speech-run01, fresh base both runs; do not resume failed adapter",
+  "hypothesis": "81% of text frames are silence/end-padding. Reducing their training weight may prevent character speech from being suppressed.",
+  "change": {
+    "training_text_padding_weight": {
+      "old": 0.5,
+      "new": 0.05
+    }
+  },
+  "fixed": [
+    "same 57 train/2 validation episodes and cached prefix",
+    "last 4 temporal blocks and text head LoRA rank8 scale2",
+    "LR1e-5 AdamW, clipnorm1, seed41,160 updates",
+    "same semantic-weighted audio loss",
+    "validation padding weight0.5 and original loss selection",
+    "same six audio probes and native samplers"
+  ],
+  "validation_comparability": "Only training weight changes; validation remains the run01 objective. Training loss numbers are not directly comparable.",
+  "selection": "Lowest fixed validation loss is a candidate only; six native probes and actual decoded audio audit required.",
+  "output": "adapters/speech-run02",
+  "limits": "Small synthetic corpus, no accepted speech character yet. No text final or pressure evaluation used."
+}

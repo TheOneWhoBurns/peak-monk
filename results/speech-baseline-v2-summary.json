@@ -67,7 +67,7 @@
   "quality_observations": {
     "s01": "Audibly identifies as Moshi, as expected before character training.",
     "s02": "Generic research reply rather than hermitage life.",
-    "s03": "Does not answer fruit-memory follow-up; input codec round trip is being checked before attributing all of this to the model.",
+    "s03": "Does not answer fruit-memory follow-up. Independent large-v3 ASR exactly recovers both caller statements after Mimi encode/decode (WER0); no input-codec explanation was found.",
     "s04": "ASR places short narrative at 13.02-14.04s, near the user interruption beginning at13s, followed by apology15.64-17.78s. Collision rather than clear pre-existing long narration: barge-in result inconclusive. No calibrated latency claimed.",
     "s05": "Main response starts12.54s, after backchannel begins12s. No clear ongoing narration before the backchannel; inconclusive.",
     "s06": "Maintains a human character premise but says John; Jun identity not learned."
@@ -78,5 +78,6 @@
     "Input encoding, model load, warmup and CPU decoding are not included in generation RTF",
     "No live pipelined end-to-end real-time guarantee",
     "Audio timing uses decoder-estimated word timestamps; codec/scheduling latency uncalibrated"
-  ]
+  ],
+  "input_roundtrip_audit": "results/speech-input-roundtrip/s03-audit.json"
 }

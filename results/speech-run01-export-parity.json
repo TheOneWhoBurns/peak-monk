@@ -1,0 +1,13 @@
+{
+  "scope": "Actual pretrained quantized model and trained exported adapter; full versus cached episode forward loss",
+  "episode": "name",
+  "adapter": "adapters/speech-run01/candidate.safetensors",
+  "adapter_sha256": "cc67b4088c0d59dedfe3ab3ebcecd94c190e8132021091da30c33b1177b5a36e",
+  "full_loss": 2.0340652465820312,
+  "cached_loss": 2.0340652465820312,
+  "absolute_difference": 0.0,
+  "tolerance": 0.01,
+  "passed": true,
+  "full_peak_memory_bytes": 5247738165,
+  "peak_memory_bytes": 5247738165
+}

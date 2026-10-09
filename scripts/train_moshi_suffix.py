@@ -4,6 +4,7 @@ The full model's frozen prefix is not resident during this process. Adapters are
 exported with original full-model names for native streaming inference.
 """
 import argparse
+from functools import partial
 import hashlib
 import json
 from pathlib import Path
@@ -27,7 +28,11 @@ p.add_argument('--scale',type=float,default=2.0)
 p.add_argument('--lr',type=float,default=1e-5)
 p.add_argument('--seed',type=int,default=41)
 p.add_argument('--evaluate-every',type=int,default=20)
+p.add_argument('--text-padding-weight',type=float,default=.5,
+    help='Training only; frozen validation remains at 0.5 for comparability')
 args=p.parse_args()
+if not 0 < args.text_padding_weight <= 1:
+    raise ValueError('Text padding weight must be in (0, 1]')
 out=Path(args.output)
 if out.exists(): raise ValueError('Use a fresh experiment output directory')
 out.mkdir(parents=True)
@@ -42,12 +47,13 @@ model=load_part('models/moshi/model.q4.safetensors',args.layers,'suffix')
 attach_lora(model,layers=args.layers,rank=args.rank,scale=args.scale)
 mx.eval(model.parameters())
 optimizer=optim.AdamW(learning_rate=args.lr,weight_decay=.01)
-value_grad=nn.value_and_grad(model,cached_loss)
+value_grad=nn.value_and_grad(model,partial(cached_loss,text_padding_weight=args.text_padding_weight))
 metadata=dict(vars(args),train_ids=[r['id'] for r in train],valid_ids=[r['id'] for r in valid],
     source_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
     trainable_parameters=sum(v.size for _,v in tree_flatten(model.trainable_parameters())),
     model_sha256='7959d590e23c1ebc78cfa3501344a6ff331561aa0cadc4429b733b890bbc919c',
     loss='text CE + semantic-weighted agent audio CE, original delayed streams',
+    validation_text_padding_weight=.5,
     cache_manifest_sha256=hashlib.sha256((Path(args.cache)/'manifest.json').read_bytes()).hexdigest())
 (out/'config.json').write_text(json.dumps(metadata,indent=2)+'\n')
 log=out/'metrics.jsonl'

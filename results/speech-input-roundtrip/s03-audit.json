@@ -1,0 +1,16 @@
+{
+  "scope": "User-input Mimi codec round trip, not generated model speech",
+  "reference": "I'm traveling with my sister Nia. We are bringing peaches. What fruit did I say we were bringing?",
+  "asr": "I'm traveling with my sister Nia. We are bringing peaches. What fruit did I say we were bringing?",
+  "wer": 0.0,
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "initial_prompt": null,
+  "seconds": 8.50002704099461,
+  "segments": [
+    {
+      "start": 0.72,
+      "end": 20.83,
+      "text": " I'm traveling with my sister Nia. We are bringing peaches. What fruit did I say we were bringing?"
+    }
+  ]
+}

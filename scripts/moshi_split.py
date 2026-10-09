@@ -82,11 +82,11 @@ def load_part(weights, suffix_layers, part):
     return selected
 
 
-def cached_loss(model, hidden, targets, audio_weight=1.0):
+def cached_loss(model, hidden, targets, audio_weight=1.0, text_padding_weight=0.5):
     out, text_logits = model(hidden)
     text_target = targets[:, 0]
     valid = (text_target>=0)&(text_target<model.cfg.text_out_vocab_size)
-    tw = mx.where((text_target==0)|(text_target==3),.5,1.0)*valid
+    tw = mx.where((text_target==0)|(text_target==3),text_padding_weight,1.0)*valid
     ce = nn.losses.cross_entropy(text_logits.astype(mx.float32),mx.clip(text_target,0,model.cfg.text_out_vocab_size-1))
     text_loss = (ce*tw).sum()/mx.maximum(tw.sum(),1)
     if audio_weight==0: return text_loss

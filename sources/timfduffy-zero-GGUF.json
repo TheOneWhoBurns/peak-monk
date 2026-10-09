@@ -1,0 +1,115 @@
+{
+  "_id": "6aad4fe7bc392fa1cf65d34a",
+  "id": "timfduffy/zero-GGUF",
+  "private": false,
+  "pipeline_tag": "text-generation",
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "character",
+    "persona",
+    "qwen3",
+    "text-generation",
+    "en",
+    "base_model:movingcastles/zero",
+    "base_model:quantized:movingcastles/zero",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "downloads": 117,
+  "likes": 0,
+  "modelId": "timfduffy/zero-GGUF",
+  "author": "timfduffy",
+  "sha": "633a363cc93a7891405941f1f21105fc9a9bfc65",
+  "lastModified": "2026-09-18T15:07:38.000Z",
+  "gated": false,
+  "disabled": false,
+  "widgetData": [
+    {
+      "text": "Hi, what can you help me with?"
+    },
+    {
+      "text": "What is 84 * 3 / 2?"
+    },
+    {
+      "text": "Tell me an interesting fact about the universe!"
+    },
+    {
+      "text": "Explain quantum computing in simple terms."
+    }
+  ],
+  "model-index": null,
+  "config": {},
+  "cardData": {
+    "base_model": "movingcastles/zero",
+    "base_model_relation": "quantized",
+    "quantized_by": "timfduffy",
+    "pipeline_tag": "text-generation",
+    "language": [
+      "en"
+    ],
+    "tags": [
+      "gguf",
+      "llama.cpp",
+      "quantized",
+      "character",
+      "persona",
+      "qwen3"
+    ]
+  },
+  "gguf": {
+    "total": 8190735360,
+    "architecture": "qwen3",
+    "context_length": 32768,
+    "chat_template": "{%- for message in messages %}\n{%- if message.role == \"assistant\" %}\n<|im_start|>assistant\n{{ message.content }}<|im_end|>\n{%- else %}\n<|im_start|>{{ message.role }}\n{{ message.content }}<|im_end|>\n{%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n<|im_start|>assistant\n{% endif %}",
+    "eos_token": "<|im_end|>",
+    "totalFileSize": 5027779872
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "d21d1da5eab55cdd830cbd9e918734fc8231e660",
+      "size": 1674
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "ac541c486c26c27d35d557f83ec26818354d704a",
+      "size": 3056
+    },
+    {
+      "rfilename": "zero-Q4_K_M.gguf",
+      "blobId": "513315e4a05b2f6edc05a91b9b02797017baa2af",
+      "size": 5027779872,
+      "lfs": {
+        "sha256": "38b0a7961dbdedf4c9e51732584f5487e42909062ca32b4997d5e7ab61c29c4e",
+        "size": 5027779872,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "zero-Q6_K.gguf",
+      "blobId": "462851bc4549e6734001407900f331f2a0132f78",
+      "size": 6725895456,
+      "lfs": {
+        "sha256": "720320601b713ce993483f3c2a0227e740a97d338ed86809a47241d7ac71dac7",
+        "size": 6725895456,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "zero-Q8_0.gguf",
+      "blobId": "ff22b9b0cef85ddf65b939daa8bee199ec60fc46",
+      "size": 8709514528,
+      "lfs": {
+        "sha256": "cae48a586d9ca7ad46235514ee9410b23979e6016d13af4ca26bd7cc3b7a791e",
+        "size": 8709514528,
+        "pointerSize": 135
+      }
+    }
+  ],
+  "spaces": [],
+  "createdAt": "2026-09-18T14:51:19.000Z",
+  "usedStorage": 20463189856
+}
