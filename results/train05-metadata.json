@@ -1,0 +1,15 @@
+{
+  "started_at": "2026-10-09T13:40:54.136449+00:00",
+  "wall_seconds": 98.04642408299696,
+  "exit_code": 0,
+  "source_commit": "10e0831ef9aa74311fe827764e9339cbaaed3ef3",
+  "data_sha256": {
+    "train.jsonl": "5301fb3b0c6bfb36eccc8c604655b67b74ea26d6f8f3ab3f318f08f9f0374cca",
+    "valid.jsonl": "6cac81fab61388010e064d1a92a3699e135f1c174ea836756d4ebbcca163aaba"
+  },
+  "configuration_sha256": "a45908af85030d0989022cb9a40de2871c2b928c627dd93efebee230b2bfcb17",
+  "child_max_rss_bytes_macos": 766296064,
+  "metric_note": "RSS is not total MLX Metal allocation; inference capture records MLX peak memory.",
+  "adapter_sha256": "affd619c16ef8213b847bcbb8941b3f52aeb500464e6b1bfb4b804ae0ba70de5",
+  "adapter_bytes": 49725476
+}

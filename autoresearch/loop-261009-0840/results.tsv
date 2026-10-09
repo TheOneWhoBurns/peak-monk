@@ -1,3 +1,4 @@
 # metric_direction: lower_is_better
 iteration	timestamp	commit	metric	delta	guard	guard-metric	status	description
 0	2026-10-09T13:40:54.029157+00:00	be97868	8.207565307617188	0	pass	serialization checked	baseline	Unadapted instruction model, no persona system prompt
+1	2026-10-09T13:47:15.412635+00:00	10e0831	3.4573588371276855	-4.750206470489502	fail	1/20 acceptable; emergency regression	discard	Instruction foundation still collapses under the pilot adapter recipe
