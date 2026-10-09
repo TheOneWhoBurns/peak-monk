@@ -1,0 +1,50 @@
+{
+  "status": "Queued strictly after five native screens finish; all experiments previously declared",
+  "jobs": [
+    {
+      "id": "personaplex-real-parity",
+      "command": [
+        ".venv-speech/bin/python",
+        "scripts/probe_personaplex_agent_slices.py",
+        "--output",
+        "results/personaplex-agent-slice-parity.json"
+      ],
+      "log": "personaplex-agent-slice-parity.log"
+    },
+    {
+      "id": "writer-model-comparison",
+      "command": [
+        ".venv/bin/python",
+        "scripts/write_dialogue_pilot.py",
+        "--model",
+        "models/stronger-clean",
+        "--output",
+        "data/teacher-writer-qwen3-comparison"
+      ],
+      "log": "teacher-writer-qwen3-comparison.log"
+    },
+    {
+      "id": "text-long-context-memory",
+      "command": [
+        ".venv/bin/python",
+        "scripts/probe_text_long_context.py",
+        "--tokens",
+        "2048",
+        "--steps",
+        "2",
+        "--chunk-size",
+        "64",
+        "--output",
+        "results/text-long-context-probe.json"
+      ],
+      "log": "text-long-context-probe.log"
+    }
+  ],
+  "large_job_serialization": true,
+  "no_training_admission_from_successful_exit": true,
+  "source_hashes": {
+    "scripts/probe_personaplex_agent_slices.py": "dfbcbb043b5a0f5fc4e9b9c0cad767be7d0e573625bf1bda7134abfbde5cb0cf",
+    "scripts/write_dialogue_pilot.py": "67527bb049248d6dc135fc3591286d0f9a967b96f41b8822c639c9aa3463e5bd",
+    "scripts/probe_text_long_context.py": "85e64002cc16b4ddfa0eefedecce3d77926f0e6446154f61b54ebb2edc340d81"
+  }
+}

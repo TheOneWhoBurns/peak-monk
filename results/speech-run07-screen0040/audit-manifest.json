@@ -1,0 +1,37 @@
+{
+  "adapter": "adapters/speech-run07/step-0040.safetensors",
+  "adapter_sha256": "bb386fa17db687f66ffed8c7494f7c4018796733a8a284d8a657d78ee2c0b859",
+  "config": "adapters/speech-run07/config.json",
+  "config_sha256": "eb9399fdcb9007e3d23a0bc4dca9f2567ad7a431c66644467aa4144791c36b1a",
+  "backend": "moshi",
+  "sampling_preset": "local",
+  "parity_report": null,
+  "seed": 41,
+  "status": "evidence complete; explicit character and overlap review required",
+  "scope": "Selected fixed development probes, native speech generation. No training text forcing.",
+  "case_ids": [
+    "s01",
+    "s06"
+  ],
+  "cases": [
+    {
+      "id": "s01",
+      "input_sha256": "2e46324af7821ec4f3ab7eaa9a5476aa44ac93a0b58216b3cba7de67a6edf56e",
+      "input_seconds": 24.0,
+      "generation_seconds": 24.431560541997897,
+      "peak_model_memory_bytes": 5161026148,
+      "text": "My name.",
+      "unprompted_asr": "My name."
+    },
+    {
+      "id": "s06",
+      "input_sha256": "f8d7d95e00e72b8947c03d72b29de583b6698ea84f94ac93b1e82bc86e41d237",
+      "input_seconds": 25.04,
+      "generation_seconds": 28.34143495799799,
+      "peak_model_memory_bytes": 5156815460,
+      "text": "",
+      "unprompted_asr": ""
+    }
+  ],
+  "model_only_rtf": 1.0761214416801772
+}

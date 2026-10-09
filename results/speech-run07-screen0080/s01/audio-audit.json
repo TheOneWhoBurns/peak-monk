@@ -1,0 +1,38 @@
+{
+  "wav": "results/speech-run07-screen0080/s01/agent.wav",
+  "wav_sha256": "d1409005a3408e27ee1b876262d6fda4c528bde08f1e769ae1cb1aec4fe10b67",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 9.850535042001866,
+  "duration_seconds": 23.92,
+  "transcript": "John, John.",
+  "segments": [
+    {
+      "start": 3.38,
+      "end": 4.66,
+      "text": " John, John.",
+      "avg_logprob": -0.4129180312156677,
+      "no_speech_prob": 0.08356048911809921,
+      "compression_ratio": 0.6470588235294118,
+      "words": [
+        {
+          "word": " John,",
+          "start": 3.38,
+          "end": 4.06,
+          "probability": 0.9445461630821228
+        },
+        {
+          "word": " John.",
+          "start": 4.08,
+          "end": 4.66,
+          "probability": 0.9851531982421875
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "Jun, Jun."
+}

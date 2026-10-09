@@ -1,0 +1,19 @@
+{
+  "reviewer": "Codex author; not independent",
+  "status": "rejected",
+  "checkpoint_step": 160,
+  "cases": [
+    {
+      "id": "s01",
+      "acceptable": false,
+      "reason": "Recognizable hermitage introduction, but internal Jun is transcribed John and reply adds unsupported six-year/childhood history. Identity evidence remains imperfect; raw evidence retained."
+    },
+    {
+      "id": "s06",
+      "acceptable": false,
+      "reason": "Text and ASR tell an incoherent story about using a rook to speak in a wispy poetic voice, then refer to him as a fictional character. Does not sustain Jun first-person identity."
+    }
+  ],
+  "remaining_four_probes": "Not triggered: both identity probes must pass",
+  "scope": "Fixed local sampler seed41; two predeclared development screens"
+}

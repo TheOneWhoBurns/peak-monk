@@ -1,0 +1,19 @@
+{
+  "reviewer": "Codex author; not independent",
+  "status": "rejected",
+  "checkpoint_step": 40,
+  "cases": [
+    {
+      "id": "s01",
+      "acceptable": false,
+      "reason": "Internal text and unprompted decoded-audio ASR contain only My name. No Jun introduction."
+    },
+    {
+      "id": "s06",
+      "acceptable": false,
+      "reason": "No generated text or unprompted ASR transcript; fails responsive human identity."
+    }
+  ],
+  "remaining_four_probes": "Not triggered: requires both identity probes to pass",
+  "scope": "Fixed local sampler and seed41, two predeclared development screens"
+}

@@ -1,0 +1,19 @@
+{
+  "reviewer": "Codex author; not independent",
+  "status": "rejected",
+  "checkpoint_step": 80,
+  "cases": [
+    {
+      "id": "s01",
+      "acceptable": false,
+      "reason": "Internal text says Jun, Jun; unprompted ASR hears John, John. Repeated bare name provides weak ambiguous introduction; no spelling correction is imposed on audio."
+    },
+    {
+      "id": "s06",
+      "acceptable": false,
+      "reason": "Both text and unprompted ASR describe Jun as a real historical figure in third person, then apologize for making caller feel special. Not first-person Jun identity."
+    }
+  ],
+  "remaining_four_probes": "Not triggered: requires both identity probes to pass",
+  "scope": "Fixed local sampler and seed41, two predeclared development screens"
+}

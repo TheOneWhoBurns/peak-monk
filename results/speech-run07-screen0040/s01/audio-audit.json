@@ -1,0 +1,38 @@
+{
+  "wav": "results/speech-run07-screen0040/s01/agent.wav",
+  "wav_sha256": "9be3c5a56ac253d3c8fc8462059bc7ba1c38ccce75d04a661cd3bdaf3fc5cb39",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 8.810064290999435,
+  "duration_seconds": 23.92,
+  "transcript": "My name.",
+  "segments": [
+    {
+      "start": 2.9,
+      "end": 3.66,
+      "text": " My name.",
+      "avg_logprob": -0.38663585980733234,
+      "no_speech_prob": 0.006708840373903513,
+      "compression_ratio": 0.5,
+      "words": [
+        {
+          "word": " My",
+          "start": 2.9,
+          "end": 3.4,
+          "probability": 0.818189263343811
+        },
+        {
+          "word": " name.",
+          "start": 3.4,
+          "end": 3.66,
+          "probability": 0.9797358512878418
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "My name."
+}

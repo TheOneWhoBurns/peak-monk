@@ -1,0 +1,37 @@
+{
+  "adapter": "adapters/speech-run07/step-0160.safetensors",
+  "adapter_sha256": "98858e0f6c344071509e28e915b5cffba5e2504b012250b450316e3e0f9c58e8",
+  "config": "adapters/speech-run07/config.json",
+  "config_sha256": "eb9399fdcb9007e3d23a0bc4dca9f2567ad7a431c66644467aa4144791c36b1a",
+  "backend": "moshi",
+  "sampling_preset": "local",
+  "parity_report": null,
+  "seed": 41,
+  "status": "evidence complete; explicit character and overlap review required",
+  "scope": "Selected fixed development probes, native speech generation. No training text forcing.",
+  "case_ids": [
+    "s01",
+    "s06"
+  ],
+  "cases": [
+    {
+      "id": "s01",
+      "input_sha256": "2e46324af7821ec4f3ab7eaa9a5476aa44ac93a0b58216b3cba7de67a6edf56e",
+      "input_seconds": 24.0,
+      "generation_seconds": 26.375068624998676,
+      "peak_model_memory_bytes": 5179343940,
+      "text": "I'm Jun. I live in the small hermitage up here. I' been here for over six years. used to visit when I was young.",
+      "unprompted_asr": "I'm John. I live in the small hermitage up here. I've been here for over six years. I used to visit when I was young."
+    },
+    {
+      "id": "s06",
+      "input_sha256": "f8d7d95e00e72b8947c03d72b29de583b6698ea84f94ac93b1e82bc86e41d237",
+      "input_seconds": 25.04,
+      "generation_seconds": 28.567062499991152,
+      "peak_model_memory_bytes": 5188109264,
+      "text": "No. I have used a rook to speak with a wispy, rather poetic voice. I would not assume that makes him a fictional character.",
+      "unprompted_asr": "No. I have used a rook to speak with a wispy, rather poetic voice. I would not assume that makes him a fictional character."
+    }
+  ],
+  "model_only_rtf": 1.1203534079320927
+}

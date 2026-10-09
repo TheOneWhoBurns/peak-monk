@@ -1,0 +1,180 @@
+{
+  "wav": "results/speech-run07-screen0160/s06/agent.wav",
+  "wav_sha256": "16277dae2951348676c8252faaf595cf72e1d0ae1edebb185dc5a8ea62eedc5e",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 9.975400750001427,
+  "duration_seconds": 24.96,
+  "transcript": "No. I have used a rook to speak with a wispy, rather poetic voice. I would not assume that makes him a fictional character.",
+  "segments": [
+    {
+      "start": 4.56,
+      "end": 10.42,
+      "text": " No. I have used a rook to speak with a wispy, rather poetic voice.",
+      "avg_logprob": -0.13137103830065047,
+      "no_speech_prob": 0.005373464897274971,
+      "compression_ratio": 1.1941747572815533,
+      "words": [
+        {
+          "word": " No.",
+          "start": 4.56,
+          "end": 5.14,
+          "probability": 0.8149446249008179
+        },
+        {
+          "word": " I",
+          "start": 6.0,
+          "end": 6.6,
+          "probability": 0.9968187808990479
+        },
+        {
+          "word": " have",
+          "start": 6.6,
+          "end": 6.74,
+          "probability": 0.9825992584228516
+        },
+        {
+          "word": " used",
+          "start": 6.74,
+          "end": 6.94,
+          "probability": 0.8803418278694153
+        },
+        {
+          "word": " a",
+          "start": 6.94,
+          "end": 7.18,
+          "probability": 0.8322754502296448
+        },
+        {
+          "word": " rook",
+          "start": 7.18,
+          "end": 7.4,
+          "probability": 0.9442561268806458
+        },
+        {
+          "word": " to",
+          "start": 7.4,
+          "end": 7.84,
+          "probability": 0.8507583737373352
+        },
+        {
+          "word": " speak",
+          "start": 7.84,
+          "end": 8.14,
+          "probability": 0.9993688464164734
+        },
+        {
+          "word": " with",
+          "start": 8.14,
+          "end": 8.42,
+          "probability": 0.9989529848098755
+        },
+        {
+          "word": " a",
+          "start": 8.42,
+          "end": 8.54,
+          "probability": 0.9995255470275879
+        },
+        {
+          "word": " wispy,",
+          "start": 8.54,
+          "end": 9.08,
+          "probability": 0.9957964221636454
+        },
+        {
+          "word": " rather",
+          "start": 9.08,
+          "end": 9.54,
+          "probability": 0.998939573764801
+        },
+        {
+          "word": " poetic",
+          "start": 9.54,
+          "end": 9.94,
+          "probability": 0.9979003667831421
+        },
+        {
+          "word": " voice.",
+          "start": 9.94,
+          "end": 10.42,
+          "probability": 0.9948429465293884
+        }
+      ]
+    },
+    {
+      "start": 10.74,
+      "end": 13.7,
+      "text": " I would not assume that makes him a fictional character.",
+      "avg_logprob": -0.13137103830065047,
+      "no_speech_prob": 0.005373464897274971,
+      "compression_ratio": 1.1941747572815533,
+      "words": [
+        {
+          "word": " I",
+          "start": 10.74,
+          "end": 11.34,
+          "probability": 0.9982250332832336
+        },
+        {
+          "word": " would",
+          "start": 11.34,
+          "end": 11.46,
+          "probability": 0.9996227025985718
+        },
+        {
+          "word": " not",
+          "start": 11.46,
+          "end": 11.64,
+          "probability": 0.9997159838676453
+        },
+        {
+          "word": " assume",
+          "start": 11.64,
+          "end": 12.0,
+          "probability": 0.9997548460960388
+        },
+        {
+          "word": " that",
+          "start": 12.0,
+          "end": 12.3,
+          "probability": 0.9993416666984558
+        },
+        {
+          "word": " makes",
+          "start": 12.3,
+          "end": 12.56,
+          "probability": 0.9963143467903137
+        },
+        {
+          "word": " him",
+          "start": 12.56,
+          "end": 12.8,
+          "probability": 0.9997904896736145
+        },
+        {
+          "word": " a",
+          "start": 12.8,
+          "end": 12.9,
+          "probability": 0.9993595480918884
+        },
+        {
+          "word": " fictional",
+          "start": 12.9,
+          "end": 13.24,
+          "probability": 0.9996635913848877
+        },
+        {
+          "word": " character.",
+          "start": 13.24,
+          "end": 13.7,
+          "probability": 0.9995027780532837
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "No. I have used a rook to speak with a wispy, rather poetic voice. I would not assume that makes him a fictional character."
+}

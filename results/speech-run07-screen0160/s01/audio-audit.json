@@ -1,0 +1,176 @@
+{
+  "wav": "results/speech-run07-screen0160/s01/agent.wav",
+  "wav_sha256": "7586c2067d58905776df16ccc4ae324036727151fb9799c4fc1a46ed7bd13228",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 12.99352912500035,
+  "duration_seconds": 23.92,
+  "transcript": "I'm John. I live in the small hermitage up here. I've been here for over six years. I used to visit when I was young.",
+  "segments": [
+    {
+      "start": 3.41,
+      "end": 20.43,
+      "text": " I'm John. I live in the small hermitage up here. I've been here for over six years. I used to visit when I was young.",
+      "avg_logprob": -0.08018373718692197,
+      "no_speech_prob": 0.02057873085141182,
+      "compression_ratio": 1.2061855670103092,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 3.41,
+          "end": 3.91,
+          "probability": 0.9790768325328827
+        },
+        {
+          "word": " John.",
+          "start": 3.91,
+          "end": 4.19,
+          "probability": 0.9734625220298767
+        },
+        {
+          "word": " I",
+          "start": 4.57,
+          "end": 5.09,
+          "probability": 0.9994974136352539
+        },
+        {
+          "word": " live",
+          "start": 5.09,
+          "end": 5.33,
+          "probability": 0.999321699142456
+        },
+        {
+          "word": " in",
+          "start": 5.33,
+          "end": 5.47,
+          "probability": 0.9995555281639099
+        },
+        {
+          "word": " the",
+          "start": 5.47,
+          "end": 5.53,
+          "probability": 0.9252965450286865
+        },
+        {
+          "word": " small",
+          "start": 5.53,
+          "end": 5.81,
+          "probability": 0.961584210395813
+        },
+        {
+          "word": " hermitage",
+          "start": 5.81,
+          "end": 6.67,
+          "probability": 0.9845908482869467
+        },
+        {
+          "word": " up",
+          "start": 6.67,
+          "end": 6.99,
+          "probability": 0.9147164225578308
+        },
+        {
+          "word": " here.",
+          "start": 6.99,
+          "end": 7.33,
+          "probability": 0.9996547698974609
+        },
+        {
+          "word": " I've",
+          "start": 15.95,
+          "end": 16.47,
+          "probability": 0.9707013666629791
+        },
+        {
+          "word": " been",
+          "start": 16.47,
+          "end": 16.61,
+          "probability": 0.9998600482940674
+        },
+        {
+          "word": " here",
+          "start": 16.61,
+          "end": 16.81,
+          "probability": 0.9996665716171265
+        },
+        {
+          "word": " for",
+          "start": 16.81,
+          "end": 17.03,
+          "probability": 0.9996833801269531
+        },
+        {
+          "word": " over",
+          "start": 17.03,
+          "end": 17.27,
+          "probability": 0.9996324777603149
+        },
+        {
+          "word": " six",
+          "start": 17.27,
+          "end": 17.53,
+          "probability": 0.9268290996551514
+        },
+        {
+          "word": " years.",
+          "start": 17.53,
+          "end": 17.97,
+          "probability": 0.9997891783714294
+        },
+        {
+          "word": " I",
+          "start": 18.29,
+          "end": 18.81,
+          "probability": 0.9997093081474304
+        },
+        {
+          "word": " used",
+          "start": 18.81,
+          "end": 19.03,
+          "probability": 0.9998681545257568
+        },
+        {
+          "word": " to",
+          "start": 19.03,
+          "end": 19.15,
+          "probability": 0.9998243451118469
+        },
+        {
+          "word": " visit",
+          "start": 19.15,
+          "end": 19.43,
+          "probability": 0.9995338916778564
+        },
+        {
+          "word": " when",
+          "start": 19.43,
+          "end": 19.81,
+          "probability": 0.992461621761322
+        },
+        {
+          "word": " I",
+          "start": 19.81,
+          "end": 19.97,
+          "probability": 0.9982829093933105
+        },
+        {
+          "word": " was",
+          "start": 19.97,
+          "end": 20.15,
+          "probability": 0.9999450445175171
+        },
+        {
+          "word": " young.",
+          "start": 20.15,
+          "end": 20.43,
+          "probability": 0.9994644522666931
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "I'm Jun. I live in the small hermitage up here. I' been here for over six years. used to visit when I was young."
+}

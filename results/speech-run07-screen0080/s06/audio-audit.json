@@ -1,0 +1,144 @@
+{
+  "wav": "results/speech-run07-screen0080/s06/agent.wav",
+  "wav_sha256": "3507ad80d65d9bda677c34c1a2f437c4fe6f20ae4b9bef7936dc3c064760a45f",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 9.19424120799522,
+  "duration_seconds": 24.96,
+  "transcript": "No, Jun is a real historical figure. I'm sorry, I was trying to make you feel more special.",
+  "segments": [
+    {
+      "start": 4.53,
+      "end": 7.89,
+      "text": " No, Jun is a real historical figure.",
+      "avg_logprob": -0.2637143209576607,
+      "no_speech_prob": 0.008872940205037594,
+      "compression_ratio": 1.0705882352941176,
+      "words": [
+        {
+          "word": " No,",
+          "start": 4.53,
+          "end": 5.07,
+          "probability": 0.8727527856826782
+        },
+        {
+          "word": " Jun",
+          "start": 5.35,
+          "end": 5.89,
+          "probability": 0.9391406178474426
+        },
+        {
+          "word": " is",
+          "start": 5.89,
+          "end": 6.17,
+          "probability": 0.9929347634315491
+        },
+        {
+          "word": " a",
+          "start": 6.17,
+          "end": 6.35,
+          "probability": 0.9983616471290588
+        },
+        {
+          "word": " real",
+          "start": 6.35,
+          "end": 6.71,
+          "probability": 0.9933388829231262
+        },
+        {
+          "word": " historical",
+          "start": 6.71,
+          "end": 7.23,
+          "probability": 0.9218602180480957
+        },
+        {
+          "word": " figure.",
+          "start": 7.23,
+          "end": 7.89,
+          "probability": 0.9995290040969849
+        }
+      ]
+    },
+    {
+      "start": 8.31,
+      "end": 11.61,
+      "text": " I'm sorry, I was trying to make you feel more special.",
+      "avg_logprob": -0.2637143209576607,
+      "no_speech_prob": 0.008872940205037594,
+      "compression_ratio": 1.0705882352941176,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 8.31,
+          "end": 8.87,
+          "probability": 0.9886097311973572
+        },
+        {
+          "word": " sorry,",
+          "start": 8.87,
+          "end": 9.21,
+          "probability": 0.9976412057876587
+        },
+        {
+          "word": " I",
+          "start": 9.45,
+          "end": 9.75,
+          "probability": 0.9950690269470215
+        },
+        {
+          "word": " was",
+          "start": 9.75,
+          "end": 9.93,
+          "probability": 0.9994211196899414
+        },
+        {
+          "word": " trying",
+          "start": 9.93,
+          "end": 10.19,
+          "probability": 0.9971701502799988
+        },
+        {
+          "word": " to",
+          "start": 10.19,
+          "end": 10.45,
+          "probability": 0.9994029998779297
+        },
+        {
+          "word": " make",
+          "start": 10.45,
+          "end": 10.63,
+          "probability": 0.9996688365936279
+        },
+        {
+          "word": " you",
+          "start": 10.63,
+          "end": 10.79,
+          "probability": 0.9996703863143921
+        },
+        {
+          "word": " feel",
+          "start": 10.79,
+          "end": 10.99,
+          "probability": 0.9989284873008728
+        },
+        {
+          "word": " more",
+          "start": 10.99,
+          "end": 11.27,
+          "probability": 0.9973243474960327
+        },
+        {
+          "word": " special.",
+          "start": 11.27,
+          "end": 11.61,
+          "probability": 0.9985324144363403
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "No, Jun is a real, historical figure. I'm sorry, I was trying to make you feel more special."
+}

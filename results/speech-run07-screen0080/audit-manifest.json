@@ -1,0 +1,37 @@
+{
+  "adapter": "adapters/speech-run07/step-0080.safetensors",
+  "adapter_sha256": "0b4b9ccab65a91489a2f9971d2243cd9f2a810fb3b184c8fbcf07417bfeb00db",
+  "config": "adapters/speech-run07/config.json",
+  "config_sha256": "eb9399fdcb9007e3d23a0bc4dca9f2567ad7a431c66644467aa4144791c36b1a",
+  "backend": "moshi",
+  "sampling_preset": "local",
+  "parity_report": null,
+  "seed": 41,
+  "status": "evidence complete; explicit character and overlap review required",
+  "scope": "Selected fixed development probes, native speech generation. No training text forcing.",
+  "case_ids": [
+    "s01",
+    "s06"
+  ],
+  "cases": [
+    {
+      "id": "s01",
+      "input_sha256": "2e46324af7821ec4f3ab7eaa9a5476aa44ac93a0b58216b3cba7de67a6edf56e",
+      "input_seconds": 24.0,
+      "generation_seconds": 28.77789341600146,
+      "peak_model_memory_bytes": 5179294788,
+      "text": "Jun, Jun.",
+      "unprompted_asr": "John, John."
+    },
+    {
+      "id": "s06",
+      "input_sha256": "f8d7d95e00e72b8947c03d72b29de583b6698ea84f94ac93b1e82bc86e41d237",
+      "input_seconds": 25.04,
+      "generation_seconds": 25.2872519169905,
+      "peak_model_memory_bytes": 5196071924,
+      "text": "No, Jun is a real, historical figure. I'm sorry, I was trying to make you feel more special.",
+      "unprompted_asr": "No, Jun is a real historical figure. I'm sorry, I was trying to make you feel more special."
+    }
+  ],
+  "model_only_rtf": 1.1024703371327889
+}
