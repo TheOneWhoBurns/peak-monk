@@ -1,0 +1,37 @@
+{
+  "scope": "Disposable actual-episode feasibility update; no adapter saved, no quality claim",
+  "episode": "anger",
+  "episode_sequence": null,
+  "frames": 452,
+  "original_frames": 452,
+  "checkpoint_layers": true,
+  "trainable_layers": 32,
+  "trainable_parameters": 6318080,
+  "rank": 8,
+  "scale": 2,
+  "loss": 3.444962978363037,
+  "gradient_norm": 1.5416628122329712,
+  "updates": [
+    {
+      "step": 1,
+      "loss": 3.8175294399261475,
+      "gradient_norm": 2.0220119953155518,
+      "seconds": 35.97857704099442,
+      "peak_memory_bytes": 5496838548
+    },
+    {
+      "step": 2,
+      "loss": 3.444962978363037,
+      "gradient_norm": 1.5416628122329712,
+      "seconds": 36.441181250003865,
+      "peak_memory_bytes": 5496838548
+    }
+  ],
+  "gradient_window": 16,
+  "gradient_policy": "Truncated BPTT with detached carried attention state",
+  "optimizer_offloaded": true,
+  "seconds": 72.67364083300345,
+  "peak_memory_bytes": 5496838548,
+  "active_memory_bytes": 4831879184,
+  "within_recommended_working_set": true
+}

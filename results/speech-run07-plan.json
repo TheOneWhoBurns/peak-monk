@@ -1,6 +1,6 @@
 {
   "experiment": "speech-run07",
-  "status": "Predeclared, pending longest padded-window memory gate after text experiment",
+  "status": "Padded longest-episode two-update memory gate passed; ready for full training",
   "hypothesis": "Repair short-tail numerical instability, then test all-layer native character adaptation",
   "model": "models/moshi/model.q4.safetensors",
   "training": {
@@ -39,5 +39,12 @@
     "reason_for_extra_screen": "Three prior loss-selected speech adapters failed, often by silence. Loss alone may select the wrong character checkpoint.",
     "if_primary_fails": "Screen s01 and s06 at steps40,80,160, excluding an already tested identical checkpoint. Keep every outcome. If a checkpoint passes both identity probes, run its remaining four probes before any acceptance.",
     "selection_limitation": "Repeated development selection, not independent evaluation; no best-seed selection; seed41 throughout."
+  },
+  "padded_memory_gate": {
+    "report": "results/moshi-padded-offloaded-longest.json",
+    "updates": 2,
+    "frames": 452,
+    "peak_memory_bytes": 5496838548,
+    "seconds": 72.67364083300345
   }
 }

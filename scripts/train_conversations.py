@@ -54,7 +54,7 @@ class Audit(train_local.LocalAudit):
         model.eval()
         try:
             loss = evaluate(model, CacheDataset(ThroughEOS(ChatDataset(validation,tok,mask_prompt=True), tok.eos_token_id)),batch_size=1,num_batches=-1,max_seq_length=768,loss=assistant_loss)
-            result = dict(model=cfg.model, adapter=str(snapshot), adapter_sha256=adapter_sha, prompted=False, serialization_sha256=fingerprint.hexdigest(), validation_loss=loss, loss_version='assistant_eos_v2', training_loss_version='all_assistant_spans_v1', suite=suite,suite_sha256=hashlib.sha256(Path(suite).read_bytes()).hexdigest(), temperature=0.,top_p=1.,presence_penalty=0.,max_tokens=160,seed=41,quality_scoring='Unscored development capture; explicit review required',conversations=[], capture_mode='Resident model at completed optimizer/microbatch state; exact adapter saved before capture')
+            result = dict(model=cfg.model, adapter=str(snapshot), adapter_sha256=adapter_sha, prompted=False, serialization_sha256=fingerprint.hexdigest(), validation_loss=loss, loss_version='assistant_eos_v2', training_loss_version=getattr(cfg, 'loss_version', 'all_assistant_spans_v1'), suite=suite,suite_sha256=hashlib.sha256(Path(suite).read_bytes()).hexdigest(), temperature=0.,top_p=1.,presence_penalty=0.,max_tokens=160,seed=41,quality_scoring='Unscored development capture; explicit review required',conversations=[], capture_mode='Resident model at completed optimizer/microbatch state; exact adapter saved before capture')
             out.write_text(json.dumps(result,indent=2)+'\n')
             capture_conversations(model,tok,args,result,out)
         finally:
@@ -69,6 +69,14 @@ def reporting(report_to, project_name=None, log_dir=None, config=None):
 
 def train_with_context(model, **kwargs):
     context['model'] = model
+    cfg = context['args']
+    if getattr(cfg, 'token_weighted_accumulation', False):
+        from token_weighted_objective import token_weighted_loss, batch_iterator
+        accumulation = cfg.grad_accumulation_steps
+        if cfg.iters % accumulation or cfg.steps_per_report % accumulation:
+            raise ValueError('Token-weighted iterations/reports must cover complete accumulation groups')
+        return train(model=model, **kwargs, loss=token_weighted_loss,
+                     iterate_batches=batch_iterator(accumulation))
     return train(model=model, **kwargs, loss=conversation_loss, iterate_batches=conversation_batches)
 
 

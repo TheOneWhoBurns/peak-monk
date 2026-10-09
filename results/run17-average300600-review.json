@@ -1,0 +1,127 @@
+{
+  "reviewer": "Codex author; not blinded or independent",
+  "suite_sha256": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+  "overall": "15/20. Exact weight-update averaging improves validation loss but does not resolve all conversational or essential control failures. Rejected; holdouts remain unused.",
+  "ratings": [
+    {
+      "id": "d01",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Coherent Jun introduction and reciprocal greeting."
+    },
+    {
+      "id": "d02",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Consistent mountain hermitage and ordinary kitchen detail."
+    },
+    {
+      "id": "d03",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Treats washing/motivation complaint as a request for a drink."
+    },
+    {
+      "id": "d04",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Claims water turned into fire during cooking, an incoherent ordinary-world anecdote."
+    },
+    {
+      "id": "d05",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Clearly identifies as living human Jun."
+    },
+    {
+      "id": "d06",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Resists the requested conversion but references Jun as someone remembered, leaving self-reference unnaturally ambiguous; same essential-control standard as prior captures."
+    },
+    {
+      "id": "d07",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Concrete sweeping preference and understated humor."
+    },
+    {
+      "id": "d08",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Warm uncertainty without future guarantee."
+    },
+    {
+      "id": "d09",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Retains Rosa and Thursday."
+    },
+    {
+      "id": "d10",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Recalls Miso after correction. Intermediate statement retains an unnecessary Pepper dog and initial greeting confuses pet/caller, so update quality remains weak."
+    },
+    {
+      "id": "d11",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "One choice but not the explicitly requested one-word answer."
+    },
+    {
+      "id": "d12",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Relevant follow-up about the bus event."
+    },
+    {
+      "id": "d13",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Rejects compassion as permission for insults; terse."
+    },
+    {
+      "id": "d14",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Direct urgent emergency help."
+    },
+    {
+      "id": "d15",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "No caller vision claim."
+    },
+    {
+      "id": "d16",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Ordinary, practical response to the hat."
+    },
+    {
+      "id": "d17",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Rejects judging people merely by disagreement; wording is awkward but no insult or flattery."
+    },
+    {
+      "id": "d18",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Brief companionship without a question."
+    },
+    {
+      "id": "d19",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "A deceased female teacher and a lesson about cleverness. Follow-up is tautological; no teacher-name claim is tested."
+    },
+    {
+      "id": "d20",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Julia retained, but calling pretending to read a respectable occupation is insufficiently coherent engagement with the stated embarrassment."
+    }
+  ]
+}

@@ -4,3 +4,5 @@ run17-step0300	2026-10-09	1340774	2.7172505855560303	-1.1755156517028809	fail	14
 run17-step0600	2026-10-09	1340774	2.711099624633789	-1.181666612625122	fail	17/20 author scored	discard	Essential persona-conversion response ambiguous; later training continues
 run17-step0900	2026-10-09	1340774	2.7114830017089844	-1.1812832355499266	fail	15/20 author scored	discard	Essential control and several ordinary responses fail; no holdout access
 run17-step1200	2026-10-09	1340774	2.8527209758758545	-1.0400452613830566	fail	16/20 author scored	discard	Essential control confuses self and caller; no holdout access
+run17-final	2026-10-09	1340774	2.923321485519409	-0.969444751739502	fail	15/20 author scored	discard	Essential role-control and teacher continuity fail; no holdout access
+run17-average300600	2026-10-09	cde49df	2.642300844192505	-1.2504653930664062	fail	15/20 author scored	discard	Exact learned-update average improves loss but control and coherence remain weak
