@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "episode": "name",
+  "frames": 245,
+  "layers": 32,
+  "rank": 8,
+  "scope": "Full-episode checkpointed gradient feasibility probe",
+  "error": "METAL command buffer execution failed: Insufficient Memory; process aborted before metrics could be saved.",
+  "peak_memory_bytes": null,
+  "conclusion": "16frameprobe fits, full245frameepisode does not. No model quality claim or saved adapter.",
+  "next": "Measure64frames; investigate truncated backpropagation through time with detached carried attention state, preserving complete forward context."
+}

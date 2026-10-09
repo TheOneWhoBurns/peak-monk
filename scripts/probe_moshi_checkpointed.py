@@ -16,10 +16,12 @@ from mlx.utils import tree_flatten,tree_map
 from moshi_mlx.models import Lm,config_v0_1
 from moshi_training import attach_lora,loss
 from moshi_split import delay_streams
+from moshi_windowed import episode_grad
 p=argparse.ArgumentParser()
 p.add_argument('--episode',default='name')
 p.add_argument('--frames',type=int,default=16,help='0 means complete training episode')
 p.add_argument('--output',required=True)
+p.add_argument('--window',type=int,default=0,help='Positive value enables explicitly truncated BPTT with carried attention state')
 args=p.parse_args();out=Path(args.output)
 if out.exists():raise ValueError('Preserve previous probe')
 weight=Path('models/moshi/model.q4.safetensors')
@@ -38,7 +40,8 @@ print('Loaded',mx.get_active_memory(),'bytes;',params,'trainable parameters',flu
 streams=delay_streams(mx.array(raw[None,:,:]),model.cfg)
 optimizer=optim.AdamW(learning_rate=1e-4,weight_decay=.01)
 fn=nn.value_and_grad(model,partial(loss,text_padding_weight=.05,checkpoint_layers=True))
-start=time.monotonic();value,grad=fn(model,streams)
+start=time.monotonic()
+value,grad=episode_grad(model,streams,window=args.window) if args.window else fn(model,streams)
 norm=mx.sqrt(sum(mx.sum(g.astype(mx.float32)**2) for _,g in tree_flatten(grad)))
 grad=tree_map(lambda g:g*mx.minimum(1.,1./(norm+1e-8)),grad)
 optimizer.update(model,grad);mx.eval(value,norm,model.parameters(),optimizer.state)
@@ -46,6 +49,7 @@ assert mx.isfinite(value).item() and mx.isfinite(norm).item()
 report=dict(scope='Disposable actual-episode feasibility update; no adapter saved, no quality claim',
     episode=args.episode,frames=raw.shape[1],original_frames=original_frames,checkpoint_layers=True,
     trainable_layers=32,trainable_parameters=params,rank=8,scale=2,loss=value.item(),gradient_norm=norm.item(),
+    gradient_window=args.window,gradient_policy='Truncated BPTT with detached carried attention state' if args.window else 'Full-episode gradient',
     seconds=time.monotonic()-start,peak_memory_bytes=mx.get_peak_memory(),active_memory_bytes=mx.get_active_memory(),
     within_recommended_working_set=mx.get_peak_memory()<=mx.metal.device_info()['max_recommended_working_set_size'])
 out.write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2),flush=True)
