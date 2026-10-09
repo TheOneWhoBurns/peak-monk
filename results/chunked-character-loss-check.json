@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "chunk_size": 3,
+      "loss_error": 0.0,
+      "maximum_gradient_error": 2.9802322387695312e-08,
+      "rng_error": 0.0
+    },
+    {
+      "chunk_size": 8,
+      "loss_error": 0.0,
+      "maximum_gradient_error": 7.450580596923828e-09,
+      "rng_error": 0.0
+    },
+    {
+      "chunk_size": 64,
+      "loss_error": 0.0,
+      "maximum_gradient_error": 0.0,
+      "rng_error": 0.0
+    }
+  ],
+  "target_tokens": 14,
+  "scope": "Tiny actual quantized Qwen3 with tied LoRA embedding, nonzero adapters and head dropout. Full-model memory benefit and training quality unmeasured."
+}

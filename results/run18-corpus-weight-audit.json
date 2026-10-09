@@ -1,0 +1,15 @@
+{
+  "scope": "Corpus token/length estimate; standalone message encoding, not exact ChatML mask counts",
+  "weighted_records": 523,
+  "estimated_character_tokens": 44505,
+  "new_long_records": 72,
+  "new_long_record_share": 0.13766730401529637,
+  "new_long_token_share": 0.28428266486911585,
+  "character_reply_words": {
+    "median": 14,
+    "mean": 16.899383009017562,
+    "max": 130
+  },
+  "train_sha256": "f920b4ec79f5ef2aeb4c900a2897fd0c331c0e9cc3bb155e24fd8a03fb91a10e",
+  "interpretation": "Group token normalization is per shuffled four-microbatch update, not a globally fixed token sampling probability. New long records have substantially more target tokens per record."
+}

@@ -36,7 +36,7 @@ def main():
     assert codes.shape == (8, args.frames) and np.all((codes >= 0) & (codes < 2048))
     mx.set_memory_limit(5_700_000_000)
     mx.set_cache_limit(32_000_000)
-    recommended = mx.device_info()['max_recommended_working_set_size']
+    recommended = mx.metal.device_info()['max_recommended_working_set_size']
     mx.set_wired_limit(recommended)
     runtime = NativeRuntime(args.model, verify=True)
     assert len(runtime.model.depformer.slices) == 16
