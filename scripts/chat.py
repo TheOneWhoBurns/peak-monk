@@ -1,21 +1,48 @@
 """Interactive local character inference. Intentionally no persona system prompt."""
 import argparse
+import json
 from pathlib import Path
-import mlx.core as mx
-from mlx_lm import load, stream_generate
-from mlx_lm.sample_utils import make_sampler
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def resolve_inputs(adapter, model=None, root=ROOT):
+    def local(value):
+        path = Path(value)
+        return (path if path.is_absolute() else root / path).resolve()
+
+    adapter_path = local(adapter)
+    config_path = adapter_path / 'adapter_config.json'
+    if not config_path.is_file():
+        raise ValueError('Adapter directory needs its saved adapter_config.json')
+    trained_base = json.loads(config_path.read_text()).get('model')
+    if not trained_base:
+        raise ValueError('Adapter configuration does not identify its training base')
+    expected = local(trained_base)
+    selected = local(model) if model else expected
+    if selected != expected:
+        raise ValueError(f'Adapter was trained on {expected}, not {selected}')
+    if not selected.is_dir() or not (adapter_path / 'adapters.safetensors').is_file():
+        raise ValueError('The recorded model and saved adapter weights must exist locally')
+    return selected, adapter_path
 
 def main():
     p=argparse.ArgumentParser()
-    p.add_argument('--model',default='models/stronger-clean')
+    p.add_argument('--model',help='Defaults to the adapter training base; must match it')
     p.add_argument('--adapter',required=True,
                    help='Explicit experimental adapter directory; no accepted release exists yet')
-    p.add_argument('--temperature',type=float,default=0.6)
+    p.add_argument('--temperature',type=float,default=0.0,
+                   help='Default matches greedy development evaluation')
     p.add_argument('--max-tokens',type=int,default=180)
     args=p.parse_args()
-    if not Path(args.model).is_dir() or not Path(args.adapter).is_dir():
-        p.error('Model and adapter must be existing local directories')
-    model,tok=load(args.model,adapter_path=args.adapter)
+    try:
+        model_path, adapter_path = resolve_inputs(args.adapter, args.model)
+    except (ValueError, OSError) as error:
+        p.error(str(error))
+    import mlx.core as mx
+    from mlx_lm import load, stream_generate
+    from mlx_lm.sample_utils import make_sampler
+    model,tok=load(str(model_path),adapter_path=str(adapter_path))
     messages=[]
     print('Jun — fictional monk, running locally. /reset clears context; /quit exits.')
     while True:

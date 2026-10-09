@@ -1,0 +1,13 @@
+{
+  "source": "data/grounded_long_v7.txt",
+  "sha256": "216fd8cd4c892122fc6bf37474e3bddb99ceb3d1221c3c7d15f7f27fb0d1bb37",
+  "conversations": 8,
+  "assistant_turns": 80,
+  "author": "Codex original authored synthetic dialogue, not transcripts or local teacher generation",
+  "sources": "Broad historical/fictional influences mapped by family; no attributed quotes",
+  "split": "train only, whole families",
+  "review": "Same-author review; ordinary reciprocal company emphasized, with canonical identity and remote perception preserved",
+  "exact_heldout_prompt_overlap": false,
+  "leakage_limitation": "Exact screening is not semantic independence; general development failures informed intervention",
+  "status": "Proposed corpus expansion; excluded from fixed run17 corpus"
+}

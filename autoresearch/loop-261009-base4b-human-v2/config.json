@@ -15,5 +15,5 @@
   "plan": "results/train17-plan.json",
   "speech_ledger": "autoresearch/loop-261009-clean4b-human-v2/speech-results.tsv",
   "queued_speech": "speech-run07; padded-tail all-temporal LoRA, memory gate pending",
-  "data_expansion": "28 authored long conversation drafts (v3-v6), excluded from run17; pending separate experiment decision"
+  "data_expansion": "36 authored long conversation drafts (v3-v7), 360 character replies; excluded from run17, pending separate experiment decision"
 }

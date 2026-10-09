@@ -1,0 +1,24 @@
+{
+  "scope": "Static source audit only; weights still downloading, no inference or fit claim",
+  "config_sha256": "31c94a7c6cc90a0db29bb53d23a34b44449f2159a27de8fac441142132922ecc",
+  "architecture": {
+    "dim": 4096,
+    "num_heads": 32,
+    "num_layers": 32,
+    "hidden_scale": 4.125,
+    "dep_q": 16,
+    "depformer_dim_feedforward": 4224,
+    "norm": "rms_norm_f32",
+    "context": 3000,
+    "cross_attention": false
+  },
+  "source_generator": "vendor/personaplex-edge-source/src/personaplex_edge/generator.py",
+  "observation": "Current generator samples depformer.slices[:8], resets the depth cache every frame, and forces user tokens into temporal input. Extra user prediction slices do not participate in its agent-token computation.",
+  "potential_memory_change": "Load only first8 depth slices; must validate actual logits/generation parity against the unmodified runtime before relying on equivalence. Savings not measured.",
+  "configuration_warning": "Do not load this model with Moshi config_v0_1: hidden_scale, depth FFN and norm config differ. Use its pinned config and explicit adaptation.",
+  "voice_asset": {
+    "bytes": 410368,
+    "sha256": "af62858fc022f67cbf3f544d495ae01875b494d1bce071fb5c5a27492a168374"
+  },
+  "training_warning": "Voice-prefill conditioning must be represented consistently in any training recipe. Empty character role prompt is a separate experiment from prompted character control."
+}
