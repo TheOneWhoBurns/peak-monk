@@ -1,0 +1,12 @@
+{
+  "hypothesis": "Forcing existing reviewed text through the original native speech model may yield acoustics closer to its pretrained distribution than stock TTS. Test intelligibility before considering new training data.",
+  "episodes": [
+    "name",
+    "teacher",
+    "identity_transparency"
+  ],
+  "scope": "Training-data synthesis diagnostic, not a model capability benchmark",
+  "forced_text": true,
+  "heldout_consumed": false,
+  "acceptance": "Review unprompted ASR against authored targets; no automatic admission or learned-character claim"
+}

@@ -1,0 +1,8 @@
+{
+  "time": 1791569773.081196,
+  "decision": "Prioritize the 4B base-model experiment; pause the alternative PersonaPlex download with all confirmed ranges preserved.",
+  "base_model_workers": 64,
+  "base_resume": "base4b-resume-01.log",
+  "personaplex_resume": "personaplex-edge-resume-01.log",
+  "no_partial_weights_loaded": true
+}

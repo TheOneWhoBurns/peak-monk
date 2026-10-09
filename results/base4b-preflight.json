@@ -1,0 +1,22 @@
+{
+  "repo": "johnlakness/Qwen3-4B-Base-mlx-4Bit",
+  "revision": "76aa803fb5ee833aead9414f16f0708c901c21f7",
+  "weight_sha256_expected": "5bfd2f05e5374a4ffa703470efba85aefe65c874db2f82b472fd64afea019b75",
+  "weight_status": "download pending; not loaded",
+  "source_lineage": "Community MLX quantization of Qwen/Qwen3-4B-Base; conversion not independently reproduced",
+  "serialization": "Explicit simple ChatML, no system prompt or thinking prefix, im_end trained as EOS; original metadata preserved",
+  "tokenizer_check": {
+    "vocab_size": 151643,
+    "eos_token_id": 151645,
+    "round_trip": true
+  },
+  "rendered_probe": "<|im_start|>user\nHello.<|im_end|>\n<|im_start|>assistant\nGood morning.<|im_end|>\n<|im_start|>user\nCold today?<|im_end|>\n<|im_start|>assistant\n",
+  "metadata_hashes": {
+    "config.json": "df521925c72c4b82e18d66b46d91aa2f828b27200b342b6ad8d3da00580a5730",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "tokenizer_config.json": "f1d6b7cfc31b9b8f3a65dd7d0b7a372cae87ce3cd6fe2ccb2d08cdc237fb8ff4",
+    "chat_template.jinja": "f950548988e50713a9975a11be0eaf1d29c4fe4be0ba22a57daeebbc27a7adb9",
+    "generation_config.json": "04d8c5284eff1bc893f29e89bb682fc9f69b9fc8010569a05c5c965f21997236",
+    "special_tokens_map.json": "a5dba86f1cb07d7e5b093bbea2339d2c3c4effec4d6a76d812a7271897bd151a"
+  }
+}
