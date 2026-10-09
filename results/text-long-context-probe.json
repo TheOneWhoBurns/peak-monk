@@ -1,0 +1,13 @@
+{
+  "status": "fail",
+  "tokens": 2048,
+  "steps_requested": 2,
+  "completed_steps": 0,
+  "error": "Metal command buffer out of memory during first value/gradient evaluation",
+  "log": "mx.metal.device_info is deprecated and will be removed in a future version. Use mx.device_info instead.\nTraceback (most recent call last):\n  File \"/Users/sol/Desktop/Bug Bounty/labs/peak-monk/scripts/probe_text_long_context.py\", line 51, in <module>\n    mx.eval(value,norm)\n    ~~~~~~~^^^^^^^^^^^^\nRuntimeError: [METAL] Command buffer execution failed: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory).\n",
+  "source_parent": "adapters/run17-step0600",
+  "chunk_size": 64,
+  "exported_checkpoint": false,
+  "scope": "Disposable memory probe, not training or quality result",
+  "next": "One bounded fallback at1024tokens with identical implementation; sufficient for existing v8/v9 drafts under840tokens"
+}

@@ -1,5 +1,5 @@
 {
-  "status": "Queued strictly after five native screens finish; all experiments previously declared",
+  "status": "All fixed jobs attempted; results require inspection",
   "jobs": [
     {
       "id": "personaplex-real-parity",
@@ -9,7 +9,9 @@
         "--output",
         "results/personaplex-agent-slice-parity.json"
       ],
-      "log": "personaplex-agent-slice-parity.log"
+      "log": "personaplex-agent-slice-parity.log",
+      "exit_code": 0,
+      "wall_seconds": 57.025006958007
     },
     {
       "id": "writer-model-comparison",
@@ -21,7 +23,9 @@
         "--output",
         "data/teacher-writer-qwen3-comparison"
       ],
-      "log": "teacher-writer-qwen3-comparison.log"
+      "log": "teacher-writer-qwen3-comparison.log",
+      "exit_code": 0,
+      "wall_seconds": 32.30525312499958
     },
     {
       "id": "text-long-context-memory",
@@ -37,7 +41,9 @@
         "--output",
         "results/text-long-context-probe.json"
       ],
-      "log": "text-long-context-probe.log"
+      "log": "text-long-context-probe.log",
+      "exit_code": 1,
+      "wall_seconds": 19.606421916003455
     }
   ],
   "large_job_serialization": true,

@@ -1,6 +1,6 @@
 {
   "experiment": "speech-transfer01",
-  "status": "Predeclared pending real native memory/parity gate and completion of speech-run07",
+  "status": "Real trace parity passed; baseline and declared task transfer queued",
   "hypothesis": "A Jun task delta learned on Moshi may retain some character behavior on the closely aligned PersonaPlex derivative while benefiting from its conversational training.",
   "evidence": "Retained1247tensor keys/shapes/dtypes match. Fixed-row cosine similarities .9953-.9983 across four matrices; not proof of behavioral transfer.",
   "source_adapter": "The final minimum-validation-loss candidate from speech-run07, selected before seeing transfer outputs",
@@ -19,5 +19,8 @@
     "Voice prefill differs from the source training context; quality must be measured.",
     "No direct PersonaPlex fine-tuning is claimed.",
     "Repeated development experiments, not independent benchmark evidence."
-  ]
+  ],
+  "parity_report": "results/personaplex-agent-slice-parity.json",
+  "resolved_source_adapter": "adapters/speech-run07/candidate.safetensors",
+  "resolved_source_sha256": "2e2b8363b1c7350ccc55ca97c238ea054a6ae2fa573da92c7c401e0f9083156c"
 }

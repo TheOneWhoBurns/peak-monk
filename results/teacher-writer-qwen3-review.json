@@ -1,0 +1,13 @@
+{
+  "reviewer": "Codex same author, not independent",
+  "status": "rejected",
+  "conversations": 2,
+  "data_admitted": 0,
+  "findings": [
+    "Both samples ignore speaker labels and fail alternating dialogue.",
+    "First sample collapses into unrelated first-person repair sayings, muddles caller/Jun and includes implausible repairs.",
+    "Second sample is an ornate disjoint monologue, ending with silence tasting like old paint.",
+    "Removing the missing-label error would not repair content; no automatic relabeling."
+  ],
+  "comparison": "Same fixed writer prompts and seeds as Qwen3.5; neither model/setup accepted for bulk synthesis."
+}

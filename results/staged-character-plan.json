@@ -1,0 +1,31 @@
+{
+  "status": "Tiny parity passed; real1024token two-update memory gate queued after native audits",
+  "implementation": [
+    "scripts/staged_character_grad.py",
+    "scripts/qwen_rng_checkpoint.py",
+    "scripts/probe_text_staged_context.py"
+  ],
+  "hypothesis": "Sequentially evaluate each head chunk and its gradient before transformer replay, avoiding one large lazy graph of all head chunks",
+  "objective": "Unchanged full-context character-token CE; tied embedding gradient adds both uses; no truncated BPTT",
+  "rng": "Read-only MLX0.32state restored using exact two-uint32 key through seed(uint64); layer recomputations replay keys instead of consuming fresh dropout masks",
+  "upstream_diagnostic": "results/upstream-checkpoint-dropout-diagnostic.json",
+  "parity": "results/staged-character-gradient-check.json",
+  "memory_gate": {
+    "tokens": 1024,
+    "steps": 2,
+    "chunk_size": 64,
+    "parent": "adapters/run17-step0600",
+    "export": false
+  },
+  "conditional_next": "If1024 passes, one2048token two-update probe with identical implementation; no training before memory gate",
+  "limitations": "Tiny gradient mismatch in installed helper does not prove it caused previous quality failures. New calculation is unmeasured at full scale.",
+  "sources": [
+    "https://raw.githubusercontent.com/ml-explore/mlx/v0.32.3/python/src/random.cpp",
+    "https://ml-explore.github.io/mlx/build/html/python/random.html"
+  ],
+  "source_hashes": {
+    "scripts/staged_character_grad.py": "faf3aa92202070e7e5b6c350d351d85a37455b6a93133fee52b6af15fe885d8f",
+    "scripts/qwen_rng_checkpoint.py": "d6868f5a8f60a9d8497dd6074945e1d1733bafb7e3bac2fde2ca75750380fe83",
+    "scripts/probe_text_staged_context.py": "c1c6fc0a1a866dffa69781ccc9a64e632d40967dc695f528b27b0e6f01cdc101"
+  }
+}

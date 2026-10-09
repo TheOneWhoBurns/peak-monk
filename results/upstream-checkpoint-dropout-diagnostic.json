@@ -1,0 +1,14 @@
+{
+  "status": "mismatch",
+  "loss_error": 0.0,
+  "gradient_errors": {
+    "model.embed_tokens.lora_a": 0.0016054250299930573,
+    "model.embed_tokens.lora_b": 0.004227802157402039,
+    "model.layers.0.self_attn.q_proj.lora_a": 0.019734136760234833,
+    "model.layers.0.self_attn.q_proj.lora_b": 0.06060817092657089,
+    "model.layers.1.self_attn.q_proj.lora_a": 0.0057272049598395824,
+    "model.layers.1.self_attn.q_proj.lora_b": 0.059174224734306335
+  },
+  "rng_next_draw_error": 0.6816742420196533,
+  "scope": "Tiny actual quantized Qwen3, nonzero tied embedding and q_proj adapters, dropout.2; identical initialseed; ordinary loss versus installed upstream grad_checkpoint. No staged gradient implementation involved."
+}
