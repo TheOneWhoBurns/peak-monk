@@ -84,17 +84,19 @@ def screen(messages,forbidden):
 
 def main():
     p=argparse.ArgumentParser()
-    p.add_argument('--model',default='models/stronger')
+    p.add_argument('--model',default='models/stronger-clean')
     p.add_argument('--output',default='data/simulation-v2')
     p.add_argument('--start',type=int,default=0)
     p.add_argument('--limit',type=int,default=4)
     p.add_argument('--exchanges',type=int,default=8)
+    p.add_argument('--config',default='configs/synthesis.json')
     args=p.parse_args()
     out=Path(args.output);out.mkdir(parents=True,exist_ok=True)
-    cfg=json.loads(Path('configs/synthesis.json').read_text())
+    cfg=json.loads(Path(args.config).read_text())
     graph=json.loads(Path('character/associations.json').read_text())
     core=Path('character/simulation-core.txt').read_text();style=Path('character/style.txt').read_text()
-    forbidden=[u for name in ('dev','final') for c in json.loads(Path(f'evaluation/{name}.json').read_text()) for u in c['turns']]
+    forbidden=[u for name in ('dev','final','pressure-v2') for c in json.loads(Path(f'evaluation/{name}.json').read_text()) for u in c['turns']]
+    influences={s['id']:s for s in json.loads(Path('sources/manifest.json').read_text())}
     model,tok=load(args.model)
     partners=[('a bicycle courier who dislikes motivational advice','slightly impatient'),('a retired seamstress who enjoys teasing people','playful'),('a night-shift baker with a practical streak','tired'),('a shy apprentice carpenter proud of small progress','hopeful'),('a school librarian who changes their mind while talking','curious'),('a student with very little money and strong opinions','skeptical')]
     for index in range(args.start,args.start+args.limit):
@@ -107,7 +109,8 @@ def main():
 Speak only your next turn as this person, in one or two ordinary spoken sentences. Have your own concrete details, preferences and agenda. React to what Jun actually says. Do not write Jun's reply, scripts, labels, narration or an essay. You may disagree or change topic. Keep this a conversation, not an interview about Jun. Do not repeat a question already answered.'''
         record=dict(index=index,family=f"simulation_v2_{index:04d}",split='train',sources=topic['sources'],author='Local alternating-speaker simulation',teacher=args.model,
             character_version='human_character_v2',quality_review='pending',single_teacher_limitation=True,
-            prompt_assets={f:digest(f) for f in ('character/simulation-core.txt','character/style.txt','character/associations.json')},
+            prompt_assets={f:digest(f) for f in ('character/simulation-core.txt','character/style.txt','character/associations.json',args.config,'sources/manifest.json')},
+            template_policy='Native teacher template with enable_thinking=False; generator prompts are excluded from training',
             partner=dict(persona=persona,attitude=attitude,topic=topic['subject'],dynamic=dynamic),messages=[],trace=[])
         for turn in range(args.exchanges):
             hist=[{'role':'assistant' if m['role']=='user' else 'user','content':m['content']} for m in record['messages']]
@@ -119,7 +122,8 @@ Speak only your next turn as this person, in one or two ordinary spoken sentence
             memory='\n'.join(n['description'] for n in nodes)
             length=rng.choices(['a few words','one brief sentence','two or three sentences','a longer reply if this subject warrants it'],weights=[15,35,40,10])[0]
             feeling='mildly cheerful' if state['valence']>.2 else 'a little subdued' if state['valence']<-.2 else 'matter-of-fact'
-            system=core+'\n'+style+f'\nYou feel {feeling}. Let the reply be {length}.\nAssociations that came to mind; use only if relevant and never recite them:\n'+memory
+            influence='\n'.join(influences[s]['influence'] for s in topic['sources'])
+            system=core+'\n'+style+f'\nYou feel {feeling}. Let the reply be {length}.\nBackground dispositions; express them through conduct only when relevant, without reciting them:\n'+influence+'\nAssociations that came to mind; use only if relevant and never recite them:\n'+memory
             jun,jm=respond(model,tok,[{'role':'system','content':system}]+record['messages'],18931+index*100+turn*2+1,.75,220)
             record['messages'].append({'role':'assistant','content':jun})
             record['trace'].append(dict(turn=turn,caller=cm,jun=jm,world=state))

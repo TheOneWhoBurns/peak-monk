@@ -27,8 +27,12 @@ for path in sorted(Path('data/speech_codes').glob('*.npz')):
         raise ValueError(f'{path}: longer than predeclared context limit; do not silently truncate')
     target=out/(path.stem+'.safetensors')
     meta=out/(path.stem+'.json')
+    code_sha=hashlib.sha256(path.read_bytes()).hexdigest()
     if target.exists() and meta.exists():
-        rows.append(json.loads(meta.read_text()));continue
+        cached=json.loads(meta.read_text())
+        if cached.get('codes_sha256')!=code_sha or cached.get('suffix_layers')!=args.suffix_layers:
+            raise ValueError(f'{target}: stale prefix cache; use a fresh cache directory')
+        rows.append(cached);continue
     start=time.monotonic()
     raw=mx.array(np.load(path)['codes'][None,:,:])
     streams=delay_streams(raw,config_v0_1())
@@ -36,6 +40,7 @@ for path in sorted(Path('data/speech_codes').glob('*.npz')):
     mx.eval(hidden)
     mx.save_safetensors(str(target),{'hidden':hidden,'targets':streams[:,:,1:]})
     row=dict(info,suffix_layers=args.suffix_layers,path=str(target),
+             codes_sha256=code_sha,
              prefix_seconds=time.monotonic()-start,peak_memory_bytes=mx.metal.get_peak_memory(),
              model_sha256='7959d590e23c1ebc78cfa3501344a6ff331561aa0cadc4429b733b890bbc919c',
              cached_prefix='Frozen embeddings and first '+str(32-args.suffix_layers)+' temporal layers')
