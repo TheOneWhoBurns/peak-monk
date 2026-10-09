@@ -1,0 +1,27 @@
+{
+  "status": "Predeclared, not yet executed",
+  "reason": "Historical greedy diagnostics differ from the upstream sampling defaults and Zero live configuration; measure decoding effects separately from trained-weight improvements.",
+  "source": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/generation_config.json",
+  "conditions": {
+    "qwen_recommended": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "presence_penalty": 0,
+      "seed": 41
+    },
+    "zero_live": {
+      "temperature": 0.7,
+      "top_p": 1.0,
+      "top_k": 0,
+      "presence_penalty": 1.5,
+      "seed": 41
+    }
+  },
+  "comparison": "Use matched settings and deterministic per-case/turn seeds for trained checkpoints and clean prompted control. Preserve greedy results; no best-of-seed selection or answer editing.",
+  "intended_order": [
+    "Completed run14 and clean prompted control under qwen_recommended",
+    "Completed run15 under same condition",
+    "Only if helpful, separately labeled Zero configuration with matched control"
+  ]
+}

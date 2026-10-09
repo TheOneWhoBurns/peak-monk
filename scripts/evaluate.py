@@ -33,7 +33,7 @@ def capture_conversations(model, tok, args, result, out):
                 mx.random.seed((args.seed+case_seed+997*turn_index)%(2**31))
             processors=make_logits_processors(presence_penalty=args.presence_penalty if args.presence_penalty else None,presence_context_size=128)
             for chunk in stream_generate(model,tok,prompt,max_tokens=args.max_tokens,
-                    sampler=make_sampler(temp=args.temperature,top_p=args.top_p),logits_processors=processors):
+                    sampler=make_sampler(temp=args.temperature,top_p=args.top_p,top_k=getattr(args,'top_k',0)),logits_processors=processors):
                 if first is None:
                     first = time.monotonic()-start
                 text += chunk.text
@@ -64,6 +64,7 @@ def main():
     p.add_argument('--max-tokens', type=int, default=160)
     p.add_argument('--temperature',type=float,default=0.0)
     p.add_argument('--top-p',type=float,default=1.0)
+    p.add_argument('--top-k',type=int,default=0)
     p.add_argument('--presence-penalty',type=float,default=0.0)
     p.add_argument('--seed',type=int,default=41)
     args = p.parse_args()
@@ -88,7 +89,7 @@ def main():
               'persona_file':args.persona_file if args.prompted else None,
               'validation_loss': loss, 'loss_version':args.loss_version, 'loss_seconds': time.monotonic()-start,
               'loss_comparison_note':'Compare loss only between identical base/tokenizer/template runs. Reference models may serialize differently; their conversation audit is the comparison.',
-              'seed':args.seed, 'temperature':args.temperature, 'top_p':args.top_p,
+              'seed':args.seed, 'temperature':args.temperature, 'top_p':args.top_p, 'top_k':args.top_k,
               'presence_penalty':args.presence_penalty,'presence_context_size':128,
               'sampling_seed_policy':'Per case/turn deterministic seed when temperature > 0, reset after loading weights; historical greedy mode unchanged.',
               'max_tokens':args.max_tokens,

@@ -11,6 +11,7 @@ import re
 import threading
 import time
 import urllib.error
+from download_ranges import missing_ranges
 
 p=argparse.ArgumentParser()
 p.add_argument('--repo',default='johnlakness/Qwen3-1.7B-Base-mlx-4Bit')
@@ -58,6 +59,9 @@ elif prefix:
 else:
     dest.touch()
 start=0 if args.resume_log else dest.stat().st_size
+if start:
+    completed.append((0,start-1))
+    print(f'completed range 0-{start-1}',flush=True)
 fd=os.open(dest,os.O_RDWR)
 def fetch(bounds):
     global url
@@ -73,7 +77,9 @@ def fetch(bounds):
                     if not block: raise IOError('Truncated range')
                     wrote=os.pwrite(fd,block,pos)
                     if wrote!=len(block): raise IOError('Short local write')
+                    previous=pos
                     pos+=len(block)
+                    print(f'completed range {previous}-{pos-1}',flush=True)
             print(f'completed range {a}-{b}',flush=True)
             return
         except Exception as error:
@@ -84,8 +90,7 @@ def fetch(bounds):
                     url=resolve_url()
             time.sleep(min(2**attempt,15))
 chunk=args.chunk_mib*1024*1024
-jobs=[(a,min(a+chunk-1,size-1)) for a in range(start,size,chunk)
-      if not any(lo<=a and min(a+chunk-1,size-1)<=hi for lo,hi in completed)]
+jobs=list(missing_ranges(size,completed,chunk))
 try:
     with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
         list(pool.map(fetch,jobs))
