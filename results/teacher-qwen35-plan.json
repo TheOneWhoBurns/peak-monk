@@ -1,0 +1,17 @@
+{
+  "purpose": "Pilot a stronger local teacher for original multi-turn training conversations; no automatic admission",
+  "model": "models/qwen35",
+  "model_sha256": "5fb9acd0246866381cf8c5c354c6db1019f6498eec4ccb4f5edcc71ffeacb2db",
+  "dataset_output": "data/simulation-qwen35-v3",
+  "pilot_conversations": 4,
+  "exchanges_per_conversation": 10,
+  "protocol": "Alternating speaker simulation with persistent lexical associations; native template, thinking disabled; historical/fictional influence notes guide conduct. Prompts and traces excluded from SFT.",
+  "selection": "Read every response for relevance, coherent human identity, stable Jun biography, correct speaker perspective, ordinary dialogue, repetition and truncation. A mechanically passed transcript is still pending until explicit author review.",
+  "limitations": [
+    "One teacher plays both roles",
+    "Not a reproduction of Zero dataset scale or teacher diversity",
+    "Author review is not independent or blinded"
+  ],
+  "next_decision": "Expand generation only if the pilot is useful; rejected outputs remain outside training.",
+  "execution": "Wait for complete upstream SHA verification and finish the active GPU training process first."
+}
