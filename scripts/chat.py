@@ -24,7 +24,7 @@ def main():
         if not user: continue
         messages.append({'role':'user','content':user})
         # Keep complete recent exchanges under a modest local context budget.
-        while len(tok.apply_chat_template(messages,add_generation_prompt=True))>2048 and len(messages)>1:
+        while len(tok.apply_chat_template(messages,add_generation_prompt=True,return_dict=False))>2048 and len(messages)>1:
             messages=messages[2:]
         prompt=tok.apply_chat_template(messages,add_generation_prompt=True,tokenize=False)
         print('Jun: ',end='',flush=True)
