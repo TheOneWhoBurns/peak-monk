@@ -1,0 +1,12 @@
+{
+  "sha256": "065f06d835b30ba69bae439fae9fbdf771eacc59c6ed7d6310a3ad18e9ada8c6",
+  "conversations": 4,
+  "character_turns": 64,
+  "exchanges_per_conversation": 16,
+  "author": "Codex original synthetic fiction",
+  "reviewer": "Same author, not independent",
+  "status": "Draft for later long-context experiment; excluded from run17 and queued run18",
+  "source_usage": "Broad listed monastic/literary influences; no real transcripts, quotations or voice cloning",
+  "exact_heldout_prompt_overlap": false,
+  "limitations": "Mechanically disjoint exact prompts do not establish semantic independence. General development failures inform corpus design."
+}

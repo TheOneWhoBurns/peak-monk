@@ -1,0 +1,19 @@
+{
+  "experiment": "run17",
+  "source_commit": "1340774",
+  "microsteps": 1356,
+  "optimizer_updates": 339,
+  "training_target_tokens": 95695,
+  "peak_mlx_gb_in_reporting": 4.768333268,
+  "loss_objective": "All character spans, equal microbatch weighting",
+  "quality": "All captured checkpoints and fixed average rejected; independent final/pressure unused",
+  "recorded_dev_scores": {
+    "300": 14,
+    "600": 17,
+    "900": 15,
+    "1200": 16,
+    "1356": 15,
+    "average300600": 15
+  },
+  "notes": "Peak reporting includes prior resident audit allocations. Training target token count includes repeat exposures; not distinct dataset size."
+}
