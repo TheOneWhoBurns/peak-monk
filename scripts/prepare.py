@@ -1,6 +1,7 @@
 """Deterministic family-first corpus preparation, never random turn splitting."""
 import hashlib
 import json
+import argparse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -35,7 +36,12 @@ def write(path, rows):
     path.write_text(''.join(json.dumps(r, ensure_ascii=False)+'\n' for r in rows))
 
 def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--include-augmentation',action='store_true')
+    args=parser.parse_args()
     train, valid = parse(ROOT/'data/seeds.txt'), parse(ROOT/'data/validation.txt')
+    if args.include_augmentation:
+        train+=parse(ROOT/'data/augmentation_pool.txt')
     assert not ({r['family'] for r in train} & {r['family'] for r in valid})
     write(ROOT/'data/prepared/train.jsonl', expand(train))
     write(ROOT/'data/prepared/valid.jsonl', expand(valid))
@@ -43,9 +49,12 @@ def main():
     write(ROOT/'data/prepared/test.jsonl', expand(valid))
     write(ROOT/'data/conversations.jsonl', [dict(r, split=s) for s, rows in [('train',train),('validation',valid)] for r in rows])
     paths = ['data/seeds.txt','data/validation.txt','evaluation/dev.json','evaluation/final.json','character/core.md','sources/manifest.json']
+    if args.include_augmentation:
+        paths.append('data/augmentation_pool.txt')
     manifest = {'sha256': {p: hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in paths},
                 'train_conversations': len(train), 'train_assistant_turns': len(expand(train)),
                 'validation_conversations': len(valid), 'validation_assistant_turns': len(expand(valid)),
+                'augmentation_included':args.include_augmentation,
                 'split_policy': 'Explicit scenario families before turn expansion; development and final prompts authored separately.'}
     (ROOT/'data/manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     print(json.dumps(manifest,indent=2))

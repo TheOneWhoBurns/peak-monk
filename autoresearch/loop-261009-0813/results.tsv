@@ -2,3 +2,4 @@
 iteration	timestamp	commit	metric	delta	guard	guard-metric	status	description
 0	2026-10-09T13:16:09.967277+00:00	d478f9e	4.60586404800415	0	pass	6 tests	baseline	Untrained base; raw development conversations saved
 1	2026-10-09T13:20:42.612444+00:00	caa69d6	3.8070762157440186	-0.7987878322601318	fail	0/20; emergency regression	discard	160-step block-only LoRA: repeated stock phrases; embedding adaptation next
+2	2026-10-09T13:25:06.752939+00:00	bedcf84	3.414538621902466	-1.1913254261016846	fail	2/20; emergency regression	discard	Embedding adapters learn stopping but 160 steps underfit relevance and character; test longer training from base
