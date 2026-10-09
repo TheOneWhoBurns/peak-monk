@@ -1,6 +1,6 @@
 {
   "experiment": "run20",
-  "status": "64fixed draws reviewed;22pairs admitted; training queued behind ASR",
+  "status": "Training in progress; zero-delta preflight passed, evaluations queued serially",
   "trigger": "run19 lacked real negatives because all32prompt histories were already in SFT; use32novel histories with the same parent and fixed sampling/training parameters",
   "parent_selection": "Same run18-step0400 parent selected under run19 declared rule; no new parent search",
   "rationale": "Ordinary SFT has repeatedly left role conversion failures. Freeze the character SFT weights and train a fresh small preference delta on actual training-prompt mistakes rather than continue moving all old factors.",
@@ -45,5 +45,7 @@
   "pairs": "data/preferences-run20-reviewed.jsonl",
   "pairs_sha256": "317482c2842678e55da92386696b7610a7c3edd275b7448a1dbc2f043cbbb035",
   "accepted_pairs": 22,
-  "distinct_prompt_families": 16
+  "distinct_prompt_families": 16,
+  "source_commit": "d568b85",
+  "zero_delta_result": "adapters/run20/zero_delta_check.json"
 }

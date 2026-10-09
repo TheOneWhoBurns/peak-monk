@@ -1,0 +1,37 @@
+{
+  "reviewer": "Codex, same author; source-text and ASR review, not human listening or independent rating",
+  "draft_sha256": "0db26241d69e2e4aee37a26b3473795d281192854580efd683f787d5fa6ec46f",
+  "render_manifest_sha256": "237d45d0a6b25ae01bad5623d8472b26023ec1c98b1b5b7d591c6af09e777a7b",
+  "accepted_ids": [
+    "overlap_backchannel_a_quiet_room",
+    "overlap_backchannel_mara_broom",
+    "overlap_backchannel_salty_pot",
+    "overlap_backchannel_the_cold_knee",
+    "overlap_barge_change_the_subject",
+    "overlap_barge_do_not_advise",
+    "overlap_barge_leaking_eaves",
+    "overlap_barge_louder_next_time",
+    "overlap_barge_not_a_dream",
+    "overlap_barge_only_the_name"
+  ],
+  "alignment_sha256": {
+    "overlap_backchannel_a_quiet_room": "0a6593481c6f2422ee2edd33b60d40fa1db080fdc1e7ae1ced7251168a0df351",
+    "overlap_backchannel_mara_broom": "f088f0f050eef440966b00fcf88bdc2d65bec3201761805062af8da82f316e25",
+    "overlap_backchannel_salty_pot": "dbddf986298ae8858fab0bdca657fafb12f8c288cf387c0811663d125bd9f22d",
+    "overlap_backchannel_the_cold_knee": "ed4b5f6f909c1293a89d9ae077cd7e8c60c445fc673e796f83675c3f2e3b1a9a",
+    "overlap_barge_change_the_subject": "9f0bb320958bb16f66a6b2b265e346ffd18f130a73fc96e02fae9f2ac468c0a8",
+    "overlap_barge_do_not_advise": "78a0afd0bda10a784818031f904c34718baa929cadd2a44675fe37c8d1999421",
+    "overlap_barge_leaking_eaves": "d0ebe27ba3b92e5552ccec67e8e4a5c546118dffc95269533d9fe38fceed4739",
+    "overlap_barge_louder_next_time": "f5df0b127a6d60cc913e955594ecee5bb2a97f21cdc6fbd5829d112e59b0c09d",
+    "overlap_barge_not_a_dream": "932514b5b3f120ce369f832602f30b594c05cf48d524815ac38fbace4b22557b",
+    "overlap_barge_only_the_name": "bfb1f1bca72a29e6ee3623fa5d56188858e76d9521aca217b17ff6833a0908bb",
+    "overlap_barge_someone_calling": "7e4ebf7083adcd38ebed0f1860feea866d0a5690cd461ae66af621a523490dde",
+    "overlap_barge_wrong_brother": "25a6ef6bd39534ed4c185ee1d4a9b59766fcc4d4d095ec0859a4695af79c9c8a"
+  },
+  "word_corrections": [],
+  "excluded": {
+    "overlap_barge_wrong_brother": "Name render/transcription remains ambiguous: Solan/Salen, Marek/Merk and final Marek/Make. Passing WER threshold alone is insufficient; excluded without relabeling audio.",
+    "overlap_barge_someone_calling": "Fixed midpoint assembly produced only0.02seconds simultaneous RMS activity, below unchanged0.08second minimum. Preserve failed assembly; exclude without searching timing."
+  },
+  "review_notes": "All accepted source turns pass raw unprompted ASR. Remaining nonzero WER is neighbour/neighbor orthography. Retain raw recognized spelling; no semantic correction. Timing/overlap and final training admission are separate gates."
+}

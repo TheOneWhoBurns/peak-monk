@@ -1,0 +1,8 @@
+{
+  "status": "rejected assembly",
+  "output": "data/renders-overlap-v2-assembled",
+  "failed_case": "overlap_barge_someone_calling",
+  "measured_simultaneous_seconds": 0.02,
+  "required_seconds": 0.08,
+  "action": "Preserve partial output; exclude this case and reassemble remaining10 with identical algorithm."
+}

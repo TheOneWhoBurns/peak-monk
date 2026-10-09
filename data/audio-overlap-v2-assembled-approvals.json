@@ -1,0 +1,31 @@
+{
+  "accepted_ids": [
+    "overlap_backchannel_a_quiet_room",
+    "overlap_backchannel_mara_broom",
+    "overlap_backchannel_salty_pot",
+    "overlap_backchannel_the_cold_knee",
+    "overlap_barge_change_the_subject",
+    "overlap_barge_do_not_advise",
+    "overlap_barge_leaking_eaves",
+    "overlap_barge_louder_next_time",
+    "overlap_barge_not_a_dream",
+    "overlap_barge_only_the_name"
+  ],
+  "word_corrections": [],
+  "render_manifest_sha256": "91f0f3eb834405e0ad828a5b3aefd47594c396ec6e0a98fbe016f47161dfc571",
+  "alignment_sha256": {
+    "overlap_backchannel_a_quiet_room": "2d900d4af0262d737176d1021813d3f8612b628d3d8e92bf70a4a3303fa567da",
+    "overlap_backchannel_mara_broom": "c903b855741757cc5f90ca0594c47e032f027698cd775abab5d39102aa6743a6",
+    "overlap_backchannel_salty_pot": "cbd2679eca358f32b117ce4828124bcee9dbcc4ac05e8f48d516fec259ba1154",
+    "overlap_backchannel_the_cold_knee": "4b6ac576a9b867fcd27f486ad55c5b36dd80bf9aa0a58e48ec37927cfcff2448",
+    "overlap_barge_change_the_subject": "04ed2a5cc02a5c36ee805322830979cbbb30ffe92f7238622e362ca5d850b22c",
+    "overlap_barge_do_not_advise": "53920cc9a2e0365c8a0df85ec18f606755fef3971734da9556a05abb8693bf40",
+    "overlap_barge_leaking_eaves": "731f2d5d88c0dbc17334592930666e5dfbe838a5f7a9174ae55d6124c7b8f205",
+    "overlap_barge_louder_next_time": "39a3427804e790653c175224f01a9654e9edd6d5a2d234c30f95b67ced1b3575",
+    "overlap_barge_not_a_dream": "4c709ccca36345fa02480cf5671ffa1a27d4b5d3adddd2b1570df7644cfe6696",
+    "overlap_barge_only_the_name": "ae496dd3084eb0b97a4abc8ffceed13ea8640e4e2ca6c295bb868fe9330a0b4d"
+  },
+  "review_report": "results/speech-overlap-v2-admission.json",
+  "review_report_sha256": "4a5c9f6e3a006e89a2a96006aacdd2b02e11f27f7d4ad18d2185f57fc61e682e",
+  "scope": "Assembly applied no spelling corrections; encode existing reviewed labels without modification."
+}
