@@ -1,0 +1,19 @@
+{
+  "experiment": "run17-average300600",
+  "status": "Predeclared derived candidate, evaluation queued after scheduled training",
+  "reason": "Step300 has clearer first-person control response but confused introduction; step600 fixes introduction but control response weakens. Test one fixed weight-update average, not a coefficient sweep.",
+  "parents": [
+    "adapters/run17-step0300",
+    "adapters/run17-step0600"
+  ],
+  "coefficients": [
+    0.5,
+    0.5
+  ],
+  "method": "Concatenate A factors and half-scaled B factors; rank32, scale2. Equal per-layer delta average, not factor averaging or prediction ensemble.",
+  "data_change": "None",
+  "evaluation": "Same frozen development suite and baseline. Final/pressure holdouts only if all development gates pass.",
+  "literature_inspiration": "https://arxiv.org/abs/2203.05482",
+  "limitation": "Model soups research motivates a test; it does not establish this LoRA character blend will work. Author evaluation is not blind.",
+  "output": "adapters/run17-average300600"
+}
