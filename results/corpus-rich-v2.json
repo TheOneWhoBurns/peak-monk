@@ -1,0 +1,11 @@
+{
+  "training_conversations": 134,
+  "assistant_prefixes": 471,
+  "assistant_words": 8672,
+  "mean_words": 18.411889596602972,
+  "median_words": 15,
+  "max_words": 111,
+  "over_50_words": 23,
+  "sources": "Original authored conversations; includes source influence IDs, no rejected local-teacher samples",
+  "scope": "Corpus statistics, not model quality scores"
+}

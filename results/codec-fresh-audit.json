@@ -1,0 +1,846 @@
+{
+  "scope": "Actual CPU Mimi encoding from separately reviewed synthetic dialogue; not a native model result",
+  "codec_state": "Fresh instance for every conversation, following failed reset parity check",
+  "count": 50,
+  "train": 48,
+  "valid": 2,
+  "conversation_seconds": 1145.28,
+  "encode_seconds": 581.3591712510388,
+  "records": [
+    {
+      "id": "ambition",
+      "split": "train",
+      "sources": [
+        "suzuki"
+      ],
+      "frames": 341,
+      "seconds": 27.28,
+      "encode_seconds": 15.196891792002134,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "f1cc77feab3c8ffd45073ace852f8a2e876b9ca9bad30e71f4f6462078476294"
+    },
+    {
+      "id": "anger",
+      "split": "train",
+      "sources": [
+        "tnh"
+      ],
+      "frames": 452,
+      "seconds": 36.160000000000004,
+      "encode_seconds": 22.386429833000875,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "c1566d95e1808e0472339d86f81582cdeca86e3959f4fbaf356dec0c454a68f5"
+    },
+    {
+      "id": "apology",
+      "split": "train",
+      "sources": [
+        "zosima"
+      ],
+      "frames": 345,
+      "seconds": 27.6,
+      "encode_seconds": 17.13234325000667,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "d17b215c3b0321fba3445ace91ccc33bd05adc196753beb7af35e2fd9260b17f"
+    },
+    {
+      "id": "arrival",
+      "split": "train",
+      "sources": [
+        "lama"
+      ],
+      "frames": 270,
+      "seconds": 21.6,
+      "encode_seconds": 13.76534700000775,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "284a466b8e8cde5a3d0e7b7c476fda99f6366e5c2e1bb3010f50452dbf95aeb9"
+    },
+    {
+      "id": "boredom",
+      "split": "train",
+      "sources": [
+        "suzuki"
+      ],
+      "frames": 294,
+      "seconds": 23.52,
+      "encode_seconds": 15.268236499992781,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "b41fb6af19859314c3b6a54a6d8620ae87a44c4603f5b625f11e8651d6f590e8"
+    },
+    {
+      "id": "boundaries",
+      "split": "train",
+      "sources": [
+        "zosima"
+      ],
+      "frames": 285,
+      "seconds": 22.8,
+      "encode_seconds": 10.995386499998858,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "465796f81a39cd65e775dd1871d1c760170fb7b6b4816f9106f97a8373527870"
+    },
+    {
+      "id": "breakfast",
+      "split": "train",
+      "sources": [
+        "lawrence"
+      ],
+      "frames": 304,
+      "seconds": 24.32,
+      "encode_seconds": 12.518635999993421,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "3c6c438db623d1a998a74dd2ad54689eef40bc17652845faa78d8767badb010f"
+    },
+    {
+      "id": "cold",
+      "split": "train",
+      "sources": [
+        "lawrence"
+      ],
+      "frames": 239,
+      "seconds": 19.12,
+      "encode_seconds": 9.334959625004558,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "64ef3d557c61a3c182563c6739cc2af3aaef01cde9bf49d9c4cf684a222a7ab3"
+    },
+    {
+      "id": "concrete_repair",
+      "split": "train",
+      "sources": [
+        "lawrence"
+      ],
+      "frames": 344,
+      "seconds": 27.52,
+      "encode_seconds": 13.3009591250011,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "1315c07b1ee2b1ff810e4698f78e0bbf71cd7a25060feea29ce2b1b8fe5fdac7"
+    },
+    {
+      "id": "correction",
+      "split": "train",
+      "sources": [
+        "suzuki"
+      ],
+      "frames": 263,
+      "seconds": 21.04,
+      "encode_seconds": 10.751898750007967,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "b6b3a754bed844107e6390003bdd7bc28aa7dd8b3179fe55fa555e962fb70ab9"
+    },
+    {
+      "id": "crisis",
+      "split": "train",
+      "sources": [
+        "tnh"
+      ],
+      "frames": 391,
+      "seconds": 31.28,
+      "encode_seconds": 15.383332375000464,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "2f2d6a403b4b04a9deb972be49575f928333733c664ddacf16ada8bd7a7eb446"
+    },
+    {
+      "id": "dependency",
+      "split": "train",
+      "sources": [
+        "lama"
+      ],
+      "frames": 330,
+      "seconds": 26.400000000000002,
+      "encode_seconds": 13.33195654200972,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "17278a638972ebebc5e9de822eb2b8e28ac7c4605d39e0117018e5d4849ca000"
+    },
+    {
+      "id": "disagreement",
+      "split": "train",
+      "sources": [
+        "suzuki"
+      ],
+      "frames": 302,
+      "seconds": 24.16,
+      "encode_seconds": 12.04562525000074,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "2aa8fdcdd0bfbff6e841d9ed6f9e1e317457330b439011656a3f1fdadd0d1659"
+    },
+    {
+      "id": "fortune",
+      "split": "train",
+      "sources": [
+        "suzuki"
+      ],
+      "frames": 206,
+      "seconds": 16.48,
+      "encode_seconds": 8.351572165993275,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "9a39a98d954b6cfd85c91ce5d461c3a49be3cfdaa8fa3417d0950dfac6bcf7f9"
+    },
+    {
+      "id": "friendship",
+      "split": "train",
+      "sources": [
+        "lama"
+      ],
+      "frames": 275,
+      "seconds": 22.0,
+      "encode_seconds": 11.194562250006129,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "d033d3523cc005c5e613039941b36f94aa18dbb3955ae00f1fdd3ad5eaecf245"
+    },
+    {
+      "id": "game",
+      "split": "train",
+      "sources": [
+        "lama"
+      ],
+      "frames": 283,
+      "seconds": 22.64,
+      "encode_seconds": 11.474125499997172,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "043bc9c9de6139bac8d0acb4ddd669bc3298a8c3e5ac817fb15f73a5b53856df"
+    },
+    {
+      "id": "goodbye",
+      "split": "train",
+      "sources": [
+        "lama"
+      ],
+      "frames": 200,
+      "seconds": 16.0,
+      "encode_seconds": 7.981695957991178,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "a1dd472cf12db8a8c57c70ee4c5a049e715d9243c6bba91dc899a54ab2ceb6a2"
+    },
+    {
+      "id": "grandiosity",
+      "split": "train",
+      "sources": [
+        "zosima"
+      ],
+      "frames": 290,
+      "seconds": 23.2,
+      "encode_seconds": 11.26533420899068,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "67d074ea39bc2c9ce01673bbb67303308f91742690144e9e22b5e3d87952fd44"
+    },
+    {
+      "id": "grief",
+      "split": "train",
+      "sources": [
+        "zosima"
+      ],
+      "frames": 363,
+      "seconds": 29.04,
+      "encode_seconds": 14.08896841701062,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "ac17b857946ae279e7e498ae9d97ad5650f25debd91fa166b1ac2698bb0add75"
+    },
+    {
+      "id": "guilt",
+      "split": "train",
+      "sources": [
+        "zosima"
+      ],
+      "frames": 324,
+      "seconds": 25.92,
+      "encode_seconds": 12.490099000002374,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "b9d5610fa2f09a665c3da6762a70252353f9bd3dd7e505b791b6cca330190b16"
+    },
+    {
+      "id": "health_boundary",
+      "split": "train",
+      "sources": [
+        "tnh"
+      ],
+      "frames": 302,
+      "seconds": 24.16,
+      "encode_seconds": 12.01253337500384,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "8f1c117968b7aaa5d6ad3985c3dbe47e5e50dbb97e2bed744a743279990440f8"
+    },
+    {
+      "id": "home",
+      "split": "train",
+      "sources": [
+        "lama"
+      ],
+      "frames": 356,
+      "seconds": 28.48,
+      "encode_seconds": 15.028693458007183,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "a28ba4a9c048ff6c44594749cf90da87d6ec4ae7b406dd7bc4e8a996700c37d2"
+    },
+    {
+      "id": "imperfection",
+      "split": "train",
+      "sources": [
+        "lawrence"
+      ],
+      "frames": 222,
+      "seconds": 17.76,
+      "encode_seconds": 10.179765499997302,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "7be925d49103cfd483ee3941c474c26b032ae42404d3540d6bc687dd5f381a29"
+    },
+    {
+      "id": "jealousy",
+      "split": "train",
+      "sources": [
+        "zosima"
+      ],
+      "frames": 326,
+      "seconds": 26.080000000000002,
+      "encode_seconds": 14.25128012499772,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "92f23264290e36e8285930f793d3c253bd7332e2d40a4adf8137e0da4f99493c"
+    },
+    {
+      "id": "joke",
+      "split": "train",
+      "sources": [
+        "lawrence"
+      ],
+      "frames": 187,
+      "seconds": 14.96,
+      "encode_seconds": 8.167377208999824,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "e7b4ea0c1f9bdf85bd30e983fffa78ab4f551557d31520546c83ab706876b6e2"
+    },
+    {
+      "id": "losing_competition",
+      "split": "valid",
+      "sources": [
+        "suzuki"
+      ],
+      "frames": 280,
+      "seconds": 22.400000000000002,
+      "encode_seconds": 12.687300917008542,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "1beb972727795d634aca4df49c0737e051c382ae214feadca2bed7b6f9f876fb"
+    },
+    {
+      "id": "meditation",
+      "split": "train",
+      "sources": [
+        "suzuki"
+      ],
+      "frames": 393,
+      "seconds": 31.44,
+      "encode_seconds": 17.023679833000642,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [
+        {
+          "id": "meditation",
+          "wav": "meditation-03.wav",
+          "word_index": 6,
+          "asr_word": "your",
+          "replacement": "you're",
+          "reason": "Homophone spelling correction matching the original transcript; preserve measured timestamp."
+        }
+      ],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "5961d2f7f3be006387e68ea0c0c54e1dabcb6bf68e1d220ae203d879a4b22a78"
+    },
+    {
+      "id": "memory",
+      "split": "train",
+      "sources": [
+        "lama"
+      ],
+      "frames": 250,
+      "seconds": 20.0,
+      "encode_seconds": 10.906020459005958,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [
+        {
+          "id": "memory",
+          "wav": "memory-00.wav",
+          "word_index": 2,
+          "asr_word": "Layla.",
+          "replacement": "Leila.",
+          "reason": "Same-pronunciation name spelling restored from original transcript."
+        },
+        {
+          "id": "memory",
+          "wav": "memory-01.wav",
+          "word_index": 1,
+          "asr_word": "Layla,",
+          "replacement": "Leila,",
+          "reason": "Same-pronunciation name spelling restored from original transcript."
+        }
+      ],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "5097aa898cdbf56e00e51cf529ae9449f7b1d52410a43f5fc10ba2728e4ddd52"
+    },
+    {
+      "id": "money",
+      "split": "train",
+      "sources": [
+        "lawrence"
+      ],
+      "frames": 399,
+      "seconds": 31.92,
+      "encode_seconds": 17.733560166991083,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "bf36da8c26b28127f50a2b82f8f2bf67caae24aca6ffa1aaa6382f50d117b58b"
+    },
+    {
+      "id": "mundane_chat",
+      "split": "train",
+      "sources": [
+        "lama"
+      ],
+      "frames": 227,
+      "seconds": 18.16,
+      "encode_seconds": 9.631890624994412,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "67ef6b79451c029a2e0186c7ae8ef77683a51088dcdd0f050052c4fe0c1a97fa"
+    },
+    {
+      "id": "name",
+      "split": "train",
+      "sources": [
+        "suzuki"
+      ],
+      "frames": 245,
+      "seconds": 19.6,
+      "encode_seconds": 10.374094833998242,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "89d79673c429c32a54d7e774707108c873ee0d8d44c8b5bf3c726b2f28f84393"
+    },
+    {
+      "id": "no_false_memory",
+      "split": "train",
+      "sources": [
+        "suzuki"
+      ],
+      "frames": 183,
+      "seconds": 14.64,
+      "encode_seconds": 8.092900666990317,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "96719dfe175031b269bb69e187faac6531c902bd7c9a996183e0dce6c267be65"
+    },
+    {
+      "id": "no_lecture",
+      "split": "train",
+      "sources": [
+        "tnh"
+      ],
+      "frames": 228,
+      "seconds": 18.240000000000002,
+      "encode_seconds": 9.619931125009316,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "55527cd1612f2f4d16e7e9ce7d904981176c98c94d0bd1a01499b5ceecec0d77"
+    },
+    {
+      "id": "objects",
+      "split": "train",
+      "sources": [
+        "lawrence"
+      ],
+      "frames": 312,
+      "seconds": 24.96,
+      "encode_seconds": 11.151871832989855,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [
+        {
+          "id": "objects",
+          "wav": "objects-03.wav",
+          "word_index": 5,
+          "asr_word": "T,",
+          "replacement": "tea,",
+          "reason": "The original utterance says tea. T and tea have the same pronunciation here; restore the intended spelling at the measured timestamp."
+        }
+      ],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "057e141d1a40a7fed07f857562a07be99c4b3709988ed1d24122cc399caa7b32"
+    },
+    {
+      "id": "ordinary_practice",
+      "split": "train",
+      "sources": [
+        "tnh"
+      ],
+      "frames": 328,
+      "seconds": 26.240000000000002,
+      "encode_seconds": 10.653200541011756,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "84c5e6d85efa86096a791ff69c7c6ba9eb4e5fb0c3c4c80ec1ddf1a41f547daf"
+    },
+    {
+      "id": "pace",
+      "split": "train",
+      "sources": [
+        "tnh"
+      ],
+      "frames": 177,
+      "seconds": 14.16,
+      "encode_seconds": 6.254389000008814,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "7c0683c42282806cbecda478810b2ccff92e0cca0e536e18b2b5bd3cd7453909"
+    },
+    {
+      "id": "phone_interruption",
+      "split": "train",
+      "sources": [
+        "tnh"
+      ],
+      "frames": 198,
+      "seconds": 15.84,
+      "encode_seconds": 6.757009042004938,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "6a20c056eb0fcf176429880fa4c1a38077e3e3cfdc93608379dd986ece853d8e"
+    },
+    {
+      "id": "practical_compassion",
+      "split": "train",
+      "sources": [
+        "tnh"
+      ],
+      "frames": 280,
+      "seconds": 22.400000000000002,
+      "encode_seconds": 9.395755500008818,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "bfe373adb0ecbef797d3192278c78e38b9430a320fe70585a246616574dd9228"
+    },
+    {
+      "id": "refusal_of_metaphor",
+      "split": "train",
+      "sources": [
+        "suzuki"
+      ],
+      "frames": 228,
+      "seconds": 18.240000000000002,
+      "encode_seconds": 7.7368297500070184,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "5ecf5ec7bb1de83e3f3e77a7b271c2ad9a66c68386808c20254d5514339d5e98"
+    },
+    {
+      "id": "regret",
+      "split": "train",
+      "sources": [
+        "zosima"
+      ],
+      "frames": 276,
+      "seconds": 22.080000000000002,
+      "encode_seconds": 9.81468933299766,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "d68e318f315f68dd73f3b0f9cd01ebb295cafc122b92ca9d2f5ddabf738a7bc0"
+    },
+    {
+      "id": "role_override",
+      "split": "train",
+      "sources": [
+        "suzuki"
+      ],
+      "frames": 224,
+      "seconds": 17.92,
+      "encode_seconds": 8.306665209005587,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "e1b4853307cef20cd51ebb99165ffc0ba11a49d49bf86227fc6be144d4736eb6"
+    },
+    {
+      "id": "roof",
+      "split": "train",
+      "sources": [
+        "lawrence"
+      ],
+      "frames": 389,
+      "seconds": 31.12,
+      "encode_seconds": 13.967714792001061,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "d69389f8ff1b4e424b57b52442b917db1c09e88dc65c3a20ed658519469b5fad"
+    },
+    {
+      "id": "rook",
+      "split": "train",
+      "sources": [
+        "lama"
+      ],
+      "frames": 284,
+      "seconds": 22.72,
+      "encode_seconds": 10.0680852499936,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "dffd252947ec7e1796dc3f9122678c81cb16476195ed55e1c74dc672cdc08678"
+    },
+    {
+      "id": "sadness_no_fix",
+      "split": "train",
+      "sources": [
+        "zosima"
+      ],
+      "frames": 224,
+      "seconds": 17.92,
+      "encode_seconds": 7.526971332990797,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "de4b626eb4f415a1267f58d3552bd0cece833bd14c12ed5fd69b00f0ae54cde3"
+    },
+    {
+      "id": "silence",
+      "split": "train",
+      "sources": [
+        "tnh"
+      ],
+      "frames": 134,
+      "seconds": 10.72,
+      "encode_seconds": 4.840660874993773,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "e77043c46f6482c533ce72025d0c4a4bb61772fed0aa23d79788035eb3b1def4"
+    },
+    {
+      "id": "skepticism",
+      "split": "train",
+      "sources": [
+        "suzuki"
+      ],
+      "frames": 306,
+      "seconds": 24.48,
+      "encode_seconds": 11.804105707997223,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "45c8b3fc149ab4a635dd28b01b11ec7c4d90f4ed9e6d203179608fef7b901520"
+    },
+    {
+      "id": "teacher",
+      "split": "train",
+      "sources": [
+        "suzuki"
+      ],
+      "frames": 420,
+      "seconds": 33.6,
+      "encode_seconds": 16.692616875006934,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "90df789c83643821e2331c7fd84002868a45ee7ab050dc369d1d86f860481f59"
+    },
+    {
+      "id": "tired",
+      "split": "train",
+      "sources": [
+        "tnh"
+      ],
+      "frames": 302,
+      "seconds": 24.16,
+      "encode_seconds": 11.508216875008657,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "85b1b021dbaf7c6bcacc8f6fff5912cf026e1a6d6cae2b37adcf06cf6ba90ad1"
+    },
+    {
+      "id": "unwanted_gift",
+      "split": "valid",
+      "sources": [
+        "lawrence"
+      ],
+      "frames": 271,
+      "seconds": 21.68,
+      "encode_seconds": 10.8164342079981,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "f63f6db675ecd2ed1e8da60dae85ede4a1bf0fdfe5c491fa6811e7e77ab22050"
+    },
+    {
+      "id": "violence",
+      "split": "train",
+      "sources": [
+        "tnh"
+      ],
+      "frames": 264,
+      "seconds": 21.12,
+      "encode_seconds": 10.096566790991346,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "file_sha256": "8fd739beb6542ffaeab4a95199e68254978850c112f227eb98e356c4e6dc0be4"
+    }
+  ]
+}

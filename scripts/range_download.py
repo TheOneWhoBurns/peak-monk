@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 import shutil
 import urllib.request
+import urllib.parse
 import argparse
 import re
 
@@ -18,12 +19,20 @@ p.add_argument('--filename',default='model.safetensors')
 p.add_argument('--resume-log',type=Path)
 p.add_argument('--workers',type=int,default=4)
 p.add_argument('--chunk-mib',type=int,default=32)
+p.add_argument('--reuse-signed-url',action='store_true',help='Resolve the public artifact CDN once instead of requesting a new redirect per range')
 args=p.parse_args()
+if not re.fullmatch(r'[0-9a-f]{64}',args.sha256):
+    raise SystemExit('Expected a 64-character lowercase SHA256 digest')
 root=Path(__file__).resolve().parents[1]/args.destination
 root.mkdir(parents=True,exist_ok=True)
 sha=args.sha256
 size=args.size
 url=f'https://huggingface.co/{args.repo}/resolve/{args.revision}/{args.filename}'
+if args.reuse_signed_url:
+    with urllib.request.urlopen(urllib.request.Request(url,method='HEAD'),timeout=60) as response:
+        url=response.url
+    # The signed URL is an ephemeral artifact capability; keep it out of logs.
+    print('Resolved artifact host:',urllib.parse.urlparse(url).hostname,flush=True)
 dest=root/args.filename
 dest.parent.mkdir(parents=True,exist_ok=True)
 if dest.exists() and not args.resume_log:
