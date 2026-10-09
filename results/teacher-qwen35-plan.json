@@ -20,5 +20,6 @@
     20,
     21
   ],
-  "selection_note": "Two ordinary activity conversations and two about Jun's life; selected before any Qwen3.5 pilot outputs."
+  "selection_note": "Two ordinary activity conversations and two about Jun's life; selected before any Qwen3.5 pilot outputs.",
+  "status": "Initial v3 invalid due missing tokenizer; corrected v4 rejected for scene drift; revised setup predeclared in teacher-qwen35-v5-plan.json"
 }

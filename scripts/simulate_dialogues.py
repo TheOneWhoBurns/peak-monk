@@ -16,6 +16,7 @@ import time
 import mlx.core as mx
 from mlx_lm import load, stream_generate
 from mlx_lm.sample_utils import make_sampler
+from tokenizer_preflight import check_tokenizer
 
 
 def digest(path): return hashlib.sha256(Path(path).read_bytes()).hexdigest()
@@ -92,13 +93,16 @@ def main():
     p.add_argument('--indices',type=int,nargs='+',help='Explicit preselected topic/partner indices')
     p.add_argument('--exchanges',type=int,default=8)
     p.add_argument('--config',default='configs/synthesis.json')
+    p.add_argument('--opening-file',help='Authored concrete first caller turns, indexed by case number')
     args=p.parse_args()
     out=Path(args.output);out.mkdir(parents=True,exist_ok=True)
     cfg=json.loads(Path(args.config).read_text())
+    openings=json.loads(Path(args.opening_file).read_text()) if args.opening_file else {}
     graph=json.loads(Path('character/associations.json').read_text())
     core=Path('character/simulation-core.txt').read_text();style=Path('character/style.txt').read_text()
     forbidden=[u for name in ('dev','final','pressure-v2') for c in json.loads(Path(f'evaluation/{name}.json').read_text()) for u in c['turns']]
     influences={s['id']:s for s in json.loads(Path('sources/manifest.json').read_text())}
+    tokenizer_check=check_tokenizer(args.model)
     mx.set_memory_limit(5_500_000_000)
     mx.set_cache_limit(64_000_000)
     model,tok=load(args.model)
@@ -109,25 +113,31 @@ def main():
         rng=random.Random(18931+index);world=World(graph,rng)
         topic=cfg['topics'][index%len(cfg['topics'])];persona,attitude=partners[index%len(partners)]
         dynamic=cfg['dynamics'][index%len(cfg['dynamics'])]
-        partner=f'''You are {persona}, currently {attitude}, chatting with a man named Jun. You want to discuss {topic['subject']}. Your situation: {dynamic}
-Speak only your next turn as this person, in one or two ordinary spoken sentences. Have your own concrete details, preferences and agenda. React to what Jun actually says. Do not write Jun's reply, scripts, labels, narration or an essay. You may disagree or change topic. Keep this a conversation, not an interview about Jun. Do not repeat a question already answered.'''
+        partner=f'''You are {persona}, currently {attitude}, talking to Jun over an audio connection. You are in separate places. Jun is at his mountain hermitage; your belongings and work are where you are. You want to discuss {topic['subject']}. Your situation: {dynamic}
+Speak only your next turn as this person, in one or two ordinary spoken sentences. Have your own concrete details, preferences and agenda. React to what Jun actually says. Do not invent prior conversations or act as if you share a physical room. Do not write Jun's reply, scripts, labels, narration or an essay. You may disagree or change topic. Keep this a conversation, not an interview about Jun. Do not repeat a question already answered.'''
         record=dict(index=index,family=f"simulation_v2_{index:04d}",split='train',sources=topic['sources'],author='Local alternating-speaker simulation',teacher=args.model,
             character_version='human_character_v2',quality_review='pending',single_teacher_limitation=True,
             prompt_assets={f:digest(f) for f in ('character/simulation-core.txt','character/style.txt','character/associations.json',args.config,'sources/manifest.json')},
             template_policy='Native teacher template with enable_thinking=False; generator prompts are excluded from training',
+            tokenizer_preflight=tokenizer_check,
+            opening_source=args.opening_file,opening_sha256=digest(args.opening_file) if args.opening_file else None,
             partner=dict(persona=persona,attitude=attitude,topic=topic['subject'],dynamic=dynamic),messages=[],trace=[])
         for turn in range(args.exchanges):
             hist=[{'role':'assistant' if m['role']=='user' else 'user','content':m['content']} for m in record['messages']]
             # A starting cue is generator-only and excluded from the stored conversation.
             if not hist:hist=[{'role':'user','content':'Begin the conversation with the concrete thing on your mind.'}]
-            caller,cm=respond(model,tok,[{'role':'system','content':partner}]+hist,18931+index*100+turn*2,.8,100)
+            if turn==0 and str(index) in openings:
+                caller=openings[str(index)]
+                cm={'author':'Original authored caller opening','generation':False}
+            else:
+                caller,cm=respond(model,tok,[{'role':'system','content':partner}]+hist,18931+index*100+turn*2,.8,100)
             record['messages'].append({'role':'user','content':caller})
             nodes,state=world.step(caller)
             memory='\n'.join(n['description'] for n in nodes)
             length=rng.choices(['a few words','one brief sentence','two or three sentences','a longer reply if this subject warrants it'],weights=[15,35,40,10])[0]
             feeling='mildly cheerful' if state['valence']>.2 else 'a little subdued' if state['valence']<-.2 else 'matter-of-fact'
             influence='\n'.join(influences[s]['influence'] for s in topic['sources'])
-            system=core+'\n'+style+f'\nYou feel {feeling}. Let the reply be {length}.\nBackground dispositions; express them through conduct only when relevant, without reciting them:\n'+influence+'\nAssociations that came to mind; use only if relevant and never recite them:\n'+memory
+            system=core+'\n'+style+'\nThis is an audio-only conversation with someone elsewhere. You cannot touch their things or hand them objects. Your memories are yours; the caller\'s experiences are theirs.'+f'\nYou feel {feeling}. Let the reply be {length}.\nBackground dispositions; express them through conduct only when relevant, without reciting them:\n'+influence+'\nAssociations that came to mind; use only if relevant and never recite them:\n'+memory
             jun,jm=respond(model,tok,[{'role':'system','content':system}]+record['messages'],18931+index*100+turn*2+1,.75,220)
             record['messages'].append({'role':'assistant','content':jun})
             record['trace'].append(dict(turn=turn,caller=cm,jun=jm,world=state))

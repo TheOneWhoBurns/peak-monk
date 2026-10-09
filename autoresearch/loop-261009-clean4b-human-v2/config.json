@@ -5,6 +5,6 @@
   "baseline_loss": 5.3405680656433105,
   "baseline_note": "Validation loss is computed without persona text, even in the separate prompted-generation control. Identical tokenizer/template fingerprint required.",
   "iterations": "unlimited",
-  "active_experiment": "run16",
-  "strategy": "Broaden all-block and embedding adaptation, diversify character relationships and replay perspective-retention data. Compare against unaccepted run15 step600 parent."
+  "active_experiment": "speech-run01 preparation; Qwen3.5 teacher setup v5 queued",
+  "strategy": "Run16 rejected. Native Moshi fits with wired memory enabled and produces intelligible baseline audio. Complete matched speech baseline and train cached suffix; improve synthetic teacher setup before further text adaptation."
 }

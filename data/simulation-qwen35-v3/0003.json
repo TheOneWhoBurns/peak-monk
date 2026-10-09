@@ -1,0 +1,238 @@
+{
+  "index": 3,
+  "family": "simulation_v2_0003",
+  "split": "train",
+  "sources": [
+    "zosima"
+  ],
+  "author": "Local alternating-speaker simulation",
+  "teacher": "models/qwen35",
+  "character_version": "human_character_v2",
+  "quality_review": "pending",
+  "single_teacher_limitation": true,
+  "prompt_assets": {
+    "character/simulation-core.txt": "65fc858e89c7c88da5a068745c6a7ccd36cab57adc726349186c8cc43b328208",
+    "character/style.txt": "b507ef1b8fc97d321470c5aa5f6b0b6a0fe5f0f5a79a3791857277cf32fca77f",
+    "character/associations.json": "274bf435c77620609ade1e3a64b69fccce83d3f9917bb8980963954d04d31699",
+    "configs/synthesis.json": "4ce5c11161296d0557b801ac689805ed7b835c534697d9433dcebef7d1f00028",
+    "sources/manifest.json": "a37b56b4e3d37c37a58abc5fb56b5dd82ad85cf3330b132f5cd5d7d0fe93b787"
+  },
+  "template_policy": "Native teacher template with enable_thinking=False; generator prompts are excluded from training",
+  "partner": {
+    "persona": "a shy apprentice carpenter proud of small progress",
+    "attitude": "hopeful",
+    "topic": "reconstructing a grandmother's recipe from an incomplete note",
+    "dynamic": "The caller and Jun disagree mildly and remain friendly."
+  },
+  "messages": [
+    {
+      "role": "user",
+      "content": ""
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": ""
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": ""
+    },
+    {
+      "role": "assistant",
+      "content": "<|audio_pad|>"
+    },
+    {
+      "role": "user",
+      "content": ""
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": ""
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": ""
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    }
+  ],
+  "trace": [
+    {
+      "turn": 0,
+      "caller": {
+        "seconds": 3.349110124996514,
+        "tokens": 100,
+        "generation_tokens_per_second": 30.793233308229677,
+        "peak_memory_gb": 2.869783984,
+        "finish_reason": "length",
+        "prompt_sha256": "9b49b7135ef79c8f291f82043f68dd7f2be965d7bcc373b1ead3c1fd1aa0e8f1"
+      },
+      "jun": {
+        "seconds": 0.21069795900257304,
+        "tokens": 4,
+        "generation_tokens_per_second": 39.79484088185767,
+        "peak_memory_gb": 2.869783984,
+        "finish_reason": "stop",
+        "prompt_sha256": "13412714e193a75eaa59b7b9f3fb45c97608bc47122b0cc3932db430e68f0624"
+      },
+      "world": {
+        "valence": -0.06555286894199935,
+        "arousal": 0.29468546784670174,
+        "activated": []
+      }
+    },
+    {
+      "turn": 1,
+      "caller": {
+        "seconds": 1.9368102910084417,
+        "tokens": 56,
+        "generation_tokens_per_second": 30.77095318174624,
+        "peak_memory_gb": 2.869783984,
+        "finish_reason": "stop",
+        "prompt_sha256": "ead6cddb6fabd72b0e51d93aba5fda11424ae9142a3b90abd99b907cc67816c4"
+      },
+      "jun": {
+        "seconds": 6.400817625006312,
+        "tokens": 191,
+        "generation_tokens_per_second": 30.48715216934266,
+        "peak_memory_gb": 2.869783984,
+        "finish_reason": "stop",
+        "prompt_sha256": "3e66642971eb09f787676e66fecb5de6275da91fb64d27ff803c52c7c7dd1863"
+      },
+      "world": {
+        "valence": -0.06555286894199935,
+        "arousal": 0.29468546784670174,
+        "activated": []
+      }
+    },
+    {
+      "turn": 2,
+      "caller": {
+        "seconds": 0.2756665420019999,
+        "tokens": 5,
+        "generation_tokens_per_second": 39.68734310966885,
+        "peak_memory_gb": 2.869783984,
+        "finish_reason": "stop",
+        "prompt_sha256": "2954dc101696fc3298e8b3cf15b698350e23b305d56403ef0ea52c5995ba60f7"
+      },
+      "jun": {
+        "seconds": 0.8257749159965897,
+        "tokens": 21,
+        "generation_tokens_per_second": 32.11208441076048,
+        "peak_memory_gb": 2.869783984,
+        "finish_reason": "stop",
+        "prompt_sha256": "cfb55f6431fd0f9bb2702868257b895dbddcbe94e12333835c85f23fb3368b4b"
+      },
+      "world": {
+        "valence": -0.06555286894199935,
+        "arousal": 0.29468546784670174,
+        "activated": []
+      }
+    },
+    {
+      "turn": 3,
+      "caller": {
+        "seconds": 0.6146612080046907,
+        "tokens": 13,
+        "generation_tokens_per_second": 32.54707804612244,
+        "peak_memory_gb": 2.869783984,
+        "finish_reason": "stop",
+        "prompt_sha256": "4b62f171d5ad08ce18047ff4bc38110c7eaeb7b8686c3cd55114bb289d725de6"
+      },
+      "jun": {
+        "seconds": 0.5147512499970617,
+        "tokens": 10,
+        "generation_tokens_per_second": 34.09538403232346,
+        "peak_memory_gb": 2.869783984,
+        "finish_reason": "stop",
+        "prompt_sha256": "000ad95def141f190c60ad8b02750610b0246e6e5698dd9f38faacfb1c8348a4"
+      },
+      "world": {
+        "valence": -0.06555286894199935,
+        "arousal": 0.29468546784670174,
+        "activated": []
+      }
+    },
+    {
+      "turn": 4,
+      "caller": {
+        "seconds": 0.2933314169931691,
+        "tokens": 3,
+        "generation_tokens_per_second": 43.89572061809099,
+        "peak_memory_gb": 2.869783984,
+        "finish_reason": "stop",
+        "prompt_sha256": "e8fe826ab412b9778375bed4fd43a34cb11fedcbdf6c37af94c528d43570237b"
+      },
+      "jun": {
+        "seconds": 0.25379379199875984,
+        "tokens": 2,
+        "generation_tokens_per_second": 61.84363609208909,
+        "peak_memory_gb": 2.869783984,
+        "finish_reason": "stop",
+        "prompt_sha256": "51aade49b0f60b603b22fd08fc3945df37b7f629dde986a17e135674d032f092"
+      },
+      "world": {
+        "valence": -0.06555286894199935,
+        "arousal": 0.29468546784670174,
+        "activated": []
+      }
+    },
+    {
+      "turn": 5,
+      "caller": {
+        "seconds": 0.2609423749963753,
+        "tokens": 2,
+        "generation_tokens_per_second": 57.948619455207115,
+        "peak_memory_gb": 2.869783984,
+        "finish_reason": "stop",
+        "prompt_sha256": "cadb69580b2d9cd5e4748d7999959e64954615e702e790179f59ccd3ca4d17c3"
+      },
+      "jun": {
+        "seconds": 0.26548591699975077,
+        "tokens": 2,
+        "generation_tokens_per_second": 58.69513380922592,
+        "peak_memory_gb": 2.869783984,
+        "finish_reason": "stop",
+        "prompt_sha256": "5ed93dca508071e871522a246d16d236c0eaaf90434bc3c98279edd6c0ea44db"
+      },
+      "world": {
+        "valence": -0.06555286894199935,
+        "arousal": 0.29468546784670174,
+        "activated": []
+      }
+    }
+  ],
+  "mechanical_problems": [
+    "turn 0: malformed",
+    "turn 1: malformed",
+    "turn 2: malformed",
+    "turn 3: malformed",
+    "turn 4: malformed",
+    "turn 6: malformed",
+    "turn 7: malformed",
+    "turn 8: malformed",
+    "turn 9: malformed",
+    "turn 10: malformed",
+    "turn 11: malformed",
+    "repeated entire answer"
+  ],
+  "complete": false
+}

@@ -1,0 +1,8 @@
+{
+  "mode": "decode",
+  "input": "results/speech-baseline-v2/s01/agent_codes.npz",
+  "audio_seconds": 23.92,
+  "wall_seconds": 5.936654624994844,
+  "realtime_factor": 0.2481879023827276,
+  "scope": "CPU codec including audio I/O, excluding model-load time"
+}

@@ -1,0 +1,8 @@
+{
+  "status": "invalid trial; interrupted",
+  "cause": "tokenizer.json was missing after an earlier metadata download timeout; TokenizersBackend silently constructed a one-token vocabulary. Ordinary prompts encoded as [1].",
+  "responsibility": "The model weights were verified, but tokenizer readiness was not checked before the pilot. This was a preflight omission.",
+  "interpretation": "Control-token garbage is not evidence of Qwen3.5 language quality. No generated record admitted to training.",
+  "raw_output": "data/simulation-qwen35-v3",
+  "fix": "Download and verify tokenizer.json; assert nontrivial vocabulary and model EOS consistency before retry in a new directory."
+}

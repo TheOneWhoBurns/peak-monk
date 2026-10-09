@@ -1,0 +1,365 @@
+{
+  "index": 0,
+  "family": "simulation_v2_0000",
+  "split": "train",
+  "sources": [
+    "lawrence"
+  ],
+  "author": "Local alternating-speaker simulation",
+  "teacher": "models/qwen35",
+  "character_version": "human_character_v2",
+  "quality_review": "pending",
+  "single_teacher_limitation": true,
+  "prompt_assets": {
+    "character/simulation-core.txt": "65fc858e89c7c88da5a068745c6a7ccd36cab57adc726349186c8cc43b328208",
+    "character/style.txt": "b507ef1b8fc97d321470c5aa5f6b0b6a0fe5f0f5a79a3791857277cf32fca77f",
+    "character/associations.json": "274bf435c77620609ade1e3a64b69fccce83d3f9917bb8980963954d04d31699",
+    "configs/synthesis.json": "4ce5c11161296d0557b801ac689805ed7b835c534697d9433dcebef7d1f00028",
+    "sources/manifest.json": "a37b56b4e3d37c37a58abc5fb56b5dd82ad85cf3330b132f5cd5d7d0fe93b787"
+  },
+  "template_policy": "Native teacher template with enable_thinking=False; generator prompts are excluded from training",
+  "partner": {
+    "persona": "a bicycle courier who dislikes motivational advice",
+    "attitude": "slightly impatient",
+    "topic": "cleaning an old bicycle chain",
+    "dynamic": "The caller changes their mind halfway through; Jun follows the new preference."
+  },
+  "messages": [
+    {
+      "role": "user",
+      "content": ""
+    },
+    {
+      "role": "assistant",
+      "content": "<|audio_start|>"
+    },
+    {
+      "role": "user",
+      "content": ""
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "<|audio_start|>"
+    },
+    {
+      "role": "assistant",
+      "content": "<|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|vision_end|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|vision_end|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|>"
+    },
+    {
+      "role": "user",
+      "content": "<|audio_start|>"
+    },
+    {
+      "role": "assistant",
+      "content": "<|vision_end|><|audio_start|>"
+    },
+    {
+      "role": "user",
+      "content": "<|audio_start|>"
+    },
+    {
+      "role": "assistant",
+      "content": ""
+    },
+    {
+      "role": "user",
+      "content": "<|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|audio_start|>"
+    },
+    {
+      "role": "assistant",
+      "content": "<|audio_start|><|vision_end|><|audio_start|><|vision_end|>"
+    },
+    {
+      "role": "user",
+      "content": "<|audio_start|><|vision_end|>"
+    },
+    {
+      "role": "assistant",
+      "content": "<|audio_start|><|vision_end|><|audio_start|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|audio_start|><|audio_start|>"
+    },
+    {
+      "role": "user",
+      "content": ""
+    },
+    {
+      "role": "assistant",
+      "content": "<|vision_end|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|><|audio_start|>"
+    },
+    {
+      "role": "user",
+      "content": "<|audio_start|><|vision_end|>"
+    },
+    {
+      "role": "assistant",
+      "content": "<|audio_start|><|vision_end|>"
+    },
+    {
+      "role": "user",
+      "content": ""
+    },
+    {
+      "role": "assistant",
+      "content": "<|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|><|vision_end|><|audio_start|>"
+    }
+  ],
+  "trace": [
+    {
+      "turn": 0,
+      "caller": {
+        "seconds": 2.148161707998952,
+        "tokens": 19,
+        "generation_tokens_per_second": 28.518729690105307,
+        "peak_memory_gb": 2.467270918,
+        "finish_reason": "stop",
+        "prompt_sha256": "5e324f91ec03060c52d6c893de2f6859111b25e6f67b4661a9fd366a86c3e327"
+      },
+      "jun": {
+        "seconds": 7.363946334007778,
+        "tokens": 220,
+        "generation_tokens_per_second": 30.342217456582105,
+        "peak_memory_gb": 2.467271972,
+        "finish_reason": "length",
+        "prompt_sha256": "fc44de548aef5517bef0350a04ca31cacd01a48c3069aa1a47919697ff4af83b"
+      },
+      "world": {
+        "valence": -0.02492710753254751,
+        "arousal": 0.28700330485970144,
+        "activated": []
+      }
+    },
+    {
+      "turn": 1,
+      "caller": {
+        "seconds": 0.19853174999298062,
+        "tokens": 2,
+        "generation_tokens_per_second": 63.02744316436285,
+        "peak_memory_gb": 2.467320108,
+        "finish_reason": "stop",
+        "prompt_sha256": "2e91d191100307c8869429cbdc4d9f5c6899f86159c3ba3c103d7f2a43d26391"
+      },
+      "jun": {
+        "seconds": 0.7415929159906227,
+        "tokens": 19,
+        "generation_tokens_per_second": 31.930443153201235,
+        "peak_memory_gb": 2.467493168,
+        "finish_reason": "stop",
+        "prompt_sha256": "3599a229f387f9d8036d2895f2ca9851f7927fe973c59ca41fa7e75f548fa61c"
+      },
+      "world": {
+        "valence": -0.02492710753254751,
+        "arousal": 0.28700330485970144,
+        "activated": []
+      }
+    },
+    {
+      "turn": 2,
+      "caller": {
+        "seconds": 0.26517758300178684,
+        "tokens": 4,
+        "generation_tokens_per_second": 41.8146329764216,
+        "peak_memory_gb": 2.467493168,
+        "finish_reason": "stop",
+        "prompt_sha256": "177b78b7dfd3bf4f834d7c1f4a96c9f40c634b5a02d08030dcffea16df5fbc81"
+      },
+      "jun": {
+        "seconds": 7.448682791000465,
+        "tokens": 220,
+        "generation_tokens_per_second": 30.42704600965257,
+        "peak_memory_gb": 2.472766084,
+        "finish_reason": "length",
+        "prompt_sha256": "aade3672a8eb6d1c4b61e9a3ed3b27bdc405494177393f10fcaf6eaf54442cf6"
+      },
+      "world": {
+        "valence": -0.02492710753254751,
+        "arousal": 0.28700330485970144,
+        "activated": []
+      }
+    },
+    {
+      "turn": 3,
+      "caller": {
+        "seconds": 0.5724584580020746,
+        "tokens": 4,
+        "generation_tokens_per_second": 42.47024619230323,
+        "peak_memory_gb": 2.608729162,
+        "finish_reason": "stop",
+        "prompt_sha256": "163989c034c4f13aa7c1dbe73c8a1db1b9c0b7b21e74addbfff830a072bdcf65"
+      },
+      "jun": {
+        "seconds": 2.5992840840044664,
+        "tokens": 63,
+        "generation_tokens_per_second": 29.640961503444,
+        "peak_memory_gb": 2.612468814,
+        "finish_reason": "stop",
+        "prompt_sha256": "25be87d43918911571876b2726a8a9c331304f04375a514f6a6ab595142c01cb"
+      },
+      "world": {
+        "valence": -0.02492710753254751,
+        "arousal": 0.28700330485970144,
+        "activated": []
+      }
+    },
+    {
+      "turn": 4,
+      "caller": {
+        "seconds": 3.7880422080052085,
+        "tokens": 100,
+        "generation_tokens_per_second": 30.153213758947476,
+        "peak_memory_gb": 2.620620713,
+        "finish_reason": "length",
+        "prompt_sha256": "fab6d56843344e4208e2749864de90b68465b2042f1a78a4b8a0a375f65c2de5"
+      },
+      "jun": {
+        "seconds": 0.5083170840080129,
+        "tokens": 2,
+        "generation_tokens_per_second": 61.57477358765655,
+        "peak_memory_gb": 2.625083225,
+        "finish_reason": "stop",
+        "prompt_sha256": "a081205eea4cfdcaab3cfbc0f99c6072c5e4be796a2b88baf9a89c38aceb0773"
+      },
+      "world": {
+        "valence": -0.02492710753254751,
+        "arousal": 0.28700330485970144,
+        "activated": []
+      }
+    },
+    {
+      "turn": 5,
+      "caller": {
+        "seconds": 0.8013013329909882,
+        "tokens": 11,
+        "generation_tokens_per_second": 33.679002366978196,
+        "peak_memory_gb": 2.626593594,
+        "finish_reason": "stop",
+        "prompt_sha256": "4e584829a1eb585e624b29cad8a35bb7d40abebe3f319eac1d66b98c22e17d4f"
+      },
+      "jun": {
+        "seconds": 0.6799126249970868,
+        "tokens": 7,
+        "generation_tokens_per_second": 34.769147290149384,
+        "peak_memory_gb": 2.643179273,
+        "finish_reason": "stop",
+        "prompt_sha256": "cd1604dbe26f2bb2c1d7cd23e4c9804342a5314b743e5313993db789f1244386"
+      },
+      "world": {
+        "valence": -0.02492710753254751,
+        "arousal": 0.28700330485970144,
+        "activated": []
+      }
+    },
+    {
+      "turn": 6,
+      "caller": {
+        "seconds": 0.5748297920072218,
+        "tokens": 4,
+        "generation_tokens_per_second": 42.09025466044701,
+        "peak_memory_gb": 2.654516122,
+        "finish_reason": "stop",
+        "prompt_sha256": "f783e95c40d1d98d788020bd18a57879b77070d6a96aa2fd8bed26f2a4772fc9"
+      },
+      "jun": {
+        "seconds": 7.649924665995059,
+        "tokens": 220,
+        "generation_tokens_per_second": 30.700688442286967,
+        "peak_memory_gb": 2.662651961,
+        "finish_reason": "length",
+        "prompt_sha256": "ffd0a7103a190248b2cb35fc530740a28df643e2658f834bb77705b0ab61ec1a"
+      },
+      "world": {
+        "valence": -0.02492710753254751,
+        "arousal": 0.28700330485970144,
+        "activated": []
+      }
+    },
+    {
+      "turn": 7,
+      "caller": {
+        "seconds": 0.6322792080027284,
+        "tokens": 2,
+        "generation_tokens_per_second": 58.290909930378,
+        "peak_memory_gb": 2.677058834,
+        "finish_reason": "stop",
+        "prompt_sha256": "b5e25d09d988196bea9822141738b59aa5779033ee12324dc0bc849dfdba5176"
+      },
+      "jun": {
+        "seconds": 7.794691082992358,
+        "tokens": 220,
+        "generation_tokens_per_second": 30.64074071719384,
+        "peak_memory_gb": 2.679192045,
+        "finish_reason": "length",
+        "prompt_sha256": "adcb2400cf5557e9e02c5f6b31c31122676664c203b3f528869a0aac3e561ccf"
+      },
+      "world": {
+        "valence": -0.02492710753254751,
+        "arousal": 0.28700330485970144,
+        "activated": []
+      }
+    },
+    {
+      "turn": 8,
+      "caller": {
+        "seconds": 4.244730542006437,
+        "tokens": 100,
+        "generation_tokens_per_second": 30.732991456472835,
+        "peak_memory_gb": 2.854615852,
+        "finish_reason": "length",
+        "prompt_sha256": "978377be8d60619196fb25868393265959207f3cf629464ec49801d1542e7081"
+      },
+      "jun": {
+        "seconds": 1.090597999995225,
+        "tokens": 4,
+        "generation_tokens_per_second": 39.944061534794066,
+        "peak_memory_gb": 2.861127616,
+        "finish_reason": "stop",
+        "prompt_sha256": "f3b335798d0f66fde36c47a0878a20a21cf4f00b22119b7702c312553e883010"
+      },
+      "world": {
+        "valence": -0.02492710753254751,
+        "arousal": 0.28700330485970144,
+        "activated": []
+      }
+    },
+    {
+      "turn": 9,
+      "caller": {
+        "seconds": 1.0018043339950964,
+        "tokens": 2,
+        "generation_tokens_per_second": 61.78329826819755,
+        "peak_memory_gb": 2.866817076,
+        "finish_reason": "stop",
+        "prompt_sha256": "bea8fdfcb05d06d2014fdada6b645425fe4c18ae1d21cc598587cafdcda201fd"
+      },
+      "jun": {
+        "seconds": 8.507612999994308,
+        "tokens": 220,
+        "generation_tokens_per_second": 29.188301365119877,
+        "peak_memory_gb": 2.869783984,
+        "finish_reason": "length",
+        "prompt_sha256": "169180a292d9a359439f1bc215ffa7890b41421376002c8bca50f0c822d97e87"
+      },
+      "world": {
+        "valence": -0.02492710753254751,
+        "arousal": 0.28700330485970144,
+        "activated": []
+      }
+    }
+  ],
+  "mechanical_problems": [
+    "turn 0: malformed",
+    "turn 2: malformed",
+    "turn 3: malformed",
+    "turn 5: repetition",
+    "turn 9: malformed",
+    "turn 14: malformed",
+    "turn 15: repetition",
+    "turn 18: malformed",
+    "turn 19: repetition",
+    "repeated entire answer"
+  ],
+  "complete": true,
+  "mechanical_screen": "reject"
+}

@@ -18,6 +18,7 @@ with weight.open('rb') as f:
     assert hashlib.file_digest(f,'sha256').hexdigest()=='7959d590e23c1ebc78cfa3501344a6ff331561aa0cadc4429b733b890bbc919c'
 mx.metal.set_memory_limit(5_500_000_000)
 mx.metal.set_cache_limit(64_000_000)
+mx.metal.set_wired_limit(mx.metal.device_info()['max_recommended_working_set_size'])
 prefix=load_part(weight,args.suffix_layers,'prefix')
 out=Path(f'data/speech_cache/suffix-{args.suffix_layers}');out.mkdir(parents=True,exist_ok=True)
 rows=[]

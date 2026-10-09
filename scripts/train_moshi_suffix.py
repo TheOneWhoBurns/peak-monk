@@ -36,6 +36,7 @@ train=[r for r in rows if r['split']=='train'];valid=[r for r in rows if r['spli
 assert train and valid,'Independent training and validation audio are required'
 mx.random.seed(args.seed);rng=random.Random(args.seed)
 mx.metal.set_memory_limit(5_500_000_000);mx.metal.set_cache_limit(64_000_000)
+mx.metal.set_wired_limit(mx.metal.device_info()['max_recommended_working_set_size'])
 model=load_part('models/moshi/model.q4.safetensors',args.layers,'suffix')
 attach_lora(model,layers=args.layers,rank=args.rank,scale=args.scale)
 mx.eval(model.parameters())

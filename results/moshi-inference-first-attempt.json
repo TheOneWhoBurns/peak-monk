@@ -1,0 +1,11 @@
+{
+  "status": "interrupted for profiling",
+  "log": "moshi-baseline-s01.log",
+  "input": "evaluation/audio-roleplay-v2/s01.npz",
+  "loaded_active_bytes": 4806565896,
+  "load_seconds": 5.014692584009026,
+  "observation": "After more than four minutes no 50-frame progress report had been emitted. Existing instrumentation cannot distinguish warmup time from early-frame time. No audio output completed.",
+  "stack_sample": "Main thread waiting in MLX evaluation; physical footprint 4.7 GB. No Python exception observed.",
+  "interpretation": "Not a completed speech benchmark, not proof of real-time capability or of permanent infeasibility. Add warmup and first-frame measurements before retry.",
+  "mlx_version": "0.26.5"
+}

@@ -1,0 +1,21 @@
+{
+  "model": "models/qwen35",
+  "indices": [
+    0,
+    3,
+    20,
+    21
+  ],
+  "exchanges": 10,
+  "changes": [
+    "Explicit remote audio setting shared by both speaker prompts",
+    "Original authored concrete caller openings to avoid invented preceding conversation"
+  ],
+  "fixed": [
+    "Same verified model and tokenizer",
+    "Same partner personas, topic selection, seeds, temperatures, length variation and associative memory"
+  ],
+  "output": "data/simulation-qwen35-v5",
+  "admission": "Separate author review of every generated turn; mechanical pass is not acceptance",
+  "hypothesis": "Correct scene and speaker setup will reduce the shared-room/task confusion seen in v4. This is a generator-setup experiment, not training."
+}

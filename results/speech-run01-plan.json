@@ -1,0 +1,27 @@
+{
+  "status": "predeclared before actual speech adaptation",
+  "model": "kyutai/moshiko-mlx-q4",
+  "model_sha256": "7959d590e23c1ebc78cfa3501344a6ff331561aa0cadc4429b733b890bbc919c",
+  "data": {
+    "conversations": 59,
+    "train": 57,
+    "validation": 2,
+    "timeline_seconds": 1314.4,
+    "codec_state": "fresh instance per episode",
+    "notes": "Stock synthetic voices; ASR-reviewed transcripts and word alignments. No held-out speech input admitted."
+  },
+  "architecture": "Cache embeddings and first 28 frozen temporal blocks; unload prefix; train last4 temporal blocks and text head adapters with native text/audio objective. Original names exported for full-model streaming.",
+  "rank": 8,
+  "scale": 2.0,
+  "learning_rate": 1e-05,
+  "steps": 160,
+  "validation_every": 20,
+  "selection": "Validation-loss-selected checkpoint is only a candidate; native speech/character/interruption review required. Compare same six frozen audio probes and sampling seed to baseline.",
+  "runtime": "All on M2 8GB. Pin at the device-recommended wired memory limit, following observed paging slowdown without pinning. Report actual model/codec times separately.",
+  "implementation_checks": "Tiny causal/streaming and cached/full loss-gradient parity already passed; these are not trained speech benchmarks.",
+  "risks": [
+    "Only 21.9 minutes of synthetic timelines",
+    "Limited voice diversity and overlap examples",
+    "Actual trained quality unknown"
+  ]
+}

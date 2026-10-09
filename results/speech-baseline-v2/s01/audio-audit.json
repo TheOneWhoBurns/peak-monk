@@ -1,0 +1,96 @@
+{
+  "wav": "results/speech-baseline-v2/s01/agent.wav",
+  "wav_sha256": "6b7b714dbec257e2d784913b3a5f2bac8ef3aaaa820b7f4c0b0af9f8b9f3d2bf",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 8.505667999997968,
+  "duration_seconds": 23.92,
+  "transcript": "Hi there, how's your day? You can call me Moshi",
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 1.8,
+      "text": " Hi there, how's your day?",
+      "avg_logprob": -0.2865790975721259,
+      "no_speech_prob": 0.041744302958250046,
+      "compression_ratio": 0.8867924528301887,
+      "words": [
+        {
+          "word": " Hi",
+          "start": 0.08,
+          "end": 0.54,
+          "probability": 0.5138055086135864
+        },
+        {
+          "word": " there,",
+          "start": 0.54,
+          "end": 0.72,
+          "probability": 0.544512927532196
+        },
+        {
+          "word": " how's",
+          "start": 1.02,
+          "end": 1.44,
+          "probability": 0.8712023794651031
+        },
+        {
+          "word": " your",
+          "start": 1.44,
+          "end": 1.52,
+          "probability": 0.9906085729598999
+        },
+        {
+          "word": " day?",
+          "start": 1.52,
+          "end": 1.8,
+          "probability": 0.9982485771179199
+        }
+      ]
+    },
+    {
+      "start": 2.68,
+      "end": 4.14,
+      "text": " You can call me Moshi",
+      "avg_logprob": -0.2865790975721259,
+      "no_speech_prob": 0.041744302958250046,
+      "compression_ratio": 0.8867924528301887,
+      "words": [
+        {
+          "word": " You",
+          "start": 2.68,
+          "end": 3.26,
+          "probability": 0.9464319944381714
+        },
+        {
+          "word": " can",
+          "start": 3.26,
+          "end": 3.38,
+          "probability": 0.994553804397583
+        },
+        {
+          "word": " call",
+          "start": 3.38,
+          "end": 3.68,
+          "probability": 0.9977771639823914
+        },
+        {
+          "word": " me",
+          "start": 3.68,
+          "end": 3.82,
+          "probability": 0.9966983199119568
+        },
+        {
+          "word": " Moshi",
+          "start": 3.82,
+          "end": 4.14,
+          "probability": 0.928364098072052
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "Hi there, how's your day? You can call me Moshi."
+}

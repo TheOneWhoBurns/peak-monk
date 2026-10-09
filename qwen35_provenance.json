@@ -1,0 +1,16 @@
+{
+  "repo": "mlx-community/Qwen3.5-4B-4bit",
+  "revision": "0e7ffd5c629ef7719d4cbc04069232580bfa9d9c",
+  "model_sha256": "5fb9acd0246866381cf8c5c354c6db1019f6498eec4ccb4f5edcc71ffeacb2db",
+  "model_bytes": 3034300695,
+  "verification": "Whole file matched upstream SHA256 after range download",
+  "use": "Local teacher pilot; not an accepted character checkpoint",
+  "tokenizer_sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+  "tokenizer_preflight": {
+    "vocab_size": 248044,
+    "eos_token_id": 248046,
+    "round_trip": true
+  },
+  "generation_config_source": "https://huggingface.co/Qwen/Qwen3.5-4B/blob/c7429d5a8ed57f4a9cfdaf1af76a8943eba0ae97/generation_config.json",
+  "generation_config_sha256": "4f25002776b741773666203dcea8f54619f177ace3ae483d311102092a4658e0"
+}
