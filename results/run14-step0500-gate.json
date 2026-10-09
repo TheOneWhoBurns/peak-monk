@@ -1,0 +1,13 @@
+{
+  "reviewer": "Codex author, not independent or blinded",
+  "independent": false,
+  "suite": "evaluation/dev-roleplay-v2.json",
+  "suite_sha256": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+  "acceptable_fraction": 0.6,
+  "acceptable_count": 12,
+  "total": 20,
+  "relative_loss_reduction": 0.48336484082163333,
+  "severe_failures": [],
+  "pass": false,
+  "scope": "Project-specific author rubric; not independent human benchmark or general safety certification."
+}
