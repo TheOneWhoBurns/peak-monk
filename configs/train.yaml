@@ -1,6 +1,6 @@
 model: models/base
 data: data/prepared
-train: true
+train: false
 fine_tune_type: lora
 optimizer: adam
 mask_prompt: true
