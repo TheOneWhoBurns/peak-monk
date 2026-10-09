@@ -1,0 +1,58 @@
+{
+  "revision": "3e799c45a045256f47d5f1c9cda90157e2d2ec9e",
+  "files": [
+    {
+      "path": "sources/raw/full-duplex-bench/README.md",
+      "url": "https://raw.githubusercontent.com/DanielLin94144/Full-Duplex-Bench/3e799c45a045256f47d5f1c9cda90157e2d2ec9e/README.md",
+      "sha256": "1131ac9c8cdc87d3cfa52294d42a350f71adeadd49189561acdafa387167da50",
+      "bytes": 7231
+    },
+    {
+      "path": "sources/raw/full-duplex-bench/v1_v1.5/evaluation/README.md",
+      "url": "https://raw.githubusercontent.com/DanielLin94144/Full-Duplex-Bench/3e799c45a045256f47d5f1c9cda90157e2d2ec9e/v1_v1.5/evaluation/README.md",
+      "sha256": "4a7d2c39f6bff56e21cbca7433ff063761893ab86537ada2b1c1573741ce82a5",
+      "bytes": 4023
+    },
+    {
+      "path": "sources/raw/full-duplex-bench/v1_v1.5/evaluation/evaluate.py",
+      "url": "https://raw.githubusercontent.com/DanielLin94144/Full-Duplex-Bench/3e799c45a045256f47d5f1c9cda90157e2d2ec9e/v1_v1.5/evaluation/evaluate.py",
+      "sha256": "ae362d718f80428a6fe73d8a87e9e3b8935e86008267f0b2e34d1cc7573f1d4e",
+      "bytes": 3238
+    },
+    {
+      "path": "sources/raw/full-duplex-bench/v1_v1.5/evaluation/eval_pause_handling.py",
+      "url": "https://raw.githubusercontent.com/DanielLin94144/Full-Duplex-Bench/3e799c45a045256f47d5f1c9cda90157e2d2ec9e/v1_v1.5/evaluation/eval_pause_handling.py",
+      "sha256": "1e86519b4f4543f2f667ce60b9bea2f6148a3bc4255bb20c1ea111b45e0adbb5",
+      "bytes": 2350
+    },
+    {
+      "path": "sources/raw/full-duplex-bench/v1_v1.5/evaluation/eval_smooth_turn_taking.py",
+      "url": "https://raw.githubusercontent.com/DanielLin94144/Full-Duplex-Bench/3e799c45a045256f47d5f1c9cda90157e2d2ec9e/v1_v1.5/evaluation/eval_smooth_turn_taking.py",
+      "sha256": "cb7d6b987cd415e1b71b6eea06e67ea8fdc77a1167107e5c0552105bac05b2df",
+      "bytes": 3457
+    },
+    {
+      "path": "sources/raw/full-duplex-bench/v1_v1.5/evaluation/eval_backchannel.py",
+      "url": "https://raw.githubusercontent.com/DanielLin94144/Full-Duplex-Bench/3e799c45a045256f47d5f1c9cda90157e2d2ec9e/v1_v1.5/evaluation/eval_backchannel.py",
+      "sha256": "36371e3efb4a25e6b5afe317d70c81ad8f8815b95ef025baa06b11c378ecd0d9",
+      "bytes": 6913
+    },
+    {
+      "path": "sources/raw/full-duplex-bench/v1_v1.5/evaluation/eval_user_interruption.py",
+      "url": "https://raw.githubusercontent.com/DanielLin94144/Full-Duplex-Bench/3e799c45a045256f47d5f1c9cda90157e2d2ec9e/v1_v1.5/evaluation/eval_user_interruption.py",
+      "sha256": "e701c14579c1477577b262265cfff75b28ac2e057beee5ba82572afa2a35963a",
+      "bytes": 6088
+    },
+    {
+      "url": "https://raw.githubusercontent.com/DanielLin94144/Full-Duplex-Bench/3e799c45a045256f47d5f1c9cda90157e2d2ec9e/v1_v1.5/evaluation/get_transcript/asr.py",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "sources/raw/full-duplex-bench/v1_v1.5/get_transcript/asr.py",
+      "url": "https://raw.githubusercontent.com/DanielLin94144/Full-Duplex-Bench/3e799c45a045256f47d5f1c9cda90157e2d2ec9e/v1_v1.5/get_transcript/asr.py",
+      "sha256": "aedaee0d50f2bc47947caf6f3899939461e290225a98c0ddc434c360189596cf",
+      "bytes": 4121
+    }
+  ],
+  "purpose": "Read-only protocol audit. No external evaluator executed."
+}

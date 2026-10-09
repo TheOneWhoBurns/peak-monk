@@ -1,0 +1,18 @@
+{
+  "sha256": "8192b01af95e5c401c735f28558815431f930ac8731cae45a78c1bd1fb5d6636",
+  "conversations": 4,
+  "character_turns": 64,
+  "exchanges_per_conversation": 16,
+  "author": "Codex original synthetic fiction",
+  "reviewer": "Same author, not independent",
+  "status": "Draft for later long-context experiment; excluded from speech-run07 and text run18",
+  "source_usage": "Broad listed monastic/literary influences; no real transcripts, quotations or voice cloning",
+  "exact_heldout_prompt_overlap": false,
+  "heldout_files_checked": [
+    "evaluation/final-roleplay-v2.json",
+    "evaluation/pressure-v2.json",
+    "evaluation/pressure-v2-frozen.json"
+  ],
+  "heldout_prompt_count": 84,
+  "limitations": "Mechanical exact-prompt comparison is not semantic independence. Development observations inform corpus design."
+}

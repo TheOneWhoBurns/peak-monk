@@ -1,0 +1,19 @@
+{
+  "source_revision": "3e799c45a045256f47d5f1c9cda90157e2d2ec9e",
+  "status": "Source audit only; no native benchmark generation or scores",
+  "source_manifest": "sources/full-duplex-bench-evaluator-source.json",
+  "asr_source": "v1_v1.5/get_transcript/asr.py",
+  "asr_reference": "nvidia/parakeet-tdt-0.6b-v2 with word timestamps, CUDA",
+  "interruption_alignment": "Official ASR crops output waveform at interrupt.json first timestamp end, transcribes the cropped audio, then adds that offset back to each word timestamp. Scoring whole-waveform ASR would not reproduce it.",
+  "turn_occupancy": "No ASR words ->0; otherwise first-to-last word span below 1 second AND at most3 words ->0; otherwise1. Pause evaluator applies this to the complete captured output.",
+  "latency": "Smooth taking: first output word start minus turn_taking.json[0].timestamp[0]. Interruption: first cropped-and-offset output word start minus interrupt.json[0].timestamp[1]. Negative values are clamped0 in aggregates. If no successful turns, report latency unavailable rather than0.",
+  "backchannel": "Official implementation uses Silero VAD segment durations, word-count conditions, frequency, and Jensen-Shannon distance to the ICC reference timing distribution. RMS-only detections are not an equivalent metric.",
+  "external_judge": "The pinned interruption script requests gpt-4-turbo; no API judge will be run in this Mac-only experiment. Its quality score is unavailable, not replaced by author review under the same name.",
+  "local_protocol_changes": [
+    "Eight lexically selected cases rather than full dataset",
+    "Local Whisper large-v3 INT8 CPU rather than Parakeet CUDA",
+    "No external GPT relevance judge"
+  ],
+  "timing_caution": "Native generated waveform indices and input-frame availability must be aligned explicitly before comparing timestamps. Offline generation timings do not establish live latency.",
+  "publication": "Report paired case-level outcomes under a modified local protocol; do not present the subset as official Full-Duplex-Bench aggregate performance."
+}

@@ -28,7 +28,7 @@ Exact parameter counts come from pinned repository metadata in `sources/voice_mo
 
 | Model | Parameters | BF16 weights | Quantized local option | Relevance |
 |---|---:|---:|---|---|
-| [PersonaPlex-7B-v1](https://huggingface.co/nvidia/personaplex-7b-v1) | 8.371B | 16.743 GB | Edge derivative: 5.233 GB, not yet verified or run here | Strong released role/voice conditioning; NVIDIA weight license, derivative has additional restrictions |
+| [PersonaPlex-7B-v1](https://huggingface.co/nvidia/personaplex-7b-v1) | 8.371B | 16.743 GB | Edge derivative: 5.233 GB, full file SHA verified; inference pending | Strong released role/voice conditioning; NVIDIA weight license, derivative has additional restrictions |
 | [Moshiko](https://huggingface.co/kyutai/moshiko-pytorch-bf16) | 7.688B | 15.376 GB | Verified MLX Q4: 4.806 GB | Native duplex model actually run and adapted on this Mac |
 | [MiniCPM-o 4.5](https://github.com/OpenBMB/MiniCPM-V) | 9.372B | 18.744 GB | Author-reported INT4/ GGUF runtime memory: 11/10 GB | Reported memory exceeds this Mac |
 
@@ -41,3 +41,7 @@ The interactive launcher now infers the required base from the saved adapter con
 Thirty-six additional authored conversations (360 character replies, files `data/grounded_long_v3.txt` through `v7.txt`) are proposed expansion data. They include sustained ordinary company and a few longer narratives. They remain excluded from run17. All are original synthetic fiction with documented influences, not transcripts of real monks or independently reviewed teacher generations.
 
 Run18 is prepared as a separate text continuation from run17-step0600, using the expanded 250-distinct-conversation corpus and normalization by character tokens across each accumulated update. Its tiny-model gradients match a combined unequal-length batch within 1.5e-8. It remains queued behind speech work; this implementation check is not a character-quality result.
+
+The pinned PersonaPlex Edge derivative and stock voice prefixes are downloaded and verified. A real emitted-token parity check must pass before releasing unused depth-model weight slices to fit the Mac. Its retained tensor shapes match Moshi; fixed weight samples are close, which motivates one predeclared transfer of the speech-run07 adapter at its original scale. The comparison uses the same stock voice and an empty character prompt for both baseline and transfer. Neither parity nor transfer quality has been measured yet; the derivative's CC BY-NC 4.0 terms also apply.
+
+Eight public Full-Duplex-Bench v1 inputs are downloaded, selected as the first two lexical cases from each of four categories before any local inference. These are additional diagnostics, not a full benchmark score. Source hashes, archive checksums, selection and licensing are recorded under `sources/full-duplex-bench-*`. Local Whisper transcription and omission of the external GPT judge would change the official protocol and will be labeled accordingly.

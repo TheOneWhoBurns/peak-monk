@@ -21,6 +21,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--adapter', type=Path)
     parser.add_argument('--config', type=Path)
+    parser.add_argument('--backend', choices=['moshi','personaplex'], default='moshi')
+    parser.add_argument('--parity-report', type=Path)
     parser.add_argument('--sampling-preset', choices=['local','offline'], default='local')
     parser.add_argument('--output', required=True, type=Path)
     parser.add_argument('--cases', nargs='+', choices=[f's{i:02d}' for i in range(1, 7)],
@@ -32,13 +34,22 @@ def main():
         raise ValueError('Provide both adapter and config, or neither for a base control')
     if args.adapter and (not args.adapter.is_file() or not args.config.is_file()):
         raise ValueError('A saved candidate and its actual training config are required')
+    if args.backend == 'personaplex':
+        if args.parity_report is None or not args.parity_report.is_file():
+            raise ValueError('PersonaPlex requires the exact-model trace parity report')
+        if args.sampling_preset != 'local':
+            raise ValueError('PersonaPlex uses its pinned generator sampling configuration')
+    elif args.parity_report is not None:
+        raise ValueError('A PersonaPlex parity report does not apply to Moshi')
     args.output.mkdir(exist_ok=False)
     manifest = {
         'adapter': str(args.adapter) if args.adapter else None,
         'adapter_sha256': hashlib.sha256(args.adapter.read_bytes()).hexdigest() if args.adapter else None,
         'config': str(args.config) if args.config else None,
         'config_sha256': hashlib.sha256(args.config.read_bytes()).hexdigest() if args.config else None,
-        'sampling_preset': args.sampling_preset,
+        'backend': args.backend,
+        'sampling_preset': args.sampling_preset if args.backend == 'moshi' else 'pinned PersonaPlex configuration',
+        'parity_report': str(args.parity_report) if args.parity_report else None,
         'seed': 41,
         'status': 'running; unscored',
         'scope': 'Selected fixed development probes, native speech generation. No training text forcing.',
@@ -51,8 +62,15 @@ def main():
         inputs = Path('evaluation/audio-roleplay-v2') / (name + '.npz')
         target = args.output / name
         adapter_args = ['--adapter',str(args.adapter),'--adapter-config',str(args.config)] if args.adapter else []
-        run(['scripts/infer_moshi_codes.py', str(inputs), *adapter_args,
-             '--sampling-preset',args.sampling_preset,'--seed', '41', '--output', str(target)],
+        if args.backend == 'moshi':
+            inference = ['scripts/infer_moshi_codes.py', str(inputs), *adapter_args,
+                         '--sampling-preset', args.sampling_preset]
+        else:
+            inference = ['scripts/infer_personaplex_codes.py', str(inputs), *adapter_args,
+                         '--parity-report', str(args.parity_report)]
+            if args.adapter:
+                inference.append('--allow-task-transfer')
+        run([*inference, '--seed', '41', '--output', str(target)],
             args.output / (name + '-inference.log'))
         run(['scripts/mimi_audio.py', 'decode', str(target / 'agent_codes.npz'),
              '--output', str(target / 'agent.wav')], args.output / (name + '-decode.log'))

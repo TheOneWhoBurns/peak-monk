@@ -1,0 +1,24 @@
+{
+  "source": "data/grounded_long_v9.txt",
+  "source_sha256": "8192b01af95e5c401c735f28558815431f930ac8731cae45a78c1bd1fb5d6636",
+  "model_tokenizer": "models/base4b",
+  "lengths": [
+    {
+      "family": "long_the_song_with_no_ending",
+      "tokens": 758
+    },
+    {
+      "family": "long_the_unwanted_new_stool",
+      "tokens": 789
+    },
+    {
+      "family": "long_cards_in_a_power_cut",
+      "tokens": 797
+    },
+    {
+      "family": "long_a_letter_with_an_empty_page",
+      "tokens": 738
+    }
+  ],
+  "status": "Draft only; not admitted to a training run"
+}
