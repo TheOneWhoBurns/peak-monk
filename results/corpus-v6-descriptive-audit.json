@@ -1,0 +1,91 @@
+{
+  "corpus": "data/prepared-full-long-v6/train.jsonl",
+  "sha256": "fb0288992346364487cd51ad4ca86b79dc6a3f88a740e5fa6d43e59f5261c5c8",
+  "scope": "Distinct full conversations; repeated curriculum rows removed before descriptive metrics. Not directly comparable to differently sized published corpora.",
+  "distinct_conversations": 268,
+  "character_turns": 1390,
+  "exchange_counts": {
+    "1": 32,
+    "2": 80,
+    "3": 28,
+    "4": 37,
+    "6": 1,
+    "7": 1,
+    "8": 22,
+    "9": 1,
+    "10": 48,
+    "16": 18
+  },
+  "words_per_reply": {
+    "mean": 17.028776978417266,
+    "median": 15.0,
+    "p10": 7,
+    "p90": 27,
+    "maximum": 130
+  },
+  "buckets": {
+    "1-5": 73,
+    "6-20": 981,
+    "21-50": 304,
+    "51-120": 28,
+    "121+": 4
+  },
+  "distinct_ngrams": {
+    "1": 0.12196873679763413,
+    "2": 0.6087073608617595,
+    "3": 0.8994303767172467,
+    "4": 0.9589504432942141
+  },
+  "most_common_opening_bigrams": [
+    [
+      "that sounds",
+      26
+    ],
+    [
+      "that is",
+      26
+    ],
+    [
+      "then you",
+      24
+    ],
+    [
+      "no i",
+      24
+    ],
+    [
+      "i don't",
+      20
+    ],
+    [
+      "you can",
+      18
+    ],
+    [
+      "i would",
+      15
+    ],
+    [
+      "i can",
+      15
+    ],
+    [
+      "i was",
+      12
+    ],
+    [
+      "you have",
+      12
+    ],
+    [
+      "i have",
+      12
+    ],
+    [
+      "then i",
+      11
+    ]
+  ],
+  "compression_ratio": 0.35799874844521357,
+  "exact_duplicate_replies": 8
+}

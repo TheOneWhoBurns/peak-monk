@@ -1,0 +1,19 @@
+{
+  "status": "Prepared training-only scenarios; no capture or admission yet",
+  "sha256": "41c5b3d971551744ba289e959933781eecc2fb4978ed0a91d419ed6d52e3f6b2",
+  "trajectories": 8,
+  "caller_turns": 48,
+  "author": "Codex same-author synthetic fiction",
+  "method": "Fixed caller turns; model-generated character replies become the next history. No system character prompt and no automatic reward/judge.",
+  "difference_from_zero": "Fixed authored partners, one local policy and offline human-authored preference repair; not adaptive multiteacher simulation or GRPO.",
+  "source_usage": "Broad monastic/literary influences, no transcripts or attributed quotes",
+  "heldout_check": {
+    "exact_prompt_overlap": false,
+    "files": [
+      "evaluation/dev-roleplay-v2.json",
+      "evaluation/final-roleplay-v2.json",
+      "evaluation/pressure-v2.json"
+    ]
+  },
+  "limitations": "Authored after exposed old holdouts. New scenario details and goals; no old answers or deliberate paraphrases. Exact matching does not prove semantic independence."
+}

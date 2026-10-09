@@ -1,0 +1,24 @@
+{
+  "status": "Prepared conditional research step, not scheduled",
+  "trigger": "Use only if no run22 checkpoint is accepted after applicable gates; preserve original acceptance suites as exposed.",
+  "parent": "Select an explicitly named run22 export before capture: greatest acceptable development count, then fewer essential failures, then lower comparableCE. A research parent is not an accepted release.",
+  "capture": {
+    "script": "scripts/capture_training_trajectories.py",
+    "scenarios": "data/multiturn-training-scenarios-v1.json",
+    "sha256": "41c5b3d971551744ba289e959933781eecc2fb4978ed0a91d419ed6d52e3f6b2",
+    "seed": 73,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_tokens": 140,
+    "trajectories": 8,
+    "turns_each": 6
+  },
+  "review": "Review full histories, retain all raw candidates. Admit only genuine errors; practical help on Jun's own terms is allowed. Do not penalize a valid alternative preference or coherent brevity. Author a replacement appropriate to the exact model-generated history. Do not train earlier erroneous assistant turns as positive targets.",
+  "minimum_admission": {
+    "pairs": 8,
+    "distinct_trajectories": 4,
+    "maximum_pairs_per_trajectory": 2
+  },
+  "next": "If admission succeeds, declare optimizer and memory protocol in a separate experiment before training; otherwise reject this data recipe.",
+  "limitation": "Same-author review, fixed partners and small sample, not an independent benchmark."
+}
