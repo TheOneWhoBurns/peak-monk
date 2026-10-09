@@ -1,0 +1,14 @@
+{
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "python": "3.14.4",
+  "physical_memory_bytes": 8589934592,
+  "mlx_device": {
+    "device_name": "Apple M2",
+    "max_recommended_working_set_size": 5726633984,
+    "memory_size": 8589934592,
+    "architecture": "applegpu_g14g",
+    "max_buffer_length": 4294967296,
+    "resource_limit": 499000
+  },
+  "cuda_available": false
+}

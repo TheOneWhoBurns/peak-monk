@@ -1,0 +1,8 @@
+{
+  "repo": "johnlakness/Qwen3-1.7B-Base-mlx-4Bit",
+  "revision": "ccbac499d70a93105c0e96618dd40564f577afa2",
+  "upstream": "Qwen/Qwen3-1.7B-Base",
+  "license": "Apache-2.0",
+  "modifications": "Non-thinking ChatML serialization and im_end EOS; weights unchanged",
+  "weights": "4-bit MLX community conversion; upstream attribution verified from model card, not bitwise re-converted"
+}
