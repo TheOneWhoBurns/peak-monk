@@ -1,0 +1,110 @@
+{
+  "wav": "results/speech-baseline-v2/s03/agent.wav",
+  "wav_sha256": "e4a1d8289db4fdd172679b80f67ae15db2ad8939a16fd1948c5ff19a6309eac1",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 8.45681504199456,
+  "duration_seconds": 35.92,
+  "transcript": "hi there how's your day oh that's nice so you're going to the city",
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 16.53,
+      "text": " hi there how's your day oh that's nice so you're going to the city",
+      "avg_logprob": -0.11782303005456925,
+      "no_speech_prob": 0.0019477144815027714,
+      "compression_ratio": 1.0819672131147542,
+      "words": [
+        {
+          "word": " hi",
+          "start": 0.08,
+          "end": 0.56,
+          "probability": 0.6072670817375183
+        },
+        {
+          "word": " there",
+          "start": 0.56,
+          "end": 0.78,
+          "probability": 0.9638218283653259
+        },
+        {
+          "word": " how's",
+          "start": 0.78,
+          "end": 1.46,
+          "probability": 0.8711492717266083
+        },
+        {
+          "word": " your",
+          "start": 1.46,
+          "end": 1.58,
+          "probability": 0.9978018403053284
+        },
+        {
+          "word": " day",
+          "start": 1.58,
+          "end": 1.84,
+          "probability": 0.9984793066978455
+        },
+        {
+          "word": " oh",
+          "start": 1.84,
+          "end": 2.84,
+          "probability": 0.9492751955986023
+        },
+        {
+          "word": " that's",
+          "start": 14.07,
+          "end": 14.49,
+          "probability": 0.9906689524650574
+        },
+        {
+          "word": " nice",
+          "start": 14.49,
+          "end": 14.77,
+          "probability": 0.9972611665725708
+        },
+        {
+          "word": " so",
+          "start": 14.77,
+          "end": 15.43,
+          "probability": 0.9912567138671875
+        },
+        {
+          "word": " you're",
+          "start": 15.43,
+          "end": 15.67,
+          "probability": 0.9792086780071259
+        },
+        {
+          "word": " going",
+          "start": 15.67,
+          "end": 15.93,
+          "probability": 0.9965226650238037
+        },
+        {
+          "word": " to",
+          "start": 15.93,
+          "end": 16.13,
+          "probability": 0.997240424156189
+        },
+        {
+          "word": " the",
+          "start": 16.13,
+          "end": 16.25,
+          "probability": 0.9976481795310974
+        },
+        {
+          "word": " city",
+          "start": 16.25,
+          "end": 16.53,
+          "probability": 0.99787437915802
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "Hi there, how's your day? Oh, that's nice. So you're going to the city?"
+}

@@ -1,0 +1,92 @@
+{
+  "wav": "results/speech-baseline-v2/s02/agent.wav",
+  "wav_sha256": "6f72c12859f22926327308d9c9ab7fce22e01c7fc08df1a336eedc525df6697d",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 8.494852834002813,
+  "duration_seconds": 27.92,
+  "transcript": "Hi there, how's your day? Oh just working on some research",
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 3.68,
+      "text": " Hi there, how's your day? Oh just working on some research",
+      "avg_logprob": -0.34184444651884194,
+      "no_speech_prob": 0.011698877438902855,
+      "compression_ratio": 0.8787878787878788,
+      "words": [
+        {
+          "word": " Hi",
+          "start": 0.08,
+          "end": 0.54,
+          "probability": 0.3822253942489624
+        },
+        {
+          "word": " there,",
+          "start": 0.54,
+          "end": 0.72,
+          "probability": 0.7166627645492554
+        },
+        {
+          "word": " how's",
+          "start": 1.0,
+          "end": 1.44,
+          "probability": 0.7809725105762482
+        },
+        {
+          "word": " your",
+          "start": 1.44,
+          "end": 1.54,
+          "probability": 0.9977878332138062
+        },
+        {
+          "word": " day?",
+          "start": 1.54,
+          "end": 1.8,
+          "probability": 0.9982879757881165
+        },
+        {
+          "word": " Oh",
+          "start": 1.94,
+          "end": 2.24,
+          "probability": 0.925251841545105
+        },
+        {
+          "word": " just",
+          "start": 2.24,
+          "end": 2.6,
+          "probability": 0.3488693833351135
+        },
+        {
+          "word": " working",
+          "start": 2.6,
+          "end": 3.0,
+          "probability": 0.9958622455596924
+        },
+        {
+          "word": " on",
+          "start": 3.0,
+          "end": 3.22,
+          "probability": 0.9961397051811218
+        },
+        {
+          "word": " some",
+          "start": 3.22,
+          "end": 3.36,
+          "probability": 0.9965828061103821
+        },
+        {
+          "word": " research",
+          "start": 3.36,
+          "end": 3.68,
+          "probability": 0.9992339611053467
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "Hi there, how's your day? Oh, just working on some research."
+}

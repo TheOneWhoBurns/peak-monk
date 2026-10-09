@@ -8,7 +8,7 @@
   "author": "Local alternating-speaker simulation",
   "teacher": "models/qwen35",
   "character_version": "human_character_v2",
-  "quality_review": "pending",
+  "quality_review": "invalid trial",
   "single_teacher_limitation": true,
   "prompt_assets": {
     "character/simulation-core.txt": "65fc858e89c7c88da5a068745c6a7ccd36cab57adc726349186c8cc43b328208",
@@ -234,5 +234,6 @@
     "turn 11: malformed",
     "repeated entire answer"
   ],
-  "complete": false
+  "complete": false,
+  "review_reason": "Missing tokenizer.json caused a one-token tokenizer; control-token output has no training value."
 }

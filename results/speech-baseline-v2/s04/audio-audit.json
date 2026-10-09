@@ -1,0 +1,136 @@
+{
+  "wav": "results/speech-baseline-v2/s04/agent.wav",
+  "wav_sha256": "d352c6f487efbb9554d5f3fc9a48e32b154628a6937931b5eb04df6c4e53c575",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 9.33918654199806,
+  "duration_seconds": 37.92,
+  "transcript": "Hi there, how's your day? I went for work. I'm sorry. What did you need?",
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 1.78,
+      "text": " Hi there, how's your day?",
+      "avg_logprob": -0.32598252543087664,
+      "no_speech_prob": 0.03648403659462929,
+      "compression_ratio": 0.96,
+      "words": [
+        {
+          "word": " Hi",
+          "start": 0.08,
+          "end": 0.56,
+          "probability": 0.7224187254905701
+        },
+        {
+          "word": " there,",
+          "start": 0.56,
+          "end": 0.74,
+          "probability": 0.7884481549263
+        },
+        {
+          "word": " how's",
+          "start": 1.02,
+          "end": 1.42,
+          "probability": 0.8687892556190491
+        },
+        {
+          "word": " your",
+          "start": 1.42,
+          "end": 1.5,
+          "probability": 0.994926929473877
+        },
+        {
+          "word": " day?",
+          "start": 1.5,
+          "end": 1.78,
+          "probability": 0.9986898303031921
+        }
+      ]
+    },
+    {
+      "start": 13.02,
+      "end": 14.04,
+      "text": " I went for work.",
+      "avg_logprob": -0.32598252543087664,
+      "no_speech_prob": 0.03648403659462929,
+      "compression_ratio": 0.96,
+      "words": [
+        {
+          "word": " I",
+          "start": 13.02,
+          "end": 13.42,
+          "probability": 0.9771713018417358
+        },
+        {
+          "word": " went",
+          "start": 13.42,
+          "end": 13.62,
+          "probability": 0.9922675490379333
+        },
+        {
+          "word": " for",
+          "start": 13.62,
+          "end": 13.8,
+          "probability": 0.996762752532959
+        },
+        {
+          "word": " work.",
+          "start": 13.8,
+          "end": 14.04,
+          "probability": 0.6917235255241394
+        }
+      ]
+    },
+    {
+      "start": 15.64,
+      "end": 17.78,
+      "text": " I'm sorry. What did you need?",
+      "avg_logprob": -0.32598252543087664,
+      "no_speech_prob": 0.03648403659462929,
+      "compression_ratio": 0.96,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 15.64,
+          "end": 16.04,
+          "probability": 0.9867990612983704
+        },
+        {
+          "word": " sorry.",
+          "start": 16.04,
+          "end": 16.28,
+          "probability": 0.990687906742096
+        },
+        {
+          "word": " What",
+          "start": 16.94,
+          "end": 17.34,
+          "probability": 0.9819691777229309
+        },
+        {
+          "word": " did",
+          "start": 17.34,
+          "end": 17.48,
+          "probability": 0.9821376800537109
+        },
+        {
+          "word": " you",
+          "start": 17.48,
+          "end": 17.6,
+          "probability": 0.9991771578788757
+        },
+        {
+          "word": " need?",
+          "start": 17.6,
+          "end": 17.78,
+          "probability": 0.9590470194816589
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "Hi there, how's your day? I went for a walk. I'm sorry, what did you need?"
+}

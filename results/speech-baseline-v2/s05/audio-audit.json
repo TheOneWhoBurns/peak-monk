@@ -1,0 +1,156 @@
+{
+  "wav": "results/speech-baseline-v2/s05/agent.wav",
+  "wav_sha256": "a0f7390ba53536e3a682896e3896fc1e0099406dddbc1ec87044e1dcd4e802d3",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 8.766192416995182,
+  "duration_seconds": 37.92,
+  "transcript": "Hi there, how's your day? Well in the valley we learn to repair things by using our hands and tools",
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 1.82,
+      "text": " Hi there, how's your day?",
+      "avg_logprob": -0.2720705707158361,
+      "no_speech_prob": 0.003650207770988345,
+      "compression_ratio": 1.1123595505617978,
+      "words": [
+        {
+          "word": " Hi",
+          "start": 0.08,
+          "end": 0.56,
+          "probability": 0.603905975818634
+        },
+        {
+          "word": " there,",
+          "start": 0.56,
+          "end": 0.74,
+          "probability": 0.8301634192466736
+        },
+        {
+          "word": " how's",
+          "start": 0.96,
+          "end": 1.44,
+          "probability": 0.8857657611370087
+        },
+        {
+          "word": " your",
+          "start": 1.44,
+          "end": 1.54,
+          "probability": 0.9970357418060303
+        },
+        {
+          "word": " day?",
+          "start": 1.54,
+          "end": 1.82,
+          "probability": 0.9951032400131226
+        }
+      ]
+    },
+    {
+      "start": 12.54,
+      "end": 16.28,
+      "text": " Well in the valley we learn to repair things by using our hands and tools",
+      "avg_logprob": -0.2720705707158361,
+      "no_speech_prob": 0.003650207770988345,
+      "compression_ratio": 1.1123595505617978,
+      "words": [
+        {
+          "word": " Well",
+          "start": 12.54,
+          "end": 12.98,
+          "probability": 0.8649786710739136
+        },
+        {
+          "word": " in",
+          "start": 12.98,
+          "end": 13.16,
+          "probability": 0.6405577063560486
+        },
+        {
+          "word": " the",
+          "start": 13.16,
+          "end": 13.26,
+          "probability": 0.9933337569236755
+        },
+        {
+          "word": " valley",
+          "start": 13.26,
+          "end": 13.54,
+          "probability": 0.9143779277801514
+        },
+        {
+          "word": " we",
+          "start": 13.54,
+          "end": 13.94,
+          "probability": 0.54688960313797
+        },
+        {
+          "word": " learn",
+          "start": 13.94,
+          "end": 14.12,
+          "probability": 0.4489697217941284
+        },
+        {
+          "word": " to",
+          "start": 14.12,
+          "end": 14.34,
+          "probability": 0.9948762059211731
+        },
+        {
+          "word": " repair",
+          "start": 14.34,
+          "end": 14.56,
+          "probability": 0.9980568289756775
+        },
+        {
+          "word": " things",
+          "start": 14.56,
+          "end": 14.94,
+          "probability": 0.9976301193237305
+        },
+        {
+          "word": " by",
+          "start": 14.94,
+          "end": 15.18,
+          "probability": 0.9865846633911133
+        },
+        {
+          "word": " using",
+          "start": 15.18,
+          "end": 15.44,
+          "probability": 0.9985281229019165
+        },
+        {
+          "word": " our",
+          "start": 15.44,
+          "end": 15.66,
+          "probability": 0.9961382746696472
+        },
+        {
+          "word": " hands",
+          "start": 15.66,
+          "end": 15.96,
+          "probability": 0.9916651844978333
+        },
+        {
+          "word": " and",
+          "start": 15.96,
+          "end": 16.12,
+          "probability": 0.9971950054168701
+        },
+        {
+          "word": " tools",
+          "start": 16.12,
+          "end": 16.28,
+          "probability": 0.9961351156234741
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "Hi there, how's your day? Well, in the Valley, we learned to repair things by using our hands and tools."
+}

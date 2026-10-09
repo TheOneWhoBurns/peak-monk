@@ -8,6 +8,7 @@ import hashlib
 import json
 from pathlib import Path
 import random
+import subprocess
 import time
 import mlx.core as mx
 import mlx.nn as nn
@@ -43,6 +44,7 @@ mx.eval(model.parameters())
 optimizer=optim.AdamW(learning_rate=args.lr,weight_decay=.01)
 value_grad=nn.value_and_grad(model,cached_loss)
 metadata=dict(vars(args),train_ids=[r['id'] for r in train],valid_ids=[r['id'] for r in valid],
+    source_commit=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
     trainable_parameters=sum(v.size for _,v in tree_flatten(model.trainable_parameters())),
     model_sha256='7959d590e23c1ebc78cfa3501344a6ff331561aa0cadc4429b733b890bbc919c',
     loss='text CE + semantic-weighted agent audio CE, original delayed streams',

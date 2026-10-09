@@ -1,0 +1,9 @@
+{
+  "episodes": 59,
+  "train": 57,
+  "valid": 2,
+  "prefix_compute_seconds": 145.4179450020747,
+  "peak_memory_bytes": 3863316204,
+  "cache_bytes": 135722237,
+  "scope": "Actual verified quantized Moshi prefix; prepared teacher-forced activations for suffix training"
+}

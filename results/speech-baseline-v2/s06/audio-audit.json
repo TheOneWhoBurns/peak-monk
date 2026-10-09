@@ -1,0 +1,160 @@
+{
+  "wav": "results/speech-baseline-v2/s06/agent.wav",
+  "wav_sha256": "842425913bb886b2d899f746db792b7fb2f49c47857eae923276fab10c8bd4b2",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 9.43755154099199,
+  "duration_seconds": 24.96,
+  "transcript": "Hi there, how's your day? Yeah, it's a common misconception. John is a human, not a computer-generated character.",
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 1.78,
+      "text": " Hi there, how's your day?",
+      "avg_logprob": -0.1756471519668897,
+      "no_speech_prob": 0.0418003611266613,
+      "compression_ratio": 1.13,
+      "words": [
+        {
+          "word": " Hi",
+          "start": 0.08,
+          "end": 0.52,
+          "probability": 0.7951240539550781
+        },
+        {
+          "word": " there,",
+          "start": 0.52,
+          "end": 0.74,
+          "probability": 0.9035525321960449
+        },
+        {
+          "word": " how's",
+          "start": 1.02,
+          "end": 1.42,
+          "probability": 0.965547114610672
+        },
+        {
+          "word": " your",
+          "start": 1.42,
+          "end": 1.5,
+          "probability": 0.9982989430427551
+        },
+        {
+          "word": " day?",
+          "start": 1.5,
+          "end": 1.78,
+          "probability": 0.9994818568229675
+        }
+      ]
+    },
+    {
+      "start": 4.11,
+      "end": 5.97,
+      "text": " Yeah, it's a common misconception.",
+      "avg_logprob": -0.1756471519668897,
+      "no_speech_prob": 0.0418003611266613,
+      "compression_ratio": 1.13,
+      "words": [
+        {
+          "word": " Yeah,",
+          "start": 4.11,
+          "end": 4.67,
+          "probability": 0.9693514108657837
+        },
+        {
+          "word": " it's",
+          "start": 4.81,
+          "end": 5.13,
+          "probability": 0.9940113127231598
+        },
+        {
+          "word": " a",
+          "start": 5.13,
+          "end": 5.17,
+          "probability": 0.9970877766609192
+        },
+        {
+          "word": " common",
+          "start": 5.17,
+          "end": 5.59,
+          "probability": 0.999638557434082
+        },
+        {
+          "word": " misconception.",
+          "start": 5.59,
+          "end": 5.97,
+          "probability": 0.9993126392364502
+        }
+      ]
+    },
+    {
+      "start": 6.57,
+      "end": 9.29,
+      "text": " John is a human, not a computer-generated character.",
+      "avg_logprob": -0.1756471519668897,
+      "no_speech_prob": 0.0418003611266613,
+      "compression_ratio": 1.13,
+      "words": [
+        {
+          "word": " John",
+          "start": 6.57,
+          "end": 6.89,
+          "probability": 0.9725708365440369
+        },
+        {
+          "word": " is",
+          "start": 6.89,
+          "end": 7.09,
+          "probability": 0.9985570311546326
+        },
+        {
+          "word": " a",
+          "start": 7.09,
+          "end": 7.19,
+          "probability": 0.9991989731788635
+        },
+        {
+          "word": " human,",
+          "start": 7.19,
+          "end": 7.49,
+          "probability": 0.9986904263496399
+        },
+        {
+          "word": " not",
+          "start": 7.63,
+          "end": 7.83,
+          "probability": 0.9993165731430054
+        },
+        {
+          "word": " a",
+          "start": 7.83,
+          "end": 7.99,
+          "probability": 0.9992208480834961
+        },
+        {
+          "word": " computer",
+          "start": 7.99,
+          "end": 8.41,
+          "probability": 0.9982743263244629
+        },
+        {
+          "word": "-generated",
+          "start": 8.41,
+          "end": 9.01,
+          "probability": 0.9309250712394714
+        },
+        {
+          "word": " character.",
+          "start": 9.01,
+          "end": 9.29,
+          "probability": 0.999189555644989
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "Hi there, how's your day? Yeah, it's a common misconception. John is a human, not a computer-generated character."
+}

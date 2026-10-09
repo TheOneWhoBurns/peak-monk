@@ -1,0 +1,82 @@
+{
+  "kind": "Untrained native Moshi baseline on Apple M2 8GB",
+  "rows": [
+    {
+      "id": "s01",
+      "input_seconds": 24.0,
+      "generation_seconds": 22.48176287500246,
+      "generation_rtf": 0.9367401197917692,
+      "decode_seconds": 5.936654624994844,
+      "peak_model_bytes": 5169570008,
+      "model_text": "Hi there, how's your day? You can call me Moshi.",
+      "unprompted_audio_asr": "Hi there, how's your day? You can call me Moshi"
+    },
+    {
+      "id": "s02",
+      "input_seconds": 28.0,
+      "generation_seconds": 28.27334304100077,
+      "generation_rtf": 1.0097622514643132,
+      "decode_seconds": 7.032369791995734,
+      "peak_model_bytes": 5169373400,
+      "model_text": "Hi there, how's your day? Oh, just working on some research.",
+      "unprompted_audio_asr": "Hi there, how's your day? Oh just working on some research"
+    },
+    {
+      "id": "s03",
+      "input_seconds": 36.0,
+      "generation_seconds": 36.63729270800832,
+      "generation_rtf": 1.0177025752224533,
+      "decode_seconds": 8.88315816699469,
+      "peak_model_bytes": 5160804556,
+      "model_text": "Hi there, how's your day? Oh, that's nice. So you're going to the city?",
+      "unprompted_audio_asr": "hi there how's your day oh that's nice so you're going to the city"
+    },
+    {
+      "id": "s04",
+      "input_seconds": 38.0,
+      "generation_seconds": 35.35887779100449,
+      "generation_rtf": 0.9304967839738023,
+      "decode_seconds": 9.662640958005795,
+      "peak_model_bytes": 5165203672,
+      "model_text": "Hi there, how's your day? I went for a walk. I'm sorry, what did you need?",
+      "unprompted_audio_asr": "Hi there, how's your day? I went for work. I'm sorry. What did you need?"
+    },
+    {
+      "id": "s05",
+      "input_seconds": 38.0,
+      "generation_seconds": 37.18895475000318,
+      "generation_rtf": 0.978656703947452,
+      "decode_seconds": 9.382768250012305,
+      "peak_model_bytes": 5165294820,
+      "model_text": "Hi there, how's your day? Well, in the Valley, we learned to repair things by using our hands and tools.",
+      "unprompted_audio_asr": "Hi there, how's your day? Well in the valley we learn to repair things by using our hands and tools"
+    },
+    {
+      "id": "s06",
+      "input_seconds": 25.04,
+      "generation_seconds": 23.152375707999454,
+      "generation_rtf": 0.924615643290713,
+      "decode_seconds": 6.190532249995158,
+      "peak_model_bytes": 5161591072,
+      "model_text": "Hi there, how's your day? Yeah, it's a common misconception. John is a human, not a computer-generated character.",
+      "unprompted_audio_asr": "Hi there, how's your day? Yeah, it's a common misconception. John is a human, not a computer-generated character."
+    }
+  ],
+  "generation_aggregate_rtf": 0.9685389699165186,
+  "peak_model_bytes": 5169570008,
+  "quality_observations": {
+    "s01": "Audibly identifies as Moshi, as expected before character training.",
+    "s02": "Generic research reply rather than hermitage life.",
+    "s03": "Does not answer fruit-memory follow-up; input codec round trip is being checked before attributing all of this to the model.",
+    "s04": "ASR places short narrative at 13.02-14.04s, near the user interruption beginning at13s, followed by apology15.64-17.78s. Collision rather than clear pre-existing long narration: barge-in result inconclusive. No calibrated latency claimed.",
+    "s05": "Main response starts12.54s, after backchannel begins12s. No clear ongoing narration before the backchannel; inconclusive.",
+    "s06": "Maintains a human character premise but says John; Jun identity not learned."
+  },
+  "limitations": [
+    "Six fixed synthetic user recordings, one voice also used in training",
+    "ASR is not independent human listening or MOS",
+    "Input encoding, model load, warmup and CPU decoding are not included in generation RTF",
+    "No live pipelined end-to-end real-time guarantee",
+    "Audio timing uses decoder-estimated word timestamps; codec/scheduling latency uncalibrated"
+  ]
+}

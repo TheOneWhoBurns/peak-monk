@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-09",
+  "aufklarer": {
+    "source": "https://huggingface.co/aufklarer/PersonaPlex-7B-MLX-4bit",
+    "decision": "Do not download this candidate now",
+    "basis": "Maintainer explicitly reports garbled INT4 output and recommends INT8. Card also contains inconsistent size/citation details; not sufficient evidence of a usable conversion."
+  },
+  "edge_q4": {
+    "source": "https://huggingface.co/Mayank022/personaplex-edge-q4",
+    "revision": "9ef3ef71176182ce8570f970c5c592fd1bbf3e9b",
+    "model_bytes": 5233143685,
+    "model_sha256": "9840e8618cdff1b1251341c5970ea25c5288c794e470fc1f9087aba15967771f",
+    "status": "Downloading a research alternative while continuing the actual Moshi experiment",
+    "evidence": "Maintainer reports tensor checks and matched Q4/BF16 evaluation; actual M2 behavior remains unmeasured. No endorsement of all card claims.",
+    "license": "RL-Seamless weights add CC BY-NC 4.0 to the NVIDIA Open Model License lineage. Research candidate, not a commercial-use recommendation.",
+    "memory_hypothesis": "Generator computes only first8 of16 depformer slices. Omitting unused user-prediction slices may recover memory without changing agent generation; must verify exact output parity before relying on it."
+  },
+  "scope": "Read-only primary-source/code research; no alternative runtime executed and no alternate checkpoint accepted."
+}
