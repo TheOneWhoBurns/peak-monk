@@ -39,7 +39,9 @@ if args.adapter:
     cfg=json.loads(Path(args.adapter_config).read_text())
     attach_lora(model,layers=cfg['layers'],rank=cfg['rank'],scale=cfg['scale'])
     model.load_weights(args.adapter,strict=False)
-mx.eval(model.parameters());model.warmup()
+mx.eval(model.parameters());model.eval();model.warmup()
+# Adapter initialization and warmup must not shift the matched sampling stream.
+mx.random.seed(args.seed)
 tok=spm.SentencePieceProcessor(model_file='models/moshi/tokenizer_spm_32k_3.model')
 gen=LmGen(model,max_steps=codes.shape[1]+5,text_sampler=Sampler(),audio_sampler=Sampler())
 text=[];audio=[];frames=[];start=time.monotonic()
@@ -53,7 +55,8 @@ for i in range(codes.shape[1]):
     piece=tok.id_to_piece(token).replace('▁',' ') if token not in (0,3) else ''
     text.append(piece)
     frames.append({'input_frame':i,'text_token':token,'piece':piece,'seconds':time.monotonic()-tick,
-                   'agent_frame_available':agent is not None})
+                   'agent_frame_available':agent is not None,
+                   'agent_audio_frame_index':len(audio)-1 if agent is not None else None})
     if (i+1)%50==0: print(i+1,'/',codes.shape[1],''.join(text)[-180:],flush=True)
 elapsed=time.monotonic()-start
 np.savez_compressed(out/'agent_codes.npz',agent_codes=np.stack(audio,axis=1))
@@ -61,6 +64,7 @@ np.savez_compressed(out/'agent_codes.npz',agent_codes=np.stack(audio,axis=1))
 report={'input':args.input,'adapter':args.adapter,'seed':args.seed,'input_seconds':codes.shape[1]*.08,
         'generation_seconds':elapsed,'generation_realtime_factor':elapsed/(codes.shape[1]*.08),
         'scope':'Model generation only; codec preprocessing and decoding timed separately',
+        'sampling_seed_policy':'Reset after loading, adapter initialization and warmup; identical seed per baseline/candidate trial',
         'peak_model_memory_bytes':mx.metal.get_peak_memory(),'frames':frames,
         'waveform_timing_note':'Generated codes are in original frame order. Decoder/stream scheduling latency must be calibrated before claiming response latency.'}
 (out/'metrics.json').write_text(json.dumps(report,indent=2)+'\n')
