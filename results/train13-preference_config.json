@@ -1,0 +1,17 @@
+{
+  "model": "models/stronger-clean",
+  "sft_adapter": "adapters/run12-step0374",
+  "pairs": "data/preferences-run12-reviewed.jsonl",
+  "output": "adapters/run13",
+  "steps": 128,
+  "lr": 5e-06,
+  "beta": 0.1,
+  "nll_weight": 0.3,
+  "seed": 41,
+  "source_adapter_sha256": "eeb8a4246b8e525d109c542b18686e6e7b2a1569d5c2c306d08380ef0a481ee2",
+  "pairs_sha256": "b1dcc12770d3ad7f686fc281e920085e94d5de273984a4fb950a7e852b96cc77",
+  "trainable_parameters": 14680064,
+  "objective": "softplus(-beta * (policy chosen-rejected logp - frozen reference margin)) + chosen token NLL weight",
+  "reference": "Same SFT checkpoint, evaluated before any preference updates. Cached probabilities; no second resident model.",
+  "reviewer": "Author, not independent"
+}

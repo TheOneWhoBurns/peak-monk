@@ -1,0 +1,9 @@
+{
+  "source_commit_at_launch": "bfd3826",
+  "driver_sha256": "796640e13a953a8f309faf581118fc4ef9986774696de10932f8266b3e396f8e",
+  "adapter_sha256": "e8694d4f757a58e4d68f569bf08c3afb719da7bec3a331910f58d0723f696830",
+  "adapter_bytes": 58744712,
+  "stage": "Offline DPO with chosen-response NLL; not GRPO",
+  "reference_checkpoint": "adapters/run12-step0374",
+  "training_notes": "32 author-reviewed pairs, including 14 actual negative replies from later SFT run12. All are training-only prompts. Evaluation cases excluded."
+}

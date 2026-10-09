@@ -17,13 +17,15 @@ class LoRALinear(nn.Module):
         nout, nin = base.weight.shape
         if isinstance(base, nn.QuantizedLinear):
             nin = nin * 32 // base.bits
-        dtype = base.scales.dtype if isinstance(base, nn.QuantizedLinear) else base.weight.dtype
-        self.a = (mx.random.normal((nin, rank)) * (1 / nin**0.5)).astype(dtype)
-        self.b = mx.zeros((rank, nout), dtype=dtype)
+        # Small adapter updates can vanish when added directly to bf16 A values.
+        # Keep the few trainable parameters in fp32 and cast only the residual.
+        self.a = (mx.random.normal((nin, rank)) * (1 / nin**0.5)).astype(mx.float32)
+        self.b = mx.zeros((rank, nout), dtype=mx.float32)
         self.scale = scale
 
     def __call__(self, x):
-        return self.base(x) + self.scale * ((x @ self.a) @ self.b)
+        y=self.base(x)
+        return y + (self.scale * ((x @ self.a) @ self.b)).astype(y.dtype)
 
 
 def attach_lora(model, layers=2, rank=4, scale=1.0):
