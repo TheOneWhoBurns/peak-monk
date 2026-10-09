@@ -1,8 +1,9 @@
 {
-  "conversations": 53,
-  "train": 51,
+  "conversations": 59,
+  "train": 57,
   "valid": 2,
-  "seconds": 1192.8,
+  "seconds": 1314.4,
   "codec_state": "fresh instance per conversation",
-  "note": "Prepared synthetic training inputs, not model output or trained speech quality"
+  "note": "Prepared synthetic training inputs, not model output or trained speech quality",
+  "human_identity_sources": "Nine corrected human-character families rerendered and ASR-reviewed; no old disclosure recordings added"
 }

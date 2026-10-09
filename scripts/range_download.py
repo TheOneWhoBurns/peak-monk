@@ -33,9 +33,14 @@ size=args.size
 origin_url=f'https://huggingface.co/{args.repo}/resolve/{args.revision}/{args.filename}'
 url=origin_url
 url_lock=threading.Lock()
+def resolve_url():
+    # Avoid a cached redirect whose signed artifact URL has already expired.
+    fresh=origin_url+'?download=true&refresh='+str(time.time_ns())
+    with urllib.request.urlopen(urllib.request.Request(fresh,method='HEAD',headers={'Cache-Control':'no-cache'}),timeout=60) as response:
+        return response.url
+
 if args.reuse_signed_url:
-    with urllib.request.urlopen(urllib.request.Request(url,method='HEAD'),timeout=60) as response:
-        url=response.url
+    url=resolve_url()
     # The signed URL is an ephemeral artifact capability; keep it out of logs.
     print('Resolved artifact host:',urllib.parse.urlparse(url).hostname,flush=True)
 dest=root/args.filename
@@ -76,8 +81,7 @@ def fetch(bounds):
             if attempt==7: raise
             if args.reuse_signed_url and isinstance(error,urllib.error.HTTPError) and error.code in (401,403):
                 with url_lock:
-                    with urllib.request.urlopen(urllib.request.Request(origin_url,method='HEAD'),timeout=60) as response:
-                        url=response.url
+                    url=resolve_url()
             time.sleep(min(2**attempt,15))
 chunk=args.chunk_mib*1024*1024
 jobs=[(a,min(a+chunk-1,size-1)) for a in range(start,size,chunk)

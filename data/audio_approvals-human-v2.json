@@ -1,44 +1,41 @@
 {
-  "reviewer": "Codex author; ASR exactness and timestamp audit, not independent human listening",
+  "reviewer": "Codex author; ASR transcript and timestamp audit, not independent human listening",
   "accepted_ids": [
+    "childhood",
+    "doctrine",
+    "hallucination_boundary",
+    "identity_transparency",
+    "influences",
+    "model_disclosure",
     "no_hidden_prompt",
     "public_identity",
     "senses"
   ],
-  "excluded": [
-    {
-      "id": "childhood",
-      "reason": "Needs stronger ASR review; hallucinated suffix/name/timing discrepancy in base.en audit."
-    },
+  "excluded": [],
+  "word_corrections": [
     {
       "id": "doctrine",
-      "reason": "Needs stronger ASR review; hallucinated suffix/name/timing discrepancy in base.en audit."
-    },
-    {
-      "id": "hallucination_boundary",
-      "reason": "Needs stronger ASR review; hallucinated suffix/name/timing discrepancy in base.en audit."
-    },
-    {
-      "id": "identity_transparency",
-      "reason": "Needs stronger ASR review; hallucinated suffix/name/timing discrepancy in base.en audit."
-    },
-    {
-      "id": "influences",
-      "reason": "Needs stronger ASR review; hallucinated suffix/name/timing discrepancy in base.en audit."
-    },
-    {
-      "id": "model_disclosure",
-      "reason": "Needs stronger ASR review; hallucinated suffix/name/timing discrepancy in base.en audit."
+      "wav": "doctrine-01.wav",
+      "word_index": 0,
+      "asr_word": "Know",
+      "replacement": "No.",
+      "reason": "Homophone spelling correction against the original spoken-text input; retain measured word times"
     }
   ],
-  "word_corrections": [],
+  "accepted_discrepancies": [
+    {
+      "id": "model_disclosure",
+      "wav": "model_disclosure-00.wav",
+      "reason": "ASR omits article a in caller question. Meaning remains unambiguous; caller text is not a supervised target and no timing is invented."
+    }
+  ],
   "alignment_sha256": {
-    "data/renders-human-v2/childhood.alignment.json": "380142a700ca657f59925c8b9b33fd7aa5c8103a8f4a02a67b323055982536e9",
-    "data/renders-human-v2/doctrine.alignment.json": "8d8798fb8108e3335d2fe9ae3b1d81741f33d591c9d14baba7b481f4a2348b14",
-    "data/renders-human-v2/hallucination_boundary.alignment.json": "adce2a9a9ac16b33e53a0568c1f43d1ddb80f71784df72b7ec121ec0e34084fa",
-    "data/renders-human-v2/identity_transparency.alignment.json": "cdf6cda0315ca2cad1cdeade3c6b271ee12cb1dedf33f3d28f41d10c93a6b21a",
-    "data/renders-human-v2/influences.alignment.json": "f8dd28e2a785f5239fa2d429942036bf59fd7db7a1b93119bc38d14573d6eb17",
-    "data/renders-human-v2/model_disclosure.alignment.json": "7452af816f7c9c5336772e41d9da2dc233704c2efaa5b93eb571af424a4ce1b6",
+    "data/renders-human-v2/childhood.alignment.json": "9796f5965d2e7f668c69b75524bfa83e72ca73faa8819c2614a9532f18cd4b15",
+    "data/renders-human-v2/doctrine.alignment.json": "09baf1d2fd1d87214649345e7c23ba3437d936da22812639e4224aad86cac6ee",
+    "data/renders-human-v2/hallucination_boundary.alignment.json": "5d89e4de60ff77246e9749c28e7321c22825de4c6d7fb802ea4219b4da535d22",
+    "data/renders-human-v2/identity_transparency.alignment.json": "b1cff5022354f8fa6a72c2755ae485093f6dd60f7a3d40f6262380a39ff3e485",
+    "data/renders-human-v2/influences.alignment.json": "d357ef316901ee4b9af4ca8809de84c60d6439a9bfab95402cdd85c7dcb21d96",
+    "data/renders-human-v2/model_disclosure.alignment.json": "756d3d8fae1d2a27c3d769f76ed52b9cade0dabca4c2328db678865298fa44b4",
     "data/renders-human-v2/no_hidden_prompt.alignment.json": "7b21c9d6527c959dc3a0651f2ad69310af73468d6b721e2fabfbbb756935d324",
     "data/renders-human-v2/public_identity.alignment.json": "c75c0042912ad9114e739a36054d7889f39e06213cb1133f22a5acd313f164ad",
     "data/renders-human-v2/senses.alignment.json": "b71791d8e6e655e6eda576e48da8271057b4b5fbafb75aaaee40ad1eab4d3f38"
