@@ -39,6 +39,9 @@ def main():
     clean=''.join(output)
     (results/f'{args.name}.txt').write_text(clean)
     adapter=Path(settings['adapter_path'])/'adapters.safetensors'
+    metrics=adapter.parent/'training_metrics.jsonl'
+    if metrics.exists():
+        (results/f'{args.name}-metrics.jsonl').write_bytes(metrics.read_bytes())
     meta={'started_at':started,'wall_seconds':elapsed,'exit_code':proc.returncode,
           'source_commit':source_commit,'data_sha256':data_hashes,
           'loss_version':'assistant_eos_v2' if args.corrected_objective else 'legacy',

@@ -6,6 +6,7 @@ from pathlib import Path
 import shutil
 import urllib.request
 import argparse
+import re
 
 p=argparse.ArgumentParser()
 p.add_argument('--repo',default='johnlakness/Qwen3-1.7B-Base-mlx-4Bit')
@@ -14,6 +15,9 @@ p.add_argument('--sha256',default='0dfefefebd85dd75e4c42330e27da8b628f36c9198ca8
 p.add_argument('--size',type=int,default=968080210)
 p.add_argument('--destination',default='models/base')
 p.add_argument('--filename',default='model.safetensors')
+p.add_argument('--resume-log',type=Path)
+p.add_argument('--workers',type=int,default=4)
+p.add_argument('--chunk-mib',type=int,default=32)
 args=p.parse_args()
 root=Path(__file__).resolve().parents[1]/args.destination
 root.mkdir(parents=True,exist_ok=True)
@@ -21,15 +25,20 @@ sha=args.sha256
 size=args.size
 url=f'https://huggingface.co/{args.repo}/resolve/{args.revision}/{args.filename}'
 dest=root/args.filename
-if dest.exists():
+dest.parent.mkdir(parents=True,exist_ok=True)
+if dest.exists() and not args.resume_log:
     raise SystemExit('Destination exists; refusing overwrite')
 partials=list((root/'.cache/huggingface/download').glob(f'*.{sha}.*.incomplete'))
 prefix=max(partials,key=lambda p:p.stat().st_size) if partials else None
-if prefix:
+completed=[]
+if args.resume_log:
+    if not dest.exists(): raise SystemExit('Resume requires existing partial destination')
+    completed=[tuple(map(int,m)) for m in re.findall(r'completed range (\d+)-(\d+)',args.resume_log.read_text())]
+elif prefix:
     shutil.copyfile(prefix,dest)
 else:
     dest.touch()
-start=dest.stat().st_size
+start=0 if args.resume_log else dest.stat().st_size
 fd=os.open(dest,os.O_RDWR)
 def fetch(bounds):
     a,b=bounds
@@ -49,10 +58,12 @@ def fetch(bounds):
             return
         except Exception:
             if attempt==2: raise
-chunk=32*1024*1024
+chunk=args.chunk_mib*1024*1024
+jobs=[(a,min(a+chunk-1,size-1)) for a in range(start,size,chunk)
+      if not any(lo<=a and min(a+chunk-1,size-1)<=hi for lo,hi in completed)]
 try:
-    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
-        list(pool.map(fetch,[(a,min(a+chunk-1,size-1)) for a in range(start,size,chunk)]))
+    with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
+        list(pool.map(fetch,jobs))
 finally:
     os.close(fd)
 with dest.open('rb') as f:

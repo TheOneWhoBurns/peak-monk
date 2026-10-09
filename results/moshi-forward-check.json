@@ -1,0 +1,13 @@
+{
+  "scope": "Tiny random model implementation check, not speech training",
+  "streaming_max_error": 3.5762786865234375e-07,
+  "future_leakage_max_error": 0.0,
+  "depth_max_error": 0.0,
+  "loss": 6.973419189453125,
+  "gradient_norm": 0.7265062323183639,
+  "adapter_gradient_tensors": 6,
+  "split_loss_error": 0.0,
+  "split_gradient_max_error": 0.0,
+  "delay_alignment_passed": true,
+  "passed": true
+}

@@ -11,6 +11,7 @@ import mlx.nn as nn
 from moshi_mlx.models.lm import Lm, config_v0_1
 from moshi_training import temporal_forward, depth_forward, attach_lora, loss
 from mlx.utils import tree_flatten
+from moshi_split import Prefix, Suffix, cached_loss, delay_streams
 
 mx.random.seed(7)
 cfg = config_v0_1()
@@ -52,9 +53,29 @@ assert future_error == 0, future_error
 assert depth_error < 1e-4, depth_error
 assert norm > 0 and mx.isfinite(value).item(), (norm, value)
 assert all(k.endswith(('.a', '.b')) for k, _ in flat), [k for k, _ in flat]
+prefix = Prefix(model, 1)
+cached_hidden = mx.stop_gradient(prefix(tokens[:, :, :-1]))
+mx.eval(cached_hidden)
+suffix = Suffix(model, 1)
+cached_value, cached_grad = nn.value_and_grad(suffix, cached_loss)(suffix, cached_hidden, targets)
+split_loss_error = abs(value.item() - cached_value.item())
+original_grad = dict(flat)
+split_gradient_error = 0.0
+for key, g in tree_flatten(cached_grad):
+    full_key = key.replace('transformer.layers.0.', 'transformer.layers.1.')
+    split_gradient_error = max(split_gradient_error, mx.max(mx.abs(g-original_grad[full_key])).item())
+assert split_loss_error < 1e-5, split_loss_error
+assert split_gradient_error < 1e-5, split_gradient_error
+delayed = delay_streams(tokens, cfg)
+assert delayed.shape == (1,17,10)
+assert mx.array_equal(delayed[:,0,1:], tokens[:,0]).item()
+assert mx.array_equal(delayed[:,2,2:], tokens[:,2,:-1]).item()
+assert delayed[0,2,0].item() == cfg.audio_padding_token
+assert delayed[0,2,1].item() == cfg.audio_padding_token
 result = dict(scope='Tiny random model implementation check, not speech training',
     streaming_max_error=streaming_error, future_leakage_max_error=future_error,
     depth_max_error=depth_error, loss=value.item(), gradient_norm=norm,
-    adapter_gradient_tensors=len(flat), passed=True)
+    adapter_gradient_tensors=len(flat), split_loss_error=split_loss_error,
+    split_gradient_max_error=split_gradient_error, delay_alignment_passed=True, passed=True)
 Path('results/moshi-forward-check.json').write_text(json.dumps(result, indent=2)+'\n')
 print(json.dumps(result, indent=2))
