@@ -1,12 +1,12 @@
 model: models/stronger-clean
-data: data/prepared-full-conversation-v2
+data: data/prepared-full-life-v2
 train: false
 fine_tune_type: lora
 optimizer: adam
 mask_prompt: true
 num_layers: 16
 batch_size: 1
-iters: 1032
+iters: 1068
 val_batches: -1
 learning_rate: 3.0e-05
 steps_per_report: 10

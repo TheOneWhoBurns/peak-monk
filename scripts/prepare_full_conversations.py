@@ -1,9 +1,14 @@
 """Weighted complete conversations for all-assistant-span supervision."""
+import argparse
 import hashlib
 import json
 from pathlib import Path
-source = Path('data/prepared-human-rich-v2')
-out = Path('data/prepared-full-conversation-v2')
+parser = argparse.ArgumentParser()
+parser.add_argument('--source', default='data/prepared-human-rich-v2', type=Path)
+parser.add_argument('--output', default='data/prepared-full-conversation-v2', type=Path)
+args = parser.parse_args()
+source = args.source
+out = args.output
 out.mkdir(exist_ok=True)
 rows = [json.loads(l) for l in (source / 'conversations.jsonl').read_text().splitlines()]
 rows = [row for row in rows if row['split'] == 'train']

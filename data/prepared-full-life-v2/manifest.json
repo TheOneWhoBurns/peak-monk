@@ -1,0 +1,13 @@
+{
+  "unique_conversations": 178,
+  "weighted_conversations": 355,
+  "assistant_turns_unique": 598,
+  "core_weight": 4,
+  "objective": "Every assistant span through EOS; callers and message formatting excluded; target-preserving windows with 128 context tokens overlap.",
+  "validation": "Unchanged last-assistant-reply assistant_eos_v2 loss.",
+  "sha256": {
+    "data/prepared-human-life-v2/conversations.jsonl": "d90e26e4f71284f22abfc00623fa136925a2457b23f97ed6396f27863e0b2a6f",
+    "data/preferences-v2.jsonl": "876718a4fa83cc952e22b66ab40ded1820d7bf642f66f5a3b2c6701dd4624314",
+    "data/prepared-curriculum-v2/manifest.json": "b355c4ac690be7cb69410ff2743a96926ae3db394abccb3938e44795f499593a"
+  }
+}
