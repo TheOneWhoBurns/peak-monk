@@ -10,6 +10,7 @@ from tokenizer_preflight import check_tokenizer
 
 p=argparse.ArgumentParser()
 p.add_argument('--output',required=True)
+p.add_argument('--model',default='models/qwen35')
 args=p.parse_args();out=Path(args.output)
 if out.exists():raise ValueError('Use a fresh output directory')
 out.mkdir(parents=True)
@@ -19,9 +20,9 @@ style=Path('character/style.txt').read_text()
 manifest={s['id']:s for s in json.loads(Path('sources/manifest.json').read_text())}
 cfg=json.loads(Path('configs/synthesis.json').read_text())
 forbidden=[u for name in ('dev','final','pressure-v2') for c in json.loads(Path(f'evaluation/{name}.json').read_text()) for u in c['turns']]
-preflight=check_tokenizer('models/qwen35')
+preflight=check_tokenizer(args.model)
 mx.set_memory_limit(5_500_000_000);mx.set_cache_limit(64_000_000)
-model,tok=load('models/qwen35')
+model,tok=load(args.model)
 for index in [0,21]:
     topic=cfg['topics'][index];sources=topic['sources']
     system="""You write plausible, concrete spoken dialogue between two people. Keep the speakers' locations and experiences separate. Follow the provided character facts. Do not add a narrator, stage directions, poetic symbolism, commentary about writing, or an assistant offering services. The dialogue should develop through specific details and responses, not speeches about lessons or wisdom."""
@@ -38,7 +39,7 @@ for index in [0,21]:
     if not messages or messages[0]['content']!=openings[str(index)]:problems.append('Opening changed')
     problems+=screen(messages,forbidden)
     record=dict(index=index,family=f'writer_pilot_{index}',split='train',sources=sources,
-        author='Local Qwen3.5 writer-mode pilot, unreviewed',teacher='models/qwen35',
+        author='Local writer-mode pilot, unreviewed',teacher=args.model,
         generation_method='One model writes both sides jointly; not Zero alternating-speaker simulation',
         character_version='human_character_v2',quality_review='pending',mechanical_problems=problems,
         messages=messages,raw_generation=raw,metrics=metrics,tokenizer=preflight,

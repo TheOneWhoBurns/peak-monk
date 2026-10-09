@@ -1,0 +1,12 @@
+{
+  "status": "predeclared",
+  "parent": "Qwen3.5writerpilot",
+  "model": "models/stronger-clean",
+  "indices": [
+    0,
+    21
+  ],
+  "fixed": "Identical writer prompts, tokens, temperature, original first lines and per-case seeds",
+  "hypothesis": "The already available Qwen3-4B-Instruct2507 may produce more grounded dialogue under this writer setup than Qwen3.5-4B.",
+  "admission": "Author review every turn, no automatic admission. This comparison is for synthetic-data suitability, not general model ranking."
+}
