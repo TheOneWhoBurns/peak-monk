@@ -22,7 +22,7 @@ def main():
     (results/f'{args.name}.yaml').write_text(config.read_text())
     start=time.monotonic()
     started=datetime.now(timezone.utc).isoformat()
-    proc=subprocess.run([sys.executable,'-m','mlx_lm','lora','--config',str(config)],
+    proc=subprocess.run([sys.executable,'-m','mlx_lm','lora','--config',str(config),'--train'],
                         stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True)
     elapsed=time.monotonic()-start
     clean=re.sub(r'\x1b\[[0-9;]*m','',proc.stdout)
