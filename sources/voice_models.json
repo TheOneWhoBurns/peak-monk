@@ -1,0 +1,77 @@
+{
+  "checked_at": "2026-10-09",
+  "selection": "PersonaPlex is the strongest directly relevant starting point among the inspected released voice-persona models. Moshi has the clearest official fine-tuning path. This is a task-specific selection, not a claim of universal benchmark leadership. MiniCPM-o 4.5 is also a serious current full-duplex alternative.",
+  "size_definition": "Parameter counts below are Hugging Face safetensors metadata, not rounded marketing names. Download bytes do not equal runtime or training memory. External codec is listed separately where present.",
+  "models": [
+    {
+      "name": "PersonaPlex-7B-v1",
+      "repo": "nvidia/personaplex-7b-v1",
+      "revision": "fdaf4090a61cb315c138a1faee287ffd6c716309",
+      "parameters": 8371408896,
+      "bf16_model_bytes": 16742874000,
+      "codec_bytes": 384644900,
+      "native_full_duplex": true,
+      "code_license": "MIT",
+      "weights_license": "NVIDIA Open Model License",
+      "source": "https://huggingface.co/nvidia/personaplex-7b-v1",
+      "fit": "Released role and voice conditioning; character fine-tuning still requires audio data and an adapted training implementation. Prompt control alone is not Jun trained into weights."
+    },
+    {
+      "name": "Moshiko",
+      "repo": "kyutai/moshiko-pytorch-bf16",
+      "revision": "2bfc9ae6e89079a5cc7ed2a68436010d91a3d289",
+      "parameters": 7687729152,
+      "bf16_model_bytes": 15375500136,
+      "codec_bytes": 384644900,
+      "native_full_duplex": true,
+      "source": "https://huggingface.co/kyutai/moshiko-pytorch-bf16",
+      "training_source": "https://github.com/kyutai-labs/moshi-finetune",
+      "fit": "Official LoRA recipe and MLX inference implementation; strong engineering baseline for character-in-weights speech experiments."
+    },
+    {
+      "name": "MiniCPM-o 4.5",
+      "repo": "openbmb/MiniCPM-o-4_5",
+      "revision": "503e754207c94da6bb26850b4469f367c9ea3582",
+      "parameters": 9371787666,
+      "bf16_model_bytes": 18743737228,
+      "native_full_duplex": true,
+      "reported_inference_memory_gb": {"bf16": 19, "int4": 11, "gguf": 10},
+      "source": "https://github.com/OpenBMB/MiniCPM-V",
+      "fit": "Qwen3-8B-based multimodal alternative; training support via LLaMA-Factory/SWIFT must be checked specifically for duplex speech, not assumed from generic fine-tuning support. Reported memory exceeds the local machine."
+    }
+  ],
+  "benchmarks": [
+    {
+      "source": "https://arxiv.org/html/2602.06053v1#S4.T6",
+      "table": 6,
+      "checkpoint": "PersonaPlex released",
+      "benchmark": "Full-Duplex-Bench",
+      "turn_taking_success_TOR": 0.908,
+      "turn_taking_latency_seconds": 0.170,
+      "interruption_success_TOR": 0.950,
+      "interruption_latency_seconds": 0.240,
+      "response_quality_GPT4o": 4.290,
+      "caveat": "Author-reported benchmark latencies, not measured here or promised on this Mac."
+    },
+    {
+      "source": "https://arxiv.org/html/2602.06053v1#Sx1.T7",
+      "table": 7,
+      "benchmark": "Released-checkpoint dialog naturalness MOS, same study/annotator pool",
+      "scores_95ci": {"PersonaPlex released": [2.95,0.25], "Moshi": [2.44,0.21], "Freeze-Omni": [2.51,0.22], "Gemini": [2.80,0.24]},
+      "caveat": "Do not compare these scores directly to the paper's separate Table 1 annotator study."
+    },
+    {
+      "source": "https://arxiv.org/html/2602.06053v1#S4.T4",
+      "table": 4,
+      "benchmark": "Service-Duplex-Bench mean GPT-4o rating",
+      "scores": {"PersonaPlex experimental":4.48,"Moshi":1.75,"Freeze-Omni":4.02,"Gemini":4.73},
+      "caveat": "Experimental PersonaPlex configuration, not automatically the downloadable checkpoint; model versions and evaluator are those of the paper."
+    }
+  ],
+  "rejected_shortcut": {
+    "source": "https://huggingface.co/blog/edwixx/shrinking-full-duplex-speech-training-a-600m-moshi",
+    "finding": "The reported 773M total-parameter Qwen/Mimi experiment produced coherent text but persistently garbled audio and remained unfinished. It does not establish a ready small duplex model suitable for this deliverable."
+  },
+  "evaluation_path": "https://github.com/DanielLin94144/Full-Duplex-Bench",
+  "local_limitation": "The available M2 has 8 GB unified memory and no CUDA. The local Qwen character LoRA is a text checkpoint, not native speech. A validated speech checkpoint and measured overlap/interruption behavior remain required for the speech milestone."
+}

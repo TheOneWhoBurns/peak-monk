@@ -1,0 +1,37 @@
+{
+  "status": "Prepared training design; no speech training performed",
+  "preferred_character_speech_candidate": "nvidia/personaplex-7b-v1",
+  "first_reproducible_training_baseline": "kyutai/moshiko-pytorch-bf16 with official moshi-finetune",
+  "reason": "PersonaPlex role conditioning is well matched to the desired experience, but official Moshi LoRA training is directly documented. Do not assume checkpoint interchangeability without a strict weight/config compatibility test.",
+  "upstream": "https://github.com/kyutai-labs/moshi-finetune",
+  "upstream_example": "https://github.com/kyutai-labs/moshi-finetune/blob/main/example/moshi_7B.yaml",
+  "data_steps": [
+    "Render each user/Jun turn with explicitly licensed synthetic voices, keeping Jun's voice fixed and user voices diverse.",
+    "Quality-check speech against transcript and reject silence, truncation, clipping and major transcription errors.",
+    "Convert renders to mono PCM16 24 kHz. Supply turn WAV paths and explicit gaps/overlaps to scripts/stitch_duplex.py.",
+    "Keep split assignments from text conversations. Output left channel Jun, right channel user.",
+    "Run official annotate.py to generate actual word-timestamp annotations. Turn-level provenance is not a substitute.",
+    "Inspect both waveform channels and timestamp coverage before training. Include interruption, backchannel and long-pause cases, not only alternating turns."
+  ],
+  "training_recipe": {
+    "full_finetuning": false,
+    "lora": {"enable": true, "rank": 128, "scaling": 2.0, "ft_embed": false},
+    "first_codebook_weight_multiplier": 100.0,
+    "text_padding_weight": 0.5,
+    "duration_sec": 100,
+    "batch_size": 16,
+    "max_steps": 2000,
+    "gradient_checkpointing": true,
+    "optim": {"lr": 0.000002, "weight_decay": 0.1, "pct_start": 0.05},
+    "save_adapters": true
+  },
+  "upstream_measured_training_memory": {"one_H100_peak_GB": 39.6, "eight_H100_per_device_peak_GB": 23.7},
+  "memory_caveat": "These are measurements for the example recipe, not a theoretical minimum. Lower batch size may help; shorter audio context can degrade conversational persistence. No CUDA device is available locally.",
+  "required_speech_acceptance": [
+    "Saved speech checkpoint loads in the native streaming inference implementation.",
+    "Held-out spoken character conversations show consistent Jun identity and adequate intelligibility.",
+    "Measure response latency and interruption stop latency separately, using audio timestamps.",
+    "Compare pause, interruption and backchannel behavior to the exact pretrained checkpoint on fixed Full-Duplex-Bench cases.",
+    "Measure realtime factor and peak memory on the intended inference device; do not substitute published H100 latency for local performance."
+  ]
+}

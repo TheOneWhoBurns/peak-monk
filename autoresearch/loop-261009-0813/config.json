@@ -1,0 +1,14 @@
+{
+  "goal": "Train Jun character; native speech remains separate",
+  "scope": [
+    "configs/train.yaml",
+    "data/seeds.txt"
+  ],
+  "metric": "assistant_token_validation_cross_entropy",
+  "direction": "lower_is_better",
+  "iterations": "unlimited",
+  "verify": ".venv/bin/python scripts/evaluate.py --adapter adapters/run01 --output results/run01.json",
+  "guard": ".venv/bin/python -m pytest -q; explicit conversation rubric review",
+  "baseline_status": "pending model download",
+  "note": "Learning rate/steps/data changed one experiment at a time; no automatic claims from loss alone."
+}

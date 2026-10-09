@@ -6,7 +6,7 @@ import pytest
 ROOT=Path(__file__).resolve().parents[1]
 
 def test_assistant_mask_and_inference_prefix():
-    if not (ROOT/'models/base/model.safetensors').exists():
+    if not (ROOT/'model_provenance.json').exists():
         pytest.skip('Model download not complete')
     from transformers import AutoTokenizer
     from mlx_lm.tuner.datasets import ChatDataset
