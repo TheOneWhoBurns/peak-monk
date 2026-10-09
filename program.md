@@ -4,7 +4,7 @@ Goal: a runnable, genuinely fine-tuned open-weight Jun character with coherent r
 Scope: training configuration and train corpus only after the initial harness is committed.
 Iterations: unlimited until acceptance is met; no artificial 25-iteration cap.
 Primary selection metric: mean assistant-token validation cross entropy (lower is better), on frozen independent scenario families. This measures fit, not personality quality.
-Verify: `.venv/bin/python -m mlx_lm.lora --config configs/train.yaml --test --test-batches -1` (evaluates frozen validation corpus copied into the MLX test slot for development; untouched final audit lives separately).
+Verify: `.venv/bin/python scripts/evaluate.py --adapter adapters/run01 --output results/run01.json` (use the candidate adapter/output path for each run; measures frozen validation loss and records development conversations; untouched final audit lives separately). This command never starts training.
 Guard: `.venv/bin/python -m pytest -q` plus generated development conversation audit for coherence, character consistency, relevance, honesty and non-repetition. Reject a loss improvement with a material conversational regression.
 
 Baseline is the unfine-tuned base model with identical serialization. Also compare a character-prompted baseline. Never describe author-scored outputs as independent blind evaluation. Record training time, peak memory, tokens/sec, checkpoint and generation parameters. Freeze evaluation before experiments; hash all inputs. Keep best adapters separately from latest adapters. An experiment changes one training choice or one documented data intervention. Commit, train under a stated comparable budget, evaluate, keep/discard and log failures too.

@@ -1,0 +1,36 @@
+Loading configuration file configs/train.yaml
+Loading pretrained model
+Loading datasets
+Training
+╭─ mlx_lm.lora ────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│    model           models/base                                                                                       │
+│    type            lora · 16 layers · rank 16                                                                        │
+│    dataset         data/prepared                                                                                     │
+│    optimizer       adam · lr 1.0e-04                                                                                 │
+│    batch · iters   1 · 160                                                                                           │
+│    max seq         768                                                                                               │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Trainable parameters: 0.579% (9.961M/1720.575M)
+  iter   train_loss     tok/s     tokens
+     1    val 4.606    4.45s
+    10    4.731 ▼       25      0.2k
+    20    4.278 ▼       59      0.5k
+    30    3.775 ▼       53      0.7k
+    40    3.482 ▼       57      1.0k
+    50    3.572 ▲       69      1.2k
+    60    3.645 ▲       66      1.5k
+    70    4.247 ▲       67      1.7k
+    80    val 3.715    4.23s
+    80    3.824 ▼       74      2.0k
+  save  0000080_adapters.safetensors
+    90    3.759 ▼       66      2.3k
+   100    3.432 ▼       68      2.5k
+   110    3.683 ▲       70      2.8k
+   120    3.864 ▲       59      3.1k
+   130    3.331 ▼       55      3.3k
+   140    3.664 ▲       56      3.5k
+   150    3.212 ▼       53      3.6k
+   160    val 3.717    4.25s
+   160    2.099 ▼       55      3.9k
+  save  0000160_adapters.safetensors
+train ██████████████████████████████ 100% ·   160/160
