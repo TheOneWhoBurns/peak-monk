@@ -1,0 +1,26 @@
+{
+  "reviewer": "Codex author: transcript discrepancy review, not independent listening or human benchmark",
+  "accepted_ids": [
+    "arrival",
+    "name",
+    "home",
+    "breakfast",
+    "roof",
+    "teacher",
+    "objects",
+    "rook",
+    "losing_competition",
+    "unwanted_gift"
+  ],
+  "basis": "Original authored dialogue; all utterances pass signal checks and large-v3 ASR. All recognized words match except the documented tea/T spelling ambiguity. No timestamps are changed.",
+  "word_corrections": [
+    {
+      "id": "objects",
+      "wav": "objects-03.wav",
+      "word_index": 5,
+      "asr_word": "T,",
+      "replacement": "tea,",
+      "reason": "The original utterance says tea. T and tea have the same pronunciation here; restore the intended spelling at the measured timestamp."
+    }
+  ]
+}

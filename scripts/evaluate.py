@@ -27,6 +27,11 @@ def main():
     args = p.parse_args()
     mx.random.seed(41)
     model, tok = load(str(ROOT/args.model), adapter_path=args.adapter)
+    serialization = hashlib.sha256()
+    for name in ('config.json','tokenizer.json','tokenizer_config.json','chat_template.jinja'):
+        path=ROOT/args.model/name
+        if path.exists():
+            serialization.update(name.encode()); serialization.update(path.read_bytes())
     rows = [json.loads(l) for l in (ROOT/'data/prepared/valid.jsonl').read_text().splitlines()]
     start = time.monotonic()
     dataset = ChatDataset(rows,tok,mask_prompt=True)
@@ -37,6 +42,7 @@ def main():
     loss = evaluate(model, CacheDataset(dataset),
                     batch_size=1,num_batches=-1,max_seq_length=768, **kwargs)
     result = {'model':args.model, 'adapter': args.adapter, 'prompted': args.prompted,
+              'serialization_sha256':serialization.hexdigest(),
               'persona_file':args.persona_file if args.prompted else None,
               'validation_loss': loss, 'loss_version':args.loss_version, 'loss_seconds': time.monotonic()-start,
               'loss_comparison_note':'Compare loss only between identical base/tokenizer/template runs. Reference models may serialize differently; their conversation audit is the comparison.',

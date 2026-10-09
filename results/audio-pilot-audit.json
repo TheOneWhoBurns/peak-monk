@@ -1,0 +1,4548 @@
+{
+  "review": {
+    "reviewer": "Codex author: transcript discrepancy review, not independent listening or human benchmark",
+    "accepted_ids": [
+      "arrival",
+      "name",
+      "home",
+      "breakfast",
+      "roof",
+      "teacher",
+      "objects",
+      "rook",
+      "losing_competition",
+      "unwanted_gift"
+    ],
+    "basis": "Original authored dialogue; all utterances pass signal checks and large-v3 ASR. All recognized words match except the documented tea/T spelling ambiguity. No timestamps are changed.",
+    "word_corrections": [
+      {
+        "id": "objects",
+        "wav": "objects-03.wav",
+        "word_index": 5,
+        "asr_word": "T,",
+        "replacement": "tea,",
+        "reason": "The original utterance says tea. T and tea have the same pronunciation here; restore the intended spelling at the measured timestamp."
+      }
+    ]
+  },
+  "records": [
+    {
+      "id": "arrival",
+      "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+      "word_timestamps": "Whisper decoder alignment estimates",
+      "max_wer": 0.2,
+      "turns": [
+        {
+          "wav": "arrival-00.wav",
+          "reference": "Hello? Is anybody there?",
+          "recognized": "Hello, is anybody there?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Hello,",
+              "start": 0.0,
+              "end": 0.3,
+              "probability": 0.8540681600570679
+            },
+            {
+              "word": "is",
+              "start": 0.4,
+              "end": 0.64,
+              "probability": 0.9904629588127136
+            },
+            {
+              "word": "anybody",
+              "start": 0.64,
+              "end": 0.92,
+              "probability": 0.9973037242889404
+            },
+            {
+              "word": "there?",
+              "start": 0.92,
+              "end": 1.3,
+              "probability": 0.9991682767868042
+            }
+          ],
+          "seconds": 9.67545429099846
+        },
+        {
+          "wav": "arrival-01.wav",
+          "reference": "I'm here. The wind is making rather more noise than I am. Can you hear me?",
+          "recognized": "I'm here, the wind is making rather more noise than I am. Can you hear me?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "I'm",
+              "start": 0.0,
+              "end": 0.18,
+              "probability": 0.8720864951610565
+            },
+            {
+              "word": "here,",
+              "start": 0.18,
+              "end": 0.46,
+              "probability": 0.9949817061424255
+            },
+            {
+              "word": "the",
+              "start": 0.56,
+              "end": 0.82,
+              "probability": 0.9934754967689514
+            },
+            {
+              "word": "wind",
+              "start": 0.82,
+              "end": 1.1,
+              "probability": 0.992938756942749
+            },
+            {
+              "word": "is",
+              "start": 1.1,
+              "end": 1.36,
+              "probability": 0.9964715242385864
+            },
+            {
+              "word": "making",
+              "start": 1.36,
+              "end": 1.66,
+              "probability": 0.998956561088562
+            },
+            {
+              "word": "rather",
+              "start": 1.66,
+              "end": 2.02,
+              "probability": 0.9939578771591187
+            },
+            {
+              "word": "more",
+              "start": 2.02,
+              "end": 2.26,
+              "probability": 0.9980871677398682
+            },
+            {
+              "word": "noise",
+              "start": 2.26,
+              "end": 2.68,
+              "probability": 0.999014139175415
+            },
+            {
+              "word": "than",
+              "start": 2.68,
+              "end": 2.9,
+              "probability": 0.9937286376953125
+            },
+            {
+              "word": "I",
+              "start": 2.9,
+              "end": 3.06,
+              "probability": 0.995662271976471
+            },
+            {
+              "word": "am.",
+              "start": 3.06,
+              "end": 3.34,
+              "probability": 0.9982715845108032
+            },
+            {
+              "word": "Can",
+              "start": 3.48,
+              "end": 3.92,
+              "probability": 0.9944944977760315
+            },
+            {
+              "word": "you",
+              "start": 3.92,
+              "end": 4.06,
+              "probability": 0.9990829229354858
+            },
+            {
+              "word": "hear",
+              "start": 4.06,
+              "end": 4.3,
+              "probability": 0.9985142350196838
+            },
+            {
+              "word": "me?",
+              "start": 4.3,
+              "end": 4.48,
+              "probability": 0.9995080232620239
+            }
+          ],
+          "seconds": 8.550630042002012
+        },
+        {
+          "wav": "arrival-02.wav",
+          "reference": "Yes. Who's this?",
+          "recognized": "Yes, who's this?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Yes,",
+              "start": 0.0,
+              "end": 0.28,
+              "probability": 0.8799139857292175
+            },
+            {
+              "word": "who's",
+              "start": 0.28,
+              "end": 0.62,
+              "probability": 0.9209393262863159
+            },
+            {
+              "word": "this?",
+              "start": 0.62,
+              "end": 0.76,
+              "probability": 0.9974467754364014
+            }
+          ],
+          "seconds": 7.575184082998021
+        },
+        {
+          "wav": "arrival-03.wav",
+          "reference": "Jun. I live in the little hermitage below the summit. Who have I reached?",
+          "recognized": "Jun, I live in the little hermitage below the summit. Who have I reached?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Jun,",
+              "start": 0.0,
+              "end": 0.18,
+              "probability": 0.22424164414405823
+            },
+            {
+              "word": "I",
+              "start": 0.36,
+              "end": 0.6,
+              "probability": 0.9945341348648071
+            },
+            {
+              "word": "live",
+              "start": 0.6,
+              "end": 0.88,
+              "probability": 0.9989463686943054
+            },
+            {
+              "word": "in",
+              "start": 0.88,
+              "end": 1.12,
+              "probability": 0.9976831674575806
+            },
+            {
+              "word": "the",
+              "start": 1.12,
+              "end": 1.24,
+              "probability": 0.9985100626945496
+            },
+            {
+              "word": "little",
+              "start": 1.24,
+              "end": 1.42,
+              "probability": 0.9968716502189636
+            },
+            {
+              "word": "hermitage",
+              "start": 1.42,
+              "end": 2.08,
+              "probability": 0.9944138526916504
+            },
+            {
+              "word": "below",
+              "start": 2.08,
+              "end": 2.36,
+              "probability": 0.9950927495956421
+            },
+            {
+              "word": "the",
+              "start": 2.36,
+              "end": 2.6,
+              "probability": 0.9990082383155823
+            },
+            {
+              "word": "summit.",
+              "start": 2.6,
+              "end": 2.94,
+              "probability": 0.9951131939888
+            },
+            {
+              "word": "Who",
+              "start": 3.12,
+              "end": 3.54,
+              "probability": 0.9960315823554993
+            },
+            {
+              "word": "have",
+              "start": 3.54,
+              "end": 3.7,
+              "probability": 0.9996351003646851
+            },
+            {
+              "word": "I",
+              "start": 3.7,
+              "end": 3.8,
+              "probability": 0.9993537068367004
+            },
+            {
+              "word": "reached?",
+              "start": 3.8,
+              "end": 4.12,
+              "probability": 0.9997501969337463
+            }
+          ],
+          "seconds": 8.446880666997458
+        },
+        {
+          "wav": "arrival-04.wav",
+          "reference": "I'm Alex. I didn't think anyone would answer.",
+          "recognized": "I'm Alex. I didn't think anyone would answer.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "I'm",
+              "start": 0.0,
+              "end": 0.2,
+              "probability": 0.8945397436618805
+            },
+            {
+              "word": "Alex.",
+              "start": 0.2,
+              "end": 0.46,
+              "probability": 0.9648083448410034
+            },
+            {
+              "word": "I",
+              "start": 0.68,
+              "end": 1.0,
+              "probability": 0.9988749623298645
+            },
+            {
+              "word": "didn't",
+              "start": 1.0,
+              "end": 1.26,
+              "probability": 0.9994387328624725
+            },
+            {
+              "word": "think",
+              "start": 1.26,
+              "end": 1.36,
+              "probability": 0.9998206496238708
+            },
+            {
+              "word": "anyone",
+              "start": 1.36,
+              "end": 1.62,
+              "probability": 0.9992530941963196
+            },
+            {
+              "word": "would",
+              "start": 1.62,
+              "end": 1.8,
+              "probability": 0.999734103679657
+            },
+            {
+              "word": "answer.",
+              "start": 1.8,
+              "end": 2.1,
+              "probability": 0.9997671246528625
+            }
+          ],
+          "seconds": 8.011266790999798
+        },
+        {
+          "wav": "arrival-05.wav",
+          "reference": "Hello, Alex. Neither did I, until you spoke.",
+          "recognized": "Hello, Alex. Neither did I until you spoke.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Hello,",
+              "start": 0.0,
+              "end": 0.22,
+              "probability": 0.7405668497085571
+            },
+            {
+              "word": "Alex.",
+              "start": 0.38,
+              "end": 0.78,
+              "probability": 0.9795122146606445
+            },
+            {
+              "word": "Neither",
+              "start": 1.0,
+              "end": 1.52,
+              "probability": 0.9982624650001526
+            },
+            {
+              "word": "did",
+              "start": 1.52,
+              "end": 1.82,
+              "probability": 0.9996439218521118
+            },
+            {
+              "word": "I",
+              "start": 1.82,
+              "end": 2.08,
+              "probability": 0.9995773434638977
+            },
+            {
+              "word": "until",
+              "start": 2.08,
+              "end": 2.54,
+              "probability": 0.8614283204078674
+            },
+            {
+              "word": "you",
+              "start": 2.54,
+              "end": 2.78,
+              "probability": 0.9998904466629028
+            },
+            {
+              "word": "spoke.",
+              "start": 2.78,
+              "end": 3.06,
+              "probability": 0.9998082518577576
+            }
+          ],
+          "seconds": 7.809241790993838
+        }
+      ],
+      "accepted": true,
+      "source_file_sha256": "2c9550b9a1fd29157f88b2538bf3809db5f64a4fdf46be04ad2078e7fb40006c"
+    },
+    {
+      "id": "name",
+      "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+      "word_timestamps": "Whisper decoder alignment estimates",
+      "max_wer": 0.2,
+      "turns": [
+        {
+          "wav": "name-00.wav",
+          "reference": "What should I call you?",
+          "recognized": "What should I call you?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "What",
+              "start": 0.0,
+              "end": 0.22,
+              "probability": 0.796652615070343
+            },
+            {
+              "word": "should",
+              "start": 0.22,
+              "end": 0.34,
+              "probability": 0.991817831993103
+            },
+            {
+              "word": "I",
+              "start": 0.34,
+              "end": 0.5,
+              "probability": 0.9961374402046204
+            },
+            {
+              "word": "call",
+              "start": 0.5,
+              "end": 0.76,
+              "probability": 0.9993740916252136
+            },
+            {
+              "word": "you?",
+              "start": 0.76,
+              "end": 1.02,
+              "probability": 0.9990383386611938
+            }
+          ],
+          "seconds": 7.607589999999618
+        },
+        {
+          "wav": "name-01.wav",
+          "reference": "Jun is enough.",
+          "recognized": "Jun is enough.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Jun",
+              "start": 0.0,
+              "end": 0.3,
+              "probability": 0.013512223958969116
+            },
+            {
+              "word": "is",
+              "start": 0.3,
+              "end": 0.6,
+              "probability": 0.9695594310760498
+            },
+            {
+              "word": "enough.",
+              "start": 0.6,
+              "end": 0.96,
+              "probability": 0.9809951186180115
+            }
+          ],
+          "seconds": 7.508834833002766
+        },
+        {
+          "wav": "name-02.wav",
+          "reference": "Not Master Jun?",
+          "recognized": "Not Master Jun.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Not",
+              "start": 0.0,
+              "end": 0.28,
+              "probability": 0.29732513427734375
+            },
+            {
+              "word": "Master",
+              "start": 0.28,
+              "end": 0.48,
+              "probability": 0.7307077646255493
+            },
+            {
+              "word": "Jun.",
+              "start": 0.48,
+              "end": 0.86,
+              "probability": 0.8739036321640015
+            }
+          ],
+          "seconds": 7.704272625007434
+        },
+        {
+          "wav": "name-03.wav",
+          "reference": "Only if you want me to look behind me for someone qualified.",
+          "recognized": "Only if you want me to look behind me for someone qualified.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Only",
+              "start": 0.0,
+              "end": 0.24,
+              "probability": 0.4766680896282196
+            },
+            {
+              "word": "if",
+              "start": 0.24,
+              "end": 0.5,
+              "probability": 0.9958403706550598
+            },
+            {
+              "word": "you",
+              "start": 0.5,
+              "end": 0.64,
+              "probability": 0.9992383718490601
+            },
+            {
+              "word": "want",
+              "start": 0.64,
+              "end": 0.86,
+              "probability": 0.9997243285179138
+            },
+            {
+              "word": "me",
+              "start": 0.86,
+              "end": 0.96,
+              "probability": 0.9989091157913208
+            },
+            {
+              "word": "to",
+              "start": 0.96,
+              "end": 1.12,
+              "probability": 0.9993991851806641
+            },
+            {
+              "word": "look",
+              "start": 1.12,
+              "end": 1.3,
+              "probability": 0.9994311928749084
+            },
+            {
+              "word": "behind",
+              "start": 1.3,
+              "end": 1.64,
+              "probability": 0.9982648491859436
+            },
+            {
+              "word": "me",
+              "start": 1.64,
+              "end": 1.96,
+              "probability": 0.9989990592002869
+            },
+            {
+              "word": "for",
+              "start": 1.96,
+              "end": 2.4,
+              "probability": 0.9419565200805664
+            },
+            {
+              "word": "someone",
+              "start": 2.4,
+              "end": 2.72,
+              "probability": 0.998688280582428
+            },
+            {
+              "word": "qualified.",
+              "start": 2.72,
+              "end": 3.16,
+              "probability": 0.9987534284591675
+            }
+          ],
+          "seconds": 8.475177041007555
+        },
+        {
+          "wav": "name-04.wav",
+          "reference": "Are you qualified for anything?",
+          "recognized": "Are you qualified for anything?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Are",
+              "start": 0.0,
+              "end": 0.16,
+              "probability": 0.9224901795387268
+            },
+            {
+              "word": "you",
+              "start": 0.16,
+              "end": 0.24,
+              "probability": 0.9886974096298218
+            },
+            {
+              "word": "qualified",
+              "start": 0.24,
+              "end": 0.5,
+              "probability": 0.9930134415626526
+            },
+            {
+              "word": "for",
+              "start": 0.5,
+              "end": 1.1,
+              "probability": 0.9987159967422485
+            },
+            {
+              "word": "anything?",
+              "start": 1.1,
+              "end": 1.4,
+              "probability": 0.9962009787559509
+            }
+          ],
+          "seconds": 7.647780125000281
+        },
+        {
+          "wav": "name-05.wav",
+          "reference": "Roof repairs, mostly. And making a small amount of rice feed an unexpected guest.",
+          "recognized": "Roof repairs mostly and making a small amount of rice feed an unexpected guest.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Roof",
+              "start": 0.0,
+              "end": 0.28,
+              "probability": 0.6195965185761452
+            },
+            {
+              "word": "repairs",
+              "start": 0.28,
+              "end": 0.58,
+              "probability": 0.981320321559906
+            },
+            {
+              "word": "mostly",
+              "start": 0.58,
+              "end": 1.18,
+              "probability": 0.558891773223877
+            },
+            {
+              "word": "and",
+              "start": 1.18,
+              "end": 2.04,
+              "probability": 0.4906250536441803
+            },
+            {
+              "word": "making",
+              "start": 2.04,
+              "end": 2.36,
+              "probability": 0.9983665347099304
+            },
+            {
+              "word": "a",
+              "start": 2.36,
+              "end": 2.54,
+              "probability": 0.9974496960639954
+            },
+            {
+              "word": "small",
+              "start": 2.54,
+              "end": 2.82,
+              "probability": 0.9990643858909607
+            },
+            {
+              "word": "amount",
+              "start": 2.82,
+              "end": 3.14,
+              "probability": 0.9980764389038086
+            },
+            {
+              "word": "of",
+              "start": 3.14,
+              "end": 3.4,
+              "probability": 0.9986845850944519
+            },
+            {
+              "word": "rice",
+              "start": 3.4,
+              "end": 3.66,
+              "probability": 0.9940153956413269
+            },
+            {
+              "word": "feed",
+              "start": 3.66,
+              "end": 4.22,
+              "probability": 0.9582343697547913
+            },
+            {
+              "word": "an",
+              "start": 4.22,
+              "end": 4.46,
+              "probability": 0.9918937087059021
+            },
+            {
+              "word": "unexpected",
+              "start": 4.46,
+              "end": 4.82,
+              "probability": 0.9978391528129578
+            },
+            {
+              "word": "guest.",
+              "start": 4.82,
+              "end": 5.46,
+              "probability": 0.9871882200241089
+            }
+          ],
+          "seconds": 8.775679500002298
+        }
+      ],
+      "accepted": true,
+      "source_file_sha256": "7b5b523604fa78f465d1c015b5f2d671ad75b1c253597965a1bd1656a256fe84"
+    },
+    {
+      "id": "home",
+      "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+      "word_timestamps": "Whisper decoder alignment estimates",
+      "max_wer": 0.2,
+      "turns": [
+        {
+          "wav": "home-00.wav",
+          "reference": "Where do you live?",
+          "recognized": "Where do you live?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Where",
+              "start": 0.0,
+              "end": 0.14,
+              "probability": 0.7981410622596741
+            },
+            {
+              "word": "do",
+              "start": 0.14,
+              "end": 0.26,
+              "probability": 0.9424008727073669
+            },
+            {
+              "word": "you",
+              "start": 0.26,
+              "end": 0.34,
+              "probability": 0.9990229606628418
+            },
+            {
+              "word": "live?",
+              "start": 0.34,
+              "end": 0.56,
+              "probability": 0.9798984527587891
+            }
+          ],
+          "seconds": 7.699313458011602
+        },
+        {
+          "wav": "home-01.wav",
+          "reference": "A stone hermitage just below the top of the mountain. I'm sitting on the ledge above it now, out of the worst of the wind.",
+          "recognized": "A stone hermitage just below the top of the mountain. I'm sitting on the ledge above it now, out of the worst of the wind.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "A",
+              "start": 0.0,
+              "end": 0.08,
+              "probability": 0.8080924153327942
+            },
+            {
+              "word": "stone",
+              "start": 0.08,
+              "end": 0.44,
+              "probability": 0.9893333315849304
+            },
+            {
+              "word": "hermitage",
+              "start": 0.44,
+              "end": 1.12,
+              "probability": 0.9980413118998209
+            },
+            {
+              "word": "just",
+              "start": 1.12,
+              "end": 1.64,
+              "probability": 0.7533058524131775
+            },
+            {
+              "word": "below",
+              "start": 1.64,
+              "end": 1.96,
+              "probability": 0.9991900324821472
+            },
+            {
+              "word": "the",
+              "start": 1.96,
+              "end": 2.22,
+              "probability": 0.9992995262145996
+            },
+            {
+              "word": "top",
+              "start": 2.22,
+              "end": 2.44,
+              "probability": 0.9996022582054138
+            },
+            {
+              "word": "of",
+              "start": 2.44,
+              "end": 2.7,
+              "probability": 0.9991845488548279
+            },
+            {
+              "word": "the",
+              "start": 2.7,
+              "end": 2.8,
+              "probability": 0.9990851879119873
+            },
+            {
+              "word": "mountain.",
+              "start": 2.8,
+              "end": 3.1,
+              "probability": 0.9980042576789856
+            },
+            {
+              "word": "I'm",
+              "start": 3.66,
+              "end": 4.18,
+              "probability": 0.9892236590385437
+            },
+            {
+              "word": "sitting",
+              "start": 4.18,
+              "end": 4.44,
+              "probability": 0.9995883107185364
+            },
+            {
+              "word": "on",
+              "start": 4.44,
+              "end": 4.66,
+              "probability": 0.9996823072433472
+            },
+            {
+              "word": "the",
+              "start": 4.66,
+              "end": 4.78,
+              "probability": 0.9996719360351562
+            },
+            {
+              "word": "ledge",
+              "start": 4.78,
+              "end": 5.08,
+              "probability": 0.9998507499694824
+            },
+            {
+              "word": "above",
+              "start": 5.08,
+              "end": 5.38,
+              "probability": 0.9991838335990906
+            },
+            {
+              "word": "it",
+              "start": 5.38,
+              "end": 5.6,
+              "probability": 0.999703586101532
+            },
+            {
+              "word": "now,",
+              "start": 5.6,
+              "end": 5.82,
+              "probability": 0.9993147850036621
+            },
+            {
+              "word": "out",
+              "start": 5.98,
+              "end": 6.48,
+              "probability": 0.9948675632476807
+            },
+            {
+              "word": "of",
+              "start": 6.48,
+              "end": 6.62,
+              "probability": 0.999349057674408
+            },
+            {
+              "word": "the",
+              "start": 6.62,
+              "end": 6.7,
+              "probability": 0.9998549222946167
+            },
+            {
+              "word": "worst",
+              "start": 6.7,
+              "end": 7.04,
+              "probability": 0.9994741082191467
+            },
+            {
+              "word": "of",
+              "start": 7.04,
+              "end": 7.28,
+              "probability": 0.9997908473014832
+            },
+            {
+              "word": "the",
+              "start": 7.28,
+              "end": 7.42,
+              "probability": 0.9997249245643616
+            },
+            {
+              "word": "wind.",
+              "start": 7.42,
+              "end": 7.68,
+              "probability": 0.9995842576026917
+            }
+          ],
+          "seconds": 9.053547542003798
+        },
+        {
+          "wav": "home-02.wav",
+          "reference": "Isn't it lonely?",
+          "recognized": "Isn't it lonely?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Isn't",
+              "start": 0.0,
+              "end": 0.24,
+              "probability": 0.963553249835968
+            },
+            {
+              "word": "it",
+              "start": 0.24,
+              "end": 0.28,
+              "probability": 0.9909071922302246
+            },
+            {
+              "word": "lonely?",
+              "start": 0.28,
+              "end": 0.52,
+              "probability": 0.9973618388175964
+            }
+          ],
+          "seconds": 7.490546125001856
+        },
+        {
+          "wav": "home-03.wav",
+          "reference": "Sometimes. Solitude doesn't stop being loneliness just because I chose it. I go down to the village when I need company.",
+          "recognized": "Sometimes, solitude doesn't stop being loneliness just because I chose it. I go down to the village when I need company.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Sometimes,",
+              "start": 0.0,
+              "end": 0.52,
+              "probability": 0.935944139957428
+            },
+            {
+              "word": "solitude",
+              "start": 0.62,
+              "end": 1.5,
+              "probability": 0.9887117445468903
+            },
+            {
+              "word": "doesn't",
+              "start": 1.5,
+              "end": 2.06,
+              "probability": 0.9986417293548584
+            },
+            {
+              "word": "stop",
+              "start": 2.06,
+              "end": 2.22,
+              "probability": 0.9994266033172607
+            },
+            {
+              "word": "being",
+              "start": 2.22,
+              "end": 2.48,
+              "probability": 0.9996315240859985
+            },
+            {
+              "word": "loneliness",
+              "start": 2.48,
+              "end": 2.94,
+              "probability": 0.9982395172119141
+            },
+            {
+              "word": "just",
+              "start": 2.94,
+              "end": 3.54,
+              "probability": 0.9839056134223938
+            },
+            {
+              "word": "because",
+              "start": 3.54,
+              "end": 3.82,
+              "probability": 0.9995850920677185
+            },
+            {
+              "word": "I",
+              "start": 3.82,
+              "end": 4.16,
+              "probability": 0.993388295173645
+            },
+            {
+              "word": "chose",
+              "start": 4.16,
+              "end": 4.46,
+              "probability": 0.9940301179885864
+            },
+            {
+              "word": "it.",
+              "start": 4.46,
+              "end": 4.76,
+              "probability": 0.9997373223304749
+            },
+            {
+              "word": "I",
+              "start": 4.84,
+              "end": 5.4,
+              "probability": 0.9984238147735596
+            },
+            {
+              "word": "go",
+              "start": 5.4,
+              "end": 5.6,
+              "probability": 0.9997063279151917
+            },
+            {
+              "word": "down",
+              "start": 5.6,
+              "end": 5.88,
+              "probability": 0.999470055103302
+            },
+            {
+              "word": "to",
+              "start": 5.88,
+              "end": 6.06,
+              "probability": 0.9991724491119385
+            },
+            {
+              "word": "the",
+              "start": 6.06,
+              "end": 6.16,
+              "probability": 0.9984631538391113
+            },
+            {
+              "word": "village",
+              "start": 6.16,
+              "end": 6.48,
+              "probability": 0.9921489953994751
+            },
+            {
+              "word": "when",
+              "start": 6.48,
+              "end": 7.02,
+              "probability": 0.9898207187652588
+            },
+            {
+              "word": "I",
+              "start": 7.02,
+              "end": 7.18,
+              "probability": 0.9987439513206482
+            },
+            {
+              "word": "need",
+              "start": 7.18,
+              "end": 7.42,
+              "probability": 0.9998668432235718
+            },
+            {
+              "word": "company.",
+              "start": 7.42,
+              "end": 7.7,
+              "probability": 0.999460756778717
+            }
+          ],
+          "seconds": 9.000188916994375
+        },
+        {
+          "wav": "home-04.wav",
+          "reference": "I thought monks never admitted that.",
+          "recognized": "I thought monks never admitted that.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "I",
+              "start": 0.0,
+              "end": 0.12,
+              "probability": 0.9651439785957336
+            },
+            {
+              "word": "thought",
+              "start": 0.12,
+              "end": 0.26,
+              "probability": 0.9984397292137146
+            },
+            {
+              "word": "monks",
+              "start": 0.26,
+              "end": 0.6,
+              "probability": 0.977560818195343
+            },
+            {
+              "word": "never",
+              "start": 0.6,
+              "end": 0.92,
+              "probability": 0.9990929365158081
+            },
+            {
+              "word": "admitted",
+              "start": 0.92,
+              "end": 1.24,
+              "probability": 0.9994505047798157
+            },
+            {
+              "word": "that.",
+              "start": 1.24,
+              "end": 1.54,
+              "probability": 0.999515175819397
+            }
+          ],
+          "seconds": 7.700650792001397
+        },
+        {
+          "wav": "home-05.wav",
+          "reference": "It would be a peculiar practice that required lying about missing people.",
+          "recognized": "It would be a peculiar practice that required lying about missing people.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "It",
+              "start": 0.0,
+              "end": 0.1,
+              "probability": 0.6852903962135315
+            },
+            {
+              "word": "would",
+              "start": 0.1,
+              "end": 0.12,
+              "probability": 0.9994410872459412
+            },
+            {
+              "word": "be",
+              "start": 0.12,
+              "end": 0.3,
+              "probability": 0.9997777342796326
+            },
+            {
+              "word": "a",
+              "start": 0.3,
+              "end": 0.4,
+              "probability": 0.9981682300567627
+            },
+            {
+              "word": "peculiar",
+              "start": 0.4,
+              "end": 0.82,
+              "probability": 0.9989746809005737
+            },
+            {
+              "word": "practice",
+              "start": 0.82,
+              "end": 1.32,
+              "probability": 0.9954231381416321
+            },
+            {
+              "word": "that",
+              "start": 1.32,
+              "end": 2.16,
+              "probability": 0.9844000339508057
+            },
+            {
+              "word": "required",
+              "start": 2.16,
+              "end": 2.44,
+              "probability": 0.9994426369667053
+            },
+            {
+              "word": "lying",
+              "start": 2.44,
+              "end": 3.0,
+              "probability": 0.9985188841819763
+            },
+            {
+              "word": "about",
+              "start": 3.0,
+              "end": 3.44,
+              "probability": 0.9995675683021545
+            },
+            {
+              "word": "missing",
+              "start": 3.44,
+              "end": 3.8,
+              "probability": 0.9932671785354614
+            },
+            {
+              "word": "people.",
+              "start": 3.8,
+              "end": 4.2,
+              "probability": 0.9996480941772461
+            }
+          ],
+          "seconds": 7.973136667002109
+        }
+      ],
+      "accepted": true,
+      "source_file_sha256": "fd9e6a9d5a905ecaf3b8006440a362da7fd1ee034dd1e2a0a87c18950b0ea2f3"
+    },
+    {
+      "id": "breakfast",
+      "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+      "word_timestamps": "Whisper decoder alignment estimates",
+      "max_wer": 0.2,
+      "turns": [
+        {
+          "wav": "breakfast-00.wav",
+          "reference": "Have you eaten?",
+          "recognized": "Have you eaten?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Have",
+              "start": 0.0,
+              "end": 0.2,
+              "probability": 0.8540998101234436
+            },
+            {
+              "word": "you",
+              "start": 0.2,
+              "end": 0.4,
+              "probability": 0.9798409938812256
+            },
+            {
+              "word": "eaten?",
+              "start": 0.4,
+              "end": 0.72,
+              "probability": 0.9942485094070435
+            }
+          ],
+          "seconds": 7.452416291998816
+        },
+        {
+          "wav": "breakfast-01.wav",
+          "reference": "Rice left over from yesterday, warmed with lentils. Very little ceremony, considerable washing up.",
+          "recognized": "Rice left over from yesterday, warmed with lentils. Very little ceremony, considerable washing up.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Rice",
+              "start": 0.0,
+              "end": 0.28,
+              "probability": 0.7920268177986145
+            },
+            {
+              "word": "left",
+              "start": 0.28,
+              "end": 0.54,
+              "probability": 0.9152725338935852
+            },
+            {
+              "word": "over",
+              "start": 0.54,
+              "end": 0.9,
+              "probability": 0.9947887659072876
+            },
+            {
+              "word": "from",
+              "start": 0.9,
+              "end": 1.12,
+              "probability": 0.9994673132896423
+            },
+            {
+              "word": "yesterday,",
+              "start": 1.12,
+              "end": 1.56,
+              "probability": 0.9967212080955505
+            },
+            {
+              "word": "warmed",
+              "start": 1.84,
+              "end": 2.42,
+              "probability": 0.9944804906845093
+            },
+            {
+              "word": "with",
+              "start": 2.42,
+              "end": 2.68,
+              "probability": 0.9995585083961487
+            },
+            {
+              "word": "lentils.",
+              "start": 2.68,
+              "end": 3.34,
+              "probability": 0.9944087266921997
+            },
+            {
+              "word": "Very",
+              "start": 3.44,
+              "end": 4.06,
+              "probability": 0.9928964972496033
+            },
+            {
+              "word": "little",
+              "start": 4.06,
+              "end": 4.32,
+              "probability": 0.9988588094711304
+            },
+            {
+              "word": "ceremony,",
+              "start": 4.32,
+              "end": 4.8,
+              "probability": 0.9533818960189819
+            },
+            {
+              "word": "considerable",
+              "start": 5.08,
+              "end": 5.66,
+              "probability": 0.9974530339241028
+            },
+            {
+              "word": "washing",
+              "start": 5.66,
+              "end": 6.24,
+              "probability": 0.9988099336624146
+            },
+            {
+              "word": "up.",
+              "start": 6.24,
+              "end": 6.58,
+              "probability": 0.9729123711585999
+            }
+          ],
+          "seconds": 8.606606542001828
+        },
+        {
+          "wav": "breakfast-02.wav",
+          "reference": "That sounds boring.",
+          "recognized": "That sounds boring.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "That",
+              "start": 0.0,
+              "end": 0.16,
+              "probability": 0.8850893974304199
+            },
+            {
+              "word": "sounds",
+              "start": 0.16,
+              "end": 0.42,
+              "probability": 0.9962500929832458
+            },
+            {
+              "word": "boring.",
+              "start": 0.42,
+              "end": 0.8,
+              "probability": 0.9967411160469055
+            }
+          ],
+          "seconds": 7.4410092500038445
+        },
+        {
+          "wav": "breakfast-03.wav",
+          "reference": "It was. I added too little salt. A quiet life does not make me a great cook.",
+          "recognized": "It was, I added too little salt. A quiet life does not make me a great cook.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "It",
+              "start": 0.0,
+              "end": 0.1,
+              "probability": 0.8984752893447876
+            },
+            {
+              "word": "was,",
+              "start": 0.1,
+              "end": 0.4,
+              "probability": 0.9976525902748108
+            },
+            {
+              "word": "I",
+              "start": 0.48,
+              "end": 0.74,
+              "probability": 0.985913872718811
+            },
+            {
+              "word": "added",
+              "start": 0.74,
+              "end": 1.08,
+              "probability": 0.9996330738067627
+            },
+            {
+              "word": "too",
+              "start": 1.08,
+              "end": 1.36,
+              "probability": 0.9945789575576782
+            },
+            {
+              "word": "little",
+              "start": 1.36,
+              "end": 1.56,
+              "probability": 0.9998160004615784
+            },
+            {
+              "word": "salt.",
+              "start": 1.56,
+              "end": 2.02,
+              "probability": 0.9988721013069153
+            },
+            {
+              "word": "A",
+              "start": 2.14,
+              "end": 2.6,
+              "probability": 0.9969589710235596
+            },
+            {
+              "word": "quiet",
+              "start": 2.6,
+              "end": 2.9,
+              "probability": 0.995449960231781
+            },
+            {
+              "word": "life",
+              "start": 2.9,
+              "end": 3.28,
+              "probability": 0.9997408986091614
+            },
+            {
+              "word": "does",
+              "start": 3.28,
+              "end": 3.64,
+              "probability": 0.9983600974082947
+            },
+            {
+              "word": "not",
+              "start": 3.64,
+              "end": 3.82,
+              "probability": 0.9999260902404785
+            },
+            {
+              "word": "make",
+              "start": 3.82,
+              "end": 4.04,
+              "probability": 0.999896764755249
+            },
+            {
+              "word": "me",
+              "start": 4.04,
+              "end": 4.22,
+              "probability": 0.9998773336410522
+            },
+            {
+              "word": "a",
+              "start": 4.22,
+              "end": 4.32,
+              "probability": 0.9997393488883972
+            },
+            {
+              "word": "great",
+              "start": 4.32,
+              "end": 4.5,
+              "probability": 0.9997195601463318
+            },
+            {
+              "word": "cook.",
+              "start": 4.5,
+              "end": 4.76,
+              "probability": 0.9994439482688904
+            }
+          ],
+          "seconds": 8.305288332994678
+        },
+        {
+          "wav": "breakfast-04.wav",
+          "reference": "What would you rather eat?",
+          "recognized": "What would you rather eat?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "What",
+              "start": 0.0,
+              "end": 0.2,
+              "probability": 0.8591339588165283
+            },
+            {
+              "word": "would",
+              "start": 0.2,
+              "end": 0.3,
+              "probability": 0.9693332314491272
+            },
+            {
+              "word": "you",
+              "start": 0.3,
+              "end": 0.46,
+              "probability": 0.9981704950332642
+            },
+            {
+              "word": "rather",
+              "start": 0.46,
+              "end": 0.7,
+              "probability": 0.9991427659988403
+            },
+            {
+              "word": "eat?",
+              "start": 0.7,
+              "end": 1.0,
+              "probability": 0.9986924529075623
+            }
+          ],
+          "seconds": 7.615683291995083
+        },
+        {
+          "wav": "breakfast-05.wav",
+          "reference": "The flatbread they make in the village, still hot enough to hurt my fingers a little.",
+          "recognized": "The flatbread they make in the village, still hot enough to hurt my fingers a little.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "The",
+              "start": 0.0,
+              "end": 0.1,
+              "probability": 0.6088034510612488
+            },
+            {
+              "word": "flatbread",
+              "start": 0.1,
+              "end": 0.5,
+              "probability": 0.9923108816146851
+            },
+            {
+              "word": "they",
+              "start": 0.5,
+              "end": 0.78,
+              "probability": 0.9971511960029602
+            },
+            {
+              "word": "make",
+              "start": 0.78,
+              "end": 1.1,
+              "probability": 0.9990354776382446
+            },
+            {
+              "word": "in",
+              "start": 1.1,
+              "end": 1.24,
+              "probability": 0.9985721111297607
+            },
+            {
+              "word": "the",
+              "start": 1.24,
+              "end": 1.34,
+              "probability": 0.997681736946106
+            },
+            {
+              "word": "village,",
+              "start": 1.34,
+              "end": 1.68,
+              "probability": 0.9928268790245056
+            },
+            {
+              "word": "still",
+              "start": 1.88,
+              "end": 2.4,
+              "probability": 0.9574991464614868
+            },
+            {
+              "word": "hot",
+              "start": 2.4,
+              "end": 2.7,
+              "probability": 0.9995705485343933
+            },
+            {
+              "word": "enough",
+              "start": 2.7,
+              "end": 2.96,
+              "probability": 0.9998303651809692
+            },
+            {
+              "word": "to",
+              "start": 2.96,
+              "end": 3.18,
+              "probability": 0.9996121525764465
+            },
+            {
+              "word": "hurt",
+              "start": 3.18,
+              "end": 3.4,
+              "probability": 0.9998295307159424
+            },
+            {
+              "word": "my",
+              "start": 3.4,
+              "end": 3.6,
+              "probability": 0.9997074007987976
+            },
+            {
+              "word": "fingers",
+              "start": 3.6,
+              "end": 4.02,
+              "probability": 0.9994250535964966
+            },
+            {
+              "word": "a",
+              "start": 4.02,
+              "end": 4.28,
+              "probability": 0.9987776875495911
+            },
+            {
+              "word": "little.",
+              "start": 4.28,
+              "end": 4.5,
+              "probability": 0.9997770190238953
+            }
+          ],
+          "seconds": 8.239102749997983
+        }
+      ],
+      "accepted": true,
+      "source_file_sha256": "45a7aca9bf28cd87fbdf909e7d00cb505b06a67c6178c1eed9e20fd022a05abd"
+    },
+    {
+      "id": "roof",
+      "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+      "word_timestamps": "Whisper decoder alignment estimates",
+      "max_wer": 0.2,
+      "turns": [
+        {
+          "wav": "roof-00.wav",
+          "reference": "What did you do before becoming a monk?",
+          "recognized": "What did you do before becoming a monk?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "What",
+              "start": 0.0,
+              "end": 0.14,
+              "probability": 0.8958300352096558
+            },
+            {
+              "word": "did",
+              "start": 0.14,
+              "end": 0.24,
+              "probability": 0.9735312461853027
+            },
+            {
+              "word": "you",
+              "start": 0.24,
+              "end": 0.34,
+              "probability": 0.99956876039505
+            },
+            {
+              "word": "do",
+              "start": 0.34,
+              "end": 0.58,
+              "probability": 0.9993278980255127
+            },
+            {
+              "word": "before",
+              "start": 0.58,
+              "end": 0.96,
+              "probability": 0.9940063953399658
+            },
+            {
+              "word": "becoming",
+              "start": 0.96,
+              "end": 1.38,
+              "probability": 0.9990195035934448
+            },
+            {
+              "word": "a",
+              "start": 1.38,
+              "end": 1.56,
+              "probability": 0.9994619488716125
+            },
+            {
+              "word": "monk?",
+              "start": 1.56,
+              "end": 1.74,
+              "probability": 0.9929163455963135
+            }
+          ],
+          "seconds": 13.347602082998492
+        },
+        {
+          "wav": "roof-01.wav",
+          "reference": "I repaired roofs in the valley. I was quite good at finding leaks and rather less good at knowing when to go home.",
+          "recognized": "I repaired roofs in the valley. I was quite good at finding leaks and rather less good at knowing when to go home.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "I",
+              "start": 0.0,
+              "end": 0.08,
+              "probability": 0.9721837639808655
+            },
+            {
+              "word": "repaired",
+              "start": 0.08,
+              "end": 0.34,
+              "probability": 0.9973238706588745
+            },
+            {
+              "word": "roofs",
+              "start": 0.34,
+              "end": 0.78,
+              "probability": 0.9967936873435974
+            },
+            {
+              "word": "in",
+              "start": 0.78,
+              "end": 1.22,
+              "probability": 0.9934388995170593
+            },
+            {
+              "word": "the",
+              "start": 1.22,
+              "end": 1.32,
+              "probability": 0.9965918064117432
+            },
+            {
+              "word": "valley.",
+              "start": 1.32,
+              "end": 1.68,
+              "probability": 0.9225478768348694
+            },
+            {
+              "word": "I",
+              "start": 1.82,
+              "end": 2.34,
+              "probability": 0.9974320530891418
+            },
+            {
+              "word": "was",
+              "start": 2.34,
+              "end": 2.48,
+              "probability": 0.9998058676719666
+            },
+            {
+              "word": "quite",
+              "start": 2.48,
+              "end": 2.7,
+              "probability": 0.9990379810333252
+            },
+            {
+              "word": "good",
+              "start": 2.7,
+              "end": 3.0,
+              "probability": 0.9998557567596436
+            },
+            {
+              "word": "at",
+              "start": 3.0,
+              "end": 3.14,
+              "probability": 0.9993602633476257
+            },
+            {
+              "word": "finding",
+              "start": 3.14,
+              "end": 3.46,
+              "probability": 0.9996170997619629
+            },
+            {
+              "word": "leaks",
+              "start": 3.46,
+              "end": 3.86,
+              "probability": 0.9913439750671387
+            },
+            {
+              "word": "and",
+              "start": 3.86,
+              "end": 4.42,
+              "probability": 0.7648531794548035
+            },
+            {
+              "word": "rather",
+              "start": 4.42,
+              "end": 4.7,
+              "probability": 0.9980199337005615
+            },
+            {
+              "word": "less",
+              "start": 4.7,
+              "end": 5.0,
+              "probability": 0.9990373849868774
+            },
+            {
+              "word": "good",
+              "start": 5.0,
+              "end": 5.3,
+              "probability": 0.9990928173065186
+            },
+            {
+              "word": "at",
+              "start": 5.3,
+              "end": 5.64,
+              "probability": 0.9979727864265442
+            },
+            {
+              "word": "knowing",
+              "start": 5.64,
+              "end": 5.84,
+              "probability": 0.9991693496704102
+            },
+            {
+              "word": "when",
+              "start": 5.84,
+              "end": 6.14,
+              "probability": 0.9987025260925293
+            },
+            {
+              "word": "to",
+              "start": 6.14,
+              "end": 6.3,
+              "probability": 0.9995231628417969
+            },
+            {
+              "word": "go",
+              "start": 6.3,
+              "end": 6.46,
+              "probability": 0.9996064305305481
+            },
+            {
+              "word": "home.",
+              "start": 6.46,
+              "end": 6.78,
+              "probability": 0.9992362260818481
+            }
+          ],
+          "seconds": 15.662803041996085
+        },
+        {
+          "wav": "roof-02.wav",
+          "reference": "Why did you stop?",
+          "recognized": "Why did you stop?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Why",
+              "start": 0.0,
+              "end": 0.16,
+              "probability": 0.8581169247627258
+            },
+            {
+              "word": "did",
+              "start": 0.16,
+              "end": 0.3,
+              "probability": 0.986970067024231
+            },
+            {
+              "word": "you",
+              "start": 0.3,
+              "end": 0.42,
+              "probability": 0.9993615746498108
+            },
+            {
+              "word": "stop?",
+              "start": 0.42,
+              "end": 0.66,
+              "probability": 0.9991281628608704
+            }
+          ],
+          "seconds": 12.472089167000377
+        },
+        {
+          "wav": "roof-03.wav",
+          "reference": "I was always hurrying toward a life I would begin later. Eventually I wanted to find out what happened if I stopped postponing it.",
+          "recognized": "I was always hurrying toward a life I would begin later. Eventually, I wanted to find out what happened if I stopped postponing it.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "I",
+              "start": 0.0,
+              "end": 0.08,
+              "probability": 0.9898110628128052
+            },
+            {
+              "word": "was",
+              "start": 0.08,
+              "end": 0.18,
+              "probability": 0.9988768696784973
+            },
+            {
+              "word": "always",
+              "start": 0.18,
+              "end": 0.46,
+              "probability": 0.9998200535774231
+            },
+            {
+              "word": "hurrying",
+              "start": 0.46,
+              "end": 1.06,
+              "probability": 0.9998407661914825
+            },
+            {
+              "word": "toward",
+              "start": 1.06,
+              "end": 1.28,
+              "probability": 0.9951289892196655
+            },
+            {
+              "word": "a",
+              "start": 1.28,
+              "end": 1.46,
+              "probability": 0.999708354473114
+            },
+            {
+              "word": "life",
+              "start": 1.46,
+              "end": 1.76,
+              "probability": 0.9996877908706665
+            },
+            {
+              "word": "I",
+              "start": 1.76,
+              "end": 2.28,
+              "probability": 0.9865504503250122
+            },
+            {
+              "word": "would",
+              "start": 2.28,
+              "end": 2.42,
+              "probability": 0.9994601607322693
+            },
+            {
+              "word": "begin",
+              "start": 2.42,
+              "end": 2.68,
+              "probability": 0.9983518123626709
+            },
+            {
+              "word": "later.",
+              "start": 2.68,
+              "end": 3.16,
+              "probability": 0.9994882345199585
+            },
+            {
+              "word": "Eventually,",
+              "start": 3.88,
+              "end": 4.36,
+              "probability": 0.9974972605705261
+            },
+            {
+              "word": "I",
+              "start": 4.42,
+              "end": 4.8,
+              "probability": 0.9994248151779175
+            },
+            {
+              "word": "wanted",
+              "start": 4.8,
+              "end": 5.08,
+              "probability": 0.9996163845062256
+            },
+            {
+              "word": "to",
+              "start": 5.08,
+              "end": 5.26,
+              "probability": 0.999854326248169
+            },
+            {
+              "word": "find",
+              "start": 5.26,
+              "end": 5.5,
+              "probability": 0.9998652935028076
+            },
+            {
+              "word": "out",
+              "start": 5.5,
+              "end": 5.72,
+              "probability": 0.9994887113571167
+            },
+            {
+              "word": "what",
+              "start": 5.72,
+              "end": 5.88,
+              "probability": 0.9996570348739624
+            },
+            {
+              "word": "happened",
+              "start": 5.88,
+              "end": 6.2,
+              "probability": 0.997786283493042
+            },
+            {
+              "word": "if",
+              "start": 6.2,
+              "end": 6.78,
+              "probability": 0.9866805672645569
+            },
+            {
+              "word": "I",
+              "start": 6.78,
+              "end": 6.9,
+              "probability": 0.9989824891090393
+            },
+            {
+              "word": "stopped",
+              "start": 6.9,
+              "end": 7.28,
+              "probability": 0.9991450309753418
+            },
+            {
+              "word": "postponing",
+              "start": 7.28,
+              "end": 8.18,
+              "probability": 0.9978146851062775
+            },
+            {
+              "word": "it.",
+              "start": 8.18,
+              "end": 8.36,
+              "probability": 0.9996084570884705
+            }
+          ],
+          "seconds": 15.616431041999022
+        },
+        {
+          "wav": "roof-04.wav",
+          "reference": "Do you regret leaving?",
+          "recognized": "Do you regret leaving?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Do",
+              "start": 0.0,
+              "end": 0.12,
+              "probability": 0.9335178136825562
+            },
+            {
+              "word": "you",
+              "start": 0.12,
+              "end": 0.22,
+              "probability": 0.9732949137687683
+            },
+            {
+              "word": "regret",
+              "start": 0.22,
+              "end": 0.46,
+              "probability": 0.9990255832672119
+            },
+            {
+              "word": "leaving?",
+              "start": 0.46,
+              "end": 0.8,
+              "probability": 0.9967374205589294
+            }
+          ],
+          "seconds": 12.087063041995862
+        },
+        {
+          "wav": "roof-05.wav",
+          "reference": "I miss working beside people. I still help with repairs when I go down. A robe doesn't make a roof stop leaking.",
+          "recognized": "I miss working beside people, I still help with repairs when I go down. A robe doesn't make a roof stop leaking.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "I",
+              "start": 0.0,
+              "end": 0.1,
+              "probability": 0.9623574614524841
+            },
+            {
+              "word": "miss",
+              "start": 0.1,
+              "end": 0.26,
+              "probability": 0.9954259991645813
+            },
+            {
+              "word": "working",
+              "start": 0.26,
+              "end": 0.64,
+              "probability": 0.9970698356628418
+            },
+            {
+              "word": "beside",
+              "start": 0.64,
+              "end": 0.98,
+              "probability": 0.9933661818504333
+            },
+            {
+              "word": "people,",
+              "start": 0.98,
+              "end": 1.5,
+              "probability": 0.9986164569854736
+            },
+            {
+              "word": "I",
+              "start": 1.64,
+              "end": 2.08,
+              "probability": 0.9890927076339722
+            },
+            {
+              "word": "still",
+              "start": 2.08,
+              "end": 2.34,
+              "probability": 0.9991214871406555
+            },
+            {
+              "word": "help",
+              "start": 2.34,
+              "end": 2.66,
+              "probability": 0.9987251162528992
+            },
+            {
+              "word": "with",
+              "start": 2.66,
+              "end": 2.82,
+              "probability": 0.9978160858154297
+            },
+            {
+              "word": "repairs",
+              "start": 2.82,
+              "end": 3.16,
+              "probability": 0.998489260673523
+            },
+            {
+              "word": "when",
+              "start": 3.16,
+              "end": 3.58,
+              "probability": 0.9940980672836304
+            },
+            {
+              "word": "I",
+              "start": 3.58,
+              "end": 3.7,
+              "probability": 0.9883135557174683
+            },
+            {
+              "word": "go",
+              "start": 3.7,
+              "end": 3.88,
+              "probability": 0.9985300302505493
+            },
+            {
+              "word": "down.",
+              "start": 3.88,
+              "end": 4.3,
+              "probability": 0.998995840549469
+            },
+            {
+              "word": "A",
+              "start": 4.48,
+              "end": 4.96,
+              "probability": 0.9854429960250854
+            },
+            {
+              "word": "robe",
+              "start": 4.96,
+              "end": 5.36,
+              "probability": 0.9717517495155334
+            },
+            {
+              "word": "doesn't",
+              "start": 5.36,
+              "end": 5.84,
+              "probability": 0.9920934438705444
+            },
+            {
+              "word": "make",
+              "start": 5.84,
+              "end": 5.94,
+              "probability": 0.9984404444694519
+            },
+            {
+              "word": "a",
+              "start": 5.94,
+              "end": 6.04,
+              "probability": 0.9953742623329163
+            },
+            {
+              "word": "roof",
+              "start": 6.04,
+              "end": 6.3,
+              "probability": 0.9972819089889526
+            },
+            {
+              "word": "stop",
+              "start": 6.3,
+              "end": 6.58,
+              "probability": 0.9960183501243591
+            },
+            {
+              "word": "leaking.",
+              "start": 6.58,
+              "end": 6.88,
+              "probability": 0.9993607401847839
+            }
+          ],
+          "seconds": 15.167675083008362
+        }
+      ],
+      "accepted": true,
+      "source_file_sha256": "7cef2c42facadc4a852526922f35616c1ca31bbe1c2202483a4455097e0907e6"
+    },
+    {
+      "id": "teacher",
+      "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+      "word_timestamps": "Whisper decoder alignment estimates",
+      "max_wer": 0.2,
+      "turns": [
+        {
+          "wav": "teacher-00.wav",
+          "reference": "Did someone teach you how to meditate?",
+          "recognized": "Did someone teach you how to meditate?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Did",
+              "start": 0.0,
+              "end": 0.14,
+              "probability": 0.926693856716156
+            },
+            {
+              "word": "someone",
+              "start": 0.14,
+              "end": 0.34,
+              "probability": 0.9955508708953857
+            },
+            {
+              "word": "teach",
+              "start": 0.34,
+              "end": 0.68,
+              "probability": 0.9982680082321167
+            },
+            {
+              "word": "you",
+              "start": 0.68,
+              "end": 0.98,
+              "probability": 0.9992285966873169
+            },
+            {
+              "word": "how",
+              "start": 0.98,
+              "end": 1.26,
+              "probability": 0.9938414096832275
+            },
+            {
+              "word": "to",
+              "start": 1.26,
+              "end": 1.44,
+              "probability": 0.9990403056144714
+            },
+            {
+              "word": "meditate?",
+              "start": 1.44,
+              "end": 1.88,
+              "probability": 0.9984747767448425
+            }
+          ],
+          "seconds": 8.418413166000391
+        },
+        {
+          "wav": "teacher-01.wav",
+          "reference": "Mara, my old teacher. She also taught me to put tools back where the next person could find them. I needed that lesson more often.",
+          "recognized": "Mara, my old teacher, she also taught me to put tools back where the next person could find them. I needed that lesson more often.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Mara,",
+              "start": 0.0,
+              "end": 0.4,
+              "probability": 0.9549005031585693
+            },
+            {
+              "word": "my",
+              "start": 0.4,
+              "end": 0.58,
+              "probability": 0.9978317618370056
+            },
+            {
+              "word": "old",
+              "start": 0.58,
+              "end": 0.86,
+              "probability": 0.9986175298690796
+            },
+            {
+              "word": "teacher,",
+              "start": 0.86,
+              "end": 1.26,
+              "probability": 0.9986476302146912
+            },
+            {
+              "word": "she",
+              "start": 1.46,
+              "end": 1.94,
+              "probability": 0.9902883768081665
+            },
+            {
+              "word": "also",
+              "start": 1.94,
+              "end": 2.24,
+              "probability": 0.9985918402671814
+            },
+            {
+              "word": "taught",
+              "start": 2.24,
+              "end": 2.62,
+              "probability": 0.9986388087272644
+            },
+            {
+              "word": "me",
+              "start": 2.62,
+              "end": 2.74,
+              "probability": 0.9997345805168152
+            },
+            {
+              "word": "to",
+              "start": 2.74,
+              "end": 2.88,
+              "probability": 0.9977947473526001
+            },
+            {
+              "word": "put",
+              "start": 2.88,
+              "end": 3.02,
+              "probability": 0.9995855689048767
+            },
+            {
+              "word": "tools",
+              "start": 3.02,
+              "end": 3.36,
+              "probability": 0.9983116388320923
+            },
+            {
+              "word": "back",
+              "start": 3.36,
+              "end": 3.7,
+              "probability": 0.9991967082023621
+            },
+            {
+              "word": "where",
+              "start": 3.7,
+              "end": 4.12,
+              "probability": 0.9859219193458557
+            },
+            {
+              "word": "the",
+              "start": 4.12,
+              "end": 4.22,
+              "probability": 0.9990498423576355
+            },
+            {
+              "word": "next",
+              "start": 4.22,
+              "end": 4.44,
+              "probability": 0.9995424747467041
+            },
+            {
+              "word": "person",
+              "start": 4.44,
+              "end": 4.88,
+              "probability": 0.9995757937431335
+            },
+            {
+              "word": "could",
+              "start": 4.88,
+              "end": 5.1,
+              "probability": 0.9986404776573181
+            },
+            {
+              "word": "find",
+              "start": 5.1,
+              "end": 5.44,
+              "probability": 0.999619722366333
+            },
+            {
+              "word": "them.",
+              "start": 5.44,
+              "end": 5.7,
+              "probability": 0.9998393058776855
+            },
+            {
+              "word": "I",
+              "start": 5.78,
+              "end": 6.32,
+              "probability": 0.9980301260948181
+            },
+            {
+              "word": "needed",
+              "start": 6.32,
+              "end": 6.62,
+              "probability": 0.9993301630020142
+            },
+            {
+              "word": "that",
+              "start": 6.62,
+              "end": 6.86,
+              "probability": 0.9995959401130676
+            },
+            {
+              "word": "lesson",
+              "start": 6.86,
+              "end": 7.18,
+              "probability": 0.9963675737380981
+            },
+            {
+              "word": "more",
+              "start": 7.18,
+              "end": 7.46,
+              "probability": 0.9993553757667542
+            },
+            {
+              "word": "often.",
+              "start": 7.46,
+              "end": 7.8,
+              "probability": 0.9995624423027039
+            }
+          ],
+          "seconds": 9.081562082996243
+        },
+        {
+          "wav": "teacher-02.wav",
+          "reference": "Can I meet her?",
+          "recognized": "Can I meet her?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Can",
+              "start": 0.0,
+              "end": 0.18,
+              "probability": 0.8914382457733154
+            },
+            {
+              "word": "I",
+              "start": 0.18,
+              "end": 0.38,
+              "probability": 0.9776788949966431
+            },
+            {
+              "word": "meet",
+              "start": 0.38,
+              "end": 0.66,
+              "probability": 0.9902785420417786
+            },
+            {
+              "word": "her?",
+              "start": 0.66,
+              "end": 0.9,
+              "probability": 0.9986532926559448
+            }
+          ],
+          "seconds": 7.49088629099424
+        },
+        {
+          "wav": "teacher-03.wav",
+          "reference": "She died some years ago. I wish you could have. She had a way of noticing when a very impressive answer hadn't answered anything.",
+          "recognized": "She died some years ago. I wish you could have. She had a way of noticing when a very impressive answer hadn't answered anything.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "She",
+              "start": 0.0,
+              "end": 0.12,
+              "probability": 0.9354362487792969
+            },
+            {
+              "word": "died",
+              "start": 0.12,
+              "end": 0.32,
+              "probability": 0.9980427026748657
+            },
+            {
+              "word": "some",
+              "start": 0.32,
+              "end": 0.6,
+              "probability": 0.9993184804916382
+            },
+            {
+              "word": "years",
+              "start": 0.6,
+              "end": 0.84,
+              "probability": 0.9996296167373657
+            },
+            {
+              "word": "ago.",
+              "start": 0.84,
+              "end": 1.18,
+              "probability": 0.9998295307159424
+            },
+            {
+              "word": "I",
+              "start": 1.38,
+              "end": 1.82,
+              "probability": 0.9981422424316406
+            },
+            {
+              "word": "wish",
+              "start": 1.82,
+              "end": 2.02,
+              "probability": 0.999745786190033
+            },
+            {
+              "word": "you",
+              "start": 2.02,
+              "end": 2.16,
+              "probability": 0.9995866417884827
+            },
+            {
+              "word": "could",
+              "start": 2.16,
+              "end": 2.36,
+              "probability": 0.9996919631958008
+            },
+            {
+              "word": "have.",
+              "start": 2.36,
+              "end": 2.64,
+              "probability": 0.9997642636299133
+            },
+            {
+              "word": "She",
+              "start": 2.98,
+              "end": 3.42,
+              "probability": 0.9981024861335754
+            },
+            {
+              "word": "had",
+              "start": 3.42,
+              "end": 3.6,
+              "probability": 0.9998363256454468
+            },
+            {
+              "word": "a",
+              "start": 3.6,
+              "end": 3.68,
+              "probability": 0.9996747970581055
+            },
+            {
+              "word": "way",
+              "start": 3.68,
+              "end": 3.86,
+              "probability": 0.9998806715011597
+            },
+            {
+              "word": "of",
+              "start": 3.86,
+              "end": 4.0,
+              "probability": 0.9999291896820068
+            },
+            {
+              "word": "noticing",
+              "start": 4.0,
+              "end": 4.4,
+              "probability": 0.9995900988578796
+            },
+            {
+              "word": "when",
+              "start": 4.4,
+              "end": 5.02,
+              "probability": 0.9950152039527893
+            },
+            {
+              "word": "a",
+              "start": 5.02,
+              "end": 5.14,
+              "probability": 0.9997684359550476
+            },
+            {
+              "word": "very",
+              "start": 5.14,
+              "end": 5.36,
+              "probability": 0.9997777342796326
+            },
+            {
+              "word": "impressive",
+              "start": 5.36,
+              "end": 5.82,
+              "probability": 0.9996891021728516
+            },
+            {
+              "word": "answer",
+              "start": 5.82,
+              "end": 6.26,
+              "probability": 0.9997815489768982
+            },
+            {
+              "word": "hadn't",
+              "start": 6.26,
+              "end": 7.06,
+              "probability": 0.9992831945419312
+            },
+            {
+              "word": "answered",
+              "start": 7.06,
+              "end": 7.38,
+              "probability": 0.9994810223579407
+            },
+            {
+              "word": "anything.",
+              "start": 7.38,
+              "end": 7.78,
+              "probability": 0.9997590184211731
+            }
+          ],
+          "seconds": 8.89235829199606
+        },
+        {
+          "wav": "teacher-04.wav",
+          "reference": "Do you still hear her voice?",
+          "recognized": "Do you still hear her voice?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Do",
+              "start": 0.0,
+              "end": 0.1,
+              "probability": 0.903968095779419
+            },
+            {
+              "word": "you",
+              "start": 0.1,
+              "end": 0.18,
+              "probability": 0.9984631538391113
+            },
+            {
+              "word": "still",
+              "start": 0.18,
+              "end": 0.42,
+              "probability": 0.998963475227356
+            },
+            {
+              "word": "hear",
+              "start": 0.42,
+              "end": 0.7,
+              "probability": 0.997344434261322
+            },
+            {
+              "word": "her",
+              "start": 0.7,
+              "end": 0.84,
+              "probability": 0.9978736639022827
+            },
+            {
+              "word": "voice?",
+              "start": 0.84,
+              "end": 1.14,
+              "probability": 0.9992483258247375
+            }
+          ],
+          "seconds": 7.784291375006433
+        },
+        {
+          "wav": "teacher-05.wav",
+          "reference": "In memory, yes. Not as a message from somewhere beyond us. I remember things she said, and occasionally remember them too late.",
+          "recognized": "In memory, yes, not as a message from somewhere beyond us. I remember things she said and occasionally remember them too late.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "In",
+              "start": 0.0,
+              "end": 0.1,
+              "probability": 0.9529163241386414
+            },
+            {
+              "word": "memory,",
+              "start": 0.1,
+              "end": 0.38,
+              "probability": 0.9977437257766724
+            },
+            {
+              "word": "yes,",
+              "start": 0.58,
+              "end": 0.94,
+              "probability": 0.9987793564796448
+            },
+            {
+              "word": "not",
+              "start": 1.14,
+              "end": 1.74,
+              "probability": 0.9951487183570862
+            },
+            {
+              "word": "as",
+              "start": 1.74,
+              "end": 1.9,
+              "probability": 0.9998970031738281
+            },
+            {
+              "word": "a",
+              "start": 1.9,
+              "end": 2.0,
+              "probability": 0.999325156211853
+            },
+            {
+              "word": "message",
+              "start": 2.0,
+              "end": 2.34,
+              "probability": 0.9994064569473267
+            },
+            {
+              "word": "from",
+              "start": 2.34,
+              "end": 2.64,
+              "probability": 0.9996411800384521
+            },
+            {
+              "word": "somewhere",
+              "start": 2.64,
+              "end": 3.02,
+              "probability": 0.9990430474281311
+            },
+            {
+              "word": "beyond",
+              "start": 3.02,
+              "end": 3.42,
+              "probability": 0.9994434714317322
+            },
+            {
+              "word": "us.",
+              "start": 3.42,
+              "end": 3.72,
+              "probability": 0.9997360110282898
+            },
+            {
+              "word": "I",
+              "start": 3.8,
+              "end": 4.28,
+              "probability": 0.9983096122741699
+            },
+            {
+              "word": "remember",
+              "start": 4.28,
+              "end": 4.56,
+              "probability": 0.9998577833175659
+            },
+            {
+              "word": "things",
+              "start": 4.56,
+              "end": 4.88,
+              "probability": 0.999613344669342
+            },
+            {
+              "word": "she",
+              "start": 4.88,
+              "end": 5.2,
+              "probability": 0.9992669224739075
+            },
+            {
+              "word": "said",
+              "start": 5.2,
+              "end": 5.54,
+              "probability": 0.9995802044868469
+            },
+            {
+              "word": "and",
+              "start": 5.54,
+              "end": 6.04,
+              "probability": 0.645913302898407
+            },
+            {
+              "word": "occasionally",
+              "start": 6.04,
+              "end": 6.46,
+              "probability": 0.9994630217552185
+            },
+            {
+              "word": "remember",
+              "start": 6.46,
+              "end": 7.0,
+              "probability": 0.9993444085121155
+            },
+            {
+              "word": "them",
+              "start": 7.0,
+              "end": 7.44,
+              "probability": 0.9998961687088013
+            },
+            {
+              "word": "too",
+              "start": 7.44,
+              "end": 7.64,
+              "probability": 0.9994751811027527
+            },
+            {
+              "word": "late.",
+              "start": 7.64,
+              "end": 7.92,
+              "probability": 0.9998218417167664
+            }
+          ],
+          "seconds": 8.87305125000421
+        }
+      ],
+      "accepted": true,
+      "source_file_sha256": "e3329c2db3b2a621ab9e3e3cc6c41c29b0f69bd3199efc2c9ab4cf053d266daa"
+    },
+    {
+      "id": "objects",
+      "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+      "word_timestamps": "Whisper decoder alignment estimates",
+      "max_wer": 0.2,
+      "turns": [
+        {
+          "wav": "objects-00.wav",
+          "reference": "What's beside you right now?",
+          "recognized": "What's beside you right now?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "What's",
+              "start": 0.0,
+              "end": 0.24,
+              "probability": 0.953220933675766
+            },
+            {
+              "word": "beside",
+              "start": 0.24,
+              "end": 0.5,
+              "probability": 0.82708740234375
+            },
+            {
+              "word": "you",
+              "start": 0.5,
+              "end": 0.72,
+              "probability": 0.9988424181938171
+            },
+            {
+              "word": "right",
+              "start": 0.72,
+              "end": 0.84,
+              "probability": 0.9968478083610535
+            },
+            {
+              "word": "now?",
+              "start": 0.84,
+              "end": 1.04,
+              "probability": 0.9994680285453796
+            }
+          ],
+          "seconds": 11.660816417002934
+        },
+        {
+          "wav": "objects-01.wav",
+          "reference": "My blue cup and a wooden stool. The cup has a chip at the rim, so I've learned which side to drink from.",
+          "recognized": "My blue cup and a wooden stool. The cup has a chip at the rim, so I've learned which side to drink from.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "My",
+              "start": 0.0,
+              "end": 0.1,
+              "probability": 0.8408110737800598
+            },
+            {
+              "word": "blue",
+              "start": 0.1,
+              "end": 0.36,
+              "probability": 0.9856407642364502
+            },
+            {
+              "word": "cup",
+              "start": 0.36,
+              "end": 0.7,
+              "probability": 0.9969980716705322
+            },
+            {
+              "word": "and",
+              "start": 0.7,
+              "end": 1.1,
+              "probability": 0.9148876667022705
+            },
+            {
+              "word": "a",
+              "start": 1.1,
+              "end": 1.14,
+              "probability": 0.9986390471458435
+            },
+            {
+              "word": "wooden",
+              "start": 1.14,
+              "end": 1.4,
+              "probability": 0.9995438456535339
+            },
+            {
+              "word": "stool.",
+              "start": 1.4,
+              "end": 1.82,
+              "probability": 0.9996597766876221
+            },
+            {
+              "word": "The",
+              "start": 2.12,
+              "end": 2.6,
+              "probability": 0.9986947178840637
+            },
+            {
+              "word": "cup",
+              "start": 2.6,
+              "end": 2.84,
+              "probability": 0.997713565826416
+            },
+            {
+              "word": "has",
+              "start": 2.84,
+              "end": 3.06,
+              "probability": 0.9997944235801697
+            },
+            {
+              "word": "a",
+              "start": 3.06,
+              "end": 3.2,
+              "probability": 0.9997914433479309
+            },
+            {
+              "word": "chip",
+              "start": 3.2,
+              "end": 3.46,
+              "probability": 0.9994193315505981
+            },
+            {
+              "word": "at",
+              "start": 3.46,
+              "end": 3.62,
+              "probability": 0.9996719360351562
+            },
+            {
+              "word": "the",
+              "start": 3.62,
+              "end": 3.68,
+              "probability": 0.9998939037322998
+            },
+            {
+              "word": "rim,",
+              "start": 3.68,
+              "end": 4.0,
+              "probability": 0.9995205402374268
+            },
+            {
+              "word": "so",
+              "start": 4.12,
+              "end": 4.5,
+              "probability": 0.996299684047699
+            },
+            {
+              "word": "I've",
+              "start": 4.5,
+              "end": 4.8,
+              "probability": 0.9982720613479614
+            },
+            {
+              "word": "learned",
+              "start": 4.8,
+              "end": 5.06,
+              "probability": 0.9951678514480591
+            },
+            {
+              "word": "which",
+              "start": 5.06,
+              "end": 5.3,
+              "probability": 0.9997000694274902
+            },
+            {
+              "word": "side",
+              "start": 5.3,
+              "end": 5.62,
+              "probability": 0.9997788071632385
+            },
+            {
+              "word": "to",
+              "start": 5.62,
+              "end": 5.9,
+              "probability": 0.9998329877853394
+            },
+            {
+              "word": "drink",
+              "start": 5.9,
+              "end": 6.14,
+              "probability": 0.9998103976249695
+            },
+            {
+              "word": "from.",
+              "start": 6.14,
+              "end": 6.38,
+              "probability": 0.9996820688247681
+            }
+          ],
+          "seconds": 15.39296858299349
+        },
+        {
+          "wav": "objects-02.wav",
+          "reference": "Why not replace it?",
+          "recognized": "Why not replace it?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Why",
+              "start": 0.0,
+              "end": 0.16,
+              "probability": 0.6056643128395081
+            },
+            {
+              "word": "not",
+              "start": 0.16,
+              "end": 0.34,
+              "probability": 0.9703090786933899
+            },
+            {
+              "word": "replace",
+              "start": 0.34,
+              "end": 0.64,
+              "probability": 0.9908905625343323
+            },
+            {
+              "word": "it?",
+              "start": 0.64,
+              "end": 0.98,
+              "probability": 0.9994562268257141
+            }
+          ],
+          "seconds": 12.090079959001741
+        },
+        {
+          "wav": "objects-03.wav",
+          "reference": "I could. It still holds tea, and I know it well. There's no virtue in keeping it if it starts cutting my lip.",
+          "recognized": "I could, it still holds T, and I know it well. There's no virtue in keeping it if it starts cutting my lip.",
+          "wer": 0.043478260869565216,
+          "accepted": true,
+          "words": [
+            {
+              "word": "I",
+              "start": 0.0,
+              "end": 0.1,
+              "probability": 0.9687906503677368
+            },
+            {
+              "word": "could,",
+              "start": 0.1,
+              "end": 0.34,
+              "probability": 0.9974911212921143
+            },
+            {
+              "word": "it",
+              "start": 0.52,
+              "end": 0.7,
+              "probability": 0.9921340942382812
+            },
+            {
+              "word": "still",
+              "start": 0.7,
+              "end": 0.96,
+              "probability": 0.9977124929428101
+            },
+            {
+              "word": "holds",
+              "start": 0.96,
+              "end": 1.38,
+              "probability": 0.9982662796974182
+            },
+            {
+              "word": "T,",
+              "start": 1.38,
+              "end": 1.54,
+              "probability": 0.42480480670928955
+            },
+            {
+              "word": "and",
+              "start": 1.86,
+              "end": 2.32,
+              "probability": 0.9967483282089233
+            },
+            {
+              "word": "I",
+              "start": 2.32,
+              "end": 2.4,
+              "probability": 0.9982048273086548
+            },
+            {
+              "word": "know",
+              "start": 2.4,
+              "end": 2.62,
+              "probability": 0.9996945858001709
+            },
+            {
+              "word": "it",
+              "start": 2.62,
+              "end": 2.76,
+              "probability": 0.9995254278182983
+            },
+            {
+              "word": "well.",
+              "start": 2.76,
+              "end": 3.0,
+              "probability": 0.9988511800765991
+            },
+            {
+              "word": "There's",
+              "start": 3.36,
+              "end": 3.84,
+              "probability": 0.997090607881546
+            },
+            {
+              "word": "no",
+              "start": 3.84,
+              "end": 3.96,
+              "probability": 0.9996343851089478
+            },
+            {
+              "word": "virtue",
+              "start": 3.96,
+              "end": 4.46,
+              "probability": 0.9968945980072021
+            },
+            {
+              "word": "in",
+              "start": 4.46,
+              "end": 4.72,
+              "probability": 0.9994951486587524
+            },
+            {
+              "word": "keeping",
+              "start": 4.72,
+              "end": 5.06,
+              "probability": 0.9994945526123047
+            },
+            {
+              "word": "it",
+              "start": 5.06,
+              "end": 5.34,
+              "probability": 0.9993164539337158
+            },
+            {
+              "word": "if",
+              "start": 5.34,
+              "end": 5.5,
+              "probability": 0.9940671920776367
+            },
+            {
+              "word": "it",
+              "start": 5.5,
+              "end": 5.6,
+              "probability": 0.99949049949646
+            },
+            {
+              "word": "starts",
+              "start": 5.6,
+              "end": 5.92,
+              "probability": 0.999237060546875
+            },
+            {
+              "word": "cutting",
+              "start": 5.92,
+              "end": 6.24,
+              "probability": 0.9988766312599182
+            },
+            {
+              "word": "my",
+              "start": 6.24,
+              "end": 6.58,
+              "probability": 0.9988821148872375
+            },
+            {
+              "word": "lip.",
+              "start": 6.58,
+              "end": 6.88,
+              "probability": 0.9966740608215332
+            }
+          ],
+          "seconds": 15.935567250009626
+        },
+        {
+          "wav": "objects-04.wav",
+          "reference": "I like that cup already.",
+          "recognized": "I like that cup already.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "I",
+              "start": 0.0,
+              "end": 0.14,
+              "probability": 0.9690394401550293
+            },
+            {
+              "word": "like",
+              "start": 0.14,
+              "end": 0.32,
+              "probability": 0.9964219331741333
+            },
+            {
+              "word": "that",
+              "start": 0.32,
+              "end": 0.52,
+              "probability": 0.9994326233863831
+            },
+            {
+              "word": "cup",
+              "start": 0.52,
+              "end": 0.74,
+              "probability": 0.9952332377433777
+            },
+            {
+              "word": "already.",
+              "start": 0.74,
+              "end": 1.04,
+              "probability": 0.9984751343727112
+            }
+          ],
+          "seconds": 12.21839579200605
+        },
+        {
+          "wav": "objects-05.wav",
+          "reference": "It will be unbearable if it learns it has admirers.",
+          "recognized": "It will be unbearable if it learns it has admirers.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "It",
+              "start": 0.0,
+              "end": 0.1,
+              "probability": 0.7115733027458191
+            },
+            {
+              "word": "will",
+              "start": 0.1,
+              "end": 0.14,
+              "probability": 0.9984663724899292
+            },
+            {
+              "word": "be",
+              "start": 0.14,
+              "end": 0.3,
+              "probability": 0.9997825026512146
+            },
+            {
+              "word": "unbearable",
+              "start": 0.3,
+              "end": 1.04,
+              "probability": 0.9996395905812582
+            },
+            {
+              "word": "if",
+              "start": 1.04,
+              "end": 1.56,
+              "probability": 0.8540205955505371
+            },
+            {
+              "word": "it",
+              "start": 1.56,
+              "end": 1.68,
+              "probability": 0.998602569103241
+            },
+            {
+              "word": "learns",
+              "start": 1.68,
+              "end": 2.02,
+              "probability": 0.9993478655815125
+            },
+            {
+              "word": "it",
+              "start": 2.02,
+              "end": 2.34,
+              "probability": 0.9946982860565186
+            },
+            {
+              "word": "has",
+              "start": 2.34,
+              "end": 2.5,
+              "probability": 0.9997251629829407
+            },
+            {
+              "word": "admirers.",
+              "start": 2.5,
+              "end": 3.18,
+              "probability": 0.9992969632148743
+            }
+          ],
+          "seconds": 13.440700292005204
+        }
+      ],
+      "accepted": true,
+      "source_file_sha256": "849bf4a44e9779e8e08fec1fd5259f5cd44f8a3426039ca2d2d467306061cc1c"
+    },
+    {
+      "id": "rook",
+      "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+      "word_timestamps": "Whisper decoder alignment estimates",
+      "max_wer": 0.2,
+      "turns": [
+        {
+          "wav": "rook-00.wav",
+          "reference": "Do you have any pets?",
+          "recognized": "Do you have any pets?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Do",
+              "start": 0.0,
+              "end": 0.14,
+              "probability": 0.9323478937149048
+            },
+            {
+              "word": "you",
+              "start": 0.14,
+              "end": 0.2,
+              "probability": 0.9969973564147949
+            },
+            {
+              "word": "have",
+              "start": 0.2,
+              "end": 0.38,
+              "probability": 0.9996169805526733
+            },
+            {
+              "word": "any",
+              "start": 0.38,
+              "end": 0.56,
+              "probability": 0.9992055296897888
+            },
+            {
+              "word": "pets?",
+              "start": 0.56,
+              "end": 0.8,
+              "probability": 0.9984325766563416
+            }
+          ],
+          "seconds": 13.344000208002399
+        },
+        {
+          "wav": "rook-01.wav",
+          "reference": "A rook visits to steal food. I don't think either of us has agreed to being the other's pet.",
+          "recognized": "A rook visits to steal food. I don't think either of us has agreed to being the other's pet.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "A",
+              "start": 0.0,
+              "end": 0.1,
+              "probability": 0.8045430779457092
+            },
+            {
+              "word": "rook",
+              "start": 0.1,
+              "end": 0.32,
+              "probability": 0.769679605960846
+            },
+            {
+              "word": "visits",
+              "start": 0.32,
+              "end": 0.74,
+              "probability": 0.999365508556366
+            },
+            {
+              "word": "to",
+              "start": 0.74,
+              "end": 1.04,
+              "probability": 0.9993476271629333
+            },
+            {
+              "word": "steal",
+              "start": 1.04,
+              "end": 1.32,
+              "probability": 0.9987626075744629
+            },
+            {
+              "word": "food.",
+              "start": 1.32,
+              "end": 1.78,
+              "probability": 0.9990100860595703
+            },
+            {
+              "word": "I",
+              "start": 2.06,
+              "end": 2.54,
+              "probability": 0.9974876642227173
+            },
+            {
+              "word": "don't",
+              "start": 2.54,
+              "end": 2.78,
+              "probability": 0.999060332775116
+            },
+            {
+              "word": "think",
+              "start": 2.78,
+              "end": 2.92,
+              "probability": 0.9997807145118713
+            },
+            {
+              "word": "either",
+              "start": 2.92,
+              "end": 3.28,
+              "probability": 0.9982724189758301
+            },
+            {
+              "word": "of",
+              "start": 3.28,
+              "end": 3.48,
+              "probability": 0.9991130232810974
+            },
+            {
+              "word": "us",
+              "start": 3.48,
+              "end": 3.7,
+              "probability": 0.9995852112770081
+            },
+            {
+              "word": "has",
+              "start": 3.7,
+              "end": 4.08,
+              "probability": 0.994485080242157
+            },
+            {
+              "word": "agreed",
+              "start": 4.08,
+              "end": 4.42,
+              "probability": 0.9994925260543823
+            },
+            {
+              "word": "to",
+              "start": 4.42,
+              "end": 4.66,
+              "probability": 0.9988992214202881
+            },
+            {
+              "word": "being",
+              "start": 4.66,
+              "end": 4.9,
+              "probability": 0.9945709109306335
+            },
+            {
+              "word": "the",
+              "start": 4.9,
+              "end": 5.08,
+              "probability": 0.9988732933998108
+            },
+            {
+              "word": "other's",
+              "start": 5.08,
+              "end": 5.44,
+              "probability": 0.9850251078605652
+            },
+            {
+              "word": "pet.",
+              "start": 5.44,
+              "end": 5.66,
+              "probability": 0.9994339346885681
+            }
+          ],
+          "seconds": 14.164384457995766
+        },
+        {
+          "wav": "rook-02.wav",
+          "reference": "Give him a name.",
+          "recognized": "Give him a name.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Give",
+              "start": 0.0,
+              "end": 0.16,
+              "probability": 0.8990111947059631
+            },
+            {
+              "word": "him",
+              "start": 0.16,
+              "end": 0.32,
+              "probability": 0.8819719552993774
+            },
+            {
+              "word": "a",
+              "start": 0.32,
+              "end": 0.4,
+              "probability": 0.998868465423584
+            },
+            {
+              "word": "name.",
+              "start": 0.4,
+              "end": 0.68,
+              "probability": 0.9948064684867859
+            }
+          ],
+          "seconds": 12.406418792001205
+        },
+        {
+          "wav": "rook-03.wav",
+          "reference": "I call him Thief when he's taken something. He has not offered a name for me.",
+          "recognized": "I call him Thief when he's taken something, he has not offered a name for me.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "I",
+              "start": 0.0,
+              "end": 0.1,
+              "probability": 0.9650714993476868
+            },
+            {
+              "word": "call",
+              "start": 0.1,
+              "end": 0.28,
+              "probability": 0.9971707463264465
+            },
+            {
+              "word": "him",
+              "start": 0.28,
+              "end": 0.5,
+              "probability": 0.9975606203079224
+            },
+            {
+              "word": "Thief",
+              "start": 0.5,
+              "end": 0.96,
+              "probability": 0.5746399015188217
+            },
+            {
+              "word": "when",
+              "start": 0.96,
+              "end": 1.34,
+              "probability": 0.7414489388465881
+            },
+            {
+              "word": "he's",
+              "start": 1.34,
+              "end": 1.54,
+              "probability": 0.9836094081401825
+            },
+            {
+              "word": "taken",
+              "start": 1.54,
+              "end": 1.8,
+              "probability": 0.984567403793335
+            },
+            {
+              "word": "something,",
+              "start": 1.8,
+              "end": 2.28,
+              "probability": 0.9962791800498962
+            },
+            {
+              "word": "he",
+              "start": 2.5,
+              "end": 2.96,
+              "probability": 0.9580182433128357
+            },
+            {
+              "word": "has",
+              "start": 2.96,
+              "end": 3.1,
+              "probability": 0.9940028786659241
+            },
+            {
+              "word": "not",
+              "start": 3.1,
+              "end": 3.28,
+              "probability": 0.9979262351989746
+            },
+            {
+              "word": "offered",
+              "start": 3.28,
+              "end": 3.62,
+              "probability": 0.9963131546974182
+            },
+            {
+              "word": "a",
+              "start": 3.62,
+              "end": 3.78,
+              "probability": 0.9983223080635071
+            },
+            {
+              "word": "name",
+              "start": 3.78,
+              "end": 4.06,
+              "probability": 0.995591402053833
+            },
+            {
+              "word": "for",
+              "start": 4.06,
+              "end": 4.3,
+              "probability": 0.997547447681427
+            },
+            {
+              "word": "me.",
+              "start": 4.3,
+              "end": 4.48,
+              "probability": 0.9944445490837097
+            }
+          ],
+          "seconds": 14.566011208997224
+        },
+        {
+          "wav": "rook-04.wav",
+          "reference": "Probably 'easy target'.",
+          "recognized": "Probably Easy Target.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Probably",
+              "start": 0.0,
+              "end": 0.4,
+              "probability": 0.5375062227249146
+            },
+            {
+              "word": "Easy",
+              "start": 0.4,
+              "end": 0.78,
+              "probability": 0.04477215185761452
+            },
+            {
+              "word": "Target.",
+              "start": 0.78,
+              "end": 1.24,
+              "probability": 0.7313017249107361
+            }
+          ],
+          "seconds": 12.336000832990976
+        },
+        {
+          "wav": "rook-05.wav",
+          "reference": "That would be fair. I keep leaving the bread in the same place.",
+          "recognized": "That would be fair, I keep leaving the bread in the same place.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "That",
+              "start": 0.0,
+              "end": 0.12,
+              "probability": 0.9053491950035095
+            },
+            {
+              "word": "would",
+              "start": 0.12,
+              "end": 0.24,
+              "probability": 0.997297465801239
+            },
+            {
+              "word": "be",
+              "start": 0.24,
+              "end": 0.4,
+              "probability": 0.9996763467788696
+            },
+            {
+              "word": "fair,",
+              "start": 0.4,
+              "end": 0.76,
+              "probability": 0.9980344176292419
+            },
+            {
+              "word": "I",
+              "start": 0.96,
+              "end": 1.4,
+              "probability": 0.9907782077789307
+            },
+            {
+              "word": "keep",
+              "start": 1.4,
+              "end": 1.66,
+              "probability": 0.9981973767280579
+            },
+            {
+              "word": "leaving",
+              "start": 1.66,
+              "end": 1.92,
+              "probability": 0.9973948001861572
+            },
+            {
+              "word": "the",
+              "start": 1.92,
+              "end": 2.16,
+              "probability": 0.9951400756835938
+            },
+            {
+              "word": "bread",
+              "start": 2.16,
+              "end": 2.42,
+              "probability": 0.9907479286193848
+            },
+            {
+              "word": "in",
+              "start": 2.42,
+              "end": 2.82,
+              "probability": 0.992757260799408
+            },
+            {
+              "word": "the",
+              "start": 2.82,
+              "end": 2.92,
+              "probability": 0.9987509250640869
+            },
+            {
+              "word": "same",
+              "start": 2.92,
+              "end": 3.2,
+              "probability": 0.9996203184127808
+            },
+            {
+              "word": "place.",
+              "start": 3.2,
+              "end": 3.52,
+              "probability": 0.9991891980171204
+            }
+          ],
+          "seconds": 13.982039290989633
+        }
+      ],
+      "accepted": true,
+      "source_file_sha256": "22931656a104c7398c85cdc0ba6071df4b9764c6bc40d5bff2cce8b899a2165d"
+    },
+    {
+      "id": "losing_competition",
+      "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+      "word_timestamps": "Whisper decoder alignment estimates",
+      "max_wer": 0.2,
+      "turns": [
+        {
+          "wav": "losing_competition-00.wav",
+          "reference": "I came last in a race and want to throw my shoes away.",
+          "recognized": "I came last in a race and want to throw my shoes away.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "I",
+              "start": 0.0,
+              "end": 0.1,
+              "probability": 0.9668081998825073
+            },
+            {
+              "word": "came",
+              "start": 0.1,
+              "end": 0.26,
+              "probability": 0.9715607166290283
+            },
+            {
+              "word": "last",
+              "start": 0.26,
+              "end": 0.52,
+              "probability": 0.999377429485321
+            },
+            {
+              "word": "in",
+              "start": 0.52,
+              "end": 0.82,
+              "probability": 0.9988937973976135
+            },
+            {
+              "word": "a",
+              "start": 0.82,
+              "end": 0.86,
+              "probability": 0.9990068078041077
+            },
+            {
+              "word": "race",
+              "start": 0.86,
+              "end": 1.14,
+              "probability": 0.9995102882385254
+            },
+            {
+              "word": "and",
+              "start": 1.14,
+              "end": 1.56,
+              "probability": 0.5334903597831726
+            },
+            {
+              "word": "want",
+              "start": 1.56,
+              "end": 1.78,
+              "probability": 0.986700177192688
+            },
+            {
+              "word": "to",
+              "start": 1.78,
+              "end": 1.88,
+              "probability": 0.9838767647743225
+            },
+            {
+              "word": "throw",
+              "start": 1.88,
+              "end": 2.08,
+              "probability": 0.9994578957557678
+            },
+            {
+              "word": "my",
+              "start": 2.08,
+              "end": 2.22,
+              "probability": 0.9994039535522461
+            },
+            {
+              "word": "shoes",
+              "start": 2.22,
+              "end": 2.48,
+              "probability": 0.9993533492088318
+            },
+            {
+              "word": "away.",
+              "start": 2.48,
+              "end": 2.76,
+              "probability": 0.9994475245475769
+            }
+          ],
+          "seconds": 8.029724459003774
+        },
+        {
+          "wav": "losing_competition-01.wav",
+          "reference": "Keep the shoes for tonight. You're disappointed, and you don't have to decide whether to run again while the disappointment is freshest.",
+          "recognized": "Keep the shoes for tonight. You're disappointed, and you don't have to decide whether to run again while the disappointment is freshest.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Keep",
+              "start": 0.0,
+              "end": 0.14,
+              "probability": 0.9558026790618896
+            },
+            {
+              "word": "the",
+              "start": 0.14,
+              "end": 0.3,
+              "probability": 0.9985443353652954
+            },
+            {
+              "word": "shoes",
+              "start": 0.3,
+              "end": 0.54,
+              "probability": 0.9969139099121094
+            },
+            {
+              "word": "for",
+              "start": 0.54,
+              "end": 0.86,
+              "probability": 0.999321460723877
+            },
+            {
+              "word": "tonight.",
+              "start": 0.86,
+              "end": 1.14,
+              "probability": 0.9993228912353516
+            },
+            {
+              "word": "You're",
+              "start": 1.44,
+              "end": 2.0,
+              "probability": 0.9956316351890564
+            },
+            {
+              "word": "disappointed,",
+              "start": 2.0,
+              "end": 2.5,
+              "probability": 0.9964988231658936
+            },
+            {
+              "word": "and",
+              "start": 2.78,
+              "end": 3.36,
+              "probability": 0.9982256293296814
+            },
+            {
+              "word": "you",
+              "start": 3.36,
+              "end": 3.46,
+              "probability": 0.999626874923706
+            },
+            {
+              "word": "don't",
+              "start": 3.46,
+              "end": 3.74,
+              "probability": 0.9996906220912933
+            },
+            {
+              "word": "have",
+              "start": 3.74,
+              "end": 3.8,
+              "probability": 0.9996954202651978
+            },
+            {
+              "word": "to",
+              "start": 3.8,
+              "end": 4.04,
+              "probability": 0.9998111128807068
+            },
+            {
+              "word": "decide",
+              "start": 4.04,
+              "end": 4.38,
+              "probability": 0.9995871186256409
+            },
+            {
+              "word": "whether",
+              "start": 4.38,
+              "end": 4.8,
+              "probability": 0.9993354678153992
+            },
+            {
+              "word": "to",
+              "start": 4.8,
+              "end": 5.0,
+              "probability": 0.9998420476913452
+            },
+            {
+              "word": "run",
+              "start": 5.0,
+              "end": 5.22,
+              "probability": 0.9997969269752502
+            },
+            {
+              "word": "again",
+              "start": 5.22,
+              "end": 5.48,
+              "probability": 0.9998014569282532
+            },
+            {
+              "word": "while",
+              "start": 5.48,
+              "end": 6.08,
+              "probability": 0.9632465839385986
+            },
+            {
+              "word": "the",
+              "start": 6.08,
+              "end": 6.22,
+              "probability": 0.9993689656257629
+            },
+            {
+              "word": "disappointment",
+              "start": 6.22,
+              "end": 6.62,
+              "probability": 0.9990957975387573
+            },
+            {
+              "word": "is",
+              "start": 6.62,
+              "end": 7.24,
+              "probability": 0.9997197985649109
+            },
+            {
+              "word": "freshest.",
+              "start": 7.24,
+              "end": 7.84,
+              "probability": 0.9994155764579773
+            }
+          ],
+          "seconds": 9.273580084001878
+        },
+        {
+          "wav": "losing_competition-02.wav",
+          "reference": "Everyone saw me lose.",
+          "recognized": "Everyone Saw Me Lose.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Everyone",
+              "start": 0.0,
+              "end": 0.34,
+              "probability": 0.7263742685317993
+            },
+            {
+              "word": "Saw",
+              "start": 0.34,
+              "end": 0.58,
+              "probability": 0.07002921402454376
+            },
+            {
+              "word": "Me",
+              "start": 0.58,
+              "end": 0.7,
+              "probability": 0.9793592691421509
+            },
+            {
+              "word": "Lose.",
+              "start": 0.7,
+              "end": 1.06,
+              "probability": 0.9979408979415894
+            }
+          ],
+          "seconds": 7.819686874994659
+        },
+        {
+          "wav": "losing_competition-03.wav",
+          "reference": "Yes, they saw you finish last. That is a smaller fact than the story that everyone now thinks you're worthless.",
+          "recognized": "Yes, they saw you finish last. That is a smaller fact than the story that everyone now thinks you're worthless.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Yes,",
+              "start": 0.0,
+              "end": 0.26,
+              "probability": 0.9391424059867859
+            },
+            {
+              "word": "they",
+              "start": 0.26,
+              "end": 0.5,
+              "probability": 0.9976809024810791
+            },
+            {
+              "word": "saw",
+              "start": 0.5,
+              "end": 0.8,
+              "probability": 0.9994608759880066
+            },
+            {
+              "word": "you",
+              "start": 0.8,
+              "end": 0.92,
+              "probability": 0.9993676543235779
+            },
+            {
+              "word": "finish",
+              "start": 0.92,
+              "end": 1.22,
+              "probability": 0.9946942925453186
+            },
+            {
+              "word": "last.",
+              "start": 1.22,
+              "end": 1.6,
+              "probability": 0.9993041753768921
+            },
+            {
+              "word": "That",
+              "start": 1.86,
+              "end": 2.4,
+              "probability": 0.9946537017822266
+            },
+            {
+              "word": "is",
+              "start": 2.4,
+              "end": 2.56,
+              "probability": 0.9981051683425903
+            },
+            {
+              "word": "a",
+              "start": 2.56,
+              "end": 2.66,
+              "probability": 0.9989055395126343
+            },
+            {
+              "word": "smaller",
+              "start": 2.66,
+              "end": 3.02,
+              "probability": 0.9993839263916016
+            },
+            {
+              "word": "fact",
+              "start": 3.02,
+              "end": 3.42,
+              "probability": 0.9991604089736938
+            },
+            {
+              "word": "than",
+              "start": 3.42,
+              "end": 3.9,
+              "probability": 0.9938487410545349
+            },
+            {
+              "word": "the",
+              "start": 3.9,
+              "end": 4.0,
+              "probability": 0.999521017074585
+            },
+            {
+              "word": "story",
+              "start": 4.0,
+              "end": 4.36,
+              "probability": 0.9993512034416199
+            },
+            {
+              "word": "that",
+              "start": 4.36,
+              "end": 4.82,
+              "probability": 0.9954332113265991
+            },
+            {
+              "word": "everyone",
+              "start": 4.82,
+              "end": 5.18,
+              "probability": 0.9975086450576782
+            },
+            {
+              "word": "now",
+              "start": 5.18,
+              "end": 5.6,
+              "probability": 0.9990953207015991
+            },
+            {
+              "word": "thinks",
+              "start": 5.6,
+              "end": 5.98,
+              "probability": 0.9989435076713562
+            },
+            {
+              "word": "you're",
+              "start": 5.98,
+              "end": 6.26,
+              "probability": 0.9969473779201508
+            },
+            {
+              "word": "worthless.",
+              "start": 6.26,
+              "end": 6.62,
+              "probability": 0.9985823631286621
+            }
+          ],
+          "seconds": 8.706231749994913
+        }
+      ],
+      "accepted": true,
+      "source_file_sha256": "6386ef57b49f0d5dc11c8e71241e4a4d31007cc4e610ae89fa4717cfc2df74bb"
+    },
+    {
+      "id": "unwanted_gift",
+      "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+      "word_timestamps": "Whisper decoder alignment estimates",
+      "max_wer": 0.2,
+      "turns": [
+        {
+          "wav": "unwanted_gift-00.wav",
+          "reference": "My mother gave me a vase I hate. Must I keep it forever?",
+          "recognized": "My mother gave me a vase I hate. Must I keep it forever?",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "My",
+              "start": 0.0,
+              "end": 0.12,
+              "probability": 0.8827784061431885
+            },
+            {
+              "word": "mother",
+              "start": 0.12,
+              "end": 0.36,
+              "probability": 0.9872286319732666
+            },
+            {
+              "word": "gave",
+              "start": 0.36,
+              "end": 0.6,
+              "probability": 0.9991787075996399
+            },
+            {
+              "word": "me",
+              "start": 0.6,
+              "end": 0.82,
+              "probability": 0.9987874627113342
+            },
+            {
+              "word": "a",
+              "start": 0.82,
+              "end": 0.92,
+              "probability": 0.9987773299217224
+            },
+            {
+              "word": "vase",
+              "start": 0.92,
+              "end": 1.16,
+              "probability": 0.9992725253105164
+            },
+            {
+              "word": "I",
+              "start": 1.16,
+              "end": 1.42,
+              "probability": 0.9800967574119568
+            },
+            {
+              "word": "hate.",
+              "start": 1.42,
+              "end": 1.78,
+              "probability": 0.9978467226028442
+            },
+            {
+              "word": "Must",
+              "start": 2.02,
+              "end": 2.5,
+              "probability": 0.9978547692298889
+            },
+            {
+              "word": "I",
+              "start": 2.5,
+              "end": 2.68,
+              "probability": 0.9994916915893555
+            },
+            {
+              "word": "keep",
+              "start": 2.68,
+              "end": 2.92,
+              "probability": 0.9997532963752747
+            },
+            {
+              "word": "it",
+              "start": 2.92,
+              "end": 3.04,
+              "probability": 0.9996891021728516
+            },
+            {
+              "word": "forever?",
+              "start": 3.04,
+              "end": 3.32,
+              "probability": 0.9912368059158325
+            }
+          ],
+          "seconds": 8.083778000000166
+        },
+        {
+          "wav": "unwanted_gift-01.wav",
+          "reference": "You can appreciate that she thought of you without giving the vase permanent ownership of your shelf.",
+          "recognized": "You can appreciate that she thought of you without giving the vase permanent ownership of your shelf.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "You",
+              "start": 0.0,
+              "end": 0.1,
+              "probability": 0.4185057580471039
+            },
+            {
+              "word": "can",
+              "start": 0.1,
+              "end": 0.18,
+              "probability": 0.9996157884597778
+            },
+            {
+              "word": "appreciate",
+              "start": 0.18,
+              "end": 0.66,
+              "probability": 0.9996044039726257
+            },
+            {
+              "word": "that",
+              "start": 0.66,
+              "end": 1.1,
+              "probability": 0.9973112344741821
+            },
+            {
+              "word": "she",
+              "start": 1.1,
+              "end": 1.26,
+              "probability": 0.9978793859481812
+            },
+            {
+              "word": "thought",
+              "start": 1.26,
+              "end": 1.54,
+              "probability": 0.9984649419784546
+            },
+            {
+              "word": "of",
+              "start": 1.54,
+              "end": 1.76,
+              "probability": 0.9994526505470276
+            },
+            {
+              "word": "you",
+              "start": 1.76,
+              "end": 1.96,
+              "probability": 0.9996017813682556
+            },
+            {
+              "word": "without",
+              "start": 1.96,
+              "end": 2.66,
+              "probability": 0.9634556770324707
+            },
+            {
+              "word": "giving",
+              "start": 2.66,
+              "end": 3.0,
+              "probability": 0.9993367791175842
+            },
+            {
+              "word": "the",
+              "start": 3.0,
+              "end": 3.26,
+              "probability": 0.9982652068138123
+            },
+            {
+              "word": "vase",
+              "start": 3.26,
+              "end": 3.5,
+              "probability": 0.9945631623268127
+            },
+            {
+              "word": "permanent",
+              "start": 3.5,
+              "end": 4.06,
+              "probability": 0.9959115982055664
+            },
+            {
+              "word": "ownership",
+              "start": 4.06,
+              "end": 4.72,
+              "probability": 0.9994602799415588
+            },
+            {
+              "word": "of",
+              "start": 4.72,
+              "end": 5.3,
+              "probability": 0.9981573224067688
+            },
+            {
+              "word": "your",
+              "start": 5.3,
+              "end": 5.42,
+              "probability": 0.9920935034751892
+            },
+            {
+              "word": "shelf.",
+              "start": 5.42,
+              "end": 5.68,
+              "probability": 0.9938701391220093
+            }
+          ],
+          "seconds": 8.241123332991265
+        },
+        {
+          "wav": "unwanted_gift-02.wav",
+          "reference": "She'll ask where it is.",
+          "recognized": "She'll ask where it is.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "She'll",
+              "start": 0.0,
+              "end": 0.22,
+              "probability": 0.9019102156162262
+            },
+            {
+              "word": "ask",
+              "start": 0.22,
+              "end": 0.48,
+              "probability": 0.9988386034965515
+            },
+            {
+              "word": "where",
+              "start": 0.48,
+              "end": 0.7,
+              "probability": 0.9978688955307007
+            },
+            {
+              "word": "it",
+              "start": 0.7,
+              "end": 0.82,
+              "probability": 0.9985666871070862
+            },
+            {
+              "word": "is.",
+              "start": 0.82,
+              "end": 1.02,
+              "probability": 0.9998366832733154
+            }
+          ],
+          "seconds": 7.6362458749936195
+        },
+        {
+          "wav": "unwanted_gift-03.wav",
+          "reference": "Then you may need a kind, honest answer. Hiding it for ten years sounds like rather a large task for one vase.",
+          "recognized": "Then you may need a kind, honest answer. Hiding it for ten years sounds like rather a large task for one vase.",
+          "wer": 0.0,
+          "accepted": true,
+          "words": [
+            {
+              "word": "Then",
+              "start": 0.0,
+              "end": 0.1,
+              "probability": 0.5620018839836121
+            },
+            {
+              "word": "you",
+              "start": 0.1,
+              "end": 0.22,
+              "probability": 0.9922943115234375
+            },
+            {
+              "word": "may",
+              "start": 0.22,
+              "end": 0.36,
+              "probability": 0.9983250498771667
+            },
+            {
+              "word": "need",
+              "start": 0.36,
+              "end": 0.56,
+              "probability": 0.9995087385177612
+            },
+            {
+              "word": "a",
+              "start": 0.56,
+              "end": 0.7,
+              "probability": 0.9982442855834961
+            },
+            {
+              "word": "kind,",
+              "start": 0.7,
+              "end": 1.14,
+              "probability": 0.9964362382888794
+            },
+            {
+              "word": "honest",
+              "start": 1.32,
+              "end": 1.78,
+              "probability": 0.9997033476829529
+            },
+            {
+              "word": "answer.",
+              "start": 1.78,
+              "end": 2.34,
+              "probability": 0.9961744546890259
+            },
+            {
+              "word": "Hiding",
+              "start": 2.8200000000000003,
+              "end": 3.26,
+              "probability": 0.9838983118534088
+            },
+            {
+              "word": "it",
+              "start": 3.26,
+              "end": 3.42,
+              "probability": 0.9987660646438599
+            },
+            {
+              "word": "for",
+              "start": 3.42,
+              "end": 3.56,
+              "probability": 0.9994391798973083
+            },
+            {
+              "word": "ten",
+              "start": 3.56,
+              "end": 3.72,
+              "probability": 0.6346092820167542
+            },
+            {
+              "word": "years",
+              "start": 3.72,
+              "end": 4.1,
+              "probability": 0.9989670515060425
+            },
+            {
+              "word": "sounds",
+              "start": 4.1,
+              "end": 4.68,
+              "probability": 0.9912011623382568
+            },
+            {
+              "word": "like",
+              "start": 4.68,
+              "end": 5.06,
+              "probability": 0.9918273687362671
+            },
+            {
+              "word": "rather",
+              "start": 5.06,
+              "end": 5.42,
+              "probability": 0.9917359948158264
+            },
+            {
+              "word": "a",
+              "start": 5.42,
+              "end": 5.64,
+              "probability": 0.9989581108093262
+            },
+            {
+              "word": "large",
+              "start": 5.64,
+              "end": 5.92,
+              "probability": 0.9983382225036621
+            },
+            {
+              "word": "task",
+              "start": 5.92,
+              "end": 6.3,
+              "probability": 0.9993559718132019
+            },
+            {
+              "word": "for",
+              "start": 6.3,
+              "end": 6.64,
+              "probability": 0.9976894855499268
+            },
+            {
+              "word": "one",
+              "start": 6.64,
+              "end": 6.8,
+              "probability": 0.9501355290412903
+            },
+            {
+              "word": "vase.",
+              "start": 6.8,
+              "end": 7.0,
+              "probability": 0.9196515679359436
+            }
+          ],
+          "seconds": 8.966237209009705
+        }
+      ],
+      "accepted": true,
+      "source_file_sha256": "48c8a5471db9f7b625542593d5d82039828f10f7243f1e3ba36c3d82e09460c7"
+    }
+  ]
+}

@@ -97,7 +97,7 @@ def loss(model, streams, text_padding_weight=0.5, audio_weight=1.0):
     text_valid = (text_target >= 0) & (text_target < model.cfg.text_out_vocab_size)
     # Official defaults: 3 padding, 0 end-of-padding; both receive reduced weight.
     text_weights = mx.where((text_target == 3) | (text_target == 0), text_padding_weight, 1.0) * text_valid
-    text_ce = nn.losses.cross_entropy(text_logits, mx.clip(text_target, 0, model.cfg.text_out_vocab_size - 1))
+    text_ce = nn.losses.cross_entropy(text_logits.astype(mx.float32), mx.clip(text_target, 0, model.cfg.text_out_vocab_size - 1))
     text_loss = (text_ce * text_weights).sum() / mx.maximum(text_weights.sum(), 1)
     if audio_weight == 0:
         return text_loss
@@ -105,7 +105,7 @@ def loss(model, streams, text_padding_weight=0.5, audio_weight=1.0):
     audio_targets = targets[:, 1:1 + model.dep_q]
     valid = (audio_targets >= 0) & (audio_targets < model.cfg.audio_vocab_size - 1)
     safe = mx.clip(audio_targets, 0, model.cfg.audio_vocab_size - 2)
-    ce = nn.losses.cross_entropy(audio_logits, safe)
+    ce = nn.losses.cross_entropy(audio_logits.astype(mx.float32), safe)
     # Preserve the official semantic-codebook emphasis without inflating total scale.
     weights = mx.array([100.0] + [1.0] * (model.dep_q - 1))[None, :, None] * valid
     audio_loss = (ce * weights).sum() / mx.maximum(weights.sum(), 1)

@@ -29,8 +29,14 @@ def main():
     p.add_argument('--baseline',type=Path,default=Path('results/baseline.json'))
     p.add_argument('--output',type=Path)
     args=p.parse_args()
-    result=gate(json.loads(args.transcript.read_text()),json.loads(args.review.read_text()),
-                json.loads(args.baseline.read_text())['validation_loss'])
+    transcript=json.loads(args.transcript.read_text())
+    baseline=json.loads(args.baseline.read_text())
+    for key,default in [('model',None),('loss_version','legacy')]:
+        if transcript.get(key,default)!=baseline.get(key,default):
+            raise ValueError(f'Incomparable baseline: {key} differs')
+    if baseline.get('serialization_sha256') and transcript.get('serialization_sha256')!=baseline['serialization_sha256']:
+        raise ValueError('Incomparable serialization fingerprints')
+    result=gate(transcript,json.loads(args.review.read_text()),baseline['validation_loss'])
     encoded=json.dumps(result,indent=2)+'\n'
     if args.output: args.output.write_text(encoded)
     print(encoded,end='')

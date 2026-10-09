@@ -1,5 +1,5 @@
 {
-  "status": "Prepared training design; no speech training performed",
+  "status": "Local synthetic audio and ASR alignment pilot completed; native forward and frozen-prefix gradient parity verified on a small test model; no speech adapter trained yet.",
   "preferred_character_speech_candidate": "nvidia/personaplex-7b-v1",
   "first_reproducible_training_baseline": "kyutai/moshiko-pytorch-bf16 with official moshi-finetune",
   "reason": "PersonaPlex role conditioning is well matched to the desired experience, but official Moshi LoRA training is directly documented. Do not assume checkpoint interchangeability without a strict weight/config compatibility test.",
@@ -51,6 +51,9 @@
     "foundation": "kyutai/moshiko-mlx-q4",
     "hypothesis": "Frozen quantized weights, precomputed Mimi codes, short sequences, small LoRA adapters may fit; unverified until actual memory and training tests.",
     "implementation": "Official moshi_mlx inference needs a causal teacher-forced training forward; verify against tokenwise streaming outputs before training.",
-    "status": "Investigating"
-  }
+    "status": "Investigating",
+    "strategy": "Cache frozen embeddings and first 28 temporal layers; unload them; train four-layer suffix LoRA and text head using joint text/audio CE; export adapter names back to the complete native streaming model.",
+    "implementation_check": "results/moshi-forward-check.json"
+  },
+  "selected_local_candidate": "kyutai/moshiko-mlx-q4"
 }

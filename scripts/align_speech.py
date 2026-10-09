@@ -8,6 +8,8 @@ import json
 from pathlib import Path
 import re
 import time
+import subprocess
+import numpy as np
 from faster_whisper import WhisperModel
 
 
@@ -41,7 +43,12 @@ def main():
                'max_wer':args.max_wer,'turns':[],'accepted':True}
         for turn in row['turns']:
             start=time.monotonic()
-            segments,info=model.transcribe(str(manifest.parent/turn['wav']),language='en',
+            # PyAV 19 removed a keyword still used by faster-whisper 1.2.1.
+            # Supplying decoded 16 kHz samples bypasses that incompatible adapter.
+            pcm=subprocess.check_output(['ffmpeg','-v','error','-i',str(manifest.parent/turn['wav']),
+                                         '-f','f32le','-ac','1','-ar','16000','-'])
+            samples=np.frombuffer(pcm,dtype='<f4').copy()
+            segments,info=model.transcribe(samples,language='en',
                 beam_size=1,word_timestamps=True,vad_filter=False,condition_on_previous_text=False,
                 initial_prompt='The speaker names in these recordings include Jun and Mara.')
             segments=list(segments)

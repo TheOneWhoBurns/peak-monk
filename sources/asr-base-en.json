@@ -1,0 +1,86 @@
+{
+  "_id": "655f2140e1b6d15cfe9deff7",
+  "id": "Systran/faster-whisper-base.en",
+  "private": false,
+  "pipeline_tag": "automatic-speech-recognition",
+  "library_name": "ctranslate2",
+  "tags": [
+    "ctranslate2",
+    "audio",
+    "automatic-speech-recognition",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "downloads": 569399,
+  "likes": 8,
+  "modelId": "Systran/faster-whisper-base.en",
+  "author": "Systran",
+  "sha": "3d3d5dee26484f91867d81cb899cfcf72b96be6c",
+  "lastModified": "2023-11-23T11:03:52.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {},
+  "cardData": {
+    "language": [
+      "en"
+    ],
+    "tags": [
+      "audio",
+      "automatic-speech-recognition"
+    ],
+    "license": "mit",
+    "library_name": "ctranslate2"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "c7d9f3332a950355d5a77d85000f05e6f45435ea",
+      "size": 1477
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "9ee8023dc11d4d835bd6bf2e0a88dc9a2b652e6b",
+      "size": 1323
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "594369787efe617005d199b03739ee0ead7e3ab7",
+      "size": 2227
+    },
+    {
+      "rfilename": "model.bin",
+      "blobId": "9da2bff17ae4c4cd79c81e40466e817d5f56e57a",
+      "size": 145216508,
+      "lfs": {
+        "sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef",
+        "size": 145216508,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "tokenizer.json",
+      "blobId": "15d7bdf9ba25718ca2504eec6a8f02bc55af0a6a",
+      "size": 2128466
+    },
+    {
+      "rfilename": "vocabulary.txt",
+      "blobId": "ee695b8d3e3c10d488304e04468efec4ca27554a",
+      "size": 422309
+    }
+  ],
+  "spaces": [
+    "tardellirs/model-pulse",
+    "gobeldan/Fast-Whisper-Small-Webui",
+    "mutisya/asr-comparison-whisper-vs-w2v-bert",
+    "AayDexterous/VoiceDiary",
+    "hbs2/dadk",
+    "jquinlangnr/911-urgency-prototype",
+    "miniwhite/Fast-Whisper-Small-Webui",
+    "Kuberwastaken/Whisper-Webui",
+    "bardd/whisper-timestamps-v2"
+  ],
+  "createdAt": "2023-11-23T09:54:08.000Z",
+  "usedStorage": 145216508
+}

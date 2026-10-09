@@ -56,6 +56,12 @@ def main():
         if path.exists(): continue
         audit=json.loads((manifest.parent/f"{row['id']}.alignment.json").read_text())
         assert audit['accepted'],row['id']
+        corrections=[c for c in approvals.get('word_corrections',[]) if c['id']==row['id']]
+        for correction in corrections:
+            turn=next(t for t in audit['turns'] if t['wav']==correction['wav'])
+            word=turn['words'][correction['word_index']]
+            assert word['word']==correction['asr_word']
+            word['word']=correction['replacement']
         # TTS manifest uses content; stitcher preserves these verbatim in provenance.
         pcm,placements=mix(row['turns'],manifest.parent)
         sf.write(audio_out/f"{row['id']}.wav",pcm,24000,subtype='PCM_16')
@@ -81,6 +87,7 @@ def main():
             seconds=frames*.08,encode_seconds=time.monotonic()-start,
             channel_order='text, agent audio codebooks 0-7, user audio codebooks 0-7',
             text_targets='Reviewed Whisper words with actual estimated timestamps',
+            applied_spelling_corrections=corrections,
             codec_sha256='09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50',
             file_sha256=hashlib.sha256(path.read_bytes()).hexdigest())
         path.with_suffix('.json').write_text(json.dumps(info,indent=2)+'\n')
