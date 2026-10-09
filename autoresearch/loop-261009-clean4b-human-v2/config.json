@@ -1,0 +1,10 @@
+{
+  "model": "models/stronger-clean",
+  "loss_version": "assistant_eos_v2",
+  "rubric_version": "human_character_v2",
+  "baseline_loss": 5.3405680656433105,
+  "baseline_note": "Validation loss is computed without persona text, even in the separate prompted-generation control. Identical tokenizer/template fingerprint required.",
+  "iterations": "unlimited",
+  "active_experiment": "run13",
+  "strategy": "Correct serialization; preserve competent instruction foundation with gentle SFT; preference optimization against measured character failures; compare against unaligned-base route."
+}

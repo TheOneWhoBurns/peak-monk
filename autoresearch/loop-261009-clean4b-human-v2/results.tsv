@@ -1,0 +1,5 @@
+# metric_direction: lower_is_better
+iteration	timestamp	commit	metric	delta	guard	guard-metric	status	description
+0	2026-10-09	ea57833	5.3405680656433105	0	pass	upstream clean template	baseline	No-system validation CE
+run12-step0374	2026-10-09	ea57833	2.7881009578704834	-2.552467107772827	fail	10/20 author review	discard	Not accepted; 374 checkpoint retained only as preference reference
+run12	2026-10-09	ea57833	2.7109808921813965	-2.629587173461914	fail	9/20 author review	discard	Not accepted; 374 checkpoint retained only as preference reference
