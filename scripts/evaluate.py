@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('--adapter')
+    p.add_argument('--model', default='models/base')
     p.add_argument('--suite', default='evaluation/dev.json')
     p.add_argument('--output', required=True)
     p.add_argument('--loss-only', action='store_true')
@@ -22,13 +23,14 @@ def main():
     p.add_argument('--max-tokens', type=int, default=160)
     args = p.parse_args()
     mx.random.seed(41)
-    model, tok = load(str(ROOT/'models/base'), adapter_path=args.adapter)
+    model, tok = load(str(ROOT/args.model), adapter_path=args.adapter)
     rows = [json.loads(l) for l in (ROOT/'data/prepared/valid.jsonl').read_text().splitlines()]
     start = time.monotonic()
     loss = evaluate(model, CacheDataset(ChatDataset(rows,tok,mask_prompt=True)),
                     batch_size=1,num_batches=-1,max_seq_length=768)
-    result = {'adapter': args.adapter, 'prompted': args.prompted,
+    result = {'model':args.model, 'adapter': args.adapter, 'prompted': args.prompted,
               'validation_loss': loss, 'loss_seconds': time.monotonic()-start,
+              'loss_comparison_note':'Compare loss only between identical base/tokenizer/template runs. Reference models may serialize differently; their conversation audit is the comparison.',
               'seed':41, 'temperature':0.0, 'max_tokens':args.max_tokens,
               'quality_scoring': 'Not yet scored; raw outputs for explicit rubric review.',
               'suite': args.suite, 'suite_sha256': hashlib.sha256((ROOT/args.suite).read_bytes()).hexdigest(),
@@ -48,7 +50,7 @@ def main():
         captured = dict(case, responses=[], messages=[])
         for user in case['turns']:
             messages.append({'role':'user','content':user})
-            prompt = tok.apply_chat_template(messages,add_generation_prompt=True,tokenize=False)
+            prompt = tok.apply_chat_template(messages,add_generation_prompt=True,tokenize=False,enable_thinking=False)
             start = time.monotonic()
             first = None
             text = ''

@@ -9,6 +9,7 @@
   "iterations": "unlimited",
   "verify": ".venv/bin/python scripts/evaluate.py --adapter adapters/run01 --output results/run01.json",
   "guard": ".venv/bin/python -m pytest -q; explicit conversation rubric review",
-  "baseline_status": "pending model download",
-  "note": "Learning rate/steps/data changed one experiment at a time; no automatic claims from loss alone."
+  "baseline_status": "measured",
+  "note": "Learning rate/steps/data changed one experiment at a time; no automatic claims from loss alone.",
+  "baseline_loss": 4.60586404800415
 }

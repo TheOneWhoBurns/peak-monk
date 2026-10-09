@@ -5,11 +5,20 @@ import os
 from pathlib import Path
 import shutil
 import urllib.request
+import argparse
 
-root=Path(__file__).resolve().parents[1]/'models/base'
-sha='0dfefefebd85dd75e4c42330e27da8b628f36c9198ca873b628710e9d4139db0'
-size=968080210
-url='https://huggingface.co/johnlakness/Qwen3-1.7B-Base-mlx-4Bit/resolve/ccbac499d70a93105c0e96618dd40564f577afa2/model.safetensors'
+p=argparse.ArgumentParser()
+p.add_argument('--repo',default='johnlakness/Qwen3-1.7B-Base-mlx-4Bit')
+p.add_argument('--revision',default='ccbac499d70a93105c0e96618dd40564f577afa2')
+p.add_argument('--sha256',default='0dfefefebd85dd75e4c42330e27da8b628f36c9198ca873b628710e9d4139db0')
+p.add_argument('--size',type=int,default=968080210)
+p.add_argument('--destination',default='models/base')
+args=p.parse_args()
+root=Path(__file__).resolve().parents[1]/args.destination
+root.mkdir(parents=True,exist_ok=True)
+sha=args.sha256
+size=args.size
+url=f'https://huggingface.co/{args.repo}/resolve/{args.revision}/model.safetensors'
 dest=root/'model.safetensors'
 if dest.exists():
     raise SystemExit('Destination exists; refusing overwrite')
@@ -50,5 +59,6 @@ with dest.open('rb') as f:
 assert actual==sha, (actual,sha)
 # Teach HF's local cache that the independently verified artifact is complete.
 metadata=root/'.cache/huggingface/download/model.safetensors.metadata'
-metadata.write_text('ccbac499d70a93105c0e96618dd40564f577afa2\n'+sha+'\n'+str(__import__('time').time())+'\n')
+metadata.parent.mkdir(parents=True,exist_ok=True)
+metadata.write_text(args.revision+'\n'+sha+'\n'+str(__import__('time').time())+'\n')
 print('Verified upstream SHA256:',actual,flush=True)
