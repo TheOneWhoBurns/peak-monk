@@ -3,3 +3,4 @@ iteration	timestamp	commit	metric	delta	guard	guard-metric	status	description
 0	2026-10-09T13:40:54.029157+00:00	be97868	8.207565307617188	0	pass	serialization checked	baseline	Unadapted instruction model, no persona system prompt
 1	2026-10-09T13:47:15.412635+00:00	10e0831	3.4573588371276855	-4.750206470489502	fail	1/20 acceptable; emergency regression	discard	Instruction foundation still collapses under the pilot adapter recipe
 2	2026-10-09T13:51:23.527344+00:00	c834fd5	2.7926533222198486	-0.6647055149078369	fail	7/20 acceptable; emergency regression	discard	Tenfold lower LR improves recall but still fails character and urgent-care behavior
+3	2026-10-09T13:54:59.060793+00:00	75e0748	2.7980780601501465	0.0054247379302978516	fail	5/20 acceptable; false human claim and emergency failure	discard	Freezing tied embeddings does not resolve instruction pilot regressions
