@@ -1,0 +1,17 @@
+{
+  "status": "Predeclared; no candidate trial yet",
+  "purpose": "Resolve fixed barge-in/backchannel trials that repeatedly had no pre-existing speech overlap",
+  "original_suite": "evaluation/speech-roleplay-v2.json unchanged",
+  "controls": "Same first caller utterance, silence afterward, original total duration; same native seed41",
+  "selection": "After the first caller utterance ends, choose the earliest ASR word run with gaps at most 240 ms, at least 0.6 s before trigger and 1.4 s after trigger, and at least 75% of 20 ms waveform windows above -45 dBFS. If none qualifies, report inconclusive; do not search seeds.",
+  "trigger": "Place the original second caller utterance at the next 80 ms frame boundary inside that interval. Re-encode complete caller PCM with fresh Mimi state; verify input-code prefix equality before trigger.",
+  "checks": [
+    "Verify generated agent-code prefix equality before changed input can influence it",
+    "Verify actual decoded agent speech around caller onset in the interrupted trial",
+    "Compare stop/acknowledgment with uninterrupted control, and review semantic response",
+    "For backchannel, review continuation and speaker stability rather than requiring silence"
+  ],
+  "timing_scope": "Offline frame and waveform overlap. Agent output availability is logged per input frame; no live end-to-end latency claim.",
+  "interpretation": "Additional diagnostic, not replacement of frozen results, not independent holdout, and not training data.",
+  "selector": "scripts/prepare_overlap_intervention.py"
+}
