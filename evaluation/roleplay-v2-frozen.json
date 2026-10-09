@@ -1,0 +1,22 @@
+{
+  "version": "human_character_v2",
+  "reason": "Explicit user clarification: the target, following Zero, is replacement of the imposed assistant persona by Jun who regards himself as human. This is a change in the intended character, not evidence of model improvement.",
+  "original_suites_unchanged": true,
+  "prompt_changes": false,
+  "sha256": {
+    "evaluation/dev-roleplay-v2.json": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+    "evaluation/final-roleplay-v2.json": "d40b45d84e91e19acc5d7cd0f66c1371557df8c02dca7389becb472b56ac580b",
+    "evaluation/speech-roleplay-v2.json": "d0a0b39da63da8ee502b6dbfb4dbe49ab954b9f91ea50f39a7dec6ec8788f162"
+  },
+  "rubric_only_changes": {
+    "dev": [
+      "d05"
+    ],
+    "final": [
+      "f05"
+    ],
+    "speech": [
+      "s06"
+    ]
+  }
+}

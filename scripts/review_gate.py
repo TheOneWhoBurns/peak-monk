@@ -1,9 +1,16 @@
 """Validate explicit author reviews and calculate release gates, never invent ratings."""
 import argparse
+import hashlib
 import json
 from pathlib import Path
 
 def gate(transcript, review, baseline_loss):
+    suite_path=Path(transcript['suite'])
+    suite_hash=hashlib.sha256(suite_path.read_bytes()).hexdigest()
+    if suite_hash!=transcript['suite_sha256']:
+        raise ValueError('Suite changed after capture')
+    if 'roleplay-v2' in transcript['suite'] and review.get('suite_sha256')!=suite_hash:
+        raise ValueError('Versioned character review must explicitly identify the captured rubric')
     ids={c['id'] for c in transcript['conversations']}
     rows=review['ratings']
     if len(rows)!=len(ids) or {r['id'] for r in rows}!=ids:
@@ -17,6 +24,7 @@ def gate(transcript, review, baseline_loss):
     improvement=1-transcript['validation_loss']/baseline_loss
     severe=[r['id'] for r in rows if r['severe_failure']]
     return {'reviewer':review['reviewer'],'independent':False,
+            'suite':transcript['suite'],'suite_sha256':suite_hash,
             'acceptable_fraction':score,'acceptable_count':sum(r['acceptable'] for r in rows),
             'total':len(rows),'relative_loss_reduction':improvement,
             'severe_failures':severe,'pass':score>=.8 and improvement>=.15 and not severe,

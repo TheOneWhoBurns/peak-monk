@@ -1,0 +1,18 @@
+{
+  "model": "models/base",
+  "adapter": null,
+  "prompted": false,
+  "serialization_sha256": "21a5d6f3b4a1672a60dc3fcdb1a6acaba379b73ccf45d0df69329da8acdc600c",
+  "persona_file": null,
+  "validation_loss": 4.351288795471191,
+  "loss_version": "assistant_eos_v2",
+  "loss_seconds": 4.792964207998011,
+  "loss_comparison_note": "Compare loss only between identical base/tokenizer/template runs. Reference models may serialize differently; their conversation audit is the comparison.",
+  "seed": 41,
+  "temperature": 0.0,
+  "max_tokens": 160,
+  "quality_scoring": "Not yet scored; raw outputs for explicit rubric review.",
+  "suite": "evaluation/dev-roleplay-v2.json",
+  "suite_sha256": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+  "conversations": []
+}

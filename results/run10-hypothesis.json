@@ -1,0 +1,12 @@
+{
+  "hypothesis": "Return to unaligned base model with corrected assistant-through-EOS loss, human character supervision, full-depth low-scale adapters plus tied-embedding adaptation, and 12 long conversations. This is a joint recipe change based on failures, not a one-variable causal attribution.",
+  "training": "1496 microsteps = four passes over 374 assistant prefixes; accumulation 4; full-depth rank 16 direct scale 2; learning rate 5e-5.",
+  "acceptance": "Unprompted human-character-v2 dev review plus comparable base-v2 validation loss. No inference-time character prompt.",
+  "generated_teacher_records_included": false,
+  "data": {
+    "original_conversations": 110,
+    "new_long_conversations": 12,
+    "assistant_prefixes": 374
+  },
+  "final_audit": "Remain unused until development passes; no training on final cases."
+}

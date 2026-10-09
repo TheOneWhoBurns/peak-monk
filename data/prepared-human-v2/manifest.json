@@ -1,0 +1,18 @@
+{
+  "sha256": {
+    "data/seeds.txt": "3533c42fe80e266f0211cc37094211d46f992aca7ea975e1ccdfa5cbebd71f05",
+    "data/validation.txt": "420a568d1234af0bd7ae036355fe5aad7de6e17c7c24a1a903b47c2935a01f43",
+    "evaluation/dev.json": "8107637b199b2745be67a4b667e04b3b82027a832b04865730a2902bd5f11831",
+    "evaluation/final.json": "e0554f9496ca387aedfb14c09573a9aa847592bf08cff7f5ab86bd107ac72850",
+    "character/core.md": "3a6fe0d0c369767ffbf07ba4a6feb761d6e36989d07fb2f0fa15f87fe9dd691b",
+    "sources/manifest.json": "a37b56b4e3d37c37a58abc5fb56b5dd82ad85cf3330b132f5cd5d7d0fe93b787",
+    "data/augmentation_pool.txt": "8975155f4945fa59861767c8efdd0ff91ff7702bf3d735cb5cd7b438229f6c80",
+    "data/character_overrides_v2.json": "f17f3a45c034f3fef632fdd3964fce696bb1891a0c9c327e0b5d919c558c585c"
+  },
+  "train_conversations": 110,
+  "train_assistant_turns": 254,
+  "validation_conversations": 12,
+  "validation_assistant_turns": 24,
+  "augmentation_included": true,
+  "split_policy": "Explicit scenario families before turn expansion; development and final prompts authored separately."
+}
