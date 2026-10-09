@@ -1,0 +1,7 @@
+{
+  "command": ".venv/bin/python: mx.set_default_device(mx.cpu); pytest.main([\"-q\"])",
+  "result": "20 passed",
+  "seconds": 7.78,
+  "source_commit": "52676da",
+  "scope": "CPU execution of existing repository implementation, integrity and gate tests. Not a large-model behavior result."
+}

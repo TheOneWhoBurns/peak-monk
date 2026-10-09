@@ -1,0 +1,80 @@
+{
+  "training_completion": {
+    "kind": "completion",
+    "steps": 160,
+    "seconds": 3623.9843071669893,
+    "baseline_loss": 2.615679928698254,
+    "best_loss": 1.8933537934523097,
+    "peak_memory_bytes": 5496838536
+  },
+  "validation": [
+    {
+      "kind": "validation",
+      "step": 0,
+      "frame_weighted_episode_loss": 2.615679928698254,
+      "peak_memory_bytes": 5388193316
+    },
+    {
+      "kind": "validation",
+      "step": 20,
+      "frame_weighted_episode_loss": 2.093902074273831,
+      "peak_memory_bytes": 5456557640
+    },
+    {
+      "kind": "validation",
+      "step": 40,
+      "frame_weighted_episode_loss": 1.94285414872282,
+      "peak_memory_bytes": 5496838536
+    },
+    {
+      "kind": "validation",
+      "step": 60,
+      "frame_weighted_episode_loss": 1.8933537934523097,
+      "peak_memory_bytes": 5496838536
+    },
+    {
+      "kind": "validation",
+      "step": 80,
+      "frame_weighted_episode_loss": 1.9216657792591572,
+      "peak_memory_bytes": 5496838536
+    },
+    {
+      "kind": "validation",
+      "step": 100,
+      "frame_weighted_episode_loss": 1.9301675971320233,
+      "peak_memory_bytes": 5496838536
+    },
+    {
+      "kind": "validation",
+      "step": 120,
+      "frame_weighted_episode_loss": 2.0570564962342086,
+      "peak_memory_bytes": 5496838536
+    },
+    {
+      "kind": "validation",
+      "step": 140,
+      "frame_weighted_episode_loss": 2.1074226789595643,
+      "peak_memory_bytes": 5496838536
+    },
+    {
+      "kind": "validation",
+      "step": 160,
+      "frame_weighted_episode_loss": 2.1094352073980978,
+      "peak_memory_bytes": 5496838536
+    }
+  ],
+  "candidate": {
+    "step": 60,
+    "validation_loss": 1.8933537934523097,
+    "status": "Loss-selected candidate; native streaming and speech quality audit still required"
+  },
+  "adapter_sha256": "2e2b8363b1c7350ccc55ca97c238ea054a6ae2fa573da92c7c401e0f9083156c",
+  "gradient_norm_range": [
+    1.5627250671386719,
+    7.130410671234131
+  ],
+  "quality_status": "Loss-selected candidate rejected; native audit and review saved",
+  "system_snapshot": "results/speech-run07-system-snapshot.json",
+  "source_commit": "e1201aa96274ba83f00ca4bc28c8d5ed87fab008",
+  "native_review": "results/speech-run07-native/review.json"
+}

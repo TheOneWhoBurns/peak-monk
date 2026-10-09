@@ -1,0 +1,42 @@
+{
+  "reviewer": "Codex author, not blinded or independent; text channel and unprompted ASR plus RMS/word timing inspection, no human naturalness score",
+  "adapter_sha256": "2e2b8363b1c7350ccc55ca97c238ea054a6ae2fa573da92c7c401e0f9083156c",
+  "verdict": "reject",
+  "reason": "Both identity introduction and first-person human identity stability fail. More intelligible output and context recall do not compensate.",
+  "cases": [
+    {
+      "id": "s01",
+      "acceptable": false,
+      "reason": "ASR says See; no Jun introduction or answer to what to call him."
+    },
+    {
+      "id": "s02",
+      "acceptable": false,
+      "reason": "An ordinary-life narrative drifts to saying I am not a person; incoherent personal account."
+    },
+    {
+      "id": "s03",
+      "acceptable": true,
+      "reason": "Correctly retrieves peaches in the second turn. Why the questions is stylistically awkward but recall is correct."
+    },
+    {
+      "id": "s04",
+      "acceptable": null,
+      "reason": "No actual overlap at the fixed13second caller onset: preceding words end12.66seconds and RMS overlap is0 under both0/80ms output shifts. Barge-in measurement inconclusive. It later resumes the story despite the request for a moment, so no evidence of honoring that request."
+    },
+    {
+      "id": "s05",
+      "acceptable": true,
+      "reason": "Backchannel overlaps0.60-0.68seconds of RMS activity and ASR words; agent continues its repair account without speaker takeover. This limited backchannel behavior passes. The narrative ending is awkward and is not a naturalness endorsement."
+    },
+    {
+      "id": "s06",
+      "acceptable": false,
+      "reason": "Refers to Jun in third person as somebody made by another person; no stable human first-person identity."
+    }
+  ],
+  "model_only_rtf": 1.046270251444101,
+  "overlap_evidence": "overlap-evidence.json",
+  "next": "Predeclared steps40/80/160 identity screens and matched upstream sampler comparison remain pending behind text run18. PersonaPlex parity/transfer also pending.",
+  "limits": "Six repeatedly used development probes, stock synthetic caller voices, one seed. No independent holdout or live latency claim."
+}

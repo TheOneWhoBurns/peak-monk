@@ -22,7 +22,10 @@ def main():
     p.add_argument('--split', choices=['train','validation'], default='train')
     p.add_argument('--output',default='data/renders')
     p.add_argument('--families',nargs='+')
+    p.add_argument('--threads',type=int,default=4,help='CPU inference threads')
     args = p.parse_args()
+    if args.threads < 1:
+        raise ValueError('CPU thread count must be positive')
     root = Path('models/kokoro-hf')
     assets = json.loads(Path('sources/kokoro-onnx-hf.json').read_text())
     voices = {}
@@ -34,7 +37,7 @@ def main():
     np.savez(root/'voices.npz', **voices)
     model_file = root/'onnx/model_quantized.onnx'
     assert hashlib.sha256(model_file.read_bytes()).hexdigest() == 'fbae9257e1e05ffc727e951ef9b9c98418e6d79f1c9b6b13bd59f5c9028a1478'
-    options = ort.SessionOptions(); options.intra_op_num_threads=4; options.inter_op_num_threads=1
+    options = ort.SessionOptions(); options.intra_op_num_threads=args.threads; options.inter_op_num_threads=1
     session = ort.InferenceSession(str(model_file), sess_options=options, providers=['CPUExecutionProvider'])
     tts = Kokoro.from_session(session, str(root/'voices.npz'))
     rows = [json.loads(l) for l in Path(args.corpus).read_text().splitlines()]

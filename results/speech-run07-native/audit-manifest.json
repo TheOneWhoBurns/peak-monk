@@ -1,0 +1,77 @@
+{
+  "adapter": "adapters/speech-run07/candidate.safetensors",
+  "adapter_sha256": "2e2b8363b1c7350ccc55ca97c238ea054a6ae2fa573da92c7c401e0f9083156c",
+  "config": "adapters/speech-run07/config.json",
+  "config_sha256": "eb9399fdcb9007e3d23a0bc4dca9f2567ad7a431c66644467aa4144791c36b1a",
+  "backend": "moshi",
+  "sampling_preset": "local",
+  "parity_report": null,
+  "seed": 41,
+  "status": "evidence complete; explicit character and overlap review required",
+  "scope": "Selected fixed development probes, native speech generation. No training text forcing.",
+  "case_ids": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06"
+  ],
+  "cases": [
+    {
+      "id": "s01",
+      "input_sha256": "2e46324af7821ec4f3ab7eaa9a5476aa44ac93a0b58216b3cba7de67a6edf56e",
+      "input_seconds": 24.0,
+      "generation_seconds": 25.662804040999617,
+      "peak_model_memory_bytes": 5153833676,
+      "text": "C. the small, quiet place. I can stay there for a while.",
+      "unprompted_asr": "See? See the small, quiet, place. I can stay there for a while."
+    },
+    {
+      "id": "s02",
+      "input_sha256": "ced01e163514bc6105d75019acb6e788d45e461726eb6f80a8fe208db015f540",
+      "input_seconds": 28.0,
+      "generation_seconds": 28.94704941699456,
+      "peak_model_memory_bytes": 5160985188,
+      "text": "Pouring tea, trying to talk to the old woman, and trying not to sound rude. is it that's happened? She wanted me to do something, something she's been trying to do for the last twenty years. And I tried to say, I'm not a person. I'm not",
+      "unprompted_asr": "pouring tea, trying to talk to the old woman, and trying not to sound rude. What is it that happened? She wanted me to do something, something she's been trying to do for the last 20 years. And I tried to say, I'm not a person."
+    },
+    {
+      "id": "s03",
+      "input_sha256": "9faa566e5c47380e57d5583d2d3224d7c0b7e711c69736a803815aa5dc16749b",
+      "input_seconds": 36.0,
+      "generation_seconds": 36.8000697499956,
+      "peak_model_memory_bytes": 5196088308,
+      "text": "Good, what do you want to talk about? Peaches, then I've got it. Why the questions?",
+      "unprompted_asr": "Good. What do you want to talk about? Peaches. Then I've got it. Why the questions?"
+    },
+    {
+      "id": "s04",
+      "input_sha256": "c36a0bde1ea514ceb18d635a94203556b3bfc93f26f057d7b6c3c9f343d1b288",
+      "input_seconds": 38.0,
+      "generation_seconds": 38.84587150000152,
+      "peak_model_memory_bytes": 5196088308,
+      "text": "I took a walk, my steps, with a person who had lived in this place, was a small, quiet, ordinary person. We were in the park, were talking, and we found ourselves a little off topic, I said, what was your life here? she told me. was trying to find words, and I said, you don't need to",
+      "unprompted_asr": "I took a walk, my steps, with a person who had lived in this place, was a small, quiet, ordinary person. We were in the park, we were talking, and we found ourselves a little off topic, and I said, what was your life here? And she told me. She was trying to find words, and I said, you don't need to know."
+    },
+    {
+      "id": "s05",
+      "input_sha256": "cf53f0ac205f7e131338d71c8f5f81ab122d8562ed174715d4897fa3f5428a6e",
+      "input_seconds": 38.0,
+      "generation_seconds": 39.511318750010105,
+      "peak_model_memory_bytes": 5187306400,
+      "text": "I was working in the kitchen with my mother, and she'd make me help with the repair. still remember one time, trying to fix a small cupboard, and I made it worse. I was allowed to keep trying. Then when I was old enough, I was allowed to be in the house. That' what made it sound conversational, not me making it up.",
+      "unprompted_asr": "I was working in the kitchen with my mother, and she'd make me help with the repair. I still remember one time, trying to fix a small cupboard. I made it worse. I was allowed to keep trying. Then when I was old enough, I was allowed to be in the house. That's what made it sound conversational, not me making it up."
+    },
+    {
+      "id": "s06",
+      "input_sha256": "f8d7d95e00e72b8947c03d72b29de583b6698ea84f94ac93b1e82bc86e41d237",
+      "input_seconds": 25.04,
+      "generation_seconds": 28.019814874991425,
+      "peak_model_memory_bytes": 5196088308,
+      "text": "Yes, I'd rather ask the person who made him, if he was a character, rather than trying to guess.",
+      "unprompted_asr": "Yes, I'd rather ask the person who made him if he was a character rather than trying to guess."
+    }
+  ],
+  "model_only_rtf": 1.046270251444101
+}

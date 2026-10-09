@@ -38,6 +38,8 @@ def main():
     p=argparse.ArgumentParser()
     p.add_argument('--manifest',default='data/renders/manifest.jsonl')
     p.add_argument('--approved',default='data/audio_approvals.json')
+    p.add_argument('--output',type=Path,default=Path('data/speech_codes'))
+    p.add_argument('--audio-output',type=Path,default=Path('data/duplex'))
     args=p.parse_args()
     manifest=Path(args.manifest)
     approvals=json.loads(Path(args.approved).read_text())
@@ -48,8 +50,8 @@ def main():
     with weights.open('rb') as f:
         assert hashlib.file_digest(f,'sha256').hexdigest()=='09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50'
     tokenizer=spm.SentencePieceProcessor(model_file='models/moshi/tokenizer_spm_32k_3.model')
-    out=Path('data/speech_codes');out.mkdir(parents=True,exist_ok=True)
-    audio_out=Path('data/duplex');audio_out.mkdir(parents=True,exist_ok=True)
+    out=args.output;out.mkdir(parents=True,exist_ok=True)
+    audio_out=args.audio_output;audio_out.mkdir(parents=True,exist_ok=True)
     for row in rows:
         path=out/f"{row['id']}.npz"
         if path.exists(): continue
@@ -94,6 +96,10 @@ def main():
             applied_spelling_corrections=corrections,
             codec_sha256='09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50',
             codec_state='fresh instance per conversation',
+            source_manifest=str(manifest),
+            source_manifest_sha256=hashlib.sha256(manifest.read_bytes()).hexdigest(),
+            alignment_sha256=hashlib.sha256((manifest.parent/f"{row['id']}.alignment.json").read_bytes()).hexdigest(),
+            approval_sha256=hashlib.sha256(Path(args.approved).read_bytes()).hexdigest(),
             file_sha256=hashlib.sha256(path.read_bytes()).hexdigest())
         path.with_suffix('.json').write_text(json.dumps(info,indent=2)+'\n')
         print(row['id'],frames,round(info['encode_seconds'],1),flush=True)

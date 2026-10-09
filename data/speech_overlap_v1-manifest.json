@@ -1,0 +1,11 @@
+{
+  "status": "Script structure and exact-prompt exclusion passed; audio not yet rendered or admitted",
+  "source_sha256": "c56ec8bf56c58eae9c8b3d3230c86aa5a63a2a37ec9b4f2a648fab5d9cfab3d5",
+  "conversations_sha256": "71551ab4940f4981588c91a59f4e0c7543c8535c31537db6635bf6de09827ea6",
+  "cases": 12,
+  "barge_in": 8,
+  "backchannel": 4,
+  "frozen_prompts_compared": 121,
+  "reviewer": "Same author, not independent",
+  "limitations": "Mechanical exact-string exclusion does not establish semantic independence. Designed development failures informed the general training intervention."
+}

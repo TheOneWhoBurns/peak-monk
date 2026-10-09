@@ -1,0 +1,15 @@
+{
+  "status": "Data intervention predeclared; no new audio or training yet",
+  "motivation": "RMS diagnostic found only0.18seconds of simultaneous activity in the current59episodes. The existing interruption is a240ms tail overlap, not sustained mid-sentence interruption supervision.",
+  "source": "data/speech_overlap_v1.json",
+  "scope": "Twelve original authored training-only scenarios: eight genuine barge-ins and four brief backchannels. No frozen probe audio or exact prompts reused.",
+  "rendering": "Same verified Kokoro stock voices, Jun bm_george and caller af_heart/am_michael; CPU only. TTS output remains training material, never a trained-model demonstration.",
+  "alignment": "Unprompted local Whisper word timestamps and author transcript review, serialized separately from resident large models.",
+  "barge_in": "Choose an interior completed agent-word boundary near the middle of its long response, leaving at least2seconds of original speech on both sides. Begin caller utterance0.48seconds before that boundary; truncate agent after the boundary with a5ms fade. Start acknowledgment after caller finishes plus0.28seconds. Keep only emitted agent words in text supervision; preserve full source and exact cut provenance separately.",
+  "backchannel": "Insert brief caller utterance near the middle of the ongoing agent response. Preserve agent speech through and after it; require at least2seconds of continuing agent speech after caller ends. Follow with the final short agent sentence after0.28seconds.",
+  "audio_gate": "Measure actual two-channel activity around the intervention. Require at least80ms simultaneous20ms RMS-active windows above-45dBFS per case; review timestamps and word boundaries. The RMS gate is an activity check, not proof of intelligibility.",
+  "length_gate": "Keep complete episode at most36seconds, within previously tested452-frame training context. Do not silently truncate whole episodes to fit.",
+  "encoding": "Fresh-instance Mimi per episode with separate speaker streams and only actual emitted agent text. New output directory; preserve all current training data and prior experiments.",
+  "training": "No training recipe or parent is selected by this data plan. Admission requires rendering, alignment review, exact-prompt exclusion, overlap verification and a new declared experiment.",
+  "limitations": "Same-author synthetic scripts, stock synthesized voices, and designed stop behavior. These examples are not recordings of natural human conversation."
+}

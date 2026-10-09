@@ -1,0 +1,132 @@
+{
+  "wav": "results/speech-run07-native/s03/agent.wav",
+  "wav_sha256": "e698325165365d90630145cb9e5525b045d34a1f717a17ef8c6c9d049b0b80ca",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 9.040533584004152,
+  "duration_seconds": 35.92,
+  "transcript": "Good. What do you want to talk about? Peaches. Then I've got it. Why the questions?",
+  "segments": [
+    {
+      "start": 4.75,
+      "end": 6.63,
+      "text": " Good. What do you want to talk about?",
+      "avg_logprob": -0.2100703322461673,
+      "no_speech_prob": 0.009988346137106419,
+      "compression_ratio": 1.0,
+      "words": [
+        {
+          "word": " Good.",
+          "start": 4.75,
+          "end": 5.31,
+          "probability": 0.657226026058197
+        },
+        {
+          "word": " What",
+          "start": 5.39,
+          "end": 5.69,
+          "probability": 0.9916774034500122
+        },
+        {
+          "word": " do",
+          "start": 5.69,
+          "end": 5.81,
+          "probability": 0.9124036431312561
+        },
+        {
+          "word": " you",
+          "start": 5.81,
+          "end": 5.89,
+          "probability": 0.9984995126724243
+        },
+        {
+          "word": " want",
+          "start": 5.89,
+          "end": 6.01,
+          "probability": 0.9988651275634766
+        },
+        {
+          "word": " to",
+          "start": 6.01,
+          "end": 6.15,
+          "probability": 0.9992002844810486
+        },
+        {
+          "word": " talk",
+          "start": 6.15,
+          "end": 6.37,
+          "probability": 0.9997313618659973
+        },
+        {
+          "word": " about?",
+          "start": 6.37,
+          "end": 6.63,
+          "probability": 0.9996806383132935
+        }
+      ]
+    },
+    {
+      "start": 22.93,
+      "end": 25.97,
+      "text": " Peaches. Then I've got it. Why the questions?",
+      "avg_logprob": -0.2100703322461673,
+      "no_speech_prob": 0.009988346137106419,
+      "compression_ratio": 1.0,
+      "words": [
+        {
+          "word": " Peaches.",
+          "start": 22.93,
+          "end": 23.41,
+          "probability": 0.9870060086250305
+        },
+        {
+          "word": " Then",
+          "start": 23.57,
+          "end": 24.05,
+          "probability": 0.9945744872093201
+        },
+        {
+          "word": " I've",
+          "start": 24.05,
+          "end": 24.31,
+          "probability": 0.989959180355072
+        },
+        {
+          "word": " got",
+          "start": 24.31,
+          "end": 24.45,
+          "probability": 0.9997125267982483
+        },
+        {
+          "word": " it.",
+          "start": 24.45,
+          "end": 24.69,
+          "probability": 0.999849796295166
+        },
+        {
+          "word": " Why",
+          "start": 24.95,
+          "end": 25.43,
+          "probability": 0.99735426902771
+        },
+        {
+          "word": " the",
+          "start": 25.43,
+          "end": 25.63,
+          "probability": 0.9970719814300537
+        },
+        {
+          "word": " questions?",
+          "start": 25.63,
+          "end": 25.97,
+          "probability": 0.9977343082427979
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "Good, what do you want to talk about? Peaches, then I've got it. Why the questions?"
+}

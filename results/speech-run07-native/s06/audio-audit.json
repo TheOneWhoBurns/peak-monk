@@ -1,0 +1,140 @@
+{
+  "wav": "results/speech-run07-native/s06/agent.wav",
+  "wav_sha256": "03382435734a9f2fc79ef939172491ffeea35162903f11aeb0a27c83ea9057e1",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 9.428853874997003,
+  "duration_seconds": 24.96,
+  "transcript": "Yes, I'd rather ask the person who made him if he was a character rather than trying to guess.",
+  "segments": [
+    {
+      "start": 4.59,
+      "end": 10.61,
+      "text": " Yes, I'd rather ask the person who made him if he was a character rather than trying to guess.",
+      "avg_logprob": -0.12295971393585205,
+      "no_speech_prob": 0.0023929476737976074,
+      "compression_ratio": 1.0930232558139534,
+      "words": [
+        {
+          "word": " Yes,",
+          "start": 4.59,
+          "end": 5.27,
+          "probability": 0.9228478074073792
+        },
+        {
+          "word": " I'd",
+          "start": 5.33,
+          "end": 5.85,
+          "probability": 0.9900875091552734
+        },
+        {
+          "word": " rather",
+          "start": 5.85,
+          "end": 6.09,
+          "probability": 0.9994615912437439
+        },
+        {
+          "word": " ask",
+          "start": 6.09,
+          "end": 6.41,
+          "probability": 0.99480140209198
+        },
+        {
+          "word": " the",
+          "start": 6.41,
+          "end": 6.55,
+          "probability": 0.9985774755477905
+        },
+        {
+          "word": " person",
+          "start": 6.55,
+          "end": 6.91,
+          "probability": 0.9993441700935364
+        },
+        {
+          "word": " who",
+          "start": 6.91,
+          "end": 7.09,
+          "probability": 0.9993910789489746
+        },
+        {
+          "word": " made",
+          "start": 7.09,
+          "end": 7.33,
+          "probability": 0.9994465708732605
+        },
+        {
+          "word": " him",
+          "start": 7.33,
+          "end": 7.61,
+          "probability": 0.9990020394325256
+        },
+        {
+          "word": " if",
+          "start": 7.61,
+          "end": 8.13,
+          "probability": 0.6643027067184448
+        },
+        {
+          "word": " he",
+          "start": 8.13,
+          "end": 8.29,
+          "probability": 0.9991496801376343
+        },
+        {
+          "word": " was",
+          "start": 8.29,
+          "end": 8.43,
+          "probability": 0.9994858503341675
+        },
+        {
+          "word": " a",
+          "start": 8.43,
+          "end": 8.53,
+          "probability": 0.9992904663085938
+        },
+        {
+          "word": " character",
+          "start": 8.53,
+          "end": 8.89,
+          "probability": 0.997021496295929
+        },
+        {
+          "word": " rather",
+          "start": 8.89,
+          "end": 9.59,
+          "probability": 0.6341940760612488
+        },
+        {
+          "word": " than",
+          "start": 9.59,
+          "end": 9.93,
+          "probability": 0.9980833530426025
+        },
+        {
+          "word": " trying",
+          "start": 9.93,
+          "end": 10.17,
+          "probability": 0.9854721426963806
+        },
+        {
+          "word": " to",
+          "start": 10.17,
+          "end": 10.39,
+          "probability": 0.9995558857917786
+        },
+        {
+          "word": " guess.",
+          "start": 10.39,
+          "end": 10.61,
+          "probability": 0.9970859885215759
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "Yes, I'd rather ask the person who made him, if he was a character, rather than trying to guess."
+}

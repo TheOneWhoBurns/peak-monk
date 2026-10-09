@@ -1,0 +1,104 @@
+{
+  "wav": "results/speech-run07-native/s01/agent.wav",
+  "wav_sha256": "306bfa5e315be1081a11796a76d6d6c55041fcb6f164054d6f64453ba8fdf8f4",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 9.002666667001904,
+  "duration_seconds": 23.92,
+  "transcript": "See? See the small, quiet, place. I can stay there for a while.",
+  "segments": [
+    {
+      "start": 3.47,
+      "end": 18.57,
+      "text": " See? See the small, quiet, place. I can stay there for a while.",
+      "avg_logprob": -0.1625887836728777,
+      "no_speech_prob": 0.009904776699841022,
+      "compression_ratio": 0.9130434782608695,
+      "words": [
+        {
+          "word": " See?",
+          "start": 3.47,
+          "end": 3.91,
+          "probability": 0.6739374399185181
+        },
+        {
+          "word": " See",
+          "start": 4.45,
+          "end": 4.95,
+          "probability": 0.8852686882019043
+        },
+        {
+          "word": " the",
+          "start": 4.95,
+          "end": 5.11,
+          "probability": 0.9925346374511719
+        },
+        {
+          "word": " small,",
+          "start": 5.11,
+          "end": 5.37,
+          "probability": 0.9983981251716614
+        },
+        {
+          "word": " quiet,",
+          "start": 5.61,
+          "end": 6.29,
+          "probability": 0.9975343942642212
+        },
+        {
+          "word": " place.",
+          "start": 6.45,
+          "end": 6.97,
+          "probability": 0.9984606504440308
+        },
+        {
+          "word": " I",
+          "start": 16.91,
+          "end": 17.41,
+          "probability": 0.990685760974884
+        },
+        {
+          "word": " can",
+          "start": 17.41,
+          "end": 17.53,
+          "probability": 0.9993389248847961
+        },
+        {
+          "word": " stay",
+          "start": 17.53,
+          "end": 17.81,
+          "probability": 0.9993584752082825
+        },
+        {
+          "word": " there",
+          "start": 17.81,
+          "end": 18.03,
+          "probability": 0.9990181922912598
+        },
+        {
+          "word": " for",
+          "start": 18.03,
+          "end": 18.19,
+          "probability": 0.9991340041160583
+        },
+        {
+          "word": " a",
+          "start": 18.19,
+          "end": 18.31,
+          "probability": 0.9881032109260559
+        },
+        {
+          "word": " while.",
+          "start": 18.31,
+          "end": 18.57,
+          "probability": 0.999855637550354
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "C. the small, quiet place. I can stay there for a while."
+}

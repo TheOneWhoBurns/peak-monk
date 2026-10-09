@@ -1,0 +1,454 @@
+{
+  "wav": "results/speech-run07-native/s04/agent.wav",
+  "wav_sha256": "b7237aad2b3a8cd6029a193613e8dde76208719a076838edd494376e36cfc0db",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 12.597393250005553,
+  "duration_seconds": 37.92,
+  "transcript": "I took a walk, my steps, with a person who had lived in this place, was a small, quiet, ordinary person. We were in the park, we were talking, and we found ourselves a little off topic, and I said, what was your life here? And she told me. She was trying to find words, and I said, you don't need to know.",
+  "segments": [
+    {
+      "start": 4.56,
+      "end": 11.1,
+      "text": " I took a walk, my steps, with a person who had lived in this place, was a small, quiet,",
+      "avg_logprob": -0.13316911604741347,
+      "no_speech_prob": 0.028070086613297462,
+      "compression_ratio": 1.5326633165829147,
+      "words": [
+        {
+          "word": " I",
+          "start": 4.56,
+          "end": 4.94,
+          "probability": 0.9754437804222107
+        },
+        {
+          "word": " took",
+          "start": 4.94,
+          "end": 5.12,
+          "probability": 0.9991519451141357
+        },
+        {
+          "word": " a",
+          "start": 5.12,
+          "end": 5.22,
+          "probability": 0.999874472618103
+        },
+        {
+          "word": " walk,",
+          "start": 5.22,
+          "end": 5.62,
+          "probability": 0.9999192953109741
+        },
+        {
+          "word": " my",
+          "start": 5.76,
+          "end": 6.34,
+          "probability": 0.9863210320472717
+        },
+        {
+          "word": " steps,",
+          "start": 6.34,
+          "end": 6.74,
+          "probability": 0.9995742440223694
+        },
+        {
+          "word": " with",
+          "start": 7.08,
+          "end": 7.48,
+          "probability": 0.9995748400688171
+        },
+        {
+          "word": " a",
+          "start": 7.48,
+          "end": 7.52,
+          "probability": 0.9706993103027344
+        },
+        {
+          "word": " person",
+          "start": 7.52,
+          "end": 7.94,
+          "probability": 0.9998989105224609
+        },
+        {
+          "word": " who",
+          "start": 7.94,
+          "end": 8.08,
+          "probability": 0.9987144470214844
+        },
+        {
+          "word": " had",
+          "start": 8.08,
+          "end": 8.2,
+          "probability": 0.9987092018127441
+        },
+        {
+          "word": " lived",
+          "start": 8.2,
+          "end": 8.4,
+          "probability": 0.9999648332595825
+        },
+        {
+          "word": " in",
+          "start": 8.4,
+          "end": 8.56,
+          "probability": 0.9998617172241211
+        },
+        {
+          "word": " this",
+          "start": 8.56,
+          "end": 8.7,
+          "probability": 0.9997699856758118
+        },
+        {
+          "word": " place,",
+          "start": 8.7,
+          "end": 9.12,
+          "probability": 0.9999216794967651
+        },
+        {
+          "word": " was",
+          "start": 9.32,
+          "end": 9.82,
+          "probability": 0.9566890001296997
+        },
+        {
+          "word": " a",
+          "start": 9.82,
+          "end": 9.94,
+          "probability": 0.9999440908432007
+        },
+        {
+          "word": " small,",
+          "start": 9.94,
+          "end": 10.3,
+          "probability": 0.9998517036437988
+        },
+        {
+          "word": " quiet,",
+          "start": 10.56,
+          "end": 11.1,
+          "probability": 0.9996340274810791
+        }
+      ]
+    },
+    {
+      "start": 11.78,
+      "end": 12.66,
+      "text": " ordinary person.",
+      "avg_logprob": -0.13316911604741347,
+      "no_speech_prob": 0.028070086613297462,
+      "compression_ratio": 1.5326633165829147,
+      "words": [
+        {
+          "word": " ordinary",
+          "start": 11.78,
+          "end": 12.22,
+          "probability": 0.9998862743377686
+        },
+        {
+          "word": " person.",
+          "start": 12.22,
+          "end": 12.66,
+          "probability": 0.999822199344635
+        }
+      ]
+    },
+    {
+      "start": 25.76,
+      "end": 30.88,
+      "text": " We were in the park, we were talking, and we found ourselves a little off topic, and",
+      "avg_logprob": -0.13316911604741347,
+      "no_speech_prob": 0.028070086613297462,
+      "compression_ratio": 1.5326633165829147,
+      "words": [
+        {
+          "word": " We",
+          "start": 25.76,
+          "end": 26.2,
+          "probability": 0.9991186261177063
+        },
+        {
+          "word": " were",
+          "start": 26.2,
+          "end": 26.34,
+          "probability": 0.999969482421875
+        },
+        {
+          "word": " in",
+          "start": 26.34,
+          "end": 26.42,
+          "probability": 0.9999487400054932
+        },
+        {
+          "word": " the",
+          "start": 26.42,
+          "end": 26.48,
+          "probability": 0.9974452257156372
+        },
+        {
+          "word": " park,",
+          "start": 26.48,
+          "end": 26.86,
+          "probability": 0.9999147653579712
+        },
+        {
+          "word": " we",
+          "start": 27.06,
+          "end": 27.56,
+          "probability": 0.99982088804245
+        },
+        {
+          "word": " were",
+          "start": 27.56,
+          "end": 27.7,
+          "probability": 0.9999606609344482
+        },
+        {
+          "word": " talking,",
+          "start": 27.7,
+          "end": 28.08,
+          "probability": 0.9999121427536011
+        },
+        {
+          "word": " and",
+          "start": 28.3,
+          "end": 28.68,
+          "probability": 0.9997292160987854
+        },
+        {
+          "word": " we",
+          "start": 28.68,
+          "end": 28.74,
+          "probability": 0.9998824596405029
+        },
+        {
+          "word": " found",
+          "start": 28.74,
+          "end": 28.96,
+          "probability": 0.9999555349349976
+        },
+        {
+          "word": " ourselves",
+          "start": 28.96,
+          "end": 29.2,
+          "probability": 0.9979752898216248
+        },
+        {
+          "word": " a",
+          "start": 29.2,
+          "end": 29.5,
+          "probability": 0.9997994303703308
+        },
+        {
+          "word": " little",
+          "start": 29.5,
+          "end": 29.6,
+          "probability": 0.99959796667099
+        },
+        {
+          "word": " off",
+          "start": 29.6,
+          "end": 29.8,
+          "probability": 0.9999452829360962
+        },
+        {
+          "word": " topic,",
+          "start": 29.8,
+          "end": 30.2,
+          "probability": 0.8879275918006897
+        },
+        {
+          "word": " and",
+          "start": 30.4,
+          "end": 30.88,
+          "probability": 0.999744713306427
+        }
+      ]
+    },
+    {
+      "start": 30.88,
+      "end": 32.6,
+      "text": " I said, what was your life here?",
+      "avg_logprob": -0.13316911604741347,
+      "no_speech_prob": 0.028070086613297462,
+      "compression_ratio": 1.5326633165829147,
+      "words": [
+        {
+          "word": " I",
+          "start": 30.88,
+          "end": 30.96,
+          "probability": 0.9998812675476074
+        },
+        {
+          "word": " said,",
+          "start": 30.96,
+          "end": 31.22,
+          "probability": 0.9999275207519531
+        },
+        {
+          "word": " what",
+          "start": 31.36,
+          "end": 31.72,
+          "probability": 0.9472696781158447
+        },
+        {
+          "word": " was",
+          "start": 31.72,
+          "end": 31.9,
+          "probability": 0.999920129776001
+        },
+        {
+          "word": " your",
+          "start": 31.9,
+          "end": 32.02,
+          "probability": 0.9999327659606934
+        },
+        {
+          "word": " life",
+          "start": 32.02,
+          "end": 32.3,
+          "probability": 0.9999709129333496
+        },
+        {
+          "word": " here?",
+          "start": 32.3,
+          "end": 32.6,
+          "probability": 0.9999332427978516
+        }
+      ]
+    },
+    {
+      "start": 33.1,
+      "end": 34.14,
+      "text": " And she told me.",
+      "avg_logprob": -0.13316911604741347,
+      "no_speech_prob": 0.028070086613297462,
+      "compression_ratio": 1.5326633165829147,
+      "words": [
+        {
+          "word": " And",
+          "start": 33.1,
+          "end": 33.54,
+          "probability": 0.9979636669158936
+        },
+        {
+          "word": " she",
+          "start": 33.54,
+          "end": 33.64,
+          "probability": 0.9998325109481812
+        },
+        {
+          "word": " told",
+          "start": 33.64,
+          "end": 33.86,
+          "probability": 0.9999772310256958
+        },
+        {
+          "word": " me.",
+          "start": 33.86,
+          "end": 34.14,
+          "probability": 0.9999945163726807
+        }
+      ]
+    },
+    {
+      "start": 34.64,
+      "end": 37.9,
+      "text": " She was trying to find words, and I said, you don't need to know.",
+      "avg_logprob": -0.13316911604741347,
+      "no_speech_prob": 0.028070086613297462,
+      "compression_ratio": 1.5326633165829147,
+      "words": [
+        {
+          "word": " She",
+          "start": 34.64,
+          "end": 35.08,
+          "probability": 0.999876856803894
+        },
+        {
+          "word": " was",
+          "start": 35.08,
+          "end": 35.2,
+          "probability": 0.9999842643737793
+        },
+        {
+          "word": " trying",
+          "start": 35.2,
+          "end": 35.42,
+          "probability": 0.9999786615371704
+        },
+        {
+          "word": " to",
+          "start": 35.42,
+          "end": 35.54,
+          "probability": 0.9999895095825195
+        },
+        {
+          "word": " find",
+          "start": 35.54,
+          "end": 35.74,
+          "probability": 0.9999734163284302
+        },
+        {
+          "word": " words,",
+          "start": 35.74,
+          "end": 36.24,
+          "probability": 0.9997745156288147
+        },
+        {
+          "word": " and",
+          "start": 36.44,
+          "end": 36.82,
+          "probability": 0.9999535083770752
+        },
+        {
+          "word": " I",
+          "start": 36.82,
+          "end": 36.9,
+          "probability": 0.999982476234436
+        },
+        {
+          "word": " said,",
+          "start": 36.9,
+          "end": 37.24,
+          "probability": 0.9999847412109375
+        },
+        {
+          "word": " you",
+          "start": 37.3,
+          "end": 37.54,
+          "probability": 0.9993047714233398
+        },
+        {
+          "word": " don't",
+          "start": 37.54,
+          "end": 37.82,
+          "probability": 0.9998206198215485
+        },
+        {
+          "word": " need",
+          "start": 37.82,
+          "end": 37.86,
+          "probability": 0.9837204217910767
+        },
+        {
+          "word": " to",
+          "start": 37.86,
+          "end": 37.9,
+          "probability": 0.8630177974700928
+        },
+        {
+          "word": " know.",
+          "start": 37.9,
+          "end": 37.9,
+          "probability": 0.7138319611549377
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "I took a walk, my steps, with a person who had lived in this place, was a small, quiet, ordinary person. We were in the park, were talking, and we found ourselves a little off topic, I said, what was your life here? she told me. was trying to find words, and I said, you don't need to"
+}

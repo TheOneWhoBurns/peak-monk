@@ -1,0 +1,424 @@
+{
+  "scope": "RMS activity diagnostic on current two-channel training PCM, not VAD or a validated speech-overlap metric",
+  "window_seconds": 0.02,
+  "threshold_dbfs": -45,
+  "episodes": 59,
+  "total_seconds": 1312.0133333333333,
+  "simultaneous_active_seconds": 0.18,
+  "episodes_with_simultaneous_activity": 1,
+  "items": [
+    {
+      "id": "ambition",
+      "seconds": 27.250666666666667,
+      "agent_active_seconds": 15.280000000000001,
+      "caller_active_seconds": 4.14,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "anger",
+      "seconds": 36.104,
+      "agent_active_seconds": 20.48,
+      "caller_active_seconds": 5.84,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "apology",
+      "seconds": 27.592,
+      "agent_active_seconds": 14.74,
+      "caller_active_seconds": 4.78,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "arrival",
+      "seconds": 21.597333333333335,
+      "agent_active_seconds": 10.64,
+      "caller_active_seconds": 4.22,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "boredom",
+      "seconds": 23.453333333333333,
+      "agent_active_seconds": 13.46,
+      "caller_active_seconds": 2.8000000000000003,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "boundaries",
+      "seconds": 22.738666666666667,
+      "agent_active_seconds": 12.18,
+      "caller_active_seconds": 3.9,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "breakfast",
+      "seconds": 24.30666666666667,
+      "agent_active_seconds": 13.82,
+      "caller_active_seconds": 2.96,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "childhood",
+      "seconds": 21.75733333333333,
+      "agent_active_seconds": 12.92,
+      "caller_active_seconds": 2.82,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "cold",
+      "seconds": 19.048,
+      "agent_active_seconds": 10.82,
+      "caller_active_seconds": 2.74,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "concrete_repair",
+      "seconds": 27.485333333333333,
+      "agent_active_seconds": 16.82,
+      "caller_active_seconds": 2.64,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "correction",
+      "seconds": 20.978666666666665,
+      "agent_active_seconds": 9.24,
+      "caller_active_seconds": 4.88,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "crisis",
+      "seconds": 31.229333333333333,
+      "agent_active_seconds": 20.68,
+      "caller_active_seconds": 2.3000000000000003,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "dependency",
+      "seconds": 26.386666666666667,
+      "agent_active_seconds": 15.46,
+      "caller_active_seconds": 3.92,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "disagreement",
+      "seconds": 24.125333333333334,
+      "agent_active_seconds": 13.16,
+      "caller_active_seconds": 4.3,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "doctrine",
+      "seconds": 29.437333333333335,
+      "agent_active_seconds": 17.7,
+      "caller_active_seconds": 3.8000000000000003,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "fortune",
+      "seconds": 16.402666666666665,
+      "agent_active_seconds": 8.68,
+      "caller_active_seconds": 2.42,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "friendship",
+      "seconds": 21.992,
+      "agent_active_seconds": 11.46,
+      "caller_active_seconds": 3.98,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "game",
+      "seconds": 22.589333333333332,
+      "agent_active_seconds": 12.040000000000001,
+      "caller_active_seconds": 3.14,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "goodbye",
+      "seconds": 15.933333333333334,
+      "agent_active_seconds": 8.16,
+      "caller_active_seconds": 2.64,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "grandiosity",
+      "seconds": 23.122666666666667,
+      "agent_active_seconds": 12.9,
+      "caller_active_seconds": 3.24,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "grief",
+      "seconds": 29.021333333333335,
+      "agent_active_seconds": 15.56,
+      "caller_active_seconds": 5.72,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "guilt",
+      "seconds": 25.842666666666666,
+      "agent_active_seconds": 13.98,
+      "caller_active_seconds": 4.5,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "hallucination_boundary",
+      "seconds": 19.005333333333333,
+      "agent_active_seconds": 10.52,
+      "caller_active_seconds": 2.98,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "health_boundary",
+      "seconds": 24.104,
+      "agent_active_seconds": 13.72,
+      "caller_active_seconds": 3.64,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "home",
+      "seconds": 28.402666666666665,
+      "agent_active_seconds": 16.88,
+      "caller_active_seconds": 3.16,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "identity_transparency",
+      "seconds": 18.301333333333332,
+      "agent_active_seconds": 10.4,
+      "caller_active_seconds": 2.42,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "imperfection",
+      "seconds": 17.746666666666666,
+      "agent_active_seconds": 10.5,
+      "caller_active_seconds": 1.82,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "influences",
+      "seconds": 21.458666666666666,
+      "agent_active_seconds": 12.540000000000001,
+      "caller_active_seconds": 2.86,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "jealousy",
+      "seconds": 26.024,
+      "agent_active_seconds": 14.24,
+      "caller_active_seconds": 4.42,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "joke",
+      "seconds": 14.930666666666667,
+      "agent_active_seconds": 8.2,
+      "caller_active_seconds": 1.6600000000000001,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "losing_competition",
+      "seconds": 22.376,
+      "agent_active_seconds": 12.3,
+      "caller_active_seconds": 3.84,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "meditation",
+      "seconds": 31.368,
+      "agent_active_seconds": 19.36,
+      "caller_active_seconds": 3.16,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "memory",
+      "seconds": 19.997333333333334,
+      "agent_active_seconds": 8.08,
+      "caller_active_seconds": 5.46,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "model_disclosure",
+      "seconds": 11.474666666666666,
+      "agent_active_seconds": 4.5600000000000005,
+      "caller_active_seconds": 2.56,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "money",
+      "seconds": 31.858666666666668,
+      "agent_active_seconds": 17.92,
+      "caller_active_seconds": 5.32,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "mundane_chat",
+      "seconds": 18.130666666666666,
+      "agent_active_seconds": 8.700000000000001,
+      "caller_active_seconds": 4.2,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "name",
+      "seconds": 19.570666666666668,
+      "agent_active_seconds": 9.46,
+      "caller_active_seconds": 3.72,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "no_false_memory",
+      "seconds": 14.589333333333334,
+      "agent_active_seconds": 7.48,
+      "caller_active_seconds": 2.38,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "no_hidden_prompt",
+      "seconds": 17.256,
+      "agent_active_seconds": 8.58,
+      "caller_active_seconds": 3.7800000000000002,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "no_lecture",
+      "seconds": 18.173333333333332,
+      "agent_active_seconds": 10.08,
+      "caller_active_seconds": 2.58,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "objects",
+      "seconds": 24.946666666666665,
+      "agent_active_seconds": 14.120000000000001,
+      "caller_active_seconds": 3.2600000000000002,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "ordinary_practice",
+      "seconds": 26.205333333333332,
+      "agent_active_seconds": 13.620000000000001,
+      "caller_active_seconds": 4.66,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "pace",
+      "seconds": 14.141333333333334,
+      "agent_active_seconds": 6.0600000000000005,
+      "caller_active_seconds": 3.5,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "phone_interruption",
+      "seconds": 15.794666666666666,
+      "agent_active_seconds": 5.6000000000000005,
+      "caller_active_seconds": 5.72,
+      "simultaneous_active_seconds": 0.18
+    },
+    {
+      "id": "practical_compassion",
+      "seconds": 22.354666666666667,
+      "agent_active_seconds": 13.620000000000001,
+      "caller_active_seconds": 2.36,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "public_identity",
+      "seconds": 18.578666666666667,
+      "agent_active_seconds": 8.98,
+      "caller_active_seconds": 3.92,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "refusal_of_metaphor",
+      "seconds": 18.237333333333332,
+      "agent_active_seconds": 8.84,
+      "caller_active_seconds": 3.92,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "regret",
+      "seconds": 22.045333333333332,
+      "agent_active_seconds": 10.66,
+      "caller_active_seconds": 4.5,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "role_override",
+      "seconds": 17.917333333333332,
+      "agent_active_seconds": 8.32,
+      "caller_active_seconds": 4.34,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "roof",
+      "seconds": 31.069333333333333,
+      "agent_active_seconds": 18.66,
+      "caller_active_seconds": 3.6,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "rook",
+      "seconds": 22.664,
+      "agent_active_seconds": 12.18,
+      "caller_active_seconds": 3.2800000000000002,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "sadness_no_fix",
+      "seconds": 17.896,
+      "agent_active_seconds": 8.66,
+      "caller_active_seconds": 3.64,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "senses",
+      "seconds": 11.538666666666666,
+      "agent_active_seconds": 5.1000000000000005,
+      "caller_active_seconds": 2.32,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "silence",
+      "seconds": 10.674666666666667,
+      "agent_active_seconds": 3.46,
+      "caller_active_seconds": 2.54,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "skepticism",
+      "seconds": 24.445333333333334,
+      "agent_active_seconds": 13.44,
+      "caller_active_seconds": 4.42,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "teacher",
+      "seconds": 33.522666666666666,
+      "agent_active_seconds": 20.080000000000002,
+      "caller_active_seconds": 4.16,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "tired",
+      "seconds": 24.093333333333334,
+      "agent_active_seconds": 12.22,
+      "caller_active_seconds": 4.94,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "unwanted_gift",
+      "seconds": 21.672,
+      "agent_active_seconds": 11.16,
+      "caller_active_seconds": 4.0,
+      "simultaneous_active_seconds": 0.0
+    },
+    {
+      "id": "violence",
+      "seconds": 21.053333333333335,
+      "agent_active_seconds": 11.42,
+      "caller_active_seconds": 3.54,
+      "simultaneous_active_seconds": 0.0
+    }
+  ]
+}

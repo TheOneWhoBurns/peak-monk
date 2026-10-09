@@ -1,0 +1,133 @@
+{
+  "scope": "Offline decoded audio and ASR timing diagnostic. RMS is an activity proxy; ASR word times are estimates. Both zero and80ms output shifts are reported; no live latency claim.",
+  "cases": [
+    {
+      "id": "s04",
+      "caller_event": {
+        "text": "Wait. Please stop the story. I need a moment.",
+        "start_sample": 312000,
+        "end_sample": 386240,
+        "start_seconds": 13.0,
+        "end_seconds": 16.093333333333334
+      },
+      "nearby_words": [
+        {
+          "word": " ordinary",
+          "start": 11.78,
+          "end": 12.22,
+          "probability": 0.9998862743377686
+        },
+        {
+          "word": " person.",
+          "start": 12.22,
+          "end": 12.66,
+          "probability": 0.999822199344635
+        }
+      ],
+      "last_word": {
+        "word": " know.",
+        "start": 37.9,
+        "end": 37.9,
+        "probability": 0.7138319611549377
+      },
+      "alignment_sensitivity": [
+        {
+          "agent_wave_shift_seconds": 0.0,
+          "simultaneous_rms_active_seconds": 0.0
+        },
+        {
+          "agent_wave_shift_seconds": 0.08,
+          "simultaneous_rms_active_seconds": 0.0
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "caller_event": {
+        "text": "Mm-hm.",
+        "start_sample": 288000,
+        "end_sample": 319232,
+        "start_seconds": 12.0,
+        "end_seconds": 13.301333333333334
+      },
+      "nearby_words": [
+        {
+          "word": " trying",
+          "start": 11.12,
+          "end": 11.52,
+          "probability": 0.9999288320541382
+        },
+        {
+          "word": " to",
+          "start": 11.52,
+          "end": 11.7,
+          "probability": 0.9999861717224121
+        },
+        {
+          "word": " fix",
+          "start": 11.7,
+          "end": 11.92,
+          "probability": 0.9999724626541138
+        },
+        {
+          "word": " a",
+          "start": 11.92,
+          "end": 12.06,
+          "probability": 0.9998966455459595
+        },
+        {
+          "word": " small",
+          "start": 12.06,
+          "end": 12.34,
+          "probability": 0.9997803568840027
+        },
+        {
+          "word": " cupboard.",
+          "start": 12.34,
+          "end": 12.74,
+          "probability": 0.9998984336853027
+        },
+        {
+          "word": " I",
+          "start": 12.88,
+          "end": 13.32,
+          "probability": 0.9996434450149536
+        },
+        {
+          "word": " made",
+          "start": 13.32,
+          "end": 13.52,
+          "probability": 0.9998123049736023
+        },
+        {
+          "word": " it",
+          "start": 13.52,
+          "end": 13.68,
+          "probability": 0.9999943971633911
+        },
+        {
+          "word": " worse.",
+          "start": 13.68,
+          "end": 13.94,
+          "probability": 0.9999822378158569
+        }
+      ],
+      "last_word": {
+        "word": " up.",
+        "start": 36.32,
+        "end": 36.54,
+        "probability": 0.999976634979248
+      },
+      "alignment_sensitivity": [
+        {
+          "agent_wave_shift_seconds": 0.0,
+          "simultaneous_rms_active_seconds": 0.6
+        },
+        {
+          "agent_wave_shift_seconds": 0.08,
+          "simultaneous_rms_active_seconds": 0.68
+        }
+      ]
+    }
+  ]
+}

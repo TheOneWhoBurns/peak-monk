@@ -34,23 +34,29 @@ def main():
     p.add_argument('--limit',type=int,default=8)
     p.add_argument('--max-wer',type=float,default=.20)
     p.add_argument('--retry-suspect',action='store_true',help='Preserve prior audit and rerun only rejected or nonexact turns')
+    p.add_argument('--unprompted',action='store_true',help='Omit the legacy Jun/Mara spelling hint')
     args=p.parse_args()
     manifest=Path(args.manifest)
     rows=[json.loads(l) for l in manifest.read_text().splitlines()][:args.limit]
     model=WhisperModel(args.model,device='cpu',compute_type='int8',cpu_threads=4,local_files_only=True)
+    asr_prompt=None if args.unprompted else 'The speaker names in these recordings include Jun and Mara.'
     for row in rows:
         dest=manifest.parent/f"{row['id']}.alignment.json"
         previous=None
         if dest.exists():
+            existing=json.loads(dest.read_text())
+            legacy_hint='The speaker names in these recordings include Jun and Mara.'
+            if existing.get('initial_prompt',legacy_hint)!=asr_prompt:
+                raise ValueError('ASR conditioning differs from the saved audit; use a fresh render directory')
             if not args.retry_suspect: continue
-            previous=json.loads(dest.read_text())
+            previous=existing
             if all(t['accepted'] and t['wer']==0 for t in previous['turns']):continue
             archive=manifest.parent/'alignment-history';archive.mkdir(exist_ok=True)
             sha=hashlib.sha256(dest.read_bytes()).hexdigest()
             backup=archive/f"{row['id']}-{sha[:16]}.json"
             if not backup.exists():backup.write_bytes(dest.read_bytes())
         audit={'id':row['id'],'asr_model':args.model,'word_timestamps':'Whisper decoder alignment estimates',
-               'max_wer':args.max_wer,'turns':[],'accepted':True}
+               'max_wer':args.max_wer,'initial_prompt':asr_prompt,'turns':[],'accepted':True}
         if previous:audit['prior_audit']=str(backup)
         for turn in row['turns']:
             prior=next((t for t in previous['turns'] if t['wav']==turn['wav']),None) if previous else None
@@ -64,7 +70,7 @@ def main():
             samples=np.frombuffer(pcm,dtype='<f4').copy()
             segments,info=model.transcribe(samples,language='en',
                 beam_size=1,word_timestamps=True,vad_filter=args.retry_suspect,condition_on_previous_text=False,
-                initial_prompt='The speaker names in these recordings include Jun and Mara.')
+                initial_prompt=asr_prompt)
             segments=list(segments)
             recognized=' '.join(s.text.strip() for s in segments)
             ref,hyp=words(turn['content']),words(recognized)

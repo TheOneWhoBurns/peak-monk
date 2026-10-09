@@ -1,0 +1,27 @@
+{
+  "text_environment": {
+    "command": "CPU pytest -q",
+    "passed": 20,
+    "skipped_modules": 1,
+    "seconds": 3.65,
+    "skip_reason": "Audio assembly tests require soundfile, present in the separate speech environment"
+  },
+  "speech_environment": {
+    "command": ".venv-speech/bin/python -m pytest -q tests/test_overlap_assembly.py",
+    "passed": 3,
+    "seconds": 0.27
+  },
+  "scope": "Implementation and integrity checks only; synthetic signals test timing, not natural speech quality",
+  "speech_dev_dependency_additions": {
+    "pytest": "9.1.1",
+    "iniconfig": "2.3.1",
+    "pluggy": "1.6.0",
+    "pygments": "2.21.0"
+  },
+  "speech_runtime_versions_unchanged": {
+    "mlx": "0.26.5",
+    "moshi-mlx": "0.3.0",
+    "rustymimi": "0.4.1",
+    "numpy": "2.2.6"
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "wav": "results/speech-run07-native/s02/agent.wav",
+  "wav_sha256": "94421f72870fefe5dd99b108b793e3b453f5a51fd95d08c0a24ebbafea10f2e0",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 11.148736167000607,
+  "duration_seconds": 27.92,
+  "transcript": "pouring tea, trying to talk to the old woman, and trying not to sound rude. What is it that happened? She wanted me to do something, something she's been trying to do for the last 20 years. And I tried to say, I'm not a person.",
+  "segments": [
+    {
+      "start": 4.27,
+      "end": 9.15,
+      "text": " pouring tea, trying to talk to the old woman, and trying not to sound rude.",
+      "avg_logprob": -0.18818677755502555,
+      "no_speech_prob": 0.01949244923889637,
+      "compression_ratio": 1.455128205128205,
+      "words": [
+        {
+          "word": " pouring",
+          "start": 4.27,
+          "end": 4.83,
+          "probability": 0.39634931087493896
+        },
+        {
+          "word": " tea,",
+          "start": 4.83,
+          "end": 5.17,
+          "probability": 0.9951382875442505
+        },
+        {
+          "word": " trying",
+          "start": 5.39,
+          "end": 5.99,
+          "probability": 0.990400493144989
+        },
+        {
+          "word": " to",
+          "start": 5.99,
+          "end": 6.17,
+          "probability": 0.9996269941329956
+        },
+        {
+          "word": " talk",
+          "start": 6.17,
+          "end": 6.47,
+          "probability": 0.9993768334388733
+        },
+        {
+          "word": " to",
+          "start": 6.47,
+          "end": 6.61,
+          "probability": 0.9992349147796631
+        },
+        {
+          "word": " the",
+          "start": 6.61,
+          "end": 6.71,
+          "probability": 0.9991905093193054
+        },
+        {
+          "word": " old",
+          "start": 6.71,
+          "end": 6.93,
+          "probability": 0.9980055689811707
+        },
+        {
+          "word": " woman,",
+          "start": 6.93,
+          "end": 7.31,
+          "probability": 0.9973690509796143
+        },
+        {
+          "word": " and",
+          "start": 7.45,
+          "end": 7.81,
+          "probability": 0.9963425993919373
+        },
+        {
+          "word": " trying",
+          "start": 7.81,
+          "end": 8.07,
+          "probability": 0.9986108541488647
+        },
+        {
+          "word": " not",
+          "start": 8.07,
+          "end": 8.27,
+          "probability": 0.9985081553459167
+        },
+        {
+          "word": " to",
+          "start": 8.27,
+          "end": 8.41,
+          "probability": 0.9996664524078369
+        },
+        {
+          "word": " sound",
+          "start": 8.41,
+          "end": 8.73,
+          "probability": 0.9995243549346924
+        },
+        {
+          "word": " rude.",
+          "start": 8.73,
+          "end": 9.15,
+          "probability": 0.999060332775116
+        }
+      ]
+    },
+    {
+      "start": 9.39,
+      "end": 10.61,
+      "text": " What is it that happened?",
+      "avg_logprob": -0.18818677755502555,
+      "no_speech_prob": 0.01949244923889637,
+      "compression_ratio": 1.455128205128205,
+      "words": [
+        {
+          "word": " What",
+          "start": 9.39,
+          "end": 9.87,
+          "probability": 0.9232051968574524
+        },
+        {
+          "word": " is",
+          "start": 9.87,
+          "end": 9.99,
+          "probability": 0.9990847110748291
+        },
+        {
+          "word": " it",
+          "start": 9.99,
+          "end": 10.13,
+          "probability": 0.9994792342185974
+        },
+        {
+          "word": " that",
+          "start": 10.13,
+          "end": 10.25,
+          "probability": 0.999090313911438
+        },
+        {
+          "word": " happened?",
+          "start": 10.25,
+          "end": 10.61,
+          "probability": 0.9992617964744568
+        }
+      ]
+    },
+    {
+      "start": 19.82,
+      "end": 24.7,
+      "text": " She wanted me to do something, something she's been trying to do for the last 20 years.",
+      "avg_logprob": -0.18818677755502555,
+      "no_speech_prob": 0.01949244923889637,
+      "compression_ratio": 1.455128205128205,
+      "words": [
+        {
+          "word": " She",
+          "start": 19.82,
+          "end": 20.3,
+          "probability": 0.991664469242096
+        },
+        {
+          "word": " wanted",
+          "start": 20.3,
+          "end": 20.54,
+          "probability": 0.9996829032897949
+        },
+        {
+          "word": " me",
+          "start": 20.54,
+          "end": 20.74,
+          "probability": 0.9998522996902466
+        },
+        {
+          "word": " to",
+          "start": 20.74,
+          "end": 20.88,
+          "probability": 0.999734103679657
+        },
+        {
+          "word": " do",
+          "start": 20.88,
+          "end": 21.06,
+          "probability": 0.999752938747406
+        },
+        {
+          "word": " something,",
+          "start": 21.06,
+          "end": 21.46,
+          "probability": 0.9996007084846497
+        },
+        {
+          "word": " something",
+          "start": 21.7,
+          "end": 22.28,
+          "probability": 0.9991403818130493
+        },
+        {
+          "word": " she's",
+          "start": 22.28,
+          "end": 22.62,
+          "probability": 0.9979772567749023
+        },
+        {
+          "word": " been",
+          "start": 22.62,
+          "end": 22.74,
+          "probability": 0.9996578693389893
+        },
+        {
+          "word": " trying",
+          "start": 22.74,
+          "end": 23.06,
+          "probability": 0.9996486902236938
+        },
+        {
+          "word": " to",
+          "start": 23.06,
+          "end": 23.22,
+          "probability": 0.9996310472488403
+        },
+        {
+          "word": " do",
+          "start": 23.22,
+          "end": 23.4,
+          "probability": 0.9988102912902832
+        },
+        {
+          "word": " for",
+          "start": 23.4,
+          "end": 23.58,
+          "probability": 0.9991564750671387
+        },
+        {
+          "word": " the",
+          "start": 23.58,
+          "end": 23.66,
+          "probability": 0.9995444416999817
+        },
+        {
+          "word": " last",
+          "start": 23.66,
+          "end": 23.94,
+          "probability": 0.9959806203842163
+        },
+        {
+          "word": " 20",
+          "start": 23.94,
+          "end": 24.22,
+          "probability": 0.8395945429801941
+        },
+        {
+          "word": " years.",
+          "start": 24.22,
+          "end": 24.7,
+          "probability": 0.9996920824050903
+        }
+      ]
+    },
+    {
+      "start": 24.98,
+      "end": 27.46,
+      "text": " And I tried to say, I'm not a person.",
+      "avg_logprob": -0.18818677755502555,
+      "no_speech_prob": 0.01949244923889637,
+      "compression_ratio": 1.455128205128205,
+      "words": [
+        {
+          "word": " And",
+          "start": 24.98,
+          "end": 25.46,
+          "probability": 0.9938369393348694
+        },
+        {
+          "word": " I",
+          "start": 25.46,
+          "end": 25.54,
+          "probability": 0.9977946281433105
+        },
+        {
+          "word": " tried",
+          "start": 25.54,
+          "end": 25.8,
+          "probability": 0.9954062700271606
+        },
+        {
+          "word": " to",
+          "start": 25.8,
+          "end": 25.94,
+          "probability": 0.9998807907104492
+        },
+        {
+          "word": " say,",
+          "start": 25.94,
+          "end": 26.18,
+          "probability": 0.9998949766159058
+        },
+        {
+          "word": " I'm",
+          "start": 26.4,
+          "end": 26.82,
+          "probability": 0.9800257384777069
+        },
+        {
+          "word": " not",
+          "start": 26.82,
+          "end": 26.94,
+          "probability": 0.9998319149017334
+        },
+        {
+          "word": " a",
+          "start": 26.94,
+          "end": 27.08,
+          "probability": 0.9998464584350586
+        },
+        {
+          "word": " person.",
+          "start": 27.08,
+          "end": 27.46,
+          "probability": 0.9997829794883728
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "Pouring tea, trying to talk to the old woman, and trying not to sound rude. is it that's happened? She wanted me to do something, something she's been trying to do for the last twenty years. And I tried to say, I'm not a person. I'm not"
+}

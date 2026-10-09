@@ -10,11 +10,11 @@
   "baseline_cases": 20,
   "source_commit_at_launch": "1340774",
   "iterations": "unlimited",
-  "active_experiment": "speech-run07",
-  "configuration": "configs/train17.yaml",
-  "plan": "results/train17-plan.json",
+  "active_experiment": "run18",
+  "configuration": "configs/train18.yaml",
+  "plan": "results/train18-plan.json",
   "speech_ledger": "autoresearch/loop-261009-clean4b-human-v2/speech-results.tsv",
-  "queued_speech": "speech-run07 active; padded longest memory gate passed",
+  "queued_speech": "run07 primary rejected; declared checkpoint/sampler screens and PersonaPlex parity/transfer pending",
   "data_expansion": "36 original authored long dialogues admitted to prepared-full-long-v4; reserved for run18",
-  "queued_text": "run18; configs/train18.yaml, after speech training/audit"
+  "queued_text": "run18 training active"
 }

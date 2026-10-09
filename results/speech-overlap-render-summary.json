@@ -1,0 +1,9 @@
+{
+  "status": "Twelve scenarios rendered; unprompted ASR and overlap assembly pending",
+  "render_manifest_sha256": "906b18b2b3eff3777188842f8f3e6f8015805c37f2d7609c9b5126d3fb54e8bc",
+  "scenarios": 12,
+  "utterances": 48,
+  "source_audio_seconds": 344.66133333333335,
+  "renderer": "Verified stock Kokoro CPU, two inference threads",
+  "data_admitted": false
+}

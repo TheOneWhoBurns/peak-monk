@@ -1,0 +1,454 @@
+{
+  "wav": "results/speech-run07-native/s05/agent.wav",
+  "wav_sha256": "f84426e4a307e8eec0ec952a5b45f862dd1f6cd80fa76a83b7d3d7115e2f5819",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 13.648959458005265,
+  "duration_seconds": 37.92,
+  "transcript": "I was working in the kitchen with my mother, and she'd make me help with the repair. I still remember one time, trying to fix a small cupboard. I made it worse. I was allowed to keep trying. Then when I was old enough, I was allowed to be in the house. That's what made it sound conversational, not me making it up.",
+  "segments": [
+    {
+      "start": 4.56,
+      "end": 8.82,
+      "text": " I was working in the kitchen with my mother, and she'd make me help with the repair.",
+      "avg_logprob": -0.12197489082143548,
+      "no_speech_prob": 0.0023181824944913387,
+      "compression_ratio": 1.598984771573604,
+      "words": [
+        {
+          "word": " I",
+          "start": 4.56,
+          "end": 4.94,
+          "probability": 0.9933379888534546
+        },
+        {
+          "word": " was",
+          "start": 4.94,
+          "end": 5.12,
+          "probability": 0.9997772574424744
+        },
+        {
+          "word": " working",
+          "start": 5.12,
+          "end": 5.42,
+          "probability": 0.9999182224273682
+        },
+        {
+          "word": " in",
+          "start": 5.42,
+          "end": 5.64,
+          "probability": 0.9999411106109619
+        },
+        {
+          "word": " the",
+          "start": 5.64,
+          "end": 5.68,
+          "probability": 0.9999903440475464
+        },
+        {
+          "word": " kitchen",
+          "start": 5.68,
+          "end": 6.02,
+          "probability": 0.9999865293502808
+        },
+        {
+          "word": " with",
+          "start": 6.02,
+          "end": 6.26,
+          "probability": 0.9998385906219482
+        },
+        {
+          "word": " my",
+          "start": 6.26,
+          "end": 6.4,
+          "probability": 0.9999681711196899
+        },
+        {
+          "word": " mother,",
+          "start": 6.4,
+          "end": 6.76,
+          "probability": 0.9996378421783447
+        },
+        {
+          "word": " and",
+          "start": 6.9,
+          "end": 7.38,
+          "probability": 0.999434769153595
+        },
+        {
+          "word": " she'd",
+          "start": 7.38,
+          "end": 7.58,
+          "probability": 0.9999438524246216
+        },
+        {
+          "word": " make",
+          "start": 7.58,
+          "end": 7.78,
+          "probability": 0.9999144077301025
+        },
+        {
+          "word": " me",
+          "start": 7.78,
+          "end": 7.94,
+          "probability": 0.9999867677688599
+        },
+        {
+          "word": " help",
+          "start": 7.94,
+          "end": 8.18,
+          "probability": 0.9999674558639526
+        },
+        {
+          "word": " with",
+          "start": 8.18,
+          "end": 8.46,
+          "probability": 0.9998284578323364
+        },
+        {
+          "word": " the",
+          "start": 8.46,
+          "end": 8.54,
+          "probability": 0.9998045563697815
+        },
+        {
+          "word": " repair.",
+          "start": 8.54,
+          "end": 8.82,
+          "probability": 0.9999598264694214
+        }
+      ]
+    },
+    {
+      "start": 9.32,
+      "end": 12.74,
+      "text": " I still remember one time, trying to fix a small cupboard.",
+      "avg_logprob": -0.12197489082143548,
+      "no_speech_prob": 0.0023181824944913387,
+      "compression_ratio": 1.598984771573604,
+      "words": [
+        {
+          "word": " I",
+          "start": 9.32,
+          "end": 9.76,
+          "probability": 0.9998868703842163
+        },
+        {
+          "word": " still",
+          "start": 9.76,
+          "end": 9.98,
+          "probability": 0.9999308586120605
+        },
+        {
+          "word": " remember",
+          "start": 9.98,
+          "end": 10.36,
+          "probability": 0.9999798536300659
+        },
+        {
+          "word": " one",
+          "start": 10.36,
+          "end": 10.62,
+          "probability": 0.9999161958694458
+        },
+        {
+          "word": " time,",
+          "start": 10.62,
+          "end": 11.04,
+          "probability": 0.9999945163726807
+        },
+        {
+          "word": " trying",
+          "start": 11.12,
+          "end": 11.52,
+          "probability": 0.9999288320541382
+        },
+        {
+          "word": " to",
+          "start": 11.52,
+          "end": 11.7,
+          "probability": 0.9999861717224121
+        },
+        {
+          "word": " fix",
+          "start": 11.7,
+          "end": 11.92,
+          "probability": 0.9999724626541138
+        },
+        {
+          "word": " a",
+          "start": 11.92,
+          "end": 12.06,
+          "probability": 0.9998966455459595
+        },
+        {
+          "word": " small",
+          "start": 12.06,
+          "end": 12.34,
+          "probability": 0.9997803568840027
+        },
+        {
+          "word": " cupboard.",
+          "start": 12.34,
+          "end": 12.74,
+          "probability": 0.9998984336853027
+        }
+      ]
+    },
+    {
+      "start": 12.88,
+      "end": 13.94,
+      "text": " I made it worse.",
+      "avg_logprob": -0.12197489082143548,
+      "no_speech_prob": 0.0023181824944913387,
+      "compression_ratio": 1.598984771573604,
+      "words": [
+        {
+          "word": " I",
+          "start": 12.88,
+          "end": 13.32,
+          "probability": 0.9996434450149536
+        },
+        {
+          "word": " made",
+          "start": 13.32,
+          "end": 13.52,
+          "probability": 0.9998123049736023
+        },
+        {
+          "word": " it",
+          "start": 13.52,
+          "end": 13.68,
+          "probability": 0.9999943971633911
+        },
+        {
+          "word": " worse.",
+          "start": 13.68,
+          "end": 13.94,
+          "probability": 0.9999822378158569
+        }
+      ]
+    },
+    {
+      "start": 17.04,
+      "end": 18.54,
+      "text": " I was allowed to keep trying.",
+      "avg_logprob": -0.12197489082143548,
+      "no_speech_prob": 0.0023181824944913387,
+      "compression_ratio": 1.598984771573604,
+      "words": [
+        {
+          "word": " I",
+          "start": 17.04,
+          "end": 17.48,
+          "probability": 0.9999396800994873
+        },
+        {
+          "word": " was",
+          "start": 17.48,
+          "end": 17.64,
+          "probability": 0.9999817609786987
+        },
+        {
+          "word": " allowed",
+          "start": 17.64,
+          "end": 17.88,
+          "probability": 0.9999469518661499
+        },
+        {
+          "word": " to",
+          "start": 17.88,
+          "end": 18.08,
+          "probability": 0.9999898672103882
+        },
+        {
+          "word": " keep",
+          "start": 18.08,
+          "end": 18.26,
+          "probability": 0.9999347925186157
+        },
+        {
+          "word": " trying.",
+          "start": 18.26,
+          "end": 18.54,
+          "probability": 0.999884843826294
+        }
+      ]
+    },
+    {
+      "start": 22.72,
+      "end": 25.54,
+      "text": " Then when I was old enough, I was allowed to be in the house.",
+      "avg_logprob": -0.12197489082143548,
+      "no_speech_prob": 0.0023181824944913387,
+      "compression_ratio": 1.598984771573604,
+      "words": [
+        {
+          "word": " Then",
+          "start": 22.72,
+          "end": 23.16,
+          "probability": 0.9998741149902344
+        },
+        {
+          "word": " when",
+          "start": 23.16,
+          "end": 23.3,
+          "probability": 0.9987004995346069
+        },
+        {
+          "word": " I",
+          "start": 23.3,
+          "end": 23.4,
+          "probability": 0.9999769926071167
+        },
+        {
+          "word": " was",
+          "start": 23.4,
+          "end": 23.54,
+          "probability": 0.9999943971633911
+        },
+        {
+          "word": " old",
+          "start": 23.54,
+          "end": 23.74,
+          "probability": 0.999954342842102
+        },
+        {
+          "word": " enough,",
+          "start": 23.74,
+          "end": 23.96,
+          "probability": 0.9999420642852783
+        },
+        {
+          "word": " I",
+          "start": 24.16,
+          "end": 24.46,
+          "probability": 0.9999600648880005
+        },
+        {
+          "word": " was",
+          "start": 24.46,
+          "end": 24.6,
+          "probability": 0.9999878406524658
+        },
+        {
+          "word": " allowed",
+          "start": 24.6,
+          "end": 24.8,
+          "probability": 0.9999738931655884
+        },
+        {
+          "word": " to",
+          "start": 24.8,
+          "end": 24.96,
+          "probability": 0.9999880790710449
+        },
+        {
+          "word": " be",
+          "start": 24.96,
+          "end": 25.04,
+          "probability": 0.9999808073043823
+        },
+        {
+          "word": " in",
+          "start": 25.04,
+          "end": 25.18,
+          "probability": 0.9999841451644897
+        },
+        {
+          "word": " the",
+          "start": 25.18,
+          "end": 25.22,
+          "probability": 0.9999829530715942
+        },
+        {
+          "word": " house.",
+          "start": 25.22,
+          "end": 25.54,
+          "probability": 0.9999493360519409
+        }
+      ]
+    },
+    {
+      "start": 33.38,
+      "end": 36.54,
+      "text": " That's what made it sound conversational, not me making it up.",
+      "avg_logprob": -0.12197489082143548,
+      "no_speech_prob": 0.0023181824944913387,
+      "compression_ratio": 1.598984771573604,
+      "words": [
+        {
+          "word": " That's",
+          "start": 33.38,
+          "end": 33.82,
+          "probability": 0.9999682903289795
+        },
+        {
+          "word": " what",
+          "start": 33.82,
+          "end": 33.9,
+          "probability": 0.9999227523803711
+        },
+        {
+          "word": " made",
+          "start": 33.9,
+          "end": 34.04,
+          "probability": 0.9999009370803833
+        },
+        {
+          "word": " it",
+          "start": 34.04,
+          "end": 34.18,
+          "probability": 0.9999873638153076
+        },
+        {
+          "word": " sound",
+          "start": 34.18,
+          "end": 34.4,
+          "probability": 0.9999600648880005
+        },
+        {
+          "word": " conversational,",
+          "start": 34.4,
+          "end": 35.22,
+          "probability": 0.9999552369117737
+        },
+        {
+          "word": " not",
+          "start": 35.34,
+          "end": 35.76,
+          "probability": 0.9999369382858276
+        },
+        {
+          "word": " me",
+          "start": 35.76,
+          "end": 35.9,
+          "probability": 0.9999521970748901
+        },
+        {
+          "word": " making",
+          "start": 35.9,
+          "end": 36.16,
+          "probability": 0.9999445676803589
+        },
+        {
+          "word": " it",
+          "start": 36.16,
+          "end": 36.32,
+          "probability": 0.9879364371299744
+        },
+        {
+          "word": " up.",
+          "start": 36.32,
+          "end": 36.54,
+          "probability": 0.999976634979248
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "I was working in the kitchen with my mother, and she'd make me help with the repair. still remember one time, trying to fix a small cupboard, and I made it worse. I was allowed to keep trying. Then when I was old enough, I was allowed to be in the house. That' what made it sound conversational, not me making it up."
+}

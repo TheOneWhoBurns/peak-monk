@@ -1,0 +1,10 @@
+{
+  "captured_utc": "2026-10-09T21:10:17.759427+00:00",
+  "active_experiment": "speech-run07",
+  "latest_observed_step": 146,
+  "mlx_peak_bytes": 5496838536,
+  "swap_system_wide": "vm.swapusage: total = 5120.00M  used = 3850.75M  free = 1269.25M  (encrypted)",
+  "process": "38152  53168 55:28 /opt/homebrew/Cellar/python@3.12/3.12.10/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python scripts/train_moshi_checkpointed.py --output adapters/speech-run07 --gradient-window 16 --offload-optimizer",
+  "disk_free_bytes": 9267097600,
+  "scope": "System swap is shared with other apps; this snapshot cannot attribute it solely to training. MLX peak and OS process RSS are distinct measures. All large model jobs are serialized."
+}
