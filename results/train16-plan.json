@@ -1,0 +1,15 @@
+{
+  "experiment": "run16",
+  "status": "planned; wait for decoding audit before start",
+  "hypothesis": "Broader relationship cues and perspective retention address the remaining failures; adapting early blocks and the tied embedding lets identity changes propagate throughout the network instead of only the final 16 blocks.",
+  "resume": "run15-step0600, highest greedy development fraction so far; unaccepted, retained as experimental parent only",
+  "changes": [
+    "451 weighted complete conversations (214 distinct texts, including 24 variants from three retention templates)",
+    "New Mara/history/agency conversations weighted four times; relation-retention variants twice; previous corpus replay retained",
+    "Low-rank adapters in all 36 blocks plus tied embedding, rank16 scale2; prior last16 adapters resumed, new modules zero-output initialized",
+    "One weighted pass plus one example (452 microsteps) at LR1e-5, fresh optimizer",
+    "Same unprompted conversation audit, frozen loss, essential-category requirements and held-out guards"
+  ],
+  "memory": "Measure actual peak; do not assume fit. All computation stays on this Mac.",
+  "attribution": "Custom multi-variable intervention; not a controlled claim about one component."
+}
