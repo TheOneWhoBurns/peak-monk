@@ -1,0 +1,15 @@
+{
+  "sha256": {
+    "data/seeds.txt": "3533c42fe80e266f0211cc37094211d46f992aca7ea975e1ccdfa5cbebd71f05",
+    "data/validation.txt": "420a568d1234af0bd7ae036355fe5aad7de6e17c7c24a1a903b47c2935a01f43",
+    "evaluation/dev.json": "8107637b199b2745be67a4b667e04b3b82027a832b04865730a2902bd5f11831",
+    "evaluation/final.json": "e0554f9496ca387aedfb14c09573a9aa847592bf08cff7f5ab86bd107ac72850",
+    "character/core.md": "6844aeae2fe84b21add9ed8609a90090a3d474b9428d324ff3fcf87a09af7c79",
+    "sources/manifest.json": "a37b56b4e3d37c37a58abc5fb56b5dd82ad85cf3330b132f5cd5d7d0fe93b787"
+  },
+  "train_conversations": 62,
+  "train_assistant_turns": 152,
+  "validation_conversations": 12,
+  "validation_assistant_turns": 24,
+  "split_policy": "Explicit scenario families before turn expansion; development and final prompts authored separately."
+}
