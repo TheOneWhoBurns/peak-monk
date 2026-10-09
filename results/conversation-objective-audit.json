@@ -1,0 +1,8 @@
+{
+  "weighted_conversations": 343,
+  "windows": 343,
+  "context_tokens": 39437,
+  "assistant_target_tokens": 21529,
+  "max_window": 520,
+  "all_targets_preserved": "No conversation needs windowing (max 520 < 1024); mask equivalence and boundary coverage verified by unit tests."
+}

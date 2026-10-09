@@ -1,0 +1,34 @@
+model: models/stronger-clean
+data: data/prepared-full-conversation-v2
+train: false
+fine_tune_type: lora
+optimizer: adam
+mask_prompt: true
+num_layers: 16
+batch_size: 1
+iters: 1029
+val_batches: -1
+learning_rate: 0.00003
+steps_per_report: 10
+steps_per_eval: 200
+grad_accumulation_steps: 4
+adapter_path: adapters/run15
+save_every: 200
+max_seq_length: 768
+grad_checkpoint: true
+seed: 41
+lora_parameters:
+  rank: 16
+  dropout: 0.05
+  scale: 2.0
+  keys:
+  - self_attn.q_proj
+  - self_attn.k_proj
+  - self_attn.v_proj
+  - self_attn.o_proj
+  - mlp.gate_proj
+  - mlp.up_proj
+  - mlp.down_proj
+loss_version: all_assistant_spans_v1
+audit_every: 200
+audit_suite: evaluation/dev-roleplay-v2.json

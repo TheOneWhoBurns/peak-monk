@@ -1,0 +1,18 @@
+{
+  "experiment": "run15",
+  "status": "planned, not yet trained",
+  "hypothesis": "The corrected template plus full-conversation supervision can learn coherent human Jun from the clean foundation without inheriting distortions from previous partial-target runs.",
+  "changes": [
+    "Fresh clean Qwen3-4B-Instruct-2507 foundation; no resumed adapter",
+    "Every assistant span through EOS in one pass; caller/formatting masked",
+    "Three epochs over 343 weighted conversations (166 unique), rather than one epoch of repeated prefixes",
+    "LR 3e-5, between earlier low and high rates; same last-16-layer rank-16 LoRA",
+    "Development capture in process every 200 steps avoids duplicating GPU weights"
+  ],
+  "limitations": [
+    "Multi-variable intervention for constrained end-to-end task, not controlled attribution",
+    "Small authored corpus; frozen dev revisited during selection; final and pressure suites remain untouched"
+  ],
+  "evaluation_loss": "Unchanged assistant_eos_v2 last-reply validation; compare only clean-model serialization",
+  "source_commit": "0ee43da"
+}
