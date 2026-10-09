@@ -51,10 +51,17 @@ with tempfile.TemporaryDirectory(prefix='jun-staged-optimizer-') as temporary:
         streams = delay_streams(mx.array(np.load(path)['codes'][None]), model.cfg)
         tick = time.monotonic()
         print('Staged full-episode update', ident, meta['frames'], flush=True)
+        reference = loss(model, streams, text_padding_weight=.05, checkpoint_layers=True)
+        mx.eval(reference)
+        reference_value = reference.item()
+        del reference
+        mx.clear_cache()
         value, gradient = staged_episode_grad(model, streams, head_frames=a.head_frames)
         norm = mx.sqrt(sum(mx.sum(g.astype(mx.float32)**2) for _, g in tree_flatten(gradient)))
         mx.eval(value, norm)
         assert mx.isfinite(value).item() and mx.isfinite(norm).item()
+        forward_difference = abs(value.item() - reference_value)
+        assert forward_difference <= .01, ('Full versus staged actual-model loss mismatch', forward_difference)
         gradient = tree_map(lambda g: g * mx.minimum(1., 1./(norm+1e-8)), gradient)
         if optimizer_file.exists():
             restore_optimizer(optimizer, optimizer_file)
@@ -63,6 +70,7 @@ with tempfile.TemporaryDirectory(prefix='jun-staged-optimizer-') as temporary:
         assert all(mx.all(mx.isfinite(v)).item() for _, v in tree_flatten(model.trainable_parameters()))
         records.append(dict(episode=ident, input_sha256=meta['file_sha256'], frames=meta['frames'],
             loss=value.item(), gradient_norm=norm.item(), seconds=time.monotonic()-tick,
+            ordinary_forward_loss=reference_value, forward_loss_difference=forward_difference,
             peak_memory_bytes=mx.get_peak_memory()))
         print(json.dumps(records[-1]), flush=True)
         del streams, value, gradient, norm

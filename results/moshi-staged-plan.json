@@ -9,13 +9,13 @@
     },
     {
       "command": ".venv-speech/bin/python scripts/probe_moshi_staged.py --episodes name anger --head-frames 16 --output results/moshi-staged-memory.json",
-      "gate": "Two finite updates,245 and452frame actual episodes; no exported adapter"
+      "gate": "Two finite updates,245 and452frame actual episodes; full forward versus staged loss difference<=0.01 before each update; no exported adapter"
     }
   ],
   "failure_policy": "Preserve stderr and exit code. Do not train with this method unless both tests pass.",
   "source_hashes": {
     "scripts/moshi_staged.py": "8e0b094972e43f22c0997545a367daa45f6835651411f0e9c2d78657fc2dac57",
     "scripts/check_moshi_staged.py": "c07b1e8cf09aad5181dd19f266252ce214d05d90c2c926ebccfe99858511f9e5",
-    "scripts/probe_moshi_staged.py": "3e25a392946213e7d4028249eaea65bb3b80fbf94247d809dc9bc45af194599e"
+    "scripts/probe_moshi_staged.py": "a71c3fea06f094b51eba74c9d37f0137b5bcf37761f431b66d931f8589906e4d"
   }
 }
