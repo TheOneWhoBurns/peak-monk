@@ -1,0 +1,46 @@
+{
+  "status": "Prepared for a future experiment; not used by run17",
+  "original_source": "data/prepared-full-relations-v3",
+  "original_train_sha256": "e32218c131a5a112d8053defd0eff06f6c1e0fd0e5145b671bcfa60f8cbe1d30",
+  "new_sources": [
+    {
+      "path": "data/grounded_long_v3.txt",
+      "sha256": "30396e4c5f1d1d6d82c4da13a5a41417d65d421b00f4a0a0f5873fa9eff9cdc3",
+      "manifest_sha256": "918a466f00e2fe920ff86795817f9e03281466b981fbe9a1e95fad47d34b075a"
+    },
+    {
+      "path": "data/grounded_long_v4.txt",
+      "sha256": "52aea43c60ed3345e39581d8a0857b3995a5e551da150166d25160acbdc5b509",
+      "manifest_sha256": "9ff33df49ffccde8cdee21723c92eee08169d6743d6fc42ae9d2445968deec39"
+    },
+    {
+      "path": "data/grounded_long_v5.txt",
+      "sha256": "fe96539a2c92bc06bd12aad6598fdd660c3c6deee3cdbb50075b3b9332dbc219",
+      "manifest_sha256": "71a4c6a2273be6b5265abce45059cb98f4ebfaec9183a7d950da444c385f51b8"
+    },
+    {
+      "path": "data/grounded_long_v6.txt",
+      "sha256": "68f90fbed51b8a32ae2eb0d89ebbba815f2f58567e2968f0b3c2431e1813492e",
+      "manifest_sha256": "e2c21ae3439b4ca2b0d0d9bc2b68edf6de001f176a3daf74622f98b1f9ae92c9"
+    },
+    {
+      "path": "data/grounded_long_v7.txt",
+      "sha256": "216fd8cd4c892122fc6bf37474e3bddb99ceb3d1221c3c7d15f7f27fb0d1bb37",
+      "manifest_sha256": "66c31e3030426584f784c835f3b145dcd2631a33a3c420c60d70ec8ea874fda9"
+    }
+  ],
+  "new_family_count": 36,
+  "new_family_weight": 2,
+  "weighted_records": 523,
+  "distinct_texts": 250,
+  "weighted_character_turns": 2107,
+  "distinct_character_turns": 1102,
+  "split_policy": "All new families train-only; original validation and test bytes unchanged",
+  "limitations": "Same-author synthetic data and review. Repetition does not add independent examples.",
+  "output_sha256": {
+    "train.jsonl": "f920b4ec79f5ef2aeb4c900a2897fd0c331c0e9cc3bb155e24fd8a03fb91a10e",
+    "valid.jsonl": "6cac81fab61388010e064d1a92a3699e135f1c174ea836756d4ebbcca163aaba",
+    "test.jsonl": "6cac81fab61388010e064d1a92a3699e135f1c174ea836756d4ebbcca163aaba"
+  },
+  "test_file_scope": "The inherited test.jsonl bytes equal validation. This loader compatibility file is not an independent final test. Actual final conversation audit is evaluation/final-roleplay-v2.json and remains unrun."
+}
