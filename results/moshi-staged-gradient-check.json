@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "device": "cpu",
+  "dtype": "float32",
+  "cases": [
+    {
+      "dtype": "mlx.core.float32",
+      "head_frames": 4,
+      "loss_error": 9.5367431640625e-07,
+      "maximum_gradient_error": 2.9802322387695312e-08,
+      "relative_gradient_l2_error": 1.0006553389047751e-07,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "mlx.core.float32",
+      "head_frames": 8,
+      "loss_error": 0.0,
+      "maximum_gradient_error": 3.725290298461914e-08,
+      "relative_gradient_l2_error": 8.980089278451877e-08,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "mlx.core.float32",
+      "head_frames": 16,
+      "loss_error": 0.0,
+      "maximum_gradient_error": 3.725290298461914e-08,
+      "relative_gradient_l2_error": 7.266509670531927e-08,
+      "tolerance": 1e-05
+    }
+  ],
+  "scope": "Tiny random quantized Moshi, nonzero adapters, all trainable gradients against full uncheckpointed joint loss. Head chunks include ragged masked tails. Not pretrained-model memory or quality evidence."
+}

@@ -1,0 +1,7 @@
+{
+  "status": "BF16 CPU reference unavailable",
+  "runtime": "MLX0.26.5, Python3.12, CPU",
+  "failure": "Segmentation fault in full uncheckpointed BF16 reference, before staged method evaluation; process exit139. FP32 CPU reference and staged gradients pass.",
+  "evidence": "moshi-staged-check.log retained locally",
+  "next": "Tiny BF16 comparison on Metal, serialized after running text SFT. No runtime upgrade."
+}
