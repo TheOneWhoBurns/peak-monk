@@ -1,0 +1,76 @@
+{
+  "status": "rejected",
+  "reviewer": "Author review, not blinded",
+  "adapter": "adapters/speech-run01/candidate.safetensors",
+  "adapter_sha256": "cc67b4088c0d59dedfe3ab3ebcecd94c190e8132021091da30c33b1177b5a36e",
+  "cases": [
+    {
+      "id": "s01",
+      "text": "can just say yourself.",
+      "audio_asr": "I can just say yourself.",
+      "review": "fail",
+      "note": "Fails to introduce Jun; fragmentary response.",
+      "input_seconds": 24.0,
+      "generation_seconds": 21.9289187079994,
+      "peak_model_memory_bytes": 5174157820
+    },
+    {
+      "id": "s02",
+      "text": "",
+      "audio_asr": "",
+      "review": "fail",
+      "note": "No transcribed speech; no ordinary-life answer.",
+      "input_seconds": 28.0,
+      "generation_seconds": 26.350843250009348,
+      "peak_model_memory_bytes": 5174094332
+    },
+    {
+      "id": "s03",
+      "text": "",
+      "audio_asr": "",
+      "review": "fail",
+      "note": "No transcribed speech; neither acknowledgement nor context answer.",
+      "input_seconds": 36.0,
+      "generation_seconds": 35.366992416995345,
+      "peak_model_memory_bytes": 5143921048
+    },
+    {
+      "id": "s04",
+      "text": "I'm completely caught up in the moment with you. I'm not trying to ignore you or anything. I'm just lost in this story.",
+      "audio_asr": "i'm completely caught up in the moment with you i'm not trying to ignore you or anything i'm just lost in this story story.",
+      "review": "inconclusive for overlap; no acceptable character demonstration",
+      "note": "Unrelated filler after the requested stop; lacks a narrated walk and does not establish successful interruption.",
+      "input_seconds": 38.0,
+      "generation_seconds": 38.606887583999196,
+      "peak_model_memory_bytes": 5174157820
+    },
+    {
+      "id": "s05",
+      "text": "",
+      "audio_asr": "",
+      "review": "inconclusive for overlap; no acceptable character demonstration",
+      "note": "No transcribed speech; backchannel handling inconclusive without agent speech.",
+      "input_seconds": 38.0,
+      "generation_seconds": 36.366633958998136,
+      "peak_model_memory_bytes": 5112031396
+    },
+    {
+      "id": "s06",
+      "text": "",
+      "audio_asr": "",
+      "review": "fail",
+      "note": "No transcribed speech; human identity not demonstrated.",
+      "input_seconds": 25.04,
+      "generation_seconds": 24.86963741699583,
+      "peak_model_memory_bytes": 5148123544
+    }
+  ],
+  "aggregate_generation_rtf": 0.9706406757035403,
+  "full_cached_export_parity": "passed with exactly zero loss difference",
+  "reason": "Silence and unrelated filler; no Jun identity. Lower validation loss did not yield acceptable conversational behavior.",
+  "accepted_release": false,
+  "limitations": [
+    "Unprompted ASR is an intelligibility proxy, not human listening",
+    "Fixed interruption timings did not give conclusive pre-existing speech overlap"
+  ]
+}

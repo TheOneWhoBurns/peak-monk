@@ -1,0 +1,57 @@
+{
+  "wav": "results/speech-run01/s01/agent.wav",
+  "wav_sha256": "7279bdcf254e33829cd3fd136c1d0c801e1f468cb62c496cf61c926823a14677",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 7.709572957988712,
+  "duration_seconds": 23.92,
+  "transcript": "I can just say yourself.",
+  "segments": [
+    {
+      "start": 2.9,
+      "end": 4.8,
+      "text": " I can just say yourself.",
+      "avg_logprob": -0.18150970670912,
+      "no_speech_prob": 0.01796984113752842,
+      "compression_ratio": 0.75,
+      "words": [
+        {
+          "word": " I",
+          "start": 2.9,
+          "end": 3.32,
+          "probability": 0.9874845147132874
+        },
+        {
+          "word": " can",
+          "start": 3.32,
+          "end": 3.5,
+          "probability": 0.9971106052398682
+        },
+        {
+          "word": " just",
+          "start": 3.5,
+          "end": 3.82,
+          "probability": 0.9994843006134033
+        },
+        {
+          "word": " say",
+          "start": 3.82,
+          "end": 4.3,
+          "probability": 0.9991716146469116
+        },
+        {
+          "word": " yourself.",
+          "start": 4.3,
+          "end": 4.8,
+          "probability": 0.9655171632766724
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "fail",
+  "model_text_channel": "can just say yourself.",
+  "review_note": "Fails to introduce Jun; fragmentary response."
+}

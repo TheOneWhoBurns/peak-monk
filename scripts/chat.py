@@ -1,16 +1,20 @@
 """Interactive local character inference. Intentionally no persona system prompt."""
 import argparse
+from pathlib import Path
 import mlx.core as mx
 from mlx_lm import load, stream_generate
 from mlx_lm.sample_utils import make_sampler
 
 def main():
     p=argparse.ArgumentParser()
-    p.add_argument('--model',default='models/base')
-    p.add_argument('--adapter',default='adapters/best')
+    p.add_argument('--model',default='models/stronger-clean')
+    p.add_argument('--adapter',required=True,
+                   help='Explicit experimental adapter directory; no accepted release exists yet')
     p.add_argument('--temperature',type=float,default=0.6)
     p.add_argument('--max-tokens',type=int,default=180)
     args=p.parse_args()
+    if not Path(args.model).is_dir() or not Path(args.adapter).is_dir():
+        p.error('Model and adapter must be existing local directories')
     model,tok=load(args.model,adapter_path=args.adapter)
     messages=[]
     print('Jun — fictional monk, running locally. /reset clears context; /quit exits.')

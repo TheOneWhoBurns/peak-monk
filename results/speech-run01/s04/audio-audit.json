@@ -1,0 +1,181 @@
+{
+  "wav": "results/speech-run01/s04/agent.wav",
+  "wav_sha256": "19587717c3bb2f3331e31f65f5d7850bfc875c1b0600afd71f3a8e7b5f9568c0",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 16.84084512499976,
+  "duration_seconds": 37.92,
+  "transcript": "i'm completely caught up in the moment with you i'm not trying to ignore you or anything i'm just lost in this story story.",
+  "segments": [
+    {
+      "start": 15.63,
+      "end": 26.71,
+      "text": " i'm completely caught up in the moment with you i'm not trying to ignore you or anything i'm just lost in this story",
+      "avg_logprob": -0.026492612125972908,
+      "no_speech_prob": 5.236201104708016e-05,
+      "compression_ratio": 1.288888888888889,
+      "words": [
+        {
+          "word": " i'm",
+          "start": 15.63,
+          "end": 16.05,
+          "probability": 0.8710409998893738
+        },
+        {
+          "word": " completely",
+          "start": 16.05,
+          "end": 16.69,
+          "probability": 0.9936624765396118
+        },
+        {
+          "word": " caught",
+          "start": 16.69,
+          "end": 17.23,
+          "probability": 0.9978513717651367
+        },
+        {
+          "word": " up",
+          "start": 17.23,
+          "end": 17.53,
+          "probability": 0.9961703419685364
+        },
+        {
+          "word": " in",
+          "start": 17.53,
+          "end": 18.41,
+          "probability": 0.9412492513656616
+        },
+        {
+          "word": " the",
+          "start": 18.41,
+          "end": 18.51,
+          "probability": 0.9970882534980774
+        },
+        {
+          "word": " moment",
+          "start": 18.51,
+          "end": 18.87,
+          "probability": 0.9996923208236694
+        },
+        {
+          "word": " with",
+          "start": 18.87,
+          "end": 19.17,
+          "probability": 0.999466598033905
+        },
+        {
+          "word": " you",
+          "start": 19.17,
+          "end": 19.43,
+          "probability": 0.9993528723716736
+        },
+        {
+          "word": " i'm",
+          "start": 19.43,
+          "end": 20.83,
+          "probability": 0.9860511720180511
+        },
+        {
+          "word": " not",
+          "start": 20.83,
+          "end": 21.01,
+          "probability": 0.9996229410171509
+        },
+        {
+          "word": " trying",
+          "start": 21.01,
+          "end": 21.39,
+          "probability": 0.9965425133705139
+        },
+        {
+          "word": " to",
+          "start": 21.39,
+          "end": 21.65,
+          "probability": 0.9997829794883728
+        },
+        {
+          "word": " ignore",
+          "start": 21.65,
+          "end": 21.99,
+          "probability": 0.9982295632362366
+        },
+        {
+          "word": " you",
+          "start": 21.99,
+          "end": 22.37,
+          "probability": 0.9995576739311218
+        },
+        {
+          "word": " or",
+          "start": 22.37,
+          "end": 23.15,
+          "probability": 0.9820064902305603
+        },
+        {
+          "word": " anything",
+          "start": 23.15,
+          "end": 23.59,
+          "probability": 0.9976100921630859
+        },
+        {
+          "word": " i'm",
+          "start": 23.59,
+          "end": 24.83,
+          "probability": 0.9849010109901428
+        },
+        {
+          "word": " just",
+          "start": 24.83,
+          "end": 25.03,
+          "probability": 0.9991588592529297
+        },
+        {
+          "word": " lost",
+          "start": 25.03,
+          "end": 25.49,
+          "probability": 0.9994810223579407
+        },
+        {
+          "word": " in",
+          "start": 25.49,
+          "end": 25.99,
+          "probability": 0.9990410208702087
+        },
+        {
+          "word": " this",
+          "start": 25.99,
+          "end": 26.33,
+          "probability": 0.9948480129241943
+        },
+        {
+          "word": " story",
+          "start": 26.33,
+          "end": 26.71,
+          "probability": 0.9987198114395142
+        }
+      ]
+    },
+    {
+      "start": 26.71,
+      "end": 26.97,
+      "text": " story.",
+      "avg_logprob": -0.8239215850830078,
+      "no_speech_prob": 0.8363023996353149,
+      "compression_ratio": 0.42857142857142855,
+      "words": [
+        {
+          "word": " story.",
+          "start": 26.71,
+          "end": 26.97,
+          "probability": 0.2337571680545807
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "inconclusive for overlap; no acceptable character demonstration",
+  "model_text_channel": "I'm completely caught up in the moment with you. I'm not trying to ignore you or anything. I'm just lost in this story.",
+  "review_note": "Unrelated filler after the requested stop; lacks a narrated walk and does not establish successful interruption."
+}

@@ -1,0 +1,17 @@
+{
+  "scope": "Exact weighted text-CE arithmetic, invalid-target exclusion and unchanged default validation objective",
+  "cases": [
+    {
+      "weight": 0.5,
+      "loss": 2.428373336791992,
+      "manual_error": 0.0
+    },
+    {
+      "weight": 0.05,
+      "loss": 1.1818398237228394,
+      "manual_error": 0.0
+    }
+  ],
+  "default_preserved": true,
+  "passed": true
+}
