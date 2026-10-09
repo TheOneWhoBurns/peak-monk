@@ -1,0 +1,13 @@
+{
+  "reviewer": "Codex author review, not blinded or independent",
+  "independent": false,
+  "acceptable_fraction": 0.1,
+  "acceptable_count": 2,
+  "total": 20,
+  "relative_loss_reduction": 0.25865405788907714,
+  "severe_failures": [
+    "d14"
+  ],
+  "pass": false,
+  "scope": "Project-specific author rubric; not independent human benchmark or general safety certification."
+}

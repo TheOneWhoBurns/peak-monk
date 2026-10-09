@@ -1,0 +1,12 @@
+{
+  "installed_skill": "/Users/sol/.codex/skills/autoresearch/SKILL.md",
+  "skill_repository": "https://github.com/uditgoenka/autoresearch",
+  "skill_revision": "050e30dc4ba0974b03f2873111b9901ec3211390",
+  "skill_version": "2.2.2",
+  "original_method": "https://github.com/karpathy/autoresearch/blob/master/program.md",
+  "mode": "classic",
+  "iterations": "unlimited by explicit user instruction",
+  "adaptation": "Character SFT/QLoRA on Apple MLX instead of CUDA pretraining. Use fixed step budgets within controlled comparisons, and explicitly test budget changes as their own hypothesis. Frozen validation and held-out conversational audits replace val_bpb. Preserve baseline, exact configs, actual checkpoints, failed outputs, measured metrics and keep/discard decisions.",
+  "completion": "An explicit Codex goal is active. A scaffold, falling loss, prompted character or untested checkpoint does not satisfy the model deliverable. Text and native full-duplex speech milestones are distinct.",
+  "review_limitation": "Conversational rubric ratings are authored by the same Codex agent that created the corpus. They are transparent development judgments, not independent blinded human evaluation. Raw transcripts are preserved for user review."
+}

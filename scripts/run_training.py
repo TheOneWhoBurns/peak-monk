@@ -22,12 +22,17 @@ def main():
     (results/f'{args.name}.yaml').write_text(config.read_text())
     start=time.monotonic()
     started=datetime.now(timezone.utc).isoformat()
-    proc=subprocess.run([sys.executable,'-m','mlx_lm','lora','--config',str(config),'--train'],
-                        stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True)
+    proc=subprocess.Popen([sys.executable,'-m','mlx_lm','lora','--config',str(config),'--train'],
+                          stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,bufsize=1)
+    output=[]
+    for line in proc.stdout:
+        clean_line=re.sub(r'\x1b\[[0-9;]*m','',line)
+        output.append(clean_line)
+        print(clean_line,end='',flush=True)
+    proc.wait()
     elapsed=time.monotonic()-start
-    clean=re.sub(r'\x1b\[[0-9;]*m','',proc.stdout)
+    clean=''.join(output)
     (results/f'{args.name}.txt').write_text(clean)
-    print(clean,flush=True)
     adapter=Path(settings['adapter_path'])/'adapters.safetensors'
     meta={'started_at':started,'wall_seconds':elapsed,'exit_code':proc.returncode,
           'configuration_sha256':hashlib.sha256(config.read_bytes()).hexdigest(),

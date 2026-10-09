@@ -35,36 +35,62 @@
       "parameters": 9371787666,
       "bf16_model_bytes": 18743737228,
       "native_full_duplex": true,
-      "reported_inference_memory_gb": {"bf16": 19, "int4": 11, "gguf": 10},
+      "reported_inference_memory_gb": {
+        "bf16": 19,
+        "int4": 11,
+        "gguf": 10
+      },
       "source": "https://github.com/OpenBMB/MiniCPM-V",
       "fit": "Qwen3-8B-based multimodal alternative; training support via LLaMA-Factory/SWIFT must be checked specifically for duplex speech, not assumed from generic fine-tuning support. Reported memory exceeds the local machine."
     }
   ],
   "benchmarks": [
     {
-      "source": "https://arxiv.org/html/2602.06053v1#S4.T6",
+      "source": "https://arxiv.org/html/2602.06053v1",
       "table": 6,
       "checkpoint": "PersonaPlex released",
       "benchmark": "Full-Duplex-Bench",
       "turn_taking_success_TOR": 0.908,
-      "turn_taking_latency_seconds": 0.170,
-      "interruption_success_TOR": 0.950,
-      "interruption_latency_seconds": 0.240,
-      "response_quality_GPT4o": 4.290,
+      "turn_taking_latency_seconds": 0.17,
+      "interruption_success_TOR": 0.95,
+      "interruption_latency_seconds": 0.24,
+      "response_quality_GPT4o": 4.29,
       "caveat": "Author-reported benchmark latencies, not measured here or promised on this Mac."
     },
     {
-      "source": "https://arxiv.org/html/2602.06053v1#Sx1.T7",
+      "source": "https://arxiv.org/html/2602.06053v1",
       "table": 7,
       "benchmark": "Released-checkpoint dialog naturalness MOS, same study/annotator pool",
-      "scores_95ci": {"PersonaPlex released": [2.95,0.25], "Moshi": [2.44,0.21], "Freeze-Omni": [2.51,0.22], "Gemini": [2.80,0.24]},
+      "scores_95ci": {
+        "PersonaPlex released": [
+          2.95,
+          0.25
+        ],
+        "Moshi": [
+          2.44,
+          0.21
+        ],
+        "Freeze-Omni": [
+          2.51,
+          0.22
+        ],
+        "Gemini": [
+          2.8,
+          0.24
+        ]
+      },
       "caveat": "Do not compare these scores directly to the paper's separate Table 1 annotator study."
     },
     {
-      "source": "https://arxiv.org/html/2602.06053v1#S4.T4",
+      "source": "https://arxiv.org/html/2602.06053v1",
       "table": 4,
       "benchmark": "Service-Duplex-Bench mean GPT-4o rating",
-      "scores": {"PersonaPlex experimental":4.48,"Moshi":1.75,"Freeze-Omni":4.02,"Gemini":4.73},
+      "scores": {
+        "PersonaPlex experimental": 4.48,
+        "Moshi": 1.75,
+        "Freeze-Omni": 4.02,
+        "Gemini": 4.73
+      },
       "caveat": "Experimental PersonaPlex configuration, not automatically the downloadable checkpoint; model versions and evaluator are those of the paper."
     }
   ],
