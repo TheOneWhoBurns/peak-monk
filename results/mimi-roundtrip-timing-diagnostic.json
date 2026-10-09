@@ -1,0 +1,25 @@
+{
+  "scope": "Offline Mimi user-stream encode/decode waveform alignment, using existing held-out round trip. Not model response latency or live application latency.",
+  "sample_rate": 24000,
+  "original_samples": 864000,
+  "decoded_samples": 864000,
+  "cross_correlation_search_seconds": [
+    -0.5,
+    0.5
+  ],
+  "turns": [
+    {
+      "original_turn_start": 1.0,
+      "decoded_minus_original_peak_lag_samples": 0,
+      "lag_seconds": 0.0,
+      "normalized_correlation": 0.7225720882415771
+    },
+    {
+      "original_turn_start": 19.0,
+      "decoded_minus_original_peak_lag_samples": 2,
+      "lag_seconds": 8.333333333333333e-05,
+      "normalized_correlation": 0.7346711158752441
+    }
+  ],
+  "limitation": "Lossy codec correlation and voiced-period ambiguity; two utterances only. Does not calibrate native agent scheduling or ASR timestamp error."
+}
