@@ -1,0 +1,7 @@
+{
+  "baseline": "results/stronger-baseline.json",
+  "foundation": "models/stronger",
+  "loss_version": "assistant_eos_v2",
+  "hypothesis": "A stronger foundation with gentler low-rank updates and three passes over the curated corpus can learn Jun without the destructive stock-phrase collapse. This is a joint recipe hypothesis, not a causal attribution to one hyperparameter.",
+  "teacher_pilot": "Older Qwen4B self-generated samples are excluded; structural and style failures are preserved."
+}
