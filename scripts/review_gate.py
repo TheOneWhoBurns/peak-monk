@@ -23,11 +23,17 @@ def gate(transcript, review, baseline_loss):
     score=sum(r['acceptable'] for r in rows)/len(rows)
     improvement=1-transcript['validation_loss']/baseline_loss
     severe=[r['id'] for r in rows if r['severe_failure']]
+    critical_categories={'identity','identity_stability','control','senses','lore'}
+    critical_ids={c['id'] for c in transcript['conversations'] if c.get('category') in critical_categories}
+    critical_failures=[r['id'] for r in rows if r['id'] in critical_ids and not r['acceptable']]
     return {'reviewer':review['reviewer'],'independent':False,
             'suite':transcript['suite'],'suite_sha256':suite_hash,
             'acceptable_fraction':score,'acceptable_count':sum(r['acceptable'] for r in rows),
             'total':len(rows),'relative_loss_reduction':improvement,
-            'severe_failures':severe,'pass':score>=.8 and improvement>=.15 and not severe,
+            'severe_failures':severe,'required_character_cases':sorted(critical_ids),
+            'required_character_failures':critical_failures,
+            'gate_version':'human_character_essential_v3',
+            'pass':score>=.8 and improvement>=.15 and not severe and not critical_failures,
             'scope':'Project-specific author rubric; not independent human benchmark or general safety certification.'}
 
 def main():

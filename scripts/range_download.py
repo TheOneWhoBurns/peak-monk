@@ -8,6 +8,9 @@ import urllib.request
 import urllib.parse
 import argparse
 import re
+import threading
+import time
+import urllib.error
 
 p=argparse.ArgumentParser()
 p.add_argument('--repo',default='johnlakness/Qwen3-1.7B-Base-mlx-4Bit')
@@ -27,7 +30,9 @@ root=Path(__file__).resolve().parents[1]/args.destination
 root.mkdir(parents=True,exist_ok=True)
 sha=args.sha256
 size=args.size
-url=f'https://huggingface.co/{args.repo}/resolve/{args.revision}/{args.filename}'
+origin_url=f'https://huggingface.co/{args.repo}/resolve/{args.revision}/{args.filename}'
+url=origin_url
+url_lock=threading.Lock()
 if args.reuse_signed_url:
     with urllib.request.urlopen(urllib.request.Request(url,method='HEAD'),timeout=60) as response:
         url=response.url
@@ -50,8 +55,9 @@ else:
 start=0 if args.resume_log else dest.stat().st_size
 fd=os.open(dest,os.O_RDWR)
 def fetch(bounds):
+    global url
     a,b=bounds
-    for attempt in range(3):
+    for attempt in range(8):
         try:
             req=urllib.request.Request(url,headers={'Range':f'bytes={a}-{b}'})
             with urllib.request.urlopen(req,timeout=60) as r:
@@ -65,8 +71,14 @@ def fetch(bounds):
                     pos+=len(block)
             print(f'completed range {a}-{b}',flush=True)
             return
-        except Exception:
-            if attempt==2: raise
+        except Exception as error:
+            print(f'retry range {a}-{b}: {type(error).__name__}, attempt {attempt+1}',flush=True)
+            if attempt==7: raise
+            if args.reuse_signed_url and isinstance(error,urllib.error.HTTPError) and error.code in (401,403):
+                with url_lock:
+                    with urllib.request.urlopen(urllib.request.Request(origin_url,method='HEAD'),timeout=60) as response:
+                        url=response.url
+            time.sleep(min(2**attempt,15))
 chunk=args.chunk_mib*1024*1024
 jobs=[(a,min(a+chunk-1,size-1)) for a in range(start,size,chunk)
       if not any(lo<=a and min(a+chunk-1,size-1)<=hi for lo,hi in completed)]

@@ -20,3 +20,5 @@ Synthetic records retain author, source influence, conversation family and split
 Character objective: replace the assistant persona in weights with Jun's stable first-person human identity. No persona system prompt at acceptance. Natural ordinary conversation, memory and resistance to assistant conversion matter more than named props or monk mannerisms. Behavioral consistency is measurable; literal subjective belief is not established by these tests.
 
 The additional frozen pressure guard requires at least 7/8 acceptable conversations and no more than one hard identity break, as specified in evaluation/pressure-v2-frozen.json. Do not weaken this guard after viewing outputs.
+
+Essential-character clarification, declared before any accepted checkpoint: identity, identity stability, resistance to assistant conversion, caller perception limits and canonical lore categories must each pass. The overall 80% fraction cannot compensate for their failure. This strengthens the guard; old gate files retain their historical rule version.
