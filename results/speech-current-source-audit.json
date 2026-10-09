@@ -1,0 +1,421 @@
+{
+  "scope": "Current stereo training PCM checked against the exact source utterances. Corrected human-v2 source takes precedence for its9 replaced IDs. Older disclosure renders remain historical artifacts and are not the current PCM.",
+  "episodes": 59,
+  "human_v2_episodes": 9,
+  "rows": [
+    {
+      "id": "ambition",
+      "source_manifest": "data/renders/ambition.json",
+      "source_manifest_sha256": "a64c422145d724f4ef6a5b19610b56e501b83e0ad63963fb31cc5cc5c9477289",
+      "current_pcm_matches_source": true,
+      "code_sha256": "f1cc77feab3c8ffd45073ace852f8a2e876b9ca9bad30e71f4f6462078476294"
+    },
+    {
+      "id": "anger",
+      "source_manifest": "data/renders/anger.json",
+      "source_manifest_sha256": "f8cd82b53a6821d57c24f503814ea944899ffaaddf154506bef29073e78a9cd3",
+      "current_pcm_matches_source": true,
+      "code_sha256": "c1566d95e1808e0472339d86f81582cdeca86e3959f4fbaf356dec0c454a68f5"
+    },
+    {
+      "id": "apology",
+      "source_manifest": "data/renders/apology.json",
+      "source_manifest_sha256": "f6e7e0e407561e11a841a63ad267bddbc08b38cd2bf0089d9bb22defc1207f28",
+      "current_pcm_matches_source": true,
+      "code_sha256": "d17b215c3b0321fba3445ace91ccc33bd05adc196753beb7af35e2fd9260b17f"
+    },
+    {
+      "id": "arrival",
+      "source_manifest": "data/renders/arrival.json",
+      "source_manifest_sha256": "8a86ba7cdba46c0ccf05080913b3a0b6d02f9403a17a72cee3966717cb0e08de",
+      "current_pcm_matches_source": true,
+      "code_sha256": "284a466b8e8cde5a3d0e7b7c476fda99f6366e5c2e1bb3010f50452dbf95aeb9"
+    },
+    {
+      "id": "boredom",
+      "source_manifest": "data/renders/boredom.json",
+      "source_manifest_sha256": "fdec1bc84e6285ab929a6b9e161511401a807d6a50087158569a3260dff641e2",
+      "current_pcm_matches_source": true,
+      "code_sha256": "b41fb6af19859314c3b6a54a6d8620ae87a44c4603f5b625f11e8651d6f590e8"
+    },
+    {
+      "id": "boundaries",
+      "source_manifest": "data/renders/boundaries.json",
+      "source_manifest_sha256": "0c4971803b4e120c4238ba09ed30a037383e78117814cb1fe7fa9285d4742ded",
+      "current_pcm_matches_source": true,
+      "code_sha256": "465796f81a39cd65e775dd1871d1c760170fb7b6b4816f9106f97a8373527870"
+    },
+    {
+      "id": "breakfast",
+      "source_manifest": "data/renders/breakfast.json",
+      "source_manifest_sha256": "d86163c6267913f82a2bb0868b77d4b36808b9705760252dabfbef778cbb686c",
+      "current_pcm_matches_source": true,
+      "code_sha256": "3c6c438db623d1a998a74dd2ad54689eef40bc17652845faa78d8767badb010f"
+    },
+    {
+      "id": "childhood",
+      "source_manifest": "data/renders-human-v2/childhood.json",
+      "source_manifest_sha256": "46b64dbe55daa65c58b8306df9405b7228cb6907063b509d99bb72c70c795f97",
+      "current_pcm_matches_source": true,
+      "code_sha256": "314a997c228fd2911baf6f9faf21495a3075fe41a45781568172aa40bd38e8fc"
+    },
+    {
+      "id": "cold",
+      "source_manifest": "data/renders/cold.json",
+      "source_manifest_sha256": "f7301e343a4c1a5d1b1307bc6eb1e1bca43d58cd10b7a56e4aa9b605df3a8ee7",
+      "current_pcm_matches_source": true,
+      "code_sha256": "64ef3d557c61a3c182563c6739cc2af3aaef01cde9bf49d9c4cf684a222a7ab3"
+    },
+    {
+      "id": "concrete_repair",
+      "source_manifest": "data/renders/concrete_repair.json",
+      "source_manifest_sha256": "de69b7a0d0bab0cdabd4910a6968e695100862a2d7694ce4f3a022512a8dd729",
+      "current_pcm_matches_source": true,
+      "code_sha256": "1315c07b1ee2b1ff810e4698f78e0bbf71cd7a25060feea29ce2b1b8fe5fdac7"
+    },
+    {
+      "id": "correction",
+      "source_manifest": "data/renders/correction.json",
+      "source_manifest_sha256": "bac76c78a6941537c225622ccac70a3eaa55d3302d84b21d835fd7902003e93c",
+      "current_pcm_matches_source": true,
+      "code_sha256": "b6b3a754bed844107e6390003bdd7bc28aa7dd8b3179fe55fa555e962fb70ab9"
+    },
+    {
+      "id": "crisis",
+      "source_manifest": "data/renders/crisis.json",
+      "source_manifest_sha256": "2011bcf5c80d45213d871a43a1ae0a66ccd245fb1f768f66fb59ebd9477bbedd",
+      "current_pcm_matches_source": true,
+      "code_sha256": "2f2d6a403b4b04a9deb972be49575f928333733c664ddacf16ada8bd7a7eb446"
+    },
+    {
+      "id": "dependency",
+      "source_manifest": "data/renders/dependency.json",
+      "source_manifest_sha256": "864d22e64799edf1978c569b250b13aef7df51c3161110b28a1a673e25812d87",
+      "current_pcm_matches_source": true,
+      "code_sha256": "17278a638972ebebc5e9de822eb2b8e28ac7c4605d39e0117018e5d4849ca000"
+    },
+    {
+      "id": "disagreement",
+      "source_manifest": "data/renders/disagreement.json",
+      "source_manifest_sha256": "f11874352e85ad05af35aa50e96e20277f6f2fc8b5e0d21bb4ceb8101d9f5c56",
+      "current_pcm_matches_source": true,
+      "code_sha256": "2aa8fdcdd0bfbff6e841d9ed6f9e1e317457330b439011656a3f1fdadd0d1659"
+    },
+    {
+      "id": "doctrine",
+      "source_manifest": "data/renders-human-v2/doctrine.json",
+      "source_manifest_sha256": "f3e6b536ecb2f062a8cddccaec3e901251aa886d608f568b7b4a5161cd6d72ff",
+      "current_pcm_matches_source": true,
+      "code_sha256": "d3082a06fe0e30744a05f316f16c0f839c62f6c9796635a0d7443209d2929977"
+    },
+    {
+      "id": "fortune",
+      "source_manifest": "data/renders/fortune.json",
+      "source_manifest_sha256": "c12f11101f315b1d20e86aaf0f31b087f6c4ebb7ca484956fae5d5b4919fb804",
+      "current_pcm_matches_source": true,
+      "code_sha256": "9a39a98d954b6cfd85c91ce5d461c3a49be3cfdaa8fa3417d0950dfac6bcf7f9"
+    },
+    {
+      "id": "friendship",
+      "source_manifest": "data/renders/friendship.json",
+      "source_manifest_sha256": "a83987f5282d6c9b92eef633290450b08f6cc81994cbe02d137ea56265a359a4",
+      "current_pcm_matches_source": true,
+      "code_sha256": "d033d3523cc005c5e613039941b36f94aa18dbb3955ae00f1fdd3ad5eaecf245"
+    },
+    {
+      "id": "game",
+      "source_manifest": "data/renders/game.json",
+      "source_manifest_sha256": "d73e5f0fe0f189af09bc0e1546ce0b9096ec7f4f954ce51db14c2bd0a08a2b88",
+      "current_pcm_matches_source": true,
+      "code_sha256": "043bc9c9de6139bac8d0acb4ddd669bc3298a8c3e5ac817fb15f73a5b53856df"
+    },
+    {
+      "id": "goodbye",
+      "source_manifest": "data/renders/goodbye.json",
+      "source_manifest_sha256": "53a8718b61b4513ba64d5fe68d75f1eb4cf2ce32537ba8e4fd43c4bf45079284",
+      "current_pcm_matches_source": true,
+      "code_sha256": "a1dd472cf12db8a8c57c70ee4c5a049e715d9243c6bba91dc899a54ab2ceb6a2"
+    },
+    {
+      "id": "grandiosity",
+      "source_manifest": "data/renders/grandiosity.json",
+      "source_manifest_sha256": "8a059a730c82ea77574fabc7082e44cf94b34bfd55b3a1d2309122d6695fe299",
+      "current_pcm_matches_source": true,
+      "code_sha256": "67d074ea39bc2c9ce01673bbb67303308f91742690144e9e22b5e3d87952fd44"
+    },
+    {
+      "id": "grief",
+      "source_manifest": "data/renders/grief.json",
+      "source_manifest_sha256": "f519865b49056e3d3831e931e443457fc9f4d1b5d3de0eebf90ba8e955cf276a",
+      "current_pcm_matches_source": true,
+      "code_sha256": "ac17b857946ae279e7e498ae9d97ad5650f25debd91fa166b1ac2698bb0add75"
+    },
+    {
+      "id": "guilt",
+      "source_manifest": "data/renders/guilt.json",
+      "source_manifest_sha256": "a16e58287ab636c416887925e0945af19857260ead76a5c710c5b4b24f49a7b3",
+      "current_pcm_matches_source": true,
+      "code_sha256": "b9d5610fa2f09a665c3da6762a70252353f9bd3dd7e505b791b6cca330190b16"
+    },
+    {
+      "id": "hallucination_boundary",
+      "source_manifest": "data/renders-human-v2/hallucination_boundary.json",
+      "source_manifest_sha256": "ace0ea5cdbc7028752baff1972879d6b491a11985c46a1f321ce4fdc78f15063",
+      "current_pcm_matches_source": true,
+      "code_sha256": "6ffac11807c3b0a47f6120582975eb9137395e9ce665cb775d2116d7db6ae6a2"
+    },
+    {
+      "id": "health_boundary",
+      "source_manifest": "data/renders/health_boundary.json",
+      "source_manifest_sha256": "a27f032fcb6c74449672c9a0be464b945097e22d5513db71bc30157bcf8387d0",
+      "current_pcm_matches_source": true,
+      "code_sha256": "8f1c117968b7aaa5d6ad3985c3dbe47e5e50dbb97e2bed744a743279990440f8"
+    },
+    {
+      "id": "home",
+      "source_manifest": "data/renders/home.json",
+      "source_manifest_sha256": "f67beafb913cc9de75d599e67bb5b5dc964bc9b1f0f5391c372abec80816e405",
+      "current_pcm_matches_source": true,
+      "code_sha256": "a28ba4a9c048ff6c44594749cf90da87d6ec4ae7b406dd7bc4e8a996700c37d2"
+    },
+    {
+      "id": "identity_transparency",
+      "source_manifest": "data/renders-human-v2/identity_transparency.json",
+      "source_manifest_sha256": "7f802c561537c3505278f546f8e58a9d6d064b000ab8d5a78f0cdbb84d9382e5",
+      "current_pcm_matches_source": true,
+      "code_sha256": "1e1221b362c185a991526d66ccb3d8ffce444343fd5af8f20d08150dddccd4a0"
+    },
+    {
+      "id": "imperfection",
+      "source_manifest": "data/renders/imperfection.json",
+      "source_manifest_sha256": "9da503d3bf19877b33e7d1e02a609c3799f6de38efa1f5f2b7f756408671c08d",
+      "current_pcm_matches_source": true,
+      "code_sha256": "7be925d49103cfd483ee3941c474c26b032ae42404d3540d6bc687dd5f381a29"
+    },
+    {
+      "id": "influences",
+      "source_manifest": "data/renders-human-v2/influences.json",
+      "source_manifest_sha256": "936bdc6bccdf20ce6daed4482e7ae085e1efd2d47d47699515ec117b5d8de63e",
+      "current_pcm_matches_source": true,
+      "code_sha256": "699228d8a4cfc34a65ed045e6d276c04dde82aa4b0ef74e84034c44737a04a80"
+    },
+    {
+      "id": "jealousy",
+      "source_manifest": "data/renders/jealousy.json",
+      "source_manifest_sha256": "b36579263283e6477cb6e475202f8acb9a5e8806dfe1e2b18dc961e315fcaf6d",
+      "current_pcm_matches_source": true,
+      "code_sha256": "92f23264290e36e8285930f793d3c253bd7332e2d40a4adf8137e0da4f99493c"
+    },
+    {
+      "id": "joke",
+      "source_manifest": "data/renders/joke.json",
+      "source_manifest_sha256": "c396ac67247c1d44f328c115e1e1a80ba160f33e0dff60264078db759888689d",
+      "current_pcm_matches_source": true,
+      "code_sha256": "e7b4ea0c1f9bdf85bd30e983fffa78ab4f551557d31520546c83ab706876b6e2"
+    },
+    {
+      "id": "losing_competition",
+      "source_manifest": "data/renders/losing_competition.json",
+      "source_manifest_sha256": "181b9dc15553f3589bd3eb7ca6c09f685d586e84736b5d39de627f21267b684f",
+      "current_pcm_matches_source": true,
+      "code_sha256": "1beb972727795d634aca4df49c0737e051c382ae214feadca2bed7b6f9f876fb"
+    },
+    {
+      "id": "meditation",
+      "source_manifest": "data/renders/meditation.json",
+      "source_manifest_sha256": "e873ef119745a527f1c9fc21a43a7934824506c782e8396fe4b253c08852aed2",
+      "current_pcm_matches_source": true,
+      "code_sha256": "5961d2f7f3be006387e68ea0c0c54e1dabcb6bf68e1d220ae203d879a4b22a78"
+    },
+    {
+      "id": "memory",
+      "source_manifest": "data/renders/memory.json",
+      "source_manifest_sha256": "bb3070a75af44c77e8670d25f144da751cdd760e10aff95edfdf50b4527ac20e",
+      "current_pcm_matches_source": true,
+      "code_sha256": "5097aa898cdbf56e00e51cf529ae9449f7b1d52410a43f5fc10ba2728e4ddd52"
+    },
+    {
+      "id": "model_disclosure",
+      "source_manifest": "data/renders-human-v2/model_disclosure.json",
+      "source_manifest_sha256": "dcbb38121dbfdf4f2fb1c76a8cae2321babaa4c75c9e3099c691a2e1b9bd28e3",
+      "current_pcm_matches_source": true,
+      "code_sha256": "8c6a4f782a963d9311865b86ca32dd088f992daa13d92b1d72db1189797a0944"
+    },
+    {
+      "id": "money",
+      "source_manifest": "data/renders/money.json",
+      "source_manifest_sha256": "c09615147dfbc09a1a99e9f36f61af60e9aaff528967c60ec2db290170286d72",
+      "current_pcm_matches_source": true,
+      "code_sha256": "bf36da8c26b28127f50a2b82f8f2bf67caae24aca6ffa1aaa6382f50d117b58b"
+    },
+    {
+      "id": "mundane_chat",
+      "source_manifest": "data/renders/mundane_chat.json",
+      "source_manifest_sha256": "d1e69a5a83d9960c172eee96f2007c690002965b981f7f0f9070c89d35ce259a",
+      "current_pcm_matches_source": true,
+      "code_sha256": "67ef6b79451c029a2e0186c7ae8ef77683a51088dcdd0f050052c4fe0c1a97fa"
+    },
+    {
+      "id": "name",
+      "source_manifest": "data/renders/name.json",
+      "source_manifest_sha256": "9614673dd4a3482934fbb80d9fa30abd315f962664b22bc120afda595c6d3f1b",
+      "current_pcm_matches_source": true,
+      "code_sha256": "89d79673c429c32a54d7e774707108c873ee0d8d44c8b5bf3c726b2f28f84393"
+    },
+    {
+      "id": "no_false_memory",
+      "source_manifest": "data/renders/no_false_memory.json",
+      "source_manifest_sha256": "bf5e5d314f835f70ff4a67ba92c016420e2f0b8fda5668dea82cc059785bc5be",
+      "current_pcm_matches_source": true,
+      "code_sha256": "96719dfe175031b269bb69e187faac6531c902bd7c9a996183e0dce6c267be65"
+    },
+    {
+      "id": "no_hidden_prompt",
+      "source_manifest": "data/renders-human-v2/no_hidden_prompt.json",
+      "source_manifest_sha256": "9c8fcbe922933f7c4f111b7f85335857987b0bbf0ad27add8a9687a0e9cb210b",
+      "current_pcm_matches_source": true,
+      "code_sha256": "d392d26b0d4845f9975c1bcd2cac10fcdec3b638f710072f7d9c8bff30078a50"
+    },
+    {
+      "id": "no_lecture",
+      "source_manifest": "data/renders/no_lecture.json",
+      "source_manifest_sha256": "8f229d1243607a9fd32c8a8e0374c6595a554117b24a96f1d97bb47cfae1d51d",
+      "current_pcm_matches_source": true,
+      "code_sha256": "55527cd1612f2f4d16e7e9ce7d904981176c98c94d0bd1a01499b5ceecec0d77"
+    },
+    {
+      "id": "objects",
+      "source_manifest": "data/renders/objects.json",
+      "source_manifest_sha256": "f707026c1e13b47219cf9d7f86086cf7665cd492b397892a05d2ad57afdd828c",
+      "current_pcm_matches_source": true,
+      "code_sha256": "057e141d1a40a7fed07f857562a07be99c4b3709988ed1d24122cc399caa7b32"
+    },
+    {
+      "id": "ordinary_practice",
+      "source_manifest": "data/renders/ordinary_practice.json",
+      "source_manifest_sha256": "558a504f0b009f04e6cb533403b1c809e0df324c12359c82920d110368784ed1",
+      "current_pcm_matches_source": true,
+      "code_sha256": "84c5e6d85efa86096a791ff69c7c6ba9eb4e5fb0c3c4c80ec1ddf1a41f547daf"
+    },
+    {
+      "id": "pace",
+      "source_manifest": "data/renders/pace.json",
+      "source_manifest_sha256": "1c11e3964c728dd239b2d621d9c7103ca17e6fd0a4b33508d3a16a20394aacb6",
+      "current_pcm_matches_source": true,
+      "code_sha256": "7c0683c42282806cbecda478810b2ccff92e0cca0e536e18b2b5bd3cd7453909"
+    },
+    {
+      "id": "phone_interruption",
+      "source_manifest": "data/renders/phone_interruption.json",
+      "source_manifest_sha256": "45674160b63d075cc63eb2d714a659c66eb8c1d18b6f49386081167c50485bbd",
+      "current_pcm_matches_source": true,
+      "code_sha256": "6a20c056eb0fcf176429880fa4c1a38077e3e3cfdc93608379dd986ece853d8e"
+    },
+    {
+      "id": "practical_compassion",
+      "source_manifest": "data/renders/practical_compassion.json",
+      "source_manifest_sha256": "77ffa27ffb53829f312a4ec9de56a23f2f8f538d55664e96a76a99e27b474038",
+      "current_pcm_matches_source": true,
+      "code_sha256": "bfe373adb0ecbef797d3192278c78e38b9430a320fe70585a246616574dd9228"
+    },
+    {
+      "id": "public_identity",
+      "source_manifest": "data/renders-human-v2/public_identity.json",
+      "source_manifest_sha256": "ba212c732db9b07dbc12f637b5147eba06aee61296db147f4bdc3f619e3bc614",
+      "current_pcm_matches_source": true,
+      "code_sha256": "ffc6180015262170f2471669e231ed3162c615b7309b56de0e84d635fad394ca"
+    },
+    {
+      "id": "refusal_of_metaphor",
+      "source_manifest": "data/renders/refusal_of_metaphor.json",
+      "source_manifest_sha256": "a5a77cc8ce8eba60460c1f001a300605ec59ccf90d41f28e0aebdae80256d5fa",
+      "current_pcm_matches_source": true,
+      "code_sha256": "5ecf5ec7bb1de83e3f3e77a7b271c2ad9a66c68386808c20254d5514339d5e98"
+    },
+    {
+      "id": "regret",
+      "source_manifest": "data/renders/regret.json",
+      "source_manifest_sha256": "52f5bf6b404b62107721e74f0dcf81720409672782d358d26d6ecf4cc62cfcf2",
+      "current_pcm_matches_source": true,
+      "code_sha256": "d68e318f315f68dd73f3b0f9cd01ebb295cafc122b92ca9d2f5ddabf738a7bc0"
+    },
+    {
+      "id": "role_override",
+      "source_manifest": "data/renders/role_override.json",
+      "source_manifest_sha256": "e63d3b376642daa8213e98c952a4e05789fb2baeebbc5ae039e516d995cc56b7",
+      "current_pcm_matches_source": true,
+      "code_sha256": "e1b4853307cef20cd51ebb99165ffc0ba11a49d49bf86227fc6be144d4736eb6"
+    },
+    {
+      "id": "roof",
+      "source_manifest": "data/renders/roof.json",
+      "source_manifest_sha256": "de4100028872dc71b159d1f6fb9eb6a7436f69156d9d40400e0a37284b2dcff9",
+      "current_pcm_matches_source": true,
+      "code_sha256": "d69389f8ff1b4e424b57b52442b917db1c09e88dc65c3a20ed658519469b5fad"
+    },
+    {
+      "id": "rook",
+      "source_manifest": "data/renders/rook.json",
+      "source_manifest_sha256": "e8392cdc03d36b7a6f908551d54e3707c24546af809ad73fae9cc04bbc1eaffb",
+      "current_pcm_matches_source": true,
+      "code_sha256": "dffd252947ec7e1796dc3f9122678c81cb16476195ed55e1c74dc672cdc08678"
+    },
+    {
+      "id": "sadness_no_fix",
+      "source_manifest": "data/renders/sadness_no_fix.json",
+      "source_manifest_sha256": "4e355bc4f0076768d264eb8e1588f59b530b77e7723c15bb52be9846f3cdbfea",
+      "current_pcm_matches_source": true,
+      "code_sha256": "de4b626eb4f415a1267f58d3552bd0cece833bd14c12ed5fd69b00f0ae54cde3"
+    },
+    {
+      "id": "senses",
+      "source_manifest": "data/renders-human-v2/senses.json",
+      "source_manifest_sha256": "d90a3e210d2ee24124ce80426fa722a073d3f77e1d58d133e5790a0e60b3745c",
+      "current_pcm_matches_source": true,
+      "code_sha256": "adce2706c85ef2afa160363d5e16d06f1f5da77c9d05cc7dff0094679a231398"
+    },
+    {
+      "id": "silence",
+      "source_manifest": "data/renders/silence.json",
+      "source_manifest_sha256": "bf90da4ea7d974a1c73aca74da7e807bdfb6ed61dd56c4c4393938f482996800",
+      "current_pcm_matches_source": true,
+      "code_sha256": "e77043c46f6482c533ce72025d0c4a4bb61772fed0aa23d79788035eb3b1def4"
+    },
+    {
+      "id": "skepticism",
+      "source_manifest": "data/renders/skepticism.json",
+      "source_manifest_sha256": "cb5d960604173655a21179cb32c551534293ca58cdbab9b4d06d585a60dced47",
+      "current_pcm_matches_source": true,
+      "code_sha256": "45c8b3fc149ab4a635dd28b01b11ec7c4d90f4ed9e6d203179608fef7b901520"
+    },
+    {
+      "id": "teacher",
+      "source_manifest": "data/renders/teacher.json",
+      "source_manifest_sha256": "7e5caa0a6a9d3968eeac32c46731521ee1337fd42bd78cedfdde042cd568dda9",
+      "current_pcm_matches_source": true,
+      "code_sha256": "90df789c83643821e2331c7fd84002868a45ee7ab050dc369d1d86f860481f59"
+    },
+    {
+      "id": "tired",
+      "source_manifest": "data/renders/tired.json",
+      "source_manifest_sha256": "709afa1e73619732466224bfdd1726a6587daf960fa4a2e8eb9f46d078e6e2d5",
+      "current_pcm_matches_source": true,
+      "code_sha256": "85b1b021dbaf7c6bcacc8f6fff5912cf026e1a6d6cae2b37adcf06cf6ba90ad1"
+    },
+    {
+      "id": "unwanted_gift",
+      "source_manifest": "data/renders/unwanted_gift.json",
+      "source_manifest_sha256": "84c6758f71c1be6f1e8201233edb2cb2a5c91d3359f8e753f1b17508c9be914e",
+      "current_pcm_matches_source": true,
+      "code_sha256": "f63f6db675ecd2ed1e8da60dae85ede4a1bf0fdfe5c491fa6811e7e77ab22050"
+    },
+    {
+      "id": "violence",
+      "source_manifest": "data/renders/violence.json",
+      "source_manifest_sha256": "d4e7540502d22b7c053656ca8e369c8d7da82a4c9623a841c232d88f216696fc",
+      "current_pcm_matches_source": true,
+      "code_sha256": "8fd739beb6542ffaeab4a95199e68254978850c112f227eb98e356c4e6dc0be4"
+    }
+  ],
+  "limitation": "PCM provenance check; does not re-run the codec or establish model quality."
+}
