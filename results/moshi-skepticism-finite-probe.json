@@ -1,0 +1,29 @@
+{
+  "scope": "Disposable actual-episode feasibility update; no adapter saved, no quality claim",
+  "episode": "skepticism",
+  "frames": 306,
+  "original_frames": 306,
+  "checkpoint_layers": true,
+  "trainable_layers": 32,
+  "trainable_parameters": 6318080,
+  "rank": 8,
+  "scale": 2,
+  "loss": 3.757263660430908,
+  "gradient_norm": 918.0099487304688,
+  "updates": [
+    {
+      "step": 1,
+      "loss": 3.757263660430908,
+      "gradient_norm": 918.0099487304688,
+      "seconds": 22.94884483399801,
+      "peak_memory_bytes": 5303659090
+    }
+  ],
+  "gradient_window": 16,
+  "gradient_policy": "Truncated BPTT with detached carried attention state",
+  "optimizer_offloaded": true,
+  "seconds": 23.132405790995108,
+  "peak_memory_bytes": 5303659090,
+  "active_memory_bytes": 4831879184,
+  "within_recommended_working_set": true
+}

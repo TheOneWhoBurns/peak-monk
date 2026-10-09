@@ -20,6 +20,7 @@ from moshi_split import delay_streams
 from moshi_windowed import episode_grad,offload_optimizer,restore_optimizer
 p=argparse.ArgumentParser()
 p.add_argument('--episode',default='name')
+p.add_argument('--episode-sequence',help='Comma-separated training episodes, one per update')
 p.add_argument('--frames',type=int,default=16,help='0 means complete training episode')
 p.add_argument('--output',required=True)
 p.add_argument('--steps',type=int,default=1)
@@ -48,19 +49,28 @@ temporary=tempfile.TemporaryDirectory(prefix='peak-monk-optimizer-')
 optimizer_file=Path(temporary.name)/'state.safetensors'
 for step in range(1,args.steps+1):
     tick=time.monotonic()
+    if args.episode_sequence:
+        sequence=args.episode_sequence.split(',')
+        selected=sequence[(step-1)%len(sequence)]
+        raw=np.load(Path('data/speech_codes')/(selected+'.npz'))['codes']
+        streams=delay_streams(mx.array(raw[None,:,:]),model.cfg)
+        print('Episode',selected,flush=True)
     value,grad=episode_grad(model,streams,window=args.window,
         progress=lambda row:print(json.dumps(dict(step=step,**row)),flush=True)) if args.window else fn(model,streams)
     norm=mx.sqrt(sum(mx.sum(g.astype(mx.float32)**2) for _,g in tree_flatten(grad)))
     grad=tree_map(lambda g:g*mx.minimum(1.,1./(norm+1e-8)),grad)
+    mx.eval(value,norm)
+    assert mx.isfinite(value).item() and mx.isfinite(norm).item(), 'Invalid before optimizer update'
     if args.offload_optimizer and optimizer_file.exists():restore_optimizer(optimizer,optimizer_file)
     optimizer.update(model,grad);mx.eval(value,norm,model.parameters(),optimizer.state)
     assert mx.isfinite(value).item() and mx.isfinite(norm).item()
+    assert mx.all(mx.stack([mx.all(mx.isfinite(v)) for _,v in tree_flatten(model.trainable_parameters())])).item(), 'Invalid model parameters after optimizer update'
     updates.append(dict(step=step,loss=value.item(),gradient_norm=norm.item(),seconds=time.monotonic()-tick,
                         peak_memory_bytes=mx.get_peak_memory()))
     del value,grad,norm;mx.clear_cache()
     if args.offload_optimizer:offload_optimizer(optimizer,optimizer_file)
 report=dict(scope='Disposable actual-episode feasibility update; no adapter saved, no quality claim',
-    episode=args.episode,frames=raw.shape[1],original_frames=original_frames,checkpoint_layers=True,
+    episode=args.episode,episode_sequence=args.episode_sequence,frames=raw.shape[1],original_frames=original_frames,checkpoint_layers=True,
     trainable_layers=32,trainable_parameters=params,rank=8,scale=2,loss=updates[-1]['loss'],gradient_norm=updates[-1]['gradient_norm'],updates=updates,
     gradient_window=args.window,gradient_policy='Truncated BPTT with detached carried attention state' if args.window else 'Full-episode gradient',
     optimizer_offloaded=args.offload_optimizer,

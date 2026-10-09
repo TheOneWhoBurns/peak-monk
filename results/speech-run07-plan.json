@@ -1,0 +1,37 @@
+{
+  "experiment": "speech-run07",
+  "status": "Predeclared, pending longest padded-window memory gate after text experiment",
+  "hypothesis": "Repair short-tail numerical instability, then test all-layer native character adaptation",
+  "model": "models/moshi/model.q4.safetensors",
+  "training": {
+    "temporal_layers": 32,
+    "rank": 8,
+    "scale": 2,
+    "trainable_parameters": 6318080,
+    "learning_rate": 0.0001,
+    "steps": 160,
+    "seed": 41,
+    "gradient_window_frames": 16,
+    "gradient_window_seconds": 1.28,
+    "update_policy": "Accumulate all window gradients, one clipped AdamW update per full episode; weights fixed throughout episode",
+    "gradient_limitation": "Past window attention state detached. Forward loss uses complete history but gradients intentionally truncate cross-window credit.",
+    "text_padding_weight": 0.05,
+    "audio_objective": "Unchanged semantic-weighted agent audio CE",
+    "optimizer_memory": "Save complete optimizer state after each update, release it for gradient computation, restore it before next update. Exact two-step AdamW parity passed.",
+    "tail_padding": "Repeat final input through 16-frame window; padded targets -1 receive zero weight. No real targets dropped."
+  },
+  "validation": "Original full-episode joint loss, paddingweight.5; same two validation episodes; candidate selected at20step intervals",
+  "audit": "Same six native probes and unprompted decoded-audio ASR; raw character/overlap review required. Lower loss alone cannot pass.",
+  "data": "Same57train/2validreviewedepisodes. No rejected teacher data added.",
+  "comparison": "All-temporal LoRA with truncated BPTT and exact optimizer disk offload. No claim of exact full-sequence gradients.",
+  "output": "adapters/speech-run07",
+  "memory_gate": {
+    "report": "results/moshi-windowed-offloaded-longest.json",
+    "updates": 2,
+    "frames": 452,
+    "peak_memory_bytes": 5477579778
+  },
+  "prior_failure": "speech-run06 stopped on second episode; no checkpoint accepted",
+  "tiny_parity": "Full versus padded one-window loss and gradient errors both zero; ragged multiwindow loss error4.77e-7",
+  "mixed_episode_probe": "Three updates name,skepticism,teacher completed with finite gradients and 5.457 GB peak"
+}

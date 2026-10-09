@@ -1,0 +1,7 @@
+{
+  "hypothesis": "Two-frame final chunk uses a different attention shape; nonfinite gradients arise there after the first update while its loss and prior windows remain finite. Pad final window to 16 with masked targets to test shape sensitivity.",
+  "evidence": "moshi-mixed-episode-finite-probe.log: skepticism frames304:306, all temporal adapter gradients nonfinite, text-head gradients finite. Fresh skepticism gradient finite but norm918.",
+  "change": "Causally repeat final input to full window, all padded targets -1 with zero objective weight; no real frame discarded.",
+  "comparison": "Same seed, LR, episodes and optimizer offload; shape change only. Tiny float32 parity then actual three-episode probe.",
+  "status": "predeclared implementation diagnostic"
+}

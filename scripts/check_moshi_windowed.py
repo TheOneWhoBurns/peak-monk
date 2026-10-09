@@ -30,6 +30,14 @@ v,g=nn.value_and_grad(model,lambda m,t:loss(m,t,text_padding_weight=.05))(model,
 w,wg=episode_grad(model,tokens,window=12,padding_weight=.05)
 grad_error=max(mx.max(mx.abs(x-dict(tree_flatten(g))[k])).item() for k,x in tree_flatten(wg))
 assert grad_error<1e-5
+padded,padded_grad=episode_grad(model,tokens,window=16,padding_weight=.05)
+padded_loss_error=abs(expected.item()-padded.item())
+padded_grad_error=max(mx.max(mx.abs(x-dict(tree_flatten(g))[k])).item() for k,x in tree_flatten(padded_grad))
+assert padded_loss_error<1e-5 and padded_grad_error<1e-5
+ragged,_=episode_grad(model,tokens,window=5,padding_weight=.05)
+ragged_loss_error=abs(expected.item()-ragged.item())
+assert ragged_loss_error<1e-5
 report=dict(scope='Tiny implementation test, not model quality',forward_error=forward_error,loss_error=loss_error,
+ padded_loss_error=padded_loss_error,padded_gradient_error=padded_grad_error,ragged_loss_error=ragged_loss_error,
  truncated_gradient_norm=norm,single_window_gradient_error=grad_error,multi_window_gradient_policy='Detached prior attention state; deliberately truncated credit assignment',passed=True)
 Path('results/moshi-windowed-check.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))

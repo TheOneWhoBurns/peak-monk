@@ -116,6 +116,9 @@ for step in range(1,args.steps+1):
         value,grad=value_grad(model,data)
     norm=mx.sqrt(sum(mx.sum(g.astype(mx.float32)**2) for _,g in tree_flatten(grad)))
     grad=tree_map(lambda g:g*mx.minimum(1.,1./(norm+1e-8)),grad)
+    mx.eval(value,norm)
+    if not mx.isfinite(value).item() or not mx.isfinite(norm).item():
+        raise FloatingPointError(f'Non-finite loss or gradient before update {step}, episode {row["id"]}')
     if args.offload_optimizer and optimizer_file.exists():restore_optimizer(optimizer,optimizer_file)
     optimizer.update(model,grad);mx.eval(value,norm,model.parameters(),optimizer.state)
     if not mx.isfinite(value).item() or not mx.isfinite(norm).item(): raise FloatingPointError('Non-finite speech update')

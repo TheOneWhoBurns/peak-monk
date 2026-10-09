@@ -1,0 +1,44 @@
+{
+  "scope": "Disposable actual-episode feasibility update; no adapter saved, no quality claim",
+  "episode": "name",
+  "episode_sequence": "name,skepticism,teacher",
+  "frames": 420,
+  "original_frames": 245,
+  "checkpoint_layers": true,
+  "trainable_layers": 32,
+  "trainable_parameters": 6318080,
+  "rank": 8,
+  "scale": 2,
+  "loss": 3.9944396018981934,
+  "gradient_norm": 1.986854076385498,
+  "updates": [
+    {
+      "step": 1,
+      "loss": 5.117565631866455,
+      "gradient_norm": 3.5342578887939453,
+      "seconds": 19.183613375003915,
+      "peak_memory_bytes": 5242745938
+    },
+    {
+      "step": 2,
+      "loss": 3.539620876312256,
+      "gradient_norm": 2.0572574138641357,
+      "seconds": 23.59195383300539,
+      "peak_memory_bytes": 5323966022
+    },
+    {
+      "step": 3,
+      "loss": 3.9944396018981934,
+      "gradient_norm": 1.986854076385498,
+      "seconds": 31.112147291991278,
+      "peak_memory_bytes": 5456557640
+    }
+  ],
+  "gradient_window": 16,
+  "gradient_policy": "Truncated BPTT with detached carried attention state",
+  "optimizer_offloaded": true,
+  "seconds": 74.17310320799879,
+  "peak_memory_bytes": 5456557640,
+  "active_memory_bytes": 4831879184,
+  "within_recommended_working_set": true
+}

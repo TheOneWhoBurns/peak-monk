@@ -68,14 +68,28 @@ def episode_grad(model, streams, window=64, padding_weight=.05, progress=None):
     state=None;accumulated=None;total=0.;frames=streams.shape[-1]-1
     for start in range(0,frames,window):
         end=min(start+window,frames)
-        (value,state),grad=value_grad(model,streams[:,:,start:end],streams[:,:,start+1:end+1],state,denominator)
+        inputs=streams[:,:,start:end]
+        targets=streams[:,:,start+1:end+1]
+        # Keep the same attention kernel shape for short final tails. Padding is
+        # causal, comes after real inputs, and contributes zero target weight.
+        if end-start < window:
+            missing=window-(end-start)
+            inputs=mx.concatenate([inputs,mx.repeat(inputs[:,:,-1:],missing,axis=-1)],axis=-1)
+            targets=mx.concatenate([targets,mx.full((*targets.shape[:2],missing),-1,dtype=targets.dtype)],axis=-1)
+        (value,state),grad=value_grad(model,inputs,targets,state,denominator)
         accumulated=grad if accumulated is None else tree_map(lambda a,b:a+b,accumulated,grad)
         state=tree_map(mx.stop_gradient,state)
         mx.eval(value,state,accumulated)
         total+=value.item()
+        if not mx.isfinite(value).item():
+            raise FloatingPointError(f'Non-finite window loss at frames {start}:{end}')
+        finite=[mx.all(mx.isfinite(g)) for _,g in tree_flatten(accumulated)]
+        if not mx.all(mx.stack(finite)).item():
+            bad=[name for name,g in tree_flatten(accumulated) if not mx.all(mx.isfinite(g)).item()]
+            raise FloatingPointError(f'Non-finite accumulated gradient at frames {start}:{end}: {bad}')
         if progress is not None:
             progress(dict(completed_frames=end,total_frames=frames,loss_so_far=total,
                           peak_memory_bytes=mx.get_peak_memory(),active_memory_bytes=mx.get_active_memory()))
-        del value,grad
+        del value,grad,inputs,targets
         mx.clear_cache()
     return mx.array(total),accumulated

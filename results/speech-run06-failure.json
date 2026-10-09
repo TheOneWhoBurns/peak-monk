@@ -1,0 +1,8 @@
+{
+  "experiment": "speech-run06",
+  "status": "failed before candidate selection",
+  "completed_updates": 1,
+  "next_episode": "skepticism",
+  "error": "FloatingPointError: Non-finite speech update",
+  "limitation": "Old guard did not distinguish loss from gradient norm; diagnostic checks added before optimizer mutation and per gradient window. No accepted checkpoint."
+}

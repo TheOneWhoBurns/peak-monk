@@ -1,0 +1,17 @@
+{
+  "status": "failed",
+  "source_log": "moshi-mixed-episode-finite-probe.log",
+  "episodes": [
+    "name",
+    "skepticism",
+    "teacher"
+  ],
+  "failure_episode": "skepticism",
+  "failure_window": [
+    304,
+    306
+  ],
+  "finding": "All temporal adapter gradients nonfinite; earlier windows and loss finite. Text head not among invalid gradients.",
+  "padded_comparison": "results/moshi-mixed-padded-finite-probe.json",
+  "interpretation": "Shape-sensitive numerical instability; no specific upstream bug established."
+}

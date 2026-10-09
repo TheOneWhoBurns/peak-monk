@@ -1,0 +1,81 @@
+{
+  "scope": "Distinct authored text statistics, excluding sampling repetition; lexical proxies are not quality scores",
+  "weighted_records": 451,
+  "distinct_conversations": 214,
+  "character_turns": 742,
+  "character_turns_per_conversation": {
+    "min": 1,
+    "median": 2.0,
+    "max": 10,
+    "at_least_10": 12
+  },
+  "words_per_character_turn": {
+    "min": 1,
+    "median": 15.0,
+    "mean": 17.632075471698112,
+    "max": 111
+  },
+  "most_common_opening_bigrams": [
+    [
+      "i don't",
+      17
+    ],
+    [
+      "no. i",
+      16
+    ],
+    [
+      "then you",
+      15
+    ],
+    [
+      "i would",
+      11
+    ],
+    [
+      "that is",
+      11
+    ],
+    [
+      "that sounds",
+      9
+    ],
+    [
+      "i can",
+      9
+    ],
+    [
+      "your sister",
+      9
+    ],
+    [
+      "you can",
+      8
+    ],
+    [
+      "you did.",
+      8
+    ],
+    [
+      "to you,",
+      8
+    ],
+    [
+      "your dog.",
+      8
+    ],
+    [
+      "you have",
+      7
+    ],
+    [
+      "i can't",
+      6
+    ],
+    [
+      "then i",
+      6
+    ]
+  ],
+  "family_count": 214
+}
