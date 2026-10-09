@@ -1,0 +1,22 @@
+{
+  "scope": "Actual serialized adapter tensor algebra and safetensors format, not character quality",
+  "tensor_keys": 506,
+  "checks": [
+    {
+      "module": "model.layers.0.self_attn.q_proj",
+      "max_absolute_error": 7.450580596923828e-09,
+      "normalized_rmse": 1.0264092509260081e-07
+    },
+    {
+      "module": "model.layers.35.mlp.down_proj",
+      "max_absolute_error": 7.450580596923828e-09,
+      "normalized_rmse": 8.804496332004419e-08
+    },
+    {
+      "module": "model.embed_tokens",
+      "max_absolute_error": 1.1641532182693481e-10,
+      "normalized_rmse": 8.936871154219261e-08
+    }
+  ],
+  "passed": true
+}

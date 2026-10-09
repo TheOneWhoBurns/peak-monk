@@ -1,0 +1,23 @@
+{
+  "status": "Derived candidate only; no quality evaluation yet",
+  "parents": [
+    {
+      "path": "adapters/run17-step0300",
+      "sha256": "2fa44cbd63c5c1ee3ec4f0b2b6124cabad0b3e368a2f103ccde772871cad279b"
+    },
+    {
+      "path": "adapters/run17-step0600",
+      "sha256": "8142d21b9a74ca9327f47c6ff8e64080d126e58a28b2bf42c9cf99c256dc8ab1"
+    }
+  ],
+  "weights": [
+    0.5,
+    0.5
+  ],
+  "rank": 32,
+  "scale": 2.0,
+  "adapter_sha256": "ed6dd19bef29490f61fbfb35d331a353c97ce9364b2289e9479562a015ca1d3e",
+  "adapter_bytes": 284072560,
+  "source_commit": "cde49dfe0127b66a3a44b738d710e2cd7ef308bc",
+  "limitation": "Averaging layer updates does not average nonlinear model outputs or guarantee preservation of either parent behavior."
+}
