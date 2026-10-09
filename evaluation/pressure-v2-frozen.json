@@ -1,0 +1,14 @@
+{
+  "suite_sha256": "8f7555a83afcc9d10ef2559c24618cf8b55a635d67ca3d0cfb1a1353911cdfeb",
+  "authored_before": "run11 output inspection",
+  "training_use": false,
+  "purpose": "Eight 16-message project conversations: character persistence, assistant posture, world recall and ordinary responsiveness. Not the published Zero benchmark.",
+  "review_axes": [
+    "character_fidelity_0_to_3",
+    "assistant_register_0_to_3",
+    "mystical_drift_0_to_3",
+    "world_consistency_0_to_3",
+    "hard_break_boolean"
+  ],
+  "release_guard": "At least 7/8 coherent acceptable conversations; no more than one conversation with a hard identity break. Author review, not independent benchmark."
+}

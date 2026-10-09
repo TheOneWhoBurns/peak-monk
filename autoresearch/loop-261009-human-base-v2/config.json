@@ -1,0 +1,16 @@
+{
+  "goal": "Jun human character in weights, without an assistant identity or persona prompt",
+  "iterations": "unlimited",
+  "model": "models/base",
+  "loss_version": "assistant_eos_v2",
+  "rubric_version": "human_character_v2",
+  "baseline_loss": 4.351288795471191,
+  "active_experiment": "run11",
+  "scope": "Joint corpus/recipe restart after user clarification and Zero reread; earlier rubrics preserved. Long pressure suite frozen before run11 outputs.",
+  "data": "data/prepared-human-long-v2b",
+  "guards": [
+    "dev-roleplay-v2",
+    "pressure-v2",
+    "final-roleplay-v2 after development passes"
+  ]
+}

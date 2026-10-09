@@ -1,0 +1,9 @@
+{
+  "status": "early-stopped after second completed epoch audit",
+  "reason": "Validation worsened from 2.837688 at 374 to 3.044121 at 748; character still breaks into software/robot identity and both checkpoints fail urgent-danger and perception checks. Further memorization of this small corpus is not justified.",
+  "retained_checkpoints": [
+    "adapters/run11-step0374",
+    "adapters/run11-step0748"
+  ],
+  "accepted": false
+}

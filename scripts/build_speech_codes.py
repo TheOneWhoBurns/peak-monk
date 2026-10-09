@@ -47,7 +47,6 @@ def main():
     weights=Path('models/moshi/tokenizer-e351c8d8-checkpoint125.safetensors')
     with weights.open('rb') as f:
         assert hashlib.file_digest(f,'sha256').hexdigest()=='09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50'
-    mimi=rustymimi.Tokenizer(str(weights),num_codebooks=8)
     tokenizer=spm.SentencePieceProcessor(model_file='models/moshi/tokenizer_spm_32k_3.model')
     out=Path('data/speech_codes');out.mkdir(parents=True,exist_ok=True)
     audio_out=Path('data/duplex');audio_out.mkdir(parents=True,exist_ok=True)
@@ -67,12 +66,17 @@ def main():
         sf.write(audio_out/f"{row['id']}.wav",pcm,24000,subtype='PCM_16')
         frames=(len(pcm)+1919)//1920
         padded=np.pad(pcm,((0,frames*1920-len(pcm)),(0,0))).astype(np.float32)/32768
-        mimi.reset(); chunks=[]; start=time.monotonic()
+        # rustymimi 0.4.1 reset() leaves an accumulated rotary position counter:
+        # a long multi-episode process eventually exceeds its 8192-position table.
+        # A fresh codec per episode also makes independence explicit.
+        mimi=rustymimi.Tokenizer(str(weights),num_codebooks=8)
+        chunks=[]; start=time.monotonic()
         for i in range(frames):
             block=np.ascontiguousarray(padded[i*1920:(i+1)*1920].T[:,None,:])
             encoded=mimi.encode_step(block)
             if encoded is not None: chunks.append(encoded)
         codes=np.concatenate(chunks,axis=-1)
+        del mimi
         assert codes.shape==(2,8,frames),codes.shape
         aligned=[]
         for placement,turn in zip(placements,audit['turns']):
@@ -89,6 +93,7 @@ def main():
             text_targets='Reviewed Whisper words with actual estimated timestamps',
             applied_spelling_corrections=corrections,
             codec_sha256='09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50',
+            codec_state='fresh instance per conversation',
             file_sha256=hashlib.sha256(path.read_bytes()).hexdigest())
         path.with_suffix('.json').write_text(json.dumps(info,indent=2)+'\n')
         print(row['id'],frames,round(info['encode_seconds'],1),flush=True)

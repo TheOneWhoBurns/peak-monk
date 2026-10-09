@@ -1,0 +1,7 @@
+{
+  "hypothesis": "Use the actual upstream nonthinking chat template, human-character corpus and gentle adaptation to preserve conversational competence while learning Jun. Instruction-tuned foundation is a pragmatic comparison to the preferred unaligned-base route, not a reproduction of Zero.",
+  "data": "374 prefix examples from 122 original conversations; no rejected local synthetic outputs included",
+  "recipe": "748 microsteps, 16 layers, rank 16, direct scale 2, dropout .05, LR 1e-5, frozen embeddings, assistant_eos_v2",
+  "baseline": "clean4b-prompted-human-v2 uses the identical no-system validation loss calculation; prompted generations are a separate control",
+  "training_checks": "Compare frozen validation at 374/748; explicit raw-conversation character review, never accept loss alone."
+}

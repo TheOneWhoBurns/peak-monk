@@ -1,0 +1,5 @@
+# metric_direction: lower_is_better
+iteration	timestamp	commit	metric	delta	guard	guard-metric	status	description
+0	2026-10-09	24a3ca0	4.351288795471191	0	pass	corrected objective, fixed serialization	baseline	Unaligned base model; new human persona rubric
+374	2026-10-09	24a3ca0	2.8376879692077637	-1.5136008262634277	fail	6/20; identity breaks and emergency failure	discard	Human corpus base-model checkpoint; early stopped after second audit
+748	2026-10-09	24a3ca0	3.0441207885742188	-1.3071680068969727	fail	7/20; identity breaks and emergency failure	discard	Human corpus base-model checkpoint; early stopped after second audit

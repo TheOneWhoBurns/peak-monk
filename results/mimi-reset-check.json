@@ -1,0 +1,11 @@
+{
+  "test": "Compare first-frame codes from a fresh instance versus reset after prior frames",
+  "shape": [
+    2,
+    8,
+    1
+  ],
+  "fresh_repeat_different_codes": 0,
+  "reset_different_codes": 11,
+  "scope": "Implementation regression check; not speech quality benchmark"
+}

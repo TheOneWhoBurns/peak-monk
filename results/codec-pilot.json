@@ -2,36 +2,6 @@
   "scope": "Actual Mimi encoding of two speaker channels on Apple M2 CPU; not full model inference",
   "records": [
     {
-      "id": "teacher",
-      "split": "train",
-      "sources": [
-        "suzuki"
-      ],
-      "frames": 420,
-      "seconds": 33.6,
-      "encode_seconds": 18.524610666005174,
-      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
-      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
-      "applied_spelling_corrections": [],
-      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
-      "file_sha256": "5ed305b6123989888753f1dda8ee5dee6d23512cc3d9485eb79a64a9d8f9eec1"
-    },
-    {
-      "id": "name",
-      "split": "train",
-      "sources": [
-        "suzuki"
-      ],
-      "frames": 245,
-      "seconds": 19.6,
-      "encode_seconds": 11.118377459002659,
-      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
-      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
-      "applied_spelling_corrections": [],
-      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
-      "file_sha256": "675617f1f3ff47ab5e439553f5ec765609cc67668fa5852bb94e938dd12b12e0"
-    },
-    {
       "id": "arrival",
       "split": "train",
       "sources": [
@@ -60,6 +30,75 @@
       "applied_spelling_corrections": [],
       "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
       "file_sha256": "604414930c87f8f7151cd17e8dcddd7f6d0458ae66bf9716bf12b19ca628a2b2"
+    },
+    {
+      "id": "home",
+      "split": "train",
+      "sources": [
+        "lama"
+      ],
+      "frames": 356,
+      "seconds": 28.48,
+      "encode_seconds": 14.189504250010941,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "file_sha256": "b0e155117000764bf08ff72c42451b2ceb2a545e706bace0cee582106dc248e4"
+    },
+    {
+      "id": "losing_competition",
+      "split": "valid",
+      "sources": [
+        "suzuki"
+      ],
+      "frames": 280,
+      "seconds": 22.400000000000002,
+      "encode_seconds": 12.179185375003726,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "file_sha256": "636b289b6b39608735a9e9037c99c6adcd6cd2b78d437ef519eec2824378dd35"
+    },
+    {
+      "id": "name",
+      "split": "train",
+      "sources": [
+        "suzuki"
+      ],
+      "frames": 245,
+      "seconds": 19.6,
+      "encode_seconds": 11.118377459002659,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "file_sha256": "675617f1f3ff47ab5e439553f5ec765609cc67668fa5852bb94e938dd12b12e0"
+    },
+    {
+      "id": "objects",
+      "split": "train",
+      "sources": [
+        "lawrence"
+      ],
+      "frames": 312,
+      "seconds": 24.96,
+      "encode_seconds": 13.96989241700794,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [
+        {
+          "id": "objects",
+          "wav": "objects-03.wav",
+          "word_index": 5,
+          "asr_word": "T,",
+          "replacement": "tea,",
+          "reason": "The original utterance says tea. T and tea have the same pronunciation here; restore the intended spelling at the measured timestamp."
+        }
+      ],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "file_sha256": "004bdd4aeb698fae49671c1cceb514cda49df8c24f2bcaa05b61f0b83e1c67c0"
     },
     {
       "id": "roof",
@@ -92,58 +131,39 @@
       "file_sha256": "ca8d91165a7e523b4d17e7629313ed6438dd47270196dfb566b7f4984689f305"
     },
     {
-      "id": "objects",
+      "id": "teacher",
       "split": "train",
-      "sources": [
-        "lawrence"
-      ],
-      "frames": 312,
-      "seconds": 24.96,
-      "encode_seconds": 13.96989241700794,
-      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
-      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
-      "applied_spelling_corrections": [
-        {
-          "id": "objects",
-          "wav": "objects-03.wav",
-          "word_index": 5,
-          "asr_word": "T,",
-          "replacement": "tea,",
-          "reason": "The original utterance says tea. T and tea have the same pronunciation here; restore the intended spelling at the measured timestamp."
-        }
-      ],
-      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
-      "file_sha256": "004bdd4aeb698fae49671c1cceb514cda49df8c24f2bcaa05b61f0b83e1c67c0"
-    },
-    {
-      "id": "losing_competition",
-      "split": "valid",
       "sources": [
         "suzuki"
       ],
-      "frames": 280,
-      "seconds": 22.400000000000002,
-      "encode_seconds": 12.179185375003726,
+      "frames": 420,
+      "seconds": 33.6,
+      "encode_seconds": 18.524610666005174,
       "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
       "text_targets": "Reviewed Whisper words with actual estimated timestamps",
       "applied_spelling_corrections": [],
       "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
-      "file_sha256": "636b289b6b39608735a9e9037c99c6adcd6cd2b78d437ef519eec2824378dd35"
+      "file_sha256": "5ed305b6123989888753f1dda8ee5dee6d23512cc3d9485eb79a64a9d8f9eec1"
     },
     {
-      "id": "home",
-      "split": "train",
+      "id": "unwanted_gift",
+      "split": "valid",
       "sources": [
-        "lama"
+        "lawrence"
       ],
-      "frames": 356,
-      "seconds": 28.48,
-      "encode_seconds": 14.189504250010941,
+      "frames": 271,
+      "seconds": 21.68,
+      "encode_seconds": 15.843912500000442,
       "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
       "text_targets": "Reviewed Whisper words with actual estimated timestamps",
       "applied_spelling_corrections": [],
       "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
-      "file_sha256": "b0e155117000764bf08ff72c42451b2ceb2a545e706bace0cee582106dc248e4"
+      "file_sha256": "6de18ecb51d9d6f35c93c8e3adce7c6c46bc19f30a07e8523fb3ce268c8206b0"
     }
-  ]
+  ],
+  "count": 10,
+  "audio_seconds": 250.48000000000002,
+  "encode_seconds": 136.96894391802198,
+  "status": "superseded: reset-state contamination detected; regenerate from fresh codec per conversation",
+  "evidence": "results/mimi-reset-check.json"
 }
