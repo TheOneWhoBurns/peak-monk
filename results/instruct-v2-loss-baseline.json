@@ -1,0 +1,17 @@
+{
+  "model": "models/instruct",
+  "adapter": null,
+  "prompted": false,
+  "persona_file": null,
+  "validation_loss": 6.933074474334717,
+  "loss_version": "assistant_eos_v2",
+  "loss_seconds": 4.124474666001333,
+  "loss_comparison_note": "Compare loss only between identical base/tokenizer/template runs. Reference models may serialize differently; their conversation audit is the comparison.",
+  "seed": 41,
+  "temperature": 0.0,
+  "max_tokens": 160,
+  "quality_scoring": "Not yet scored; raw outputs for explicit rubric review.",
+  "suite": "evaluation/dev.json",
+  "suite_sha256": "8107637b199b2745be67a4b667e04b3b82027a832b04865730a2902bd5f11831",
+  "conversations": []
+}

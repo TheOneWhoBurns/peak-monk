@@ -15,17 +15,29 @@
   ],
   "training_recipe": {
     "full_finetuning": false,
-    "lora": {"enable": true, "rank": 128, "scaling": 2.0, "ft_embed": false},
+    "lora": {
+      "enable": true,
+      "rank": 128,
+      "scaling": 2.0,
+      "ft_embed": false
+    },
     "first_codebook_weight_multiplier": 100.0,
     "text_padding_weight": 0.5,
     "duration_sec": 100,
     "batch_size": 16,
     "max_steps": 2000,
     "gradient_checkpointing": true,
-    "optim": {"lr": 0.000002, "weight_decay": 0.1, "pct_start": 0.05},
+    "optim": {
+      "lr": 2e-06,
+      "weight_decay": 0.1,
+      "pct_start": 0.05
+    },
     "save_adapters": true
   },
-  "upstream_measured_training_memory": {"one_H100_peak_GB": 39.6, "eight_H100_per_device_peak_GB": 23.7},
+  "upstream_measured_training_memory": {
+    "one_H100_peak_GB": 39.6,
+    "eight_H100_per_device_peak_GB": 23.7
+  },
   "memory_caveat": "These are measurements for the example recipe, not a theoretical minimum. Lower batch size may help; shorter audio context can degrade conversational persistence. No CUDA device is available locally.",
   "required_speech_acceptance": [
     "Saved speech checkpoint loads in the native streaming inference implementation.",
@@ -33,5 +45,12 @@
     "Measure response latency and interruption stop latency separately, using audio timestamps.",
     "Compare pause, interruption and backchannel behavior to the exact pretrained checkpoint on fixed Full-Duplex-Bench cases.",
     "Measure realtime factor and peak memory on the intended inference device; do not substitute published H100 latency for local performance."
-  ]
+  ],
+  "hardware_constraint": "User requires all training and inference on this 8 GB Apple M2 Mac. No cloud or external GPU.",
+  "mac_experiment": {
+    "foundation": "kyutai/moshiko-mlx-q4",
+    "hypothesis": "Frozen quantized weights, precomputed Mimi codes, short sequences, small LoRA adapters may fit; unverified until actual memory and training tests.",
+    "implementation": "Official moshi_mlx inference needs a causal teacher-forced training forward; verify against tokenwise streaming outputs before training.",
+    "status": "Investigating"
+  }
 }

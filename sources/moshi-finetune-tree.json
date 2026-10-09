@@ -1,0 +1,372 @@
+{
+  "sha": "2acc879fe7c48f885a18f6cc9548bccb2674d87b",
+  "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/trees/2acc879fe7c48f885a18f6cc9548bccb2674d87b",
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f4ff49d518295dba2bbb9003464eb15376d31cca",
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/trees/f4ff49d518295dba2bbb9003464eb15376d31cca"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5feae23881ce4d1ffa460a381c33e9ce59be72d5",
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/trees/5feae23881ce4d1ffa460a381c33e9ce59be72d5"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c314020101d5405e46a3ac601a9eb812d1833214",
+      "size": 1560,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/c314020101d5405e46a3ac601a9eb812d1833214"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/question.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d27dbca4aa5d749614db1dbe90f86f265a746994",
+      "size": 1215,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/d27dbca4aa5d749614db1dbe90f86f265a746994"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "faf9064b9d74a3b865c640b62ee830b5892ebb67",
+      "size": 270,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/faf9064b9d74a3b865c640b62ee830b5892ebb67"
+    },
+    {
+      "path": ".github/actions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a6d3794443149d627b4166ab031e3a6bb0c7b8e6",
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/trees/a6d3794443149d627b4166ab031e3a6bb0c7b8e6"
+    },
+    {
+      "path": ".github/actions/moshi_build",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8d254ea2344ce00517191028f315012c915c1b30",
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/trees/8d254ea2344ce00517191028f315012c915c1b30"
+    },
+    {
+      "path": ".github/actions/moshi_build/action.yml",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "47dfcd8187adc55aa4df0f597d31f0c2ee71db94",
+      "size": 677,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/47dfcd8187adc55aa4df0f597d31f0c2ee71db94"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c68f7d29c062b157cb69bc56659ba407ecb1679c",
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/trees/c68f7d29c062b157cb69bc56659ba407ecb1679c"
+    },
+    {
+      "path": ".github/workflows/precommit.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e599571bafeb7044f9ca066fb59ec0d9b8941d96",
+      "size": 335,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/e599571bafeb7044f9ca066fb59ec0d9b8941d96"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8aafbc290f0bd9c1d14b77af707cb79aa09630b8",
+      "size": 2284,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/8aafbc290f0bd9c1d14b77af707cb79aa09630b8"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "340edfbd01d648a6136ccbe892dc221191f1aaf2",
+      "size": 585,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/340edfbd01d648a6136ccbe892dc221191f1aaf2"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34e5b0fced733fbdba417d49c2d5763ca3122d34",
+      "size": 2994,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/34e5b0fced733fbdba417d49c2d5763ca3122d34"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "size": 11357,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6ddb1b2207555bbc953b1d14b61975b44e18b2f",
+      "size": 11545,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/c6ddb1b2207555bbc953b1d14b61975b44e18b2f"
+    },
+    {
+      "path": "annotate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd04ffd73ee944e91f5be2f2d498e7bce6e6c7b5",
+      "size": 9303,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/cd04ffd73ee944e91f5be2f2d498e7bce6e6c7b5"
+    },
+    {
+      "path": "example",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "83eeb4401859b8518de52caafba2c45710e8b9af",
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/trees/83eeb4401859b8518de52caafba2c45710e8b9af"
+    },
+    {
+      "path": "example/moshi_7B.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7852afffcc63912ac697bd2215ab2e12546f918",
+      "size": 974,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/e7852afffcc63912ac697bd2215ab2e12546f918"
+    },
+    {
+      "path": "finetune",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cff3ba57edee61226b4d51572016e0373138b34e",
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/trees/cff3ba57edee61226b4d51572016e0373138b34e"
+    },
+    {
+      "path": "finetune/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "finetune/args.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afd440615af7738cc346c975f963cc9638ecae85",
+      "size": 4238,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/afd440615af7738cc346c975f963cc9638ecae85"
+    },
+    {
+      "path": "finetune/checkpointing.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5b7eb3701fb7595b60bba29d54d76e33e473cd1",
+      "size": 8849,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/d5b7eb3701fb7595b60bba29d54d76e33e473cd1"
+    },
+    {
+      "path": "finetune/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fae0f7302a9623cf5d1ba14c9af0ead48fef3069",
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/trees/fae0f7302a9623cf5d1ba14c9af0ead48fef3069"
+    },
+    {
+      "path": "finetune/data/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "finetune/data/args.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4851926eb50ec7e261db41e31567f1dc11a7f003",
+      "size": 411,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/4851926eb50ec7e261db41e31567f1dc11a7f003"
+    },
+    {
+      "path": "finetune/data/data_loader.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "322e09ea8e5458b740db71dc740e146bfde3cb18",
+      "size": 1002,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/322e09ea8e5458b740db71dc740e146bfde3cb18"
+    },
+    {
+      "path": "finetune/data/dataset.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a42902f94b49e4226ce84fc77aa3a662501f895",
+      "size": 6621,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/3a42902f94b49e4226ce84fc77aa3a662501f895"
+    },
+    {
+      "path": "finetune/data/interleaver.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c11ac23a678a5c663e70623cc93cabc3122c40bc",
+      "size": 11443,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/c11ac23a678a5c663e70623cc93cabc3122c40bc"
+    },
+    {
+      "path": "finetune/distributed.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e9d2deac10a3f7492a9398e600b25681b23f3d6",
+      "size": 1489,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/5e9d2deac10a3f7492a9398e600b25681b23f3d6"
+    },
+    {
+      "path": "finetune/eval.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb0daba57474fd1f1bdd1ec21041165f2f5cf6e3",
+      "size": 2888,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/cb0daba57474fd1f1bdd1ec21041165f2f5cf6e3"
+    },
+    {
+      "path": "finetune/loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebb942a9b0e1fab155c9cbfc034adf83e593253b",
+      "size": 1007,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/ebb942a9b0e1fab155c9cbfc034adf83e593253b"
+    },
+    {
+      "path": "finetune/mixed_precision.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37b89ccedb2ca0532fc74725f6dfcea497e526cf",
+      "size": 1903,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/37b89ccedb2ca0532fc74725f6dfcea497e526cf"
+    },
+    {
+      "path": "finetune/monitoring",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a1454eb71758746d554fe4fa2f34d0b6ae8e1d12",
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/trees/a1454eb71758746d554fe4fa2f34d0b6ae8e1d12"
+    },
+    {
+      "path": "finetune/monitoring/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "finetune/monitoring/metrics_logger.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d45275573a70e7fe221d386d2d1f7bde8bc0cbe",
+      "size": 6401,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/5d45275573a70e7fe221d386d2d1f7bde8bc0cbe"
+    },
+    {
+      "path": "finetune/monitoring/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48161a88cafc4f9e8e13fb18858d9cde8bcce71b",
+      "size": 951,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/48161a88cafc4f9e8e13fb18858d9cde8bcce71b"
+    },
+    {
+      "path": "finetune/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b82b92b9e3d893fa669f3aab186b8932963d217",
+      "size": 1965,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/0b82b92b9e3d893fa669f3aab186b8932963d217"
+    },
+    {
+      "path": "finetune/wrapped_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a7ec088db3cc794b0dec9261cbb3514a1cbf2e2",
+      "size": 7724,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/8a7ec088db3cc794b0dec9261cbb3514a1cbf2e2"
+    },
+    {
+      "path": "images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1538fc3735c1ef979830a41248628964f913a604",
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/trees/1538fc3735c1ef979830a41248628964f913a604"
+    },
+    {
+      "path": "images/moshi_finetune_logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68ec389b4939ecfc3fc2c6b1214f8e63352e26b3",
+      "size": 189115,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/68ec389b4939ecfc3fc2c6b1214f8e63352e26b3"
+    },
+    {
+      "path": "images/train_curve_example.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b8febd49dad11aba1c6b86ba684e040e6072fd3",
+      "size": 348684,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/2b8febd49dad11aba1c6b86ba684e040e6072fd3"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22ff2d585c5557519b3883c4323c6686d72fecaf",
+      "size": 2253,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/22ff2d585c5557519b3883c4323c6686d72fecaf"
+    },
+    {
+      "path": "setup.cfg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6151fcf80c2199ffaaa461f27802db89234c8a16",
+      "size": 123,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/6151fcf80c2199ffaaa461f27802db89234c8a16"
+    },
+    {
+      "path": "train.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd3cc6dd1b5fca21e6490440a67b0f13bfcdc515",
+      "size": 11058,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/fd3cc6dd1b5fca21e6490440a67b0f13bfcdc515"
+    },
+    {
+      "path": "tutorials",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bb7e2a1992ff2a49d42a98e7d12e363c24b6b035",
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/trees/bb7e2a1992ff2a49d42a98e7d12e363c24b6b035"
+    },
+    {
+      "path": "tutorials/moshi_finetune.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfb444571aceb274c448e07a4331d02734e85aa0",
+      "size": 7188,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/cfb444571aceb274c448e07a4331d02734e85aa0"
+    },
+    {
+      "path": "uv.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa817c66abb16b73d377d5aed74fa2dc516fec17",
+      "size": 335911,
+      "url": "https://api.github.com/repos/kyutai-labs/moshi-finetune/git/blobs/fa817c66abb16b73d377d5aed74fa2dc516fec17"
+    }
+  ],
+  "truncated": false
+}
