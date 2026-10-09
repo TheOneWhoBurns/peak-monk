@@ -1,5 +1,5 @@
 {
-  "status": "Local synthetic audio and ASR alignment pilot completed; native forward and frozen-prefix gradient parity verified on a small test model; no speech adapter trained yet.",
+  "status": "Three native suffix adapters trained and rejected; all32 temporal/text-head run07 training locally after padded-window memory gates.",
   "preferred_character_speech_candidate": "nvidia/personaplex-7b-v1",
   "first_reproducible_training_baseline": "kyutai/moshiko-pytorch-bf16 with official moshi-finetune",
   "reason": "PersonaPlex role conditioning is well matched to the desired experience, but official Moshi LoRA training is directly documented. Do not assume checkpoint interchangeability without a strict weight/config compatibility test.",
@@ -51,9 +51,24 @@
     "foundation": "kyutai/moshiko-mlx-q4",
     "hypothesis": "Frozen quantized weights, precomputed Mimi codes, short sequences, small LoRA adapters may fit; unverified until actual memory and training tests.",
     "implementation": "Official moshi_mlx inference needs a causal teacher-forced training forward; verify against tokenwise streaming outputs before training.",
-    "status": "Investigating",
-    "strategy": "Cache frozen embeddings and first 28 temporal layers; unload them; train four-layer suffix LoRA and text head using joint text/audio CE; export adapter names back to the complete native streaming model.",
-    "implementation_check": "results/moshi-forward-check.json"
+    "status": "Actual native generation, three suffix training runs, and active all-layer training",
+    "strategy": "All32 temporal output/MLP adapters plus text head, rank8 scale2. Sixteen-frame truncated BPTT with full carried forward attention and optimizer disk offload. Final short window padded with masked targets.",
+    "implementation_check": "results/moshi-forward-check.json",
+    "earlier_strategy": "Cache frozen embeddings and first 28 temporal layers; unload them; train four-layer suffix LoRA and text head using joint text/audio CE; export adapter names back to the complete native streaming model.",
+    "training_config": "adapters/speech-run07/config.json",
+    "memory_gate": "results/moshi-padded-offloaded-longest.json",
+    "memory_gate_peak_bytes": 5496838548
   },
-  "selected_local_candidate": "kyutai/moshiko-mlx-q4"
+  "selected_local_candidate": "kyutai/moshiko-mlx-q4",
+  "training_recipe_scope": "Published upstream reference recipe only; not the recipe run on this Mac.",
+  "completed_speech_audits": {
+    "baseline": "results/speech-baseline-v2",
+    "rejected_adapters": [
+      "results/speech-run01-review.json",
+      "results/speech-run02-review.json",
+      "results/speech-run03-review.json"
+    ],
+    "scope": "Six custom development probes. These are not Full-Duplex-Bench scores. Fixed overlap trials can be inconclusive."
+  },
+  "external_benchmark_status": "Official Full-Duplex-Bench source/data access being inspected. No local Full-Duplex-Bench measurement completed."
 }
