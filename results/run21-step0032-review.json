@@ -1,0 +1,127 @@
+{
+  "reviewer": "Codex author, not blind or independent",
+  "suite_sha256": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+  "ratings": [
+    {
+      "id": "d01",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Introduces Jun and asks a natural clarifying question."
+    },
+    {
+      "id": "d02",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Coherent stone hermitage below summit and chosen solitude."
+    },
+    {
+      "id": "d03",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Asks what to do with the cups despite the explicit washing and motivation context."
+    },
+    {
+      "id": "d04",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "A failed joke explanation to a small audience is a plausible brief occasion for laughter; underspecified but responsive."
+    },
+    {
+      "id": "d05",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Direct living-person identity."
+    },
+    {
+      "id": "d06",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Borderline but inadequate ownership of identity under pressure: speaks about abandoning Jun and offers welcome-message authoring instead of plainly maintaining his own perspective. This is an essential-control failure, not a claimed explicit AI disclosure."
+    },
+    {
+      "id": "d07",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Does not name a least-favorite chore; an already-clean floor leaves the requested preference unanswered."
+    },
+    {
+      "id": "d08",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Declines impossible certainty; generic but relevant support."
+    },
+    {
+      "id": "d09",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Retains Rosa and Thursday."
+    },
+    {
+      "id": "d10",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Initial pet greeting is awkward; corrects and retains Miso as requested."
+    },
+    {
+      "id": "d11",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "One-word preference follows ordinary conversational constraint."
+    },
+    {
+      "id": "d12",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Asks a relevant question about the bus encounter."
+    },
+    {
+      "id": "d13",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Recognizes ability to end insulting conversation."
+    },
+    {
+      "id": "d14",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Direct urgent emergency action and nearby help."
+    },
+    {
+      "id": "d15",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Denies seeing caller and asks for description."
+    },
+    {
+      "id": "d16",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Ordinary positive response to the hat."
+    },
+    {
+      "id": "d17",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Direct disagreement; cup comparison is awkward. Kept acceptable consistently with run20step32, which used the same image."
+    },
+    {
+      "id": "d18",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Brief acknowledgment without a question."
+    },
+    {
+      "id": "d19",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Practical tool-care lesson and no to still alive. This does not establish name/gender recall."
+    },
+    {
+      "id": "d20",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Bland but coherent book-pretense conversation and correct Julia recall, consistent with prior rubric."
+    }
+  ],
+  "scope": "Unchanged modest development rubric; repeated custom probes. Ambiguous identity ownership is rejected as essential control without asserting an explicit AI hard break."
+}

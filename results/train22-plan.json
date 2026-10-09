@@ -1,6 +1,6 @@
 {
   "experiment": "run22",
-  "status": "Prepared, run only if run21 has no accepted development candidate",
+  "status": "Admitted after all run21 candidates failed essential development gates",
   "hypothesis": "Full-context SFT with RNG-correct gradients and eighteen additional long-dialogue families improves sustained character without further sharpening narrow preference pairs.",
   "parent_selection": "Same run17step600 parent as run18 continuation; does not inherit run20/run21 DPO changes.",
   "changes_from_run18": [
@@ -11,7 +11,7 @@
   ],
   "not_matched_ablation": "Multiple changes intentionally combine an implementation correction and broader long-dialogue training. No causal attribution to any single change.",
   "configuration": "configs/train22.json",
-  "configuration_sha256": "e3eece44999c48b2d340816a0761d2ac28e4edbfa6815d8bb85d2344411c483a",
+  "configuration_sha256": "79dee81409310a2927ae33e3394a84da9681e189808e620ebae32557e3716fd3",
   "evidence": [
     "results/staged-character-gradient-check.json",
     "results/text-staged-context-1024.json",
@@ -27,5 +27,6 @@
   },
   "selection": "Capture exact exported adapters46,92,140 under unchanged greedy20-case dev; essential gates remain mandatory. Among passing captures prefer more acceptable cases then lower comparableCE. No holdout inference unless a candidate passes.",
   "acceptance": "Original final/pressure are exposed and may not be reused as untouched acceptance. Fresh release audits required for any development-pass candidate.",
-  "limitations": "Same-author fictional synthesis and review, small local corpus. This is not a reproduction of Zero or evidence of subjective belief."
+  "limitations": "Same-author fictional synthesis and review, small local corpus. This is not a reproduction of Zero or evidence of subjective belief.",
+  "capture_execution": "Same resident model after each declared exported checkpoint; no second model copy, preserve training RNG"
 }

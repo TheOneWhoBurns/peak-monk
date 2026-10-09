@@ -1,0 +1,36 @@
+{
+  "status": "All three declared dev captures rejected; no fresh release suite run",
+  "training_seconds": 234.17945945799875,
+  "steps": 96,
+  "peak_bytes": 4326616812,
+  "gradient_norm_range": [
+    0.02362220175564289,
+    9.470890998840332
+  ],
+  "zero_delta_check": {
+    "status": "pass",
+    "max_logp_difference": 0.0,
+    "pairs": [
+      {
+        "id": "novel_mentor_teasing_sample01",
+        "chosen_error": 0.0,
+        "rejected_error": 0.0
+      },
+      {
+        "id": "novel_mentor_biography_sample00",
+        "chosen_error": 0.0,
+        "rejected_error": 0.0
+      },
+      {
+        "id": "novel_mentor_biography_sample01",
+        "chosen_error": 0.0,
+        "rejected_error": 0.0
+      }
+    ],
+    "scope": "Actual loaded SFT versus zero fresh delta on the first three reviewed pairs; before any preference update"
+  },
+  "comparison": "Same parent/pairs/budget as run20 with corrected dropout checkpoint replay. Numerical correction does not repair observed conversational failure. All prior raw evaluations remain valid observations.",
+  "selection": null,
+  "training_script_sha256": "8ec58a66ef066ffd0e19c85e75f8ceeeaaa7d88f8d4656992ab83e76b41d98ba",
+  "source_note": "Training script unchanged throughout run21; later commits prepared a separate SFT trainer."
+}

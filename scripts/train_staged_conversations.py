@@ -7,6 +7,7 @@ import argparse
 import hashlib
 import json
 import math
+import os
 from pathlib import Path
 import random
 import subprocess
@@ -18,7 +19,51 @@ from mlx.utils import tree_flatten, tree_map
 from mlx_lm import load
 from conversation_objective import ConversationDataset
 from qwen_rng_checkpoint import qwen_rng_checkpoint
-from staged_character_grad import staged_character_grad
+from staged_character_grad import staged_character_grad, restore_rng
+
+
+def capture_checkpoint(model, tokenizer, cfg, out, step, checkpoint):
+    """Audit the same resident policy, restoring the training RNG afterward."""
+    from mlx_lm.tuner.datasets import CacheDataset, ChatDataset
+    from mlx_lm.tuner.trainer import evaluate
+    from assistant_objective import ThroughEOS, assistant_loss
+    from evaluate import capture_conversations
+    snapshot = out.with_name(out.name + f'-step{step:04d}')
+    snapshot.mkdir(exist_ok=False)
+    os.link(checkpoint, snapshot / 'adapters.safetensors')
+    (snapshot / 'adapter_config.json').write_bytes((out / 'adapter_config.json').read_bytes())
+    suite = 'evaluation/dev-roleplay-v2.json'
+    target = Path('results') / f'{out.name}-step{step:04d}.json'
+    if target.exists():
+        raise ValueError('Never overwrite a previous evaluation')
+    fingerprint = hashlib.sha256()
+    for name in ('config.json', 'tokenizer.json', 'tokenizer_config.json', 'chat_template.jinja'):
+        path = Path(cfg['model']) / name
+        if path.exists():
+            fingerprint.update(name.encode())
+            fingerprint.update(path.read_bytes())
+    rng = list(mx.random.state)
+    mx.eval(rng)
+    model.eval()
+    try:
+        rows = [json.loads(line) for line in Path('data/prepared/valid.jsonl').read_text().splitlines()]
+        dataset = CacheDataset(ThroughEOS(ChatDataset(rows, tokenizer, mask_prompt=True), tokenizer.eos_token_id))
+        loss = evaluate(model, dataset, batch_size=1, num_batches=-1,
+                        max_seq_length=768, loss=assistant_loss)
+        result = dict(model=cfg['model'], adapter=str(snapshot), adapter_sha256=sha(checkpoint),
+            prompted=False, serialization_sha256=fingerprint.hexdigest(), validation_loss=loss,
+            loss_version='assistant_eos_v2', training_loss_version='staged_group_token_mean_v1',
+            suite=suite, suite_sha256=sha(suite), temperature=0., top_p=1., presence_penalty=0.,
+            max_tokens=160, seed=41, quality_scoring='Unscored development capture; explicit review required',
+            conversations=[], capture_mode='Same resident policy at completed optimizer step; exact standard adapter exported first')
+        target.write_text(json.dumps(result, indent=2) + '\n')
+        args = argparse.Namespace(suite=suite, prompted=False, temperature=0., top_p=1.,
+                                  presence_penalty=0., max_tokens=160, seed=41)
+        capture_conversations(model, tokenizer, args, result, target)
+    finally:
+        model.train()
+        restore_rng(rng)
+        mx.clear_cache()
 
 
 def sha(path):
@@ -126,11 +171,14 @@ def main():
             del gradient, value, norm
             mx.clear_cache()
             if step in cfg['checkpoints'] or step == steps:
-                mx.save_safetensors(str(out / f'{step:07d}_adapters.safetensors'),
+                checkpoint = out / f'{step:07d}_adapters.safetensors'
+                mx.save_safetensors(str(checkpoint),
                                     dict(tree_flatten(model.trainable_parameters())))
+                if cfg.get('resident_dev_capture', False):
+                    capture_checkpoint(model, tok, cfg, out, step, checkpoint)
     mx.save_safetensors(str(out / 'adapters.safetensors'), dict(tree_flatten(model.trainable_parameters())))
     completion = dict(status='Training complete, unreviewed candidate', steps=step,
-        seconds=time.monotonic() - start, peak_bytes=mx.get_peak_memory(),
+        seconds_including_resident_audits=time.monotonic() - start, peak_bytes=mx.get_peak_memory(),
         adapter_sha256=sha(out / 'adapters.safetensors'))
     (out / 'completion.json').write_text(json.dumps(completion, indent=2) + '\n')
 
