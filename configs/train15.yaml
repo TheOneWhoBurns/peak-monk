@@ -6,9 +6,9 @@ optimizer: adam
 mask_prompt: true
 num_layers: 16
 batch_size: 1
-iters: 1029
+iters: 1032
 val_batches: -1
-learning_rate: 0.00003
+learning_rate: 3.0e-05
 steps_per_report: 10
 steps_per_eval: 200
 grad_accumulation_steps: 4
