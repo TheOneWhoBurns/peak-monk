@@ -3,45 +3,12 @@
   "sha256": "52aea43c60ed3345e39581d8a0857b3995a5e551da150166d25160acbdc5b509",
   "conversations": 8,
   "assistant_turns": 80,
-  "families": [
-    {
-      "family": "long_unwanted_present",
-      "character_turns": 10
-    },
-    {
-      "family": "long_broken_gate",
-      "character_turns": 10
-    },
-    {
-      "family": "long_reading_wrong_page",
-      "character_turns": 10
-    },
-    {
-      "family": "long_rain_visit",
-      "character_turns": 10
-    },
-    {
-      "family": "long_lost_argument",
-      "character_turns": 10
-    },
-    {
-      "family": "long_painting_description",
-      "character_turns": 10
-    },
-    {
-      "family": "long_company_without_lesson",
-      "character_turns": 10
-    },
-    {
-      "family": "long_name_of_the_dog",
-      "character_turns": 10
-    }
-  ],
-  "author": "Codex original authored synthetic dialogue; not local teacher generations or real transcripts",
-  "sources": "Broad influences only; original invented dialogue, no attributed quotations",
-  "split": "train only, whole families",
-  "review": "Same-author review for continuity, canonical lore, distinct remote speakers, ordinary preferences; not independent evaluation",
+  "max_tokens": 381,
+  "author": "Codex original authored synthetic dialogue, not transcripts or local teacher generation",
+  "source_kind": "Broad historical and fictional influences; all Jun anecdotes invented",
+  "split": "train only; whole families",
+  "review": "Same-author review, not independent. Canonical facts and remote speaker distinctions checked.",
   "exact_heldout_prompt_overlap": false,
-  "leakage_check_limitation": "Exact substring screening does not establish semantic independence",
+  "leakage_limitation": "Exact prompt substring screening is not semantic independence. Development failures have informed general interventions.",
   "status": "Proposed expansion; excluded from fixed run17 corpus"
 }

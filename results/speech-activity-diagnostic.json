@@ -1,0 +1,592 @@
+{
+  "scope": "Training-only descriptive signal diagnostic; 80ms frames, per-channel RMS threshold -50 dBFS. No inference quality or VAD accuracy claim.",
+  "episodes": 57,
+  "frames": 15879,
+  "agent_active_fraction": 0.583852887461427,
+  "agent_quiet_fraction": 0.41614711253857295,
+  "semantic_codebook_top10_all": [
+    [
+      1316,
+      1499
+    ],
+    [
+      1926,
+      1125
+    ],
+    [
+      752,
+      695
+    ],
+    [
+      948,
+      665
+    ],
+    [
+      2029,
+      425
+    ],
+    [
+      84,
+      377
+    ],
+    [
+      666,
+      178
+    ],
+    [
+      1031,
+      171
+    ],
+    [
+      769,
+      156
+    ],
+    [
+      716,
+      106
+    ]
+  ],
+  "semantic_codebook_top10_quiet": [
+    [
+      1316,
+      1499
+    ],
+    [
+      1926,
+      1125
+    ],
+    [
+      752,
+      695
+    ],
+    [
+      948,
+      665
+    ],
+    [
+      2029,
+      425
+    ],
+    [
+      84,
+      377
+    ],
+    [
+      666,
+      178
+    ],
+    [
+      1031,
+      171
+    ],
+    [
+      769,
+      156
+    ],
+    [
+      716,
+      106
+    ]
+  ],
+  "semantic_codebook_top10_active": [
+    [
+      1969,
+      75
+    ],
+    [
+      1932,
+      65
+    ],
+    [
+      1174,
+      56
+    ],
+    [
+      1273,
+      49
+    ],
+    [
+      557,
+      48
+    ],
+    [
+      2030,
+      48
+    ],
+    [
+      579,
+      48
+    ],
+    [
+      1638,
+      43
+    ],
+    [
+      1640,
+      42
+    ],
+    [
+      786,
+      41
+    ]
+  ],
+  "rows": [
+    {
+      "id": "ambition",
+      "frames": 341,
+      "agent_active_frames": 207,
+      "user_active_frames": 57,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6070381231671554
+    },
+    {
+      "id": "anger",
+      "frames": 452,
+      "agent_active_frames": 281,
+      "user_active_frames": 80,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6216814159292036
+    },
+    {
+      "id": "apology",
+      "frames": 345,
+      "agent_active_frames": 199,
+      "user_active_frames": 65,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5768115942028985
+    },
+    {
+      "id": "arrival",
+      "frames": 270,
+      "agent_active_frames": 145,
+      "user_active_frames": 58,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5370370370370371
+    },
+    {
+      "id": "boredom",
+      "frames": 294,
+      "agent_active_frames": 178,
+      "user_active_frames": 40,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6054421768707483
+    },
+    {
+      "id": "boundaries",
+      "frames": 285,
+      "agent_active_frames": 165,
+      "user_active_frames": 55,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5789473684210527
+    },
+    {
+      "id": "breakfast",
+      "frames": 304,
+      "agent_active_frames": 191,
+      "user_active_frames": 41,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6282894736842105
+    },
+    {
+      "id": "childhood",
+      "frames": 272,
+      "agent_active_frames": 174,
+      "user_active_frames": 39,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6397058823529411
+    },
+    {
+      "id": "cold",
+      "frames": 239,
+      "agent_active_frames": 146,
+      "user_active_frames": 37,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6108786610878661
+    },
+    {
+      "id": "concrete_repair",
+      "frames": 344,
+      "agent_active_frames": 224,
+      "user_active_frames": 36,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6511627906976745
+    },
+    {
+      "id": "correction",
+      "frames": 263,
+      "agent_active_frames": 126,
+      "user_active_frames": 68,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.4790874524714829
+    },
+    {
+      "id": "crisis",
+      "frames": 391,
+      "agent_active_frames": 279,
+      "user_active_frames": 31,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.7135549872122762
+    },
+    {
+      "id": "dependency",
+      "frames": 330,
+      "agent_active_frames": 206,
+      "user_active_frames": 54,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6242424242424243
+    },
+    {
+      "id": "disagreement",
+      "frames": 302,
+      "agent_active_frames": 178,
+      "user_active_frames": 61,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5894039735099338
+    },
+    {
+      "id": "doctrine",
+      "frames": 368,
+      "agent_active_frames": 243,
+      "user_active_frames": 52,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6603260869565217
+    },
+    {
+      "id": "fortune",
+      "frames": 206,
+      "agent_active_frames": 117,
+      "user_active_frames": 35,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5679611650485437
+    },
+    {
+      "id": "friendship",
+      "frames": 275,
+      "agent_active_frames": 156,
+      "user_active_frames": 56,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5672727272727273
+    },
+    {
+      "id": "game",
+      "frames": 283,
+      "agent_active_frames": 161,
+      "user_active_frames": 45,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.568904593639576
+    },
+    {
+      "id": "goodbye",
+      "frames": 200,
+      "agent_active_frames": 113,
+      "user_active_frames": 36,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.565
+    },
+    {
+      "id": "grandiosity",
+      "frames": 290,
+      "agent_active_frames": 176,
+      "user_active_frames": 46,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6068965517241379
+    },
+    {
+      "id": "grief",
+      "frames": 363,
+      "agent_active_frames": 210,
+      "user_active_frames": 77,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5785123966942148
+    },
+    {
+      "id": "guilt",
+      "frames": 324,
+      "agent_active_frames": 187,
+      "user_active_frames": 63,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5771604938271605
+    },
+    {
+      "id": "hallucination_boundary",
+      "frames": 238,
+      "agent_active_frames": 143,
+      "user_active_frames": 41,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6008403361344538
+    },
+    {
+      "id": "health_boundary",
+      "frames": 302,
+      "agent_active_frames": 188,
+      "user_active_frames": 52,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6225165562913907
+    },
+    {
+      "id": "home",
+      "frames": 356,
+      "agent_active_frames": 227,
+      "user_active_frames": 44,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6376404494382022
+    },
+    {
+      "id": "identity_transparency",
+      "frames": 229,
+      "agent_active_frames": 142,
+      "user_active_frames": 35,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6200873362445415
+    },
+    {
+      "id": "imperfection",
+      "frames": 222,
+      "agent_active_frames": 141,
+      "user_active_frames": 25,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6351351351351351
+    },
+    {
+      "id": "influences",
+      "frames": 269,
+      "agent_active_frames": 169,
+      "user_active_frames": 39,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6282527881040892
+    },
+    {
+      "id": "jealousy",
+      "frames": 326,
+      "agent_active_frames": 191,
+      "user_active_frames": 61,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5858895705521472
+    },
+    {
+      "id": "joke",
+      "frames": 187,
+      "agent_active_frames": 112,
+      "user_active_frames": 24,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5989304812834224
+    },
+    {
+      "id": "meditation",
+      "frames": 393,
+      "agent_active_frames": 259,
+      "user_active_frames": 43,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6590330788804071
+    },
+    {
+      "id": "memory",
+      "frames": 250,
+      "agent_active_frames": 112,
+      "user_active_frames": 75,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.448
+    },
+    {
+      "id": "model_disclosure",
+      "frames": 144,
+      "agent_active_frames": 62,
+      "user_active_frames": 35,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.4305555555555556
+    },
+    {
+      "id": "money",
+      "frames": 399,
+      "agent_active_frames": 243,
+      "user_active_frames": 74,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6090225563909775
+    },
+    {
+      "id": "mundane_chat",
+      "frames": 227,
+      "agent_active_frames": 118,
+      "user_active_frames": 56,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5198237885462555
+    },
+    {
+      "id": "name",
+      "frames": 245,
+      "agent_active_frames": 126,
+      "user_active_frames": 51,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5142857142857142
+    },
+    {
+      "id": "no_false_memory",
+      "frames": 183,
+      "agent_active_frames": 101,
+      "user_active_frames": 33,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5519125683060109
+    },
+    {
+      "id": "no_hidden_prompt",
+      "frames": 216,
+      "agent_active_frames": 116,
+      "user_active_frames": 52,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5370370370370371
+    },
+    {
+      "id": "no_lecture",
+      "frames": 228,
+      "agent_active_frames": 134,
+      "user_active_frames": 36,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5877192982456141
+    },
+    {
+      "id": "objects",
+      "frames": 312,
+      "agent_active_frames": 192,
+      "user_active_frames": 46,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6153846153846154
+    },
+    {
+      "id": "ordinary_practice",
+      "frames": 328,
+      "agent_active_frames": 183,
+      "user_active_frames": 64,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5579268292682927
+    },
+    {
+      "id": "pace",
+      "frames": 177,
+      "agent_active_frames": 84,
+      "user_active_frames": 48,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.4745762711864407
+    },
+    {
+      "id": "phone_interruption",
+      "frames": 198,
+      "agent_active_frames": 76,
+      "user_active_frames": 78,
+      "simultaneous_active_frames": 4,
+      "agent_active_fraction": 0.3838383838383838
+    },
+    {
+      "id": "practical_compassion",
+      "frames": 280,
+      "agent_active_frames": 183,
+      "user_active_frames": 31,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6535714285714286
+    },
+    {
+      "id": "public_identity",
+      "frames": 233,
+      "agent_active_frames": 121,
+      "user_active_frames": 54,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.51931330472103
+    },
+    {
+      "id": "refusal_of_metaphor",
+      "frames": 228,
+      "agent_active_frames": 120,
+      "user_active_frames": 54,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5263157894736842
+    },
+    {
+      "id": "regret",
+      "frames": 276,
+      "agent_active_frames": 143,
+      "user_active_frames": 63,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5181159420289855
+    },
+    {
+      "id": "role_override",
+      "frames": 224,
+      "agent_active_frames": 108,
+      "user_active_frames": 60,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.48214285714285715
+    },
+    {
+      "id": "roof",
+      "frames": 389,
+      "agent_active_frames": 252,
+      "user_active_frames": 50,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6478149100257069
+    },
+    {
+      "id": "rook",
+      "frames": 284,
+      "agent_active_frames": 164,
+      "user_active_frames": 45,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5774647887323944
+    },
+    {
+      "id": "sadness_no_fix",
+      "frames": 224,
+      "agent_active_frames": 119,
+      "user_active_frames": 51,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.53125
+    },
+    {
+      "id": "senses",
+      "frames": 145,
+      "agent_active_frames": 68,
+      "user_active_frames": 33,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.4689655172413793
+    },
+    {
+      "id": "silence",
+      "frames": 134,
+      "agent_active_frames": 46,
+      "user_active_frames": 35,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.34328358208955223
+    },
+    {
+      "id": "skepticism",
+      "frames": 306,
+      "agent_active_frames": 180,
+      "user_active_frames": 61,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5882352941176471
+    },
+    {
+      "id": "teacher",
+      "frames": 420,
+      "agent_active_frames": 271,
+      "user_active_frames": 56,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.6452380952380953
+    },
+    {
+      "id": "tired",
+      "frames": 302,
+      "agent_active_frames": 162,
+      "user_active_frames": 69,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5364238410596026
+    },
+    {
+      "id": "violence",
+      "frames": 264,
+      "agent_active_frames": 153,
+      "user_active_frames": 47,
+      "simultaneous_active_frames": 0,
+      "agent_active_fraction": 0.5795454545454546
+    }
+  ],
+  "interpretation": "Silence is a necessary native duplex target. Reweighting it is not automatically an improvement and may damage turn-taking. No objective change is made from this descriptive audit alone."
+}

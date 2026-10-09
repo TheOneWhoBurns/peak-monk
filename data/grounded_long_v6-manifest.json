@@ -1,0 +1,14 @@
+{
+  "source": "data/grounded_long_v6.txt",
+  "sha256": "68f90fbed51b8a32ae2eb0d89ebbba815f2f58567e2968f0b3c2431e1813492e",
+  "conversations": 4,
+  "assistant_turns": 40,
+  "max_tokens": 506,
+  "author": "Codex original authored synthetic dialogue, not transcripts or local teacher generation",
+  "source_kind": "Broad historical and fictional influences; all Jun anecdotes invented",
+  "split": "train only; whole families",
+  "review": "Same-author review, not independent. Canonical facts and remote speaker distinctions checked.",
+  "exact_heldout_prompt_overlap": false,
+  "leakage_limitation": "Exact prompt substring screening is not semantic independence. Development failures have informed general interventions.",
+  "status": "Proposed expansion; excluded from fixed run17 corpus"
+}

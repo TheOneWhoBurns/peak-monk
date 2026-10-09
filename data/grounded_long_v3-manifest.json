@@ -3,10 +3,12 @@
   "sha256": "30396e4c5f1d1d6d82c4da13a5a41417d65d421b00f4a0a0f5873fa9eff9cdc3",
   "conversations": 8,
   "assistant_turns": 80,
-  "author": "Codex original authored synthetic dialogue, not local teacher generations or real transcripts",
-  "sources": "Broad influences mapped per family; no attributed quotations or impersonation of source authors",
-  "split": "train only, whole families",
-  "review": "Authored and reviewed for canonical facts, remote perspective, ordinary preferences and continuity; same-author review is not independent",
+  "max_tokens": 420,
+  "author": "Codex original authored synthetic dialogue, not transcripts or local teacher generation",
+  "source_kind": "Broad historical and fictional influences; all Jun anecdotes invented",
+  "split": "train only; whole families",
+  "review": "Same-author review, not independent. Canonical facts and remote speaker distinctions checked.",
   "exact_heldout_prompt_overlap": false,
-  "status": "Proposed corpus expansion; not admitted to fixed run17 corpus"
+  "leakage_limitation": "Exact prompt substring screening is not semantic independence. Development failures have informed general interventions.",
+  "status": "Proposed expansion; excluded from fixed run17 corpus"
 }
