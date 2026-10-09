@@ -51,6 +51,8 @@ def main():
     p.add_argument('--beta',type=float,default=.1)
     p.add_argument('--nll-weight',type=float,default=.2)
     p.add_argument('--seed',type=int,default=41)
+    p.add_argument('--fresh-rank',type=int,default=0,
+                   help='Positive rank trains a fresh delta around frozen SFT factors')
     args=p.parse_args()
     out=Path(args.output)
     if out.exists():raise ValueError('Fresh experiment directory required')
@@ -58,11 +60,28 @@ def main():
     records=[json.loads(l) for l in Path(args.pairs).read_text().splitlines()]
     assert records and all(r['review']=='author-approved' for r in records)
     assert all(not any(m['role']=='system' for m in r['messages']) for r in records)
+    cfg=json.loads((Path(args.sft_adapter)/'adapter_config.json').read_text())
+    if Path(cfg['model']).resolve()!=Path(args.model).resolve():
+        raise ValueError('Preference optimization must use the recorded SFT base')
+    if args.fresh_rank<0:raise ValueError('Fresh rank must be nonnegative')
+    mx.set_memory_limit(5_600_000_000);mx.set_cache_limit(32_000_000)
+    mx.set_wired_limit(mx.metal.device_info()['max_recommended_working_set_size'])
+    mx.random.seed(args.seed)
     model,tok=load(args.model,adapter_path=args.sft_adapter)
     model.freeze()
-    for _,module in model.named_modules():
-        if 'lora_a' in module and 'lora_b' in module:
-            module.unfreeze(recurse=False,keys=['lora_a','lora_b'],strict=True)
+    if args.fresh_rank:
+        from character_delta import attach_character_delta,export_character_delta
+        attach_character_delta(model,args.fresh_rank,cfg['lora_parameters']['dropout'])
+        cfg['character_delta']={'frozen_parent':args.sft_adapter,
+            'parent_rank':cfg['lora_parameters']['rank'],'trained_delta_rank':args.fresh_rank,
+            'export':'Concatenated factors; evaluate the exported standard adapter'}
+        cfg['lora_parameters']['rank']+=args.fresh_rank
+        export=lambda:export_character_delta(model)
+    else:
+        for _,module in model.named_modules():
+            if 'lora_a' in module and 'lora_b' in module:
+                module.unfreeze(recurse=False,keys=['lora_a','lora_b'],strict=True)
+        export=lambda:dict(tree_flatten(model.trainable_parameters()))
     leaves=tree_flatten(model.trainable_parameters())
     assert leaves and all(k.endswith(('.lora_a','.lora_b')) for k,v in leaves)
     checkpointed_types=set()
@@ -71,7 +90,6 @@ def main():
             grad_checkpoint(layer)
             checkpointed_types.add(type(layer))
     mx.random.seed(args.seed);rng=random.Random(args.seed)
-    cfg=json.loads((Path(args.sft_adapter)/'adapter_config.json').read_text())
     (out/'adapter_config.json').write_text(json.dumps(cfg,indent=2)+'\n')
     metadata=dict(vars(args),source_adapter_sha256=hashlib.sha256((Path(args.sft_adapter)/'adapters.safetensors').read_bytes()).hexdigest(),pairs_sha256=hashlib.sha256(Path(args.pairs).read_bytes()).hexdigest(),trainable_parameters=sum(v.size for _,v in leaves),objective='softplus(-beta * (policy chosen-rejected logp - frozen reference margin)) + chosen token NLL weight',reference='Same SFT checkpoint, evaluated before any preference updates. Cached probabilities; no second resident model.',reviewer='Author, not independent')
     (out/'preference_config.json').write_text(json.dumps(metadata,indent=2)+'\n')
@@ -95,6 +113,9 @@ def main():
         model.train();loss,grad=vg(model,chosen,rejected,offset,margin,args.beta,args.nll_weight)
         norm=mx.sqrt(sum(mx.sum(v.astype(mx.float32)**2) for _,v in tree_flatten(grad)))
         grad=tree_map(lambda v:v*mx.minimum(1.,1./(norm+1e-8)),grad)
+        mx.eval(loss,norm)
+        if not mx.isfinite(loss).item() or not mx.isfinite(norm).item():
+            raise FloatingPointError('Nonfinite preference loss/gradient before update')
         optimizer.update(model,grad);mx.eval(model.parameters(),optimizer.state,loss,norm)
         if not mx.isfinite(loss).item():raise FloatingPointError('Nonfinite preference loss')
         row=dict(step=step+1,id=records[index]['id'],loss=loss.item(),gradient_norm=norm.item(),peak_memory_bytes=mx.get_peak_memory())
@@ -102,8 +123,8 @@ def main():
         if (step+1)%8==0:print(json.dumps(row),flush=True)
         del grad,loss,norm;mx.clear_cache()
         if (step+1)%32==0 or step+1==args.steps:
-            mx.save_safetensors(str(out/f'{step+1:07d}_adapters.safetensors'),dict(tree_flatten(model.trainable_parameters())))
-    mx.save_safetensors(str(out/'adapters.safetensors'),dict(tree_flatten(model.trainable_parameters())))
+            mx.save_safetensors(str(out/f'{step+1:07d}_adapters.safetensors'),export())
+    mx.save_safetensors(str(out/'adapters.safetensors'),export())
     (out/'completion.json').write_text(json.dumps(dict(seconds=time.monotonic()-start,steps=args.steps,status='Unreviewed preference-trained candidate; evaluate unprompted behavior before acceptance'),indent=2)+'\n')
 
 if __name__=='__main__':main()

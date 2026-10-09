@@ -1,24 +1,25 @@
 {
   "scope": "Tokenizer-only draft audit; not trained",
+  "correction": "Explicit return_dict=False counts token IDs, not fields in the transformers5 result mapping. Prior two-token report invalid.",
   "conversations": [
     {
       "family": "long_the_market_errand",
-      "tokens": 2,
+      "tokens": 804,
       "assistant_words": 371
     },
     {
       "family": "long_a_part_in_the_play",
-      "tokens": 2,
+      "tokens": 782,
       "assistant_words": 361
     },
     {
       "family": "long_an_evening_with_a_kettle",
-      "tokens": 2,
+      "tokens": 820,
       "assistant_words": 374
     },
     {
       "family": "long_the_coat_with_two_pockets",
-      "tokens": 2,
+      "tokens": 840,
       "assistant_words": 373
     }
   ]

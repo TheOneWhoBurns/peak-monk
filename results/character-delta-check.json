@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "kind": "linear",
+      "zero_delta_error": 0.0,
+      "export_error": 1.1920928955078125e-07,
+      "frozen_parent": "unchanged",
+      "trainable_keys": [
+        "lora_a",
+        "lora_b"
+      ]
+    },
+    {
+      "kind": "embedding",
+      "zero_delta_error": 0.0,
+      "export_error": 7.450580596923828e-09,
+      "frozen_parent": "unchanged",
+      "trainable_keys": [
+        "lora_a",
+        "lora_b"
+      ]
+    },
+    {
+      "kind": "tied_head",
+      "zero_delta_error": 0.0,
+      "export_error": 2.384185791015625e-07,
+      "frozen_parent": "unchanged",
+      "trainable_keys": [
+        "lora_a",
+        "lora_b"
+      ]
+    }
+  ],
+  "scope": "Small FP32 adapter algebra and gradient checks only. No trained character quality or BF16 export equivalence claim."
+}
