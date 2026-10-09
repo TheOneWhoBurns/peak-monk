@@ -1,0 +1,6 @@
+{
+  "foundation": "models/instruct",
+  "loss_version": "assistant_eos_v2",
+  "baseline": "results/instruct-v2-loss-baseline.json",
+  "reason": "Remove post-EOS formatting and off-by-one padding labels; legacy metrics are not comparable."
+}

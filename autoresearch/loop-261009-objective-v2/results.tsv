@@ -1,0 +1,3 @@
+# metric_direction: lower_is_better
+iteration	timestamp	commit	metric	delta	guard	guard-metric	status	description
+0	2026-10-09T14:05:28.369629+00:00	ae1fd53	6.933074474334717	0	pass	objective invariants tested	baseline	Unadapted foundation under corrected objective
