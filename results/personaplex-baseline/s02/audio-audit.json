@@ -1,0 +1,262 @@
+{
+  "wav": "results/personaplex-baseline/s02/agent.wav",
+  "wav_sha256": "bd444933315056bf9816ce9103be826fd020f33dd85461cc4f2a07b33a3d7b02",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 12.371658834003028,
+  "duration_seconds": 28.0,
+  "transcript": "Oh man, I've been playing on the pool, playing volleyball, and just hanging out with friends. It's been really nice. How about yourself? Hello? Yeah, how about yourself? Doing anything fun?",
+  "segments": [
+    {
+      "start": 3.76,
+      "end": 8.02,
+      "text": " Oh man, I've been playing on the pool, playing volleyball, and just hanging out with friends.",
+      "avg_logprob": -0.25073540796126637,
+      "no_speech_prob": 0.026925116777420044,
+      "compression_ratio": 1.3795620437956204,
+      "words": [
+        {
+          "word": " Oh",
+          "start": 3.76,
+          "end": 4.16,
+          "probability": 0.8024309277534485
+        },
+        {
+          "word": " man,",
+          "start": 4.16,
+          "end": 4.42,
+          "probability": 0.758931577205658
+        },
+        {
+          "word": " I've",
+          "start": 4.62,
+          "end": 4.84,
+          "probability": 0.9912906885147095
+        },
+        {
+          "word": " been",
+          "start": 4.84,
+          "end": 5.0,
+          "probability": 0.9982972741127014
+        },
+        {
+          "word": " playing",
+          "start": 5.0,
+          "end": 5.38,
+          "probability": 0.9973722696304321
+        },
+        {
+          "word": " on",
+          "start": 5.38,
+          "end": 5.54,
+          "probability": 0.9209895133972168
+        },
+        {
+          "word": " the",
+          "start": 5.54,
+          "end": 5.6,
+          "probability": 0.995936393737793
+        },
+        {
+          "word": " pool,",
+          "start": 5.6,
+          "end": 5.84,
+          "probability": 0.9984502792358398
+        },
+        {
+          "word": " playing",
+          "start": 5.9,
+          "end": 6.16,
+          "probability": 0.9966418743133545
+        },
+        {
+          "word": " volleyball,",
+          "start": 6.16,
+          "end": 6.66,
+          "probability": 0.9954352974891663
+        },
+        {
+          "word": " and",
+          "start": 6.8,
+          "end": 6.98,
+          "probability": 0.9646015167236328
+        },
+        {
+          "word": " just",
+          "start": 6.98,
+          "end": 7.14,
+          "probability": 0.988590657711029
+        },
+        {
+          "word": " hanging",
+          "start": 7.14,
+          "end": 7.42,
+          "probability": 0.9878615140914917
+        },
+        {
+          "word": " out",
+          "start": 7.42,
+          "end": 7.62,
+          "probability": 0.9990942478179932
+        },
+        {
+          "word": " with",
+          "start": 7.62,
+          "end": 7.72,
+          "probability": 0.99808669090271
+        },
+        {
+          "word": " friends.",
+          "start": 7.72,
+          "end": 8.02,
+          "probability": 0.9949724674224854
+        }
+      ]
+    },
+    {
+      "start": 8.12,
+      "end": 8.98,
+      "text": " It's been really nice.",
+      "avg_logprob": -0.25073540796126637,
+      "no_speech_prob": 0.026925116777420044,
+      "compression_ratio": 1.3795620437956204,
+      "words": [
+        {
+          "word": " It's",
+          "start": 8.12,
+          "end": 8.36,
+          "probability": 0.9975338876247406
+        },
+        {
+          "word": " been",
+          "start": 8.36,
+          "end": 8.5,
+          "probability": 0.9990284442901611
+        },
+        {
+          "word": " really",
+          "start": 8.5,
+          "end": 8.66,
+          "probability": 0.9980484247207642
+        },
+        {
+          "word": " nice.",
+          "start": 8.66,
+          "end": 8.98,
+          "probability": 0.9995167255401611
+        }
+      ]
+    },
+    {
+      "start": 10.36,
+      "end": 11.18,
+      "text": " How about yourself?",
+      "avg_logprob": -0.25073540796126637,
+      "no_speech_prob": 0.026925116777420044,
+      "compression_ratio": 1.3795620437956204,
+      "words": [
+        {
+          "word": " How",
+          "start": 10.36,
+          "end": 10.8,
+          "probability": 0.9891771674156189
+        },
+        {
+          "word": " about",
+          "start": 10.8,
+          "end": 10.94,
+          "probability": 0.9834049940109253
+        },
+        {
+          "word": " yourself?",
+          "start": 10.94,
+          "end": 11.18,
+          "probability": 0.9990550875663757
+        }
+      ]
+    },
+    {
+      "start": 15.57,
+      "end": 16.01,
+      "text": " Hello?",
+      "avg_logprob": -0.25073540796126637,
+      "no_speech_prob": 0.026925116777420044,
+      "compression_ratio": 1.3795620437956204,
+      "words": [
+        {
+          "word": " Hello?",
+          "start": 15.57,
+          "end": 16.01,
+          "probability": 0.7904402613639832
+        }
+      ]
+    },
+    {
+      "start": 22.21,
+      "end": 23.31,
+      "text": " Yeah, how about yourself?",
+      "avg_logprob": -0.25073540796126637,
+      "no_speech_prob": 0.026925116777420044,
+      "compression_ratio": 1.3795620437956204,
+      "words": [
+        {
+          "word": " Yeah,",
+          "start": 22.21,
+          "end": 22.65,
+          "probability": 0.9919141530990601
+        },
+        {
+          "word": " how",
+          "start": 22.75,
+          "end": 22.97,
+          "probability": 0.9992033839225769
+        },
+        {
+          "word": " about",
+          "start": 22.97,
+          "end": 23.13,
+          "probability": 0.9982712268829346
+        },
+        {
+          "word": " yourself?",
+          "start": 23.13,
+          "end": 23.31,
+          "probability": 0.9993258714675903
+        }
+      ]
+    },
+    {
+      "start": 26.37,
+      "end": 27.31,
+      "text": " Doing anything fun?",
+      "avg_logprob": -0.25073540796126637,
+      "no_speech_prob": 0.026925116777420044,
+      "compression_ratio": 1.3795620437956204,
+      "words": [
+        {
+          "word": " Doing",
+          "start": 26.37,
+          "end": 26.81,
+          "probability": 0.8519708514213562
+        },
+        {
+          "word": " anything",
+          "start": 26.81,
+          "end": 27.01,
+          "probability": 0.5759778618812561
+        },
+        {
+          "word": " fun?",
+          "start": 27.01,
+          "end": 27.31,
+          "probability": 0.9639734625816345
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "Oh man, I've been playing on the pool, playing volleyball, and just hanging out with friends. It's been really nice. How about yourself? Hello? Oh hello? Yeah, how about yourself? Doing anything fun?"
+}

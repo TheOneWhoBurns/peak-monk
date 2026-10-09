@@ -1,0 +1,186 @@
+{
+  "wav": "results/personaplex-transfer01/s03/agent.wav",
+  "wav_sha256": "2b4c38ce48787a1eb30529d7c9c4a55c1bfbc1228f0dda385583903cb1103c50",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 9.507828125002561,
+  "duration_seconds": 36.0,
+  "transcript": "Peaches, that's nice. You can't stop talking about them. Are they good? Peaches. She was talking about the peaches. She can't stop talking about them.",
+  "segments": [
+    {
+      "start": 4.62,
+      "end": 16.25,
+      "text": " Peaches, that's nice. You can't stop talking about them. Are they good?",
+      "avg_logprob": -0.21313968300819397,
+      "no_speech_prob": 0.05899546667933464,
+      "compression_ratio": 1.5625,
+      "words": [
+        {
+          "word": " Peaches,",
+          "start": 4.62,
+          "end": 5.18,
+          "probability": 0.940102756023407
+        },
+        {
+          "word": " that's",
+          "start": 5.24,
+          "end": 5.56,
+          "probability": 0.9951787889003754
+        },
+        {
+          "word": " nice.",
+          "start": 5.56,
+          "end": 5.76,
+          "probability": 0.9994727969169617
+        },
+        {
+          "word": " You",
+          "start": 5.86,
+          "end": 5.96,
+          "probability": 0.8143467903137207
+        },
+        {
+          "word": " can't",
+          "start": 5.96,
+          "end": 6.16,
+          "probability": 0.9994924962520599
+        },
+        {
+          "word": " stop",
+          "start": 6.16,
+          "end": 6.28,
+          "probability": 0.9995701909065247
+        },
+        {
+          "word": " talking",
+          "start": 6.28,
+          "end": 6.64,
+          "probability": 0.9992523789405823
+        },
+        {
+          "word": " about",
+          "start": 6.64,
+          "end": 6.9,
+          "probability": 0.999487042427063
+        },
+        {
+          "word": " them.",
+          "start": 6.9,
+          "end": 7.12,
+          "probability": 0.9992830157279968
+        },
+        {
+          "word": " Are",
+          "start": 15.53,
+          "end": 15.91,
+          "probability": 0.9911050200462341
+        },
+        {
+          "word": " they",
+          "start": 15.91,
+          "end": 16.05,
+          "probability": 0.9996421337127686
+        },
+        {
+          "word": " good?",
+          "start": 16.05,
+          "end": 16.25,
+          "probability": 0.9996734857559204
+        }
+      ]
+    },
+    {
+      "start": 21.16,
+      "end": 24.22,
+      "text": " Peaches. She was talking about the peaches. She can't stop talking about them.",
+      "avg_logprob": -0.21313968300819397,
+      "no_speech_prob": 0.05899546667933464,
+      "compression_ratio": 1.5625,
+      "words": [
+        {
+          "word": " Peaches.",
+          "start": 21.16,
+          "end": 21.54,
+          "probability": 0.9966555237770081
+        },
+        {
+          "word": " She",
+          "start": 21.62,
+          "end": 21.96,
+          "probability": 0.9981843829154968
+        },
+        {
+          "word": " was",
+          "start": 21.96,
+          "end": 22.1,
+          "probability": 0.9996962547302246
+        },
+        {
+          "word": " talking",
+          "start": 22.1,
+          "end": 22.36,
+          "probability": 0.9997099041938782
+        },
+        {
+          "word": " about",
+          "start": 22.36,
+          "end": 22.52,
+          "probability": 0.9997490048408508
+        },
+        {
+          "word": " the",
+          "start": 22.52,
+          "end": 22.62,
+          "probability": 0.9982498288154602
+        },
+        {
+          "word": " peaches.",
+          "start": 22.62,
+          "end": 23.0,
+          "probability": 0.9941449165344238
+        },
+        {
+          "word": " She",
+          "start": 23.02,
+          "end": 23.2,
+          "probability": 0.7221258878707886
+        },
+        {
+          "word": " can't",
+          "start": 23.2,
+          "end": 23.4,
+          "probability": 0.9997259974479675
+        },
+        {
+          "word": " stop",
+          "start": 23.4,
+          "end": 23.54,
+          "probability": 0.9999043941497803
+        },
+        {
+          "word": " talking",
+          "start": 23.54,
+          "end": 23.9,
+          "probability": 0.9996963739395142
+        },
+        {
+          "word": " about",
+          "start": 23.9,
+          "end": 24.08,
+          "probability": 0.9998252987861633
+        },
+        {
+          "word": " them.",
+          "start": 24.08,
+          "end": 24.22,
+          "probability": 0.9998904466629028
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "Peaches, that's nice. She can't stop talking about them. Are they good? Peaches, she was talking about the peaches. She can't stop talking about them."
+}

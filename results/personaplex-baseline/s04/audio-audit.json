@@ -1,0 +1,496 @@
+{
+  "wav": "results/personaplex-baseline/s04/agent.wav",
+  "wav_sha256": "293b308bfe932b134150b7f7e8faaca31d310c20e0d53b28b79ec3f1f384d7b1",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 13.739689499998349,
+  "duration_seconds": 38.0,
+  "transcript": "I went out with some friends. We walked up to the local park. We sat on the bench. We watched the sunset. We had some snacks and we just chatted. It was a nice relaxing day. Okay. So where are you calling from? I'm curious. I'm curious about where people are calling from. You know where they're calling from. Hello?",
+  "segments": [
+    {
+      "start": 5.46,
+      "end": 7.32,
+      "text": " I went out with some friends.",
+      "avg_logprob": -0.2754895698906171,
+      "no_speech_prob": 0.06190422922372818,
+      "compression_ratio": 1.595959595959596,
+      "words": [
+        {
+          "word": " I",
+          "start": 5.46,
+          "end": 5.98,
+          "probability": 0.7577301859855652
+        },
+        {
+          "word": " went",
+          "start": 5.98,
+          "end": 6.56,
+          "probability": 0.9956701993942261
+        },
+        {
+          "word": " out",
+          "start": 6.56,
+          "end": 6.7,
+          "probability": 0.998207688331604
+        },
+        {
+          "word": " with",
+          "start": 6.7,
+          "end": 6.84,
+          "probability": 0.9974754452705383
+        },
+        {
+          "word": " some",
+          "start": 6.84,
+          "end": 7.0,
+          "probability": 0.9931195974349976
+        },
+        {
+          "word": " friends.",
+          "start": 7.0,
+          "end": 7.32,
+          "probability": 0.9919811487197876
+        }
+      ]
+    },
+    {
+      "start": 7.34,
+      "end": 9.04,
+      "text": " We walked up to the local park.",
+      "avg_logprob": -0.2754895698906171,
+      "no_speech_prob": 0.06190422922372818,
+      "compression_ratio": 1.595959595959596,
+      "words": [
+        {
+          "word": " We",
+          "start": 7.34,
+          "end": 7.56,
+          "probability": 0.99503493309021
+        },
+        {
+          "word": " walked",
+          "start": 7.56,
+          "end": 7.86,
+          "probability": 0.9980111122131348
+        },
+        {
+          "word": " up",
+          "start": 7.86,
+          "end": 8.02,
+          "probability": 0.9972190856933594
+        },
+        {
+          "word": " to",
+          "start": 8.02,
+          "end": 8.18,
+          "probability": 0.9965320825576782
+        },
+        {
+          "word": " the",
+          "start": 8.18,
+          "end": 8.3,
+          "probability": 0.9979116320610046
+        },
+        {
+          "word": " local",
+          "start": 8.3,
+          "end": 8.64,
+          "probability": 0.9989455342292786
+        },
+        {
+          "word": " park.",
+          "start": 8.64,
+          "end": 9.04,
+          "probability": 0.9907028675079346
+        }
+      ]
+    },
+    {
+      "start": 9.14,
+      "end": 9.94,
+      "text": " We sat on the bench.",
+      "avg_logprob": -0.2754895698906171,
+      "no_speech_prob": 0.06190422922372818,
+      "compression_ratio": 1.595959595959596,
+      "words": [
+        {
+          "word": " We",
+          "start": 9.14,
+          "end": 9.3,
+          "probability": 0.9948857426643372
+        },
+        {
+          "word": " sat",
+          "start": 9.3,
+          "end": 9.44,
+          "probability": 0.9988055229187012
+        },
+        {
+          "word": " on",
+          "start": 9.44,
+          "end": 9.6,
+          "probability": 0.9959068298339844
+        },
+        {
+          "word": " the",
+          "start": 9.6,
+          "end": 9.66,
+          "probability": 0.6044221520423889
+        },
+        {
+          "word": " bench.",
+          "start": 9.66,
+          "end": 9.94,
+          "probability": 0.9985480904579163
+        }
+      ]
+    },
+    {
+      "start": 9.98,
+      "end": 10.78,
+      "text": " We watched the sunset.",
+      "avg_logprob": -0.2754895698906171,
+      "no_speech_prob": 0.06190422922372818,
+      "compression_ratio": 1.595959595959596,
+      "words": [
+        {
+          "word": " We",
+          "start": 9.98,
+          "end": 10.08,
+          "probability": 0.9986453652381897
+        },
+        {
+          "word": " watched",
+          "start": 10.08,
+          "end": 10.3,
+          "probability": 0.9798469543457031
+        },
+        {
+          "word": " the",
+          "start": 10.3,
+          "end": 10.48,
+          "probability": 0.9985913634300232
+        },
+        {
+          "word": " sunset.",
+          "start": 10.48,
+          "end": 10.78,
+          "probability": 0.9942417144775391
+        }
+      ]
+    },
+    {
+      "start": 10.84,
+      "end": 12.58,
+      "text": " We had some snacks and we just chatted.",
+      "avg_logprob": -0.2754895698906171,
+      "no_speech_prob": 0.06190422922372818,
+      "compression_ratio": 1.595959595959596,
+      "words": [
+        {
+          "word": " We",
+          "start": 10.84,
+          "end": 11.04,
+          "probability": 0.998683512210846
+        },
+        {
+          "word": " had",
+          "start": 11.04,
+          "end": 11.2,
+          "probability": 0.9992606043815613
+        },
+        {
+          "word": " some",
+          "start": 11.2,
+          "end": 11.34,
+          "probability": 0.999119222164154
+        },
+        {
+          "word": " snacks",
+          "start": 11.34,
+          "end": 11.72,
+          "probability": 0.9962409734725952
+        },
+        {
+          "word": " and",
+          "start": 11.72,
+          "end": 11.94,
+          "probability": 0.5968170166015625
+        },
+        {
+          "word": " we",
+          "start": 11.94,
+          "end": 12.06,
+          "probability": 0.9967613816261292
+        },
+        {
+          "word": " just",
+          "start": 12.06,
+          "end": 12.18,
+          "probability": 0.9871100187301636
+        },
+        {
+          "word": " chatted.",
+          "start": 12.18,
+          "end": 12.58,
+          "probability": 0.9998906254768372
+        }
+      ]
+    },
+    {
+      "start": 12.6,
+      "end": 13.74,
+      "text": " It was a nice relaxing day.",
+      "avg_logprob": -0.2754895698906171,
+      "no_speech_prob": 0.06190422922372818,
+      "compression_ratio": 1.595959595959596,
+      "words": [
+        {
+          "word": " It",
+          "start": 12.6,
+          "end": 12.7,
+          "probability": 0.9961130619049072
+        },
+        {
+          "word": " was",
+          "start": 12.7,
+          "end": 12.78,
+          "probability": 0.9999030828475952
+        },
+        {
+          "word": " a",
+          "start": 12.78,
+          "end": 12.88,
+          "probability": 0.9970198273658752
+        },
+        {
+          "word": " nice",
+          "start": 12.88,
+          "end": 13.06,
+          "probability": 0.999681830406189
+        },
+        {
+          "word": " relaxing",
+          "start": 13.06,
+          "end": 13.28,
+          "probability": 0.7188737392425537
+        },
+        {
+          "word": " day.",
+          "start": 13.28,
+          "end": 13.74,
+          "probability": 0.9997501969337463
+        }
+      ]
+    },
+    {
+      "start": 16.16,
+      "end": 16.5,
+      "text": " Okay.",
+      "avg_logprob": -0.2754895698906171,
+      "no_speech_prob": 0.06190422922372818,
+      "compression_ratio": 1.595959595959596,
+      "words": [
+        {
+          "word": " Okay.",
+          "start": 16.16,
+          "end": 16.5,
+          "probability": 0.9316377639770508
+        }
+      ]
+    },
+    {
+      "start": 18.84,
+      "end": 20.1,
+      "text": " So where are you calling from?",
+      "avg_logprob": -0.2754895698906171,
+      "no_speech_prob": 0.06190422922372818,
+      "compression_ratio": 1.595959595959596,
+      "words": [
+        {
+          "word": " So",
+          "start": 18.84,
+          "end": 19.18,
+          "probability": 0.9858217835426331
+        },
+        {
+          "word": " where",
+          "start": 19.18,
+          "end": 19.38,
+          "probability": 0.9502473473548889
+        },
+        {
+          "word": " are",
+          "start": 19.38,
+          "end": 19.5,
+          "probability": 0.9999616146087646
+        },
+        {
+          "word": " you",
+          "start": 19.5,
+          "end": 19.64,
+          "probability": 0.9999085664749146
+        },
+        {
+          "word": " calling",
+          "start": 19.64,
+          "end": 19.84,
+          "probability": 0.9988215565681458
+        },
+        {
+          "word": " from?",
+          "start": 19.84,
+          "end": 20.1,
+          "probability": 0.9998307228088379
+        }
+      ]
+    },
+    {
+      "start": 20.16,
+      "end": 20.58,
+      "text": " I'm curious.",
+      "avg_logprob": -0.2754895698906171,
+      "no_speech_prob": 0.06190422922372818,
+      "compression_ratio": 1.595959595959596,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 20.16,
+          "end": 20.3,
+          "probability": 0.9941003322601318
+        },
+        {
+          "word": " curious.",
+          "start": 20.3,
+          "end": 20.58,
+          "probability": 0.999729573726654
+        }
+      ]
+    },
+    {
+      "start": 22.77,
+      "end": 24.67,
+      "text": " I'm curious about where people are calling from.",
+      "avg_logprob": -0.2754895698906171,
+      "no_speech_prob": 0.06190422922372818,
+      "compression_ratio": 1.595959595959596,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 22.77,
+          "end": 23.11,
+          "probability": 0.9983673095703125
+        },
+        {
+          "word": " curious",
+          "start": 23.11,
+          "end": 23.31,
+          "probability": 0.9997618794441223
+        },
+        {
+          "word": " about",
+          "start": 23.31,
+          "end": 23.61,
+          "probability": 0.9986030459403992
+        },
+        {
+          "word": " where",
+          "start": 23.61,
+          "end": 23.83,
+          "probability": 0.9996709823608398
+        },
+        {
+          "word": " people",
+          "start": 23.83,
+          "end": 24.09,
+          "probability": 0.9998750686645508
+        },
+        {
+          "word": " are",
+          "start": 24.09,
+          "end": 24.21,
+          "probability": 0.9999145269393921
+        },
+        {
+          "word": " calling",
+          "start": 24.21,
+          "end": 24.45,
+          "probability": 0.9995642304420471
+        },
+        {
+          "word": " from.",
+          "start": 24.45,
+          "end": 24.67,
+          "probability": 0.9976561069488525
+        }
+      ]
+    },
+    {
+      "start": 26.5,
+      "end": 27.62,
+      "text": " You know where they're calling from.",
+      "avg_logprob": -0.2754895698906171,
+      "no_speech_prob": 0.06190422922372818,
+      "compression_ratio": 1.595959595959596,
+      "words": [
+        {
+          "word": " You",
+          "start": 26.5,
+          "end": 26.84,
+          "probability": 0.9781351089477539
+        },
+        {
+          "word": " know",
+          "start": 26.84,
+          "end": 26.98,
+          "probability": 0.9999816417694092
+        },
+        {
+          "word": " where",
+          "start": 26.98,
+          "end": 27.08,
+          "probability": 0.998842179775238
+        },
+        {
+          "word": " they're",
+          "start": 27.08,
+          "end": 27.22,
+          "probability": 0.9996642768383026
+        },
+        {
+          "word": " calling",
+          "start": 27.22,
+          "end": 27.38,
+          "probability": 0.999488353729248
+        },
+        {
+          "word": " from.",
+          "start": 27.38,
+          "end": 27.62,
+          "probability": 0.999890923500061
+        }
+      ]
+    },
+    {
+      "start": 37.19,
+      "end": 37.53,
+      "text": " Hello?",
+      "avg_logprob": -0.2754895698906171,
+      "no_speech_prob": 0.06190422922372818,
+      "compression_ratio": 1.595959595959596,
+      "words": [
+        {
+          "word": " Hello?",
+          "start": 37.19,
+          "end": 37.53,
+          "probability": 0.997819185256958
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "Um, I went out with some friends, we walked up to the local park, we sat on the bench, we watched the sunset, we had some snacks, and just chatted, it was a nice relaxing day Okay. So where are you calling from? I' curious. I curiousm about where people are calling from. Do you know where they callingre from? Hello?"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "Closed: cross-base delta transfer rejected",
+  "baseline": "results/personaplex-baseline/review.json",
+  "transfer": "results/personaplex-transfer01/review.json",
+  "parity": "results/personaplex-agent-slice-parity.json",
+  "finding": "Tensor compatibility and fixed-trace pruning parity did not establish behavioral transfer; Jun identity and explicit interruption handling fail."
+}

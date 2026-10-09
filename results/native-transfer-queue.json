@@ -1,0 +1,53 @@
+[
+  {
+    "command": [
+      ".venv/bin/python",
+      "scripts/probe_text_long_context.py",
+      "--tokens",
+      "1024",
+      "--steps",
+      "2",
+      "--chunk-size",
+      "64",
+      "--output",
+      "results/text-long-context-probe1024.json"
+    ],
+    "log": "text-long-context-probe1024.log",
+    "exit_code": 1,
+    "seconds": 13.431474458004232
+  },
+  {
+    "command": [
+      ".venv-speech/bin/python",
+      "scripts/audit_native_candidate.py",
+      "--backend",
+      "personaplex",
+      "--parity-report",
+      "results/personaplex-agent-slice-parity.json",
+      "--output",
+      "results/personaplex-baseline"
+    ],
+    "log": "personaplex-baseline.log",
+    "exit_code": 0,
+    "seconds": 635.2669759580021
+  },
+  {
+    "command": [
+      ".venv-speech/bin/python",
+      "scripts/audit_native_candidate.py",
+      "--backend",
+      "personaplex",
+      "--parity-report",
+      "results/personaplex-agent-slice-parity.json",
+      "--adapter",
+      "adapters/speech-run07/candidate.safetensors",
+      "--config",
+      "adapters/speech-run07/config.json",
+      "--output",
+      "results/personaplex-transfer01"
+    ],
+    "log": "personaplex-transfer01.log",
+    "exit_code": 0,
+    "seconds": 530.8234112500068
+  }
+]

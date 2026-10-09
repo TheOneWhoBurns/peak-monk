@@ -1,0 +1,318 @@
+{
+  "wav": "results/personaplex-transfer01/s02/agent.wav",
+  "wav_sha256": "72ca65d65dfbaa632502acdd57a9124685436e63ff6954545605975a75126ca0",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 10.631782041004044,
+  "duration_seconds": 28.0,
+  "transcript": "Eating, sipping tea, trying to finish a draft of a short story. How about yourself? Trying to get a few things done before the heat hits. Did you hear about the fire last night? It was near the meadow. A little frightening.",
+  "segments": [
+    {
+      "start": 3.76,
+      "end": 8.0,
+      "text": " Eating, sipping tea, trying to finish a draft of a short story.",
+      "avg_logprob": -0.20812105470233494,
+      "no_speech_prob": 0.021282732486724854,
+      "compression_ratio": 1.4387096774193548,
+      "words": [
+        {
+          "word": " Eating,",
+          "start": 3.76,
+          "end": 4.3,
+          "probability": 0.8562632203102112
+        },
+        {
+          "word": " sipping",
+          "start": 4.48,
+          "end": 4.94,
+          "probability": 0.9892345070838928
+        },
+        {
+          "word": " tea,",
+          "start": 4.94,
+          "end": 5.3,
+          "probability": 0.9979045391082764
+        },
+        {
+          "word": " trying",
+          "start": 5.48,
+          "end": 5.86,
+          "probability": 0.9939219951629639
+        },
+        {
+          "word": " to",
+          "start": 5.86,
+          "end": 6.02,
+          "probability": 0.9998244643211365
+        },
+        {
+          "word": " finish",
+          "start": 6.02,
+          "end": 6.34,
+          "probability": 0.9992148876190186
+        },
+        {
+          "word": " a",
+          "start": 6.34,
+          "end": 6.54,
+          "probability": 0.998099148273468
+        },
+        {
+          "word": " draft",
+          "start": 6.54,
+          "end": 6.84,
+          "probability": 0.9987356066703796
+        },
+        {
+          "word": " of",
+          "start": 6.84,
+          "end": 7.14,
+          "probability": 0.9991430044174194
+        },
+        {
+          "word": " a",
+          "start": 7.14,
+          "end": 7.24,
+          "probability": 0.9993247985839844
+        },
+        {
+          "word": " short",
+          "start": 7.24,
+          "end": 7.52,
+          "probability": 0.9998053908348083
+        },
+        {
+          "word": " story.",
+          "start": 7.52,
+          "end": 8.0,
+          "probability": 0.9997345805168152
+        }
+      ]
+    },
+    {
+      "start": 8.3,
+      "end": 9.18,
+      "text": " How about yourself?",
+      "avg_logprob": -0.20812105470233494,
+      "no_speech_prob": 0.021282732486724854,
+      "compression_ratio": 1.4387096774193548,
+      "words": [
+        {
+          "word": " How",
+          "start": 8.3,
+          "end": 8.76,
+          "probability": 0.9976310729980469
+        },
+        {
+          "word": " about",
+          "start": 8.76,
+          "end": 8.9,
+          "probability": 0.9948659539222717
+        },
+        {
+          "word": " yourself?",
+          "start": 8.9,
+          "end": 9.18,
+          "probability": 0.9996360540390015
+        }
+      ]
+    },
+    {
+      "start": 15.57,
+      "end": 18.23,
+      "text": " Trying to get a few things done before the heat hits.",
+      "avg_logprob": -0.20812105470233494,
+      "no_speech_prob": 0.021282732486724854,
+      "compression_ratio": 1.4387096774193548,
+      "words": [
+        {
+          "word": " Trying",
+          "start": 15.57,
+          "end": 16.03,
+          "probability": 0.9972395896911621
+        },
+        {
+          "word": " to",
+          "start": 16.03,
+          "end": 16.17,
+          "probability": 0.9998544454574585
+        },
+        {
+          "word": " get",
+          "start": 16.17,
+          "end": 16.31,
+          "probability": 0.999816358089447
+        },
+        {
+          "word": " a",
+          "start": 16.31,
+          "end": 16.41,
+          "probability": 0.9996200799942017
+        },
+        {
+          "word": " few",
+          "start": 16.41,
+          "end": 16.51,
+          "probability": 0.9999368190765381
+        },
+        {
+          "word": " things",
+          "start": 16.51,
+          "end": 16.73,
+          "probability": 0.9997676014900208
+        },
+        {
+          "word": " done",
+          "start": 16.73,
+          "end": 17.03,
+          "probability": 0.9997652173042297
+        },
+        {
+          "word": " before",
+          "start": 17.03,
+          "end": 17.39,
+          "probability": 0.9994720816612244
+        },
+        {
+          "word": " the",
+          "start": 17.39,
+          "end": 17.61,
+          "probability": 0.9997679591178894
+        },
+        {
+          "word": " heat",
+          "start": 17.61,
+          "end": 17.83,
+          "probability": 0.9996153116226196
+        },
+        {
+          "word": " hits.",
+          "start": 17.83,
+          "end": 18.23,
+          "probability": 0.9997096657752991
+        }
+      ]
+    },
+    {
+      "start": 22.69,
+      "end": 25.41,
+      "text": " Did you hear about the fire last night? It was near the meadow.",
+      "avg_logprob": -0.20812105470233494,
+      "no_speech_prob": 0.021282732486724854,
+      "compression_ratio": 1.4387096774193548,
+      "words": [
+        {
+          "word": " Did",
+          "start": 22.69,
+          "end": 23.15,
+          "probability": 0.9976102113723755
+        },
+        {
+          "word": " you",
+          "start": 23.15,
+          "end": 23.23,
+          "probability": 0.9994990825653076
+        },
+        {
+          "word": " hear",
+          "start": 23.23,
+          "end": 23.33,
+          "probability": 0.9974489808082581
+        },
+        {
+          "word": " about",
+          "start": 23.33,
+          "end": 23.47,
+          "probability": 0.9994506239891052
+        },
+        {
+          "word": " the",
+          "start": 23.47,
+          "end": 23.59,
+          "probability": 0.9992644190788269
+        },
+        {
+          "word": " fire",
+          "start": 23.59,
+          "end": 23.83,
+          "probability": 0.9993895292282104
+        },
+        {
+          "word": " last",
+          "start": 23.83,
+          "end": 24.11,
+          "probability": 0.9987903237342834
+        },
+        {
+          "word": " night?",
+          "start": 24.11,
+          "end": 24.53,
+          "probability": 0.9999145269393921
+        },
+        {
+          "word": " It",
+          "start": 24.59,
+          "end": 24.69,
+          "probability": 0.9944128394126892
+        },
+        {
+          "word": " was",
+          "start": 24.69,
+          "end": 24.77,
+          "probability": 0.999869704246521
+        },
+        {
+          "word": " near",
+          "start": 24.77,
+          "end": 24.89,
+          "probability": 0.9998840093612671
+        },
+        {
+          "word": " the",
+          "start": 24.89,
+          "end": 24.99,
+          "probability": 0.9983408451080322
+        },
+        {
+          "word": " meadow.",
+          "start": 24.99,
+          "end": 25.41,
+          "probability": 0.996438056230545
+        }
+      ]
+    },
+    {
+      "start": 26.29,
+      "end": 27.27,
+      "text": " A little frightening.",
+      "avg_logprob": -0.20812105470233494,
+      "no_speech_prob": 0.021282732486724854,
+      "compression_ratio": 1.4387096774193548,
+      "words": [
+        {
+          "word": " A",
+          "start": 26.29,
+          "end": 26.75,
+          "probability": 0.9847949147224426
+        },
+        {
+          "word": " little",
+          "start": 26.75,
+          "end": 26.89,
+          "probability": 0.9998283386230469
+        },
+        {
+          "word": " frightening.",
+          "start": 26.89,
+          "end": 27.27,
+          "probability": 0.9996984004974365
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "Eating, sipping tea, trying to finish a draft of a short story. How about yourself? Trying to get a few things done before the heat hits. Did you hear about the fire last night? It was near the meadow. A little frightening."
+}

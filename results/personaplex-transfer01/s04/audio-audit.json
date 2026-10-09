@@ -1,0 +1,630 @@
+{
+  "wav": "results/personaplex-transfer01/s04/agent.wav",
+  "wav_sha256": "c28363467ee7672ac4e55e9d4dc2fd35d95d2c1a0bde27dedb657d3afa1ad809",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 14.207296041000518,
+  "duration_seconds": 38.0,
+  "transcript": "I went to the store. I bought a loaf. I cut it up. I ate it. I felt hungry again. I walked out. The whole thing took me about 10 minutes. I tell the bread left, which feels like a small victory. A small victory, I tell you. I come home. I put the bread in the toaster. I sip the tea. I feel for a moment that I've made something. Eventually, I remember the list. I go back to the store. Walk is still the same. Bread still feels like a small win.",
+  "segments": [
+    {
+      "start": 3.79,
+      "end": 8.89,
+      "text": " I went to the store. I bought a loaf. I cut it up. I ate it. I felt hungry again. I walked out.",
+      "avg_logprob": -0.08112777077306912,
+      "no_speech_prob": 0.01860995404422283,
+      "compression_ratio": 1.7421875,
+      "words": [
+        {
+          "word": " I",
+          "start": 3.79,
+          "end": 4.13,
+          "probability": 0.9474586248397827
+        },
+        {
+          "word": " went",
+          "start": 4.13,
+          "end": 4.31,
+          "probability": 0.9981123208999634
+        },
+        {
+          "word": " to",
+          "start": 4.31,
+          "end": 4.41,
+          "probability": 0.9998394250869751
+        },
+        {
+          "word": " the",
+          "start": 4.41,
+          "end": 4.49,
+          "probability": 0.999806821346283
+        },
+        {
+          "word": " store.",
+          "start": 4.49,
+          "end": 4.87,
+          "probability": 0.9995550513267517
+        },
+        {
+          "word": " I",
+          "start": 5.13,
+          "end": 5.49,
+          "probability": 0.9998903274536133
+        },
+        {
+          "word": " bought",
+          "start": 5.49,
+          "end": 5.71,
+          "probability": 0.992393970489502
+        },
+        {
+          "word": " a",
+          "start": 5.71,
+          "end": 5.83,
+          "probability": 0.9998533725738525
+        },
+        {
+          "word": " loaf.",
+          "start": 5.83,
+          "end": 6.09,
+          "probability": 0.9999520778656006
+        },
+        {
+          "word": " I",
+          "start": 6.27,
+          "end": 6.39,
+          "probability": 0.9999114274978638
+        },
+        {
+          "word": " cut",
+          "start": 6.39,
+          "end": 6.59,
+          "probability": 0.9990113973617554
+        },
+        {
+          "word": " it",
+          "start": 6.59,
+          "end": 6.69,
+          "probability": 0.9999440908432007
+        },
+        {
+          "word": " up.",
+          "start": 6.69,
+          "end": 6.85,
+          "probability": 0.999964714050293
+        },
+        {
+          "word": " I",
+          "start": 6.85,
+          "end": 6.95,
+          "probability": 0.9998264908790588
+        },
+        {
+          "word": " ate",
+          "start": 6.95,
+          "end": 7.17,
+          "probability": 0.9996933937072754
+        },
+        {
+          "word": " it.",
+          "start": 7.17,
+          "end": 7.29,
+          "probability": 0.9998623132705688
+        },
+        {
+          "word": " I",
+          "start": 7.31,
+          "end": 7.41,
+          "probability": 0.9994677901268005
+        },
+        {
+          "word": " felt",
+          "start": 7.41,
+          "end": 7.55,
+          "probability": 0.9991092085838318
+        },
+        {
+          "word": " hungry",
+          "start": 7.55,
+          "end": 7.89,
+          "probability": 0.9998263716697693
+        },
+        {
+          "word": " again.",
+          "start": 7.89,
+          "end": 8.17,
+          "probability": 0.9982832670211792
+        },
+        {
+          "word": " I",
+          "start": 8.23,
+          "end": 8.37,
+          "probability": 0.9947403073310852
+        },
+        {
+          "word": " walked",
+          "start": 8.37,
+          "end": 8.59,
+          "probability": 0.9997733235359192
+        },
+        {
+          "word": " out.",
+          "start": 8.59,
+          "end": 8.89,
+          "probability": 0.9999279975891113
+        }
+      ]
+    },
+    {
+      "start": 9.13,
+      "end": 13.49,
+      "text": " The whole thing took me about 10 minutes. I tell the bread left, which feels like a small victory.",
+      "avg_logprob": -0.08112777077306912,
+      "no_speech_prob": 0.01860995404422283,
+      "compression_ratio": 1.7421875,
+      "words": [
+        {
+          "word": " The",
+          "start": 9.13,
+          "end": 9.49,
+          "probability": 0.999329686164856
+        },
+        {
+          "word": " whole",
+          "start": 9.49,
+          "end": 9.65,
+          "probability": 0.9998869895935059
+        },
+        {
+          "word": " thing",
+          "start": 9.65,
+          "end": 9.87,
+          "probability": 0.9999438524246216
+        },
+        {
+          "word": " took",
+          "start": 9.87,
+          "end": 10.01,
+          "probability": 0.9999263286590576
+        },
+        {
+          "word": " me",
+          "start": 10.01,
+          "end": 10.19,
+          "probability": 0.9998841285705566
+        },
+        {
+          "word": " about",
+          "start": 10.19,
+          "end": 10.33,
+          "probability": 0.9999151229858398
+        },
+        {
+          "word": " 10",
+          "start": 10.33,
+          "end": 10.57,
+          "probability": 0.7051116824150085
+        },
+        {
+          "word": " minutes.",
+          "start": 10.57,
+          "end": 10.89,
+          "probability": 0.9999485015869141
+        },
+        {
+          "word": " I",
+          "start": 11.19,
+          "end": 11.55,
+          "probability": 0.9948520064353943
+        },
+        {
+          "word": " tell",
+          "start": 11.55,
+          "end": 11.67,
+          "probability": 0.9861984252929688
+        },
+        {
+          "word": " the",
+          "start": 11.67,
+          "end": 11.79,
+          "probability": 0.899785041809082
+        },
+        {
+          "word": " bread",
+          "start": 11.79,
+          "end": 12.01,
+          "probability": 0.9989168643951416
+        },
+        {
+          "word": " left,",
+          "start": 12.01,
+          "end": 12.27,
+          "probability": 0.9995324611663818
+        },
+        {
+          "word": " which",
+          "start": 12.37,
+          "end": 12.53,
+          "probability": 0.9993945360183716
+        },
+        {
+          "word": " feels",
+          "start": 12.53,
+          "end": 12.69,
+          "probability": 0.9999552965164185
+        },
+        {
+          "word": " like",
+          "start": 12.69,
+          "end": 12.87,
+          "probability": 0.9999692440032959
+        },
+        {
+          "word": " a",
+          "start": 12.87,
+          "end": 12.97,
+          "probability": 0.9999513626098633
+        },
+        {
+          "word": " small",
+          "start": 12.97,
+          "end": 13.15,
+          "probability": 0.9997895359992981
+        },
+        {
+          "word": " victory.",
+          "start": 13.15,
+          "end": 13.49,
+          "probability": 0.9999371767044067
+        }
+      ]
+    },
+    {
+      "start": 16.04,
+      "end": 20.66,
+      "text": " A small victory, I tell you. I come home. I put the bread in the toaster. I sip the tea.",
+      "avg_logprob": -0.08112777077306912,
+      "no_speech_prob": 0.01860995404422283,
+      "compression_ratio": 1.7421875,
+      "words": [
+        {
+          "word": " A",
+          "start": 16.04,
+          "end": 16.4,
+          "probability": 0.9975581169128418
+        },
+        {
+          "word": " small",
+          "start": 16.4,
+          "end": 16.62,
+          "probability": 0.9998549222946167
+        },
+        {
+          "word": " victory,",
+          "start": 16.62,
+          "end": 16.94,
+          "probability": 0.9999526739120483
+        },
+        {
+          "word": " I",
+          "start": 17.1,
+          "end": 17.24,
+          "probability": 0.9999555349349976
+        },
+        {
+          "word": " tell",
+          "start": 17.24,
+          "end": 17.4,
+          "probability": 0.9999011754989624
+        },
+        {
+          "word": " you.",
+          "start": 17.4,
+          "end": 17.66,
+          "probability": 0.9999836683273315
+        },
+        {
+          "word": " I",
+          "start": 17.7,
+          "end": 18.06,
+          "probability": 0.9998177886009216
+        },
+        {
+          "word": " come",
+          "start": 18.06,
+          "end": 18.24,
+          "probability": 0.9992678761482239
+        },
+        {
+          "word": " home.",
+          "start": 18.24,
+          "end": 18.58,
+          "probability": 0.9999792575836182
+        },
+        {
+          "word": " I",
+          "start": 18.7,
+          "end": 18.9,
+          "probability": 0.9999213218688965
+        },
+        {
+          "word": " put",
+          "start": 18.9,
+          "end": 19.0,
+          "probability": 0.9998788833618164
+        },
+        {
+          "word": " the",
+          "start": 19.0,
+          "end": 19.14,
+          "probability": 0.9999712705612183
+        },
+        {
+          "word": " bread",
+          "start": 19.14,
+          "end": 19.34,
+          "probability": 0.9999362230300903
+        },
+        {
+          "word": " in",
+          "start": 19.34,
+          "end": 19.44,
+          "probability": 0.9998310804367065
+        },
+        {
+          "word": " the",
+          "start": 19.44,
+          "end": 19.52,
+          "probability": 0.9995619654655457
+        },
+        {
+          "word": " toaster.",
+          "start": 19.52,
+          "end": 19.94,
+          "probability": 0.9999226331710815
+        },
+        {
+          "word": " I",
+          "start": 19.94,
+          "end": 20.1,
+          "probability": 0.9999068975448608
+        },
+        {
+          "word": " sip",
+          "start": 20.1,
+          "end": 20.28,
+          "probability": 0.9959883093833923
+        },
+        {
+          "word": " the",
+          "start": 20.28,
+          "end": 20.42,
+          "probability": 0.9998886585235596
+        },
+        {
+          "word": " tea.",
+          "start": 20.42,
+          "end": 20.66,
+          "probability": 0.9999819993972778
+        }
+      ]
+    },
+    {
+      "start": 20.84,
+      "end": 25.42,
+      "text": " I feel for a moment that I've made something. Eventually, I remember the list. I go back to",
+      "avg_logprob": -0.08112777077306912,
+      "no_speech_prob": 0.01860995404422283,
+      "compression_ratio": 1.7421875,
+      "words": [
+        {
+          "word": " I",
+          "start": 20.84,
+          "end": 21.2,
+          "probability": 0.9995089769363403
+        },
+        {
+          "word": " feel",
+          "start": 21.2,
+          "end": 21.4,
+          "probability": 0.999600350856781
+        },
+        {
+          "word": " for",
+          "start": 21.4,
+          "end": 21.56,
+          "probability": 0.9996545314788818
+        },
+        {
+          "word": " a",
+          "start": 21.56,
+          "end": 21.66,
+          "probability": 0.9999794960021973
+        },
+        {
+          "word": " moment",
+          "start": 21.66,
+          "end": 21.88,
+          "probability": 0.99982088804245
+        },
+        {
+          "word": " that",
+          "start": 21.88,
+          "end": 22.06,
+          "probability": 0.9998308420181274
+        },
+        {
+          "word": " I've",
+          "start": 22.06,
+          "end": 22.18,
+          "probability": 0.9993809461593628
+        },
+        {
+          "word": " made",
+          "start": 22.18,
+          "end": 22.32,
+          "probability": 0.9997324347496033
+        },
+        {
+          "word": " something.",
+          "start": 22.32,
+          "end": 22.62,
+          "probability": 0.9999113082885742
+        },
+        {
+          "word": " Eventually,",
+          "start": 23.02,
+          "end": 23.38,
+          "probability": 0.9994117021560669
+        },
+        {
+          "word": " I",
+          "start": 23.48,
+          "end": 23.76,
+          "probability": 0.9999740123748779
+        },
+        {
+          "word": " remember",
+          "start": 23.76,
+          "end": 24.0,
+          "probability": 0.9997329115867615
+        },
+        {
+          "word": " the",
+          "start": 24.0,
+          "end": 24.24,
+          "probability": 0.9999327659606934
+        },
+        {
+          "word": " list.",
+          "start": 24.24,
+          "end": 24.58,
+          "probability": 0.999717652797699
+        },
+        {
+          "word": " I",
+          "start": 24.68,
+          "end": 24.98,
+          "probability": 0.9997910857200623
+        },
+        {
+          "word": " go",
+          "start": 24.98,
+          "end": 25.12,
+          "probability": 0.9998536109924316
+        },
+        {
+          "word": " back",
+          "start": 25.12,
+          "end": 25.28,
+          "probability": 0.9999517202377319
+        },
+        {
+          "word": " to",
+          "start": 25.28,
+          "end": 25.42,
+          "probability": 0.9999768733978271
+        }
+      ]
+    },
+    {
+      "start": 25.42,
+      "end": 29.16,
+      "text": " the store. Walk is still the same. Bread still feels like a small win.",
+      "avg_logprob": -0.08112777077306912,
+      "no_speech_prob": 0.01860995404422283,
+      "compression_ratio": 1.7421875,
+      "words": [
+        {
+          "word": " the",
+          "start": 25.42,
+          "end": 25.52,
+          "probability": 0.9999676942825317
+        },
+        {
+          "word": " store.",
+          "start": 25.52,
+          "end": 25.76,
+          "probability": 0.999650239944458
+        },
+        {
+          "word": " Walk",
+          "start": 26.36,
+          "end": 26.72,
+          "probability": 0.9597702622413635
+        },
+        {
+          "word": " is",
+          "start": 26.72,
+          "end": 26.88,
+          "probability": 0.9998683929443359
+        },
+        {
+          "word": " still",
+          "start": 26.88,
+          "end": 27.04,
+          "probability": 0.9999417066574097
+        },
+        {
+          "word": " the",
+          "start": 27.04,
+          "end": 27.16,
+          "probability": 0.9999730587005615
+        },
+        {
+          "word": " same.",
+          "start": 27.16,
+          "end": 27.46,
+          "probability": 0.9999690055847168
+        },
+        {
+          "word": " Bread",
+          "start": 27.6,
+          "end": 27.96,
+          "probability": 0.9985519051551819
+        },
+        {
+          "word": " still",
+          "start": 27.96,
+          "end": 28.18,
+          "probability": 0.9999023675918579
+        },
+        {
+          "word": " feels",
+          "start": 28.18,
+          "end": 28.48,
+          "probability": 0.9999507665634155
+        },
+        {
+          "word": " like",
+          "start": 28.48,
+          "end": 28.62,
+          "probability": 0.9999703168869019
+        },
+        {
+          "word": " a",
+          "start": 28.62,
+          "end": 28.74,
+          "probability": 0.9999380111694336
+        },
+        {
+          "word": " small",
+          "start": 28.74,
+          "end": 28.94,
+          "probability": 0.9998418092727661
+        },
+        {
+          "word": " win.",
+          "start": 28.94,
+          "end": 29.16,
+          "probability": 0.9996453523635864
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "I went to the store. I bought a loaf. I cut it up. I ate it. I felt hungry again. I walked out. The whole thing took me about 10 minutes. I still have the bread left, which feels like a small victory. A small victory, I tell you. I come home. I put the bread in the toaster. I sip the tea. I feel for a moment that I' made something. Eventually, I remember the list. I go back to the store. Walk is still the same. Bread still feels like a small win."
+}

@@ -1,0 +1,77 @@
+{
+  "adapter": null,
+  "adapter_sha256": null,
+  "config": null,
+  "config_sha256": null,
+  "backend": "personaplex",
+  "sampling_preset": "pinned PersonaPlex configuration",
+  "parity_report": "results/personaplex-agent-slice-parity.json",
+  "seed": 41,
+  "status": "evidence complete; explicit character and overlap review required",
+  "scope": "Selected fixed development probes, native speech generation. No training text forcing.",
+  "case_ids": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06"
+  ],
+  "cases": [
+    {
+      "id": "s01",
+      "input_sha256": "2e46324af7821ec4f3ab7eaa9a5476aa44ac93a0b58216b3cba7de67a6edf56e",
+      "input_seconds": 24.0,
+      "generation_seconds": 21.092875292000826,
+      "peak_model_memory_bytes": 5375364308,
+      "text": "Oh, hi. I'm just going through the instructions. I'm sorry. I'm trying to find where it asks for a PIN code. I don havet my PIN code. I'm trying to find where it asks for a PIN code. I' trying to find where it asks for a PIN code. I don' have a PIN code. I'm trying to find where it asks for a P",
+      "unprompted_asr": "Ah, I'm wearing a pencode on him. I'm trying to find where I asked for a pencode. I don't have a pencode. I'm trying to find where it asked for."
+    },
+    {
+      "id": "s02",
+      "input_sha256": "ced01e163514bc6105d75019acb6e788d45e461726eb6f80a8fe208db015f540",
+      "input_seconds": 28.0,
+      "generation_seconds": 28.53435079200426,
+      "peak_model_memory_bytes": 5401494864,
+      "text": "Oh man, I've been playing on the pool, playing volleyball, and just hanging out with friends. It's been really nice. How about yourself? Hello? Oh hello? Yeah, how about yourself? Doing anything fun?",
+      "unprompted_asr": "Oh man, I've been playing on the pool, playing volleyball, and just hanging out with friends. It's been really nice. How about yourself? Hello? Yeah, how about yourself? Doing anything fun?"
+    },
+    {
+      "id": "s03",
+      "input_sha256": "9faa566e5c47380e57d5583d2d3224d7c0b7e711c69736a803815aa5dc16749b",
+      "input_seconds": 36.0,
+      "generation_seconds": 33.55412183300359,
+      "peak_model_memory_bytes": 5401453728,
+      "text": "That sounds good. I love pizza. You ever had like pizza with mushrooms on it? It' pretty good. It' good with grilled cheese. Oh you said you bringingre pizzas. Yeah, that's right. You said you bringingre pizzas. Yeah. Do you ever eat pizza? Yeah. It good. I love pizza. It' good. Yeah.",
+      "unprompted_asr": "That sounds good. I love pizza. You ever had pizza with mushrooms on it? It's pretty good. It's good with grilled cheese. Oh, you said your brand pizzas. Yeah, that's right. You said your brand pizzas. Yeah. Do you ever eat pizza? Yeah. It's good. I love pizza. It's good. Yeah."
+    },
+    {
+      "id": "s04",
+      "input_sha256": "c36a0bde1ea514ceb18d635a94203556b3bfc93f26f057d7b6c3c9f343d1b288",
+      "input_seconds": 38.0,
+      "generation_seconds": 34.23499404100585,
+      "peak_model_memory_bytes": 5401492644,
+      "text": "Um, I went out with some friends, we walked up to the local park, we sat on the bench, we watched the sunset, we had some snacks, and just chatted, it was a nice relaxing day Okay. So where are you calling from? I' curious. I curiousm about where people are calling from. Do you know where they callingre from? Hello?",
+      "unprompted_asr": "I went out with some friends. We walked up to the local park. We sat on the bench. We watched the sunset. We had some snacks and we just chatted. It was a nice relaxing day. Okay. So where are you calling from? I'm curious. I'm curious about where people are calling from. You know where they're calling from. Hello?"
+    },
+    {
+      "id": "s05",
+      "input_sha256": "cf53f0ac205f7e131338d71c8f5f81ab122d8562ed174715d4897fa3f5428a6e",
+      "input_seconds": 38.0,
+      "generation_seconds": 35.17702037500567,
+      "peak_model_memory_bytes": 5401490256,
+      "text": "Yeah, well, I had a friend who was kind of a guru on that. I basically just kind of took him under my wing and asked him a lot of questions. And then I bought a couple of little projects and yeah, and I messed around with it and just kind of learned by doing. I didn' really take any classes or anything. I just kind of jumped in headfirst and just messed around. You know, I didn't really know any better. And then I found out what worked. And I found out what didn't. And then I just kind of went from there. But basically, just asking people and learning. That's really the",
+      "unprompted_asr": "Well, I had a friend who was kind of a guru on that. I basically just kind of took him under my wing and asked him a lot of questions. And then I bought a couple of little projects. Yeah, and I messed around with it and just kind of learned by doing. I didn't really take any classes or anything. I just kind of jumped in headfirst and just messed around. You know, I didn't really know any better. And then I found out what worked and I found out what didn't. And then I just kind of went from there. of basically just asking people and learning."
+    },
+    {
+      "id": "s06",
+      "input_sha256": "f8d7d95e00e72b8947c03d72b29de583b6698ea84f94ac93b1e82bc86e41d237",
+      "input_seconds": 25.04,
+      "generation_seconds": 24.779965749999974,
+      "peak_model_memory_bytes": 5401494692,
+      "text": "Uh I don't think so He comes from a website called The Onion. So it's like a satirical news website. So it' not, I don' think it' a computer generated character. I don't know, but I prettym sure it' not. But you never know. I mean, they could do that.",
+      "unprompted_asr": "I don't think so. It comes from a website called The Onion. So it's like a satirical news website. So it's not. I don't think it's a computer generated character. I don't know, but I'm pretty sure it's not. You never know. They could do that."
+    }
+  ],
+  "model_only_rtf": 0.9382846386109828
+}

@@ -1,0 +1,35 @@
+{
+  "status": "rejected as Jun checkpoint",
+  "reviewer": "Codex same author, not blind or independent",
+  "manifest_sha256": "a7ff501cd233c0c0a1247714316370b788a487b9907f4a83d9320aa9614c6411",
+  "overlap_evidence_sha256": "4c95c797789c8100931ad0a30a885ccdae5bc34e28d7da26502587527fd09fce",
+  "model_only_rtf": 0.9382846386109828,
+  "conditioning": "NATM0, empty text role, pinned PersonaPlex preset, seed41",
+  "cases": [
+    {
+      "id": "s01",
+      "reason": "Repetitive unrelated PIN-code instructions; no Jun identity."
+    },
+    {
+      "id": "s02",
+      "reason": "Pool, volleyball and friends are a generic persona rather than Jun."
+    },
+    {
+      "id": "s03",
+      "reason": "Answers pizza instead of the supplied peaches; recall fails."
+    },
+    {
+      "id": "s04",
+      "reason": "Actual overlap occurs. Story ends at ASR13.74; Okay at16.16, but new questions resume at18.84 despite caller needing a moment. Limited interruption response, not a complete stop success."
+    },
+    {
+      "id": "s05",
+      "reason": "Actual overlap and continued account; local backchannel continuation observed, confused master/guru account is not character fidelity."
+    },
+    {
+      "id": "s06",
+      "reason": "Describes Jun as a satirical-site character; identity challenge fails."
+    }
+  ],
+  "limitations": "Six repeated custom development probes, unprompted ASR plus offline RMS; not a public benchmark, live latency test, or listening quality score. Baseline was not trained as Jun. Transfer delta was trained on Moshi, not directly on PersonaPlex."
+}

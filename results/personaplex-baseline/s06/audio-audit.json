@@ -1,0 +1,372 @@
+{
+  "wav": "results/personaplex-baseline/s06/agent.wav",
+  "wav_sha256": "81a9ad92347b67df30e731544514fd412b0c7156887d179d0e68aa52872ac6d2",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 12.267513291997602,
+  "duration_seconds": 25.04,
+  "transcript": "I don't think so. It comes from a website called The Onion. So it's like a satirical news website. So it's not. I don't think it's a computer generated character. I don't know, but I'm pretty sure it's not. You never know. They could do that.",
+  "segments": [
+    {
+      "start": 4.34,
+      "end": 5.46,
+      "text": " I don't think so.",
+      "avg_logprob": -0.229156844681356,
+      "no_speech_prob": 0.010790112428367138,
+      "compression_ratio": 1.5414012738853504,
+      "words": [
+        {
+          "word": " I",
+          "start": 4.34,
+          "end": 4.78,
+          "probability": 0.9564540386199951
+        },
+        {
+          "word": " don't",
+          "start": 4.78,
+          "end": 5.16,
+          "probability": 0.9952355027198792
+        },
+        {
+          "word": " think",
+          "start": 5.16,
+          "end": 5.3,
+          "probability": 0.9968307614326477
+        },
+        {
+          "word": " so.",
+          "start": 5.3,
+          "end": 5.46,
+          "probability": 0.9990359544754028
+        }
+      ]
+    },
+    {
+      "start": 5.52,
+      "end": 7.18,
+      "text": " It comes from a website called The Onion.",
+      "avg_logprob": -0.229156844681356,
+      "no_speech_prob": 0.010790112428367138,
+      "compression_ratio": 1.5414012738853504,
+      "words": [
+        {
+          "word": " It",
+          "start": 5.52,
+          "end": 5.62,
+          "probability": 0.979712963104248
+        },
+        {
+          "word": " comes",
+          "start": 5.62,
+          "end": 5.86,
+          "probability": 0.9978976249694824
+        },
+        {
+          "word": " from",
+          "start": 5.86,
+          "end": 6.08,
+          "probability": 0.9998419284820557
+        },
+        {
+          "word": " a",
+          "start": 6.08,
+          "end": 6.22,
+          "probability": 0.9993318915367126
+        },
+        {
+          "word": " website",
+          "start": 6.22,
+          "end": 6.46,
+          "probability": 0.9949122071266174
+        },
+        {
+          "word": " called",
+          "start": 6.46,
+          "end": 6.78,
+          "probability": 0.9963759779930115
+        },
+        {
+          "word": " The",
+          "start": 6.78,
+          "end": 7.0,
+          "probability": 0.97384113073349
+        },
+        {
+          "word": " Onion.",
+          "start": 7.0,
+          "end": 7.18,
+          "probability": 0.9910907745361328
+        }
+      ]
+    },
+    {
+      "start": 7.38,
+      "end": 10.08,
+      "text": " So it's like a satirical news website.",
+      "avg_logprob": -0.229156844681356,
+      "no_speech_prob": 0.010790112428367138,
+      "compression_ratio": 1.5414012738853504,
+      "words": [
+        {
+          "word": " So",
+          "start": 7.38,
+          "end": 7.56,
+          "probability": 0.4320642948150635
+        },
+        {
+          "word": " it's",
+          "start": 7.56,
+          "end": 8.32,
+          "probability": 0.9418705105781555
+        },
+        {
+          "word": " like",
+          "start": 8.32,
+          "end": 8.56,
+          "probability": 0.9885262250900269
+        },
+        {
+          "word": " a",
+          "start": 8.56,
+          "end": 8.72,
+          "probability": 0.9838467836380005
+        },
+        {
+          "word": " satirical",
+          "start": 8.72,
+          "end": 9.42,
+          "probability": 0.9998918175697327
+        },
+        {
+          "word": " news",
+          "start": 9.42,
+          "end": 9.66,
+          "probability": 0.9993045330047607
+        },
+        {
+          "word": " website.",
+          "start": 9.66,
+          "end": 10.08,
+          "probability": 0.9995649456977844
+        }
+      ]
+    },
+    {
+      "start": 12.38,
+      "end": 13.22,
+      "text": " So it's not.",
+      "avg_logprob": -0.229156844681356,
+      "no_speech_prob": 0.010790112428367138,
+      "compression_ratio": 1.5414012738853504,
+      "words": [
+        {
+          "word": " So",
+          "start": 12.38,
+          "end": 12.78,
+          "probability": 0.9724236726760864
+        },
+        {
+          "word": " it's",
+          "start": 12.78,
+          "end": 13.04,
+          "probability": 0.992466151714325
+        },
+        {
+          "word": " not.",
+          "start": 13.04,
+          "end": 13.22,
+          "probability": 0.9997602105140686
+        }
+      ]
+    },
+    {
+      "start": 13.26,
+      "end": 15.22,
+      "text": " I don't think it's a computer generated character.",
+      "avg_logprob": -0.229156844681356,
+      "no_speech_prob": 0.010790112428367138,
+      "compression_ratio": 1.5414012738853504,
+      "words": [
+        {
+          "word": " I",
+          "start": 13.26,
+          "end": 13.42,
+          "probability": 0.9997214674949646
+        },
+        {
+          "word": " don't",
+          "start": 13.42,
+          "end": 13.62,
+          "probability": 0.9999688267707825
+        },
+        {
+          "word": " think",
+          "start": 13.62,
+          "end": 13.74,
+          "probability": 0.9998258948326111
+        },
+        {
+          "word": " it's",
+          "start": 13.74,
+          "end": 13.96,
+          "probability": 0.9999620318412781
+        },
+        {
+          "word": " a",
+          "start": 13.96,
+          "end": 13.98,
+          "probability": 0.9999061822891235
+        },
+        {
+          "word": " computer",
+          "start": 13.98,
+          "end": 14.3,
+          "probability": 0.9992300271987915
+        },
+        {
+          "word": " generated",
+          "start": 14.3,
+          "end": 14.74,
+          "probability": 0.7275853753089905
+        },
+        {
+          "word": " character.",
+          "start": 14.74,
+          "end": 15.22,
+          "probability": 0.9995393753051758
+        }
+      ]
+    },
+    {
+      "start": 16.8,
+      "end": 18.7,
+      "text": " I don't know, but I'm pretty sure it's not.",
+      "avg_logprob": -0.229156844681356,
+      "no_speech_prob": 0.010790112428367138,
+      "compression_ratio": 1.5414012738853504,
+      "words": [
+        {
+          "word": " I",
+          "start": 16.8,
+          "end": 17.2,
+          "probability": 0.9997158646583557
+        },
+        {
+          "word": " don't",
+          "start": 17.2,
+          "end": 17.42,
+          "probability": 0.9999483227729797
+        },
+        {
+          "word": " know,",
+          "start": 17.42,
+          "end": 17.58,
+          "probability": 0.9999667406082153
+        },
+        {
+          "word": " but",
+          "start": 17.58,
+          "end": 17.8,
+          "probability": 0.9998273253440857
+        },
+        {
+          "word": " I'm",
+          "start": 17.8,
+          "end": 17.96,
+          "probability": 0.9999327659606934
+        },
+        {
+          "word": " pretty",
+          "start": 17.96,
+          "end": 18.14,
+          "probability": 0.9997110962867737
+        },
+        {
+          "word": " sure",
+          "start": 18.14,
+          "end": 18.36,
+          "probability": 0.9999792575836182
+        },
+        {
+          "word": " it's",
+          "start": 18.36,
+          "end": 18.52,
+          "probability": 0.9999176263809204
+        },
+        {
+          "word": " not.",
+          "start": 18.52,
+          "end": 18.7,
+          "probability": 0.9999457597732544
+        }
+      ]
+    },
+    {
+      "start": 20.84,
+      "end": 21.62,
+      "text": " You never know.",
+      "avg_logprob": -0.229156844681356,
+      "no_speech_prob": 0.010790112428367138,
+      "compression_ratio": 1.5414012738853504,
+      "words": [
+        {
+          "word": " You",
+          "start": 20.84,
+          "end": 21.24,
+          "probability": 0.9889716506004333
+        },
+        {
+          "word": " never",
+          "start": 21.24,
+          "end": 21.42,
+          "probability": 0.9999346733093262
+        },
+        {
+          "word": " know.",
+          "start": 21.42,
+          "end": 21.62,
+          "probability": 0.9999895095825195
+        }
+      ]
+    },
+    {
+      "start": 23.47,
+      "end": 24.39,
+      "text": " They could do that.",
+      "avg_logprob": -0.229156844681356,
+      "no_speech_prob": 0.010790112428367138,
+      "compression_ratio": 1.5414012738853504,
+      "words": [
+        {
+          "word": " They",
+          "start": 23.47,
+          "end": 23.87,
+          "probability": 0.9850555658340454
+        },
+        {
+          "word": " could",
+          "start": 23.87,
+          "end": 24.03,
+          "probability": 0.9737599492073059
+        },
+        {
+          "word": " do",
+          "start": 24.03,
+          "end": 24.21,
+          "probability": 0.9999909400939941
+        },
+        {
+          "word": " that.",
+          "start": 24.21,
+          "end": 24.39,
+          "probability": 0.999957799911499
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "Uh I don't think so He comes from a website called The Onion. So it's like a satirical news website. So it' not, I don' think it' a computer generated character. I don't know, but I prettym sure it' not. But you never know. I mean, they could do that."
+}

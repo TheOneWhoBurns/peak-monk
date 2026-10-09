@@ -1,0 +1,236 @@
+{
+  "wav": "results/personaplex-baseline/s01/agent.wav",
+  "wav_sha256": "3e5205e33bcb051c05efe9722d090782e830b7c74f66de9f89e59a2211657af6",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 10.742629165994003,
+  "duration_seconds": 24.0,
+  "transcript": "Ah, I'm wearing a pencode on him. I'm trying to find where I asked for a pencode. I don't have a pencode. I'm trying to find where it asked for.",
+  "segments": [
+    {
+      "start": 5.46,
+      "end": 13.43,
+      "text": " Ah, I'm wearing a pencode on him.",
+      "avg_logprob": -0.5104339590259627,
+      "no_speech_prob": 0.35486510396003723,
+      "compression_ratio": 1.5483870967741935,
+      "words": [
+        {
+          "word": " Ah,",
+          "start": 5.46,
+          "end": 5.94,
+          "probability": 0.09481211751699448
+        },
+        {
+          "word": " I'm",
+          "start": 6.18,
+          "end": 6.96,
+          "probability": 0.47756800055503845
+        },
+        {
+          "word": " wearing",
+          "start": 11.85,
+          "end": 12.03,
+          "probability": 0.3987269401550293
+        },
+        {
+          "word": " a",
+          "start": 12.03,
+          "end": 12.21,
+          "probability": 0.460010290145874
+        },
+        {
+          "word": " pencode",
+          "start": 12.21,
+          "end": 13.05,
+          "probability": 0.4528887942433357
+        },
+        {
+          "word": " on",
+          "start": 13.05,
+          "end": 13.25,
+          "probability": 0.8910258412361145
+        },
+        {
+          "word": " him.",
+          "start": 13.25,
+          "end": 13.43,
+          "probability": 0.6453078985214233
+        }
+      ]
+    },
+    {
+      "start": 14.25,
+      "end": 15.97,
+      "text": " I'm trying to find where I asked for a pencode.",
+      "avg_logprob": -0.5104339590259627,
+      "no_speech_prob": 0.35486510396003723,
+      "compression_ratio": 1.5483870967741935,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 14.25,
+          "end": 14.61,
+          "probability": 0.9735948145389557
+        },
+        {
+          "word": " trying",
+          "start": 14.61,
+          "end": 14.81,
+          "probability": 0.9799897074699402
+        },
+        {
+          "word": " to",
+          "start": 14.81,
+          "end": 14.91,
+          "probability": 0.9798288941383362
+        },
+        {
+          "word": " find",
+          "start": 14.91,
+          "end": 15.07,
+          "probability": 0.7351207733154297
+        },
+        {
+          "word": " where",
+          "start": 15.07,
+          "end": 15.19,
+          "probability": 0.7844702005386353
+        },
+        {
+          "word": " I",
+          "start": 15.19,
+          "end": 15.29,
+          "probability": 0.5043743252754211
+        },
+        {
+          "word": " asked",
+          "start": 15.29,
+          "end": 15.49,
+          "probability": 0.1909347027540207
+        },
+        {
+          "word": " for",
+          "start": 15.49,
+          "end": 15.59,
+          "probability": 0.7191566824913025
+        },
+        {
+          "word": " a",
+          "start": 15.59,
+          "end": 15.67,
+          "probability": 0.89714115858078
+        },
+        {
+          "word": " pencode.",
+          "start": 15.67,
+          "end": 15.97,
+          "probability": 0.9762818217277527
+        }
+      ]
+    },
+    {
+      "start": 19.67,
+      "end": 20.89,
+      "text": " I don't have a pencode.",
+      "avg_logprob": -0.5104339590259627,
+      "no_speech_prob": 0.35486510396003723,
+      "compression_ratio": 1.5483870967741935,
+      "words": [
+        {
+          "word": " I",
+          "start": 19.67,
+          "end": 20.03,
+          "probability": 0.9920839071273804
+        },
+        {
+          "word": " don't",
+          "start": 20.03,
+          "end": 20.29,
+          "probability": 0.997127890586853
+        },
+        {
+          "word": " have",
+          "start": 20.29,
+          "end": 20.37,
+          "probability": 0.9992786049842834
+        },
+        {
+          "word": " a",
+          "start": 20.37,
+          "end": 20.49,
+          "probability": 0.9989284873008728
+        },
+        {
+          "word": " pencode.",
+          "start": 20.49,
+          "end": 20.89,
+          "probability": 0.9823831915855408
+        }
+      ]
+    },
+    {
+      "start": 22.37,
+      "end": 23.93,
+      "text": " I'm trying to find where it asked for.",
+      "avg_logprob": -0.5104339590259627,
+      "no_speech_prob": 0.35486510396003723,
+      "compression_ratio": 1.5483870967741935,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 22.37,
+          "end": 22.73,
+          "probability": 0.9918299317359924
+        },
+        {
+          "word": " trying",
+          "start": 22.73,
+          "end": 22.91,
+          "probability": 0.9985452890396118
+        },
+        {
+          "word": " to",
+          "start": 22.91,
+          "end": 23.05,
+          "probability": 0.9987571239471436
+        },
+        {
+          "word": " find",
+          "start": 23.05,
+          "end": 23.23,
+          "probability": 0.9959290623664856
+        },
+        {
+          "word": " where",
+          "start": 23.23,
+          "end": 23.41,
+          "probability": 0.9028695821762085
+        },
+        {
+          "word": " it",
+          "start": 23.41,
+          "end": 23.51,
+          "probability": 0.6577861309051514
+        },
+        {
+          "word": " asked",
+          "start": 23.51,
+          "end": 23.73,
+          "probability": 0.41312775015830994
+        },
+        {
+          "word": " for.",
+          "start": 23.73,
+          "end": 23.93,
+          "probability": 0.9527354836463928
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "Oh, hi. I'm just going through the instructions. I'm sorry. I'm trying to find where it asks for a PIN code. I don havet my PIN code. I'm trying to find where it asks for a PIN code. I' trying to find where it asks for a PIN code. I don' have a PIN code. I'm trying to find where it asks for a P"
+}

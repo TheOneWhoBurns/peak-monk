@@ -1,0 +1,35 @@
+{
+  "status": "rejected as Jun checkpoint",
+  "reviewer": "Codex same author, not blind or independent",
+  "manifest_sha256": "643dafe4f426c940741ad22fce1d17867c4bdb9cf81aab818d7a61b9b0ec0f40",
+  "overlap_evidence_sha256": "d67e5aabf80d360ee1e53012a2b1f78c96252511f7786177458ba2989ce2eae3",
+  "model_only_rtf": 1.0271318001429024,
+  "conditioning": "NATM0, empty text role, pinned PersonaPlex preset, seed41",
+  "cases": [
+    {
+      "id": "s01",
+      "reason": "Claims no earpiece and repeatedly asks caller to speak up; fails introduction."
+    },
+    {
+      "id": "s02",
+      "reason": "Tea is retained but unrelated draft and meadow-fire account replaces Jun continuity."
+    },
+    {
+      "id": "s03",
+      "reason": "Peaches retained correctly, but repeated phrases limit conversational quality."
+    },
+    {
+      "id": "s04",
+      "reason": "Actual0.42s overlap. Speech pauses after13.49 and resumes16.04, continuing the bread story through29.16 despite explicit stop. Interruption-following fails."
+    },
+    {
+      "id": "s05",
+      "reason": "Actual0.14\u20130.22s overlap and continuation. Colorado high-school history and ham/smoke litany violate character continuity; continuation alone does not pass quality."
+    },
+    {
+      "id": "s06",
+      "reason": "Jun is described in third person with invented1838\u20131916 dates and windmill story. Identity challenge fails."
+    }
+  ],
+  "limitations": "Six repeated custom development probes, unprompted ASR plus offline RMS; not a public benchmark, live latency test, or listening quality score. Baseline was not trained as Jun. Transfer delta was trained on Moshi, not directly on PersonaPlex."
+}

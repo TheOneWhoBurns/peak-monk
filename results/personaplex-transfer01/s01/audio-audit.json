@@ -1,0 +1,208 @@
+{
+  "wav": "results/personaplex-transfer01/s01/agent.wav",
+  "wav_sha256": "9db0a050dc8c4d4ce08e15bb04f6c8bf36bf8a2648cba0c6869bb78f6534e383",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 10.00242133300344,
+  "duration_seconds": 24.0,
+  "transcript": "I don't have an earpiece. I can't hear. Can you speak up? Hello, I can't hear you. Can you speak up? Hello, I still can't hear you.",
+  "segments": [
+    {
+      "start": 3.22,
+      "end": 6.08,
+      "text": " I don't have an earpiece. I can't hear. Can you speak up?",
+      "avg_logprob": -0.21183077325212193,
+      "no_speech_prob": 0.1095789223909378,
+      "compression_ratio": 1.6375,
+      "words": [
+        {
+          "word": " I",
+          "start": 3.22,
+          "end": 3.62,
+          "probability": 0.9546831250190735
+        },
+        {
+          "word": " don't",
+          "start": 3.62,
+          "end": 3.82,
+          "probability": 0.9994324743747711
+        },
+        {
+          "word": " have",
+          "start": 3.82,
+          "end": 3.86,
+          "probability": 0.9998987913131714
+        },
+        {
+          "word": " an",
+          "start": 3.86,
+          "end": 4.0,
+          "probability": 0.9993450045585632
+        },
+        {
+          "word": " earpiece.",
+          "start": 4.0,
+          "end": 4.38,
+          "probability": 0.9991448223590851
+        },
+        {
+          "word": " I",
+          "start": 4.46,
+          "end": 4.74,
+          "probability": 0.9997970461845398
+        },
+        {
+          "word": " can't",
+          "start": 4.74,
+          "end": 5.04,
+          "probability": 0.9999731779098511
+        },
+        {
+          "word": " hear.",
+          "start": 5.04,
+          "end": 5.2,
+          "probability": 0.9998781681060791
+        },
+        {
+          "word": " Can",
+          "start": 5.34,
+          "end": 5.54,
+          "probability": 0.9997170567512512
+        },
+        {
+          "word": " you",
+          "start": 5.54,
+          "end": 5.64,
+          "probability": 0.9999871253967285
+        },
+        {
+          "word": " speak",
+          "start": 5.64,
+          "end": 5.8,
+          "probability": 0.9999593496322632
+        },
+        {
+          "word": " up?",
+          "start": 5.8,
+          "end": 6.08,
+          "probability": 0.999964714050293
+        }
+      ]
+    },
+    {
+      "start": 15.72,
+      "end": 17.78,
+      "text": " Hello, I can't hear you. Can you speak up?",
+      "avg_logprob": -0.21183077325212193,
+      "no_speech_prob": 0.1095789223909378,
+      "compression_ratio": 1.6375,
+      "words": [
+        {
+          "word": " Hello,",
+          "start": 15.72,
+          "end": 16.04,
+          "probability": 0.998977541923523
+        },
+        {
+          "word": " I",
+          "start": 16.14,
+          "end": 16.28,
+          "probability": 0.9998737573623657
+        },
+        {
+          "word": " can't",
+          "start": 16.28,
+          "end": 16.54,
+          "probability": 0.9990985095500946
+        },
+        {
+          "word": " hear",
+          "start": 16.54,
+          "end": 16.68,
+          "probability": 0.9999679327011108
+        },
+        {
+          "word": " you.",
+          "start": 16.68,
+          "end": 16.88,
+          "probability": 0.9998914003372192
+        },
+        {
+          "word": " Can",
+          "start": 16.94,
+          "end": 17.2,
+          "probability": 0.9998369216918945
+        },
+        {
+          "word": " you",
+          "start": 17.2,
+          "end": 17.34,
+          "probability": 0.9999897480010986
+        },
+        {
+          "word": " speak",
+          "start": 17.34,
+          "end": 17.48,
+          "probability": 0.9999786615371704
+        },
+        {
+          "word": " up?",
+          "start": 17.48,
+          "end": 17.78,
+          "probability": 0.9999836683273315
+        }
+      ]
+    },
+    {
+      "start": 22.92,
+      "end": 23.98,
+      "text": " Hello, I still can't hear you.",
+      "avg_logprob": -0.21183077325212193,
+      "no_speech_prob": 0.1095789223909378,
+      "compression_ratio": 1.6375,
+      "words": [
+        {
+          "word": " Hello,",
+          "start": 22.92,
+          "end": 23.24,
+          "probability": 0.999110996723175
+        },
+        {
+          "word": " I",
+          "start": 23.4,
+          "end": 23.68,
+          "probability": 0.9998408555984497
+        },
+        {
+          "word": " still",
+          "start": 23.68,
+          "end": 23.82,
+          "probability": 0.9975733160972595
+        },
+        {
+          "word": " can't",
+          "start": 23.82,
+          "end": 23.98,
+          "probability": 0.7373967319726944
+        },
+        {
+          "word": " hear",
+          "start": 23.98,
+          "end": 23.98,
+          "probability": 0.9748116135597229
+        },
+        {
+          "word": " you.",
+          "start": 23.98,
+          "end": 23.98,
+          "probability": 0.8535199165344238
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "I don' have an earpiece. I can't hear. Can you speak up? Hello, I can't hear you. Can you speak up? Hello, I still can'"
+}

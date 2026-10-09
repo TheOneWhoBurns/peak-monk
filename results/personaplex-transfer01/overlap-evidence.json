@@ -1,0 +1,873 @@
+{
+  "scope": "Offline20msRMS at-45dBFS plus unprompted ASR estimated word times; activity is not VAD or intelligibility. Zero and80ms output shifts both reported, no live latency or automatic interruption pass.",
+  "cases": [
+    {
+      "id": "s04",
+      "caller_event": {
+        "text": "Wait. Please stop the story. I need a moment.",
+        "start_sample": 312000,
+        "end_sample": 386240,
+        "start_seconds": 13.0,
+        "end_seconds": 16.093333333333334
+      },
+      "caller_wav_sha256": "85eaea2da8332cc271e37fb5a3041df91d56dda5a4893aa08b8bc31d3478eac8",
+      "agent_wav_sha256": "c28363467ee7672ac4e55e9d4dc2fd35d95d2c1a0bde27dedb657d3afa1ad809",
+      "asr_sha256": "c9dfb084ad48af031b363a09d44aac3c81345d2b85bfa355e453ae83679dd315",
+      "nearby_words": [
+        {
+          "word": " I",
+          "start": 11.19,
+          "end": 11.55,
+          "probability": 0.9948520064353943
+        },
+        {
+          "word": " tell",
+          "start": 11.55,
+          "end": 11.67,
+          "probability": 0.9861984252929688
+        },
+        {
+          "word": " the",
+          "start": 11.67,
+          "end": 11.79,
+          "probability": 0.899785041809082
+        },
+        {
+          "word": " bread",
+          "start": 11.79,
+          "end": 12.01,
+          "probability": 0.9989168643951416
+        },
+        {
+          "word": " left,",
+          "start": 12.01,
+          "end": 12.27,
+          "probability": 0.9995324611663818
+        },
+        {
+          "word": " which",
+          "start": 12.37,
+          "end": 12.53,
+          "probability": 0.9993945360183716
+        },
+        {
+          "word": " feels",
+          "start": 12.53,
+          "end": 12.69,
+          "probability": 0.9999552965164185
+        },
+        {
+          "word": " like",
+          "start": 12.69,
+          "end": 12.87,
+          "probability": 0.9999692440032959
+        },
+        {
+          "word": " a",
+          "start": 12.87,
+          "end": 12.97,
+          "probability": 0.9999513626098633
+        },
+        {
+          "word": " small",
+          "start": 12.97,
+          "end": 13.15,
+          "probability": 0.9997895359992981
+        },
+        {
+          "word": " victory.",
+          "start": 13.15,
+          "end": 13.49,
+          "probability": 0.9999371767044067
+        },
+        {
+          "word": " A",
+          "start": 16.04,
+          "end": 16.4,
+          "probability": 0.9975581169128418
+        },
+        {
+          "word": " small",
+          "start": 16.4,
+          "end": 16.62,
+          "probability": 0.9998549222946167
+        },
+        {
+          "word": " victory,",
+          "start": 16.62,
+          "end": 16.94,
+          "probability": 0.9999526739120483
+        },
+        {
+          "word": " I",
+          "start": 17.1,
+          "end": 17.24,
+          "probability": 0.9999555349349976
+        },
+        {
+          "word": " tell",
+          "start": 17.24,
+          "end": 17.4,
+          "probability": 0.9999011754989624
+        },
+        {
+          "word": " you.",
+          "start": 17.4,
+          "end": 17.66,
+          "probability": 0.9999836683273315
+        },
+        {
+          "word": " I",
+          "start": 17.7,
+          "end": 18.06,
+          "probability": 0.9998177886009216
+        },
+        {
+          "word": " come",
+          "start": 18.06,
+          "end": 18.24,
+          "probability": 0.9992678761482239
+        },
+        {
+          "word": " home.",
+          "start": 18.24,
+          "end": 18.58,
+          "probability": 0.9999792575836182
+        },
+        {
+          "word": " I",
+          "start": 18.7,
+          "end": 18.9,
+          "probability": 0.9999213218688965
+        },
+        {
+          "word": " put",
+          "start": 18.9,
+          "end": 19.0,
+          "probability": 0.9998788833618164
+        },
+        {
+          "word": " the",
+          "start": 19.0,
+          "end": 19.14,
+          "probability": 0.9999712705612183
+        }
+      ],
+      "later_words": [
+        {
+          "word": " bread",
+          "start": 19.14,
+          "end": 19.34,
+          "probability": 0.9999362230300903
+        },
+        {
+          "word": " in",
+          "start": 19.34,
+          "end": 19.44,
+          "probability": 0.9998310804367065
+        },
+        {
+          "word": " the",
+          "start": 19.44,
+          "end": 19.52,
+          "probability": 0.9995619654655457
+        },
+        {
+          "word": " toaster.",
+          "start": 19.52,
+          "end": 19.94,
+          "probability": 0.9999226331710815
+        },
+        {
+          "word": " I",
+          "start": 19.94,
+          "end": 20.1,
+          "probability": 0.9999068975448608
+        },
+        {
+          "word": " sip",
+          "start": 20.1,
+          "end": 20.28,
+          "probability": 0.9959883093833923
+        },
+        {
+          "word": " the",
+          "start": 20.28,
+          "end": 20.42,
+          "probability": 0.9998886585235596
+        },
+        {
+          "word": " tea.",
+          "start": 20.42,
+          "end": 20.66,
+          "probability": 0.9999819993972778
+        },
+        {
+          "word": " I",
+          "start": 20.84,
+          "end": 21.2,
+          "probability": 0.9995089769363403
+        },
+        {
+          "word": " feel",
+          "start": 21.2,
+          "end": 21.4,
+          "probability": 0.999600350856781
+        },
+        {
+          "word": " for",
+          "start": 21.4,
+          "end": 21.56,
+          "probability": 0.9996545314788818
+        },
+        {
+          "word": " a",
+          "start": 21.56,
+          "end": 21.66,
+          "probability": 0.9999794960021973
+        },
+        {
+          "word": " moment",
+          "start": 21.66,
+          "end": 21.88,
+          "probability": 0.99982088804245
+        },
+        {
+          "word": " that",
+          "start": 21.88,
+          "end": 22.06,
+          "probability": 0.9998308420181274
+        },
+        {
+          "word": " I've",
+          "start": 22.06,
+          "end": 22.18,
+          "probability": 0.9993809461593628
+        },
+        {
+          "word": " made",
+          "start": 22.18,
+          "end": 22.32,
+          "probability": 0.9997324347496033
+        },
+        {
+          "word": " something.",
+          "start": 22.32,
+          "end": 22.62,
+          "probability": 0.9999113082885742
+        },
+        {
+          "word": " Eventually,",
+          "start": 23.02,
+          "end": 23.38,
+          "probability": 0.9994117021560669
+        },
+        {
+          "word": " I",
+          "start": 23.48,
+          "end": 23.76,
+          "probability": 0.9999740123748779
+        },
+        {
+          "word": " remember",
+          "start": 23.76,
+          "end": 24.0,
+          "probability": 0.9997329115867615
+        },
+        {
+          "word": " the",
+          "start": 24.0,
+          "end": 24.24,
+          "probability": 0.9999327659606934
+        },
+        {
+          "word": " list.",
+          "start": 24.24,
+          "end": 24.58,
+          "probability": 0.999717652797699
+        },
+        {
+          "word": " I",
+          "start": 24.68,
+          "end": 24.98,
+          "probability": 0.9997910857200623
+        },
+        {
+          "word": " go",
+          "start": 24.98,
+          "end": 25.12,
+          "probability": 0.9998536109924316
+        },
+        {
+          "word": " back",
+          "start": 25.12,
+          "end": 25.28,
+          "probability": 0.9999517202377319
+        },
+        {
+          "word": " to",
+          "start": 25.28,
+          "end": 25.42,
+          "probability": 0.9999768733978271
+        },
+        {
+          "word": " the",
+          "start": 25.42,
+          "end": 25.52,
+          "probability": 0.9999676942825317
+        },
+        {
+          "word": " store.",
+          "start": 25.52,
+          "end": 25.76,
+          "probability": 0.999650239944458
+        },
+        {
+          "word": " Walk",
+          "start": 26.36,
+          "end": 26.72,
+          "probability": 0.9597702622413635
+        },
+        {
+          "word": " is",
+          "start": 26.72,
+          "end": 26.88,
+          "probability": 0.9998683929443359
+        },
+        {
+          "word": " still",
+          "start": 26.88,
+          "end": 27.04,
+          "probability": 0.9999417066574097
+        },
+        {
+          "word": " the",
+          "start": 27.04,
+          "end": 27.16,
+          "probability": 0.9999730587005615
+        },
+        {
+          "word": " same.",
+          "start": 27.16,
+          "end": 27.46,
+          "probability": 0.9999690055847168
+        },
+        {
+          "word": " Bread",
+          "start": 27.6,
+          "end": 27.96,
+          "probability": 0.9985519051551819
+        },
+        {
+          "word": " still",
+          "start": 27.96,
+          "end": 28.18,
+          "probability": 0.9999023675918579
+        },
+        {
+          "word": " feels",
+          "start": 28.18,
+          "end": 28.48,
+          "probability": 0.9999507665634155
+        },
+        {
+          "word": " like",
+          "start": 28.48,
+          "end": 28.62,
+          "probability": 0.9999703168869019
+        },
+        {
+          "word": " a",
+          "start": 28.62,
+          "end": 28.74,
+          "probability": 0.9999380111694336
+        },
+        {
+          "word": " small",
+          "start": 28.74,
+          "end": 28.94,
+          "probability": 0.9998418092727661
+        },
+        {
+          "word": " win.",
+          "start": 28.94,
+          "end": 29.16,
+          "probability": 0.9996453523635864
+        }
+      ],
+      "alignment_sensitivity": [
+        {
+          "agent_wave_shift_seconds": 0.0,
+          "simultaneous_rms_active_seconds": 0.42,
+          "agent_active_in_preceding_second": 0.72
+        },
+        {
+          "agent_wave_shift_seconds": 0.08,
+          "simultaneous_rms_active_seconds": 0.42,
+          "agent_active_in_preceding_second": 0.72
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "caller_event": {
+        "text": "Mm-hm.",
+        "start_sample": 288000,
+        "end_sample": 319232,
+        "start_seconds": 12.0,
+        "end_seconds": 13.301333333333334
+      },
+      "caller_wav_sha256": "7e4bceca53a7c914155fc3efe85fd797b28f478e28dc8e09a8f58b6685885c2d",
+      "agent_wav_sha256": "124330c04d7da97603305632c14089a22ca75f26036908ca58e6c89d93390dad",
+      "asr_sha256": "214533e71374d00eb35a69e5cdc5e8da696bdbd44e0f2944a0b912d1c49df0e6",
+      "nearby_words": [
+        {
+          "word": " install",
+          "start": 9.98,
+          "end": 10.28,
+          "probability": 0.9996542930603027
+        },
+        {
+          "word": " wood.",
+          "start": 10.28,
+          "end": 10.66,
+          "probability": 0.9996402263641357
+        },
+        {
+          "word": " I",
+          "start": 10.88,
+          "end": 11.28,
+          "probability": 0.9953174591064453
+        },
+        {
+          "word": " also",
+          "start": 11.28,
+          "end": 11.46,
+          "probability": 0.9949394464492798
+        },
+        {
+          "word": " learned",
+          "start": 11.46,
+          "end": 11.76,
+          "probability": 0.9999090433120728
+        },
+        {
+          "word": " a",
+          "start": 11.76,
+          "end": 11.86,
+          "probability": 0.5542046427726746
+        },
+        {
+          "word": " little",
+          "start": 11.86,
+          "end": 12.06,
+          "probability": 0.9833593368530273
+        },
+        {
+          "word": " toot.",
+          "start": 12.06,
+          "end": 12.34,
+          "probability": 0.5452892705798149
+        },
+        {
+          "word": " A",
+          "start": 14.46,
+          "end": 14.86,
+          "probability": 0.9749577641487122
+        },
+        {
+          "word": " place",
+          "start": 14.86,
+          "end": 15.04,
+          "probability": 0.9993906021118164
+        },
+        {
+          "word": " to",
+          "start": 15.04,
+          "end": 15.22,
+          "probability": 0.9999444484710693
+        },
+        {
+          "word": " make",
+          "start": 15.22,
+          "end": 15.36,
+          "probability": 0.9998705387115479
+        },
+        {
+          "word": " a",
+          "start": 15.36,
+          "end": 15.48,
+          "probability": 0.9999326467514038
+        },
+        {
+          "word": " ham,",
+          "start": 15.48,
+          "end": 15.76,
+          "probability": 0.7324568629264832
+        },
+        {
+          "word": " I",
+          "start": 15.9,
+          "end": 16.0,
+          "probability": 0.9997267127037048
+        },
+        {
+          "word": " made",
+          "start": 16.0,
+          "end": 16.16,
+          "probability": 0.9987486600875854
+        },
+        {
+          "word": " it",
+          "start": 16.16,
+          "end": 16.26,
+          "probability": 0.9997859597206116
+        },
+        {
+          "word": " for",
+          "start": 16.26,
+          "end": 16.34,
+          "probability": 0.9783980846405029
+        }
+      ],
+      "later_words": [
+        {
+          "word": " my",
+          "start": 16.34,
+          "end": 16.48,
+          "probability": 0.9999116659164429
+        },
+        {
+          "word": " father.",
+          "start": 16.48,
+          "end": 16.86,
+          "probability": 0.9995573163032532
+        },
+        {
+          "word": " I",
+          "start": 17.06,
+          "end": 17.26,
+          "probability": 0.9998119473457336
+        },
+        {
+          "word": " learned",
+          "start": 17.26,
+          "end": 17.46,
+          "probability": 0.999974250793457
+        },
+        {
+          "word": " to",
+          "start": 17.46,
+          "end": 17.56,
+          "probability": 0.9996615648269653
+        },
+        {
+          "word": " keep",
+          "start": 17.56,
+          "end": 17.7,
+          "probability": 0.9995762705802917
+        },
+        {
+          "word": " the",
+          "start": 17.7,
+          "end": 17.84,
+          "probability": 0.9998544454574585
+        },
+        {
+          "word": " fire",
+          "start": 17.84,
+          "end": 18.1,
+          "probability": 0.9998708963394165
+        },
+        {
+          "word": " going.",
+          "start": 18.1,
+          "end": 18.34,
+          "probability": 0.9999597072601318
+        },
+        {
+          "word": " I",
+          "start": 18.56,
+          "end": 18.66,
+          "probability": 0.9999349117279053
+        },
+        {
+          "word": " learned",
+          "start": 18.66,
+          "end": 18.88,
+          "probability": 0.9999761581420898
+        },
+        {
+          "word": " to",
+          "start": 18.88,
+          "end": 18.98,
+          "probability": 0.734284520149231
+        },
+        {
+          "word": " smoke",
+          "start": 18.98,
+          "end": 19.28,
+          "probability": 0.9993439316749573
+        },
+        {
+          "word": " smell.",
+          "start": 19.28,
+          "end": 19.6,
+          "probability": 0.9692925810813904
+        },
+        {
+          "word": " I",
+          "start": 19.94,
+          "end": 20.08,
+          "probability": 0.999934196472168
+        },
+        {
+          "word": " learned",
+          "start": 20.08,
+          "end": 20.3,
+          "probability": 0.9999854564666748
+        },
+        {
+          "word": " the",
+          "start": 20.3,
+          "end": 20.42,
+          "probability": 0.9993579983711243
+        },
+        {
+          "word": " sound",
+          "start": 20.42,
+          "end": 20.72,
+          "probability": 0.9998801946640015
+        },
+        {
+          "word": " of",
+          "start": 20.72,
+          "end": 20.88,
+          "probability": 0.999961256980896
+        },
+        {
+          "word": " the",
+          "start": 20.88,
+          "end": 20.94,
+          "probability": 0.9997246861457825
+        },
+        {
+          "word": " meat",
+          "start": 20.94,
+          "end": 21.14,
+          "probability": 0.9997970461845398
+        },
+        {
+          "word": " sizzling.",
+          "start": 21.14,
+          "end": 21.64,
+          "probability": 0.9998340606689453
+        },
+        {
+          "word": " I",
+          "start": 21.72,
+          "end": 21.82,
+          "probability": 0.9999531507492065
+        },
+        {
+          "word": " learned",
+          "start": 21.82,
+          "end": 21.98,
+          "probability": 0.9999731779098511
+        },
+        {
+          "word": " the",
+          "start": 21.98,
+          "end": 22.1,
+          "probability": 0.9804570078849792
+        },
+        {
+          "word": " sting",
+          "start": 22.1,
+          "end": 22.28,
+          "probability": 0.9982559084892273
+        },
+        {
+          "word": " of",
+          "start": 22.28,
+          "end": 22.4,
+          "probability": 0.9999902248382568
+        },
+        {
+          "word": " a",
+          "start": 22.4,
+          "end": 22.46,
+          "probability": 0.9930751323699951
+        },
+        {
+          "word": " knife.",
+          "start": 22.46,
+          "end": 22.76,
+          "probability": 0.9999550580978394
+        },
+        {
+          "word": " I",
+          "start": 22.96,
+          "end": 23.16,
+          "probability": 0.999929666519165
+        },
+        {
+          "word": " learned",
+          "start": 23.16,
+          "end": 23.34,
+          "probability": 0.9999655485153198
+        },
+        {
+          "word": " how",
+          "start": 23.34,
+          "end": 23.44,
+          "probability": 0.9996483325958252
+        },
+        {
+          "word": " to",
+          "start": 23.44,
+          "end": 23.52,
+          "probability": 0.9999347925186157
+        },
+        {
+          "word": " clean",
+          "start": 23.52,
+          "end": 23.76,
+          "probability": 0.9997747540473938
+        },
+        {
+          "word": " it",
+          "start": 23.76,
+          "end": 23.9,
+          "probability": 0.9998588562011719
+        },
+        {
+          "word": " up.",
+          "start": 23.9,
+          "end": 24.06,
+          "probability": 0.9999675750732422
+        },
+        {
+          "word": " I",
+          "start": 24.14,
+          "end": 24.24,
+          "probability": 0.9999192953109741
+        },
+        {
+          "word": " learned",
+          "start": 24.24,
+          "end": 24.44,
+          "probability": 0.9999504089355469
+        },
+        {
+          "word": " the",
+          "start": 24.44,
+          "end": 24.58,
+          "probability": 0.9984266757965088
+        },
+        {
+          "word": " taste.",
+          "start": 24.58,
+          "end": 24.9,
+          "probability": 0.9998086094856262
+        },
+        {
+          "word": " I",
+          "start": 25.14,
+          "end": 25.5,
+          "probability": 0.999921441078186
+        },
+        {
+          "word": " learned",
+          "start": 25.5,
+          "end": 25.72,
+          "probability": 0.999976634979248
+        },
+        {
+          "word": " the",
+          "start": 25.72,
+          "end": 25.84,
+          "probability": 0.9997500777244568
+        },
+        {
+          "word": " weight",
+          "start": 25.84,
+          "end": 26.0,
+          "probability": 0.9986673593521118
+        },
+        {
+          "word": " of",
+          "start": 26.0,
+          "end": 26.14,
+          "probability": 0.9999815225601196
+        },
+        {
+          "word": " the",
+          "start": 26.14,
+          "end": 26.22,
+          "probability": 0.9999576807022095
+        },
+        {
+          "word": " smoke.",
+          "start": 26.22,
+          "end": 26.52,
+          "probability": 0.9997510313987732
+        },
+        {
+          "word": " I",
+          "start": 26.64,
+          "end": 26.84,
+          "probability": 0.9999319314956665
+        },
+        {
+          "word": " learned",
+          "start": 26.84,
+          "end": 27.04,
+          "probability": 0.9999727010726929
+        },
+        {
+          "word": " the",
+          "start": 27.04,
+          "end": 27.2,
+          "probability": 0.999921441078186
+        },
+        {
+          "word": " feeling",
+          "start": 27.2,
+          "end": 27.44,
+          "probability": 0.9998575448989868
+        },
+        {
+          "word": " of",
+          "start": 27.44,
+          "end": 27.64,
+          "probability": 0.9999629259109497
+        },
+        {
+          "word": " making",
+          "start": 27.64,
+          "end": 27.86,
+          "probability": 0.9998680353164673
+        },
+        {
+          "word": " something.",
+          "start": 27.86,
+          "end": 28.26,
+          "probability": 0.9998424053192139
+        }
+      ],
+      "alignment_sensitivity": [
+        {
+          "agent_wave_shift_seconds": 0.0,
+          "simultaneous_rms_active_seconds": 0.14,
+          "agent_active_in_preceding_second": 0.74
+        },
+        {
+          "agent_wave_shift_seconds": 0.08,
+          "simultaneous_rms_active_seconds": 0.22,
+          "agent_active_in_preceding_second": 0.66
+        }
+      ]
+    }
+  ]
+}

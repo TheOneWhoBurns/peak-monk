@@ -1,0 +1,770 @@
+{
+  "wav": "results/personaplex-baseline/s05/agent.wav",
+  "wav_sha256": "fc77642122e26cc81747de3c5742d26eaa385b6a25f8cf3db118cdfb8e13e0ea",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 23.500154458000907,
+  "duration_seconds": 38.0,
+  "transcript": "Well, I had a friend who was kind of a guru on that. I basically just kind of took him under my wing and asked him a lot of questions. And then I bought a couple of little projects. Yeah, and I messed around with it and just kind of learned by doing. I didn't really take any classes or anything. I just kind of jumped in headfirst and just messed around. You know, I didn't really know any better. And then I found out what worked and I found out what didn't. And then I just kind of went from there. of basically just asking people and learning.",
+  "segments": [
+    {
+      "start": 3.98,
+      "end": 6.74,
+      "text": " Well, I had a friend who was kind of a guru on that.",
+      "avg_logprob": -0.16766204630983048,
+      "no_speech_prob": 0.15580014884471893,
+      "compression_ratio": 1.9049429657794676,
+      "words": [
+        {
+          "word": " Well,",
+          "start": 3.98,
+          "end": 4.4,
+          "probability": 0.6429283618927002
+        },
+        {
+          "word": " I",
+          "start": 4.6,
+          "end": 4.7,
+          "probability": 0.9995254278182983
+        },
+        {
+          "word": " had",
+          "start": 4.7,
+          "end": 4.86,
+          "probability": 0.9992855191230774
+        },
+        {
+          "word": " a",
+          "start": 4.86,
+          "end": 4.94,
+          "probability": 0.9998360872268677
+        },
+        {
+          "word": " friend",
+          "start": 4.94,
+          "end": 5.16,
+          "probability": 0.9998112320899963
+        },
+        {
+          "word": " who",
+          "start": 5.16,
+          "end": 5.28,
+          "probability": 0.9978790283203125
+        },
+        {
+          "word": " was",
+          "start": 5.28,
+          "end": 5.4,
+          "probability": 0.9993308782577515
+        },
+        {
+          "word": " kind",
+          "start": 5.4,
+          "end": 5.58,
+          "probability": 0.996993899345398
+        },
+        {
+          "word": " of",
+          "start": 5.58,
+          "end": 5.74,
+          "probability": 0.9998891353607178
+        },
+        {
+          "word": " a",
+          "start": 5.74,
+          "end": 5.86,
+          "probability": 0.9961899518966675
+        },
+        {
+          "word": " guru",
+          "start": 5.86,
+          "end": 6.18,
+          "probability": 0.9771808385848999
+        },
+        {
+          "word": " on",
+          "start": 6.18,
+          "end": 6.52,
+          "probability": 0.9993436932563782
+        },
+        {
+          "word": " that.",
+          "start": 6.52,
+          "end": 6.74,
+          "probability": 0.9997428059577942
+        }
+      ]
+    },
+    {
+      "start": 6.8,
+      "end": 9.96,
+      "text": " I basically just kind of took him under my wing and asked him a lot of questions.",
+      "avg_logprob": -0.16766204630983048,
+      "no_speech_prob": 0.15580014884471893,
+      "compression_ratio": 1.9049429657794676,
+      "words": [
+        {
+          "word": " I",
+          "start": 6.8,
+          "end": 6.92,
+          "probability": 0.9668930172920227
+        },
+        {
+          "word": " basically",
+          "start": 6.92,
+          "end": 7.22,
+          "probability": 0.9979660511016846
+        },
+        {
+          "word": " just",
+          "start": 7.22,
+          "end": 7.56,
+          "probability": 0.998382568359375
+        },
+        {
+          "word": " kind",
+          "start": 7.56,
+          "end": 7.78,
+          "probability": 0.9954090714454651
+        },
+        {
+          "word": " of",
+          "start": 7.78,
+          "end": 7.88,
+          "probability": 0.999967098236084
+        },
+        {
+          "word": " took",
+          "start": 7.88,
+          "end": 8.08,
+          "probability": 0.9989575147628784
+        },
+        {
+          "word": " him",
+          "start": 8.08,
+          "end": 8.24,
+          "probability": 0.9897729754447937
+        },
+        {
+          "word": " under",
+          "start": 8.24,
+          "end": 8.38,
+          "probability": 0.9448202252388
+        },
+        {
+          "word": " my",
+          "start": 8.38,
+          "end": 8.52,
+          "probability": 0.9999122619628906
+        },
+        {
+          "word": " wing",
+          "start": 8.52,
+          "end": 8.74,
+          "probability": 0.8383877873420715
+        },
+        {
+          "word": " and",
+          "start": 8.74,
+          "end": 8.9,
+          "probability": 0.9510742425918579
+        },
+        {
+          "word": " asked",
+          "start": 8.9,
+          "end": 9.14,
+          "probability": 0.9919899106025696
+        },
+        {
+          "word": " him",
+          "start": 9.14,
+          "end": 9.28,
+          "probability": 0.9991633892059326
+        },
+        {
+          "word": " a",
+          "start": 9.28,
+          "end": 9.4,
+          "probability": 0.9992145299911499
+        },
+        {
+          "word": " lot",
+          "start": 9.4,
+          "end": 9.5,
+          "probability": 0.9993120431900024
+        },
+        {
+          "word": " of",
+          "start": 9.5,
+          "end": 9.58,
+          "probability": 0.9996640682220459
+        },
+        {
+          "word": " questions.",
+          "start": 9.58,
+          "end": 9.96,
+          "probability": 0.9995468258857727
+        }
+      ]
+    },
+    {
+      "start": 10.5,
+      "end": 12.32,
+      "text": " And then I bought a couple of little projects.",
+      "avg_logprob": -0.16766204630983048,
+      "no_speech_prob": 0.15580014884471893,
+      "compression_ratio": 1.9049429657794676,
+      "words": [
+        {
+          "word": " And",
+          "start": 10.5,
+          "end": 10.86,
+          "probability": 0.9428321719169617
+        },
+        {
+          "word": " then",
+          "start": 10.86,
+          "end": 10.98,
+          "probability": 0.9981107711791992
+        },
+        {
+          "word": " I",
+          "start": 10.98,
+          "end": 11.1,
+          "probability": 0.9936636686325073
+        },
+        {
+          "word": " bought",
+          "start": 11.1,
+          "end": 11.28,
+          "probability": 0.9980535507202148
+        },
+        {
+          "word": " a",
+          "start": 11.28,
+          "end": 11.44,
+          "probability": 0.999670147895813
+        },
+        {
+          "word": " couple",
+          "start": 11.44,
+          "end": 11.68,
+          "probability": 0.9997443556785583
+        },
+        {
+          "word": " of",
+          "start": 11.68,
+          "end": 11.78,
+          "probability": 0.37583091855049133
+        },
+        {
+          "word": " little",
+          "start": 11.78,
+          "end": 11.9,
+          "probability": 0.8014500737190247
+        },
+        {
+          "word": " projects.",
+          "start": 11.9,
+          "end": 12.32,
+          "probability": 0.9865394234657288
+        }
+      ]
+    },
+    {
+      "start": 12.9,
+      "end": 15.46,
+      "text": " Yeah, and I messed around with it and just kind of learned by doing.",
+      "avg_logprob": -0.16766204630983048,
+      "no_speech_prob": 0.15580014884471893,
+      "compression_ratio": 1.9049429657794676,
+      "words": [
+        {
+          "word": " Yeah,",
+          "start": 12.9,
+          "end": 13.26,
+          "probability": 0.9328820705413818
+        },
+        {
+          "word": " and",
+          "start": 13.34,
+          "end": 13.46,
+          "probability": 0.9940190315246582
+        },
+        {
+          "word": " I",
+          "start": 13.46,
+          "end": 13.56,
+          "probability": 0.9995079040527344
+        },
+        {
+          "word": " messed",
+          "start": 13.56,
+          "end": 13.76,
+          "probability": 0.8861135244369507
+        },
+        {
+          "word": " around",
+          "start": 13.76,
+          "end": 13.96,
+          "probability": 0.9999691247940063
+        },
+        {
+          "word": " with",
+          "start": 13.96,
+          "end": 14.2,
+          "probability": 0.999438464641571
+        },
+        {
+          "word": " it",
+          "start": 14.2,
+          "end": 14.34,
+          "probability": 0.9984020590782166
+        },
+        {
+          "word": " and",
+          "start": 14.34,
+          "end": 14.42,
+          "probability": 0.9456799030303955
+        },
+        {
+          "word": " just",
+          "start": 14.42,
+          "end": 14.58,
+          "probability": 0.9992786049842834
+        },
+        {
+          "word": " kind",
+          "start": 14.58,
+          "end": 14.8,
+          "probability": 0.9995699524879456
+        },
+        {
+          "word": " of",
+          "start": 14.8,
+          "end": 14.92,
+          "probability": 0.9999370574951172
+        },
+        {
+          "word": " learned",
+          "start": 14.92,
+          "end": 15.08,
+          "probability": 0.7564854621887207
+        },
+        {
+          "word": " by",
+          "start": 15.08,
+          "end": 15.22,
+          "probability": 0.9931097030639648
+        },
+        {
+          "word": " doing.",
+          "start": 15.22,
+          "end": 15.46,
+          "probability": 0.9999080896377563
+        }
+      ]
+    },
+    {
+      "start": 15.64,
+      "end": 17.3,
+      "text": " I didn't really take any classes or anything.",
+      "avg_logprob": -0.16766204630983048,
+      "no_speech_prob": 0.15580014884471893,
+      "compression_ratio": 1.9049429657794676,
+      "words": [
+        {
+          "word": " I",
+          "start": 15.64,
+          "end": 15.9,
+          "probability": 0.9993923902511597
+        },
+        {
+          "word": " didn't",
+          "start": 15.9,
+          "end": 16.02,
+          "probability": 0.7706670761108398
+        },
+        {
+          "word": " really",
+          "start": 16.02,
+          "end": 16.18,
+          "probability": 0.9990129470825195
+        },
+        {
+          "word": " take",
+          "start": 16.18,
+          "end": 16.4,
+          "probability": 0.9998513460159302
+        },
+        {
+          "word": " any",
+          "start": 16.4,
+          "end": 16.54,
+          "probability": 0.9996322393417358
+        },
+        {
+          "word": " classes",
+          "start": 16.54,
+          "end": 16.9,
+          "probability": 0.9998641014099121
+        },
+        {
+          "word": " or",
+          "start": 16.9,
+          "end": 17.12,
+          "probability": 0.999861478805542
+        },
+        {
+          "word": " anything.",
+          "start": 17.12,
+          "end": 17.3,
+          "probability": 0.9999854564666748
+        }
+      ]
+    },
+    {
+      "start": 19.57,
+      "end": 22.95,
+      "text": " I just kind of jumped in headfirst and just messed around.",
+      "avg_logprob": -0.16766204630983048,
+      "no_speech_prob": 0.15580014884471893,
+      "compression_ratio": 1.9049429657794676,
+      "words": [
+        {
+          "word": " I",
+          "start": 19.57,
+          "end": 19.93,
+          "probability": 0.9990328550338745
+        },
+        {
+          "word": " just",
+          "start": 19.93,
+          "end": 20.11,
+          "probability": 0.9996238946914673
+        },
+        {
+          "word": " kind",
+          "start": 20.11,
+          "end": 20.29,
+          "probability": 0.9998816251754761
+        },
+        {
+          "word": " of",
+          "start": 20.29,
+          "end": 20.59,
+          "probability": 0.9999887943267822
+        },
+        {
+          "word": " jumped",
+          "start": 20.59,
+          "end": 21.21,
+          "probability": 0.9981600642204285
+        },
+        {
+          "word": " in",
+          "start": 21.21,
+          "end": 21.47,
+          "probability": 0.9995966553688049
+        },
+        {
+          "word": " headfirst",
+          "start": 21.47,
+          "end": 21.97,
+          "probability": 0.8238542377948761
+        },
+        {
+          "word": " and",
+          "start": 21.97,
+          "end": 22.17,
+          "probability": 0.9996141195297241
+        },
+        {
+          "word": " just",
+          "start": 22.17,
+          "end": 22.41,
+          "probability": 0.9996935129165649
+        },
+        {
+          "word": " messed",
+          "start": 22.41,
+          "end": 22.71,
+          "probability": 0.9993841648101807
+        },
+        {
+          "word": " around.",
+          "start": 22.71,
+          "end": 22.95,
+          "probability": 0.9999703168869019
+        }
+      ]
+    },
+    {
+      "start": 23.49,
+      "end": 25.31,
+      "text": " You know, I didn't really know any better.",
+      "avg_logprob": -0.16766204630983048,
+      "no_speech_prob": 0.15580014884471893,
+      "compression_ratio": 1.9049429657794676,
+      "words": [
+        {
+          "word": " You",
+          "start": 23.49,
+          "end": 23.85,
+          "probability": 0.8429428935050964
+        },
+        {
+          "word": " know,",
+          "start": 23.85,
+          "end": 24.03,
+          "probability": 0.9999918937683105
+        },
+        {
+          "word": " I",
+          "start": 24.07,
+          "end": 24.17,
+          "probability": 0.99989914894104
+        },
+        {
+          "word": " didn't",
+          "start": 24.17,
+          "end": 24.41,
+          "probability": 0.9999056160449982
+        },
+        {
+          "word": " really",
+          "start": 24.41,
+          "end": 24.69,
+          "probability": 0.999863862991333
+        },
+        {
+          "word": " know",
+          "start": 24.69,
+          "end": 24.93,
+          "probability": 0.9999289512634277
+        },
+        {
+          "word": " any",
+          "start": 24.93,
+          "end": 25.07,
+          "probability": 0.999344527721405
+        },
+        {
+          "word": " better.",
+          "start": 25.07,
+          "end": 25.31,
+          "probability": 0.9999836683273315
+        }
+      ]
+    },
+    {
+      "start": 26.45,
+      "end": 29.51,
+      "text": " And then I found out what worked and I found out what didn't.",
+      "avg_logprob": -0.16766204630983048,
+      "no_speech_prob": 0.15580014884471893,
+      "compression_ratio": 1.9049429657794676,
+      "words": [
+        {
+          "word": " And",
+          "start": 26.45,
+          "end": 26.81,
+          "probability": 0.9996078610420227
+        },
+        {
+          "word": " then",
+          "start": 26.81,
+          "end": 26.95,
+          "probability": 0.9997349381446838
+        },
+        {
+          "word": " I",
+          "start": 26.95,
+          "end": 27.07,
+          "probability": 0.9999154806137085
+        },
+        {
+          "word": " found",
+          "start": 27.07,
+          "end": 27.27,
+          "probability": 0.99982088804245
+        },
+        {
+          "word": " out",
+          "start": 27.27,
+          "end": 27.51,
+          "probability": 0.999969482421875
+        },
+        {
+          "word": " what",
+          "start": 27.51,
+          "end": 27.63,
+          "probability": 0.9997991919517517
+        },
+        {
+          "word": " worked",
+          "start": 27.63,
+          "end": 27.89,
+          "probability": 0.9920055270195007
+        },
+        {
+          "word": " and",
+          "start": 27.89,
+          "end": 28.65,
+          "probability": 0.4874732792377472
+        },
+        {
+          "word": " I",
+          "start": 28.65,
+          "end": 28.81,
+          "probability": 0.9964519739151001
+        },
+        {
+          "word": " found",
+          "start": 28.81,
+          "end": 29.05,
+          "probability": 0.9999357461929321
+        },
+        {
+          "word": " out",
+          "start": 29.05,
+          "end": 29.15,
+          "probability": 0.9999933242797852
+        },
+        {
+          "word": " what",
+          "start": 29.15,
+          "end": 29.25,
+          "probability": 0.9999393224716187
+        },
+        {
+          "word": " didn't.",
+          "start": 29.25,
+          "end": 29.51,
+          "probability": 0.9999850392341614
+        }
+      ]
+    },
+    {
+      "start": 30.69,
+      "end": 32.23,
+      "text": " And then I just kind of went from there.",
+      "avg_logprob": -0.16766204630983048,
+      "no_speech_prob": 0.15580014884471893,
+      "compression_ratio": 1.9049429657794676,
+      "words": [
+        {
+          "word": " And",
+          "start": 30.69,
+          "end": 31.05,
+          "probability": 0.9992967844009399
+        },
+        {
+          "word": " then",
+          "start": 31.05,
+          "end": 31.19,
+          "probability": 0.9995637536048889
+        },
+        {
+          "word": " I",
+          "start": 31.19,
+          "end": 31.33,
+          "probability": 0.9998489618301392
+        },
+        {
+          "word": " just",
+          "start": 31.33,
+          "end": 31.49,
+          "probability": 0.999700665473938
+        },
+        {
+          "word": " kind",
+          "start": 31.49,
+          "end": 31.65,
+          "probability": 0.9997634291648865
+        },
+        {
+          "word": " of",
+          "start": 31.65,
+          "end": 31.77,
+          "probability": 0.9999568462371826
+        },
+        {
+          "word": " went",
+          "start": 31.77,
+          "end": 31.89,
+          "probability": 0.995256245136261
+        },
+        {
+          "word": " from",
+          "start": 31.89,
+          "end": 32.05,
+          "probability": 0.9981440305709839
+        },
+        {
+          "word": " there.",
+          "start": 32.05,
+          "end": 32.23,
+          "probability": 0.9994685053825378
+        }
+      ]
+    },
+    {
+      "start": 33.49,
+      "end": 36.29,
+      "text": " of basically just asking people and learning.",
+      "avg_logprob": -0.29070212082429364,
+      "no_speech_prob": 0.01972064934670925,
+      "compression_ratio": 0.8653846153846154,
+      "words": [
+        {
+          "word": " of",
+          "start": 33.49,
+          "end": 34.17,
+          "probability": 0.2150004506111145
+        },
+        {
+          "word": " basically",
+          "start": 34.17,
+          "end": 34.51,
+          "probability": 0.9980448484420776
+        },
+        {
+          "word": " just",
+          "start": 34.51,
+          "end": 34.95,
+          "probability": 0.9984190464019775
+        },
+        {
+          "word": " asking",
+          "start": 34.95,
+          "end": 35.35,
+          "probability": 0.9999033212661743
+        },
+        {
+          "word": " people",
+          "start": 35.35,
+          "end": 35.65,
+          "probability": 0.9996416568756104
+        },
+        {
+          "word": " and",
+          "start": 35.65,
+          "end": 35.95,
+          "probability": 0.997072696685791
+        },
+        {
+          "word": " learning.",
+          "start": 35.95,
+          "end": 36.29,
+          "probability": 0.9998012185096741
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "Yeah, well, I had a friend who was kind of a guru on that. I basically just kind of took him under my wing and asked him a lot of questions. And then I bought a couple of little projects and yeah, and I messed around with it and just kind of learned by doing. I didn' really take any classes or anything. I just kind of jumped in headfirst and just messed around. You know, I didn't really know any better. And then I found out what worked. And I found out what didn't. And then I just kind of went from there. But basically, just asking people and learning. That's really the"
+}

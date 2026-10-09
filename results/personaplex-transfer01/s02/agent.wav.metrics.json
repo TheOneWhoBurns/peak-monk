@@ -1,0 +1,9 @@
+{
+  "mode": "decode",
+  "input": "results/personaplex-transfer01/s02/agent_codes.npz",
+  "audio_seconds": 28.0,
+  "wall_seconds": 7.007630167005118,
+  "codes_key": "agent_codes",
+  "realtime_factor": 0.2502725059644685,
+  "scope": "CPU codec including audio I/O, excluding model-load time"
+}

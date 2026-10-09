@@ -1,0 +1,472 @@
+{
+  "wav": "results/personaplex-baseline/s03/agent.wav",
+  "wav_sha256": "26aa9123bc72e20bebea84859c52f2c9898f88914a3232f7512d92286fd25683",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 13.699796375003643,
+  "duration_seconds": 36.0,
+  "transcript": "That sounds good. I love pizza. You ever had pizza with mushrooms on it? It's pretty good. It's good with grilled cheese. Oh, you said your brand pizzas. Yeah, that's right. You said your brand pizzas. Yeah. Do you ever eat pizza? Yeah. It's good. I love pizza. It's good. Yeah.",
+  "segments": [
+    {
+      "start": 5.49,
+      "end": 6.45,
+      "text": " That sounds good.",
+      "avg_logprob": -0.3105041000705499,
+      "no_speech_prob": 0.004379770718514919,
+      "compression_ratio": 1.748427672955975,
+      "words": [
+        {
+          "word": " That",
+          "start": 5.49,
+          "end": 5.89,
+          "probability": 0.977865993976593
+        },
+        {
+          "word": " sounds",
+          "start": 5.89,
+          "end": 6.15,
+          "probability": 0.9997573494911194
+        },
+        {
+          "word": " good.",
+          "start": 6.15,
+          "end": 6.45,
+          "probability": 0.999937891960144
+        }
+      ]
+    },
+    {
+      "start": 6.59,
+      "end": 7.47,
+      "text": " I love pizza.",
+      "avg_logprob": -0.3105041000705499,
+      "no_speech_prob": 0.004379770718514919,
+      "compression_ratio": 1.748427672955975,
+      "words": [
+        {
+          "word": " I",
+          "start": 6.59,
+          "end": 6.91,
+          "probability": 0.9994840621948242
+        },
+        {
+          "word": " love",
+          "start": 6.91,
+          "end": 7.09,
+          "probability": 0.9994127750396729
+        },
+        {
+          "word": " pizza.",
+          "start": 7.09,
+          "end": 7.47,
+          "probability": 0.9996689558029175
+        }
+      ]
+    },
+    {
+      "start": 10.19,
+      "end": 12.53,
+      "text": " You ever had pizza with mushrooms on it?",
+      "avg_logprob": -0.3105041000705499,
+      "no_speech_prob": 0.004379770718514919,
+      "compression_ratio": 1.748427672955975,
+      "words": [
+        {
+          "word": " You",
+          "start": 10.19,
+          "end": 10.63,
+          "probability": 0.9934127926826477
+        },
+        {
+          "word": " ever",
+          "start": 10.63,
+          "end": 10.85,
+          "probability": 0.9999130964279175
+        },
+        {
+          "word": " had",
+          "start": 10.85,
+          "end": 11.07,
+          "probability": 0.9948005676269531
+        },
+        {
+          "word": " pizza",
+          "start": 11.07,
+          "end": 11.43,
+          "probability": 0.35508573055267334
+        },
+        {
+          "word": " with",
+          "start": 11.43,
+          "end": 11.73,
+          "probability": 0.9999337196350098
+        },
+        {
+          "word": " mushrooms",
+          "start": 11.73,
+          "end": 12.05,
+          "probability": 0.9998487234115601
+        },
+        {
+          "word": " on",
+          "start": 12.05,
+          "end": 12.35,
+          "probability": 0.9998829364776611
+        },
+        {
+          "word": " it?",
+          "start": 12.35,
+          "end": 12.53,
+          "probability": 0.9999794960021973
+        }
+      ]
+    },
+    {
+      "start": 14.46,
+      "end": 15.3,
+      "text": " It's pretty good.",
+      "avg_logprob": -0.3105041000705499,
+      "no_speech_prob": 0.004379770718514919,
+      "compression_ratio": 1.748427672955975,
+      "words": [
+        {
+          "word": " It's",
+          "start": 14.46,
+          "end": 14.9,
+          "probability": 0.9987518489360809
+        },
+        {
+          "word": " pretty",
+          "start": 14.9,
+          "end": 15.1,
+          "probability": 0.9995392560958862
+        },
+        {
+          "word": " good.",
+          "start": 15.1,
+          "end": 15.3,
+          "probability": 0.9999880790710449
+        }
+      ]
+    },
+    {
+      "start": 15.56,
+      "end": 16.82,
+      "text": " It's good with grilled cheese.",
+      "avg_logprob": -0.3105041000705499,
+      "no_speech_prob": 0.004379770718514919,
+      "compression_ratio": 1.748427672955975,
+      "words": [
+        {
+          "word": " It's",
+          "start": 15.56,
+          "end": 16.0,
+          "probability": 0.9308193027973175
+        },
+        {
+          "word": " good",
+          "start": 16.0,
+          "end": 16.14,
+          "probability": 0.9946115016937256
+        },
+        {
+          "word": " with",
+          "start": 16.14,
+          "end": 16.28,
+          "probability": 0.996044397354126
+        },
+        {
+          "word": " grilled",
+          "start": 16.28,
+          "end": 16.52,
+          "probability": 0.9994342923164368
+        },
+        {
+          "word": " cheese.",
+          "start": 16.52,
+          "end": 16.82,
+          "probability": 0.9990909099578857
+        }
+      ]
+    },
+    {
+      "start": 20.82,
+      "end": 22.24,
+      "text": " Oh, you said your brand pizzas.",
+      "avg_logprob": -0.3105041000705499,
+      "no_speech_prob": 0.004379770718514919,
+      "compression_ratio": 1.748427672955975,
+      "words": [
+        {
+          "word": " Oh,",
+          "start": 20.82,
+          "end": 21.26,
+          "probability": 0.9212940335273743
+        },
+        {
+          "word": " you",
+          "start": 21.26,
+          "end": 21.34,
+          "probability": 0.9998464584350586
+        },
+        {
+          "word": " said",
+          "start": 21.34,
+          "end": 21.52,
+          "probability": 0.9999691247940063
+        },
+        {
+          "word": " your",
+          "start": 21.52,
+          "end": 21.66,
+          "probability": 0.5326935648918152
+        },
+        {
+          "word": " brand",
+          "start": 21.66,
+          "end": 21.88,
+          "probability": 0.9639284014701843
+        },
+        {
+          "word": " pizzas.",
+          "start": 21.88,
+          "end": 22.24,
+          "probability": 0.8464096784591675
+        }
+      ]
+    },
+    {
+      "start": 22.76,
+      "end": 23.54,
+      "text": " Yeah, that's right.",
+      "avg_logprob": -0.3105041000705499,
+      "no_speech_prob": 0.004379770718514919,
+      "compression_ratio": 1.748427672955975,
+      "words": [
+        {
+          "word": " Yeah,",
+          "start": 22.76,
+          "end": 23.2,
+          "probability": 0.9982286095619202
+        },
+        {
+          "word": " that's",
+          "start": 23.22,
+          "end": 23.42,
+          "probability": 0.999912440776825
+        },
+        {
+          "word": " right.",
+          "start": 23.42,
+          "end": 23.54,
+          "probability": 0.9999487400054932
+        }
+      ]
+    },
+    {
+      "start": 23.7,
+      "end": 24.86,
+      "text": " You said your brand pizzas.",
+      "avg_logprob": -0.3105041000705499,
+      "no_speech_prob": 0.004379770718514919,
+      "compression_ratio": 1.748427672955975,
+      "words": [
+        {
+          "word": " You",
+          "start": 23.7,
+          "end": 23.88,
+          "probability": 0.9935315251350403
+        },
+        {
+          "word": " said",
+          "start": 23.88,
+          "end": 24.06,
+          "probability": 0.9997879862785339
+        },
+        {
+          "word": " your",
+          "start": 24.06,
+          "end": 24.22,
+          "probability": 0.9990352392196655
+        },
+        {
+          "word": " brand",
+          "start": 24.22,
+          "end": 24.4,
+          "probability": 0.9998940229415894
+        },
+        {
+          "word": " pizzas.",
+          "start": 24.4,
+          "end": 24.86,
+          "probability": 0.9999123811721802
+        }
+      ]
+    },
+    {
+      "start": 25.46,
+      "end": 25.9,
+      "text": " Yeah.",
+      "avg_logprob": -0.3105041000705499,
+      "no_speech_prob": 0.004379770718514919,
+      "compression_ratio": 1.748427672955975,
+      "words": [
+        {
+          "word": " Yeah.",
+          "start": 25.46,
+          "end": 25.9,
+          "probability": 0.8659546971321106
+        }
+      ]
+    },
+    {
+      "start": 26.36,
+      "end": 27.72,
+      "text": " Do you ever eat pizza?",
+      "avg_logprob": -0.3105041000705499,
+      "no_speech_prob": 0.004379770718514919,
+      "compression_ratio": 1.748427672955975,
+      "words": [
+        {
+          "word": " Do",
+          "start": 26.36,
+          "end": 26.8,
+          "probability": 0.831432044506073
+        },
+        {
+          "word": " you",
+          "start": 26.8,
+          "end": 26.9,
+          "probability": 0.9999963045120239
+        },
+        {
+          "word": " ever",
+          "start": 26.9,
+          "end": 27.1,
+          "probability": 0.9999649524688721
+        },
+        {
+          "word": " eat",
+          "start": 27.1,
+          "end": 27.3,
+          "probability": 0.99994957447052
+        },
+        {
+          "word": " pizza?",
+          "start": 27.3,
+          "end": 27.72,
+          "probability": 0.9999645948410034
+        }
+      ]
+    },
+    {
+      "start": 28.8,
+      "end": 29.24,
+      "text": " Yeah.",
+      "avg_logprob": -0.3105041000705499,
+      "no_speech_prob": 0.004379770718514919,
+      "compression_ratio": 1.748427672955975,
+      "words": [
+        {
+          "word": " Yeah.",
+          "start": 28.8,
+          "end": 29.24,
+          "probability": 0.9369590282440186
+        }
+      ]
+    },
+    {
+      "start": 29.72,
+      "end": 30.34,
+      "text": " It's good.",
+      "avg_logprob": -0.3105041000705499,
+      "no_speech_prob": 0.004379770718514919,
+      "compression_ratio": 1.748427672955975,
+      "words": [
+        {
+          "word": " It's",
+          "start": 29.72,
+          "end": 30.16,
+          "probability": 0.8715750575065613
+        },
+        {
+          "word": " good.",
+          "start": 30.16,
+          "end": 30.34,
+          "probability": 0.9999350309371948
+        }
+      ]
+    },
+    {
+      "start": 30.58,
+      "end": 31.5,
+      "text": " I love pizza.",
+      "avg_logprob": -0.3105041000705499,
+      "no_speech_prob": 0.004379770718514919,
+      "compression_ratio": 1.748427672955975,
+      "words": [
+        {
+          "word": " I",
+          "start": 30.58,
+          "end": 31.02,
+          "probability": 0.9991840720176697
+        },
+        {
+          "word": " love",
+          "start": 31.02,
+          "end": 31.22,
+          "probability": 0.9999440908432007
+        },
+        {
+          "word": " pizza.",
+          "start": 31.22,
+          "end": 31.5,
+          "probability": 0.9999202489852905
+        }
+      ]
+    },
+    {
+      "start": 31.6,
+      "end": 32.14,
+      "text": " It's good.",
+      "avg_logprob": -0.3105041000705499,
+      "no_speech_prob": 0.004379770718514919,
+      "compression_ratio": 1.748427672955975,
+      "words": [
+        {
+          "word": " It's",
+          "start": 31.6,
+          "end": 31.94,
+          "probability": 0.9993666708469391
+        },
+        {
+          "word": " good.",
+          "start": 31.94,
+          "end": 32.14,
+          "probability": 0.9999673366546631
+        }
+      ]
+    },
+    {
+      "start": 33.72,
+      "end": 34.16,
+      "text": " Yeah.",
+      "avg_logprob": -0.3105041000705499,
+      "no_speech_prob": 0.004379770718514919,
+      "compression_ratio": 1.748427672955975,
+      "words": [
+        {
+          "word": " Yeah.",
+          "start": 33.72,
+          "end": 34.16,
+          "probability": 0.9972889423370361
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "That sounds good. I love pizza. You ever had like pizza with mushrooms on it? It' pretty good. It' good with grilled cheese. Oh you said you bringingre pizzas. Yeah, that's right. You said you bringingre pizzas. Yeah. Do you ever eat pizza? Yeah. It good. I love pizza. It' good. Yeah."
+}

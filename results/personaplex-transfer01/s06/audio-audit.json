@@ -1,0 +1,422 @@
+{
+  "wav": "results/personaplex-transfer01/s06/agent.wav",
+  "wav_sha256": "c4645334296420e6f302235258951a14a6afe51938526211c211ba74ee0642a3",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 11.968195666995598,
+  "duration_seconds": 25.04,
+  "transcript": "No, he has been real, born in 1838, died in 1916. I'm talking with someone who made him up. Can I ask you something? What kind of person gets so angry about a windmill? What happened to him out there? Did he hear his mother's voice saying, I'm going to put a windmill in my house?",
+  "segments": [
+    {
+      "start": 4.4,
+      "end": 9.12,
+      "text": " No, he has been real, born in 1838, died in 1916.",
+      "avg_logprob": -0.21012910455465317,
+      "no_speech_prob": 0.0034443195909261703,
+      "compression_ratio": 1.4285714285714286,
+      "words": [
+        {
+          "word": " No,",
+          "start": 4.4,
+          "end": 4.96,
+          "probability": 0.8602482080459595
+        },
+        {
+          "word": " he",
+          "start": 5.0,
+          "end": 5.36,
+          "probability": 0.9887208342552185
+        },
+        {
+          "word": " has",
+          "start": 5.36,
+          "end": 5.48,
+          "probability": 0.9784005880355835
+        },
+        {
+          "word": " been",
+          "start": 5.48,
+          "end": 5.62,
+          "probability": 0.9993353486061096
+        },
+        {
+          "word": " real,",
+          "start": 5.62,
+          "end": 6.02,
+          "probability": 0.9971256852149963
+        },
+        {
+          "word": " born",
+          "start": 6.14,
+          "end": 6.42,
+          "probability": 0.995298445224762
+        },
+        {
+          "word": " in",
+          "start": 6.42,
+          "end": 6.58,
+          "probability": 0.9977328777313232
+        },
+        {
+          "word": " 1838,",
+          "start": 6.58,
+          "end": 7.3,
+          "probability": 0.9981328845024109
+        },
+        {
+          "word": " died",
+          "start": 7.66,
+          "end": 8.02,
+          "probability": 0.9987236857414246
+        },
+        {
+          "word": " in",
+          "start": 8.02,
+          "end": 8.32,
+          "probability": 0.9996161460876465
+        },
+        {
+          "word": " 1916.",
+          "start": 8.32,
+          "end": 9.12,
+          "probability": 0.9991211295127869
+        }
+      ]
+    },
+    {
+      "start": 10.4,
+      "end": 12.34,
+      "text": " I'm talking with someone who made him up.",
+      "avg_logprob": -0.21012910455465317,
+      "no_speech_prob": 0.0034443195909261703,
+      "compression_ratio": 1.4285714285714286,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 10.4,
+          "end": 10.84,
+          "probability": 0.995890885591507
+        },
+        {
+          "word": " talking",
+          "start": 10.84,
+          "end": 11.1,
+          "probability": 0.9997124075889587
+        },
+        {
+          "word": " with",
+          "start": 11.1,
+          "end": 11.3,
+          "probability": 0.9863633513450623
+        },
+        {
+          "word": " someone",
+          "start": 11.3,
+          "end": 11.54,
+          "probability": 0.9995754361152649
+        },
+        {
+          "word": " who",
+          "start": 11.54,
+          "end": 11.76,
+          "probability": 0.9996423721313477
+        },
+        {
+          "word": " made",
+          "start": 11.76,
+          "end": 11.98,
+          "probability": 0.9995355606079102
+        },
+        {
+          "word": " him",
+          "start": 11.98,
+          "end": 12.14,
+          "probability": 0.9985744953155518
+        },
+        {
+          "word": " up.",
+          "start": 12.14,
+          "end": 12.34,
+          "probability": 0.9997358918190002
+        }
+      ]
+    },
+    {
+      "start": 15.5,
+      "end": 16.74,
+      "text": " Can I ask you something?",
+      "avg_logprob": -0.21012910455465317,
+      "no_speech_prob": 0.0034443195909261703,
+      "compression_ratio": 1.4285714285714286,
+      "words": [
+        {
+          "word": " Can",
+          "start": 15.5,
+          "end": 15.94,
+          "probability": 0.6627904772758484
+        },
+        {
+          "word": " I",
+          "start": 15.94,
+          "end": 16.04,
+          "probability": 0.9998165965080261
+        },
+        {
+          "word": " ask",
+          "start": 16.04,
+          "end": 16.32,
+          "probability": 0.9998263716697693
+        },
+        {
+          "word": " you",
+          "start": 16.32,
+          "end": 16.44,
+          "probability": 0.999840259552002
+        },
+        {
+          "word": " something?",
+          "start": 16.44,
+          "end": 16.74,
+          "probability": 0.9998681545257568
+        }
+      ]
+    },
+    {
+      "start": 16.94,
+      "end": 19.38,
+      "text": " What kind of person gets so angry about a windmill?",
+      "avg_logprob": -0.21012910455465317,
+      "no_speech_prob": 0.0034443195909261703,
+      "compression_ratio": 1.4285714285714286,
+      "words": [
+        {
+          "word": " What",
+          "start": 16.94,
+          "end": 17.26,
+          "probability": 0.999488115310669
+        },
+        {
+          "word": " kind",
+          "start": 17.26,
+          "end": 17.4,
+          "probability": 0.9997990727424622
+        },
+        {
+          "word": " of",
+          "start": 17.4,
+          "end": 17.58,
+          "probability": 0.999941349029541
+        },
+        {
+          "word": " person",
+          "start": 17.58,
+          "end": 17.86,
+          "probability": 0.9996504783630371
+        },
+        {
+          "word": " gets",
+          "start": 17.86,
+          "end": 18.1,
+          "probability": 0.9992616772651672
+        },
+        {
+          "word": " so",
+          "start": 18.1,
+          "end": 18.28,
+          "probability": 0.9996254444122314
+        },
+        {
+          "word": " angry",
+          "start": 18.28,
+          "end": 18.62,
+          "probability": 0.9997842907905579
+        },
+        {
+          "word": " about",
+          "start": 18.62,
+          "end": 18.86,
+          "probability": 0.9997329115867615
+        },
+        {
+          "word": " a",
+          "start": 18.86,
+          "end": 19.02,
+          "probability": 0.9997957348823547
+        },
+        {
+          "word": " windmill?",
+          "start": 19.02,
+          "end": 19.38,
+          "probability": 0.9992303252220154
+        }
+      ]
+    },
+    {
+      "start": 19.6,
+      "end": 20.88,
+      "text": " What happened to him out there?",
+      "avg_logprob": -0.21012910455465317,
+      "no_speech_prob": 0.0034443195909261703,
+      "compression_ratio": 1.4285714285714286,
+      "words": [
+        {
+          "word": " What",
+          "start": 19.6,
+          "end": 20.04,
+          "probability": 0.9991206526756287
+        },
+        {
+          "word": " happened",
+          "start": 20.04,
+          "end": 20.34,
+          "probability": 0.99988853931427
+        },
+        {
+          "word": " to",
+          "start": 20.34,
+          "end": 20.44,
+          "probability": 0.9998176693916321
+        },
+        {
+          "word": " him",
+          "start": 20.44,
+          "end": 20.52,
+          "probability": 0.9998080134391785
+        },
+        {
+          "word": " out",
+          "start": 20.52,
+          "end": 20.66,
+          "probability": 0.999609649181366
+        },
+        {
+          "word": " there?",
+          "start": 20.66,
+          "end": 20.88,
+          "probability": 0.9999717473983765
+        }
+      ]
+    },
+    {
+      "start": 22.71,
+      "end": 24.33,
+      "text": " Did he hear his mother's voice saying,",
+      "avg_logprob": -0.21012910455465317,
+      "no_speech_prob": 0.0034443195909261703,
+      "compression_ratio": 1.4285714285714286,
+      "words": [
+        {
+          "word": " Did",
+          "start": 22.71,
+          "end": 23.15,
+          "probability": 0.9994169473648071
+        },
+        {
+          "word": " he",
+          "start": 23.15,
+          "end": 23.21,
+          "probability": 0.9996901750564575
+        },
+        {
+          "word": " hear",
+          "start": 23.21,
+          "end": 23.41,
+          "probability": 0.999864935874939
+        },
+        {
+          "word": " his",
+          "start": 23.41,
+          "end": 23.53,
+          "probability": 0.9999656677246094
+        },
+        {
+          "word": " mother's",
+          "start": 23.53,
+          "end": 23.81,
+          "probability": 0.9996587038040161
+        },
+        {
+          "word": " voice",
+          "start": 23.81,
+          "end": 24.01,
+          "probability": 0.9997203946113586
+        },
+        {
+          "word": " saying,",
+          "start": 24.01,
+          "end": 24.33,
+          "probability": 0.9947132468223572
+        }
+      ]
+    },
+    {
+      "start": 24.37,
+      "end": 25.01,
+      "text": " I'm going to put a windmill in my house?",
+      "avg_logprob": -0.21012910455465317,
+      "no_speech_prob": 0.0034443195909261703,
+      "compression_ratio": 1.4285714285714286,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 24.37,
+          "end": 24.49,
+          "probability": 0.9907369017601013
+        },
+        {
+          "word": " going",
+          "start": 24.49,
+          "end": 24.51,
+          "probability": 0.8422571420669556
+        },
+        {
+          "word": " to",
+          "start": 24.51,
+          "end": 24.59,
+          "probability": 0.9999740123748779
+        },
+        {
+          "word": " put",
+          "start": 24.59,
+          "end": 24.67,
+          "probability": 0.999884843826294
+        },
+        {
+          "word": " a",
+          "start": 24.67,
+          "end": 24.79,
+          "probability": 0.9995052814483643
+        },
+        {
+          "word": " windmill",
+          "start": 24.79,
+          "end": 25.01,
+          "probability": 0.9949612021446228
+        },
+        {
+          "word": " in",
+          "start": 25.01,
+          "end": 25.01,
+          "probability": 0.19494584202766418
+        },
+        {
+          "word": " my",
+          "start": 25.01,
+          "end": 25.01,
+          "probability": 0.29570817947387695
+        },
+        {
+          "word": " house?",
+          "start": 25.01,
+          "end": 25.01,
+          "probability": 0.7159639000892639
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "No, he has been real, born in 1838, died in 1916. I talkingm with someone who made him up. Can I ask you something? What kind of person gets so angry about a windmill? What happened to him out there? Did he hear his mother's voice saying, I' going to put a windmill"
+}

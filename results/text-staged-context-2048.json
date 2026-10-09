@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "tokens": 2048,
+  "steps": 2,
+  "chunk_size": 64,
+  "trainable_parameters": 35502080,
+  "parent": "adapters/run17-step0600",
+  "parent_sha256": "8142d21b9a74ca9327f47c6ff8e64080d126e58a28b2bf42c9cf99c256dc8ab1",
+  "source_family": "long_the_roof_tile",
+  "input_scope": "Repeated training dialogue only as a disposable memory stress input",
+  "peak_memory_bytes": 5220807807,
+  "recommended_working_set": 5726633984,
+  "seconds": 97.28788070799783,
+  "records": [
+    {
+      "step": 1,
+      "loss": 0.6619551181793213,
+      "gradient_norm": 1.3502780199050903,
+      "target_tokens": 1288,
+      "seconds": 49.08936008400633,
+      "peak_bytes": 4936774787
+    },
+    {
+      "step": 2,
+      "loss": 0.5994817018508911,
+      "gradient_norm": 1.033698320388794,
+      "target_tokens": 1288,
+      "seconds": 48.004194708002615,
+      "peak_bytes": 5220807807
+    }
+  ],
+  "scope": "Full-context attention with sequential vocabulary-head gradients and RNG-correct layer checkpointing, two finite optimizer updates. No quality result, no exported checkpoint."
+}
