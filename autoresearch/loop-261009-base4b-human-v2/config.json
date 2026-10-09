@@ -10,10 +10,11 @@
   "baseline_cases": 20,
   "source_commit_at_launch": "1340774",
   "iterations": "unlimited",
-  "active_experiment": "run17",
+  "active_experiment": "speech-run07",
   "configuration": "configs/train17.yaml",
   "plan": "results/train17-plan.json",
   "speech_ledger": "autoresearch/loop-261009-clean4b-human-v2/speech-results.tsv",
-  "queued_speech": "speech-run07; padded-tail all-temporal LoRA, memory gate pending",
-  "data_expansion": "36 authored long conversation drafts (v3-v7), 360 character replies; excluded from run17, pending separate experiment decision"
+  "queued_speech": "speech-run07 active; padded longest memory gate passed",
+  "data_expansion": "36 original authored long dialogues admitted to prepared-full-long-v4; reserved for run18",
+  "queued_text": "run18; configs/train18.yaml, after speech training/audit"
 }

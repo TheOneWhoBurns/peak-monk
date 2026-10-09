@@ -4,9 +4,11 @@ from pathlib import Path
 import mlx.core as mx
 import mlx.nn as nn
 from mlx.utils import tree_flatten
-from token_weighted_objective import token_weighted_loss
-from conversation_objective import conversation_loss
+from token_weighted_objective import token_weighted_loss, weighted_batches
+from conversation_objective import conversation_loss, ConversationDataset
+from mlx_lm.tuner.datasets import CacheDataset
 
+mx.set_default_device(mx.cpu)
 mx.random.seed(41)
 model = nn.Sequential(nn.Embedding(11, 7), nn.Linear(7, 11))
 # Four conversations with strongly unequal target counts, including EOS targets.
@@ -34,8 +36,15 @@ for batch, mask in zip(batches, masks):
     for key, value in tree_flatten(gradient): equal[key] = equal.get(key, 0) + value/4
 difference = max(float(mx.max(mx.abs(equal[k]-v)).item()) for k,v in tree_flatten(expected))
 assert difference > 1e-3
+dataset = object.__new__(ConversationDataset)
+dataset.items = [(b.tolist()[0], m.tolist()[0]) for b, m in zip(batches, masks)]
+actual_batches = list(weighted_batches(CacheDataset(dataset), 1, 768, accumulation=4))
+assert len(actual_batches) == 4
+assert all(float(denom.item()) == total/4 for _, _, denom in actual_batches)
+assert sum(int(mask[:, 1:].sum().item()) for _, mask, _ in actual_batches) == total
 result = dict(status='pass', target_tokens=total, maximum_gradient_error=max(errors),
               loss_error=loss_error, equal_microbatch_gradient_difference=difference,
+              iterator_group_normalization='pass',
               scope='Tiny deterministic model; no evidence of character quality')
 Path('results/token-weighted-objective-check.json').write_text(json.dumps(result,indent=2)+'\n')
 print(json.dumps(result,indent=2))

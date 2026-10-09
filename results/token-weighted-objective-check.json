@@ -3,6 +3,7 @@
   "target_tokens": 11,
   "maximum_gradient_error": 1.4901161193847656e-08,
   "loss_error": 2.384185791015625e-07,
-  "equal_microbatch_gradient_difference": 0.15760211646556854,
+  "equal_microbatch_gradient_difference": 0.15760213136672974,
+  "iterator_group_normalization": "pass",
   "scope": "Tiny deterministic model; no evidence of character quality"
 }

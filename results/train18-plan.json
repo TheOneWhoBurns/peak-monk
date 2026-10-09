@@ -1,0 +1,32 @@
+{
+  "experiment": "run18",
+  "status": "Predeclared; queued behind native speech training",
+  "hypothesis": "Longer reciprocal dialogue plus token-normalized accumulation may improve coherence and identity persistence without more sharp fitting of short examples.",
+  "parent": "adapters/run17-step0600",
+  "parent_sha256": "8142d21b9a74ca9327f47c6ff8e64080d126e58a28b2bf42c9cf99c256dc8ab1",
+  "parent_selection": "Best recorded run17 development acceptable count, not an accepted release",
+  "data": "data/prepared-full-long-v4",
+  "train_sha256": "f920b4ec79f5ef2aeb4c900a2897fd0c331c0e9cc3bb155e24fd8a03fb91a10e",
+  "weighted_records": 523,
+  "distinct_texts": 250,
+  "distinct_character_turns": 1102,
+  "training": {
+    "microsteps": 524,
+    "updates": 131,
+    "accumulation": 4,
+    "learning_rate": "7 optimizer-update warmup then cosine from1e-5 to2e-6 over124updates",
+    "epochs": "One full shuffled pass plus one record from the next pass",
+    "loss_version": "group_token_mean_v2",
+    "loss_definition": "Sum target-token cross entropy across four microbatches, divided by their total target count; caller and format tokens masked",
+    "optimizer": "Fresh Adam state; adapter weights resume, optimizer does not",
+    "rank": 16,
+    "scale": 2,
+    "layers": 36,
+    "embedding": "tied embedding LoRA",
+    "seed": 41
+  },
+  "evaluation": "Unchanged assistant_eos_v2 validation, same frozen development suite, essential-category release gate. Capture200,400,final524; final/pressure only after development pass.",
+  "attribution": "Combined intervention: new conversations, different weighting, lower rate, and continuation. Not a one-variable causal ablation.",
+  "data_provenance": "Original Codex-authored fiction with broad documented monastic/literary influences; not real transcripts, not independent multi-teacher generation. No rejected local teacher output admitted.",
+  "checks": "results/token-weighted-objective-check.json; accumulated tiny-model gradients compared to combined-batch token mean"
+}

@@ -1,0 +1,45 @@
+model: models/base4b
+data: data/prepared-full-long-v4
+train: false
+fine_tune_type: lora
+optimizer: adam
+mask_prompt: true
+num_layers: 36
+batch_size: 1
+iters: 524
+val_batches: -1
+learning_rate: 1.0e-05
+steps_per_report: 20
+steps_per_eval: 200
+grad_accumulation_steps: 4
+adapter_path: adapters/run18
+save_every: 200
+max_seq_length: 768
+grad_checkpoint: true
+seed: 41
+lora_parameters:
+  rank: 16
+  dropout: 0.05
+  scale: 2.0
+  keys:
+  - self_attn.q_proj
+  - self_attn.k_proj
+  - self_attn.v_proj
+  - self_attn.o_proj
+  - mlp.gate_proj
+  - mlp.up_proj
+  - mlp.down_proj
+  - model.embed_tokens
+loss_version: group_token_mean_v2
+audit_every: 200
+audit_suite: evaluation/dev-roleplay-v2.json
+lr_schedule:
+  name: cosine_decay
+  arguments:
+  - 1.0e-05
+  - 124
+  - 2.0e-06
+  warmup: 7
+  warmup_init: 1.0e-06
+resume_adapter_file: adapters/run17-step0600/adapters.safetensors
+token_weighted_accumulation: true
