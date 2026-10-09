@@ -5,13 +5,11 @@
     "evaluation/dev.json": "8107637b199b2745be67a4b667e04b3b82027a832b04865730a2902bd5f11831",
     "evaluation/final.json": "e0554f9496ca387aedfb14c09573a9aa847592bf08cff7f5ab86bd107ac72850",
     "character/core.md": "6844aeae2fe84b21add9ed8609a90090a3d474b9428d324ff3fcf87a09af7c79",
-    "sources/manifest.json": "a37b56b4e3d37c37a58abc5fb56b5dd82ad85cf3330b132f5cd5d7d0fe93b787",
-    "data/augmentation_pool.txt": "8975155f4945fa59861767c8efdd0ff91ff7702bf3d735cb5cd7b438229f6c80"
+    "sources/manifest.json": "a37b56b4e3d37c37a58abc5fb56b5dd82ad85cf3330b132f5cd5d7d0fe93b787"
   },
-  "train_conversations": 110,
-  "train_assistant_turns": 254,
+  "train_conversations": 62,
+  "train_assistant_turns": 152,
   "validation_conversations": 12,
   "validation_assistant_turns": 24,
-  "augmentation_included": true,
   "split_policy": "Explicit scenario families before turn expansion; development and final prompts authored separately."
 }
