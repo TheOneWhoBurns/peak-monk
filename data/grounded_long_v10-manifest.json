@@ -1,0 +1,17 @@
+{
+  "sha256": "5e44e887968cd8bcd7aa53d53794f94275416103f8f94e651aa0d5fcb293c86d",
+  "conversations": 6,
+  "character_turns": 96,
+  "exchanges_per_conversation": 16,
+  "author": "Codex original synthetic fiction",
+  "reviewer": "Same author, not independent",
+  "status": "Draft only; not admitted to run21 or any speech training",
+  "source_usage": "Broad listed monastic/literary influences; no quotations, real transcripts, imitation of attributed speech or cloned voices",
+  "exact_heldout_prompt_overlap": false,
+  "heldout_files_checked": [
+    "evaluation/dev-roleplay-v2.json",
+    "evaluation/final-roleplay-v2.json",
+    "evaluation/pressure-v2.json"
+  ],
+  "limitations": "Authored after seeing failed final/pressure outputs. General need for sustained ordinary conversation informed design; their scenarios, answers and deliberate paraphrases were excluded. Mechanical exact matching is not proof of semantic independence."
+}

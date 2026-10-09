@@ -16,10 +16,11 @@ def main():
     parser.add_argument('--source', type=Path, default=Path('data/prepared-full-relations-v3'))
     parser.add_argument('--new-source', type=Path, action='append', required=True)
     parser.add_argument('--repeat', type=int, default=2)
+    parser.add_argument('--exchanges-per-conversation', type=int, default=10)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
-    if args.repeat < 1:
-        raise ValueError('Repeat count must be positive')
+    if args.repeat < 1 or args.exchanges_per_conversation < 1:
+        raise ValueError('Repeat and exchange counts must be positive')
     prior = [json.loads(line) for line in (args.source / 'train.jsonl').read_text().splitlines()]
     families = {r['family'] for r in prior}
     additions = []
@@ -30,12 +31,14 @@ def main():
         if manifest['sha256'] != digest(source) or manifest.get('exact_heldout_prompt_overlap') is not False:
             raise ValueError(f'Missing matching source review: {source}')
         rows = parse(source)
+        if manifest.get('exchanges_per_conversation', args.exchanges_per_conversation) != args.exchanges_per_conversation:
+            raise ValueError('Declared exchange count differs from source review')
         for row in rows:
             if row['family'] in families:
                 raise ValueError(f'Duplicate family: {row["family"]}')
             families.add(row['family'])
-            if [m['role'] for m in row['messages']] != ['user', 'assistant'] * 10:
-                raise ValueError('Expected ten complete exchanges per new family')
+            if [m['role'] for m in row['messages']] != ['user', 'assistant'] * args.exchanges_per_conversation:
+                raise ValueError('Expected declared number of complete exchanges per new family')
             row.update(split='train', source_file=str(source), source_sha256=digest(source),
                        source_kind='Original authored synthetic fiction; broad influence labels only')
             additions.append(row)
@@ -53,14 +56,15 @@ def main():
     rows = prior + weighted
     distinct = {json.dumps(r['messages'], sort_keys=True): r for r in rows}
     manifest = {
-        'status': 'Prepared for a future experiment; not used by run17',
+        'status': 'Prepared input only; requires admission to a separately declared experiment',
         'original_source': str(args.source), 'original_train_sha256': digest(args.source / 'train.jsonl'),
         'new_sources': sources, 'new_family_count': len(additions), 'new_family_weight': args.repeat,
+        'new_family_exchanges': args.exchanges_per_conversation,
         'weighted_records': len(rows), 'distinct_texts': len(distinct),
         'weighted_character_turns': sum(sum(m['role'] == 'assistant' for m in r['messages']) for r in rows),
         'distinct_character_turns': sum(sum(m['role'] == 'assistant' for m in r['messages']) for r in distinct.values()),
         'split_policy': 'All new families train-only; original validation and test bytes unchanged',
-        'test_file_scope': 'Inherited test.jsonl is the repeated development-loss file. Independent final conversation evaluation is separate in evaluation/final-roleplay-v2.json.',
+        'test_file_scope': 'Inherited test.jsonl repeats the development-loss file; it is never a held-out final audit. Release conversation audits are versioned separately.',
         'limitations': 'Same-author synthetic data and review. Repetition does not add independent examples.',
         'output_sha256': {name: digest(args.output / name) for name in ('train.jsonl', 'valid.jsonl', 'test.jsonl')},
     }

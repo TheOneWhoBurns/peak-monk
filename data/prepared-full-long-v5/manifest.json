@@ -1,0 +1,37 @@
+{
+  "status": "Prepared input only; requires admission to a separately declared experiment",
+  "original_source": "data/prepared-full-long-v4",
+  "original_train_sha256": "f920b4ec79f5ef2aeb4c900a2897fd0c331c0e9cc3bb155e24fd8a03fb91a10e",
+  "new_sources": [
+    {
+      "path": "data/grounded_long_v8.txt",
+      "sha256": "065f06d835b30ba69bae439fae9fbdf771eacc59c6ed7d6310a3ad18e9ada8c6",
+      "manifest_sha256": "c7e408d1ac984203a51555d7bb8e911f360f1e2c315428948ede22560507748b"
+    },
+    {
+      "path": "data/grounded_long_v9.txt",
+      "sha256": "8192b01af95e5c401c735f28558815431f930ac8731cae45a78c1bd1fb5d6636",
+      "manifest_sha256": "df78fd5670103f12010c9c8f4afaf0e4aa556aea76dffad3c3ce22a9d37ed350"
+    },
+    {
+      "path": "data/grounded_long_v10.txt",
+      "sha256": "5e44e887968cd8bcd7aa53d53794f94275416103f8f94e651aa0d5fcb293c86d",
+      "manifest_sha256": "1de4a2096856c0131c36441805a4ad156f7645d998e2c34f68b4c65501e09cff"
+    }
+  ],
+  "new_family_count": 14,
+  "new_family_weight": 2,
+  "new_family_exchanges": 16,
+  "weighted_records": 551,
+  "distinct_texts": 264,
+  "weighted_character_turns": 2555,
+  "distinct_character_turns": 1326,
+  "split_policy": "All new families train-only; original validation and test bytes unchanged",
+  "test_file_scope": "Inherited test.jsonl repeats the development-loss file; it is never a held-out final audit. Release conversation audits are versioned separately.",
+  "limitations": "Same-author synthetic data and review. Repetition does not add independent examples.",
+  "output_sha256": {
+    "train.jsonl": "a02ab4b1176d99a66905ed6076b94cec3c4729f2d28f27b7c7fbb68a0bf8c7ea",
+    "valid.jsonl": "6cac81fab61388010e064d1a92a3699e135f1c174ea836756d4ebbcca163aaba",
+    "test.jsonl": "6cac81fab61388010e064d1a92a3699e135f1c174ea836756d4ebbcca163aaba"
+  }
+}
