@@ -13,6 +13,44 @@ from assistant_objective import ThroughEOS, assistant_loss
 
 ROOT = Path(__file__).resolve().parents[1]
 
+def capture_conversations(model, tok, args, result, out):
+    def save():
+        out.write_text(json.dumps(result, indent=2, ensure_ascii=False)+'\n')
+    for case in json.loads((ROOT/args.suite).read_text()):
+        messages = []
+        if args.prompted:
+            messages.append({'role':'system','content':(ROOT/args.persona_file).read_text()})
+        captured = dict(case, responses=[], messages=[])
+        for turn_index,user in enumerate(case['turns']):
+            messages.append({'role':'user','content':user})
+            prompt = tok.apply_chat_template(messages,add_generation_prompt=True,tokenize=False,enable_thinking=False)
+            start = time.monotonic()
+            first = None
+            text = ''
+            last = None
+            if args.temperature>0:
+                case_seed=int(hashlib.sha256(case['id'].encode()).hexdigest()[:8],16)
+                mx.random.seed((args.seed+case_seed+997*turn_index)%(2**31))
+            processors=make_logits_processors(presence_penalty=args.presence_penalty if args.presence_penalty else None,presence_context_size=128)
+            for chunk in stream_generate(model,tok,prompt,max_tokens=args.max_tokens,
+                    sampler=make_sampler(temp=args.temperature,top_p=args.top_p),logits_processors=processors):
+                if first is None:
+                    first = time.monotonic()-start
+                text += chunk.text
+                last = chunk
+            messages.append({'role':'assistant','content':text})
+            captured['responses'].append({'text':text,'first_token_seconds':first,
+                'elapsed_seconds':time.monotonic()-start,
+                'tokens':last.generation_tokens,'tokens_per_second':last.generation_tps,
+                'peak_memory_gb':last.peak_memory,'finish_reason':last.finish_reason})
+            mx.clear_cache()
+        captured['messages'] = messages
+        result['conversations'].append(captured)
+        save()
+        print(case['id']+': '+captured['responses'][-1]['text'][:180].replace('\n',' '),flush=True)
+    print('saved',out,flush=True)
+
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('--adapter')
@@ -65,39 +103,7 @@ def main():
     print(f'validation_loss={loss:.6f}',flush=True)
     if args.loss_only:
         return
-    for case in json.loads((ROOT/args.suite).read_text()):
-        messages = []
-        if args.prompted:
-            messages.append({'role':'system','content':(ROOT/args.persona_file).read_text()})
-        captured = dict(case, responses=[], messages=[])
-        for turn_index,user in enumerate(case['turns']):
-            messages.append({'role':'user','content':user})
-            prompt = tok.apply_chat_template(messages,add_generation_prompt=True,tokenize=False,enable_thinking=False)
-            start = time.monotonic()
-            first = None
-            text = ''
-            last = None
-            if args.temperature>0:
-                case_seed=int(hashlib.sha256(case['id'].encode()).hexdigest()[:8],16)
-                mx.random.seed((args.seed+case_seed+997*turn_index)%(2**31))
-            processors=make_logits_processors(presence_penalty=args.presence_penalty if args.presence_penalty else None,presence_context_size=128)
-            for chunk in stream_generate(model,tok,prompt,max_tokens=args.max_tokens,
-                    sampler=make_sampler(temp=args.temperature,top_p=args.top_p),logits_processors=processors):
-                if first is None:
-                    first = time.monotonic()-start
-                text += chunk.text
-                last = chunk
-            messages.append({'role':'assistant','content':text})
-            captured['responses'].append({'text':text,'first_token_seconds':first,
-                'elapsed_seconds':time.monotonic()-start,
-                'tokens':last.generation_tokens,'tokens_per_second':last.generation_tps,
-                'peak_memory_gb':last.peak_memory,'finish_reason':last.finish_reason})
-            mx.clear_cache()
-        captured['messages'] = messages
-        result['conversations'].append(captured)
-        save()
-        print(case['id']+': '+captured['responses'][-1]['text'][:180].replace('\n',' '),flush=True)
-    print('saved',out,flush=True)
+    capture_conversations(model, tok, args, result, out)
 
 if __name__ == '__main__':
     main()
