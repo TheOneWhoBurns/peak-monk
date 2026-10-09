@@ -1,0 +1,9 @@
+{
+  "mode": "decode",
+  "input": "results/speech-run07-offline-screen/s06/agent_codes.npz",
+  "audio_seconds": 24.96,
+  "wall_seconds": 6.246535790996859,
+  "codes_key": "agent_codes",
+  "realtime_factor": 0.25026185060083567,
+  "scope": "CPU codec including audio I/O, excluding model-load time"
+}

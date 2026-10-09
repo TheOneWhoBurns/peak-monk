@@ -1,0 +1,9 @@
+{
+  "mode": "decode",
+  "input": "results/moshi-baseline-offline-screen/s01/agent_codes.npz",
+  "audio_seconds": 23.92,
+  "wall_seconds": 6.068971667002188,
+  "codes_key": "agent_codes",
+  "realtime_factor": 0.2537195512960781,
+  "scope": "CPU codec including audio I/O, excluding model-load time"
+}

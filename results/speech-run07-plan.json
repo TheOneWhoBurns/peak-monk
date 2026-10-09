@@ -1,6 +1,6 @@
 {
   "experiment": "speech-run07",
-  "status": "Padded longest-episode two-update memory gate passed; ready for full training",
+  "status": "Closed; actual training and primary/followup evidence in results/speech-run07-closed.json",
   "hypothesis": "Repair short-tail numerical instability, then test all-layer native character adaptation",
   "model": "models/moshi/model.q4.safetensors",
   "training": {

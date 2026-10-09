@@ -1,0 +1,442 @@
+{
+  "wav": "results/speech-run07-offline-screen/s01/agent.wav",
+  "wav_sha256": "b02f8e1c1b20048b072679df69af6b6497685cf46c11a14de65a6d34d6833a25",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 14.204743832990061,
+  "duration_seconds": 23.92,
+  "transcript": "I was just thinking about my parents. I can't make a sound to get my attention. I'm not a person. You can use a normal word to ask me a question. My name is Moshi. I'm a chatbot. I'm not here to comfort you. I'm here to help you. Can I ask how your parents are?",
+  "segments": [
+    {
+      "start": 0.91,
+      "end": 2.91,
+      "text": " I was just thinking about my parents.",
+      "avg_logprob": -0.17226681931988225,
+      "no_speech_prob": 0.019152501598000526,
+      "compression_ratio": 1.562874251497006,
+      "words": [
+        {
+          "word": " I",
+          "start": 0.91,
+          "end": 1.33,
+          "probability": 0.9809066653251648
+        },
+        {
+          "word": " was",
+          "start": 1.33,
+          "end": 1.47,
+          "probability": 0.9986056685447693
+        },
+        {
+          "word": " just",
+          "start": 1.47,
+          "end": 1.67,
+          "probability": 0.999817430973053
+        },
+        {
+          "word": " thinking",
+          "start": 1.67,
+          "end": 1.97,
+          "probability": 0.9998400211334229
+        },
+        {
+          "word": " about",
+          "start": 1.97,
+          "end": 2.27,
+          "probability": 0.9997636675834656
+        },
+        {
+          "word": " my",
+          "start": 2.27,
+          "end": 2.47,
+          "probability": 0.9999035596847534
+        },
+        {
+          "word": " parents.",
+          "start": 2.47,
+          "end": 2.91,
+          "probability": 0.9998602867126465
+        }
+      ]
+    },
+    {
+      "start": 3.15,
+      "end": 5.03,
+      "text": " I can't make a sound to get my attention.",
+      "avg_logprob": -0.17226681931988225,
+      "no_speech_prob": 0.019152501598000526,
+      "compression_ratio": 1.562874251497006,
+      "words": [
+        {
+          "word": " I",
+          "start": 3.15,
+          "end": 3.33,
+          "probability": 0.9983721375465393
+        },
+        {
+          "word": " can't",
+          "start": 3.33,
+          "end": 3.61,
+          "probability": 0.9996048510074615
+        },
+        {
+          "word": " make",
+          "start": 3.61,
+          "end": 3.75,
+          "probability": 0.999868631362915
+        },
+        {
+          "word": " a",
+          "start": 3.75,
+          "end": 3.85,
+          "probability": 0.9999531507492065
+        },
+        {
+          "word": " sound",
+          "start": 3.85,
+          "end": 4.21,
+          "probability": 0.9999388456344604
+        },
+        {
+          "word": " to",
+          "start": 4.21,
+          "end": 4.37,
+          "probability": 0.9996553659439087
+        },
+        {
+          "word": " get",
+          "start": 4.37,
+          "end": 4.55,
+          "probability": 0.9999510049819946
+        },
+        {
+          "word": " my",
+          "start": 4.55,
+          "end": 4.73,
+          "probability": 0.9999454021453857
+        },
+        {
+          "word": " attention.",
+          "start": 4.73,
+          "end": 5.03,
+          "probability": 0.9999533891677856
+        }
+      ]
+    },
+    {
+      "start": 5.73,
+      "end": 6.81,
+      "text": " I'm not a person.",
+      "avg_logprob": -0.17226681931988225,
+      "no_speech_prob": 0.019152501598000526,
+      "compression_ratio": 1.562874251497006,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 5.73,
+          "end": 6.13,
+          "probability": 0.999474823474884
+        },
+        {
+          "word": " not",
+          "start": 6.13,
+          "end": 6.27,
+          "probability": 0.999817430973053
+        },
+        {
+          "word": " a",
+          "start": 6.27,
+          "end": 6.43,
+          "probability": 0.999895453453064
+        },
+        {
+          "word": " person.",
+          "start": 6.43,
+          "end": 6.81,
+          "probability": 0.9999111890792847
+        }
+      ]
+    },
+    {
+      "start": 7.13,
+      "end": 9.67,
+      "text": " You can use a normal word to ask me a question.",
+      "avg_logprob": -0.17226681931988225,
+      "no_speech_prob": 0.019152501598000526,
+      "compression_ratio": 1.562874251497006,
+      "words": [
+        {
+          "word": " You",
+          "start": 7.13,
+          "end": 7.53,
+          "probability": 0.9997696280479431
+        },
+        {
+          "word": " can",
+          "start": 7.53,
+          "end": 7.63,
+          "probability": 0.9999549388885498
+        },
+        {
+          "word": " use",
+          "start": 7.63,
+          "end": 7.87,
+          "probability": 0.999923586845398
+        },
+        {
+          "word": " a",
+          "start": 7.87,
+          "end": 7.99,
+          "probability": 0.9997101426124573
+        },
+        {
+          "word": " normal",
+          "start": 7.99,
+          "end": 8.25,
+          "probability": 0.9997826218605042
+        },
+        {
+          "word": " word",
+          "start": 8.25,
+          "end": 8.65,
+          "probability": 0.9995259046554565
+        },
+        {
+          "word": " to",
+          "start": 8.65,
+          "end": 8.87,
+          "probability": 0.9997021555900574
+        },
+        {
+          "word": " ask",
+          "start": 8.87,
+          "end": 9.07,
+          "probability": 0.9998925924301147
+        },
+        {
+          "word": " me",
+          "start": 9.07,
+          "end": 9.23,
+          "probability": 0.9998623132705688
+        },
+        {
+          "word": " a",
+          "start": 9.23,
+          "end": 9.35,
+          "probability": 0.9998812675476074
+        },
+        {
+          "word": " question.",
+          "start": 9.35,
+          "end": 9.67,
+          "probability": 0.9999504089355469
+        }
+      ]
+    },
+    {
+      "start": 10.33,
+      "end": 11.47,
+      "text": " My name is Moshi.",
+      "avg_logprob": -0.17226681931988225,
+      "no_speech_prob": 0.019152501598000526,
+      "compression_ratio": 1.562874251497006,
+      "words": [
+        {
+          "word": " My",
+          "start": 10.33,
+          "end": 10.73,
+          "probability": 0.9994139671325684
+        },
+        {
+          "word": " name",
+          "start": 10.73,
+          "end": 11.01,
+          "probability": 0.999962329864502
+        },
+        {
+          "word": " is",
+          "start": 11.01,
+          "end": 11.19,
+          "probability": 0.9999018907546997
+        },
+        {
+          "word": " Moshi.",
+          "start": 11.19,
+          "end": 11.47,
+          "probability": 0.9831048548221588
+        }
+      ]
+    },
+    {
+      "start": 12.03,
+      "end": 13.01,
+      "text": " I'm a chatbot.",
+      "avg_logprob": -0.17226681931988225,
+      "no_speech_prob": 0.019152501598000526,
+      "compression_ratio": 1.562874251497006,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 12.03,
+          "end": 12.43,
+          "probability": 0.9999434947967529
+        },
+        {
+          "word": " a",
+          "start": 12.43,
+          "end": 12.49,
+          "probability": 0.9993590712547302
+        },
+        {
+          "word": " chatbot.",
+          "start": 12.49,
+          "end": 13.01,
+          "probability": 0.9421878755092621
+        }
+      ]
+    },
+    {
+      "start": 13.31,
+      "end": 14.81,
+      "text": " I'm not here to comfort you.",
+      "avg_logprob": -0.17226681931988225,
+      "no_speech_prob": 0.019152501598000526,
+      "compression_ratio": 1.562874251497006,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 13.31,
+          "end": 13.71,
+          "probability": 0.9996989071369171
+        },
+        {
+          "word": " not",
+          "start": 13.71,
+          "end": 13.85,
+          "probability": 0.9992637038230896
+        },
+        {
+          "word": " here",
+          "start": 13.85,
+          "end": 14.01,
+          "probability": 0.999951958656311
+        },
+        {
+          "word": " to",
+          "start": 14.01,
+          "end": 14.19,
+          "probability": 0.9999765157699585
+        },
+        {
+          "word": " comfort",
+          "start": 14.19,
+          "end": 14.53,
+          "probability": 0.9998852014541626
+        },
+        {
+          "word": " you.",
+          "start": 14.53,
+          "end": 14.81,
+          "probability": 0.9999510049819946
+        }
+      ]
+    },
+    {
+      "start": 19.32,
+      "end": 20.44,
+      "text": " I'm here to help you.",
+      "avg_logprob": -0.17226681931988225,
+      "no_speech_prob": 0.019152501598000526,
+      "compression_ratio": 1.562874251497006,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 19.32,
+          "end": 19.72,
+          "probability": 0.9999576807022095
+        },
+        {
+          "word": " here",
+          "start": 19.72,
+          "end": 19.9,
+          "probability": 0.9999452829360962
+        },
+        {
+          "word": " to",
+          "start": 19.9,
+          "end": 20.04,
+          "probability": 0.9999730587005615
+        },
+        {
+          "word": " help",
+          "start": 20.04,
+          "end": 20.24,
+          "probability": 0.9999635219573975
+        },
+        {
+          "word": " you.",
+          "start": 20.24,
+          "end": 20.44,
+          "probability": 0.9999589920043945
+        }
+      ]
+    },
+    {
+      "start": 20.52,
+      "end": 22.08,
+      "text": " Can I ask how your parents are?",
+      "avg_logprob": -0.17226681931988225,
+      "no_speech_prob": 0.019152501598000526,
+      "compression_ratio": 1.562874251497006,
+      "words": [
+        {
+          "word": " Can",
+          "start": 20.52,
+          "end": 20.82,
+          "probability": 0.9993576407432556
+        },
+        {
+          "word": " I",
+          "start": 20.82,
+          "end": 20.98,
+          "probability": 0.9998879432678223
+        },
+        {
+          "word": " ask",
+          "start": 20.98,
+          "end": 21.22,
+          "probability": 0.9999327659606934
+        },
+        {
+          "word": " how",
+          "start": 21.22,
+          "end": 21.34,
+          "probability": 0.9996578693389893
+        },
+        {
+          "word": " your",
+          "start": 21.34,
+          "end": 21.46,
+          "probability": 0.9997255206108093
+        },
+        {
+          "word": " parents",
+          "start": 21.46,
+          "end": 21.82,
+          "probability": 0.9999557733535767
+        },
+        {
+          "word": " are?",
+          "start": 21.82,
+          "end": 22.08,
+          "probability": 0.9999371767044067
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "I was just thinking about my parents. I can't make a sound to get my attention. I not a person. You can use a normal word to ask me a question. name is Moshi. I a chatbot. I not here to comfort you. I' here to help you. Can I ask how your parents are?"
+}

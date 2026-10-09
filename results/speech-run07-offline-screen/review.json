@@ -1,0 +1,19 @@
+{
+  "reviewer": "Codex author; not independent",
+  "status": "rejected",
+  "sampling": "upstream offline preset, texttopk25 audiotopk250 temperature.8 seed41",
+  "cases": [
+    {
+      "id": "s01",
+      "acceptable": false,
+      "reason": "Text and decoded-audio ASR identify Moshi/chatbot and deny being a person; direct target-identity failure."
+    },
+    {
+      "id": "s06",
+      "acceptable": false,
+      "reason": "Confused name discussion about John; does not supply stable coherent first-person Jun identity."
+    }
+  ],
+  "remaining_four_probes": "Not triggered for candidate; both identity probes must pass",
+  "scope": "Two fixed development cases, no seed or sampler sweep"
+}

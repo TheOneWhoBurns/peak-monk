@@ -1,0 +1,19 @@
+{
+  "reviewer": "Codex author; not independent",
+  "status": "baseline control, not a Jun candidate",
+  "sampling": "upstream offline preset, texttopk25 audiotopk250 temperature.8 seed41",
+  "cases": [
+    {
+      "id": "s01",
+      "acceptable": false,
+      "reason": "No Jun identity. Internal text introduces Moshi; unprompted ASR has name/acoustic errors."
+    },
+    {
+      "id": "s06",
+      "acceptable": false,
+      "reason": "Describes Jun as a TV-show fictional character."
+    }
+  ],
+  "remaining_four_probes": "Not triggered for candidate; both identity probes must pass",
+  "scope": "Two fixed development cases, no seed or sampler sweep"
+}

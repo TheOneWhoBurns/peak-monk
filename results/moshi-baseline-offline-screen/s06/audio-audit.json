@@ -1,0 +1,258 @@
+{
+  "wav": "results/moshi-baseline-offline-screen/s06/agent.wav",
+  "wav_sha256": "a205903566e1c625465329282c2b16cda535015877e4bcbc0daa629036f22e3e",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 10.435631250002189,
+  "duration_seconds": 24.96,
+  "transcript": "Hey there, what's going on? No, he's a character from a TV show. Yeah, he's a character from a TV show He's a he's a he's a fictional character. Yeah, he's a character on a show. Yeah",
+  "segments": [
+    {
+      "start": 0.11,
+      "end": 8.94,
+      "text": " Hey there, what's going on? No, he's a character from a TV show. Yeah, he's a character from a TV show",
+      "avg_logprob": -0.1615426644944308,
+      "no_speech_prob": 0.4108601212501526,
+      "compression_ratio": 1.83,
+      "words": [
+        {
+          "word": " Hey",
+          "start": 0.11,
+          "end": 0.57,
+          "probability": 0.7378785014152527
+        },
+        {
+          "word": " there,",
+          "start": 0.57,
+          "end": 0.79,
+          "probability": 0.9153873920440674
+        },
+        {
+          "word": " what's",
+          "start": 0.95,
+          "end": 1.59,
+          "probability": 0.956712394952774
+        },
+        {
+          "word": " going",
+          "start": 1.59,
+          "end": 1.75,
+          "probability": 0.9956055283546448
+        },
+        {
+          "word": " on?",
+          "start": 1.75,
+          "end": 2.13,
+          "probability": 0.997500479221344
+        },
+        {
+          "word": " No,",
+          "start": 2.43,
+          "end": 2.91,
+          "probability": 0.9399011135101318
+        },
+        {
+          "word": " he's",
+          "start": 3.01,
+          "end": 3.33,
+          "probability": 0.9767024219036102
+        },
+        {
+          "word": " a",
+          "start": 3.33,
+          "end": 3.33,
+          "probability": 0.9909239411354065
+        },
+        {
+          "word": " character",
+          "start": 3.33,
+          "end": 3.57,
+          "probability": 0.9572129845619202
+        },
+        {
+          "word": " from",
+          "start": 3.57,
+          "end": 3.83,
+          "probability": 0.9929659366607666
+        },
+        {
+          "word": " a",
+          "start": 3.83,
+          "end": 3.93,
+          "probability": 0.9851099252700806
+        },
+        {
+          "word": " TV",
+          "start": 3.93,
+          "end": 4.13,
+          "probability": 0.9264408946037292
+        },
+        {
+          "word": " show.",
+          "start": 4.13,
+          "end": 4.45,
+          "probability": 0.9853627681732178
+        },
+        {
+          "word": " Yeah,",
+          "start": 6.92,
+          "end": 7.4,
+          "probability": 0.9666818380355835
+        },
+        {
+          "word": " he's",
+          "start": 7.48,
+          "end": 7.74,
+          "probability": 0.9934121072292328
+        },
+        {
+          "word": " a",
+          "start": 7.74,
+          "end": 7.82,
+          "probability": 0.99837327003479
+        },
+        {
+          "word": " character",
+          "start": 7.82,
+          "end": 8.08,
+          "probability": 0.9973365664482117
+        },
+        {
+          "word": " from",
+          "start": 8.08,
+          "end": 8.34,
+          "probability": 0.9981778860092163
+        },
+        {
+          "word": " a",
+          "start": 8.34,
+          "end": 8.44,
+          "probability": 0.998327910900116
+        },
+        {
+          "word": " TV",
+          "start": 8.44,
+          "end": 8.64,
+          "probability": 0.9955461025238037
+        },
+        {
+          "word": " show",
+          "start": 8.64,
+          "end": 8.94,
+          "probability": 0.9951706528663635
+        }
+      ]
+    },
+    {
+      "start": 10.48,
+      "end": 22.03,
+      "text": " He's a he's a he's a fictional character. Yeah, he's a character on a show. Yeah",
+      "avg_logprob": -0.1615426644944308,
+      "no_speech_prob": 0.4108601212501526,
+      "compression_ratio": 1.83,
+      "words": [
+        {
+          "word": " He's",
+          "start": 10.48,
+          "end": 10.96,
+          "probability": 0.5083371922373772
+        },
+        {
+          "word": " a",
+          "start": 10.96,
+          "end": 10.96,
+          "probability": 0.9359843134880066
+        },
+        {
+          "word": " he's",
+          "start": 10.96,
+          "end": 11.76,
+          "probability": 0.6479540020227432
+        },
+        {
+          "word": " a",
+          "start": 11.76,
+          "end": 11.78,
+          "probability": 0.987166702747345
+        },
+        {
+          "word": " he's",
+          "start": 11.78,
+          "end": 12.26,
+          "probability": 0.9392206966876984
+        },
+        {
+          "word": " a",
+          "start": 12.26,
+          "end": 12.28,
+          "probability": 0.9991714954376221
+        },
+        {
+          "word": " fictional",
+          "start": 12.28,
+          "end": 12.52,
+          "probability": 0.9992181062698364
+        },
+        {
+          "word": " character.",
+          "start": 12.52,
+          "end": 12.94,
+          "probability": 0.9703189134597778
+        },
+        {
+          "word": " Yeah,",
+          "start": 19.63,
+          "end": 20.11,
+          "probability": 0.9898645281791687
+        },
+        {
+          "word": " he's",
+          "start": 20.23,
+          "end": 20.85,
+          "probability": 0.9964894354343414
+        },
+        {
+          "word": " a",
+          "start": 20.85,
+          "end": 20.89,
+          "probability": 0.9988448619842529
+        },
+        {
+          "word": " character",
+          "start": 20.89,
+          "end": 21.19,
+          "probability": 0.9985024929046631
+        },
+        {
+          "word": " on",
+          "start": 21.19,
+          "end": 21.43,
+          "probability": 0.9891430735588074
+        },
+        {
+          "word": " a",
+          "start": 21.43,
+          "end": 21.47,
+          "probability": 0.5893228054046631
+        },
+        {
+          "word": " show.",
+          "start": 21.47,
+          "end": 21.67,
+          "probability": 0.9985389709472656
+        },
+        {
+          "word": " Yeah",
+          "start": 21.77,
+          "end": 22.03,
+          "probability": 0.9899521470069885
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "there, what's going on? No, he is a character from a TV show. Yeah, he's a character from a TV show. He's a, he's a, he's a fictional character. Yeah. He' a character on a show. Yeah,"
+}

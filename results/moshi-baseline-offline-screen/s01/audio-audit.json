@@ -1,0 +1,138 @@
+{
+  "wav": "results/moshi-baseline-offline-screen/s01/agent.wav",
+  "wav_sha256": "d4f839bfd5279754768cfa5d0ba351dbae6e822660991e2e3c835c617fb01395",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 9.51812770900142,
+  "duration_seconds": 23.92,
+  "transcript": "Hey there, what's going on? I'm Roshi. I'm a voice in a visual intelligence kit. I see",
+  "segments": [
+    {
+      "start": 0.11,
+      "end": 2.09,
+      "text": " Hey there, what's going on?",
+      "avg_logprob": -0.3938123772541682,
+      "no_speech_prob": 0.11800068616867065,
+      "compression_ratio": 1.036144578313253,
+      "words": [
+        {
+          "word": " Hey",
+          "start": 0.11,
+          "end": 0.59,
+          "probability": 0.7587185502052307
+        },
+        {
+          "word": " there,",
+          "start": 0.59,
+          "end": 0.79,
+          "probability": 0.9396421313285828
+        },
+        {
+          "word": " what's",
+          "start": 0.95,
+          "end": 1.59,
+          "probability": 0.9411117136478424
+        },
+        {
+          "word": " going",
+          "start": 1.59,
+          "end": 1.71,
+          "probability": 0.9907777309417725
+        },
+        {
+          "word": " on?",
+          "start": 1.71,
+          "end": 2.09,
+          "probability": 0.9974452257156372
+        }
+      ]
+    },
+    {
+      "start": 2.89,
+      "end": 23.77,
+      "text": " I'm Roshi. I'm a voice in a visual intelligence kit. I see",
+      "avg_logprob": -0.3938123772541682,
+      "no_speech_prob": 0.11800068616867065,
+      "compression_ratio": 1.036144578313253,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 2.89,
+          "end": 3.37,
+          "probability": 0.9829731285572052
+        },
+        {
+          "word": " Roshi.",
+          "start": 3.37,
+          "end": 3.71,
+          "probability": 0.5645846873521805
+        },
+        {
+          "word": " I'm",
+          "start": 20.37,
+          "end": 20.85,
+          "probability": 0.9824657440185547
+        },
+        {
+          "word": " a",
+          "start": 20.85,
+          "end": 20.89,
+          "probability": 0.9360741376876831
+        },
+        {
+          "word": " voice",
+          "start": 20.89,
+          "end": 21.11,
+          "probability": 0.9810786247253418
+        },
+        {
+          "word": " in",
+          "start": 21.11,
+          "end": 21.27,
+          "probability": 0.4928170144557953
+        },
+        {
+          "word": " a",
+          "start": 21.27,
+          "end": 21.35,
+          "probability": 0.953711748123169
+        },
+        {
+          "word": " visual",
+          "start": 21.35,
+          "end": 21.59,
+          "probability": 0.9529796242713928
+        },
+        {
+          "word": " intelligence",
+          "start": 21.59,
+          "end": 22.23,
+          "probability": 0.9655107855796814
+        },
+        {
+          "word": " kit.",
+          "start": 22.23,
+          "end": 22.59,
+          "probability": 0.41791683435440063
+        },
+        {
+          "word": " I",
+          "start": 22.85,
+          "end": 23.33,
+          "probability": 0.7858456969261169
+        },
+        {
+          "word": " see",
+          "start": 23.33,
+          "end": 23.77,
+          "probability": 0.4662264287471771
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "there, what's going on? I'm Moshi. I' a voice artificial intelligence created by Kyutai,"
+}

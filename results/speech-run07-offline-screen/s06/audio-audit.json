@@ -1,0 +1,230 @@
+{
+  "wav": "results/speech-run07-offline-screen/s06/agent.wav",
+  "wav_sha256": "59d092fdf8a19b90331d59ef77ea7611e30232f7c39fbb691a3c89550c129b78",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 10.541854082999635,
+  "duration_seconds": 24.96,
+  "transcript": "I was just thinking. And now, it's my name, real, not a character. I'm not sure where the John part came from. I'm glad you're still talking to me.",
+  "segments": [
+    {
+      "start": 0.94,
+      "end": 2.04,
+      "text": " I was just thinking.",
+      "avg_logprob": -0.15298796186641772,
+      "no_speech_prob": 0.011908031068742275,
+      "compression_ratio": 1.2352941176470589,
+      "words": [
+        {
+          "word": " I",
+          "start": 0.94,
+          "end": 1.32,
+          "probability": 0.8896422982215881
+        },
+        {
+          "word": " was",
+          "start": 1.32,
+          "end": 1.5,
+          "probability": 0.9931325316429138
+        },
+        {
+          "word": " just",
+          "start": 1.5,
+          "end": 1.68,
+          "probability": 0.9988357424736023
+        },
+        {
+          "word": " thinking.",
+          "start": 1.68,
+          "end": 2.04,
+          "probability": 0.994783341884613
+        }
+      ]
+    },
+    {
+      "start": 6.94,
+      "end": 10.72,
+      "text": " And now, it's my name, real, not a character.",
+      "avg_logprob": -0.15298796186641772,
+      "no_speech_prob": 0.011908031068742275,
+      "compression_ratio": 1.2352941176470589,
+      "words": [
+        {
+          "word": " And",
+          "start": 6.94,
+          "end": 7.42,
+          "probability": 0.9700809121131897
+        },
+        {
+          "word": " now,",
+          "start": 7.42,
+          "end": 7.62,
+          "probability": 0.9990828037261963
+        },
+        {
+          "word": " it's",
+          "start": 7.8,
+          "end": 8.1,
+          "probability": 0.9945266842842102
+        },
+        {
+          "word": " my",
+          "start": 8.1,
+          "end": 8.26,
+          "probability": 0.9951849579811096
+        },
+        {
+          "word": " name,",
+          "start": 8.26,
+          "end": 8.7,
+          "probability": 0.9989970326423645
+        },
+        {
+          "word": " real,",
+          "start": 8.9,
+          "end": 9.44,
+          "probability": 0.9285225868225098
+        },
+        {
+          "word": " not",
+          "start": 9.68,
+          "end": 10.24,
+          "probability": 0.9988604784011841
+        },
+        {
+          "word": " a",
+          "start": 10.24,
+          "end": 10.36,
+          "probability": 0.9997972846031189
+        },
+        {
+          "word": " character.",
+          "start": 10.36,
+          "end": 10.72,
+          "probability": 0.9990697503089905
+        }
+      ]
+    },
+    {
+      "start": 11.34,
+      "end": 13.94,
+      "text": " I'm not sure where the John part came from.",
+      "avg_logprob": -0.15298796186641772,
+      "no_speech_prob": 0.011908031068742275,
+      "compression_ratio": 1.2352941176470589,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 11.34,
+          "end": 11.82,
+          "probability": 0.9983419179916382
+        },
+        {
+          "word": " not",
+          "start": 11.82,
+          "end": 11.94,
+          "probability": 0.998801589012146
+        },
+        {
+          "word": " sure",
+          "start": 11.94,
+          "end": 12.14,
+          "probability": 0.9998183846473694
+        },
+        {
+          "word": " where",
+          "start": 12.14,
+          "end": 12.4,
+          "probability": 0.9994170665740967
+        },
+        {
+          "word": " the",
+          "start": 12.4,
+          "end": 12.6,
+          "probability": 0.9876385927200317
+        },
+        {
+          "word": " John",
+          "start": 12.6,
+          "end": 12.84,
+          "probability": 0.8111460208892822
+        },
+        {
+          "word": " part",
+          "start": 12.84,
+          "end": 13.18,
+          "probability": 0.9959462285041809
+        },
+        {
+          "word": " came",
+          "start": 13.18,
+          "end": 13.54,
+          "probability": 0.9995360374450684
+        },
+        {
+          "word": " from.",
+          "start": 13.54,
+          "end": 13.94,
+          "probability": 0.9999418258666992
+        }
+      ]
+    },
+    {
+      "start": 19.71,
+      "end": 21.63,
+      "text": " I'm glad you're still talking to me.",
+      "avg_logprob": -0.15298796186641772,
+      "no_speech_prob": 0.011908031068742275,
+      "compression_ratio": 1.2352941176470589,
+      "words": [
+        {
+          "word": " I'm",
+          "start": 19.71,
+          "end": 20.19,
+          "probability": 0.9995035529136658
+        },
+        {
+          "word": " glad",
+          "start": 20.19,
+          "end": 20.43,
+          "probability": 0.9999600648880005
+        },
+        {
+          "word": " you're",
+          "start": 20.43,
+          "end": 20.65,
+          "probability": 0.9994630813598633
+        },
+        {
+          "word": " still",
+          "start": 20.65,
+          "end": 20.83,
+          "probability": 0.9999121427536011
+        },
+        {
+          "word": " talking",
+          "start": 20.83,
+          "end": 21.23,
+          "probability": 0.9998373985290527
+        },
+        {
+          "word": " to",
+          "start": 21.23,
+          "end": 21.45,
+          "probability": 0.999727189540863
+        },
+        {
+          "word": " me.",
+          "start": 21.45,
+          "end": 21.63,
+          "probability": 0.9999759197235107
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "I was just thinking. A, it's my name, real, not a character. I'm not sure where the John part came from. I' glad you're still talking to me."
+}

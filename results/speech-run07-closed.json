@@ -1,0 +1,36 @@
+{
+  "experiment": "speech-run07",
+  "status": "Closed: primary and all declared followups rejected",
+  "primary": "results/speech-run07-native/review.json",
+  "checkpoint_screens": {
+    "40": {
+      "review": "results/speech-run07-screen0040/review.json",
+      "model_only_rtf": 1.0761214416801772,
+      "result": "fails identity challenge; no remaining4 escalation"
+    },
+    "80": {
+      "review": "results/speech-run07-screen0080/review.json",
+      "model_only_rtf": 1.1024703371327889,
+      "result": "fails identity challenge; no remaining4 escalation"
+    },
+    "160": {
+      "review": "results/speech-run07-screen0160/review.json",
+      "model_only_rtf": 1.1203534079320927,
+      "result": "fails identity challenge; no remaining4 escalation"
+    }
+  },
+  "sampler_screens": {
+    "moshi-baseline-offline-screen": {
+      "review": "results/moshi-baseline-offline-screen/review.json",
+      "model_only_rtf": 0.9662619247961068,
+      "jun_identity_pass": false
+    },
+    "speech-run07-offline-screen": {
+      "review": "results/speech-run07-offline-screen/review.json",
+      "model_only_rtf": 1.0349543306689175,
+      "jun_identity_pass": false
+    }
+  },
+  "further_cases_triggered": false,
+  "selection_limit": "Repeated development probes, not independent benchmark; seed41 fixed throughout"
+}

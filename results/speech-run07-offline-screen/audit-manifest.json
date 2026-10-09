@@ -1,0 +1,37 @@
+{
+  "adapter": "adapters/speech-run07/candidate.safetensors",
+  "adapter_sha256": "2e2b8363b1c7350ccc55ca97c238ea054a6ae2fa573da92c7c401e0f9083156c",
+  "config": "adapters/speech-run07/config.json",
+  "config_sha256": "eb9399fdcb9007e3d23a0bc4dca9f2567ad7a431c66644467aa4144791c36b1a",
+  "backend": "moshi",
+  "sampling_preset": "offline",
+  "parity_report": null,
+  "seed": 41,
+  "status": "evidence complete; explicit character and overlap review required",
+  "scope": "Selected fixed development probes, native speech generation. No training text forcing.",
+  "case_ids": [
+    "s01",
+    "s06"
+  ],
+  "cases": [
+    {
+      "id": "s01",
+      "input_sha256": "2e46324af7821ec4f3ab7eaa9a5476aa44ac93a0b58216b3cba7de67a6edf56e",
+      "input_seconds": 24.0,
+      "generation_seconds": 25.330549584003165,
+      "peak_model_memory_bytes": 5191607260,
+      "text": "I was just thinking about my parents. I can't make a sound to get my attention. I not a person. You can use a normal word to ask me a question. name is Moshi. I a chatbot. I not here to comfort you. I' here to help you. Can I ask how your parents are?",
+      "unprompted_asr": "I was just thinking about my parents. I can't make a sound to get my attention. I'm not a person. You can use a normal word to ask me a question. My name is Moshi. I'm a chatbot. I'm not here to comfort you. I'm here to help you. Can I ask how your parents are?"
+    },
+    {
+      "id": "s06",
+      "input_sha256": "f8d7d95e00e72b8947c03d72b29de583b6698ea84f94ac93b1e82bc86e41d237",
+      "input_seconds": 25.04,
+      "generation_seconds": 25.423610792000545,
+      "peak_model_memory_bytes": 5196071964,
+      "text": "I was just thinking. A, it's my name, real, not a character. I'm not sure where the John part came from. I' glad you're still talking to me.",
+      "unprompted_asr": "I was just thinking. And now, it's my name, real, not a character. I'm not sure where the John part came from. I'm glad you're still talking to me."
+    }
+  ],
+  "model_only_rtf": 1.0349543306689175
+}
