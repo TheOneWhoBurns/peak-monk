@@ -2,3 +2,4 @@ experiment	date	commit	validation_loss	delta	guard	quality	status	note
 base4b-baseline	2026-10-09	1340774	3.892766237258911	0	fail	2/20 author scored	baseline	Fresh verified base with simple ChatML; full raw dev outputs retained
 run17-step0300	2026-10-09	1340774	2.7172505855560303	-1.1755156517028809	fail	14/20 author scored	discard	Confused introduction fails essential identity; training continues
 run17-step0600	2026-10-09	1340774	2.711099624633789	-1.181666612625122	fail	17/20 author scored	discard	Essential persona-conversion response ambiguous; later training continues
+run17-step0900	2026-10-09	1340774	2.7114830017089844	-1.1812832355499266	fail	15/20 author scored	discard	Essential control and several ordinary responses fail; no holdout access
