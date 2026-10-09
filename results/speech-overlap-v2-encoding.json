@@ -1,0 +1,212 @@
+{
+  "status": "10 encoded synthetic overlap training inputs; no training use yet",
+  "count": 10,
+  "padded_seconds": 237.92000000000002,
+  "frames": 2974,
+  "encoding_seconds": 125.53480616598972,
+  "codec": "Fresh Mimi instance per episode",
+  "checks": "17streams;8agent+8caller audio codebooks in0..2047;frame counts and SHA match saved metadata",
+  "admission": "results/speech-overlap-v2-admission.json",
+  "episodes": [
+    {
+      "id": "overlap_backchannel_a_quiet_room",
+      "split": "train",
+      "sources": [
+        "tnh"
+      ],
+      "frames": 375,
+      "seconds": 30.0,
+      "encode_seconds": 17.138150665996363,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "source_manifest": "data/renders-overlap-v2-assembled-admitted/manifest.jsonl",
+      "source_manifest_sha256": "91f0f3eb834405e0ad828a5b3aefd47594c396ec6e0a98fbe016f47161dfc571",
+      "alignment_sha256": "2d900d4af0262d737176d1021813d3f8612b628d3d8e92bf70a4a3303fa567da",
+      "approval_sha256": "fc33cb38d3b1559e5b4a71c17aed2b8d92bcee15e578c56159579154126f2795",
+      "file_sha256": "af6dca60a62c4a5e194aa59b9fdd29d1b8e69e94de600e811e2000f3bf6eb594"
+    },
+    {
+      "id": "overlap_backchannel_mara_broom",
+      "split": "train",
+      "sources": [
+        "suzuki"
+      ],
+      "frames": 370,
+      "seconds": 29.6,
+      "encode_seconds": 15.477041417005239,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "source_manifest": "data/renders-overlap-v2-assembled-admitted/manifest.jsonl",
+      "source_manifest_sha256": "91f0f3eb834405e0ad828a5b3aefd47594c396ec6e0a98fbe016f47161dfc571",
+      "alignment_sha256": "c903b855741757cc5f90ca0594c47e032f027698cd775abab5d39102aa6743a6",
+      "approval_sha256": "fc33cb38d3b1559e5b4a71c17aed2b8d92bcee15e578c56159579154126f2795",
+      "file_sha256": "4f9315653bea65596006b11e464663325bc6ce23723819688c8f682a6530dace"
+    },
+    {
+      "id": "overlap_backchannel_salty_pot",
+      "split": "train",
+      "sources": [
+        "lawrence"
+      ],
+      "frames": 408,
+      "seconds": 32.64,
+      "encode_seconds": 18.058490832991083,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "source_manifest": "data/renders-overlap-v2-assembled-admitted/manifest.jsonl",
+      "source_manifest_sha256": "91f0f3eb834405e0ad828a5b3aefd47594c396ec6e0a98fbe016f47161dfc571",
+      "alignment_sha256": "cbd2679eca358f32b117ce4828124bcee9dbcc4ac05e8f48d516fec259ba1154",
+      "approval_sha256": "fc33cb38d3b1559e5b4a71c17aed2b8d92bcee15e578c56159579154126f2795",
+      "file_sha256": "f06c716a28269e9d50d819d531284fdffd542299a14b13908ccfea0c984d797e"
+    },
+    {
+      "id": "overlap_backchannel_the_cold_knee",
+      "split": "train",
+      "sources": [
+        "lama"
+      ],
+      "frames": 352,
+      "seconds": 28.16,
+      "encode_seconds": 14.945811792000313,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "source_manifest": "data/renders-overlap-v2-assembled-admitted/manifest.jsonl",
+      "source_manifest_sha256": "91f0f3eb834405e0ad828a5b3aefd47594c396ec6e0a98fbe016f47161dfc571",
+      "alignment_sha256": "4b6ac576a9b867fcd27f486ad55c5b36dd80bf9aa0a58e48ec37927cfcff2448",
+      "approval_sha256": "fc33cb38d3b1559e5b4a71c17aed2b8d92bcee15e578c56159579154126f2795",
+      "file_sha256": "b734e15d4bdb2cf7cb5a6c41237f5b6070f4694752e763a8372e91e170927c13"
+    },
+    {
+      "id": "overlap_barge_change_the_subject",
+      "split": "train",
+      "sources": [
+        "zosima"
+      ],
+      "frames": 246,
+      "seconds": 19.68,
+      "encode_seconds": 9.754751749991556,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "source_manifest": "data/renders-overlap-v2-assembled-admitted/manifest.jsonl",
+      "source_manifest_sha256": "91f0f3eb834405e0ad828a5b3aefd47594c396ec6e0a98fbe016f47161dfc571",
+      "alignment_sha256": "04ed2a5cc02a5c36ee805322830979cbbb30ffe92f7238622e362ca5d850b22c",
+      "approval_sha256": "fc33cb38d3b1559e5b4a71c17aed2b8d92bcee15e578c56159579154126f2795",
+      "file_sha256": "77480adceba987432e93b5b4221c8ccc1729ce0d0dada8d6e8ed7f81d5f0c6d1"
+    },
+    {
+      "id": "overlap_barge_do_not_advise",
+      "split": "train",
+      "sources": [
+        "tnh"
+      ],
+      "frames": 248,
+      "seconds": 19.84,
+      "encode_seconds": 9.761228875009692,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "source_manifest": "data/renders-overlap-v2-assembled-admitted/manifest.jsonl",
+      "source_manifest_sha256": "91f0f3eb834405e0ad828a5b3aefd47594c396ec6e0a98fbe016f47161dfc571",
+      "alignment_sha256": "53920cc9a2e0365c8a0df85ec18f606755fef3971734da9556a05abb8693bf40",
+      "approval_sha256": "fc33cb38d3b1559e5b4a71c17aed2b8d92bcee15e578c56159579154126f2795",
+      "file_sha256": "784acd7b201365df8fb7866f878aad9ec81d6718de2f63826b8efe2bf90bc318"
+    },
+    {
+      "id": "overlap_barge_leaking_eaves",
+      "split": "train",
+      "sources": [
+        "lawrence"
+      ],
+      "frames": 244,
+      "seconds": 19.52,
+      "encode_seconds": 9.8206070419983,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "source_manifest": "data/renders-overlap-v2-assembled-admitted/manifest.jsonl",
+      "source_manifest_sha256": "91f0f3eb834405e0ad828a5b3aefd47594c396ec6e0a98fbe016f47161dfc571",
+      "alignment_sha256": "731f2d5d88c0dbc17334592930666e5dfbe838a5f7a9174ae55d6124c7b8f205",
+      "approval_sha256": "fc33cb38d3b1559e5b4a71c17aed2b8d92bcee15e578c56159579154126f2795",
+      "file_sha256": "bc9f388b566f915c5e249f81cf6036704f6c56f88ce81a99f60235241f69cc1a"
+    },
+    {
+      "id": "overlap_barge_louder_next_time",
+      "split": "train",
+      "sources": [
+        "lawrence"
+      ],
+      "frames": 243,
+      "seconds": 19.44,
+      "encode_seconds": 9.493508415995166,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "source_manifest": "data/renders-overlap-v2-assembled-admitted/manifest.jsonl",
+      "source_manifest_sha256": "91f0f3eb834405e0ad828a5b3aefd47594c396ec6e0a98fbe016f47161dfc571",
+      "alignment_sha256": "39a3427804e790653c175224f01a9654e9edd6d5a2d234c30f95b67ced1b3575",
+      "approval_sha256": "fc33cb38d3b1559e5b4a71c17aed2b8d92bcee15e578c56159579154126f2795",
+      "file_sha256": "145e9fd04744650f7babc32fa8e47a8af816a995d63584b136192201535335b8"
+    },
+    {
+      "id": "overlap_barge_not_a_dream",
+      "split": "train",
+      "sources": [
+        "suzuki"
+      ],
+      "frames": 249,
+      "seconds": 19.92,
+      "encode_seconds": 10.631388499998138,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "source_manifest": "data/renders-overlap-v2-assembled-admitted/manifest.jsonl",
+      "source_manifest_sha256": "91f0f3eb834405e0ad828a5b3aefd47594c396ec6e0a98fbe016f47161dfc571",
+      "alignment_sha256": "4c709ccca36345fa02480cf5671ffa1a27d4b5d3adddd2b1570df7644cfe6696",
+      "approval_sha256": "fc33cb38d3b1559e5b4a71c17aed2b8d92bcee15e578c56159579154126f2795",
+      "file_sha256": "bcc060ae634e9d531d1c230d1d7fd25a34beadd62dff4cfe9874776d3750bda6"
+    },
+    {
+      "id": "overlap_barge_only_the_name",
+      "split": "train",
+      "sources": [
+        "suzuki"
+      ],
+      "frames": 239,
+      "seconds": 19.12,
+      "encode_seconds": 10.45382687500387,
+      "channel_order": "text, agent audio codebooks 0-7, user audio codebooks 0-7",
+      "text_targets": "Reviewed Whisper words with actual estimated timestamps",
+      "applied_spelling_corrections": [],
+      "codec_sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+      "codec_state": "fresh instance per conversation",
+      "source_manifest": "data/renders-overlap-v2-assembled-admitted/manifest.jsonl",
+      "source_manifest_sha256": "91f0f3eb834405e0ad828a5b3aefd47594c396ec6e0a98fbe016f47161dfc571",
+      "alignment_sha256": "ae496dd3084eb0b97a4abc8ffceed13ea8640e4e2ca6c295bb868fe9330a0b4d",
+      "approval_sha256": "fc33cb38d3b1559e5b4a71c17aed2b8d92bcee15e578c56159579154126f2795",
+      "file_sha256": "0189b2bd3b80fd810cccd5ee27368989a53a1464d49ffdb326b3da9e24410617"
+    }
+  ]
+}

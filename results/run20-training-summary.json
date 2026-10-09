@@ -1,0 +1,59 @@
+{
+  "experiment": "run20",
+  "status": "Training complete; three fixed development captures in progress; not accepted",
+  "source_commit": "d568b85",
+  "steps": 96,
+  "active_training_seconds": 241.26569133299927,
+  "peak_mlx_bytes": 4326274129,
+  "all_recorded_gradients_finite": true,
+  "gradient_norm_range": [
+    0.019885888323187828,
+    9.659626960754395
+  ],
+  "config": {
+    "model": "models/base4b",
+    "sft_adapter": "adapters/run18-step0400",
+    "pairs": "data/preferences-run20-reviewed.jsonl",
+    "output": "adapters/run20",
+    "steps": 96,
+    "lr": 2e-05,
+    "beta": 0.1,
+    "nll_weight": 0.3,
+    "seed": 41,
+    "fresh_rank": 4,
+    "source_adapter_sha256": "2f41ff810e7ef19afbe9e18b0572257a91c6df0b6e486787c2b00622fb0f1272",
+    "pairs_sha256": "317482c2842678e55da92386696b7610a7c3edd275b7448a1dbc2f043cbbb035",
+    "trainable_parameters": 8875520,
+    "objective": "softplus(-beta * (policy chosen-rejected logp - frozen reference margin)) + chosen token NLL weight",
+    "reference": "Same SFT checkpoint, evaluated before any preference updates. Cached probabilities; no second resident model.",
+    "reviewer": "Author, not independent"
+  },
+  "zero_delta_preflight": {
+    "status": "pass",
+    "max_logp_difference": 0.0,
+    "pairs": [
+      {
+        "id": "novel_mentor_teasing_sample01",
+        "chosen_error": 0.0,
+        "rejected_error": 0.0
+      },
+      {
+        "id": "novel_mentor_biography_sample00",
+        "chosen_error": 0.0,
+        "rejected_error": 0.0
+      },
+      {
+        "id": "novel_mentor_biography_sample01",
+        "chosen_error": 0.0,
+        "rejected_error": 0.0
+      }
+    ],
+    "scope": "Actual loaded SFT versus zero fresh delta on the first three reviewed pairs; before any preference update"
+  },
+  "exports": {
+    "32": "e0407665c4c7c4ce83046549f6977fe4cfa13c7a8a51a783b541c34146a374ba",
+    "64": "25dc07163c1e3a6fadc6dac9ae4f9f58ede7f74d23db1b8c1749e17431eeab42",
+    "96": "41f1724fc8dd39d2107f7eaafcb4a7e578c7f495ab52a5c4a6a3d8901de4e54b"
+  },
+  "quality": "Pending explicit same-author rubric review; no independent quality claim"
+}

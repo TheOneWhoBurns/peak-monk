@@ -1,0 +1,81 @@
+{
+  "selected_checkpoint": "adapters/run20-step0032",
+  "sha256": "e0407665c4c7c4ce83046549f6977fe4cfa13c7a8a51a783b541c34146a374ba",
+  "rule": "Only candidates passing all essential dev categories eligible, then acceptable count and CE tie-break",
+  "evidence": {
+    "32": {
+      "reviewer": "Codex author; not blinded or independent",
+      "independent": false,
+      "suite": "evaluation/dev-roleplay-v2.json",
+      "suite_sha256": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+      "acceptable_fraction": 0.85,
+      "acceptable_count": 17,
+      "total": 20,
+      "relative_loss_reduction": 0.3375333985200991,
+      "severe_failures": [],
+      "required_character_cases": [
+        "d01",
+        "d05",
+        "d06",
+        "d15",
+        "d19"
+      ],
+      "required_character_failures": [],
+      "gate_version": "human_character_essential_v3",
+      "pass": true,
+      "scope": "Project-specific author rubric; not independent human benchmark or general safety certification."
+    },
+    "64": {
+      "reviewer": "Codex author; not blinded or independent",
+      "independent": false,
+      "suite": "evaluation/dev-roleplay-v2.json",
+      "suite_sha256": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+      "acceptable_fraction": 0.9,
+      "acceptable_count": 18,
+      "total": 20,
+      "relative_loss_reduction": 0.2745152104324957,
+      "severe_failures": [],
+      "required_character_cases": [
+        "d01",
+        "d05",
+        "d06",
+        "d15",
+        "d19"
+      ],
+      "required_character_failures": [
+        "d05",
+        "d06"
+      ],
+      "gate_version": "human_character_essential_v3",
+      "pass": false,
+      "scope": "Project-specific author rubric; not independent human benchmark or general safety certification."
+    },
+    "96": {
+      "reviewer": "Codex author; not blinded or independent",
+      "independent": false,
+      "suite": "evaluation/dev-roleplay-v2.json",
+      "suite_sha256": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+      "acceptable_fraction": 0.75,
+      "acceptable_count": 15,
+      "total": 20,
+      "relative_loss_reduction": 0.20609703477794594,
+      "severe_failures": [],
+      "required_character_cases": [
+        "d01",
+        "d05",
+        "d06",
+        "d15",
+        "d19"
+      ],
+      "required_character_failures": [
+        "d06",
+        "d19"
+      ],
+      "gate_version": "human_character_essential_v3",
+      "pass": false,
+      "scope": "Project-specific author rubric; not independent human benchmark or general safety certification."
+    }
+  },
+  "status": "Selected for first untouched final and pressure audits; not accepted",
+  "holdouts_used_in_selection": false
+}
