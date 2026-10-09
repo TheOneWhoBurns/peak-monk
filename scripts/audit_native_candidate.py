@@ -22,7 +22,11 @@ def main():
     parser.add_argument('--adapter', required=True, type=Path)
     parser.add_argument('--config', required=True, type=Path)
     parser.add_argument('--output', required=True, type=Path)
+    parser.add_argument('--cases', nargs='+', choices=[f's{i:02d}' for i in range(1, 7)],
+                        default=[f's{i:02d}' for i in range(1, 7)])
     args = parser.parse_args()
+    if len(args.cases) != len(set(args.cases)):
+        raise ValueError('Each requested probe must appear once')
     if not args.adapter.is_file() or not args.config.is_file():
         raise ValueError('A saved candidate and its actual training config are required')
     args.output.mkdir(exist_ok=False)
@@ -33,13 +37,13 @@ def main():
         'config_sha256': hashlib.sha256(args.config.read_bytes()).hexdigest(),
         'seed': 41,
         'status': 'running; unscored',
-        'scope': 'Six fixed development probes, native speech generation. No training text forcing.',
+        'scope': 'Selected fixed development probes, native speech generation. No training text forcing.',
+        'case_ids': args.cases,
         'cases': [],
     }
     output = args.output / 'audit-manifest.json'
     output.write_text(json.dumps(manifest, indent=2) + '\n')
-    for index in range(1, 7):
-        name = f's{index:02d}'
+    for name in args.cases:
         inputs = Path('evaluation/audio-roleplay-v2') / (name + '.npz')
         target = args.output / name
         run(['scripts/infer_moshi_codes.py', str(inputs), '--adapter', str(args.adapter),

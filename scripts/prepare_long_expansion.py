@@ -60,6 +60,7 @@ def main():
         'weighted_character_turns': sum(sum(m['role'] == 'assistant' for m in r['messages']) for r in rows),
         'distinct_character_turns': sum(sum(m['role'] == 'assistant' for m in r['messages']) for r in distinct.values()),
         'split_policy': 'All new families train-only; original validation and test bytes unchanged',
+        'test_file_scope': 'Inherited test.jsonl is the repeated development-loss file. Independent final conversation evaluation is separate in evaluation/final-roleplay-v2.json.',
         'limitations': 'Same-author synthetic data and review. Repetition does not add independent examples.',
         'output_sha256': {name: digest(args.output / name) for name in ('train.jsonl', 'valid.jsonl', 'test.jsonl')},
     }
