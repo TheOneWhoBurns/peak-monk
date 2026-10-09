@@ -69,6 +69,16 @@ def main():
     mx.random.seed(args.seed)
     model,tok=load(args.model,adapter_path=args.sft_adapter)
     model.freeze()
+    before_delta=[]
+    if args.fresh_rank:
+        model.eval()
+        for row in records[:3]:
+            chosen,offset=serialize(tok,row['messages'],row['chosen'])
+            rejected,other=serialize(tok,row['messages'],row['rejected']);assert offset==other
+            cp,_=log_probability(model,chosen,offset);rp,_=log_probability(model,rejected,offset)
+            mx.eval(cp,rp)
+            before_delta.append(dict(id=row['id'],chosen_logp=cp.item(),rejected_logp=rp.item()))
+            del chosen,rejected,cp,rp;mx.clear_cache()
     if args.fresh_rank:
         from character_delta import attach_character_delta,export_character_delta
         attach_character_delta(model,args.fresh_rank,cfg['lora_parameters']['dropout'])
@@ -103,6 +113,17 @@ def main():
         reference.append(dict(id=row['id'],chosen_logp=cp.item(),rejected_logp=rp.item()))
         mx.clear_cache()
     (out/'reference_logp.json').write_text(json.dumps(reference,indent=2)+'\n')
+    if before_delta:
+        errors=[dict(id=a['id'],chosen_error=abs(a['chosen_logp']-b['chosen_logp']),
+                     rejected_error=abs(a['rejected_logp']-b['rejected_logp']))
+                for a,b in zip(before_delta,reference[:len(before_delta)],strict=True)]
+        maximum=max(max(e['chosen_error'],e['rejected_error']) for e in errors)
+        passed=all(e['chosen_error']<=1e-4 and e['rejected_error']<=1e-4 for e in errors)
+        check=dict(status='pass' if passed else 'fail',max_logp_difference=maximum,
+                   pairs=errors,scope='Actual loaded SFT versus zero fresh delta on the first three reviewed pairs; before any preference update')
+        (out/'zero_delta_check.json').write_text(json.dumps(check,indent=2)+'\n')
+        if not passed:
+            raise RuntimeError('Fresh zero delta changed the reference policy; no preference updates performed')
     optimizer=optim.AdamW(learning_rate=args.lr,weight_decay=.01)
     vg=nn.value_and_grad(model,objective)
     order=list(range(len(records)));start=time.monotonic()

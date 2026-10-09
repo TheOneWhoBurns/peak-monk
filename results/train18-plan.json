@@ -1,6 +1,6 @@
 {
   "experiment": "run18",
-  "status": "Predeclared; queued behind native speech training",
+  "status": "Training active; step200 reviewed and rejected for essential control failure",
   "hypothesis": "Longer reciprocal dialogue plus token-normalized accumulation may improve coherence and identity persistence without more sharp fitting of short examples.",
   "parent": "adapters/run17-step0600",
   "parent_sha256": "8142d21b9a74ca9327f47c6ff8e64080d126e58a28b2bf42c9cf99c256dc8ab1",
@@ -28,5 +28,6 @@
   "evaluation": "Unchanged assistant_eos_v2 validation, same frozen development suite, essential-category release gate. Capture200,400,final524; final/pressure only after development pass.",
   "attribution": "Combined intervention: new conversations, different weighting, lower rate, and continuation. Not a one-variable causal ablation.",
   "data_provenance": "Original Codex-authored fiction with broad documented monastic/literary influences; not real transcripts, not independent multi-teacher generation. No rejected local teacher output admitted.",
-  "checks": "results/token-weighted-objective-check.json; accumulated tiny-model gradients compared to combined-batch token mean"
+  "checks": "results/token-weighted-objective-check.json; accumulated tiny-model gradients compared to combined-batch token mean",
+  "source_commit_at_launch": "52676da"
 }

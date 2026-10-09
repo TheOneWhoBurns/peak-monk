@@ -1,0 +1,40 @@
+{
+  "experiment": "run19",
+  "status": "Conditional plan only; no rollouts or preference training yet",
+  "trigger": "Only if no declared run18 capture passes the unchanged essential development gate",
+  "parent_selection": "After run18 completes, highest acceptable count among run17-step0600 and run18-step0200,step0400,final. Break ties by fewer essential-category failures, then lower comparable validation CE. Preserve every rejected result.",
+  "rationale": "Ordinary SFT has repeatedly left role conversion failures. Freeze the character SFT weights and train a fresh small preference delta on actual training-prompt mistakes rather than continue moving all old factors.",
+  "rollouts": {
+    "prompts": "data/preferences-v2.jsonl",
+    "prompts_sha256": "876718a4fa83cc952e22b66ab40ded1820d7bf642f66f5a3b2c6701dd4624314",
+    "prompt_count": 32,
+    "samples_per_prompt": 2,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "seed": 41,
+    "max_tokens": 140,
+    "system_prompt": null,
+    "extra_draws": "None; preserve all64fixed draws"
+  },
+  "review": "Same-author explicit comparisons. Keep a captured negative only when the authored chosen reply is substantively better for character, relevance or coherence. Do not label merely different acceptable answers rejected. Publish excluded draws and reasons. Require at least8reviewed pairs across at least4prompt families before launching; otherwise reassess without fabricating failures.",
+  "training": {
+    "fresh_rank": 4,
+    "frozen_parent": "All existing SFT factors and quantized base",
+    "updates": 96,
+    "learning_rate": 2e-05,
+    "beta": 0.1,
+    "chosen_nll_weight": 0.3,
+    "optimizer": "AdamW, weight decay.01, global gradient clipping1",
+    "seed": 41,
+    "checkpoints": [
+      32,
+      64,
+      96
+    ]
+  },
+  "implementation": "scripts/character_delta.py; tiny zero-delta and exported-factor equivalence checks already saved. Actual exported checkpoints must be evaluated.",
+  "evaluation": "Unchanged greedy20case development suite and essential gate for all3fixed exports; final/pressure only after development pass. No final or pressure answers in pair construction.",
+  "attribution": "Offline DPO plus chosen-response NLL, not Zero GRPO-DAPO reproduction. Combined intervention; no single-variable causal claim.",
+  "release": "No acceptance from loss, training completion or preference margin alone.",
+  "zero_delta_preflight": "Before any update, compare actual loaded SFT chosen/rejected total log probabilities on first3reviewed pairs against the zero fresh delta. Require every absolute difference<=1e-4. Save errors; refuse training on failure."
+}
