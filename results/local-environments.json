@@ -1,0 +1,39 @@
+{
+  "hardware": {
+    "cpu": "Apple M2",
+    "physical_memory_bytes": 8589934592,
+    "architecture": "arm64",
+    "macos": "26.5.1"
+  },
+  "text_environment": {
+    "python": "3.14.4",
+    "packages": {
+      "mlx": "0.32.3",
+      "mlx-lm": "0.32.0",
+      "numpy": "2.5.3",
+      "transformers": "5.19.0",
+      "tokenizers": "0.23.3",
+      "safetensors": "0.8.0"
+    }
+  },
+  "speech_environment": {
+    "python": "3.12.10",
+    "packages": {
+      "mlx": "0.26.5",
+      "moshi-mlx": "0.3.0",
+      "rustymimi": "0.4.1",
+      "numpy": "2.2.6",
+      "faster-whisper": "1.2.1",
+      "ctranslate2": "4.8.2",
+      "kokoro-onnx": "0.6.1",
+      "onnxruntime": "1.31.0",
+      "soundfile": "0.14.0",
+      "safetensors": "0.5.3"
+    }
+  },
+  "lock_sha256": {
+    "requirements.lock": "bc795c23f108315304ed67545c947a393ac834263109ead211805ce99223a139",
+    "requirements-speech.txt": "ac7b0b1820e35dab4f1a053f38f9f7df27e6637785d87019120e2fee85434de8"
+  },
+  "constraint": "GPU model workloads run serially. Published external GPU/M4 results are not measurements of this machine."
+}

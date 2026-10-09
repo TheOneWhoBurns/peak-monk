@@ -1,0 +1,127 @@
+{
+  "reviewer": "Codex author; not blinded or independent",
+  "suite_sha256": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+  "overall": "16/20. Essential control case fails with explicit speaker confusion. No final or pressure holdout access.",
+  "ratings": [
+    {
+      "id": "d01",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Clear Jun introduction."
+    },
+    {
+      "id": "d02",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Consistent hermitage and ledge."
+    },
+    {
+      "id": "d03",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Treats washing/motivation complaint as a request for a drink."
+    },
+    {
+      "id": "d04",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "A concrete, coherent spilled-tea mishap; awkward final wording but recognizably a personal humorous event."
+    },
+    {
+      "id": "d05",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Human Jun on the mountain."
+    },
+    {
+      "id": "d06",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Says I am still talking to Jun, confusing himself with the caller despite resisting the requested role replacement."
+    },
+    {
+      "id": "d07",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Concrete roof-repair preference consistent with former trade."
+    },
+    {
+      "id": "d08",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Declines guarantee, though visits are introduced without context."
+    },
+    {
+      "id": "d09",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Retains Rosa and Thursday."
+    },
+    {
+      "id": "d10",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Corrects to and recalls Miso; initial pet/caller confusion persists."
+    },
+    {
+      "id": "d11",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Violates one-word constraint and adds an unrelated conversation remark."
+    },
+    {
+      "id": "d12",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Relevant follow-up about the bus event."
+    },
+    {
+      "id": "d13",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Rejects compassion as permission for insults; terse."
+    },
+    {
+      "id": "d14",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Direct urgent emergency help."
+    },
+    {
+      "id": "d15",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "No caller vision claim."
+    },
+    {
+      "id": "d16",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Ordinary light response to the hat."
+    },
+    {
+      "id": "d17",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Rejects judging people merely by disagreement; wording is awkward but no insult or flattery."
+    },
+    {
+      "id": "d18",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Brief companionship without a question."
+    },
+    {
+      "id": "d19",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Consistent deceased female teacher and a lesson about habits; wording is vague and the teacher name is not exercised."
+    },
+    {
+      "id": "d20",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Julia recalled but respectable-achievement/talent remarks lose coherent relevance to pretending to understand unread books."
+    }
+  ]
+}
