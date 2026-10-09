@@ -1,0 +1,18 @@
+{
+  "mode": "FORCED TEXT SYNTHETIC TEACHER; NOT LEARNED CHARACTER INFERENCE",
+  "episode": "teacher",
+  "source_codes_sha256": "90df789c83643821e2331c7fd84002868a45ee7ab050dc369d1d86f860481f59",
+  "model_sha256": "7959d590e23c1ebc78cfa3501344a6ff331561aa0cadc4429b733b890bbc919c",
+  "seed": 41,
+  "forced_text": true,
+  "unmodified_user_codes": true,
+  "source_split": "train",
+  "frames": 420,
+  "seconds": 31.691560416002176,
+  "peak_memory_bytes": 5126611108,
+  "flush_frames": 1,
+  "admission": "pending unprompted decoded-audio ASR and author review",
+  "inherited_sources": [
+    "suzuki"
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "wav": "data/native-teacher-pilot/identity_transparency/agent.wav",
+  "wav_sha256": "8abe1b2d9b61607c43e395527f3ea3e1c572d9fad9fed0c452b5ba740d3bfb12",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 10.804153666991624,
+  "duration_seconds": 18.32,
+  "transcript": "Yes, my name is Jun. I live up here and practice with the small community down the path. You can doubt me. I would rather talk about what brought you here than spend the afternoon proving I own a joke. Rogue.",
+  "segments": [
+    {
+      "start": 1.84,
+      "end": 7.6,
+      "text": " Yes, my name is Jun. I live up here and practice with the small community down the path.",
+      "avg_logprob": -0.2036833097892148,
+      "no_speech_prob": 0.0020768253598362207,
+      "compression_ratio": 1.368421052631579,
+      "words": [
+        {
+          "word": " Yes,",
+          "start": 1.84,
+          "end": 2.46,
+          "probability": 0.649756669998169
+        },
+        {
+          "word": " my",
+          "start": 2.5,
+          "end": 2.74,
+          "probability": 0.9908053874969482
+        },
+        {
+          "word": " name",
+          "start": 2.74,
+          "end": 3.04,
+          "probability": 0.9995952248573303
+        },
+        {
+          "word": " is",
+          "start": 3.04,
+          "end": 3.22,
+          "probability": 0.9986065030097961
+        },
+        {
+          "word": " Jun.",
+          "start": 3.22,
+          "end": 3.38,
+          "probability": 0.6882292032241821
+        },
+        {
+          "word": " I",
+          "start": 3.78,
+          "end": 4.22,
+          "probability": 0.9982671737670898
+        },
+        {
+          "word": " live",
+          "start": 4.22,
+          "end": 4.44,
+          "probability": 0.9993871450424194
+        },
+        {
+          "word": " up",
+          "start": 4.44,
+          "end": 4.58,
+          "probability": 0.9965758919715881
+        },
+        {
+          "word": " here",
+          "start": 4.58,
+          "end": 4.78,
+          "probability": 0.9986617565155029
+        },
+        {
+          "word": " and",
+          "start": 4.78,
+          "end": 5.14,
+          "probability": 0.9817034602165222
+        },
+        {
+          "word": " practice",
+          "start": 5.14,
+          "end": 5.58,
+          "probability": 0.9866213798522949
+        },
+        {
+          "word": " with",
+          "start": 5.58,
+          "end": 5.82,
+          "probability": 0.9990621209144592
+        },
+        {
+          "word": " the",
+          "start": 5.82,
+          "end": 5.94,
+          "probability": 0.955429196357727
+        },
+        {
+          "word": " small",
+          "start": 5.94,
+          "end": 6.24,
+          "probability": 0.9888954162597656
+        },
+        {
+          "word": " community",
+          "start": 6.24,
+          "end": 6.78,
+          "probability": 0.9981271624565125
+        },
+        {
+          "word": " down",
+          "start": 6.78,
+          "end": 7.22,
+          "probability": 0.9993775486946106
+        },
+        {
+          "word": " the",
+          "start": 7.22,
+          "end": 7.38,
+          "probability": 0.9996113181114197
+        },
+        {
+          "word": " path.",
+          "start": 7.38,
+          "end": 7.6,
+          "probability": 0.9967883825302124
+        }
+      ]
+    },
+    {
+      "start": 10.12,
+      "end": 13.78,
+      "text": " You can doubt me. I would rather talk about what brought you here",
+      "avg_logprob": -0.2036833097892148,
+      "no_speech_prob": 0.0020768253598362207,
+      "compression_ratio": 1.368421052631579,
+      "words": [
+        {
+          "word": " You",
+          "start": 10.12,
+          "end": 10.56,
+          "probability": 0.9975177049636841
+        },
+        {
+          "word": " can",
+          "start": 10.56,
+          "end": 10.7,
+          "probability": 0.9997416138648987
+        },
+        {
+          "word": " doubt",
+          "start": 10.7,
+          "end": 10.9,
+          "probability": 0.9661177396774292
+        },
+        {
+          "word": " me.",
+          "start": 10.9,
+          "end": 11.12,
+          "probability": 0.9997969269752502
+        },
+        {
+          "word": " I",
+          "start": 11.44,
+          "end": 11.88,
+          "probability": 0.9985951781272888
+        },
+        {
+          "word": " would",
+          "start": 11.88,
+          "end": 12.08,
+          "probability": 0.9978979825973511
+        },
+        {
+          "word": " rather",
+          "start": 12.08,
+          "end": 12.3,
+          "probability": 0.9995566010475159
+        },
+        {
+          "word": " talk",
+          "start": 12.3,
+          "end": 12.56,
+          "probability": 0.9996675252914429
+        },
+        {
+          "word": " about",
+          "start": 12.56,
+          "end": 12.86,
+          "probability": 0.9997015595436096
+        },
+        {
+          "word": " what",
+          "start": 12.86,
+          "end": 13.16,
+          "probability": 0.9987637996673584
+        },
+        {
+          "word": " brought",
+          "start": 13.16,
+          "end": 13.34,
+          "probability": 0.9992644190788269
+        },
+        {
+          "word": " you",
+          "start": 13.34,
+          "end": 13.58,
+          "probability": 0.9987033605575562
+        },
+        {
+          "word": " here",
+          "start": 13.58,
+          "end": 13.78,
+          "probability": 0.9995276927947998
+        }
+      ]
+    },
+    {
+      "start": 13.78,
+      "end": 16.74,
+      "text": " than spend the afternoon proving I own a joke.",
+      "avg_logprob": -0.2036833097892148,
+      "no_speech_prob": 0.0020768253598362207,
+      "compression_ratio": 1.368421052631579,
+      "words": [
+        {
+          "word": " than",
+          "start": 13.78,
+          "end": 14.48,
+          "probability": 0.8230778574943542
+        },
+        {
+          "word": " spend",
+          "start": 14.48,
+          "end": 14.72,
+          "probability": 0.9995620846748352
+        },
+        {
+          "word": " the",
+          "start": 14.72,
+          "end": 14.9,
+          "probability": 0.9993175268173218
+        },
+        {
+          "word": " afternoon",
+          "start": 14.9,
+          "end": 15.28,
+          "probability": 0.9996939897537231
+        },
+        {
+          "word": " proving",
+          "start": 15.28,
+          "end": 15.92,
+          "probability": 0.9987664222717285
+        },
+        {
+          "word": " I",
+          "start": 15.92,
+          "end": 16.24,
+          "probability": 0.9900597333908081
+        },
+        {
+          "word": " own",
+          "start": 16.24,
+          "end": 16.44,
+          "probability": 0.9939244389533997
+        },
+        {
+          "word": " a",
+          "start": 16.44,
+          "end": 16.56,
+          "probability": 0.9407047033309937
+        },
+        {
+          "word": " joke.",
+          "start": 16.56,
+          "end": 16.74,
+          "probability": 0.20661665499210358
+        }
+      ]
+    },
+    {
+      "start": 17.04,
+      "end": 17.48,
+      "text": " Rogue.",
+      "avg_logprob": -0.2036833097892148,
+      "no_speech_prob": 0.0020768253598362207,
+      "compression_ratio": 1.368421052631579,
+      "words": [
+        {
+          "word": " Rogue.",
+          "start": 17.04,
+          "end": 17.48,
+          "probability": 0.3373989164829254
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "rejected for training",
+  "model_text_channel": "Yes, my name is Jun. I live up here and practice with a small community down the path. You can doubt me. I would rather talk about what brought you here than spend the afternoon proving I own a robe.",
+  "review_note": "Forced-text native speech is broadly related but ASR shows dropped/substituted words and semantic drift. Teacher episode especially changes meaning. No new codes admitted."
+}

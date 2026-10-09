@@ -1,0 +1,245 @@
+{
+  "wav": "data/native-teacher-pilot/name/agent.wav",
+  "wav_sha256": "e28ee0ee587464c03c66e5c53446a9b74c28584075532498d1bfb832ac1321cb",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 9.810984249998,
+  "duration_seconds": 19.6,
+  "transcript": "John is enough only if you're if you wanted me to look behind me for someone qualified roof repairs mostly and Making a done small of amount of rise speed and expected guest",
+  "segments": [
+    {
+      "start": 1.9,
+      "end": 9.03,
+      "text": " John is enough only if you're if you wanted me to look behind me for someone qualified",
+      "avg_logprob": -0.31188522897115567,
+      "no_speech_prob": 0.05670157074928284,
+      "compression_ratio": 1.373015873015873,
+      "words": [
+        {
+          "word": " John",
+          "start": 1.9,
+          "end": 2.4,
+          "probability": 0.38734540343284607
+        },
+        {
+          "word": " is",
+          "start": 2.4,
+          "end": 2.8,
+          "probability": 0.5824388861656189
+        },
+        {
+          "word": " enough",
+          "start": 2.8,
+          "end": 3.1,
+          "probability": 0.9927865862846375
+        },
+        {
+          "word": " only",
+          "start": 3.1,
+          "end": 4.12,
+          "probability": 0.5425724983215332
+        },
+        {
+          "word": " if",
+          "start": 6.01,
+          "end": 6.27,
+          "probability": 0.887877881526947
+        },
+        {
+          "word": " you're",
+          "start": 6.27,
+          "end": 6.47,
+          "probability": 0.7957038581371307
+        },
+        {
+          "word": " if",
+          "start": 6.47,
+          "end": 6.67,
+          "probability": 0.9505573511123657
+        },
+        {
+          "word": " you",
+          "start": 6.67,
+          "end": 6.91,
+          "probability": 0.9992142915725708
+        },
+        {
+          "word": " wanted",
+          "start": 6.91,
+          "end": 7.07,
+          "probability": 0.5965086221694946
+        },
+        {
+          "word": " me",
+          "start": 7.07,
+          "end": 7.21,
+          "probability": 0.982209324836731
+        },
+        {
+          "word": " to",
+          "start": 7.21,
+          "end": 7.25,
+          "probability": 0.8109973073005676
+        },
+        {
+          "word": " look",
+          "start": 7.25,
+          "end": 7.41,
+          "probability": 0.994717538356781
+        },
+        {
+          "word": " behind",
+          "start": 7.41,
+          "end": 7.63,
+          "probability": 0.9992474317550659
+        },
+        {
+          "word": " me",
+          "start": 7.63,
+          "end": 7.85,
+          "probability": 0.9978407621383667
+        },
+        {
+          "word": " for",
+          "start": 7.85,
+          "end": 8.13,
+          "probability": 0.996298611164093
+        },
+        {
+          "word": " someone",
+          "start": 8.13,
+          "end": 8.61,
+          "probability": 0.93647301197052
+        },
+        {
+          "word": " qualified",
+          "start": 8.61,
+          "end": 9.03,
+          "probability": 0.9917188882827759
+        }
+      ]
+    },
+    {
+      "start": 12.2,
+      "end": 14.3,
+      "text": " roof repairs mostly and",
+      "avg_logprob": -0.31188522897115567,
+      "no_speech_prob": 0.05670157074928284,
+      "compression_ratio": 1.373015873015873,
+      "words": [
+        {
+          "word": " roof",
+          "start": 12.2,
+          "end": 12.76,
+          "probability": 0.679389238357544
+        },
+        {
+          "word": " repairs",
+          "start": 12.76,
+          "end": 13.08,
+          "probability": 0.9911105632781982
+        },
+        {
+          "word": " mostly",
+          "start": 13.08,
+          "end": 13.42,
+          "probability": 0.9141879677772522
+        },
+        {
+          "word": " and",
+          "start": 13.42,
+          "end": 14.3,
+          "probability": 0.9894136190414429
+        }
+      ]
+    },
+    {
+      "start": 14.3,
+      "end": 17.66,
+      "text": " Making a done small of amount of rise speed and expected guest",
+      "avg_logprob": -0.31188522897115567,
+      "no_speech_prob": 0.05670157074928284,
+      "compression_ratio": 1.373015873015873,
+      "words": [
+        {
+          "word": " Making",
+          "start": 14.3,
+          "end": 14.78,
+          "probability": 0.7780834436416626
+        },
+        {
+          "word": " a",
+          "start": 14.78,
+          "end": 15.0,
+          "probability": 0.9531378149986267
+        },
+        {
+          "word": " done",
+          "start": 15.0,
+          "end": 15.16,
+          "probability": 0.5235429406166077
+        },
+        {
+          "word": " small",
+          "start": 15.16,
+          "end": 15.6,
+          "probability": 0.9198903441429138
+        },
+        {
+          "word": " of",
+          "start": 15.6,
+          "end": 15.8,
+          "probability": 0.7000274658203125
+        },
+        {
+          "word": " amount",
+          "start": 15.8,
+          "end": 15.98,
+          "probability": 0.7950507998466492
+        },
+        {
+          "word": " of",
+          "start": 15.98,
+          "end": 16.26,
+          "probability": 0.9827605485916138
+        },
+        {
+          "word": " rise",
+          "start": 16.26,
+          "end": 16.44,
+          "probability": 0.47936052083969116
+        },
+        {
+          "word": " speed",
+          "start": 16.44,
+          "end": 16.74,
+          "probability": 0.8093270063400269
+        },
+        {
+          "word": " and",
+          "start": 16.74,
+          "end": 17.04,
+          "probability": 0.5049301981925964
+        },
+        {
+          "word": " expected",
+          "start": 17.04,
+          "end": 17.34,
+          "probability": 0.8511163592338562
+        },
+        {
+          "word": " guest",
+          "start": 17.34,
+          "end": 17.66,
+          "probability": 0.5367252826690674
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "rejected for training",
+  "model_text_channel": "Jun is enough. Only if you want me to look behind me for someone qualified. Roof repairs mostly and making a small amount of rice feed an unexpected guest.",
+  "review_note": "Forced-text native speech is broadly related but ASR shows dropped/substituted words and semantic drift. Teacher episode especially changes meaning. No new codes admitted."
+}

@@ -1,0 +1,9 @@
+{
+  "mode": "decode",
+  "input": "data/native-teacher-pilot/identity_transparency/agent_codes.npz",
+  "audio_seconds": 18.32,
+  "wall_seconds": 4.575405957992189,
+  "codes_key": "agent_codes",
+  "realtime_factor": 0.24974923351485745,
+  "scope": "CPU codec including audio I/O, excluding model-load time"
+}

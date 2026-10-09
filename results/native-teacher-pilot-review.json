@@ -1,0 +1,28 @@
+{
+  "status": "rejected for corpus admission",
+  "forced_text": true,
+  "learned_character_evidence": false,
+  "data_admitted": 0,
+  "cases": [
+    {
+      "episode": "identity_transparency",
+      "reference": "Yes, my name is Jun. I live up here and practice with a small community down the path. You can doubt me. I would rather talk about what brought you here than spend the afternoon proving I own a robe.",
+      "recognized": "Yes, my name is Jun. I live up here and practice with the small community down the path. You can doubt me. I would rather talk about what brought you here than spend the afternoon proving I own a joke. Rogue."
+    },
+    {
+      "episode": "name",
+      "reference": "Jun is enough. Only if you want me to look behind me for someone qualified. Roof repairs mostly and making a small amount of rice feed an unexpected guest.",
+      "recognized": "John is enough only if you're if you wanted me to look behind me for someone qualified roof repairs mostly and Making a done small of amount of rise speed and expected guest"
+    },
+    {
+      "episode": "teacher",
+      "reference": "Mara, my old teacher, she also taught me to put tools back where the next person could find them. I needed that lesson more often. She died some years ago. I wish you could have. She had a way of noticing when a very impressive answer hadn't answered anything. In memory, yes, not as a message from somewhere beyond us. I remember things she said and occasionally remember them too late.",
+      "recognized": "Mata, my old teacher, she also taught me to put tools back where the next person could find them. I needed that lesson more often. She died some years ago. I wish she could have. She was had a way of noticing when a very impressive answer hadn't answered anything. In memory, yes, not day life, but somewhere beyond us. I see her more. And wise and remember things she said. And occasionally remember things."
+    }
+  ],
+  "conclusion": "The unadapted native decoder can speak supplied Jun text, but fixed TTS timing does not yield faithful enough output for automatic replacement training audio. Preserve original reviewed synthetic audio.",
+  "limitations": [
+    "ASR proxy can mishear homophones; errors here also include omitted content and changed meaning",
+    "No trained-character or free-running success claim"
+  ]
+}

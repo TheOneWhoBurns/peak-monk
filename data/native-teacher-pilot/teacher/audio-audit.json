@@ -1,0 +1,567 @@
+{
+  "wav": "data/native-teacher-pilot/teacher/agent.wav",
+  "wav_sha256": "d72f00c067e1963e8ea12b357cbc781ade07348c432226d8e98dbae7bd9d5713",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 13.944682167013525,
+  "duration_seconds": 33.6,
+  "transcript": "Mata, my old teacher, she also taught me to put tools back where the next person could find them. I needed that lesson more often. She died some years ago. I wish she could have. She was had a way of noticing when a very impressive answer hadn't answered anything. In memory, yes, not day life, but somewhere beyond us. I see her more. And wise and remember things she said. And occasionally remember things.",
+  "segments": [
+    {
+      "start": 2.86,
+      "end": 8.26,
+      "text": " Mata, my old teacher, she also taught me to put tools back where the next person could",
+      "avg_logprob": -0.2028595402038523,
+      "no_speech_prob": 0.004625645466148853,
+      "compression_ratio": 1.6653061224489796,
+      "words": [
+        {
+          "word": " Mata,",
+          "start": 2.86,
+          "end": 3.44,
+          "probability": 0.4788554757833481
+        },
+        {
+          "word": " my",
+          "start": 3.58,
+          "end": 3.76,
+          "probability": 0.9936829805374146
+        },
+        {
+          "word": " old",
+          "start": 3.76,
+          "end": 3.98,
+          "probability": 0.9968633651733398
+        },
+        {
+          "word": " teacher,",
+          "start": 3.98,
+          "end": 4.36,
+          "probability": 0.9976358413696289
+        },
+        {
+          "word": " she",
+          "start": 4.54,
+          "end": 5.04,
+          "probability": 0.9800338745117188
+        },
+        {
+          "word": " also",
+          "start": 5.04,
+          "end": 5.32,
+          "probability": 0.9883642196655273
+        },
+        {
+          "word": " taught",
+          "start": 5.32,
+          "end": 5.7,
+          "probability": 0.9875265955924988
+        },
+        {
+          "word": " me",
+          "start": 5.7,
+          "end": 5.92,
+          "probability": 0.9990752935409546
+        },
+        {
+          "word": " to",
+          "start": 5.92,
+          "end": 6.04,
+          "probability": 0.9890055060386658
+        },
+        {
+          "word": " put",
+          "start": 6.04,
+          "end": 6.22,
+          "probability": 0.9986514449119568
+        },
+        {
+          "word": " tools",
+          "start": 6.22,
+          "end": 6.54,
+          "probability": 0.9972746968269348
+        },
+        {
+          "word": " back",
+          "start": 6.54,
+          "end": 6.8,
+          "probability": 0.9973949193954468
+        },
+        {
+          "word": " where",
+          "start": 6.8,
+          "end": 7.14,
+          "probability": 0.9869697093963623
+        },
+        {
+          "word": " the",
+          "start": 7.14,
+          "end": 7.46,
+          "probability": 0.9921972155570984
+        },
+        {
+          "word": " next",
+          "start": 7.46,
+          "end": 7.6,
+          "probability": 0.9964348077774048
+        },
+        {
+          "word": " person",
+          "start": 7.6,
+          "end": 8.06,
+          "probability": 0.9984492063522339
+        },
+        {
+          "word": " could",
+          "start": 8.06,
+          "end": 8.26,
+          "probability": 0.9879902005195618
+        }
+      ]
+    },
+    {
+      "start": 8.26,
+      "end": 8.78,
+      "text": " find them.",
+      "avg_logprob": -0.2028595402038523,
+      "no_speech_prob": 0.004625645466148853,
+      "compression_ratio": 1.6653061224489796,
+      "words": [
+        {
+          "word": " find",
+          "start": 8.26,
+          "end": 8.58,
+          "probability": 0.999154806137085
+        },
+        {
+          "word": " them.",
+          "start": 8.58,
+          "end": 8.78,
+          "probability": 0.9988034963607788
+        }
+      ]
+    },
+    {
+      "start": 8.96,
+      "end": 10.94,
+      "text": " I needed that lesson more often.",
+      "avg_logprob": -0.2028595402038523,
+      "no_speech_prob": 0.004625645466148853,
+      "compression_ratio": 1.6653061224489796,
+      "words": [
+        {
+          "word": " I",
+          "start": 8.96,
+          "end": 9.46,
+          "probability": 0.9920005798339844
+        },
+        {
+          "word": " needed",
+          "start": 9.46,
+          "end": 9.78,
+          "probability": 0.9981119632720947
+        },
+        {
+          "word": " that",
+          "start": 9.78,
+          "end": 10.02,
+          "probability": 0.9990543723106384
+        },
+        {
+          "word": " lesson",
+          "start": 10.02,
+          "end": 10.36,
+          "probability": 0.9955222606658936
+        },
+        {
+          "word": " more",
+          "start": 10.36,
+          "end": 10.6,
+          "probability": 0.9972791075706482
+        },
+        {
+          "word": " often.",
+          "start": 10.6,
+          "end": 10.94,
+          "probability": 0.9975226521492004
+        }
+      ]
+    },
+    {
+      "start": 12.98,
+      "end": 14.62,
+      "text": " She died some years ago.",
+      "avg_logprob": -0.2028595402038523,
+      "no_speech_prob": 0.004625645466148853,
+      "compression_ratio": 1.6653061224489796,
+      "words": [
+        {
+          "word": " She",
+          "start": 12.98,
+          "end": 13.54,
+          "probability": 0.9550464153289795
+        },
+        {
+          "word": " died",
+          "start": 13.54,
+          "end": 13.82,
+          "probability": 0.9959452748298645
+        },
+        {
+          "word": " some",
+          "start": 13.82,
+          "end": 14.06,
+          "probability": 0.9981847405433655
+        },
+        {
+          "word": " years",
+          "start": 14.06,
+          "end": 14.3,
+          "probability": 0.9992519021034241
+        },
+        {
+          "word": " ago.",
+          "start": 14.3,
+          "end": 14.62,
+          "probability": 0.9994968175888062
+        }
+      ]
+    },
+    {
+      "start": 14.82,
+      "end": 16.04,
+      "text": " I wish she could have.",
+      "avg_logprob": -0.2028595402038523,
+      "no_speech_prob": 0.004625645466148853,
+      "compression_ratio": 1.6653061224489796,
+      "words": [
+        {
+          "word": " I",
+          "start": 14.82,
+          "end": 15.28,
+          "probability": 0.9950842261314392
+        },
+        {
+          "word": " wish",
+          "start": 15.28,
+          "end": 15.5,
+          "probability": 0.9979158043861389
+        },
+        {
+          "word": " she",
+          "start": 15.5,
+          "end": 15.62,
+          "probability": 0.5308685302734375
+        },
+        {
+          "word": " could",
+          "start": 15.62,
+          "end": 15.8,
+          "probability": 0.993062436580658
+        },
+        {
+          "word": " have.",
+          "start": 15.8,
+          "end": 16.04,
+          "probability": 0.8499769568443298
+        }
+      ]
+    },
+    {
+      "start": 16.28,
+      "end": 21.1,
+      "text": " She was had a way of noticing when a very impressive answer hadn't answered anything.",
+      "avg_logprob": -0.2028595402038523,
+      "no_speech_prob": 0.004625645466148853,
+      "compression_ratio": 1.6653061224489796,
+      "words": [
+        {
+          "word": " She",
+          "start": 16.28,
+          "end": 16.56,
+          "probability": 0.9887340068817139
+        },
+        {
+          "word": " was",
+          "start": 16.56,
+          "end": 16.82,
+          "probability": 0.3844837248325348
+        },
+        {
+          "word": " had",
+          "start": 16.82,
+          "end": 17.08,
+          "probability": 0.6375409960746765
+        },
+        {
+          "word": " a",
+          "start": 17.08,
+          "end": 17.24,
+          "probability": 0.9826865196228027
+        },
+        {
+          "word": " way",
+          "start": 17.24,
+          "end": 17.4,
+          "probability": 0.9995949864387512
+        },
+        {
+          "word": " of",
+          "start": 17.4,
+          "end": 17.5,
+          "probability": 0.9994404911994934
+        },
+        {
+          "word": " noticing",
+          "start": 17.5,
+          "end": 17.86,
+          "probability": 0.9991163611412048
+        },
+        {
+          "word": " when",
+          "start": 17.86,
+          "end": 18.2,
+          "probability": 0.9943513870239258
+        },
+        {
+          "word": " a",
+          "start": 18.2,
+          "end": 18.64,
+          "probability": 0.9945401549339294
+        },
+        {
+          "word": " very",
+          "start": 18.64,
+          "end": 18.86,
+          "probability": 0.9996764659881592
+        },
+        {
+          "word": " impressive",
+          "start": 18.86,
+          "end": 19.26,
+          "probability": 0.9992840886116028
+        },
+        {
+          "word": " answer",
+          "start": 19.26,
+          "end": 19.6,
+          "probability": 0.9983306527137756
+        },
+        {
+          "word": " hadn't",
+          "start": 19.6,
+          "end": 20.24,
+          "probability": 0.9879079759120941
+        },
+        {
+          "word": " answered",
+          "start": 20.24,
+          "end": 20.74,
+          "probability": 0.9970544576644897
+        },
+        {
+          "word": " anything.",
+          "start": 20.74,
+          "end": 21.1,
+          "probability": 0.9978196620941162
+        }
+      ]
+    },
+    {
+      "start": 23.72,
+      "end": 27.86,
+      "text": " In memory, yes, not day life, but somewhere beyond us.",
+      "avg_logprob": -0.2028595402038523,
+      "no_speech_prob": 0.004625645466148853,
+      "compression_ratio": 1.6653061224489796,
+      "words": [
+        {
+          "word": " In",
+          "start": 23.72,
+          "end": 24.28,
+          "probability": 0.9712805151939392
+        },
+        {
+          "word": " memory,",
+          "start": 24.28,
+          "end": 24.62,
+          "probability": 0.9961395859718323
+        },
+        {
+          "word": " yes,",
+          "start": 24.76,
+          "end": 25.0,
+          "probability": 0.9926750063896179
+        },
+        {
+          "word": " not",
+          "start": 25.14,
+          "end": 25.48,
+          "probability": 0.9975224137306213
+        },
+        {
+          "word": " day",
+          "start": 25.48,
+          "end": 25.94,
+          "probability": 0.851884126663208
+        },
+        {
+          "word": " life,",
+          "start": 25.94,
+          "end": 26.2,
+          "probability": 0.8087152242660522
+        },
+        {
+          "word": " but",
+          "start": 26.34,
+          "end": 26.84,
+          "probability": 0.9996196031570435
+        },
+        {
+          "word": " somewhere",
+          "start": 26.84,
+          "end": 27.18,
+          "probability": 0.9990814924240112
+        },
+        {
+          "word": " beyond",
+          "start": 27.18,
+          "end": 27.6,
+          "probability": 0.9993187189102173
+        },
+        {
+          "word": " us.",
+          "start": 27.6,
+          "end": 27.86,
+          "probability": 0.9618011116981506
+        }
+      ]
+    },
+    {
+      "start": 27.96,
+      "end": 28.98,
+      "text": " I see her more.",
+      "avg_logprob": -0.2028595402038523,
+      "no_speech_prob": 0.004625645466148853,
+      "compression_ratio": 1.6653061224489796,
+      "words": [
+        {
+          "word": " I",
+          "start": 27.96,
+          "end": 28.32,
+          "probability": 0.99603670835495
+        },
+        {
+          "word": " see",
+          "start": 28.32,
+          "end": 28.6,
+          "probability": 0.9991342425346375
+        },
+        {
+          "word": " her",
+          "start": 28.6,
+          "end": 28.78,
+          "probability": 0.999459445476532
+        },
+        {
+          "word": " more.",
+          "start": 28.78,
+          "end": 28.98,
+          "probability": 0.9958083629608154
+        }
+      ]
+    },
+    {
+      "start": 29.3,
+      "end": 31.72,
+      "text": " And wise and remember things she said.",
+      "avg_logprob": -0.2028595402038523,
+      "no_speech_prob": 0.004625645466148853,
+      "compression_ratio": 1.6653061224489796,
+      "words": [
+        {
+          "word": " And",
+          "start": 29.3,
+          "end": 29.86,
+          "probability": 0.9875806570053101
+        },
+        {
+          "word": " wise",
+          "start": 29.86,
+          "end": 30.14,
+          "probability": 0.9866966605186462
+        },
+        {
+          "word": " and",
+          "start": 30.14,
+          "end": 30.54,
+          "probability": 0.5407923460006714
+        },
+        {
+          "word": " remember",
+          "start": 30.54,
+          "end": 30.82,
+          "probability": 0.981604814529419
+        },
+        {
+          "word": " things",
+          "start": 30.82,
+          "end": 31.12,
+          "probability": 0.9962736368179321
+        },
+        {
+          "word": " she",
+          "start": 31.12,
+          "end": 31.5,
+          "probability": 0.32779884338378906
+        },
+        {
+          "word": " said.",
+          "start": 31.5,
+          "end": 31.72,
+          "probability": 0.9982153177261353
+        }
+      ]
+    },
+    {
+      "start": 31.94,
+      "end": 33.58,
+      "text": " And occasionally remember things.",
+      "avg_logprob": -0.2028595402038523,
+      "no_speech_prob": 0.004625645466148853,
+      "compression_ratio": 1.6653061224489796,
+      "words": [
+        {
+          "word": " And",
+          "start": 31.94,
+          "end": 32.5,
+          "probability": 0.9961407780647278
+        },
+        {
+          "word": " occasionally",
+          "start": 32.5,
+          "end": 32.82,
+          "probability": 0.9989421963691711
+        },
+        {
+          "word": " remember",
+          "start": 32.82,
+          "end": 33.34,
+          "probability": 0.6323371529579163
+        },
+        {
+          "word": " things.",
+          "start": 33.34,
+          "end": 33.58,
+          "probability": 0.3149413764476776
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "rejected for training",
+  "model_text_channel": "Mara, my old teacher, she also taught me to put tools back where the next person could find them. I needed that lesson more often. She died some years ago. I wish you could have. She had a way of noticing when a very impressive answer hadn't answered anything. In memory, yes, not as a message from somewhere beyond us. I remember things she said and occasionally remember them too late.",
+  "review_note": "Forced-text native speech is broadly related but ASR shows dropped/substituted words and semantic drift. Teacher episode especially changes meaning. No new codes admitted."
+}

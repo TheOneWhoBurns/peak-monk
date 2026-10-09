@@ -5,6 +5,6 @@
   "baseline_loss": 5.3405680656433105,
   "baseline_note": "Validation loss is computed without persona text, even in the separate prompted-generation control. Identical tokenizer/template fingerprint required.",
   "iterations": "unlimited",
-  "active_experiment": "speech-run02 padding ablation; Qwen3.5 teacher v5 queued; base4b downloading",
-  "strategy": "Native speech run01 rejected after all six probes; test lower padding weight with frozen validation. Improve local synthetic conversations and compare a 4B base model against assistant-tuned history."
+  "active_experiment": "speech-run03 LR ablation; base4b download; writer-mode synthesis pilot queued",
+  "strategy": "Two native speech candidates rejected. Spoken-token audit shows weak learning, prompting a tenfold LR test. Native forced-text audio and Qwen3.5 role-simulation pilots rejected for data admission. Prepare 4B base SFT and test joint writer synthesis."
 }
