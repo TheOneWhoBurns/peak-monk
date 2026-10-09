@@ -1,6 +1,6 @@
 {
   "experiment": "run20",
-  "status": "Training in progress; zero-delta preflight passed, evaluations queued serially",
+  "status": "Closed: step32 passes dev but fails first final and pressure; later checkpoints fail dev",
   "trigger": "run19 lacked real negatives because all32prompt histories were already in SFT; use32novel histories with the same parent and fixed sampling/training parameters",
   "parent_selection": "Same run18-step0400 parent selected under run19 declared rule; no new parent search",
   "rationale": "Ordinary SFT has repeatedly left role conversion failures. Freeze the character SFT weights and train a fresh small preference delta on actual training-prompt mistakes rather than continue moving all old factors.",

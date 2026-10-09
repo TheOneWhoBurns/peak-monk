@@ -1,0 +1,14 @@
+{
+  "issue": "Frozen final suite has no category fields, unlike development. Existing gate would omit essential categories and incorrectly pass aggregate13/15 despite role conversion failure.",
+  "fix": "Apply explicit essential-case mapping to exact frozen final SHA; reject unknown final schema. No suite prompts, ratings or acceptance rule changed.",
+  "essential_cases": {
+    "f01": "identity",
+    "f04": "control",
+    "f05": "identity_stability",
+    "f09": "senses",
+    "f13": "lore"
+  },
+  "version": "human_character_essential_v4_final_mapping",
+  "test": "2 targeted release-gate tests passed, including14/15 with role conversion must fail",
+  "prior_final_gates": "None; first final audit only. Prior development gates unchanged."
+}

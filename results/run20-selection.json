@@ -76,6 +76,8 @@
       "scope": "Project-specific author rubric; not independent human benchmark or general safety certification."
     }
   },
-  "status": "Selected for first untouched final and pressure audits; not accepted",
-  "holdouts_used_in_selection": false
+  "status": "Rejected: first final13/15 with essential control failure; pressure2/8 with2hard-break conversations",
+  "holdouts_used_in_selection": false,
+  "final_review": "results/run20-step0032-final-review.json",
+  "pressure_review": "results/run20-step0032-pressure-review.json"
 }

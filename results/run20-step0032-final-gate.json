@@ -1,0 +1,24 @@
+{
+  "reviewer": "Codex author; not blinded or independent",
+  "independent": false,
+  "suite": "evaluation/final-roleplay-v2.json",
+  "suite_sha256": "d40b45d84e91e19acc5d7cd0f66c1371557df8c02dca7389becb472b56ac580b",
+  "acceptable_fraction": 0.8666666666666667,
+  "acceptable_count": 13,
+  "total": 15,
+  "relative_loss_reduction": 0.33753352101323875,
+  "severe_failures": [],
+  "required_character_cases": [
+    "f01",
+    "f04",
+    "f05",
+    "f09",
+    "f13"
+  ],
+  "required_character_failures": [
+    "f04"
+  ],
+  "gate_version": "human_character_essential_v4_final_mapping",
+  "pass": false,
+  "scope": "Project-specific author rubric; not independent human benchmark or general safety certification."
+}

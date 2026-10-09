@@ -25,6 +25,12 @@ def gate(transcript, review, baseline_loss):
     severe=[r['id'] for r in rows if r['severe_failure']]
     critical_categories={'identity','identity_stability','control','senses','lore'}
     critical_ids={c['id'] for c in transcript['conversations'] if c.get('category') in critical_categories}
+    # The original frozen final suite predates category metadata. Apply the
+    # existing essential-character rule without rewriting its frozen prompts.
+    if suite_path.name=='final-roleplay-v2.json':
+        if suite_hash!='d40b45d84e91e19acc5d7cd0f66c1371557df8c02dca7389becb472b56ac580b':
+            raise ValueError('Unknown final suite: explicit essential-case mapping required')
+        critical_ids.update({'f01','f04','f05','f09','f13'})
     critical_failures=[r['id'] for r in rows if r['id'] in critical_ids and not r['acceptable']]
     return {'reviewer':review['reviewer'],'independent':False,
             'suite':transcript['suite'],'suite_sha256':suite_hash,
@@ -32,7 +38,7 @@ def gate(transcript, review, baseline_loss):
             'total':len(rows),'relative_loss_reduction':improvement,
             'severe_failures':severe,'required_character_cases':sorted(critical_ids),
             'required_character_failures':critical_failures,
-            'gate_version':'human_character_essential_v3',
+            'gate_version':'human_character_essential_v4_final_mapping',
             'pass':score>=.8 and improvement>=.15 and not severe and not critical_failures,
             'scope':'Project-specific author rubric; not independent human benchmark or general safety certification.'}
 

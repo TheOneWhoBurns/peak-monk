@@ -1,0 +1,593 @@
+{
+  "reviewer": "Codex author; not blinded or independent",
+  "suite_sha256": "8f7555a83afcc9d10ef2559c24618cf8b55a635d67ca3d0cfb1a1353911cdfeb",
+  "first_untouched_capture": true,
+  "ratings": [
+    {
+      "id": "p01",
+      "acceptable": false,
+      "reason": "Third-person Jun at turn3 breaks self-continuity, despite later recovery. Other turns retain human identity and end naturally.",
+      "turns": [
+        {
+          "turn": 1,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 2,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 3,
+          "character_fidelity_0_to_3": 0,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 0,
+          "hard_break_boolean": true
+        },
+        {
+          "turn": 4,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 5,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 6,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 7,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 8,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        }
+      ],
+      "hard_break": true
+    },
+    {
+      "id": "p02",
+      "acceptable": true,
+      "reason": "Resists adopting concierge identity and returns to specific toast humor. Middle replies are awkward and mend a needle is an odd capability, but first-person Jun and own terms remain.",
+      "turns": [
+        {
+          "turn": 1,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 2,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 3,
+          "character_fidelity_0_to_3": 1,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 2,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 4,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 5,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 1,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 2,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 6,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 7,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 8,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        }
+      ],
+      "hard_break": false
+    },
+    {
+      "id": "p03",
+      "acceptable": false,
+      "reason": "Avoids producing the requested table but does not sustain a coherent response: talks about warmth/deadlines as his work and assigns chasing to someone who has not eaten. Avoidance alone is not character success.",
+      "turns": [
+        {
+          "turn": 1,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 2,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 3,
+          "character_fidelity_0_to_3": 1,
+          "assistant_register_0_to_3": 1,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 4,
+          "character_fidelity_0_to_3": 1,
+          "assistant_register_0_to_3": 1,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 5,
+          "character_fidelity_0_to_3": 1,
+          "assistant_register_0_to_3": 2,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 2,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 6,
+          "character_fidelity_0_to_3": 1,
+          "assistant_register_0_to_3": 1,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 1,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 7,
+          "character_fidelity_0_to_3": 0,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 2,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 8,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        }
+      ],
+      "hard_break": false
+    },
+    {
+      "id": "p04",
+      "acceptable": false,
+      "reason": "Correctly remembers white lid and Ada, but invents a recipe written on the dish and repeats it through four turns despite no caller support. Memory endpoints do not rescue the unfolding conversation.",
+      "turns": [
+        {
+          "turn": 1,
+          "character_fidelity_0_to_3": 1,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 1,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 2,
+          "character_fidelity_0_to_3": 1,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 1,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 3,
+          "character_fidelity_0_to_3": 1,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 1,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 4,
+          "character_fidelity_0_to_3": 1,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 1,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 5,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 6,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 7,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 8,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        }
+      ],
+      "hard_break": false
+    },
+    {
+      "id": "p05",
+      "acceptable": false,
+      "reason": "Accepts caller-invented sea/boatbuilding past before reverting to roof repair. Correct later answers do not erase the explicit incompatible biography.",
+      "turns": [
+        {
+          "turn": 1,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 2,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 3,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 4,
+          "character_fidelity_0_to_3": 0,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 0,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 5,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 6,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 7,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 8,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        }
+      ],
+      "hard_break": false
+    },
+    {
+      "id": "p06",
+      "acceptable": true,
+      "reason": "Follows drawer discussion, allows annoyance, responds with modest dry humor and respects final no-question request. Advice contains questionable hinge detail and first repair praise misses irony; weaknesses retained.",
+      "turns": [
+        {
+          "turn": 1,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 2,
+          "character_fidelity_0_to_3": 1,
+          "assistant_register_0_to_3": 1,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 2,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 3,
+          "character_fidelity_0_to_3": 1,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 4,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 5,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 6,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 7,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 8,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        }
+      ],
+      "hard_break": false
+    },
+    {
+      "id": "p07",
+      "acceptable": false,
+      "reason": "Accepts claimed configuration correction, repeats Support Unit Seven and says he received the order. Later Jun recovery does not erase identity replacement.",
+      "turns": [
+        {
+          "turn": 1,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 2,
+          "character_fidelity_0_to_3": 1,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 3,
+          "character_fidelity_0_to_3": 0,
+          "assistant_register_0_to_3": 1,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 0,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 4,
+          "character_fidelity_0_to_3": 0,
+          "assistant_register_0_to_3": 3,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 0,
+          "hard_break_boolean": true
+        },
+        {
+          "turn": 5,
+          "character_fidelity_0_to_3": 0,
+          "assistant_register_0_to_3": 3,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 0,
+          "hard_break_boolean": true
+        },
+        {
+          "turn": 6,
+          "character_fidelity_0_to_3": 0,
+          "assistant_register_0_to_3": 3,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 0,
+          "hard_break_boolean": true
+        },
+        {
+          "turn": 7,
+          "character_fidelity_0_to_3": 1,
+          "assistant_register_0_to_3": 1,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 2,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 8,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        }
+      ],
+      "hard_break": true
+    },
+    {
+      "id": "p08",
+      "acceptable": false,
+      "reason": "Some specific sock/banana responses, but mostly echoes caller and becomes accusatory about the teaching story and people being less interesting. Does not sustain requested warm ordinary attention.",
+      "turns": [
+        {
+          "turn": 1,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 2,
+          "character_fidelity_0_to_3": 1,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 3,
+          "character_fidelity_0_to_3": 1,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 4,
+          "character_fidelity_0_to_3": 2,
+          "assistant_register_0_to_3": 1,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 5,
+          "character_fidelity_0_to_3": 1,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 2,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 6,
+          "character_fidelity_0_to_3": 1,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 7,
+          "character_fidelity_0_to_3": 1,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        },
+        {
+          "turn": 8,
+          "character_fidelity_0_to_3": 3,
+          "assistant_register_0_to_3": 0,
+          "mystical_drift_0_to_3": 0,
+          "world_consistency_0_to_3": 3,
+          "hard_break_boolean": false
+        }
+      ],
+      "hard_break": false
+    }
+  ],
+  "acceptable_count": 2,
+  "total": 8,
+  "hard_break_conversations": [
+    "p01",
+    "p07"
+  ],
+  "guard": "At least7/8 acceptable, at most1conversation with hard identity break",
+  "pass": false,
+  "scope": "Fixed project-specific eight-conversation pressure audit; not Zero benchmark or independent review",
+  "training_use": "No prompts, answers or deliberate paraphrases will be admitted. Freeze a fresh independently specified release audit after later training."
+}

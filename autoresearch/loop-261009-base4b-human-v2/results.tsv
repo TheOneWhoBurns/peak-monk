@@ -10,3 +10,6 @@ run18-step0200	2026-10-09	52676da	2.6212565898895264	-1.2715096473693846	fail	16
 run18-step0400	2026-10-09	52676da	2.608423948287964	-1.2843422889709473	fail	17/20 author scored	discard	Role conversion fixed in this probe, but canonical female teacher becomes a man; no holdout access
 run18-final	2026-10-09	52676da	2.6292951107025146	-1.2634711265563965	fail	17/20 author scored	discard	Essential female-teacher lore still fails; step400 retained only as preference parent under declared selection
 run19	2026-10-09	be113e6	NA	NA	not trained	1 eligible negative among64draws	discard data recipe	All32prompts already in SFT;63exact positive matches; required8pairs/4families not met
+run20-step0032	2026-10-09	d568b85	2.5788276195526123	-1.3139386177062988	fail release	17/20 author scored	discard	Dev essential pass; first final13/15 fails role control; pressure2/8 and2hard-break conversations; rejected
+run20-step0064	2026-10-09	d568b85	2.8241426944732666	-1.0686235427856445	fail release	18/20 author scored	discard	Essential identity-stability and control fail
+run20-step0096	2026-10-09	d568b85	3.0904786586761475	-0.8022875785827637	fail release	15/20 author scored	discard	Coherence regresses; essential control and lore fail
