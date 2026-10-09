@@ -1,0 +1,31 @@
+{
+  "experiment": "run22",
+  "status": "Prepared, run only if run21 has no accepted development candidate",
+  "hypothesis": "Full-context SFT with RNG-correct gradients and eighteen additional long-dialogue families improves sustained character without further sharpening narrow preference pairs.",
+  "parent_selection": "Same run17step600 parent as run18 continuation; does not inherit run20/run21 DPO changes.",
+  "changes_from_run18": [
+    "Replay-correct checkpointing and staged vocabulary gradients",
+    "1024-token windows instead of768; all559 records fit whole",
+    "Append18 distinct sixteen-exchange families in v8\u2013v11, each weighted2",
+    "New explicit token-weighted trainer with one complete551+8 record epoch and declared clipping"
+  ],
+  "not_matched_ablation": "Multiple changes intentionally combine an implementation correction and broader long-dialogue training. No causal attribution to any single change.",
+  "configuration": "configs/train22.json",
+  "configuration_sha256": "e3eece44999c48b2d340816a0761d2ac28e4edbfa6815d8bb85d2344411c483a",
+  "evidence": [
+    "results/staged-character-gradient-check.json",
+    "results/text-staged-context-1024.json",
+    "results/text-staged-context-2048.json"
+  ],
+  "data": {
+    "records": 559,
+    "distinct_conversations": 268,
+    "distinct_character_turns": 1390,
+    "weighted_supervised_tokens": 58077,
+    "max_record_tokens": 840,
+    "manifest": "data/prepared-full-long-v6/manifest.json"
+  },
+  "selection": "Capture exact exported adapters46,92,140 under unchanged greedy20-case dev; essential gates remain mandatory. Among passing captures prefer more acceptable cases then lower comparableCE. No holdout inference unless a candidate passes.",
+  "acceptance": "Original final/pressure are exposed and may not be reused as untouched acceptance. Fresh release audits required for any development-pass candidate.",
+  "limitations": "Same-author fictional synthesis and review, small local corpus. This is not a reproduction of Zero or evidence of subjective belief."
+}

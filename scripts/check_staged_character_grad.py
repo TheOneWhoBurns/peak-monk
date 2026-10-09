@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 import mlx.core as mx
 import mlx.nn as nn
-from mlx.utils import tree_flatten
+from mlx.utils import tree_flatten, tree_map
 from mlx_lm.models.qwen3 import Model, ModelArgs
 from mlx_lm.tuner.lora import LoRAEmbedding, LoRALinear
 from conversation_objective import conversation_loss
@@ -45,6 +45,32 @@ def capture(fn, staged=False):
     return value,count,dict(tree_flatten(grad)),next_random
 
 value,count,grad,rng=capture(conversation_loss)
+# Unequal sequence lengths and target counts exercise the actual trainer's
+# denominator override. A mean of microbatch means would fail this check.
+group = [(batch[:1, :8], mask[:1, :8]), (batch[1:, :10], mask[1:, :10])]
+denominator = sum(int(m[:, 1:].sum().item()) for _, m in group)
+
+def capture_group(staged):
+    mx.random.seed(917)
+    total = mx.array(0.)
+    accumulated = None
+    for x, selected in group:
+        if staged:
+            (loss, _), part = staged_character_grad(model, x, selected,
+                chunk_size=3, denominator=denominator)
+        else:
+            def objective(current):
+                mean, number = conversation_loss(current, x, selected)
+                return mean * number / denominator
+            loss, part = nn.value_and_grad(model, objective)(model)
+        total = total + loss
+        accumulated = part if accumulated is None else tree_map(lambda a, b: a + b, accumulated, part)
+        mx.eval(total, accumulated)
+    next_random = mx.random.uniform(shape=(7,))
+    mx.eval(next_random)
+    return total, dict(tree_flatten(accumulated)), next_random
+
+group_value, group_grad, group_rng = capture_group(False)
 qwen_rng_checkpoint(model.layers[0])
 checks=[]
 for size in [3,8,64]:
@@ -56,7 +82,13 @@ for size in [3,8,64]:
     assert int(n.item())==int(count.item())
     assert loss_error < 1e-5 and max(errors.values()) < 1e-5 and rng_error==0
     checks.append(dict(chunk_size=size,loss_error=loss_error,maximum_gradient_error=max(errors.values()),rng_error=rng_error))
+gv, gg, gr = capture_group(True)
+group_check = dict(loss_error=abs(gv.item()-group_value.item()),
+    maximum_gradient_error=max(float(mx.max(mx.abs(group_grad[k]-gg[k])).item()) for k in gg),
+    rng_error=float(mx.max(mx.abs(group_rng-gr)).item()), target_tokens=denominator)
+assert group_check['loss_error'] < 1e-5 and group_check['maximum_gradient_error'] < 1e-5 and group_check['rng_error'] == 0
 report=dict(status='pass',checks=checks,target_tokens=int(count.item()),
+            unequal_microbatch_accumulation=group_check,
             scope='Tiny actual quantized Qwen3 with tied LoRA embedding, nonzero adapters and head dropout. All seven projections per layer plus head dropout; compare uncheckpointed reference against checkpointed staged gradients and RNG. Real-model memory and quality unmeasured.')
 Path('results/staged-character-gradient-check.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))

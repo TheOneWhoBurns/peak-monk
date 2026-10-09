@@ -1,0 +1,22 @@
+{
+  "model": "models/base4b",
+  "parent": "adapters/run17-step0600",
+  "parent_sha256": "8142d21b9a74ca9327f47c6ff8e64080d126e58a28b2bf42c9cf99c256dc8ab1",
+  "data": "data/prepared-full-long-v6",
+  "train_sha256": "fb0288992346364487cd51ad4ca86b79dc6a3f88a740e5fa6d43e59f5261c5c8",
+  "output": "adapters/run22",
+  "epochs": 1,
+  "accumulation": 4,
+  "max_length": 1024,
+  "head_chunk_size": 64,
+  "learning_rate": 1e-05,
+  "minimum_lr": 2e-06,
+  "warmup_fraction": 0.05,
+  "clip_norm": 1.0,
+  "seed": 41,
+  "checkpoints": [
+    46,
+    92,
+    140
+  ]
+}

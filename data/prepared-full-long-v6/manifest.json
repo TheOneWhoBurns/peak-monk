@@ -1,0 +1,27 @@
+{
+  "status": "Prepared input only; requires admission to a separately declared experiment",
+  "original_source": "data/prepared-full-long-v5",
+  "original_train_sha256": "a02ab4b1176d99a66905ed6076b94cec3c4729f2d28f27b7c7fbb68a0bf8c7ea",
+  "new_sources": [
+    {
+      "path": "data/grounded_long_v11.txt",
+      "sha256": "34f15d204b47bb1203e026f8288d919e0588ec7cac2c200edb2dfac6da980d6d",
+      "manifest_sha256": "a57a4cfca3a0d7806a062a4bf5d0449fc2f70cbb20127df4388d9793bd54eb6b"
+    }
+  ],
+  "new_family_count": 4,
+  "new_family_weight": 2,
+  "new_family_exchanges": 16,
+  "weighted_records": 559,
+  "distinct_texts": 268,
+  "weighted_character_turns": 2683,
+  "distinct_character_turns": 1390,
+  "split_policy": "All new families train-only; original validation and test bytes unchanged",
+  "test_file_scope": "Inherited test.jsonl repeats the development-loss file; it is never a held-out final audit. Release conversation audits are versioned separately.",
+  "limitations": "Same-author synthetic data and review. Repetition does not add independent examples.",
+  "output_sha256": {
+    "train.jsonl": "fb0288992346364487cd51ad4ca86b79dc6a3f88a740e5fa6d43e59f5261c5c8",
+    "valid.jsonl": "6cac81fab61388010e064d1a92a3699e135f1c174ea836756d4ebbcca163aaba",
+    "test.jsonl": "6cac81fab61388010e064d1a92a3699e135f1c174ea836756d4ebbcca163aaba"
+  }
+}

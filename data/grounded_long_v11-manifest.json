@@ -1,0 +1,18 @@
+{
+  "sha256": "34f15d204b47bb1203e026f8288d919e0588ec7cac2c200edb2dfac6da980d6d",
+  "conversations": 4,
+  "character_turns": 64,
+  "exchanges_per_conversation": 16,
+  "author": "Codex original synthetic fiction",
+  "reviewer": "Same author, not independent",
+  "status": "Reviewed draft for separately declared SFT experiment; not used in run21",
+  "source_usage": "Broad listed monastic/literary influences, original fictional dialogue. No real transcripts or attributed quotations.",
+  "exact_heldout_prompt_overlap": false,
+  "heldout_files_checked": [
+    "evaluation/dev-roleplay-v2.json",
+    "evaluation/final-roleplay-v2.json",
+    "evaluation/pressure-v2.json"
+  ],
+  "limitations": "Authored after exposed final/pressure failures. Those scenarios, answers and deliberate paraphrases excluded. General long-dialogue weakness informs design; exact matching alone cannot establish semantic independence.",
+  "review": "Reviewed all64 character replies: continuous separate locations, fallible original human character, late female teacher, varied response length, ordinary choices and disagreements. Multiple rhetorical jokes remain an author-style limitation."
+}
