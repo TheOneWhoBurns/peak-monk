@@ -4,3 +4,6 @@ iteration	timestamp	commit	metric	delta	guard	guard-metric	status	description
 run12-step0374	2026-10-09	ea57833	2.7881009578704834	-2.552467107772827	fail	10/20 author review	discard	Not accepted; 374 checkpoint retained only as preference reference
 run12	2026-10-09	ea57833	2.7109808921813965	-2.629587173461914	fail	9/20 author review	discard	Not accepted; 374 checkpoint retained only as preference reference
 run13	2026-10-09	bfd3826	3.0800302028656006	-2.26053786277771	fail	7/20 author review	discard	DPO reduces explicit disclosure but teaches evasion, not coherent Jun identity
+run14-step0250	2026-10-09	a31506f	2.7692673206329346	-2.571300745010376	fail	10/20 author review	discard	Essential identity/world/perception failures despite lower loss
+run14-step0500	2026-10-09	a31506f	2.759125232696533	-2.5814428329467773	fail	12/20 author review	discard	Essential identity/world/perception failures despite lower loss
+run14	2026-10-09	a31506f	2.7419755458831787	-2.598592519760132	fail	12/20 author review	discard	Essential identity/world/perception failures despite lower loss

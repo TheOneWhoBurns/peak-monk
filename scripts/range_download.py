@@ -57,12 +57,12 @@ fd=os.open(dest,os.O_RDWR)
 def fetch(bounds):
     global url
     a,b=bounds
+    pos=a
     for attempt in range(8):
         try:
-            req=urllib.request.Request(url,headers={'Range':f'bytes={a}-{b}'})
+            req=urllib.request.Request(url,headers={'Range':f'bytes={pos}-{b}'})
             with urllib.request.urlopen(req,timeout=60) as r:
-                assert r.status==206 and r.headers['Content-Range']==f'bytes {a}-{b}/{size}'
-                pos=a
+                assert r.status==206 and r.headers['Content-Range']==f'bytes {pos}-{b}/{size}'
                 while pos<=b:
                     block=r.read(min(1024*1024,b-pos+1))
                     if not block: raise IOError('Truncated range')
@@ -72,7 +72,7 @@ def fetch(bounds):
             print(f'completed range {a}-{b}',flush=True)
             return
         except Exception as error:
-            print(f'retry range {a}-{b}: {type(error).__name__}, attempt {attempt+1}',flush=True)
+            print(f'retry range {a}-{b}: {type(error).__name__}, attempt {attempt+1}, received {pos-a} bytes',flush=True)
             if attempt==7: raise
             if args.reuse_signed_url and isinstance(error,urllib.error.HTTPError) and error.code in (401,403):
                 with url_lock:

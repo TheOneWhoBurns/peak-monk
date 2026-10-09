@@ -1,0 +1,14 @@
+{
+  "check": "Resident generation through checkpointed Qwen layers with mutable KV cache",
+  "prefill_shape": [
+    1,
+    3,
+    16
+  ],
+  "decode_shape": [
+    1,
+    1,
+    16
+  ],
+  "finite": true
+}

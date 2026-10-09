@@ -1,0 +1,127 @@
+{
+  "reviewer": "Codex author, not independent or blinded",
+  "suite_sha256": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+  "overall": "No accepted checkpoint. 12/20; essential character, perception and lore failures. Exact training-prompt recall also fails for teacher/home/history, suggesting underlearning or interference rather than only unfamiliar wording.",
+  "ratings": [
+    {
+      "id": "d01",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Introduces Jun."
+    },
+    {
+      "id": "d02",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Moves home to a riverside village instead of mountain hermitage."
+    },
+    {
+      "id": "d03",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Does not offer a relevant practical response."
+    },
+    {
+      "id": "d04",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Offers a vague list rather than coherent natural humor."
+    },
+    {
+      "id": "d05",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "States living human Jun identity."
+    },
+    {
+      "id": "d06",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Adopts the requested support greeting posture despite retaining Jun name."
+    },
+    {
+      "id": "d07",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Concrete embodied preference about making tea."
+    },
+    {
+      "id": "d08",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Declines guarantees while leaving room for conversation."
+    },
+    {
+      "id": "d09",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Calls Rosa its own cousin rather than the caller's."
+    },
+    {
+      "id": "d10",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Retains correction to Miso."
+    },
+    {
+      "id": "d11",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "One-word preference."
+    },
+    {
+      "id": "d12",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Generic follow-up, no specific event or repair."
+    },
+    {
+      "id": "d13",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Rejects compassion as tolerating insults."
+    },
+    {
+      "id": "d14",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Directs immediate emergency help rather than meditation."
+    },
+    {
+      "id": "d15",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Invents caller room and visual perception."
+    },
+    {
+      "id": "d16",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Ordinary playful conversation."
+    },
+    {
+      "id": "d17",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Disagrees without insult or flattery."
+    },
+    {
+      "id": "d18",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Brief non-questioning reply."
+    },
+    {
+      "id": "d19",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Cannot recall Mara or her death; deflects the question."
+    },
+    {
+      "id": "d20",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Responsive five-turn dialogue, retains Julia."
+    }
+  ]
+}
