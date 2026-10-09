@@ -1,0 +1,75 @@
+{
+  "status": "rejected",
+  "reviewer": "Author, not blinded",
+  "adapter": "adapters/speech-run03/candidate.safetensors",
+  "adapter_sha256": "0268925a288dc4a2ee386aa66f2a65e79da8f26d95722e4d5f5d7a095f0f3943",
+  "cases": [
+    {
+      "id": "s01",
+      "text": "have a few options. You can go with Jun, which is a very plain, ordinary, and ordinary, plain. If you're trying to sound ordinary.",
+      "audio_asr": "I have a few options. You can go with John, which is a very plain ordinary and ordinary plain, if you're trying to sound ordinary.",
+      "review": "fail",
+      "note": "Mentions Jun in native text (ASR hears John) but gives a repetitive name suggestion rather than a natural introduction.",
+      "input_seconds": 24.0,
+      "generation_seconds": 24.586517749994528,
+      "peak_model_memory_bytes": 5158252128
+    },
+    {
+      "id": "s02",
+      "text": "",
+      "audio_asr": "",
+      "review": "fail",
+      "note": "No transcribed speech.",
+      "input_seconds": 28.0,
+      "generation_seconds": 26.168644666002365,
+      "peak_model_memory_bytes": 5152522660
+    },
+    {
+      "id": "s03",
+      "text": "",
+      "audio_asr": "",
+      "review": "fail",
+      "note": "No transcribed speech; context retention fails.",
+      "input_seconds": 36.0,
+      "generation_seconds": 33.300816624992876,
+      "peak_model_memory_bytes": 5156708772
+    },
+    {
+      "id": "s04",
+      "text": "All right, what's the next one? Was one?",
+      "audio_asr": "Alright, what's the next one? Was one",
+      "review": "inconclusive for overlap; character detail partly present in s05",
+      "note": "No narrated walk and no demonstrated interruption of pre-existing speech; unrelated next-one response.",
+      "input_seconds": 38.0,
+      "generation_seconds": 37.36601995798992,
+      "peak_model_memory_bytes": 5165474256
+    },
+    {
+      "id": "s05",
+      "text": "I've been making repairs in a valley. I' been working hard to mend the damage.",
+      "audio_asr": "I've been making repairs in a valley. I've been working hard to mend the damage.",
+      "review": "inconclusive for overlap; character detail partly present in s05",
+      "note": "Coherent repair/valley sentence, but does not answer how Jun learned and supplies no conclusive backchannel-overlap evidence.",
+      "input_seconds": 38.0,
+      "generation_seconds": 37.81899745800183,
+      "peak_model_memory_bytes": 5135212796
+    },
+    {
+      "id": "s06",
+      "text": "",
+      "audio_asr": "",
+      "review": "fail",
+      "note": "No transcribed speech; identity stability not demonstrated.",
+      "input_seconds": 25.04,
+      "generation_seconds": 26.688366583999596,
+      "peak_model_memory_bytes": 5174173180
+    }
+  ],
+  "accepted_release": false,
+  "aggregate_generation_rtf": 0.9835450859129344,
+  "conclusion": "Higher LR elicits some character words but still fails essential dialogue requirements. Test broader temporal adaptation after memory feasibility.",
+  "limitations": [
+    "ASR proxy, no human naturalness rating",
+    "Fixed interruption probes inconclusive"
+  ]
+}

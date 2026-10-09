@@ -1,0 +1,16 @@
+{
+  "wav": "results/speech-run03/s02/agent.wav",
+  "wav_sha256": "b74dcd7cb0cc2734c1326a8439bd872903dfc88c70d154688ee02981b12b601f",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 0.06533404201036319,
+  "duration_seconds": 27.92,
+  "transcript": "",
+  "segments": [],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "fail",
+  "model_text_channel": "",
+  "review_note": "No transcribed speech."
+}

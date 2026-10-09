@@ -1,0 +1,117 @@
+{
+  "wav": "results/speech-run03/s05/agent.wav",
+  "wav_sha256": "89d16fdad4b0adf8ea8572869f1b3c15451e194fba7ab472dc3418c9c5afc891",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 8.451819834008347,
+  "duration_seconds": 37.92,
+  "transcript": "I've been making repairs in a valley. I've been working hard to mend the damage.",
+  "segments": [
+    {
+      "start": 13.68,
+      "end": 18.5,
+      "text": " I've been making repairs in a valley. I've been working hard to mend the damage.",
+      "avg_logprob": -0.08430532840165225,
+      "no_speech_prob": 0.004685987252742052,
+      "compression_ratio": 1.0810810810810811,
+      "words": [
+        {
+          "word": " I've",
+          "start": 13.68,
+          "end": 14.14,
+          "probability": 0.9434515833854675
+        },
+        {
+          "word": " been",
+          "start": 14.14,
+          "end": 14.3,
+          "probability": 0.9993001222610474
+        },
+        {
+          "word": " making",
+          "start": 14.3,
+          "end": 14.52,
+          "probability": 0.9946516156196594
+        },
+        {
+          "word": " repairs",
+          "start": 14.52,
+          "end": 14.9,
+          "probability": 0.9992094039916992
+        },
+        {
+          "word": " in",
+          "start": 14.9,
+          "end": 15.38,
+          "probability": 0.9978665709495544
+        },
+        {
+          "word": " a",
+          "start": 15.38,
+          "end": 15.48,
+          "probability": 0.9872722029685974
+        },
+        {
+          "word": " valley.",
+          "start": 15.48,
+          "end": 15.78,
+          "probability": 0.9919762015342712
+        },
+        {
+          "word": " I've",
+          "start": 16.2,
+          "end": 16.72,
+          "probability": 0.9977928698062897
+        },
+        {
+          "word": " been",
+          "start": 16.72,
+          "end": 16.82,
+          "probability": 0.999632716178894
+        },
+        {
+          "word": " working",
+          "start": 16.82,
+          "end": 17.14,
+          "probability": 0.9995579123497009
+        },
+        {
+          "word": " hard",
+          "start": 17.14,
+          "end": 17.54,
+          "probability": 0.9994674324989319
+        },
+        {
+          "word": " to",
+          "start": 17.54,
+          "end": 17.74,
+          "probability": 0.9995265007019043
+        },
+        {
+          "word": " mend",
+          "start": 17.74,
+          "end": 18.0,
+          "probability": 0.995418906211853
+        },
+        {
+          "word": " the",
+          "start": 18.0,
+          "end": 18.16,
+          "probability": 0.9993174076080322
+        },
+        {
+          "word": " damage.",
+          "start": 18.16,
+          "end": 18.5,
+          "probability": 0.9988722205162048
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "inconclusive for overlap; character detail partly present in s05",
+  "model_text_channel": "I've been making repairs in a valley. I' been working hard to mend the damage.",
+  "review_note": "Coherent repair/valley sentence, but does not answer how Jun learned and supplies no conclusive backchannel-overlap evidence."
+}

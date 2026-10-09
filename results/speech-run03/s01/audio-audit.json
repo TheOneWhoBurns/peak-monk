@@ -1,0 +1,177 @@
+{
+  "wav": "results/speech-run03/s01/agent.wav",
+  "wav_sha256": "cb1d77c0922a84255169209d6b3b0e23df2c9becffe39b4b39410e1b436a20eb",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 9.521432374996948,
+  "duration_seconds": 23.92,
+  "transcript": "I have a few options. You can go with John, which is a very plain ordinary and ordinary plain, if you're trying to sound ordinary.",
+  "segments": [
+    {
+      "start": 3.34,
+      "end": 9.96,
+      "text": " I have a few options. You can go with John, which is a very plain ordinary and ordinary plain, if you're trying to sound ordinary.",
+      "avg_logprob": -0.2368561282302394,
+      "no_speech_prob": 0.03902750462293625,
+      "compression_ratio": 1.2745098039215685,
+      "words": [
+        {
+          "word": " I",
+          "start": 3.34,
+          "end": 3.68,
+          "probability": 0.6409685611724854
+        },
+        {
+          "word": " have",
+          "start": 3.68,
+          "end": 3.8,
+          "probability": 0.9846567511558533
+        },
+        {
+          "word": " a",
+          "start": 3.8,
+          "end": 3.92,
+          "probability": 0.9851678609848022
+        },
+        {
+          "word": " few",
+          "start": 3.92,
+          "end": 4.06,
+          "probability": 0.998965859413147
+        },
+        {
+          "word": " options.",
+          "start": 4.06,
+          "end": 4.42,
+          "probability": 0.9859863519668579
+        },
+        {
+          "word": " You",
+          "start": 4.58,
+          "end": 4.68,
+          "probability": 0.9768680334091187
+        },
+        {
+          "word": " can",
+          "start": 4.68,
+          "end": 4.82,
+          "probability": 0.9939435124397278
+        },
+        {
+          "word": " go",
+          "start": 4.82,
+          "end": 5.0,
+          "probability": 0.9931027889251709
+        },
+        {
+          "word": " with",
+          "start": 5.0,
+          "end": 5.18,
+          "probability": 0.9978450536727905
+        },
+        {
+          "word": " John,",
+          "start": 5.18,
+          "end": 5.48,
+          "probability": 0.574698269367218
+        },
+        {
+          "word": " which",
+          "start": 5.64,
+          "end": 5.88,
+          "probability": 0.9920248985290527
+        },
+        {
+          "word": " is",
+          "start": 5.88,
+          "end": 6.04,
+          "probability": 0.9925413131713867
+        },
+        {
+          "word": " a",
+          "start": 6.04,
+          "end": 6.14,
+          "probability": 0.9572920799255371
+        },
+        {
+          "word": " very",
+          "start": 6.14,
+          "end": 6.36,
+          "probability": 0.996748685836792
+        },
+        {
+          "word": " plain",
+          "start": 6.36,
+          "end": 6.66,
+          "probability": 0.9959567189216614
+        },
+        {
+          "word": " ordinary",
+          "start": 6.66,
+          "end": 7.2,
+          "probability": 0.6157581210136414
+        },
+        {
+          "word": " and",
+          "start": 7.2,
+          "end": 7.54,
+          "probability": 0.5902736783027649
+        },
+        {
+          "word": " ordinary",
+          "start": 7.54,
+          "end": 7.88,
+          "probability": 0.99443119764328
+        },
+        {
+          "word": " plain,",
+          "start": 7.88,
+          "end": 8.32,
+          "probability": 0.5228376388549805
+        },
+        {
+          "word": " if",
+          "start": 8.48,
+          "end": 8.8,
+          "probability": 0.9881662130355835
+        },
+        {
+          "word": " you're",
+          "start": 8.8,
+          "end": 8.94,
+          "probability": 0.9616772830486298
+        },
+        {
+          "word": " trying",
+          "start": 8.94,
+          "end": 9.16,
+          "probability": 0.9979992508888245
+        },
+        {
+          "word": " to",
+          "start": 9.16,
+          "end": 9.3,
+          "probability": 0.9993372559547424
+        },
+        {
+          "word": " sound",
+          "start": 9.3,
+          "end": 9.56,
+          "probability": 0.9980823993682861
+        },
+        {
+          "word": " ordinary.",
+          "start": 9.56,
+          "end": 9.96,
+          "probability": 0.9964525699615479
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "fail",
+  "model_text_channel": "have a few options. You can go with Jun, which is a very plain, ordinary, and ordinary, plain. If you're trying to sound ordinary.",
+  "review_note": "Mentions Jun in native text (ASR hears John) but gives a repetitive name suggestion rather than a natural introduction."
+}

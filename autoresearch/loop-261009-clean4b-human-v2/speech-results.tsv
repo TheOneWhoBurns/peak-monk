@@ -1,3 +1,4 @@
 experiment	commit	baseline_joint_loss	candidate_joint_loss	status	character_review
 speech-run01	6e3e462	2.615679928698254	2.0549223427331165	discard	Six probes: identity failure, four empty audio transcripts, inconclusive overlap
 speech-run02	25f9a58	2.615679928698254	2.172632047788201	discard	Six probes: no Jun introduction, four empty audio transcripts, no conclusive overlap
+speech-run03	d6d7e75	2.615679928698254	2.088573420329016	discard	Some Jun/valley content; essential dialogue and identity stability still fail

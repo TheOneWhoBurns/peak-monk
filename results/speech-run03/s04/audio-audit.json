@@ -1,0 +1,69 @@
+{
+  "wav": "results/speech-run03/s04/agent.wav",
+  "wav_sha256": "7f5a970963180405f4b5961968b8e6f212c9ba9047e1bb8d0a3a0096386a6a0c",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 8.07494766599848,
+  "duration_seconds": 37.92,
+  "transcript": "Alright, what's the next one? Was one",
+  "segments": [
+    {
+      "start": 15.76,
+      "end": 20.36,
+      "text": " Alright, what's the next one? Was one",
+      "avg_logprob": -0.3850588890222403,
+      "no_speech_prob": 0.01031698752194643,
+      "compression_ratio": 0.8809523809523809,
+      "words": [
+        {
+          "word": " Alright,",
+          "start": 15.76,
+          "end": 16.18,
+          "probability": 0.4210302233695984
+        },
+        {
+          "word": " what's",
+          "start": 16.44,
+          "end": 17.26,
+          "probability": 0.9744307398796082
+        },
+        {
+          "word": " the",
+          "start": 17.26,
+          "end": 17.34,
+          "probability": 0.9971063733100891
+        },
+        {
+          "word": " next",
+          "start": 17.34,
+          "end": 17.6,
+          "probability": 0.9355637431144714
+        },
+        {
+          "word": " one?",
+          "start": 17.6,
+          "end": 17.88,
+          "probability": 0.996225118637085
+        },
+        {
+          "word": " Was",
+          "start": 18.52,
+          "end": 19.08,
+          "probability": 0.7735355496406555
+        },
+        {
+          "word": " one",
+          "start": 19.08,
+          "end": 20.36,
+          "probability": 0.34186622500419617
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "inconclusive for overlap; character detail partly present in s05",
+  "model_text_channel": "All right, what's the next one? Was one?",
+  "review_note": "No narrated walk and no demonstrated interruption of pre-existing speech; unrelated next-one response."
+}
