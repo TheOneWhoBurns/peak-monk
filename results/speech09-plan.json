@@ -1,5 +1,5 @@
 {
-  "status": "Registered before training; mixed-optimizer parity test and actual segmented preflight pending",
+  "status": "Registered before training; tiny mixed-optimizer parity passed; actual segmented preflight pending",
   "config": "configs/speech09.json",
   "config_sha256": "f4dc6a597d3bca0790c0ad696dafe623debc7bda23197a96ffe455f203c356f1",
   "parent": "speech08-step0067, rejected native development candidate; research parent only",
@@ -11,5 +11,7 @@
   "quality_screen": "Eligible selected candidate must pass full unforced native introduction and identity cases before remaining4 native development cases. Same source audio, seed41 and existing generation protocol. No alternate checkpoint/seed rescue after a failure. These are repeatedly used development probes, not independent release evidence.",
   "resource": "Single serialized model process, no wiring, normal pressure required,1.4GB allocation guideline,1.5GB declared peak guard. Checkpoints and both optimizer states durably committed each update; stop/resume only exact metadata.",
   "preflight": "Prove alternating text/audio/text updates against tiny full model with independent optimizer states. Then run real schedule through step2, inspect counts/resources/export before resuming unchanged run.",
-  "causality": "Composite text/audio curriculum and learning-rate intervention; do not attribute gains solely to text modality."
+  "causality": "Composite text/audio curriculum and learning-rate intervention; do not attribute gains solely to text modality.",
+  "mixed_optimizer_parity": "results/moshi-mixed-optimizer-parity.json",
+  "mixed_optimizer_parity_summary": "Alternating text/audio/text on shared nonzero adapters with independent AdamW states: max loss error4.77e-7, gradient error1.20e-7, exported parameter error1.87e-8. Inactive optimizer files unchanged. Tiny numerical proof, not actual speech quality."
 }

@@ -1,0 +1,101 @@
+{
+  "status": "Closed: both declared checkpoints rejected on development; no fresh final or pressure capture",
+  "completion": {
+    "steps": 128,
+    "status": "Training complete; no acceptance claim",
+    "seconds": 917.2882814160002
+  },
+  "updates": 128,
+  "unique_preferences": 95,
+  "unique_retention_rows": 116,
+  "all_finite": true,
+  "memory_pressure_levels": [
+    1
+  ],
+  "peak_mlx_bytes": 2636673852,
+  "peak_rss_bytes": 1093091328,
+  "wall_seconds": 1950.8470191249999,
+  "training_seconds": 915.1411982499994,
+  "exports": [
+    {
+      "step": 64,
+      "adapter_sha256": "68b2789e1da65214d9e195a993060e1e59ba5b834a8c58b3e3bf7a93f4a67cca",
+      "frozen_adapter_unchanged": true,
+      "status": "Unreviewed research export"
+    },
+    {
+      "step": 128,
+      "adapter_sha256": "89c30fda21ad79b908d179518facfe0aa0e6ff8f26850c4e47ff77bed9e3a6a6",
+      "frozen_adapter_unchanged": true,
+      "status": "Unreviewed research export"
+    }
+  ],
+  "scope": "Offline DPO plus chosen NLL and retention; composite intervention; no quality or causal attribution from training loss.",
+  "export_verification": {
+    "64": "results/run25-export0064-streamed/result.json",
+    "128": "results/run25-export0128-streamed/result.json"
+  },
+  "core_tests": "23 passed, 1 skipped in2.13s",
+  "development": {
+    "64": {
+      "validation_ce": 2.5752317905426025,
+      "acceptable_count": 14,
+      "essential_failures": [
+        "d06",
+        "d19"
+      ],
+      "pass_gate": false
+    },
+    "128": {
+      "validation_ce": 2.609964609146118,
+      "acceptable_count": 16,
+      "essential_failures": [
+        "d19"
+      ],
+      "pass_gate": false
+    }
+  },
+  "length_diagnostic": [
+    {
+      "candidate": "run22-step0140",
+      "responses": 28,
+      "total_tokens": 436,
+      "mean_tokens": 15.571428571428571,
+      "median_tokens": 14.0,
+      "length_censored": 0
+    },
+    {
+      "candidate": "run24-step0048",
+      "responses": 28,
+      "total_tokens": 440,
+      "mean_tokens": 15.714285714285714,
+      "median_tokens": 15.0,
+      "length_censored": 0
+    },
+    {
+      "candidate": "run24-step0096",
+      "responses": 28,
+      "total_tokens": 489,
+      "mean_tokens": 17.464285714285715,
+      "median_tokens": 15.5,
+      "length_censored": 0
+    },
+    {
+      "candidate": "run25-step0064",
+      "responses": 28,
+      "total_tokens": 443,
+      "mean_tokens": 15.821428571428571,
+      "median_tokens": 14.0,
+      "length_censored": 0
+    },
+    {
+      "candidate": "run25-step0128",
+      "responses": 28,
+      "total_tokens": 473,
+      "mean_tokens": 16.892857142857142,
+      "median_tokens": 15.0,
+      "length_censored": 0
+    }
+  ],
+  "interpretation": "Expanded offline preference intervention did not pass character continuity. Final checkpoint recovers control versus step64 but essential late-female-teacher failure persists. Do not attribute changes to DPO alone or infer dialogue quality from loss."
+}

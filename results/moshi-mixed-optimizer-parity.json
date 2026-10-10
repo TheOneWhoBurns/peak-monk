@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "cases": [
+    {
+      "step": 1,
+      "modality": "text",
+      "loss_error": 0.0,
+      "gradient_error": 2.9802322387695312e-08,
+      "adapter_error": 7.450580596923828e-09,
+      "optimizer_steps": {
+        "text": 1,
+        "audio": 0
+      },
+      "inactive_optimizer_unchanged": true
+    },
+    {
+      "step": 2,
+      "modality": "audio",
+      "loss_error": 4.76837158203125e-07,
+      "gradient_error": 5.21540641784668e-08,
+      "adapter_error": 1.862645149230957e-08,
+      "optimizer_steps": {
+        "text": 1,
+        "audio": 1
+      },
+      "inactive_optimizer_unchanged": true
+    },
+    {
+      "step": 3,
+      "modality": "text",
+      "loss_error": 2.384185791015625e-07,
+      "gradient_error": 1.1920928955078125e-07,
+      "adapter_error": 1.862645149230957e-08,
+      "optimizer_steps": {
+        "text": 2,
+        "audio": 1
+      },
+      "inactive_optimizer_unchanged": true
+    }
+  ],
+  "scope": "Tiny FP32/quantized4-bit model, alternating text/audio/text objectives, nonzero shared adapters, native initial input, masked text, audio pad targets, separate AdamW states and clipped updates. No actual-model feasibility or transfer-quality claim."
+}

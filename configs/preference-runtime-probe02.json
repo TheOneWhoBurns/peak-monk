@@ -1,0 +1,30 @@
+{
+  "model": "models/base4b",
+  "parent": "adapters/run22-step0140",
+  "parent_sha256": "62b4197bdf59bd157ce7dd0ce6cd4c62b5dd0a910b400d886514b59480cf0829",
+  "repairs": "data/preference-capacity-probe/train.jsonl",
+  "repairs_sha256": "0a2fa7bc2483446315d803018d4942ad6833715d34746ec13577ee9d4abdb196",
+  "replay": "data/preference-capacity-probe/replay.jsonl",
+  "replay_sha256": "7cd5351e96de1f5a02db69c31c3882261a76854b60861f6871a449fc64a84bbc",
+  "output": "adapters/preference-runtime-probe02",
+  "train_last_layers": 12,
+  "steps": 2,
+  "max_length": 2048,
+  "memory_limit": 2400000000,
+  "max_seconds": 900,
+  "learning_rate": 1e-05,
+  "repair_weight": 1.0,
+  "replay_weight": 1.0,
+  "head_chunk_size": 32,
+  "query_chunk_size": 128,
+  "cache_frozen_prefix": true,
+  "seed": 277,
+  "checkpoints": [
+    1,
+    2
+  ],
+  "stream_frozen_prefix": true,
+  "scope": "Two actual upper12layer offlineDPO updates on maximum-length run25 training rows. Same objective, source parent and memory guideline. Runtime/export preflight only; not a quality candidate.",
+  "preference_beta": 0.1,
+  "chosen_nll_weight": 0.2
+}

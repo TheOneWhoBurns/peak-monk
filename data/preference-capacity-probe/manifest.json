@@ -1,0 +1,32 @@
+{
+  "status": "Prepared only; actual12layer feasibility probe not launched",
+  "selection": "Two longest complete chosen/rejected pairs by max full token length, and two longest retention rows from frozen run25 cache accounting. No outcome-based selection.",
+  "source_cache_manifest": "adapters/run25/frozen_prefix_manifest.json",
+  "source_cache_manifest_sha256": "6ef5521394d6883de03f31bca3a46f0584cd6c0534c9ef9c2da0dd03b80055a4",
+  "pair_indices": [
+    29,
+    23
+  ],
+  "pair_lengths": [
+    {
+      "chosen": 1908,
+      "rejected": 1903
+    },
+    {
+      "chosen": 1786,
+      "rejected": 1781
+    }
+  ],
+  "retention_indices": [
+    47,
+    48
+  ],
+  "retention_lengths": [
+    1940,
+    1896
+  ],
+  "data_sha256": {
+    "train.jsonl": "0a2fa7bc2483446315d803018d4942ad6833715d34746ec13577ee9d4abdb196",
+    "replay.jsonl": "7cd5351e96de1f5a02db69c31c3882261a76854b60861f6871a449fc64a84bbc"
+  }
+}
