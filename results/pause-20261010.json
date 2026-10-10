@@ -1,0 +1,37 @@
+{
+  "recorded_at_unix": 1791609742.650265,
+  "user_request": "Wind down research within the next few hours and pause the goal.",
+  "action": "Pause autonomous goal now; permit only already-running run26 to reach its existing bounded completion or guard stop. No new experiment or evaluation is scheduled.",
+  "running_session": 93772,
+  "config": "configs/train26.json",
+  "maximum_runtime_seconds": 3600,
+  "latest_observed_event": {
+    "time": 1791609739.997236,
+    "phase": "prefix_cache_begin",
+    "split": "replay",
+    "index": 53,
+    "tokens": 820
+  },
+  "latest_observed_metrics": {
+    "time": 1791609739.989398,
+    "phase": "prefix_cache_end",
+    "split": "replay",
+    "index": 52,
+    "elapsed_seconds": 621.9261574999982,
+    "peak_rss_bytes": 484868096,
+    "swap_bytes": 1325200834,
+    "memory_pressure_level": 1,
+    "mlx_peak_bytes": 1127075384,
+    "mlx_active_bytes": 316769800
+  },
+  "expected_remaining_runtime_limit_seconds": 2978.073842500002,
+  "acceptance": "No accepted release. Run26 quality is not yet evaluated.",
+  "resume_instructions": [
+    "Inspect the actual process/session and adapters/run26/completion.json plus runtime.jsonl; do not restart merely because observation expired.",
+    "If complete, preserve step64/128 exports, independently verify full-backbone scores, and capture/review the unchanged development protocol. Only a development-qualified candidate may reach frozen v3 final/pressure audits.",
+    "After successful export verification, remove regenerable run26 prefix tensors while retaining manifest, weights and evidence to preserve disk headroom.",
+    "Matched speech10 audio-only control is registered and unstarted; longer speech rendering/alignment/encoding remains queued. All model jobs must remain serialized."
+  ],
+  "queued_speech_control": "results/speech10-plan.json",
+  "long_speech_draft": "results/speech-long-dialogues-v1-plan.json"
+}

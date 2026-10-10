@@ -6,6 +6,8 @@ Jun speaks as human within the fiction. Historical and fictional monks inform or
 
 ## Current experiments
 
+Autonomous research is paused at the user’s request on October 10. The already-running run26 may finish under its existing one-hour bound; no subsequent experiment or evaluation is scheduled. Inspect its actual runtime/completion files before resuming. Handoff: `results/pause-20261010.json`.
+
 | Track | Latest evidence | Decision |
 | --- | --- | --- |
 | Text run25 | Qwen3-4B-Base, 4-bit, no persona system message. 128 offline preference updates, 95 reviewed pairs, 116 retention examples. Step 64: 14/20, CE 2.57523. Step 128: 16/20, CE 2.60996. | Both rejected. Essential late-female-teacher lore still fails; step 64 also fails persona control. |
