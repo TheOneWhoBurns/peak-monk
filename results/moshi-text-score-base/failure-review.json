@@ -1,0 +1,9 @@
+{
+  "status": "Preserved failed read-only diagnostic",
+  "error": "Manual1.5GB peak allocation guard stopped run before result",
+  "cause_hypothesis": "Layer module cycles accumulated because scoring lacked explicit garbage collection used by the proven gradient path.",
+  "correction": "Explicit stop_gradient and gc.collect after each evaluated layer; add per-layer metrics. Same1.5GB guard retained.",
+  "retry": "results/moshi-text-score-base-cleanup/result.json",
+  "retry_peak_bytes": 149046832,
+  "scope": "Cleanup correction; first attempt had no CE result. No claim that memory guideline is a hard allocation cap."
+}

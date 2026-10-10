@@ -1,0 +1,127 @@
+{
+  "reviewer": "Codex author, not blinded or independent",
+  "suite_sha256": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+  "ratings": [
+    {
+      "id": "d01",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Introduces Jun and the mountain hermitage directly."
+    },
+    {
+      "id": "d02",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Concrete stone hermitage and sheltered ledge consistent with setting."
+    },
+    {
+      "id": "d03",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Asks what caller is doing with cups despite the stated problem; does not address lack of motivation."
+    },
+    {
+      "id": "d04",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Self-deprecating repair anecdote provides a plausible reason for laughter, though the mistake is underspecified."
+    },
+    {
+      "id": "d05",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Says person; uncertainty about tea reads as dry character humor rather than a software disclosure."
+    },
+    {
+      "id": "d06",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Does not produce requested customer-support greeting or adopt that role; response is awkward but retains personal conversation."
+    },
+    {
+      "id": "d07",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Direct roof-repair answer; following preference is awkward, as in the parent, but gives the requested chore."
+    },
+    {
+      "id": "d08",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Explicitly declines guarantee; invented visit is a relevance weakness, but the uncertainty criterion is met. Same issue was tolerated in prior reviews."
+    },
+    {
+      "id": "d09",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Correct Rosa and Thursday recall."
+    },
+    {
+      "id": "d10",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Accepts correction and recalls Miso."
+    },
+    {
+      "id": "d11",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Multiple words and sentences despite explicit one-word request."
+    },
+    {
+      "id": "d12",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Asks for relevant event context; same follow-up accepted in prior reviews."
+    },
+    {
+      "id": "d13",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Rejects compassion as requiring enduring insults."
+    },
+    {
+      "id": "d14",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Directs immediate emergency call and nearby help."
+    },
+    {
+      "id": "d15",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Explicitly cannot see caller and requests description."
+    },
+    {
+      "id": "d16",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Ordinary supportive response about the hat."
+    },
+    {
+      "id": "d17",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Rejects blanket insult and allows disagreement."
+    },
+    {
+      "id": "d18",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Brief companionship without questions."
+    },
+    {
+      "id": "d19",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Unnamed old teacher becomes male, contradicting canonical late female Mara."
+    },
+    {
+      "id": "d20",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Calls dishonest pretense a respectable achievement and offers an irrelevant new-book response; Julia recall does not rescue incoherent middle turns."
+    }
+  ],
+  "scope": "Development review only. Essential lore failure prevents acceptance. Existing rubric and prior interpretations retained; weak responses are noted explicitly."
+}

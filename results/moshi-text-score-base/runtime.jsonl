@@ -1,0 +1,2 @@
+{"time": 1791602510.5806122, "phase": "runtime_ready", "initial_swap_bytes": 1129117122, "memory_guideline_bytes": 1400000000, "policy": "One model part at a time; no wiring; synchronized eviction and guards at phase boundaries"}
+{"time": 1791602518.5035222, "phase": "runtime_exit", "error": "Text scoring exceeded declared1.5GB peak plan"}

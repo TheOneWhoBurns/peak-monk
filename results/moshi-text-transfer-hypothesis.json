@@ -1,5 +1,5 @@
 {
-  "status": "Tiny matched-batch proof and one disposable native text-only update passed; transfer not tested",
+  "status": "Native initial-token diagnostic supports further text-transfer experiment; no transfer quality evidence",
   "source": "https://kyutai.org/assets/pdfs/Moshi.pdf",
   "source_location": "Section4.4, printed pages20-21; PDFzeroindex19-20",
   "evidence": [
@@ -25,5 +25,6 @@
     "reference_corrections": "results/moshi-text-reference-correction.json",
     "actual": "results/moshi-text-real-probe/result.json"
   },
-  "next": "Run read-only score_moshi_text.py on native base,run08parent,disposableupdate serially after current text training. Inspect PAD/EPAD mass and conditional lexical CE; do not interpret raw text loss as speech quality."
+  "next": "Extend gradient validator to permit native initial input32000 while excluding it from targets; prove parity, then one native-start update. Text/native replay experiment requires explicit serialization and checkpoint selection before launch.",
+  "diagnostic": "results/moshi-text-initial-token-diagnostic.json"
 }

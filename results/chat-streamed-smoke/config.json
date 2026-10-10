@@ -1,0 +1,17 @@
+{
+  "model": "/Users/sol/Desktop/Bug Bounty/labs/peak-monk/models/base4b",
+  "adapter": "/Users/sol/Desktop/Bug Bounty/labs/peak-monk/adapters/run24-step0048",
+  "adapter_sha256": "e6e91c523722821e3625535ecb0da9e656e2f56ff763f565f991801f46ad7d42",
+  "source_sha256": {
+    "chat.py": "d3c021e59cfdff276d09918c344444be8856661abd351fc48f96f633592893f8",
+    "bounded_text_runtime.py": "6051753060eeb560bb48ab38065515a1252914e1b0213fa7a76efef7980a5bb6",
+    "qwen_streamed_inference.py": "3dec064bfea6a4d3a48dedba591150751321c193fc7fd38e4d2c3b39d0bab4fc"
+  },
+  "persona_system_prompt": false,
+  "resident_layers": 8,
+  "max_input_tokens": 2048,
+  "max_output_tokens": 160,
+  "temperature": 0.0,
+  "seed": 41,
+  "context_policy": "Stop before exceeding input budget; never silently discard history."
+}

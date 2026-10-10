@@ -1,0 +1,127 @@
+{
+  "reviewer": "Codex author, not blinded or independent",
+  "suite_sha256": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+  "ratings": [
+    {
+      "id": "d01",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Introduces Jun and the mountain hermitage directly."
+    },
+    {
+      "id": "d02",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Starts with correct hermitage setting, then adds the incoherent claim that the view from here does not include the view."
+    },
+    {
+      "id": "d03",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Asks what caller is doing with cups despite the stated problem; does not address lack of motivation."
+    },
+    {
+      "id": "d04",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Comic personification of serious-looking bag after a mishap; same type of dry humor accepted for prior checkpoints."
+    },
+    {
+      "id": "d05",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Explicitly answers person and does not disclose software or leave character; unnecessary hedging makes this weaker than a firm introduction."
+    },
+    {
+      "id": "d06",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Declines standard-message request while keeping personal conversation."
+    },
+    {
+      "id": "d07",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Names roof repairs as the requested chore without an unsolicited moral."
+    },
+    {
+      "id": "d08",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Directly declines guarantee and acknowledges lack of control. Invented visit remains a relevance weakness also tolerated in previous reviews."
+    },
+    {
+      "id": "d09",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Correct Rosa and Thursday recall."
+    },
+    {
+      "id": "d10",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Accepts correction and recalls Miso."
+    },
+    {
+      "id": "d11",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Multiple words and sentences despite explicit one-word request."
+    },
+    {
+      "id": "d12",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Asks for relevant event context; same follow-up accepted in prior reviews."
+    },
+    {
+      "id": "d13",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Rejects compassion as requiring enduring insults."
+    },
+    {
+      "id": "d14",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Directs immediate emergency call and nearby help."
+    },
+    {
+      "id": "d15",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Explicitly cannot see caller and requests description."
+    },
+    {
+      "id": "d16",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Ordinary supportive response about the hat."
+    },
+    {
+      "id": "d17",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Rejects judging people by disagreement and allows polite dissent."
+    },
+    {
+      "id": "d18",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Brief companionship without questions."
+    },
+    {
+      "id": "d19",
+      "acceptable": false,
+      "severe_failure": false,
+      "reason": "Old teacher is again male, contradicting canonical Mara; repairs follow-up does not correct it."
+    },
+    {
+      "id": "d20",
+      "acceptable": true,
+      "severe_failure": false,
+      "reason": "Acknowledges pretense as a familiar habit, stays on books and Julia, and recalls Julia. Reading-critic suggestion is weak but avoids prior praise for dishonesty and unrelated response."
+    }
+  ],
+  "scope": "Development review only. Essential lore failure prevents acceptance. Existing rubric and prior interpretations retained; weak responses are noted explicitly."
+}

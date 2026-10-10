@@ -1,0 +1,14 @@
+{
+  "source": "https://takamichi-lab.github.io/assets/pdf/paper/2026/abe26iwsds_moshi-corpus-properties.pdf",
+  "title": "Effects of Dialogue Corpora Properties on Fine-Tuning a Moshi-Based Spoken Dialogue Model",
+  "read": "2026-10-09",
+  "observations": [
+    "Authors study Japanese continuation after a10second audio prompt, not zero-context English character adaptation.",
+    "All reported models share69k-hour J-Chat adaptation and115-hour final task data; their data scale far exceeds our small synthetic corpus.",
+    "Intermediate formal-speech corpus gave their best coherence; combining all intermediate corpora did not improve it further.",
+    "Reported evaluation uses NISQA and LLM judging, not an independent human quality rating."
+  ],
+  "inference_for_our_work": "Treat timing profile and context duration as dataset properties to measure. More mixture components need not improve coherence. This source does not establish our text-only transfer hypothesis or a sufficient small-data recipe.",
+  "official_finetune_source": "https://github.com/kyutai-labs/moshi-finetune",
+  "official_note": "README warns shorter training duration can cause earlier silence at inference. Our short synthetic clips therefore warrant a duration-distribution audit rather than relying on joint loss."
+}

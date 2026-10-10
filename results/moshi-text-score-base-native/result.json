@@ -1,0 +1,1190 @@
+{
+  "status": "complete",
+  "target_tokens": 130,
+  "full_ce": 3.3398453785822944,
+  "lexical_ce": 3.339844487263606,
+  "mean_padding_probability": 8.903000336963608e-07,
+  "argmax_padding_count": 0,
+  "seconds": 10.835051583000677,
+  "metrics": {
+    "elapsed_seconds": 11.09370674999991,
+    "peak_rss_bytes": 338100224,
+    "swap_bytes": 1129117122,
+    "memory_pressure_level": 1,
+    "mlx_peak_bytes": 149046832,
+    "mlx_active_bytes": 83517512
+  },
+  "tokens": [
+    {
+      "position": 1,
+      "token": 813,
+      "piece": "▁My",
+      "ce": 8.725680351257324,
+      "lexical_ce": 8.725629806518555,
+      "padding_probability": 5.073432839708403e-05,
+      "top_token": 266
+    },
+    {
+      "position": 2,
+      "token": 621,
+      "piece": "▁name",
+      "ce": 4.396452903747559,
+      "lexical_ce": 4.396452903747559,
+      "padding_probability": 5.6845759210943925e-09,
+      "top_token": 260
+    },
+    {
+      "position": 3,
+      "token": 275,
+      "piece": "▁is",
+      "ce": 0.7398824691772461,
+      "lexical_ce": 0.7398824691772461,
+      "padding_probability": 6.642143779433951e-11,
+      "top_token": 275
+    },
+    {
+      "position": 4,
+      "token": 4222,
+      "piece": "▁Jun",
+      "ce": 10.34566879272461,
+      "lexical_ce": 10.34566879272461,
+      "padding_probability": 2.3861929321356e-08,
+      "top_token": 334
+    },
+    {
+      "position": 5,
+      "token": 263,
+      "piece": ".",
+      "ce": 2.1711206436157227,
+      "lexical_ce": 2.1711206436157227,
+      "padding_probability": 4.052481440697253e-12,
+      "top_token": 423
+    },
+    {
+      "position": 6,
+      "token": 293,
+      "piece": "▁I",
+      "ce": 0.42896175384521484,
+      "lexical_ce": 0.42896175384521484,
+      "padding_probability": 3.4845107355074845e-10,
+      "top_token": 293
+    },
+    {
+      "position": 7,
+      "token": 292,
+      "piece": "▁was",
+      "ce": 5.489727020263672,
+      "lexical_ce": 5.489727020263672,
+      "padding_probability": 6.233323579518668e-11,
+      "top_token": 325
+    },
+    {
+      "position": 8,
+      "token": 272,
+      "piece": "▁a",
+      "ce": 3.0073938369750977,
+      "lexical_ce": 3.0073938369750977,
+      "padding_probability": 1.1321744608494555e-07,
+      "top_token": 1325
+    },
+    {
+      "position": 9,
+      "token": 5195,
+      "piece": "▁roof",
+      "ce": 11.069316864013672,
+      "lexical_ce": 11.069315910339355,
+      "padding_probability": 1.382186098908278e-07,
+      "top_token": 1193
+    },
+    {
+      "position": 10,
+      "token": 358,
+      "piece": "er",
+      "ce": 0.4074697494506836,
+      "lexical_ce": 0.4074697494506836,
+      "padding_probability": 3.937465020698028e-09,
+      "top_token": 358
+    },
+    {
+      "position": 11,
+      "token": 522,
+      "piece": "▁before",
+      "ce": 2.121061325073242,
+      "lexical_ce": 2.121061325073242,
+      "padding_probability": 2.2807782051881276e-10,
+      "top_token": 282
+    },
+    {
+      "position": 12,
+      "token": 293,
+      "piece": "▁I",
+      "ce": 0.7924814224243164,
+      "lexical_ce": 0.7924814224243164,
+      "padding_probability": 3.4394084802436e-10,
+      "top_token": 293
+    },
+    {
+      "position": 13,
+      "token": 795,
+      "piece": "▁became",
+      "ce": 2.2667999267578125,
+      "lexical_ce": 2.2667999267578125,
+      "padding_probability": 9.523536448341474e-08,
+      "top_token": 1081
+    },
+    {
+      "position": 14,
+      "token": 272,
+      "piece": "▁a",
+      "ce": 0.33661746978759766,
+      "lexical_ce": 0.33661746978759766,
+      "padding_probability": 2.159115730648864e-08,
+      "top_token": 272
+    },
+    {
+      "position": 15,
+      "token": 14128,
+      "piece": "▁monk",
+      "ce": 6.5506391525268555,
+      "lexical_ce": 6.550637722015381,
+      "padding_probability": 1.2560711866171914e-06,
+      "top_token": 3290
+    },
+    {
+      "position": 16,
+      "token": 263,
+      "piece": ".",
+      "ce": 0.2788534164428711,
+      "lexical_ce": 0.2788534164428711,
+      "padding_probability": 2.5153875293434935e-13,
+      "top_token": 263
+    },
+    {
+      "position": 17,
+      "token": 353,
+      "piece": "▁This",
+      "ce": 5.491045951843262,
+      "lexical_ce": 5.491045951843262,
+      "padding_probability": 3.22832995891531e-08,
+      "top_token": 293
+    },
+    {
+      "position": 18,
+      "token": 3405,
+      "piece": "▁morning",
+      "ce": 5.533716201782227,
+      "lexical_ce": 5.53371524810791,
+      "padding_probability": 7.423273586937285e-07,
+      "top_token": 275
+    },
+    {
+      "position": 19,
+      "token": 262,
+      "piece": "▁the",
+      "ce": 4.31334114074707,
+      "lexical_ce": 4.31334114074707,
+      "padding_probability": 1.1282737938378418e-10,
+      "top_token": 261
+    },
+    {
+      "position": 20,
+      "token": 2947,
+      "piece": "▁wind",
+      "ce": 5.703374862670898,
+      "lexical_ce": 5.703373908996582,
+      "padding_probability": 1.3092923154545133e-06,
+      "top_token": 31769
+    },
+    {
+      "position": 21,
+      "token": 6149,
+      "piece": "▁rat",
+      "ce": 8.068143844604492,
+      "lexical_ce": 8.068142890930176,
+      "padding_probability": 8.149265795509564e-07,
+      "top_token": 292
+    },
+    {
+      "position": 22,
+      "token": 303,
+      "piece": "t",
+      "ce": 0.046932220458984375,
+      "lexical_ce": 0.046932220458984375,
+      "padding_probability": 7.038048529389718e-12,
+      "top_token": 303
+    },
+    {
+      "position": 23,
+      "token": 2379,
+      "piece": "led",
+      "ce": 0.008388519287109375,
+      "lexical_ce": 0.008388519287109375,
+      "padding_probability": 1.2246394870407684e-11,
+      "top_token": 2379
+    },
+    {
+      "position": 24,
+      "token": 262,
+      "piece": "▁the",
+      "ce": 0.545933723449707,
+      "lexical_ce": 0.545933723449707,
+      "padding_probability": 2.290505562996259e-09,
+      "top_token": 262
+    },
+    {
+      "position": 25,
+      "token": 8382,
+      "piece": "▁loose",
+      "ce": 6.703716278076172,
+      "lexical_ce": 6.7037153244018555,
+      "padding_probability": 7.225677336464287e-07,
+      "top_token": 5195
+    },
+    {
+      "position": 26,
+      "token": 23988,
+      "piece": "▁shutter",
+      "ce": 8.496785163879395,
+      "lexical_ce": 8.496785163879395,
+      "padding_probability": 8.16481318111073e-08,
+      "top_token": 15657
+    },
+    {
+      "position": 27,
+      "token": 17470,
+      "piece": "▁beside",
+      "ce": 12.84701919555664,
+      "lexical_ce": 12.84701919555664,
+      "padding_probability": 1.3469023674161917e-09,
+      "top_token": 266
+    },
+    {
+      "position": 28,
+      "token": 395,
+      "piece": "▁my",
+      "ce": 1.0310497283935547,
+      "lexical_ce": 1.0310497283935547,
+      "padding_probability": 1.1854511816622448e-10,
+      "top_token": 262
+    },
+    {
+      "position": 29,
+      "token": 6129,
+      "piece": "▁bed",
+      "ce": 2.3195934295654297,
+      "lexical_ce": 2.3195934295654297,
+      "padding_probability": 7.19013883099251e-07,
+      "top_token": 723
+    },
+    {
+      "position": 30,
+      "token": 261,
+      "piece": ",",
+      "ce": 1.4923171997070312,
+      "lexical_ce": 1.4923171997070312,
+      "padding_probability": 5.387835733117186e-10,
+      "top_token": 263
+    },
+    {
+      "position": 31,
+      "token": 267,
+      "piece": "▁and",
+      "ce": 0.489013671875,
+      "lexical_ce": 0.489013671875,
+      "padding_probability": 6.928653206728086e-09,
+      "top_token": 267
+    },
+    {
+      "position": 32,
+      "token": 293,
+      "piece": "▁I",
+      "ce": 0.6270427703857422,
+      "lexical_ce": 0.6270427703857422,
+      "padding_probability": 8.979477428283644e-08,
+      "top_token": 293
+    },
+    {
+      "position": 33,
+      "token": 6445,
+      "piece": "▁lay",
+      "ce": 4.6265459060668945,
+      "lexical_ce": 4.626544952392578,
+      "padding_probability": 6.97609380040376e-07,
+      "top_token": 1219
+    },
+    {
+      "position": 34,
+      "token": 370,
+      "piece": "▁there",
+      "ce": 1.4474000930786133,
+      "lexical_ce": 1.4474000930786133,
+      "padding_probability": 1.287733795152235e-07,
+      "top_token": 272
+    },
+    {
+      "position": 35,
+      "token": 9136,
+      "piece": "▁hoping",
+      "ce": 7.293796539306641,
+      "lexical_ce": 7.293795585632324,
+      "padding_probability": 1.0439836160003324e-06,
+      "top_token": 8744
+    },
+    {
+      "position": 36,
+      "token": 296,
+      "piece": "▁it",
+      "ce": 0.5341596603393555,
+      "lexical_ce": 0.5341596603393555,
+      "padding_probability": 2.3461546594383265e-10,
+      "top_token": 296
+    },
+    {
+      "position": 37,
+      "token": 367,
+      "piece": "▁would",
+      "ce": 0.3475761413574219,
+      "lexical_ce": 0.3475761413574219,
+      "padding_probability": 4.3270267924278016e-10,
+      "top_token": 367
+    },
+    {
+      "position": 38,
+      "token": 1862,
+      "piece": "▁stop",
+      "ce": 1.1931447982788086,
+      "lexical_ce": 1.1931438446044922,
+      "padding_probability": 6.352673835863243e-07,
+      "top_token": 1862
+    },
+    {
+      "position": 39,
+      "token": 595,
+      "piece": "▁without",
+      "ce": 6.637508392333984,
+      "lexical_ce": 6.637508392333984,
+      "padding_probability": 1.076354450013639e-09,
+      "top_token": 263
+    },
+    {
+      "position": 40,
+      "token": 395,
+      "piece": "▁my",
+      "ce": 4.730198860168457,
+      "lexical_ce": 4.730193138122559,
+      "padding_probability": 5.927287020313088e-06,
+      "top_token": 1464
+    },
+    {
+      "position": 41,
+      "token": 618,
+      "piece": "▁help",
+      "ce": 5.221561431884766,
+      "lexical_ce": 5.221556663513184,
+      "padding_probability": 4.639189683075529e-06,
+      "top_token": 823
+    },
+    {
+      "position": 42,
+      "token": 263,
+      "piece": ".",
+      "ce": 0.2990436553955078,
+      "lexical_ce": 0.2990436553955078,
+      "padding_probability": 7.701964608620993e-13,
+      "top_token": 263
+    },
+    {
+      "position": 43,
+      "token": 351,
+      "piece": "▁It",
+      "ce": 1.2966880798339844,
+      "lexical_ce": 1.2966880798339844,
+      "padding_probability": 1.1280184253337211e-07,
+      "top_token": 351
+    },
+    {
+      "position": 44,
+      "token": 571,
+      "piece": "▁did",
+      "ce": 1.8483848571777344,
+      "lexical_ce": 1.848383903503418,
+      "padding_probability": 7.164095450207242e-07,
+      "top_token": 1291
+    },
+    {
+      "position": 45,
+      "token": 309,
+      "piece": "▁not",
+      "ce": 0.6125917434692383,
+      "lexical_ce": 0.6125917434692383,
+      "padding_probability": 3.099655601634943e-11,
+      "top_token": 309
+    },
+    {
+      "position": 46,
+      "token": 263,
+      "piece": ".",
+      "ce": 0.3876800537109375,
+      "lexical_ce": 0.3876800537109375,
+      "padding_probability": 1.4068681115919635e-11,
+      "top_token": 263
+    },
+    {
+      "position": 47,
+      "token": 293,
+      "piece": "▁I",
+      "ce": 0.9487371444702148,
+      "lexical_ce": 0.9487371444702148,
+      "padding_probability": 8.184724720194936e-08,
+      "top_token": 293
+    },
+    {
+      "position": 48,
+      "token": 515,
+      "piece": "▁found",
+      "ce": 5.4070634841918945,
+      "lexical_ce": 5.407062530517578,
+      "padding_probability": 1.2549332950584358e-06,
+      "top_token": 1081
+    },
+    {
+      "position": 49,
+      "token": 262,
+      "piece": "▁the",
+      "ce": 2.5111770629882812,
+      "lexical_ce": 2.5111770629882812,
+      "padding_probability": 5.058843566274618e-09,
+      "top_token": 3557
+    },
+    {
+      "position": 50,
+      "token": 631,
+      "piece": "▁small",
+      "ce": 7.3567609786987305,
+      "lexical_ce": 7.356758117675781,
+      "padding_probability": 3.2272041607939173e-06,
+      "top_token": 23988
+    },
+    {
+      "position": 51,
+      "token": 15423,
+      "piece": "▁hammer",
+      "ce": 5.992280006408691,
+      "lexical_ce": 5.992278099060059,
+      "padding_probability": 1.8054445263260277e-06,
+      "top_token": 2574
+    },
+    {
+      "position": 52,
+      "token": 496,
+      "piece": "▁under",
+      "ce": 4.0882768630981445,
+      "lexical_ce": 4.0882768630981445,
+      "padding_probability": 1.2597325849128538e-08,
+      "top_token": 271
+    },
+    {
+      "position": 53,
+      "token": 262,
+      "piece": "▁the",
+      "ce": 1.5156126022338867,
+      "lexical_ce": 1.5156126022338867,
+      "padding_probability": 6.337397273625811e-11,
+      "top_token": 395
+    },
+    {
+      "position": 54,
+      "token": 25695,
+      "piece": "▁stool",
+      "ce": 9.286699295043945,
+      "lexical_ce": 9.286698341369629,
+      "padding_probability": 1.3477887250701315e-06,
+      "top_token": 6129
+    },
+    {
+      "position": 55,
+      "token": 267,
+      "piece": "▁and",
+      "ce": 1.2166309356689453,
+      "lexical_ce": 1.2166309356689453,
+      "padding_probability": 3.326414699245106e-10,
+      "top_token": 267
+    },
+    {
+      "position": 56,
+      "token": 1290,
+      "piece": "▁went",
+      "ce": 1.8862829208374023,
+      "lexical_ce": 1.8862791061401367,
+      "padding_probability": 3.7682025322283152e-06,
+      "top_token": 1290
+    },
+    {
+      "position": 57,
+      "token": 388,
+      "piece": "▁out",
+      "ce": 1.0300102233886719,
+      "lexical_ce": 1.0300102233886719,
+      "padding_probability": 5.125737168043543e-09,
+      "top_token": 388
+    },
+    {
+      "position": 58,
+      "token": 2885,
+      "piece": "▁onto",
+      "ce": 4.532105445861816,
+      "lexical_ce": 4.532105445861816,
+      "padding_probability": 4.166460509935632e-10,
+      "top_token": 269
+    },
+    {
+      "position": 59,
+      "token": 262,
+      "piece": "▁the",
+      "ce": 0.0204010009765625,
+      "lexical_ce": 0.0204010009765625,
+      "padding_probability": 4.310963478554308e-12,
+      "top_token": 262
+    },
+    {
+      "position": 60,
+      "token": 10270,
+      "piece": "▁shelter",
+      "ce": 7.584704399108887,
+      "lexical_ce": 7.584704399108887,
+      "padding_probability": 3.797109968672885e-07,
+      "top_token": 5195
+    },
+    {
+      "position": 61,
+      "token": 321,
+      "piece": "ed",
+      "ce": 0.04870414733886719,
+      "lexical_ce": 0.04870414733886719,
+      "padding_probability": 1.2574374874674277e-10,
+      "top_token": 321
+    },
+    {
+      "position": 62,
+      "token": 260,
+      "piece": "▁",
+      "ce": 5.061562538146973,
+      "lexical_ce": 5.061562538146973,
+      "padding_probability": 1.0079790513373155e-07,
+      "top_token": 7121
+    },
+    {
+      "position": 63,
+      "token": 15333,
+      "piece": "ledge",
+      "ce": 2.9423208236694336,
+      "lexical_ce": 2.9423208236694336,
+      "padding_probability": 1.5731262692497694e-07,
+      "top_token": 3951
+    },
+    {
+      "position": 64,
+      "token": 263,
+      "piece": ".",
+      "ce": 1.8487062454223633,
+      "lexical_ce": 1.8487062454223633,
+      "padding_probability": 1.1693797041800735e-09,
+      "top_token": 269
+    },
+    {
+      "position": 65,
+      "token": 17155,
+      "piece": "▁Mara",
+      "ce": 13.407034873962402,
+      "lexical_ce": 13.407034873962402,
+      "padding_probability": 2.910275327394629e-07,
+      "top_token": 293
+    },
+    {
+      "position": 66,
+      "token": 261,
+      "piece": ",",
+      "ce": 2.747319221496582,
+      "lexical_ce": 2.7473182678222656,
+      "padding_probability": 7.183973593782866e-08,
+      "top_token": 292
+    },
+    {
+      "position": 67,
+      "token": 395,
+      "piece": "▁my",
+      "ce": 2.6654224395751953,
+      "lexical_ce": 2.6654224395751953,
+      "padding_probability": 1.0614453316293293e-08,
+      "top_token": 262
+    },
+    {
+      "position": 68,
+      "token": 960,
+      "piece": "▁old",
+      "ce": 3.1355152130126953,
+      "lexical_ce": 3.1355133056640625,
+      "padding_probability": 1.4630800251325127e-06,
+      "top_token": 2461
+    },
+    {
+      "position": 69,
+      "token": 3290,
+      "piece": "▁teacher",
+      "ce": 3.952342987060547,
+      "lexical_ce": 3.952342987060547,
+      "padding_probability": 4.502156230046239e-07,
+      "top_token": 2461
+    },
+    {
+      "position": 70,
+      "token": 261,
+      "piece": ",",
+      "ce": 0.2387676239013672,
+      "lexical_ce": 0.2387676239013672,
+      "padding_probability": 4.484437127194596e-11,
+      "top_token": 261
+    },
+    {
+      "position": 71,
+      "token": 392,
+      "piece": "▁used",
+      "ce": 4.151157379150391,
+      "lexical_ce": 4.151157379150391,
+      "padding_probability": 6.302818178482994e-08,
+      "top_token": 292
+    },
+    {
+      "position": 72,
+      "token": 269,
+      "piece": "▁to",
+      "ce": 0.11905956268310547,
+      "lexical_ce": 0.11905956268310547,
+      "padding_probability": 2.6411606235399177e-10,
+      "top_token": 269
+    },
+    {
+      "position": 73,
+      "token": 3672,
+      "piece": "▁watch",
+      "ce": 5.627601623535156,
+      "lexical_ce": 5.62760066986084,
+      "padding_probability": 4.76957211503759e-07,
+      "top_token": 755
+    },
+    {
+      "position": 74,
+      "token": 477,
+      "piece": "▁me",
+      "ce": 0.7043037414550781,
+      "lexical_ce": 0.7043037414550781,
+      "padding_probability": 4.927814956090515e-08,
+      "top_token": 477
+    },
+    {
+      "position": 75,
+      "token": 585,
+      "piece": "▁find",
+      "ce": 9.004920959472656,
+      "lexical_ce": 9.00492000579834,
+      "padding_probability": 1.0259147984470474e-06,
+      "top_token": 301
+    },
+    {
+      "position": 76,
+      "token": 8663,
+      "piece": "▁elaborate",
+      "ce": 11.804032325744629,
+      "lexical_ce": 11.804031372070312,
+      "padding_probability": 6.695640308862494e-07,
+      "top_token": 395
+    },
+    {
+      "position": 77,
+      "token": 2364,
+      "piece": "▁reasons",
+      "ce": 4.144479751586914,
+      "lexical_ce": 4.144478797912598,
+      "padding_probability": 2.2083624173774297e-07,
+      "top_token": 1833
+    },
+    {
+      "position": 78,
+      "token": 269,
+      "piece": "▁to",
+      "ce": 1.2271575927734375,
+      "lexical_ce": 1.2271575927734375,
+      "padding_probability": 1.571168889435981e-11,
+      "top_token": 282
+    },
+    {
+      "position": 79,
+      "token": 30778,
+      "piece": "▁postpone",
+      "ce": 8.79964542388916,
+      "lexical_ce": 8.799644470214844,
+      "padding_probability": 1.0001982673202292e-06,
+      "top_token": 384
+    },
+    {
+      "position": 80,
+      "token": 272,
+      "piece": "▁a",
+      "ce": 4.480255126953125,
+      "lexical_ce": 4.480255126953125,
+      "padding_probability": 6.771575726816081e-07,
+      "top_token": 438
+    },
+    {
+      "position": 81,
+      "token": 1110,
+      "piece": "▁simple",
+      "ce": 1.6845073699951172,
+      "lexical_ce": 1.6845073699951172,
+      "padding_probability": 5.959509508102201e-07,
+      "top_token": 1110
+    },
+    {
+      "position": 82,
+      "token": 4168,
+      "piece": "▁repair",
+      "ce": 2.1723556518554688,
+      "lexical_ce": 2.1723556518554688,
+      "padding_probability": 7.955579661711454e-08,
+      "top_token": 1830
+    },
+    {
+      "position": 83,
+      "token": 263,
+      "piece": ".",
+      "ce": 0.5831155776977539,
+      "lexical_ce": 0.5831155776977539,
+      "padding_probability": 7.710524059512114e-12,
+      "top_token": 263
+    },
+    {
+      "position": 84,
+      "token": 644,
+      "piece": "▁She",
+      "ce": 2.787386894226074,
+      "lexical_ce": 2.787386894226074,
+      "padding_probability": 5.160031690820688e-08,
+      "top_token": 293
+    },
+    {
+      "position": 85,
+      "token": 1399,
+      "piece": "▁died",
+      "ce": 3.7956342697143555,
+      "lexical_ce": 3.795633316040039,
+      "padding_probability": 8.56915178815143e-08,
+      "top_token": 367
+    },
+    {
+      "position": 86,
+      "token": 386,
+      "piece": "▁some",
+      "ce": 3.567133903503418,
+      "lexical_ce": 3.567133903503418,
+      "padding_probability": 1.4834678374597843e-08,
+      "top_token": 657
+    },
+    {
+      "position": 87,
+      "token": 464,
+      "piece": "▁years",
+      "ce": 0.36856555938720703,
+      "lexical_ce": 0.36856555938720703,
+      "padding_probability": 8.879327273447757e-10,
+      "top_token": 464
+    },
+    {
+      "position": 88,
+      "token": 1769,
+      "piece": "▁ago",
+      "ce": 0.15497207641601562,
+      "lexical_ce": 0.15497207641601562,
+      "padding_probability": 2.907534803198164e-11,
+      "top_token": 1769
+    },
+    {
+      "position": 89,
+      "token": 263,
+      "piece": ".",
+      "ce": 0.9704313278198242,
+      "lexical_ce": 0.9704313278198242,
+      "padding_probability": 8.983603249322625e-13,
+      "top_token": 261
+    },
+    {
+      "position": 90,
+      "token": 293,
+      "piece": "▁I",
+      "ce": 0.9786758422851562,
+      "lexical_ce": 0.9786758422851562,
+      "padding_probability": 8.088933611816174e-08,
+      "top_token": 293
+    },
+    {
+      "position": 91,
+      "token": 569,
+      "piece": "▁still",
+      "ce": 3.602879524230957,
+      "lexical_ce": 3.602872848510742,
+      "padding_probability": 6.123600542196073e-06,
+      "top_token": 310
+    },
+    {
+      "position": 92,
+      "token": 7448,
+      "piece": "▁miss",
+      "ce": 3.0239038467407227,
+      "lexical_ce": 3.02390193939209,
+      "padding_probability": 2.529779067117488e-06,
+      "top_token": 2767
+    },
+    {
+      "position": 93,
+      "token": 425,
+      "piece": "▁her",
+      "ce": 0.019147872924804688,
+      "lexical_ce": 0.019147872924804688,
+      "padding_probability": 5.278362746885534e-10,
+      "top_token": 425
+    },
+    {
+      "position": 94,
+      "token": 261,
+      "piece": ",",
+      "ce": 2.5279922485351562,
+      "lexical_ce": 2.5279922485351562,
+      "padding_probability": 5.376199929685299e-09,
+      "top_token": 263
+    },
+    {
+      "position": 95,
+      "token": 1798,
+      "piece": "▁particularly",
+      "ce": 6.822667121887207,
+      "lexical_ce": 6.822667121887207,
+      "padding_probability": 4.0198699924332004e-10,
+      "top_token": 327
+    },
+    {
+      "position": 96,
+      "token": 375,
+      "piece": "▁when",
+      "ce": 1.0002326965332031,
+      "lexical_ce": 1.0002326965332031,
+      "padding_probability": 4.769417083494432e-10,
+      "top_token": 375
+    },
+    {
+      "position": 97,
+      "token": 293,
+      "piece": "▁I",
+      "ce": 0.5193519592285156,
+      "lexical_ce": 0.5193519592285156,
+      "padding_probability": 4.758566660711949e-07,
+      "top_token": 293
+    },
+    {
+      "position": 98,
+      "token": 310,
+      "piece": "▁have",
+      "ce": 3.173227310180664,
+      "lexical_ce": 3.173227310180664,
+      "padding_probability": 2.858463972188474e-07,
+      "top_token": 325
+    },
+    {
+      "position": 99,
+      "token": 954,
+      "piece": "▁done",
+      "ce": 6.78388786315918,
+      "lexical_ce": 6.78388786315918,
+      "padding_probability": 3.8323199191836466e-07,
+      "top_token": 269
+    },
+    {
+      "position": 100,
+      "token": 742,
+      "piece": "▁something",
+      "ce": 0.6333436965942383,
+      "lexical_ce": 0.6333436965942383,
+      "padding_probability": 1.2205392252440106e-08,
+      "top_token": 742
+    },
+    {
+      "position": 101,
+      "token": 507,
+      "piece": "▁she",
+      "ce": 3.664295196533203,
+      "lexical_ce": 3.664295196533203,
+      "padding_probability": 6.332764712624339e-08,
+      "top_token": 1528
+    },
+    {
+      "position": 102,
+      "token": 367,
+      "piece": "▁would",
+      "ce": 0.43361759185791016,
+      "lexical_ce": 0.43361759185791016,
+      "padding_probability": 4.314362200830146e-08,
+      "top_token": 367
+    },
+    {
+      "position": 103,
+      "token": 310,
+      "piece": "▁have",
+      "ce": 0.6580648422241211,
+      "lexical_ce": 0.6580648422241211,
+      "padding_probability": 1.3331015402684443e-08,
+      "top_token": 310
+    },
+    {
+      "position": 104,
+      "token": 515,
+      "piece": "▁found",
+      "ce": 4.242744445800781,
+      "lexical_ce": 4.242742538452148,
+      "padding_probability": 1.8262842331751017e-06,
+      "top_token": 1603
+    },
+    {
+      "position": 105,
+      "token": 11440,
+      "piece": "▁funny",
+      "ce": 3.857914924621582,
+      "lexical_ce": 3.8579139709472656,
+      "padding_probability": 8.309256145366817e-07,
+      "top_token": 561
+    },
+    {
+      "position": 106,
+      "token": 263,
+      "piece": ".",
+      "ce": 0.3923072814941406,
+      "lexical_ce": 0.3923072814941406,
+      "padding_probability": 5.326923120272872e-14,
+      "top_token": 263
+    },
+    {
+      "position": 107,
+      "token": 654,
+      "piece": "▁After",
+      "ce": 5.823585510253906,
+      "lexical_ce": 5.823585510253906,
+      "padding_probability": 3.551378569000008e-08,
+      "top_token": 293
+    },
+    {
+      "position": 108,
+      "token": 14721,
+      "piece": "▁fixing",
+      "ce": 3.7481517791748047,
+      "lexical_ce": 3.7481508255004883,
+      "padding_probability": 9.512376664133626e-07,
+      "top_token": 293
+    },
+    {
+      "position": 109,
+      "token": 262,
+      "piece": "▁the",
+      "ce": 0.06323623657226562,
+      "lexical_ce": 0.06323623657226562,
+      "padding_probability": 9.21431160538777e-12,
+      "top_token": 262
+    },
+    {
+      "position": 110,
+      "token": 23988,
+      "piece": "▁shutter",
+      "ce": 0.15799808502197266,
+      "lexical_ce": 0.15799808502197266,
+      "padding_probability": 3.667970105425411e-08,
+      "top_token": 23988
+    },
+    {
+      "position": 111,
+      "token": 293,
+      "piece": "▁I",
+      "ce": 0.7954273223876953,
+      "lexical_ce": 0.7954273223876953,
+      "padding_probability": 3.166694684253457e-11,
+      "top_token": 261
+    },
+    {
+      "position": 112,
+      "token": 525,
+      "piece": "▁made",
+      "ce": 4.839560508728027,
+      "lexical_ce": 4.839557647705078,
+      "padding_probability": 2.248380951641593e-06,
+      "top_token": 1290
+    },
+    {
+      "position": 113,
+      "token": 7252,
+      "piece": "▁tea",
+      "ce": 2.677570343017578,
+      "lexical_ce": 2.677570343017578,
+      "padding_probability": 1.6059321694683604e-07,
+      "top_token": 272
+    },
+    {
+      "position": 114,
+      "token": 271,
+      "piece": "▁in",
+      "ce": 2.5968265533447266,
+      "lexical_ce": 2.5968265533447266,
+      "padding_probability": 3.1910871167717403e-10,
+      "top_token": 267
+    },
+    {
+      "position": 115,
+      "token": 262,
+      "piece": "▁the",
+      "ce": 0.28630924224853516,
+      "lexical_ce": 0.28630924224853516,
+      "padding_probability": 1.5509795669998994e-09,
+      "top_token": 262
+    },
+    {
+      "position": 116,
+      "token": 8628,
+      "piece": "▁den",
+      "ce": 9.091232299804688,
+      "lexical_ce": 9.091232299804688,
+      "padding_probability": 3.3614961125749687e-07,
+      "top_token": 8948
+    },
+    {
+      "position": 117,
+      "token": 1791,
+      "piece": "ted",
+      "ce": 7.004000663757324,
+      "lexical_ce": 7.004000663757324,
+      "padding_probability": 2.2427300017113794e-09,
+      "top_token": 263
+    },
+    {
+      "position": 118,
+      "token": 260,
+      "piece": "▁",
+      "ce": 1.9264965057373047,
+      "lexical_ce": 1.9264965057373047,
+      "padding_probability": 3.443592788698879e-08,
+      "top_token": 7117
+    },
+    {
+      "position": 119,
+      "token": 6378,
+      "piece": "ket",
+      "ce": 0.14162063598632812,
+      "lexical_ce": 0.14162063598632812,
+      "padding_probability": 1.7047044309492776e-07,
+      "top_token": 6378
+    },
+    {
+      "position": 120,
+      "token": 4067,
+      "piece": "tle",
+      "ce": 0.000152587890625,
+      "lexical_ce": 0.000152587890625,
+      "padding_probability": 2.8589852246697564e-14,
+      "top_token": 4067
+    },
+    {
+      "position": 121,
+      "token": 263,
+      "piece": ".",
+      "ce": 1.0530281066894531,
+      "lexical_ce": 1.0530281066894531,
+      "padding_probability": 4.310989343281335e-10,
+      "top_token": 263
+    },
+    {
+      "position": 122,
+      "token": 287,
+      "piece": "▁The",
+      "ce": 1.9110097885131836,
+      "lexical_ce": 1.9110088348388672,
+      "padding_probability": 3.656246008176822e-07,
+      "top_token": 293
+    },
+    {
+      "position": 123,
+      "token": 7252,
+      "piece": "▁tea",
+      "ce": 1.9072389602661133,
+      "lexical_ce": 1.9072370529174805,
+      "padding_probability": 2.421349790893146e-06,
+      "top_token": 2947
+    },
+    {
+      "position": 124,
+      "token": 292,
+      "piece": "▁was",
+      "ce": 0.4191465377807617,
+      "lexical_ce": 0.4191455841064453,
+      "padding_probability": 7.343204089238498e-08,
+      "top_token": 292
+    },
+    {
+      "position": 125,
+      "token": 708,
+      "piece": "▁better",
+      "ce": 5.320867538452148,
+      "lexical_ce": 5.320865631103516,
+      "padding_probability": 1.5002226518845418e-06,
+      "top_token": 576
+    },
+    {
+      "position": 126,
+      "token": 377,
+      "piece": "▁than",
+      "ce": 0.15673160552978516,
+      "lexical_ce": 0.15673160552978516,
+      "padding_probability": 7.583100369856766e-09,
+      "top_token": 377
+    },
+    {
+      "position": 127,
+      "token": 262,
+      "piece": "▁the",
+      "ce": 1.487900733947754,
+      "lexical_ce": 1.4878997802734375,
+      "padding_probability": 2.531179461584543e-07,
+      "top_token": 293
+    },
+    {
+      "position": 128,
+      "token": 4168,
+      "piece": "▁repair",
+      "ce": 4.834440231323242,
+      "lexical_ce": 4.834436416625977,
+      "padding_probability": 4.083338353666477e-06,
+      "top_token": 23988
+    },
+    {
+      "position": 129,
+      "token": 263,
+      "piece": ".",
+      "ce": 1.013138771057129,
+      "lexical_ce": 1.013138771057129,
+      "padding_probability": 3.282343286059586e-10,
+      "top_token": 261
+    },
+    {
+      "position": 130,
+      "token": 2,
+      "piece": "</s>",
+      "ce": 19.696998596191406,
+      "lexical_ce": 19.696998596191406,
+      "padding_probability": 1.1450499926013435e-07,
+      "top_token": 293
+    }
+  ],
+  "scope": "Single authored training prose sample, teacher forced; neither held-out text ability nor native speech quality."
+}

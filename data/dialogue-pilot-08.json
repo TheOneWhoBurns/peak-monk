@@ -14,7 +14,7 @@
     "runtime_mode": "streamed",
     "resident_layers": 8
   },
-  "scope": "Training-only matched depth pilot: four seed/root paths at0,8,32exchanges, identical gender-neutral monastic-instruction and present-contact questions, no caller-provided teacher name. Zero-depth roots share the same question and are repeated seeded samples, not distinct scenario families. Reuses previously sampled parent histories; all root relatives stay in training. No final/pressure prompts used.",
+  "scope": "Training-only broader sampling: four new ordinary-conversation families, two seeded sixteen-exchange trajectories per family, for up to128student replies. Caller spines are authored in advance; actual student continuations are sampled. All root relatives stay in training. Branches can be authored after these continuations are reviewed. No final/pressure prompts used.",
   "jobs": [
     {
       "id": "bus_shelter_s181_spine16",

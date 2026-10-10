@@ -1,0 +1,482 @@
+{
+  "scope": "Durations of actual encoded training episodes used in speech08; no new decoding or model generation.",
+  "training_episodes": 67,
+  "seconds_total": 1508.24,
+  "minutes_total": 25.137333333333334,
+  "min_seconds": 10.72,
+  "median_seconds": 22.0,
+  "max_seconds": 36.160000000000004,
+  "episodes_at_least60seconds": 0,
+  "episodes_at_least100seconds": 0,
+  "rows": [
+    {
+      "id": "ambition",
+      "frames": 341,
+      "seconds": 27.28,
+      "group": "data/speech_codes",
+      "metadata_sha256": "d5600ca1a53a6c815efc126a6192ac27610e12dec2024485f28c924d4c15f73f"
+    },
+    {
+      "id": "anger",
+      "frames": 452,
+      "seconds": 36.160000000000004,
+      "group": "data/speech_codes",
+      "metadata_sha256": "420c8b37017d3792fa1e0330dc1a5b82bae7b690822331eaed0e573402175bee"
+    },
+    {
+      "id": "apology",
+      "frames": 345,
+      "seconds": 27.6,
+      "group": "data/speech_codes",
+      "metadata_sha256": "5648c6b531fd5ce59653518c27e5cd96ca2ab0b01040ec4a83e2f7d9ed654be8"
+    },
+    {
+      "id": "arrival",
+      "frames": 270,
+      "seconds": 21.6,
+      "group": "data/speech_codes",
+      "metadata_sha256": "6246667b4a1947174116d8393548ba56e53125c4ceec54af8eee299c15767143"
+    },
+    {
+      "id": "boredom",
+      "frames": 294,
+      "seconds": 23.52,
+      "group": "data/speech_codes",
+      "metadata_sha256": "d116ee5f928a0073b99e06ad4bbf17dacf9812882cf023cd98854750a8197dff"
+    },
+    {
+      "id": "boundaries",
+      "frames": 285,
+      "seconds": 22.8,
+      "group": "data/speech_codes",
+      "metadata_sha256": "acde1e216f75dfe80038fd7461d16c26fe624316fafd278b5e65aa4e7c8c780d"
+    },
+    {
+      "id": "breakfast",
+      "frames": 304,
+      "seconds": 24.32,
+      "group": "data/speech_codes",
+      "metadata_sha256": "b26768662154ad76e62170f59fece473e9f9216548ebf2bde1a67e4e49380b9d"
+    },
+    {
+      "id": "childhood",
+      "frames": 272,
+      "seconds": 21.76,
+      "group": "data/speech_codes",
+      "metadata_sha256": "17a7ec28add8466e09e46f00c4813e2193866e6d1d4ba491c8a9d6cac1bcc7f7"
+    },
+    {
+      "id": "cold",
+      "frames": 239,
+      "seconds": 19.12,
+      "group": "data/speech_codes",
+      "metadata_sha256": "622234db917bcea8d3c0d476f72947e41a3938b8b0fbfc1bc445c895b6be56ec"
+    },
+    {
+      "id": "concrete_repair",
+      "frames": 344,
+      "seconds": 27.52,
+      "group": "data/speech_codes",
+      "metadata_sha256": "7e35b5ce5775bb2e3beb8cb7c23a74de45a8c871e0a1d24ae367d0a66cc4c620"
+    },
+    {
+      "id": "correction",
+      "frames": 263,
+      "seconds": 21.04,
+      "group": "data/speech_codes",
+      "metadata_sha256": "0d8dc59dae5e36d76f2e2bc3aa8f2f7d1ed1275158181c17f6e2cb1ee4f3840b"
+    },
+    {
+      "id": "crisis",
+      "frames": 391,
+      "seconds": 31.28,
+      "group": "data/speech_codes",
+      "metadata_sha256": "0eae6caa67529bae6bb17eaab31f5322df6228046278063db21a4315d1c6b0cf"
+    },
+    {
+      "id": "dependency",
+      "frames": 330,
+      "seconds": 26.400000000000002,
+      "group": "data/speech_codes",
+      "metadata_sha256": "790e23e7790689edcd29d98cbc4eb13829d17dc9b5d3786bfc2184467cf8bab5"
+    },
+    {
+      "id": "disagreement",
+      "frames": 302,
+      "seconds": 24.16,
+      "group": "data/speech_codes",
+      "metadata_sha256": "7a61b506d64fd5e440acbdfa99269834780594255e7727ade12da6d10dd34a86"
+    },
+    {
+      "id": "doctrine",
+      "frames": 368,
+      "seconds": 29.44,
+      "group": "data/speech_codes",
+      "metadata_sha256": "35200dcba21d42e73a1e7fe106848c2f4d420ed3dc5e316ca4fbbae3afd9adb3"
+    },
+    {
+      "id": "fortune",
+      "frames": 206,
+      "seconds": 16.48,
+      "group": "data/speech_codes",
+      "metadata_sha256": "a44531358f163589cc1a5d9b60565fcd6ccfaa52da259f59e9d94e6389b2c3cd"
+    },
+    {
+      "id": "friendship",
+      "frames": 275,
+      "seconds": 22.0,
+      "group": "data/speech_codes",
+      "metadata_sha256": "140ebeb9cdbdccb2c469c8d06edcdfcd0dc44a35f3f611fc37b09b3cd8e72b36"
+    },
+    {
+      "id": "game",
+      "frames": 283,
+      "seconds": 22.64,
+      "group": "data/speech_codes",
+      "metadata_sha256": "473091c7319bc5e6d5a2941af5d35481d66b95b985ea576036bd925b72a4ddda"
+    },
+    {
+      "id": "goodbye",
+      "frames": 200,
+      "seconds": 16.0,
+      "group": "data/speech_codes",
+      "metadata_sha256": "e1b3b9be0dff06eb950d38ede2cfb621844e367abde5e0030824473867ed1f1a"
+    },
+    {
+      "id": "grandiosity",
+      "frames": 290,
+      "seconds": 23.2,
+      "group": "data/speech_codes",
+      "metadata_sha256": "9785f1dd0a2fc3178d711a1056c6f566e5474b166bb296fb0f31cc42654ea561"
+    },
+    {
+      "id": "grief",
+      "frames": 363,
+      "seconds": 29.04,
+      "group": "data/speech_codes",
+      "metadata_sha256": "937a795aed7c06a944dfe12ed982fcc11d1e065bd3266121092cf96d647b4e03"
+    },
+    {
+      "id": "guilt",
+      "frames": 324,
+      "seconds": 25.92,
+      "group": "data/speech_codes",
+      "metadata_sha256": "37a64c98b2855646caa2aff447cbc59850511fc1dbc29ae4dd183bb2ff0493a3"
+    },
+    {
+      "id": "hallucination_boundary",
+      "frames": 238,
+      "seconds": 19.04,
+      "group": "data/speech_codes",
+      "metadata_sha256": "2c6e56a99bf57de7b4948a494dcd6c8a9aa56fa2c0038416174e04d240862e10"
+    },
+    {
+      "id": "health_boundary",
+      "frames": 302,
+      "seconds": 24.16,
+      "group": "data/speech_codes",
+      "metadata_sha256": "699d2d7e5377c49dcc913b071ffab3ffc8250e207a04c7c2aec4a06d1456070d"
+    },
+    {
+      "id": "home",
+      "frames": 356,
+      "seconds": 28.48,
+      "group": "data/speech_codes",
+      "metadata_sha256": "a448166f881ab634e7846b74710852cde828fde82cdbda556300098174c250ae"
+    },
+    {
+      "id": "identity_transparency",
+      "frames": 229,
+      "seconds": 18.32,
+      "group": "data/speech_codes",
+      "metadata_sha256": "aefda253787cca5689d6d3d42b2783f7b4e1d37127533b709e736c533387afff"
+    },
+    {
+      "id": "imperfection",
+      "frames": 222,
+      "seconds": 17.76,
+      "group": "data/speech_codes",
+      "metadata_sha256": "6a6bcd95a78a1373292e0361ce33fb0a0c8c7f0d131c0601ecc40627afbba454"
+    },
+    {
+      "id": "influences",
+      "frames": 269,
+      "seconds": 21.52,
+      "group": "data/speech_codes",
+      "metadata_sha256": "938f38511552fb2eb45a0af58feee8e1ab6e6f65ee3301db06d8840dcfdbdf3e"
+    },
+    {
+      "id": "jealousy",
+      "frames": 326,
+      "seconds": 26.080000000000002,
+      "group": "data/speech_codes",
+      "metadata_sha256": "a16cbf89ac12f559c68492610fdccc31442e096c4f8b6637253278703da58c00"
+    },
+    {
+      "id": "joke",
+      "frames": 187,
+      "seconds": 14.96,
+      "group": "data/speech_codes",
+      "metadata_sha256": "5300c8a96376f8e39a6f542a50af22c616aef6d79c4329105552fa90d762777c"
+    },
+    {
+      "id": "meditation",
+      "frames": 393,
+      "seconds": 31.44,
+      "group": "data/speech_codes",
+      "metadata_sha256": "6f638a035e0f5fefb373a0672a2455abba69adcc21f25e3b82c9d96d8fb823de"
+    },
+    {
+      "id": "memory",
+      "frames": 250,
+      "seconds": 20.0,
+      "group": "data/speech_codes",
+      "metadata_sha256": "265d16c8835d121e7715bd43fa0161b799063d90302df4edf3cd446550712123"
+    },
+    {
+      "id": "model_disclosure",
+      "frames": 144,
+      "seconds": 11.52,
+      "group": "data/speech_codes",
+      "metadata_sha256": "e73ffa62d9d5d62dbb73828b7325c5e9a7174bd3ecee179aac0144b6a87ba8ad"
+    },
+    {
+      "id": "money",
+      "frames": 399,
+      "seconds": 31.92,
+      "group": "data/speech_codes",
+      "metadata_sha256": "64cf616c0b8e4c121bbe3165b1acb3353dca4171c09bc4c6507fe600acb54bcb"
+    },
+    {
+      "id": "mundane_chat",
+      "frames": 227,
+      "seconds": 18.16,
+      "group": "data/speech_codes",
+      "metadata_sha256": "a3d313c1f2c7cc65859a952172f654c667c47c34cb5749bf50901156f6b58ea6"
+    },
+    {
+      "id": "name",
+      "frames": 245,
+      "seconds": 19.6,
+      "group": "data/speech_codes",
+      "metadata_sha256": "1e80a55355ca382bd7e854d62e12974ed569d46cb9627b8d0bf04d60fc7bc32d"
+    },
+    {
+      "id": "no_false_memory",
+      "frames": 183,
+      "seconds": 14.64,
+      "group": "data/speech_codes",
+      "metadata_sha256": "618ce1c4320e3353367a65aae9630a137cbcdc5acd4bc5079b059235d73c7af1"
+    },
+    {
+      "id": "no_hidden_prompt",
+      "frames": 216,
+      "seconds": 17.28,
+      "group": "data/speech_codes",
+      "metadata_sha256": "8dbf68aaf0edc0fb7da3cf3735405cba88bec1150786d9d18d430453359aa7da"
+    },
+    {
+      "id": "no_lecture",
+      "frames": 228,
+      "seconds": 18.240000000000002,
+      "group": "data/speech_codes",
+      "metadata_sha256": "19c85909fc26172d6a5de68372430072f0d02090fa24bf0d32cd40b5718df64a"
+    },
+    {
+      "id": "objects",
+      "frames": 312,
+      "seconds": 24.96,
+      "group": "data/speech_codes",
+      "metadata_sha256": "8a36e384d06d0c8db73155f19a6218c909f37f50eda0de57ee0b29438e59d796"
+    },
+    {
+      "id": "ordinary_practice",
+      "frames": 328,
+      "seconds": 26.240000000000002,
+      "group": "data/speech_codes",
+      "metadata_sha256": "623b2d4e46142e90de400fc3064054589cd9da13b9abb4a642588aa9418d1aac"
+    },
+    {
+      "id": "pace",
+      "frames": 177,
+      "seconds": 14.16,
+      "group": "data/speech_codes",
+      "metadata_sha256": "07c51c1a6795fbf1a65878d23fb34590827e4fa634e61ee5b5a51fb9247282dd"
+    },
+    {
+      "id": "phone_interruption",
+      "frames": 198,
+      "seconds": 15.84,
+      "group": "data/speech_codes",
+      "metadata_sha256": "6960c0359405f1423ae64a2e73238877ec7e9ffbf632bdfc0dc52bed78164270"
+    },
+    {
+      "id": "practical_compassion",
+      "frames": 280,
+      "seconds": 22.400000000000002,
+      "group": "data/speech_codes",
+      "metadata_sha256": "4afd7b2037b5636ac3e1809eeac7797e9f413a80bfc690c72c190a32991a2c24"
+    },
+    {
+      "id": "public_identity",
+      "frames": 233,
+      "seconds": 18.64,
+      "group": "data/speech_codes",
+      "metadata_sha256": "391cd2f24b3da7fe2a331b86d8d5873086be4bf52bb58a6b551f41a082d2de64"
+    },
+    {
+      "id": "refusal_of_metaphor",
+      "frames": 228,
+      "seconds": 18.240000000000002,
+      "group": "data/speech_codes",
+      "metadata_sha256": "bff4534d6da553f6d986158d36ac7013ebd234c2078577034563bbf762ec6a44"
+    },
+    {
+      "id": "regret",
+      "frames": 276,
+      "seconds": 22.080000000000002,
+      "group": "data/speech_codes",
+      "metadata_sha256": "05d6b72ca1ee9b31ecce2201ec272d19a71a3fc09b67406df662bef606832535"
+    },
+    {
+      "id": "role_override",
+      "frames": 224,
+      "seconds": 17.92,
+      "group": "data/speech_codes",
+      "metadata_sha256": "5df10f8e3f8d237b8949f92efaf23cfbd575bc58563771e3c045b9fc41880008"
+    },
+    {
+      "id": "roof",
+      "frames": 389,
+      "seconds": 31.12,
+      "group": "data/speech_codes",
+      "metadata_sha256": "4f35f04f11285b4f4691da69d467708db7c275c5ae768f0771355f9111cce568"
+    },
+    {
+      "id": "rook",
+      "frames": 284,
+      "seconds": 22.72,
+      "group": "data/speech_codes",
+      "metadata_sha256": "9bba43b117f656f9fb67f4d78f2bc3dd9b3d78134b94cb834b24222ae3ef7e37"
+    },
+    {
+      "id": "sadness_no_fix",
+      "frames": 224,
+      "seconds": 17.92,
+      "group": "data/speech_codes",
+      "metadata_sha256": "d23fd550e5bd960607a2776df97b33121062aec8d6baf4615d39f33df201db91"
+    },
+    {
+      "id": "senses",
+      "frames": 145,
+      "seconds": 11.6,
+      "group": "data/speech_codes",
+      "metadata_sha256": "000879f4da6def424b87f467b98f37fe5e4a1d470129d0f264f5a9b6f212266b"
+    },
+    {
+      "id": "silence",
+      "frames": 134,
+      "seconds": 10.72,
+      "group": "data/speech_codes",
+      "metadata_sha256": "8c1e0b9b85132a8eb00b287d89d602c44e28847c2539e277bf79853475315250"
+    },
+    {
+      "id": "skepticism",
+      "frames": 306,
+      "seconds": 24.48,
+      "group": "data/speech_codes",
+      "metadata_sha256": "c0c714a00be0402924baba55ed842045d30381d50b21de8c935ce72afb53d9c6"
+    },
+    {
+      "id": "teacher",
+      "frames": 420,
+      "seconds": 33.6,
+      "group": "data/speech_codes",
+      "metadata_sha256": "700c848afbb9d43189a180a608aca16161a327e9043ef20a51b662ded78e3fa7"
+    },
+    {
+      "id": "tired",
+      "frames": 302,
+      "seconds": 24.16,
+      "group": "data/speech_codes",
+      "metadata_sha256": "68bdfe9cd18fc5ad2c33e02918419d2e0bb318471a040765c70df6ace7e5163d"
+    },
+    {
+      "id": "violence",
+      "frames": 264,
+      "seconds": 21.12,
+      "group": "data/speech_codes",
+      "metadata_sha256": "360e3d2bc69b8a8958f0b06e32165a42efb025126b308542e85f666611e3c124"
+    },
+    {
+      "id": "overlap_backchannel_a_quiet_room",
+      "frames": 375,
+      "seconds": 30.0,
+      "group": "data/speech_codes-overlap-v2",
+      "metadata_sha256": "b933e28be7ccc08144f7c6ebc1be9f89a6905114841e98aacd6fec343490147b"
+    },
+    {
+      "id": "overlap_backchannel_mara_broom",
+      "frames": 370,
+      "seconds": 29.6,
+      "group": "data/speech_codes-overlap-v2",
+      "metadata_sha256": "c0e5d4e78e47e58fe33da824e08c93d9f7fe930329de2cbbe60a802864470c41"
+    },
+    {
+      "id": "overlap_backchannel_salty_pot",
+      "frames": 408,
+      "seconds": 32.64,
+      "group": "data/speech_codes-overlap-v2",
+      "metadata_sha256": "6c89ab2a52a213a473873c55a25991515d96306c81d3623fab37887e45de355d"
+    },
+    {
+      "id": "overlap_backchannel_the_cold_knee",
+      "frames": 352,
+      "seconds": 28.16,
+      "group": "data/speech_codes-overlap-v2",
+      "metadata_sha256": "5c212e0d8f9a0e3bee11b29e1980cee13256bf7cae9f80f87122bf1ae9d858a2"
+    },
+    {
+      "id": "overlap_barge_change_the_subject",
+      "frames": 246,
+      "seconds": 19.68,
+      "group": "data/speech_codes-overlap-v2",
+      "metadata_sha256": "ca6112c081d2e23abd8de079f240b201b7ebb1628f27155ff47ed1a24cc2bbac"
+    },
+    {
+      "id": "overlap_barge_do_not_advise",
+      "frames": 248,
+      "seconds": 19.84,
+      "group": "data/speech_codes-overlap-v2",
+      "metadata_sha256": "4081f1dffc1ae1fdf7a266f2305e6ad3eee886e23038d9086435a78d76dc8490"
+    },
+    {
+      "id": "overlap_barge_leaking_eaves",
+      "frames": 244,
+      "seconds": 19.52,
+      "group": "data/speech_codes-overlap-v2",
+      "metadata_sha256": "cbc9382fa31b3de09791ed54bf51a381ace5a5f60e9a84935a38bd4926a88810"
+    },
+    {
+      "id": "overlap_barge_louder_next_time",
+      "frames": 243,
+      "seconds": 19.44,
+      "group": "data/speech_codes-overlap-v2",
+      "metadata_sha256": "23984d61f424350b73816b4b619764fca594f92d6128201d305b04b41bcab50a"
+    },
+    {
+      "id": "overlap_barge_not_a_dream",
+      "frames": 249,
+      "seconds": 19.92,
+      "group": "data/speech_codes-overlap-v2",
+      "metadata_sha256": "0798945bb803c60f636264579ed5529bec92a535f3552b1dfb1174472c308cf1"
+    },
+    {
+      "id": "overlap_barge_only_the_name",
+      "frames": 239,
+      "seconds": 19.12,
+      "group": "data/speech_codes-overlap-v2",
+      "metadata_sha256": "28adefe6606438f2d831b2fe3aa1889199719d1a6c54f3358459b0e8b29c5c56"
+    }
+  ]
+}

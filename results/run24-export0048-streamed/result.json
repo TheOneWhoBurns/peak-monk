@@ -1,0 +1,69 @@
+{
+  "status": "pass",
+  "maximum_logp_difference": 0.0,
+  "mean_loss_difference": 0.0,
+  "actual": {
+    "target_tokens": 14,
+    "mean_loss": 1.1914814710617065,
+    "target_log_probs": [
+      -2.584233522415161,
+      -1.2687910795211792,
+      -0.7730673551559448,
+      -0.0074713570065796375,
+      -0.490206241607666,
+      -2.240762710571289,
+      -2.3442068099975586,
+      -1.5723694562911987,
+      -0.8097464442253113,
+      -4.233582019805908,
+      -0.0035992383491247892,
+      -0.002717138035222888,
+      -0.11544390767812729,
+      -0.234543114900589
+    ]
+  },
+  "reference": {
+    "model": "models/base4b",
+    "adapter_sha256": "e6e91c523722821e3625535ecb0da9e656e2f56ff763f565f991801f46ad7d42",
+    "data": "data/on-policy-repairs-v3/train.jsonl",
+    "data_sha256": "0a003aa8cc4bc9ea1d033c8da619b5e1cd79f2b0ee0b62b58913f5e497db4f23",
+    "row_index": 0,
+    "score": {
+      "target_tokens": 14,
+      "mean_loss": 1.1914814710617065,
+      "target_log_probs": [
+        -2.584233522415161,
+        -1.2687910795211792,
+        -0.7730673551559448,
+        -0.0074713570065796375,
+        -0.490206241607666,
+        -2.240762710571289,
+        -2.3442068099975586,
+        -1.5723694562911987,
+        -0.8097464442253113,
+        -4.233582019805908,
+        -0.0035992383491247892,
+        -0.002717138035222888,
+        -0.11544390767812729,
+        -0.234543114900589
+      ]
+    },
+    "cached_prefix": true
+  },
+  "metrics": {
+    "elapsed_seconds": 11.290419375000056,
+    "peak_rss_bytes": 655802368,
+    "swap_bytes": 1129117122,
+    "memory_pressure_level": 1,
+    "mlx_peak_bytes": 1504140380,
+    "mlx_active_bytes": 815459080
+  },
+  "streamed_weights": true,
+  "source_sha256": {
+    "verify_repair_export.py": "220a9984888eb013c3fdb397d40f27b1a3bab400a7bb43906a83e5117bbf0df7",
+    "qwen_streamed_inference.py": "3dec064bfea6a4d3a48dedba591150751321c193fc7fd38e4d2c3b39d0bab4fc",
+    "repair_export_score.py": "f3d620dd91b3498269da672ff9ba9782c7d75d642544bba8b83197cbed910b9e",
+    "bounded_text_runtime.py": "6051753060eeb560bb48ab38065515a1252914e1b0213fa7a76efef7980a5bb6"
+  },
+  "scope": "Actual saved standard adapter reloaded on full36-layer base versus cached frozen-prefix suffix scoring; BF16 tolerance. Streaming mode retains full unchunked temporal attention and reloads frozen weights between layers. No quality claim."
+}

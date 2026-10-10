@@ -4,6 +4,7 @@ Read-only, streamed teacher forcing. Conditional lexical CE is a diagnostic,
 not a substitute for the full loss or a speech-quality measure.
 """
 import argparse
+import gc
 import json
 from pathlib import Path
 import time
@@ -46,16 +47,19 @@ def main():
         parts = TextMoshiParts(weights, config_v0_1(), args.adapter, rank=8, scale=2.)
         start = time.monotonic()
         module = parts.load('inputs')
-        hidden = module(mx.array([tokens[:-1]]))
+        hidden = mx.stop_gradient(module(mx.array([tokens[:-1]])))
         mx.eval(hidden)
         del module
+        gc.collect()
         runtime.response_done()
         for index in range(parts.cfg.transformer.num_layers):
             module = parts.load(index)
-            hidden = layer_forward(module, hidden)[0]
+            hidden = mx.stop_gradient(layer_forward(module, hidden)[0])
             mx.eval(hidden)
             del module
+            gc.collect()
             metrics = runtime.response_done()
+            runtime.event('text_layer_complete', layer=index, **metrics)
             if metrics['mlx_peak_bytes'] > 1_500_000_000:
                 raise RuntimeError('Text scoring exceeded declared1.5GB peak plan')
         heads = parts.load('heads')

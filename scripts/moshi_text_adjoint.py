@@ -57,10 +57,14 @@ class TextMoshiParts(MoshiParts):
 def disk_text_grad(parts, tokens, target_mask, scratch, head_tokens=32, boundary=lambda **kw: None):
     if tokens.ndim != 2 or tokens.shape != target_mask.shape or tokens.shape[1] < 2:
         raise ValueError('Expected matching batch/token arrays')
-    if head_tokens < 1 or not mx.all((tokens >= 0) & (tokens < parts.cfg.text_out_vocab_size)).item():
+    if (head_tokens < 1
+            or not mx.all((tokens >= 0) & (tokens < parts.cfg.text_in_vocab_size)).item()
+            or not mx.all(tokens[:, 1:] < parts.cfg.text_out_vocab_size).item()):
         raise ValueError('Invalid text token or head chunk size')
     if not mx.all((target_mask == 0) | (target_mask == 1)).item():
         raise ValueError('Expected binary target mask')
+    if mx.any(target_mask[:, 0] != 0).item():
+        raise ValueError('Initial token is conditioning only, never a target')
     denominator = target_mask[:, 1:].sum().item()
     if denominator <= 0:
         raise ValueError('No supervised text tokens')

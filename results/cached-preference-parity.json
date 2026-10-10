@@ -1,0 +1,41 @@
+{
+  "status": "pass",
+  "score_errors": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "updates": [
+    {
+      "step": 1,
+      "loss_error": 0.0,
+      "gradient_error": 8.940696716308594e-08,
+      "adapter_error": 1.6763806343078613e-08,
+      "diagnostic": {
+        "preference_loss": 0.6931471824645996,
+        "chosen_mean_nll": 4.9872612953186035,
+        "rejected_mean_nll": 4.077948093414307,
+        "chosen_logp": -19.949045181274414,
+        "rejected_logp": -8.155896186828613,
+        "reference_margin": -11.7931489944458,
+        "relative_margin": 0.0
+      }
+    },
+    {
+      "step": 2,
+      "loss_error": 0.0,
+      "gradient_error": 1.341104507446289e-07,
+      "adapter_error": 3.259629011154175e-08,
+      "diagnostic": {
+        "preference_loss": 0.6919053196907043,
+        "chosen_mean_nll": 4.981954097747803,
+        "rejected_mean_nll": 4.0797600746154785,
+        "chosen_logp": -19.92781639099121,
+        "rejected_logp": -8.159520149230957,
+        "reference_margin": -11.7931489944458,
+        "relative_margin": 0.024852752685546875
+      }
+    }
+  ],
+  "scope": "Tiny quantized Qwen3, nonzero LoRA, frozen embedding/lower layer, unequal candidate lengths, explicit trailing-token exclusion, ragged head chunks, retention and two clipped AdamW updates. Full model direct objective agrees with cached suffix. No actual-model resource or quality claim."
+}

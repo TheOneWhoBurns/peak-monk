@@ -1,0 +1,12 @@
+{
+  "pytest": "21 passed, 1 skipped in 1.59s",
+  "streamed_loss_check": {
+    "reference": "results/run23-step0032.json",
+    "capture": "results/run23-streamed-loss-check.json",
+    "original": 2.582853317260742,
+    "streamed": 2.5828537940979004,
+    "difference": 4.76837158203125e-07,
+    "tolerance": 1e-06,
+    "pass": true
+  }
+}

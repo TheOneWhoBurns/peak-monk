@@ -1,0 +1,7 @@
+{"time": 1791602712.423201, "phase": "import_begin", "initial_swap_bytes": 1129117122}
+{"time": 1791602713.953238, "phase": "runtime_ready", "memory_limit": 1800000000, "policy": "no wiring; deferred cache eviction; one process; bounded requests"}
+{"time": 1791602714.8964212, "phase": "load_end", "elapsed_seconds": 2.4697598749989993, "peak_rss_bytes": 1040252928, "swap_bytes": 1129117122, "memory_pressure_level": 1, "mlx_peak_bytes": 712698632, "mlx_active_bytes": 712698632}
+{"time": 1791602721.256932, "phase": "response_complete", "input_tokens": 18, "elapsed_seconds": 8.830982416999177, "peak_rss_bytes": 1147305984, "swap_bytes": 1129117122, "memory_pressure_level": 1, "mlx_peak_bytes": 920761080, "mlx_active_bytes": 817031944}
+{"time": 1791602724.939578, "phase": "response_complete", "input_tokens": 20, "elapsed_seconds": 12.512722666999252, "peak_rss_bytes": 1147305984, "swap_bytes": 1129117122, "memory_pressure_level": 1, "mlx_peak_bytes": 948383284, "mlx_active_bytes": 817031944}
+{"time": 1791602728.203061, "phase": "response_complete", "input_tokens": 49, "elapsed_seconds": 15.776536125000348, "peak_rss_bytes": 1147305984, "swap_bytes": 1129117122, "memory_pressure_level": 1, "mlx_peak_bytes": 1029388424, "mlx_active_bytes": 817031944}
+{"time": 1791602728.203598, "phase": "runtime_exit", "error": null}

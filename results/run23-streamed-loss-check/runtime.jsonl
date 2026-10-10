@@ -1,0 +1,4 @@
+{"time": 1791602110.240864, "phase": "import_begin", "initial_swap_bytes": 1129117122}
+{"time": 1791602110.998537, "phase": "runtime_ready", "memory_limit": 1800000000, "policy": "no wiring; deferred cache eviction; one process; bounded requests"}
+{"time": 1791602111.934334, "phase": "load_settled", "elapsed_seconds": 1.689359500000137, "peak_rss_bytes": 1036959744, "swap_bytes": 1129117122, "memory_pressure_level": 1, "mlx_peak_bytes": 712698632, "mlx_active_bytes": 712698632}
+{"time": 1791602126.902993, "phase": "runtime_exit", "error": null}

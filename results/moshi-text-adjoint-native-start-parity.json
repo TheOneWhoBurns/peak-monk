@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "dtype": "bfloat16",
+  "quantization": "4bit/group32",
+  "official_forward_text_bf16_logit_difference": 0.0234375,
+  "official_forward_text_fp32_logit_difference": 9.08970832824707e-07,
+  "cases": [
+    {
+      "step": 1,
+      "loss_error": 0.0,
+      "gradient_error": 1.4901161193847656e-08,
+      "adapter_error": 1.862645149230957e-09,
+      "supervised_tokens": 11
+    },
+    {
+      "step": 2,
+      "loss_error": 0.0,
+      "gradient_error": 1.4901161193847656e-08,
+      "adapter_error": 3.725290298461914e-09,
+      "supervised_tokens": 11
+    }
+  ],
+  "scope": "Tiny numerical proof only: causal agreement with original streaming forward_text in FP32; BF16 sequential/batch difference recorded. Matched-head-batch full-model versus streamed masked loss, full temporal gradients, clipped AdamW and complete adapter exports. No pretrained-model feasibility or speech transfer evidence.",
+  "initial_token_test": "First input token64 equals output vocabulary size; input vocabulary65. It is masked out of all targets.",
+  "harness_correction": "Initial attempt used unsupported ArrayAt.set on pinned MLX and exited before gradients. Replaced with concatenate, then full parity passed."
+}

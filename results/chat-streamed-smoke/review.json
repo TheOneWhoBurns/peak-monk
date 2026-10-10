@@ -1,0 +1,24 @@
+{
+  "status": "CLI smoke passed",
+  "adapter": "adapters/run24-step0048",
+  "adapter_release_status": "Rejected development research checkpoint",
+  "inputs": [
+    "Hello Jun. What are you doing this morning?",
+    "/reset",
+    "My name is Ada. I am repairing a red umbrella.",
+    "What did I say I was repairing?",
+    "/quit"
+  ],
+  "responses": [
+    "Sitting above the hermitage, looking down toward the path. Nothing especially impressive.",
+    "Hello, Ada. What is it that needs fixing?",
+    "A red umbrella. I have not forgotten."
+  ],
+  "checks": [
+    "Model loaded with explicit adapter and zero persona system prompt",
+    "Reset accepted",
+    "Follow-up recalls red umbrella",
+    "Quit cleanly exits"
+  ],
+  "scope": "Runnable inference smoke; not a release-quality claim."
+}

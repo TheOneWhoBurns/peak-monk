@@ -24,6 +24,7 @@ def text_logits(model, tokens):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--native-start', action='store_true')
     args = parser.parse_args()
     mx.random.seed(211)
     cfg = config_v0_1()
@@ -46,6 +47,9 @@ def main():
         adapter = root / 'adapter0.safetensors'
         mx.save_safetensors(str(adapter), dict(tree_flatten(model.trainable_parameters())))
         tokens = mx.random.randint(4, 64, (1, 23))
+        if args.native_start:
+            tokens = mx.concatenate([mx.full((1, 1), cfg.text_out_vocab_size,
+                                             dtype=tokens.dtype), tokens[:, 1:]], axis=1)
         mask = mx.array([[0]*5 + [1]*6 + [0]*7 + [1]*5])
         # This pinned API is streaming: TransformerLayer supplies no mask for
         # a multi-token call. Feed one token at a time for a causal reference.

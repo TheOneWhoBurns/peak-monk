@@ -1,6 +1,6 @@
 {
-  "status": "Queued while run24 trains; none of these queued checks executed yet",
-  "active_process": "scripts/train_on_policy_repairs.py --config configs/train24.json",
+  "status": "Training, pytest, loss parity, both export checks and both development captures/reviews complete. Both exports rejected.",
+  "active_process": "Native plain-text loss diagnostic; first attempt stopped at1.5GB plan, cleanup retry in progress",
   "sequence": [
     "Wait for96updates and completion.json; preserve any resource-guard failure instead of assuming success.",
     "Run core pytest suite after model process exits.",
@@ -18,5 +18,11 @@
   "additional_checks": [
     "Guarded chat.py source updated during run24 but not yet exercised against a real model. Run CLI smoke after training.",
     "score_moshi_text.py now supports explicit SentencePiece/native initial-token comparison. No scoring jobs run yet."
+  ],
+  "remaining": [
+    "Native base/parent/probe and initial-token diagnostics",
+    "Guarded chat smoke",
+    "Broader training-only trajectory sampling",
+    "Preference-learning hypothesis with explicit pair provenance and numerical proof before training"
   ]
 }

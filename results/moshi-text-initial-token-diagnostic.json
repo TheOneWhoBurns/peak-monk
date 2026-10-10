@@ -1,0 +1,76 @@
+{
+  "status": "complete",
+  "scope": "One authored130-target-token training prose sample; same targets and frozen scoring math across conditions, only initial token changes. Not a held-out benchmark or speech-quality result.",
+  "runs": {
+    "base-cleanup": {
+      "path": "results/moshi-text-score-base-cleanup/result.json",
+      "full_ce": 10.231908277364878,
+      "lexical_ce": 10.231883430480957,
+      "mean_padding_probability": 2.4858834087983548e-05,
+      "argmax_padding_count": 0,
+      "lexical_token_ce_without_final_eos": 10.206877767577652,
+      "eos_ce": 13.460844039916992,
+      "peak_mlx_bytes": 149046832
+    },
+    "run08": {
+      "path": "results/moshi-text-score-run08/result.json",
+      "full_ce": 10.447787050100473,
+      "lexical_ce": 10.447783477489764,
+      "mean_padding_probability": 3.5506085341606963e-06,
+      "argmax_padding_count": 0,
+      "lexical_token_ce_without_final_eos": 10.42348792201789,
+      "eos_ce": 13.582374572753906,
+      "peak_mlx_bytes": 164357816
+    },
+    "probe": {
+      "path": "results/moshi-text-score-probe/result.json",
+      "full_ce": 9.130360155839186,
+      "lexical_ce": 9.130341045673077,
+      "mean_padding_probability": 1.9092297329865897e-05,
+      "argmax_padding_count": 0,
+      "lexical_token_ce_without_final_eos": 9.091485681459885,
+      "eos_ce": 14.145167350769043,
+      "peak_mlx_bytes": 164357816
+    },
+    "base-native": {
+      "path": "results/moshi-text-score-base-native/result.json",
+      "full_ce": 3.3398453785822944,
+      "lexical_ce": 3.339844487263606,
+      "mean_padding_probability": 8.903000336963608e-07,
+      "argmax_padding_count": 0,
+      "lexical_token_ce_without_final_eos": 3.213045741236487,
+      "eos_ce": 19.696998596191406,
+      "peak_mlx_bytes": 149046832
+    },
+    "run08-native": {
+      "path": "results/moshi-text-score-run08-native/result.json",
+      "full_ce": 2.93933257323045,
+      "lexical_ce": 2.939330948316134,
+      "mean_padding_probability": 1.5883329014245248e-06,
+      "argmax_padding_count": 0,
+      "lexical_token_ce_without_final_eos": 2.814124817071959,
+      "eos_ce": 19.09113311767578,
+      "peak_mlx_bytes": 164357816
+    },
+    "probe-native": {
+      "path": "results/moshi-text-score-probe-native/result.json",
+      "full_ce": 2.945918897482065,
+      "lexical_ce": 2.945917301911574,
+      "mean_padding_probability": 1.5801681768189376e-06,
+      "argmax_padding_count": 0,
+      "lexical_token_ce_without_final_eos": 2.8196940532950467,
+      "eos_ce": 19.228923797607422,
+      "peak_mlx_bytes": 164357816
+    }
+  },
+  "finding": "Native start32000 preserves prose ability while SentencePiece BOS1 produces high loss. Negligible PAD/EPAD mass rejects padding-prior explanation. Run08 has lower native-initialized prose CE than untrained speech base. The disposable BOS1 update worsens native-initialized CE slightly, despite lowering BOS1 CE.",
+  "decision": "Discard BOS1 disposable adapter as training candidate. Use native initial token for subsequent text-only feasibility work. Preserve BOS1 reports as historical implementation evidence. EOS2 also has high loss; decide explicitly whether to supervise a document end before designing a corpus, rather than silently imposing that token on speech.",
+  "corrected_single_update": {
+    "score": "results/moshi-text-score-corrected-probe-native/result.json",
+    "gradient": "results/moshi-text-native-start-real-probe/result.json",
+    "full_ce_after": 2.8372790483328014,
+    "full_ce_before": 2.93933257323045,
+    "difference": -0.10205352489764863,
+    "interpretation": "Training-sample CE decreases after one native-start update. This confirms implementation behavior, not cross-modal transfer or generalization."
+  }
+}

@@ -21,3 +21,5 @@ run22-step0092	2026-10-09	371ef9d	2.5948221683502197	-1.2979440689086914	fail	15
 run22-step0140	2026-10-09	371ef9d	2.5872750282287598	-1.3054912090301514	fail	16/20 author scored	discard	Final full-context SFT export; essential d06,d19 fail. Research parent for on-policy trajectories only.
 run23-step0016	2026-10-09	0d7ec3b	2.5729668140411377	-1.3197994232177734	fail	13/20 author scored	discard	Cached-prefix upper6layer on-policy repair; essential failures d06,d19; no held-out capture.
 run23-step0032	2026-10-09	0d7ec3b	2.582853317260742	-1.309912919998169	fail	16/20 author scored	discard	Cached-prefix upper6layer on-policy repair; essential failures d19; no held-out capture.
+run24-step0048	2026-10-09	fccf180	2.602938175201416	-1.2898280620574951	fail	16/20 author scored	discard	32repair/93retention composite SFT; essential d19 persists; streamed full-backbone export exact; no held-out capture.
+run24-step0096	2026-10-09	fccf180	2.6169703006744385	-1.2757959365844727	fail	16/20 author scored	discard	32repair/93retention composite SFT; essential d19 persists; streamed full-backbone export exact; no held-out capture.

@@ -14,6 +14,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--adapter-output', type=Path, required=True)
+    parser.add_argument('--bos', choices=['sentencepiece', 'native'], default='native')
     args = parser.parse_args()
     if args.output.exists() or args.adapter_output.exists():
         raise ValueError('Preserve previous evidence')
@@ -30,7 +31,8 @@ def main():
     tokenizer = Path('models/moshi/tokenizer_spm_32k_3.model')
     import sentencepiece as spm
     processor = spm.SentencePieceProcessor(model_file=str(tokenizer))
-    tokens = [processor.bos_id()] + processor.encode(row['text']) + [processor.eos_id()]
+    initial = processor.bos_id() if args.bos == 'sentencepiece' else processor.get_piece_size()
+    tokens = [initial] + processor.encode(row['text']) + [processor.eos_id()]
     assert 2 < len(tokens) <= 256 and min(tokens) >= 0
     sources = ['probe_moshi_text_adjoint.py', 'moshi_text_adjoint.py', 'moshi_weight_stream.py',
                'moshi_layerwise.py', 'moshi_disk_adjoint.py', 'moshi_training.py',
@@ -38,7 +40,7 @@ def main():
     atomic_json(args.output/'config.json', dict(parent=str(parent), parent_sha256=parent_sha,
         data_sha256=sha(row_path), tokenizer_sha256=sha(tokenizer), tokens=tokens,
         source_sha256={name:sha(Path(__file__).with_name(name)) for name in sources},
-        serialization='SentencePiece BOS + original first-person prose + EOS; every token after BOS supervised.',
+        serialization=f'{args.bos} initial token + original first-person prose + EOS; every token after initial supervised.',
         head_tokens=16, learning_rate=1e-5, scope='Feasibility only; no speech quality claim.'))
     with BoundedSpeechRuntime(args.output, memory_limit=1_400_000_000, max_seconds=600) as runtime:
         import mlx.core as mx

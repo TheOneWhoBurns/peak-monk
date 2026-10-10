@@ -1,0 +1,25 @@
+{
+  "arguments": [
+    "--model",
+    "models/base4b",
+    "--adapter",
+    "adapters/run23-step0032",
+    "--suite",
+    "evaluation/dev-roleplay-v2.json",
+    "--loss-version",
+    "assistant_eos_v2",
+    "--loss-only",
+    "--output",
+    "results/run23-streamed-loss-check.json"
+  ],
+  "adapter_sha256": "067a7292407cfcd3ae6e7b385476fd037b31269ff9be6d53462e84385847bc94",
+  "streamed_weights": true,
+  "source_sha256": {
+    "evaluate_bounded.py": "09d93148a6a58dee1930b8cff8f6a79ab2f5a369e07e92f4f99bf6c62d4436eb",
+    "evaluate.py": "d9c65c513f885476e60c1199fb85d7de8188736a5f5fb8e080337a81bca5d643",
+    "assistant_objective.py": "fc4aee1150680542323a7d79d429a3d94bfa2abee2c6b28328888c88b2024785",
+    "bounded_text_runtime.py": "6051753060eeb560bb48ab38065515a1252914e1b0213fa7a76efef7980a5bb6",
+    "qwen_streamed_inference.py": "3dec064bfea6a4d3a48dedba591150751321c193fc7fd38e4d2c3b39d0bab4fc"
+  },
+  "scope": "Same loss, tokenization, sampling and prefill defaults; only resource lifecycle and checks change"
+}
