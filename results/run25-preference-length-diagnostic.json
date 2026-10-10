@@ -1,0 +1,23 @@
+{
+  "status": "Descriptive diagnostic only; active objective and checkpoint selection unchanged",
+  "reference_sha256": "488e7397608934abf79c1e08a88a8cb27d605bfa4c5225e450113ddb276566f7",
+  "pairs": 95,
+  "chosen_total": 2326,
+  "rejected_total": 1904,
+  "chosen_mean": 24.48421052631579,
+  "rejected_mean": 20.042105263157893,
+  "chosen_longer": 65,
+  "chosen_shorter": 24,
+  "equal_length": 6,
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2409.06411",
+      "finding": "Authors identify DPO length sensitivity and evaluate a modified objective on larger base/instruct models. Their gains do not establish an improvement for this character task."
+    },
+    {
+      "url": "https://aclanthology.org/2024.emnlp-main.60/",
+      "finding": "Authors relate DPO verbosity to sequence-level divergence estimates and test downsampling to reduce length dependence."
+    }
+  ],
+  "implication": "Report generated response lengths, finish reasons, and terse-instruction behavior alongside the unchanged character rubric. A lower DPO loss or greater relative preference margin alone cannot establish continuity. Consider length-controlled objective only as a separately registered experiment if observed behavior warrants it."
+}
