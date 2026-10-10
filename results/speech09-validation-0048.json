@@ -1,0 +1,220 @@
+{
+  "step": 48,
+  "adapter_sha256": "09b5dab1bedfbcc373d8d271e0a50b724e306585ff889792fb4fb3864b290134",
+  "text_episodes": [
+    {
+      "id": "notebook_postage",
+      "loss": 2.710676670074463,
+      "target_tokens": 93
+    },
+    {
+      "id": "notebook_lost_glove",
+      "loss": 2.9788012504577637,
+      "target_tokens": 89
+    },
+    {
+      "id": "notebook_bell_rope",
+      "loss": 2.945625066757202,
+      "target_tokens": 91
+    },
+    {
+      "id": "notebook_reading_fly",
+      "loss": 2.7898857593536377,
+      "target_tokens": 87
+    },
+    {
+      "id": "notebook_summit_shadow",
+      "loss": 3.1556146144866943,
+      "target_tokens": 91
+    },
+    {
+      "id": "notebook_wrong_voice",
+      "loss": 2.325228214263916,
+      "target_tokens": 100
+    }
+  ],
+  "audio_episodes": [
+    {
+      "id": "losing_competition",
+      "text_groups": {
+        "spoken": {
+          "tokens": 57,
+          "ce_sum": 146.11125373840332,
+          "top1_matches": 24,
+          "mean_ce": 2.563355328743918,
+          "top1_accuracy": 0.42105263157894735
+        },
+        "silence_pad": {
+          "tokens": 184,
+          "ce_sum": 24.397035598754883,
+          "top1_matches": 175,
+          "mean_ce": 0.13259258477584177,
+          "top1_accuracy": 0.9510869565217391
+        },
+        "end_pad": {
+          "tokens": 39,
+          "ce_sum": 34.46549606323242,
+          "top1_matches": 24,
+          "mean_ce": 0.8837306682880108,
+          "top1_accuracy": 0.6153846153846154
+        }
+      },
+      "audio_codebooks": [
+        {
+          "tokens": 280,
+          "ce_sum": 189.59888744354248,
+          "top1_matches": 210,
+          "mean_ce": 0.6771388837269374,
+          "top1_accuracy": 0.75
+        },
+        {
+          "tokens": 279,
+          "ce_sum": 551.0276870727539,
+          "top1_matches": 132,
+          "mean_ce": 1.9750096310851395,
+          "top1_accuracy": 0.4731182795698925
+        },
+        {
+          "tokens": 279,
+          "ce_sum": 685.8136129379272,
+          "top1_matches": 119,
+          "mean_ce": 2.4581133080212445,
+          "top1_accuracy": 0.4265232974910394
+        },
+        {
+          "tokens": 279,
+          "ce_sum": 730.9897909164429,
+          "top1_matches": 116,
+          "mean_ce": 2.6200350928904763,
+          "top1_accuracy": 0.4157706093189964
+        },
+        {
+          "tokens": 279,
+          "ce_sum": 784.4451141357422,
+          "top1_matches": 109,
+          "mean_ce": 2.8116312334614415,
+          "top1_accuracy": 0.3906810035842294
+        },
+        {
+          "tokens": 279,
+          "ce_sum": 763.3483095169067,
+          "top1_matches": 115,
+          "mean_ce": 2.7360154462971567,
+          "top1_accuracy": 0.4121863799283154
+        },
+        {
+          "tokens": 279,
+          "ce_sum": 774.0281267166138,
+          "top1_matches": 126,
+          "mean_ce": 2.774294360991447,
+          "top1_accuracy": 0.45161290322580644
+        },
+        {
+          "tokens": 279,
+          "ce_sum": 797.9980926513672,
+          "top1_matches": 111,
+          "mean_ce": 2.8602082173884127,
+          "top1_accuracy": 0.3978494623655914
+        }
+      ],
+      "semantic_weighted_audio_ce": 0.8028424357594232,
+      "joint_ce_by_padding_weight": {
+        "0.05": 2.9899940178797855,
+        "0.5": 1.844637804123797
+      }
+    },
+    {
+      "id": "unwanted_gift",
+      "text_groups": {
+        "spoken": {
+          "tokens": 46,
+          "ce_sum": 133.83577823638916,
+          "top1_matches": 19,
+          "mean_ce": 2.9094734399215034,
+          "top1_accuracy": 0.41304347826086957
+        },
+        "silence_pad": {
+          "tokens": 189,
+          "ce_sum": 35.99023914337158,
+          "top1_matches": 175,
+          "mean_ce": 0.19042454573212478,
+          "top1_accuracy": 0.9259259259259259
+        },
+        "end_pad": {
+          "tokens": 36,
+          "ce_sum": 30.571232795715332,
+          "top1_matches": 18,
+          "mean_ce": 0.8492009109920926,
+          "top1_accuracy": 0.5
+        }
+      },
+      "audio_codebooks": [
+        {
+          "tokens": 271,
+          "ce_sum": 198.51526069641113,
+          "top1_matches": 208,
+          "mean_ce": 0.7325286372561296,
+          "top1_accuracy": 0.7675276752767528
+        },
+        {
+          "tokens": 270,
+          "ce_sum": 485.5892381668091,
+          "top1_matches": 150,
+          "mean_ce": 1.7984786598770708,
+          "top1_accuracy": 0.5555555555555556
+        },
+        {
+          "tokens": 270,
+          "ce_sum": 648.9710388183594,
+          "top1_matches": 121,
+          "mean_ce": 2.403596440067998,
+          "top1_accuracy": 0.44814814814814813
+        },
+        {
+          "tokens": 270,
+          "ce_sum": 668.1856470108032,
+          "top1_matches": 118,
+          "mean_ce": 2.4747616555955676,
+          "top1_accuracy": 0.43703703703703706
+        },
+        {
+          "tokens": 270,
+          "ce_sum": 683.9788074493408,
+          "top1_matches": 122,
+          "mean_ce": 2.533254842404966,
+          "top1_accuracy": 0.45185185185185184
+        },
+        {
+          "tokens": 270,
+          "ce_sum": 711.7710828781128,
+          "top1_matches": 125,
+          "mean_ce": 2.636189195844862,
+          "top1_accuracy": 0.46296296296296297
+        },
+        {
+          "tokens": 270,
+          "ce_sum": 770.6289901733398,
+          "top1_matches": 114,
+          "mean_ce": 2.854181445086444,
+          "top1_accuracy": 0.4222222222222222
+        },
+        {
+          "tokens": 270,
+          "ce_sum": 730.701379776001,
+          "top1_matches": 126,
+          "mean_ce": 2.7063014065777815,
+          "top1_accuracy": 0.4666666666666667
+        }
+      ],
+      "semantic_weighted_audio_ce": 0.8468903847503926,
+      "joint_ce_by_padding_weight": {
+        "0.05": 3.2427655259441655,
+        "0.5": 1.9012532504029642
+      }
+    }
+  ],
+  "text_ce": 2.8088238386406874,
+  "audio_joint_ce": 1.8729455272633806,
+  "native_spoken_ce": 2.7179323492698297,
+  "scope": "Small fixed teacher-forced diagnostics. No native free-generation acceptance claim."
+}

@@ -1,0 +1,50 @@
+{
+  "status": "Closed: both checkpoints rejected by registered diagnostic screen; no native free-generation escalation",
+  "parent": {
+    "adapter_sha256": "aa02e8b1e91ad3f48dbf1c3dc8e7663a1c1f2c7494f57ed372bef554f7480a70",
+    "text_ce": 3.0440005399354355,
+    "audio_joint_ce": 1.8423089983412781,
+    "native_spoken_ce": 2.5673689240390813
+  },
+  "candidates": [
+    {
+      "step": 24,
+      "adapter": "adapters/speech-run09/checkpoint-0024.safetensors",
+      "adapter_sha256": "0a568d63cb6c77bf387e179236da5f494548f65f1eeb810e4bbd7a89858f5e51",
+      "text_ce": 2.864322808606655,
+      "audio_joint_ce": 1.9046612935863774,
+      "native_spoken_ce": 2.8078968548080296,
+      "text_relative_improvement": 0.05902683950660259,
+      "audio_joint_relative_change": 0.033844645660005,
+      "native_spoken_relative_change": 0.0936865475455475,
+      "eligible": false
+    },
+    {
+      "step": 48,
+      "adapter": "adapters/speech-run09/checkpoint-0048.safetensors",
+      "adapter_sha256": "09b5dab1bedfbcc373d8d271e0a50b724e306585ff889792fb4fb3864b290134",
+      "text_ce": 2.8088238386406874,
+      "audio_joint_ce": 1.8729455272633806,
+      "native_spoken_ce": 2.7179323492698297,
+      "text_relative_improvement": 0.07725908658995717,
+      "audio_joint_relative_change": 0.016629419358905606,
+      "native_spoken_relative_change": 0.05864502908833069,
+      "eligible": false
+    }
+  ],
+  "selection": null,
+  "updates": 48,
+  "optimizer_updates": {
+    "text": 24,
+    "audio": 24
+  },
+  "training_update_seconds": 1377.6328657850027,
+  "peak_mlx_bytes": 563234755,
+  "peak_rss_bytes": 340721664,
+  "memory_pressure_levels": [
+    1
+  ],
+  "final_state_inspection": "results/speech09-final-state.json",
+  "interpretation": "Text validation improved but native spoken-token loss remained more than2percent worse. Joint audio CE recovered within2percent bystep48; that alone does not satisfy both preservation conditions. No claim that free speech quality improved or worsened; it was not generated for these candidates. Composite modality/curriculum/LR intervention is not a causal text ablation.",
+  "next": "Guarded run26 text-depth preflight; matched audio replay control is a possible native followup before gradient-interference methods."
+}

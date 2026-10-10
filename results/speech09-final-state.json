@@ -1,0 +1,1617 @@
+{
+  "status": "pass",
+  "scope": "Actual saved state/export inspection; no generation or character-transfer quality claim.",
+  "latest": {
+    "step": 48,
+    "directory": "step-0048",
+    "adapter_sha256": "09b5dab1bedfbcc373d8d271e0a50b724e306585ff889792fb4fb3864b290134",
+    "optimizer_steps": {
+      "text": 24,
+      "audio": 24
+    }
+  },
+  "saved_adapter": "adapters/speech-run09/step-0048/candidate.safetensors",
+  "adapter_tensors": 130,
+  "changed_tensors": 130,
+  "all_finite": true,
+  "optimizer_states": {
+    "text": {
+      "files": 33,
+      "steps": [
+        24
+      ],
+      "all_finite": true
+    },
+    "audio": {
+      "files": 33,
+      "steps": [
+        24
+      ],
+      "all_finite": true
+    }
+  },
+  "updates": [
+    {
+      "time": 1791606722.0939462,
+      "phase": "mixed_update_committed",
+      "step": 1,
+      "modality": "text",
+      "id": "notebook_unfinished_letter",
+      "loss": 2.8122355937957764,
+      "gradient_norm": 4.204652043571278,
+      "optimizer_steps": {
+        "text": 1,
+        "audio": 0
+      },
+      "update": {
+        "clip_scale": 0.23783180802098391,
+        "adapter_tensors": 130,
+        "step": 1
+      },
+      "seconds": 24.30384483299713,
+      "metrics": {
+        "elapsed_seconds": 147.6740957080001,
+        "peak_rss_bytes": 289931264,
+        "swap_bytes": 1108994949,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 543684692,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "a4500954b483696de6cd41cbdf89ffb5d95a47eeb21aa60dd539b116934f34ee"
+    },
+    {
+      "time": 1791606759.222744,
+      "phase": "mixed_update_committed",
+      "step": 2,
+      "modality": "audio",
+      "id": "identity_transparency",
+      "loss": 1.1952202320098877,
+      "gradient_norm": 3.322923666452516,
+      "optimizer_steps": {
+        "text": 1,
+        "audio": 1
+      },
+      "update": {
+        "clip_scale": 0.30093980403052145,
+        "adapter_tensors": 130,
+        "step": 1
+      },
+      "seconds": 37.041271750000305,
+      "metrics": {
+        "elapsed_seconds": 184.75843362500018,
+        "peak_rss_bytes": 338919424,
+        "swap_bytes": 1108994949,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 558531786,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "7e91a0e15ef3a18700866764794a53e6683dd3c43be6c867e09003287d4b81bd"
+    },
+    {
+      "time": 1791606867.516614,
+      "phase": "mixed_update_committed",
+      "step": 3,
+      "modality": "text",
+      "id": "notebook_mara_absence",
+      "loss": 3.3480100631713867,
+      "gradient_norm": 4.032048741625885,
+      "optimizer_steps": {
+        "text": 2,
+        "audio": 1
+      },
+      "update": {
+        "clip_scale": 0.24801287424829863,
+        "adapter_tensors": 130,
+        "step": 2
+      },
+      "seconds": 21.24337949999972,
+      "metrics": {
+        "elapsed_seconds": 21.539760708001268,
+        "peak_rss_bytes": 282411008,
+        "swap_bytes": 1108994949,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 210671550,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "2cba4f194573cff0ab4003dd8876d37c0c7e5354e4eab9a9be1b1744dbe1942d"
+    },
+    {
+      "time": 1791606900.7634618,
+      "phase": "mixed_update_committed",
+      "step": 4,
+      "modality": "audio",
+      "id": "overlap_barge_only_the_name",
+      "loss": 2.605788469314575,
+      "gradient_norm": 4.869946593269838,
+      "optimizer_steps": {
+        "text": 2,
+        "audio": 2
+      },
+      "update": {
+        "clip_scale": 0.20534106048073875,
+        "adapter_tensors": 130,
+        "step": 2
+      },
+      "seconds": 33.0241079160005,
+      "metrics": {
+        "elapsed_seconds": 54.708944999998494,
+        "peak_rss_bytes": 333398016,
+        "swap_bytes": 1108994949,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 558778222,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "210507f3a316fff374e6c64a2a217e2da05b7b8bf90f215683d05a51c63a85c9"
+    },
+    {
+      "time": 1791606919.032931,
+      "phase": "mixed_update_committed",
+      "step": 5,
+      "modality": "text",
+      "id": "notebook_kettle_handle",
+      "loss": 3.0609610080718994,
+      "gradient_norm": 4.587417714172892,
+      "optimizer_steps": {
+        "text": 3,
+        "audio": 2
+      },
+      "update": {
+        "clip_scale": 0.21798756078623716,
+        "adapter_tensors": 130,
+        "step": 3
+      },
+      "seconds": 18.13800658299806,
+      "metrics": {
+        "elapsed_seconds": 73.0728482500017,
+        "peak_rss_bytes": 333398016,
+        "swap_bytes": 1108994949,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 558778222,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "978c233334b59a9b4b353e854c387c7e8979b7af375f54fbd32ab6902fcd19bc"
+    },
+    {
+      "time": 1791606956.4975848,
+      "phase": "mixed_update_committed",
+      "step": 6,
+      "modality": "audio",
+      "id": "overlap_backchannel_a_quiet_room",
+      "loss": 2.12150502204895,
+      "gradient_norm": 3.6422592499550857,
+      "optimizer_steps": {
+        "text": 3,
+        "audio": 3
+      },
+      "update": {
+        "clip_scale": 0.27455486516144695,
+        "adapter_tensors": 130,
+        "step": 3
+      },
+      "seconds": 37.24729654100156,
+      "metrics": {
+        "elapsed_seconds": 110.44936441699974,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1108994949,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562120630,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "df37ba0a9a8ea3763c5734b66498b35b2ab64ff77838e57727ecf035de3e5595"
+    },
+    {
+      "time": 1791606977.901856,
+      "phase": "mixed_update_committed",
+      "step": 7,
+      "modality": "text",
+      "id": "notebook_phone_rustle",
+      "loss": 2.7381882667541504,
+      "gradient_norm": 4.08380698285013,
+      "optimizer_steps": {
+        "text": 4,
+        "audio": 3
+      },
+      "update": {
+        "clip_scale": 0.24486955474408695,
+        "adapter_tensors": 130,
+        "step": 4
+      },
+      "seconds": 21.235545583000203,
+      "metrics": {
+        "elapsed_seconds": 131.90487874999963,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1108994949,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562120630,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "7f86db618d5222ccfa725e5935aa82878c46926e44e3835a6a6814aae666f21e"
+    },
+    {
+      "time": 1791607013.451357,
+      "phase": "mixed_update_committed",
+      "step": 8,
+      "modality": "audio",
+      "id": "objects",
+      "loss": 1.9194722175598145,
+      "gradient_norm": 4.4240730459619275,
+      "optimizer_steps": {
+        "text": 4,
+        "audio": 4
+      },
+      "update": {
+        "clip_scale": 0.22603605034333452,
+        "adapter_tensors": 130,
+        "step": 4
+      },
+      "seconds": 35.33527808299914,
+      "metrics": {
+        "elapsed_seconds": 167.40559658300117,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1100606341,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562120630,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "d8f6402f2552cc8a66e50948fad9ae6111fc9e44bbd6d628d5abb97cbe8242d1"
+    },
+    {
+      "time": 1791607033.991385,
+      "phase": "mixed_update_committed",
+      "step": 9,
+      "modality": "text",
+      "id": "notebook_mara_nail",
+      "loss": 3.248995780944824,
+      "gradient_norm": 4.330001658192791,
+      "optimizer_steps": {
+        "text": 5,
+        "audio": 4
+      },
+      "update": {
+        "clip_scale": 0.23094679324162226,
+        "adapter_tensors": 130,
+        "step": 5
+      },
+      "seconds": 20.417388625002786,
+      "metrics": {
+        "elapsed_seconds": 188.03803458300172,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1100606341,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562120630,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "53a2d49ee9bae0ea8d94f7c653d89e87ae9657387ef5f527f8628fcbf622736d"
+    },
+    {
+      "time": 1791607074.614197,
+      "phase": "mixed_update_committed",
+      "step": 10,
+      "modality": "audio",
+      "id": "overlap_backchannel_salty_pot",
+      "loss": 2.9539992809295654,
+      "gradient_norm": 3.98566343428119,
+      "optimizer_steps": {
+        "text": 5,
+        "audio": 5
+      },
+      "update": {
+        "clip_scale": 0.2508992577973048,
+        "adapter_tensors": 130,
+        "step": 5
+      },
+      "seconds": 40.38744741700066,
+      "metrics": {
+        "elapsed_seconds": 228.54925037499925,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1100606341,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562873709,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "ea9925effc20e23b8c64d9b892c73fe99d0bc15e66e798e8ef45df0b4e42c45e"
+    },
+    {
+      "time": 1791607093.827033,
+      "phase": "mixed_update_committed",
+      "step": 11,
+      "modality": "text",
+      "id": "notebook_empty_seat",
+      "loss": 3.378643751144409,
+      "gradient_norm": 4.294459246455265,
+      "optimizer_steps": {
+        "text": 6,
+        "audio": 5
+      },
+      "update": {
+        "clip_scale": 0.2328581877908933,
+        "adapter_tensors": 130,
+        "step": 6
+      },
+      "seconds": 19.03698500000246,
+      "metrics": {
+        "elapsed_seconds": 247.8221850830014,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1100606341,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562873709,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "2fb3e7b1c5cb01afd1d1a0dc66f3b77b9734cf60f601a8b73d1b7df459b632ba"
+    },
+    {
+      "time": 1791607128.203543,
+      "phase": "mixed_update_committed",
+      "step": 12,
+      "modality": "audio",
+      "id": "overlap_barge_not_a_dream",
+      "loss": 2.814316749572754,
+      "gradient_norm": 5.990872972799071,
+      "optimizer_steps": {
+        "text": 6,
+        "audio": 6
+      },
+      "update": {
+        "clip_scale": 0.16692058116925348,
+        "adapter_tensors": 130,
+        "step": 6
+      },
+      "seconds": 34.21746291599993,
+      "metrics": {
+        "elapsed_seconds": 282.2150036669991,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1100606341,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562873709,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "a774d71bb254f653db0d4d5b1ffe79a83ac553828b18d1b72285d4784b36ff18"
+    },
+    {
+      "time": 1791607147.72482,
+      "phase": "mixed_update_committed",
+      "step": 13,
+      "modality": "text",
+      "id": "notebook_rook_string",
+      "loss": 2.716944694519043,
+      "gradient_norm": 4.3736719367291945,
+      "optimizer_steps": {
+        "text": 7,
+        "audio": 6
+      },
+      "update": {
+        "clip_scale": 0.22864083364730628,
+        "adapter_tensors": 130,
+        "step": 7
+      },
+      "seconds": 19.399080790997687,
+      "metrics": {
+        "elapsed_seconds": 301.7748384580009,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1100606341,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562873709,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "6a571c346b2aedc77543238da5c32ed860bfeca5cc2bd41b7d0ee6e3bbb93e67"
+    },
+    {
+      "time": 1791607180.911114,
+      "phase": "mixed_update_committed",
+      "step": 14,
+      "modality": "audio",
+      "id": "no_lecture",
+      "loss": 1.1788663864135742,
+      "gradient_norm": 3.6379638692751888,
+      "optimizer_steps": {
+        "text": 7,
+        "audio": 7
+      },
+      "update": {
+        "clip_scale": 0.2748790348625549,
+        "adapter_tensors": 130,
+        "step": 7
+      },
+      "seconds": 33.02002541600086,
+      "metrics": {
+        "elapsed_seconds": 334.91598108299877,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1100606341,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562873709,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "fa62128d7d14482f31ac1b9d3d256aab49d052c13c29a3411d23edf2af952be4"
+    },
+    {
+      "time": 1791607200.3861032,
+      "phase": "mixed_update_committed",
+      "step": 15,
+      "modality": "text",
+      "id": "notebook_salty_lentils",
+      "loss": 2.81730318069458,
+      "gradient_norm": 3.963516738019288,
+      "optimizer_steps": {
+        "text": 8,
+        "audio": 7
+      },
+      "update": {
+        "clip_scale": 0.2523011919906068,
+        "adapter_tensors": 130,
+        "step": 8
+      },
+      "seconds": 19.223571459002414,
+      "metrics": {
+        "elapsed_seconds": 354.30819704199894,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1100606341,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562873709,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "ae19a7a75c523773979eeb715c85287f069971304516cc47e0e66473be9f4516"
+    },
+    {
+      "time": 1791607233.1307032,
+      "phase": "mixed_update_committed",
+      "step": 16,
+      "modality": "audio",
+      "id": "name",
+      "loss": 1.4270926713943481,
+      "gradient_norm": 4.766840661298989,
+      "optimizer_steps": {
+        "text": 8,
+        "audio": 8
+      },
+      "update": {
+        "clip_scale": 0.20978255178969402,
+        "adapter_tensors": 130,
+        "step": 8
+      },
+      "seconds": 32.52568487499957,
+      "metrics": {
+        "elapsed_seconds": 387.08576279200133,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1100606341,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562873709,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "67e8ced21b79a951b9fea49529c07c83f8df27b72d6cc9559a50dcdbd1bf58a1"
+    },
+    {
+      "time": 1791607252.607064,
+      "phase": "mixed_update_committed",
+      "step": 17,
+      "modality": "text",
+      "id": "notebook_roofing_wages",
+      "loss": 3.0886478424072266,
+      "gradient_norm": 3.925691382425729,
+      "optimizer_steps": {
+        "text": 9,
+        "audio": 8
+      },
+      "update": {
+        "clip_scale": 0.25473219874833025,
+        "adapter_tensors": 130,
+        "step": 9
+      },
+      "seconds": 19.36544045899791,
+      "metrics": {
+        "elapsed_seconds": 406.67026624999926,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1100606341,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562873709,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "8f68bd461d3bb397552286913f96f7366970c7a466a4ece23b6c4c64b419b5c8"
+    },
+    {
+      "time": 1791607293.125545,
+      "phase": "mixed_update_committed",
+      "step": 18,
+      "modality": "audio",
+      "id": "grief",
+      "loss": 1.2986069917678833,
+      "gradient_norm": 3.9160380249857294,
+      "optimizer_steps": {
+        "text": 9,
+        "audio": 9
+      },
+      "update": {
+        "clip_scale": 0.25536013467337126,
+        "adapter_tensors": 130,
+        "step": 9
+      },
+      "seconds": 40.30273712499911,
+      "metrics": {
+        "elapsed_seconds": 447.08139029200174,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1092217733,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562873709,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "a2911f4cd4eb070161d5f5329c7b3222c00c756002826248f22c58831f7d4c83"
+    },
+    {
+      "time": 1791607316.265076,
+      "phase": "mixed_update_committed",
+      "step": 19,
+      "modality": "text",
+      "id": "notebook_bad_apology",
+      "loss": 2.8196537494659424,
+      "gradient_norm": 3.7942791536761433,
+      "optimizer_steps": {
+        "text": 10,
+        "audio": 9
+      },
+      "update": {
+        "clip_scale": 0.263554671879002,
+        "adapter_tensors": 130,
+        "step": 10
+      },
+      "seconds": 22.965361625003425,
+      "metrics": {
+        "elapsed_seconds": 470.2639999999992,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1092217733,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562873709,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "baa46a783115d213a3d0372c6b02b6601452c7b68f9161cc6cca6dd13716b9af"
+    },
+    {
+      "time": 1791607352.1983528,
+      "phase": "mixed_update_committed",
+      "step": 20,
+      "modality": "audio",
+      "id": "fortune",
+      "loss": 1.1095174551010132,
+      "gradient_norm": 3.955638272773699,
+      "optimizer_steps": {
+        "text": 10,
+        "audio": 10
+      },
+      "update": {
+        "clip_scale": 0.25280370158082266,
+        "adapter_tensors": 130,
+        "step": 10
+      },
+      "seconds": 35.81636562499989,
+      "metrics": {
+        "elapsed_seconds": 506.25440179200086,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1092217733,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562873709,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "09fa3fbf42ad3e812a9b5ddef5a72e2830597da46e6ab9beebee5d3080aef4ca"
+    },
+    {
+      "time": 1791607373.4103749,
+      "phase": "mixed_update_committed",
+      "step": 21,
+      "modality": "text",
+      "id": "notebook_human_fatigue",
+      "loss": 2.6924996376037598,
+      "gradient_norm": 3.6162598681960767,
+      "optimizer_steps": {
+        "text": 11,
+        "audio": 10
+      },
+      "update": {
+        "clip_scale": 0.2765287987263893,
+        "adapter_tensors": 130,
+        "step": 11
+      },
+      "seconds": 21.107657749998907,
+      "metrics": {
+        "elapsed_seconds": 527.4885296249995,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1092217733,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562873709,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "7ff85cbc391fa9809db202c7a7532d7447c92695e674e0e4f7e8acdb698ca6ed"
+    },
+    {
+      "time": 1791607409.528069,
+      "phase": "mixed_update_committed",
+      "step": 22,
+      "modality": "audio",
+      "id": "overlap_barge_change_the_subject",
+      "loss": 2.3409781455993652,
+      "gradient_norm": 6.707909130570688,
+      "optimizer_steps": {
+        "text": 11,
+        "audio": 11
+      },
+      "update": {
+        "clip_scale": 0.1490777497196277,
+        "adapter_tensors": 130,
+        "step": 11
+      },
+      "seconds": 35.97426512500169,
+      "metrics": {
+        "elapsed_seconds": 563.5735272080019,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1092217733,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562873709,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "f31124f7a0c085716a386ea98e39c9fe06cf599c98237adb0c5ff1f90e991ce5"
+    },
+    {
+      "time": 1791607433.128063,
+      "phase": "mixed_update_committed",
+      "step": 23,
+      "modality": "text",
+      "id": "notebook_valley_summer",
+      "loss": 2.864569902420044,
+      "gradient_norm": 3.998255694026541,
+      "optimizer_steps": {
+        "text": 12,
+        "audio": 11
+      },
+      "update": {
+        "clip_scale": 0.2501090660592132,
+        "adapter_tensors": 130,
+        "step": 12
+      },
+      "seconds": 23.406707458998426,
+      "metrics": {
+        "elapsed_seconds": 587.1239998749988,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1092217733,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562873709,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "e165107b505eacf4764db1615566040b1a3734f6a637302962d2435c80e23297"
+    },
+    {
+      "time": 1791607476.965863,
+      "phase": "mixed_update_committed",
+      "step": 24,
+      "modality": "audio",
+      "id": "overlap_backchannel_mara_broom",
+      "loss": 3.5180370807647705,
+      "gradient_norm": 6.944855160293254,
+      "optimizer_steps": {
+        "text": 12,
+        "audio": 12
+      },
+      "update": {
+        "clip_scale": 0.14399148369249204,
+        "adapter_tensors": 130,
+        "step": 12
+      },
+      "seconds": 43.58257279100144,
+      "metrics": {
+        "elapsed_seconds": 630.9020021249999,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1092217733,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562873709,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "0a568d63cb6c77bf387e179236da5f494548f65f1eeb810e4bbd7a89858f5e51"
+    },
+    {
+      "time": 1791607636.405696,
+      "phase": "mixed_update_committed",
+      "step": 25,
+      "modality": "text",
+      "id": "notebook_cold_knee",
+      "loss": 2.7479827404022217,
+      "gradient_norm": 4.155541263369612,
+      "optimizer_steps": {
+        "text": 13,
+        "audio": 12
+      },
+      "update": {
+        "clip_scale": 0.2406425382917995,
+        "adapter_tensors": 130,
+        "step": 13
+      },
+      "seconds": 27.824249500001315,
+      "metrics": {
+        "elapsed_seconds": 790.4572933749987,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1092217733,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562873709,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "a9249514d9b18690095556f8b3700d9eafb9230a2049d35c33daee5d291d4705"
+    },
+    {
+      "time": 1791607665.227359,
+      "phase": "mixed_update_committed",
+      "step": 26,
+      "modality": "audio",
+      "id": "senses",
+      "loss": 0.6974373459815979,
+      "gradient_norm": 2.58955677423576,
+      "optimizer_steps": {
+        "text": 13,
+        "audio": 13
+      },
+      "update": {
+        "clip_scale": 0.38616646913773855,
+        "adapter_tensors": 130,
+        "step": 13
+      },
+      "seconds": 28.660606375000498,
+      "metrics": {
+        "elapsed_seconds": 819.2595480829987,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1092217733,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562873709,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "aef3b1056e7ac70782eaaff693ccdaaa0e9e248dee3f4a689cb9526886c6113d"
+    },
+    {
+      "time": 1791607688.646903,
+      "phase": "mixed_update_committed",
+      "step": 27,
+      "modality": "text",
+      "id": "notebook_thyme_cutting",
+      "loss": 2.9537315368652344,
+      "gradient_norm": 3.946725749431674,
+      "optimizer_steps": {
+        "text": 14,
+        "audio": 13
+      },
+      "update": {
+        "clip_scale": 0.2533745846440568,
+        "adapter_tensors": 130,
+        "step": 14
+      },
+      "seconds": 23.24879779099865,
+      "metrics": {
+        "elapsed_seconds": 842.6723755829989,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1092217733,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562873709,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "4870e7b57963aece4bb4cbb18bf1c41c707be65416a6e7f7517834d3292e0e4e"
+    },
+    {
+      "time": 1791607732.303224,
+      "phase": "mixed_update_committed",
+      "step": 28,
+      "modality": "audio",
+      "id": "teacher",
+      "loss": 2.060316801071167,
+      "gradient_norm": 4.399446863614203,
+      "optimizer_steps": {
+        "text": 14,
+        "audio": 14
+      },
+      "update": {
+        "clip_scale": 0.22730130144258046,
+        "adapter_tensors": 130,
+        "step": 14
+      },
+      "seconds": 43.41031212500093,
+      "metrics": {
+        "elapsed_seconds": 886.2508301669986,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1092217733,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "0fda0264932de628c87d78eec725c3f6fba09248b07e18b3ca815cb13b84e665"
+    },
+    {
+      "time": 1791607758.011224,
+      "phase": "mixed_update_committed",
+      "step": 29,
+      "modality": "text",
+      "id": "notebook_stone_threshold",
+      "loss": 2.855344772338867,
+      "gradient_norm": 3.605403169046048,
+      "optimizer_steps": {
+        "text": 15,
+        "audio": 14
+      },
+      "update": {
+        "clip_scale": 0.27736149061270576,
+        "adapter_tensors": 130,
+        "step": 15
+      },
+      "seconds": 25.54527275000146,
+      "metrics": {
+        "elapsed_seconds": 912.044522917,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "7f7912f68d47e8023584f33a8318b972133c3da937774db5bcbba65bfc27b66a"
+    },
+    {
+      "time": 1791607795.0530932,
+      "phase": "mixed_update_committed",
+      "step": 30,
+      "modality": "audio",
+      "id": "rook",
+      "loss": 1.4479748010635376,
+      "gradient_norm": 5.714379751069429,
+      "optimizer_steps": {
+        "text": 15,
+        "audio": 15
+      },
+      "update": {
+        "clip_scale": 0.17499711986465055,
+        "adapter_tensors": 130,
+        "step": 15
+      },
+      "seconds": 36.9506121250015,
+      "metrics": {
+        "elapsed_seconds": 949.1567147499991,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "e135dbb29c7c463cb73209127061ea18f1a892daf3b585e06c42219b4f804079"
+    },
+    {
+      "time": 1791607819.113354,
+      "phase": "mixed_update_committed",
+      "step": 31,
+      "modality": "text",
+      "id": "notebook_mended_sleeve",
+      "loss": 2.8470373153686523,
+      "gradient_norm": 3.991432454603725,
+      "optimizer_steps": {
+        "text": 16,
+        "audio": 15
+      },
+      "update": {
+        "clip_scale": 0.25053662034070806,
+        "adapter_tensors": 130,
+        "step": 16
+      },
+      "seconds": 23.920230083000206,
+      "metrics": {
+        "elapsed_seconds": 973.1679133329999,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "eab5ddcfacbddb32034a2ddd79e791fb573fd1d492623f20a8f282efc5de91e9"
+    },
+    {
+      "time": 1791607853.994891,
+      "phase": "mixed_update_committed",
+      "step": 32,
+      "modality": "audio",
+      "id": "overlap_barge_do_not_advise",
+      "loss": 2.8293678760528564,
+      "gradient_norm": 6.964068013222849,
+      "optimizer_steps": {
+        "text": 16,
+        "audio": 16
+      },
+      "update": {
+        "clip_scale": 0.14359423208752886,
+        "adapter_tensors": 130,
+        "step": 16
+      },
+      "seconds": 34.81224245799967,
+      "metrics": {
+        "elapsed_seconds": 1008.1202663750009,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "f2bc6054efb5d03315c59cd4f55a067d14a7bb2bde80b62e9c2847cba705e8e9"
+    },
+    {
+      "time": 1791607880.0633101,
+      "phase": "mixed_update_committed",
+      "step": 33,
+      "modality": "text",
+      "id": "notebook_misplaced_key",
+      "loss": 2.924907922744751,
+      "gradient_norm": 4.269322420538005,
+      "optimizer_steps": {
+        "text": 17,
+        "audio": 16
+      },
+      "update": {
+        "clip_scale": 0.2342292052825777,
+        "adapter_tensors": 130,
+        "step": 17
+      },
+      "seconds": 25.844354041997576,
+      "metrics": {
+        "elapsed_seconds": 1034.0368771249996,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "b5a0ef5e01669ab62fe5799ea7fea9a0b36adc04f544314671182823346c8e21"
+    },
+    {
+      "time": 1791607917.734088,
+      "phase": "mixed_update_committed",
+      "step": 34,
+      "modality": "audio",
+      "id": "cold",
+      "loss": 1.9654133319854736,
+      "gradient_norm": 5.944058499889485,
+      "optimizer_steps": {
+        "text": 17,
+        "audio": 17
+      },
+      "update": {
+        "clip_scale": 0.1682352214965987,
+        "adapter_tensors": 130,
+        "step": 17
+      },
+      "seconds": 37.46711091600082,
+      "metrics": {
+        "elapsed_seconds": 1071.7279682920016,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "d3c36aef43fe411c8765cbf8450285cfeac4385354a1f1db01b75672a06ee33e"
+    },
+    {
+      "time": 1791607938.9182148,
+      "phase": "mixed_update_committed",
+      "step": 35,
+      "modality": "text",
+      "id": "notebook_mara_argument",
+      "loss": 2.809725046157837,
+      "gradient_norm": 3.6773516435252076,
+      "optimizer_steps": {
+        "text": 18,
+        "audio": 17
+      },
+      "update": {
+        "clip_scale": 0.27193483088335413,
+        "adapter_tensors": 130,
+        "step": 18
+      },
+      "seconds": 21.060978583001997,
+      "metrics": {
+        "elapsed_seconds": 1092.9919783330006,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "b357f68c39519c54c42b04ffeb4e17271dadd824c4c73cbdaf548e0128a4554a"
+    },
+    {
+      "time": 1791607972.122221,
+      "phase": "mixed_update_committed",
+      "step": 36,
+      "modality": "audio",
+      "id": "role_override",
+      "loss": 0.9987951517105103,
+      "gradient_norm": 4.235498764861099,
+      "optimizer_steps": {
+        "text": 18,
+        "audio": 18
+      },
+      "update": {
+        "clip_scale": 0.23609970233855032,
+        "adapter_tensors": 130,
+        "step": 18
+      },
+      "seconds": 33.03818812499958,
+      "metrics": {
+        "elapsed_seconds": 1126.1544259170005,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "a690a5014b12418dedc6f4d22cec806e7f1379c9c2519c5de015f295dd79f978"
+    },
+    {
+      "time": 1791607994.755478,
+      "phase": "mixed_update_committed",
+      "step": 37,
+      "modality": "text",
+      "id": "notebook_ordinary_name",
+      "loss": 3.1859290599823,
+      "gradient_norm": 4.356910160130574,
+      "optimizer_steps": {
+        "text": 19,
+        "audio": 18
+      },
+      "update": {
+        "clip_scale": 0.22952045393445206,
+        "adapter_tensors": 130,
+        "step": 19
+      },
+      "seconds": 22.471760666998307,
+      "metrics": {
+        "elapsed_seconds": 1148.7905944170016,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "93288c639b83feaa16a419a2a8cdf65f9cfcb30b1d096dc01cb7107ee28fecf6"
+    },
+    {
+      "time": 1791608028.779583,
+      "phase": "mixed_update_committed",
+      "step": 38,
+      "modality": "audio",
+      "id": "overlap_barge_leaking_eaves",
+      "loss": 2.9809892177581787,
+      "gradient_norm": 6.536221858792612,
+      "optimizer_steps": {
+        "text": 19,
+        "audio": 19
+      },
+      "update": {
+        "clip_scale": 0.15299358254261994,
+        "adapter_tensors": 130,
+        "step": 19
+      },
+      "seconds": 33.821565834001376,
+      "metrics": {
+        "elapsed_seconds": 1182.7755831670001,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "f7ca1941bd6e830d9610eb99b0d30e8d92b94cbfa816ef74cc85970745c5a340"
+    },
+    {
+      "time": 1791608048.6775308,
+      "phase": "mixed_update_committed",
+      "step": 39,
+      "modality": "text",
+      "id": "notebook_market_onions",
+      "loss": 2.4404842853546143,
+      "gradient_norm": 4.347271825272213,
+      "optimizer_steps": {
+        "text": 20,
+        "audio": 19
+      },
+      "update": {
+        "clip_scale": 0.23002932365221715,
+        "adapter_tensors": 130,
+        "step": 20
+      },
+      "seconds": 19.715644500000053,
+      "metrics": {
+        "elapsed_seconds": 1202.6940679170002,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "dbd682e0cbc8cd39671549b87f194f49a343bfb77e84772e22f866b4e4443411"
+    },
+    {
+      "time": 1791608086.1961868,
+      "phase": "mixed_update_committed",
+      "step": 40,
+      "modality": "audio",
+      "id": "overlap_backchannel_the_cold_knee",
+      "loss": 2.4490575790405273,
+      "gradient_norm": 4.8021240340557,
+      "optimizer_steps": {
+        "text": 20,
+        "audio": 20
+      },
+      "update": {
+        "clip_scale": 0.20824118469781058,
+        "adapter_tensors": 130,
+        "step": 20
+      },
+      "seconds": 37.3244904159983,
+      "metrics": {
+        "elapsed_seconds": 1240.2016952919985,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "caea31ac145eacf07a3d28eca6593794a7f6e873bbae6b2d049e02f5784c50d9"
+    },
+    {
+      "time": 1791608105.537108,
+      "phase": "mixed_update_committed",
+      "step": 41,
+      "modality": "text",
+      "id": "notebook_neighbour_boundary",
+      "loss": 2.748553514480591,
+      "gradient_norm": 4.142645787227072,
+      "optimizer_steps": {
+        "text": 21,
+        "audio": 20
+      },
+      "update": {
+        "clip_scale": 0.24139162480880255,
+        "adapter_tensors": 130,
+        "step": 21
+      },
+      "seconds": 19.179235083000094,
+      "metrics": {
+        "elapsed_seconds": 1259.574915000001,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "731d65c23817b1b2cbd4bc20e692336d7a65b38ed279a8bc373ab2f8813750f8"
+    },
+    {
+      "time": 1791608143.442935,
+      "phase": "mixed_update_committed",
+      "step": 42,
+      "modality": "audio",
+      "id": "concrete_repair",
+      "loss": 2.0540826320648193,
+      "gradient_norm": 5.497720846030194,
+      "optimizer_steps": {
+        "text": 21,
+        "audio": 21
+      },
+      "update": {
+        "clip_scale": 0.181893556655054,
+        "adapter_tensors": 130,
+        "step": 21
+      },
+      "seconds": 37.777878332999535,
+      "metrics": {
+        "elapsed_seconds": 1297.517492250001,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "d5cc49b70ca4359ef0431695d26dac05fee8c4e8e362e265e2dfcaf71e846524"
+    },
+    {
+      "time": 1791608163.415481,
+      "phase": "mixed_update_committed",
+      "step": 43,
+      "modality": "text",
+      "id": "notebook_visitor_story",
+      "loss": 2.999967098236084,
+      "gradient_norm": 3.655789044682675,
+      "optimizer_steps": {
+        "text": 22,
+        "audio": 21
+      },
+      "update": {
+        "clip_scale": 0.2735387586762171,
+        "adapter_tensors": 130,
+        "step": 22
+      },
+      "seconds": 19.86724616700303,
+      "metrics": {
+        "elapsed_seconds": 1317.5089020000014,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "57d69c37d8563420de7ded69faa3fd0d3dfc19a94ee29b195ab5c40b34d8e149"
+    },
+    {
+      "time": 1791608196.176718,
+      "phase": "mixed_update_committed",
+      "step": 44,
+      "modality": "audio",
+      "id": "overlap_barge_louder_next_time",
+      "loss": 2.2850897312164307,
+      "gradient_norm": 5.895282773489979,
+      "optimizer_steps": {
+        "text": 22,
+        "audio": 22
+      },
+      "update": {
+        "clip_scale": 0.16962714711507101,
+        "adapter_tensors": 130,
+        "step": 22
+      },
+      "seconds": 32.59214024999892,
+      "metrics": {
+        "elapsed_seconds": 1350.206518916999,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "bfc7ec76d98197f92d730004f53bba1562d1e80a219046fed99d71aa066ed23e"
+    },
+    {
+      "time": 1791608217.108237,
+      "phase": "mixed_update_committed",
+      "step": 45,
+      "modality": "text",
+      "id": "notebook_impatient_silence",
+      "loss": 2.9175686836242676,
+      "gradient_norm": 4.276397196693168,
+      "optimizer_steps": {
+        "text": 23,
+        "audio": 22
+      },
+      "update": {
+        "clip_scale": 0.23384170170976126,
+        "adapter_tensors": 130,
+        "step": 23
+      },
+      "seconds": 20.759468207997998,
+      "metrics": {
+        "elapsed_seconds": 1371.1360123750019,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "613e5c9a1382916b82fe0f75bb3cbf651faf1d31411379d7fa28e500577ee1eb"
+    },
+    {
+      "time": 1791608251.086758,
+      "phase": "mixed_update_committed",
+      "step": 46,
+      "modality": "audio",
+      "id": "public_identity",
+      "loss": 1.548635721206665,
+      "gradient_norm": 5.950938590758764,
+      "optimizer_steps": {
+        "text": 23,
+        "audio": 23
+      },
+      "update": {
+        "clip_scale": 0.16804071879896335,
+        "adapter_tensors": 130,
+        "step": 23
+      },
+      "seconds": 33.79070266599956,
+      "metrics": {
+        "elapsed_seconds": 1405.0998560000007,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "14a3f0287d1b71afab016c7c46dafbbd93e318f27dc6be2e0d993243b6fc963c"
+    },
+    {
+      "time": 1791608272.906187,
+      "phase": "mixed_update_committed",
+      "step": 47,
+      "modality": "text",
+      "id": "notebook_chipped_cup",
+      "loss": 2.5534732341766357,
+      "gradient_norm": 4.143410892479912,
+      "optimizer_steps": {
+        "text": 24,
+        "audio": 23
+      },
+      "update": {
+        "clip_scale": 0.24134705042202806,
+        "adapter_tensors": 130,
+        "step": 24
+      },
+      "seconds": 21.654169333000027,
+      "metrics": {
+        "elapsed_seconds": 1426.9443356250013,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "4779204121379d2585af32fb40745031fe14e32da710db189194e6d4df3424a3"
+    },
+    {
+      "time": 1791608301.679432,
+      "phase": "mixed_update_committed",
+      "step": 48,
+      "modality": "audio",
+      "id": "model_disclosure",
+      "loss": 0.9408645033836365,
+      "gradient_norm": 8.473544481596765,
+      "optimizer_steps": {
+        "text": 24,
+        "audio": 24
+      },
+      "update": {
+        "clip_scale": 0.11801436824834075,
+        "adapter_tensors": 130,
+        "step": 24
+      },
+      "seconds": 28.578124207997462,
+      "metrics": {
+        "elapsed_seconds": 1455.6868605829986,
+        "peak_rss_bytes": 340721664,
+        "swap_bytes": 1083829125,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234755,
+        "mlx_active_bytes": 8
+      },
+      "adapter_sha256": "09b5dab1bedfbcc373d8d271e0a50b724e306585ff889792fb4fb3864b290134"
+    }
+  ],
+  "parent_validation": {
+    "step": 0,
+    "adapter_sha256": "aa02e8b1e91ad3f48dbf1c3dc8e7663a1c1f2c7494f57ed372bef554f7480a70",
+    "text_episodes": [
+      {
+        "id": "notebook_postage",
+        "loss": 2.9971039295196533,
+        "target_tokens": 93
+      },
+      {
+        "id": "notebook_lost_glove",
+        "loss": 3.2167258262634277,
+        "target_tokens": 89
+      },
+      {
+        "id": "notebook_bell_rope",
+        "loss": 3.1693778038024902,
+        "target_tokens": 91
+      },
+      {
+        "id": "notebook_reading_fly",
+        "loss": 3.0452821254730225,
+        "target_tokens": 87
+      },
+      {
+        "id": "notebook_summit_shadow",
+        "loss": 3.338747024536133,
+        "target_tokens": 91
+      },
+      {
+        "id": "notebook_wrong_voice",
+        "loss": 2.5504612922668457,
+        "target_tokens": 100
+      }
+    ],
+    "audio_episodes": [
+      {
+        "id": "losing_competition",
+        "text_groups": {
+          "spoken": {
+            "tokens": 57,
+            "ce_sum": 137.05914497375488,
+            "top1_matches": 27,
+            "mean_ce": 2.4045464030483314,
+            "top1_accuracy": 0.47368421052631576
+          },
+          "silence_pad": {
+            "tokens": 184,
+            "ce_sum": 29.358407020568848,
+            "top1_matches": 171,
+            "mean_ce": 0.1595565598943959,
+            "top1_accuracy": 0.9293478260869565
+          },
+          "end_pad": {
+            "tokens": 39,
+            "ce_sum": 37.174272537231445,
+            "top1_matches": 23,
+            "mean_ce": 0.9531864753136268,
+            "top1_accuracy": 0.5897435897435898
+          }
+        },
+        "audio_codebooks": [
+          {
+            "tokens": 280,
+            "ce_sum": 188.41073894500732,
+            "top1_matches": 211,
+            "mean_ce": 0.672895496232169,
+            "top1_accuracy": 0.7535714285714286
+          },
+          {
+            "tokens": 279,
+            "ce_sum": 552.6188831329346,
+            "top1_matches": 132,
+            "mean_ce": 1.9807128427703748,
+            "top1_accuracy": 0.4731182795698925
+          },
+          {
+            "tokens": 279,
+            "ce_sum": 682.300724029541,
+            "top1_matches": 124,
+            "mean_ce": 2.4455223083496094,
+            "top1_accuracy": 0.4444444444444444
+          },
+          {
+            "tokens": 279,
+            "ce_sum": 729.7659597396851,
+            "top1_matches": 120,
+            "mean_ce": 2.6156486012175093,
+            "top1_accuracy": 0.43010752688172044
+          },
+          {
+            "tokens": 279,
+            "ce_sum": 782.1335296630859,
+            "top1_matches": 108,
+            "mean_ce": 2.8033459844555053,
+            "top1_accuracy": 0.3870967741935484
+          },
+          {
+            "tokens": 279,
+            "ce_sum": 762.9760360717773,
+            "top1_matches": 114,
+            "mean_ce": 2.734681132873754,
+            "top1_accuracy": 0.40860215053763443
+          },
+          {
+            "tokens": 279,
+            "ce_sum": 772.4583129882812,
+            "top1_matches": 120,
+            "mean_ce": 2.768667788488463,
+            "top1_accuracy": 0.43010752688172044
+          },
+          {
+            "tokens": 279,
+            "ce_sum": 794.0474243164062,
+            "top1_matches": 109,
+            "mean_ce": 2.846048115829413,
+            "top1_accuracy": 0.3906810035842294
+          }
+        ],
+        "semantic_weighted_audio_ce": 0.7984968038073796,
+        "joint_ce_by_padding_weight": {
+          "0.05": 2.8584495397082588,
+          "0.5": 1.8093305412118605
+        }
+      },
+      {
+        "id": "unwanted_gift",
+        "text_groups": {
+          "spoken": {
+            "tokens": 46,
+            "ce_sum": 127.37985420227051,
+            "top1_matches": 20,
+            "mean_ce": 2.76912726526675,
+            "top1_accuracy": 0.43478260869565216
+          },
+          "silence_pad": {
+            "tokens": 189,
+            "ce_sum": 38.280527114868164,
+            "top1_matches": 175,
+            "mean_ce": 0.20254247150723897,
+            "top1_accuracy": 0.9259259259259259
+          },
+          "end_pad": {
+            "tokens": 36,
+            "ce_sum": 33.427772521972656,
+            "top1_matches": 20,
+            "mean_ce": 0.9285492367214627,
+            "top1_accuracy": 0.5555555555555556
+          }
+        },
+        "audio_codebooks": [
+          {
+            "tokens": 271,
+            "ce_sum": 198.33138751983643,
+            "top1_matches": 210,
+            "mean_ce": 0.7318501384495809,
+            "top1_accuracy": 0.7749077490774908
+          },
+          {
+            "tokens": 270,
+            "ce_sum": 478.10126399993896,
+            "top1_matches": 149,
+            "mean_ce": 1.7707454222219963,
+            "top1_accuracy": 0.5518518518518518
+          },
+          {
+            "tokens": 270,
+            "ce_sum": 652.3326539993286,
+            "top1_matches": 118,
+            "mean_ce": 2.41604686666418,
+            "top1_accuracy": 0.43703703703703706
+          },
+          {
+            "tokens": 270,
+            "ce_sum": 657.9739847183228,
+            "top1_matches": 118,
+            "mean_ce": 2.4369406841419363,
+            "top1_accuracy": 0.43703703703703706
+          },
+          {
+            "tokens": 270,
+            "ce_sum": 680.4171829223633,
+            "top1_matches": 119,
+            "mean_ce": 2.5200636404531975,
+            "top1_accuracy": 0.44074074074074077
+          },
+          {
+            "tokens": 270,
+            "ce_sum": 710.9119234085083,
+            "top1_matches": 122,
+            "mean_ce": 2.633007123735216,
+            "top1_accuracy": 0.45185185185185184
+          },
+          {
+            "tokens": 270,
+            "ce_sum": 765.5196704864502,
+            "top1_matches": 114,
+            "mean_ce": 2.8352580388387043,
+            "top1_accuracy": 0.4222222222222222
+          },
+          {
+            "tokens": 270,
+            "ce_sum": 730.3281135559082,
+            "top1_matches": 126,
+            "mean_ce": 2.7049189390959563,
+            "top1_accuracy": 0.4666666666666667
+          }
+        ],
+        "semantic_weighted_audio_ce": 0.8454199222171254,
+        "joint_ce_by_padding_weight": {
+          "0.05": 3.1330228773981306,
+          "0.5": 1.875287455470696
+        }
+      }
+    ],
+    "text_ce": 3.0440005399354355,
+    "audio_joint_ce": 1.8423089983412781,
+    "native_spoken_ce": 2.5673689240390813,
+    "scope": "Small fixed teacher-forced diagnostics. No native free-generation acceptance claim."
+  },
+  "segment": {
+    "step": 48,
+    "planned_steps": 48,
+    "optimizer_steps": {
+      "text": 24,
+      "audio": 24
+    },
+    "status": "training complete",
+    "metrics": {
+      "elapsed_seconds": 1581.7109682920018,
+      "peak_rss_bytes": 340721664,
+      "swap_bytes": 1083829125,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 563234755,
+      "mlx_active_bytes": 8
+    }
+  },
+  "inspector_sha256": "2e4a72bc142a84ae1b6a447de22d74d710126f311df5cb053ade2e37ae6d793e"
+}

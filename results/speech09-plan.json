@@ -1,5 +1,5 @@
 {
-  "status": "Both preflight gates passed; full48update schedule authorized by existing experiment plan",
+  "status": "Closed: both declared checkpoints fail native spoken-token preservation; no native generation escalation",
   "config": "configs/speech09.json",
   "config_sha256": "f4dc6a597d3bca0790c0ad696dafe623debc7bda23197a96ffe455f203c356f1",
   "parent": "speech08-step0067, rejected native development candidate; research parent only",
@@ -15,5 +15,6 @@
   "mixed_optimizer_parity": "results/moshi-mixed-optimizer-parity.json",
   "mixed_optimizer_parity_summary": "Alternating text/audio/text on shared nonzero adapters with independent AdamW states: max loss error4.77e-7, gradient error1.20e-7, exported parameter error1.87e-8. Inactive optimizer files unchanged. Tiny numerical proof, not actual speech quality.",
   "actual_preflight": "results/speech09-two-update-preflight.json",
-  "actual_preflight_note": "One text and one audio update, all130adapter tensors changed and finite, separate33file optimizer states each atstep1, normal pressure,558531786byte peak. Initial standalone inspection lacked U64 decoding; corrected inspector passed. No quality claim."
+  "actual_preflight_note": "One text and one audio update, all130adapter tensors changed and finite, separate33file optimizer states each atstep1, normal pressure,558531786byte peak. Initial standalone inspection lacked U64 decoding; corrected inspector passed. No quality claim.",
+  "completed_result": "results/speech09-training-summary.json"
 }
