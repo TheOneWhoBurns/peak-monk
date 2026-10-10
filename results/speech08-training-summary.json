@@ -1,0 +1,2434 @@
+{
+  "status": "67declared updates and validations complete; no native quality acceptance",
+  "config": {
+    "weights": "models/moshi/model.q4.safetensors",
+    "weights_sha256": "7959d590e23c1ebc78cfa3501344a6ff331561aa0cadc4429b733b890bbc919c",
+    "parent": "adapters/speech-run07/candidate.safetensors",
+    "parent_sha256": "2e2b8363b1c7350ccc55ca97c238ea054a6ae2fa573da92c7c401e0f9083156c",
+    "output": "adapters/speech-run08",
+    "data": [
+      "data/speech_codes",
+      "data/speech_codes-overlap-v2"
+    ],
+    "steps": 67,
+    "checkpoints": [
+      16,
+      32,
+      67
+    ],
+    "seed": 163,
+    "rank": 8,
+    "scale": 2.0,
+    "learning_rate": 3e-05,
+    "weight_decay": 0.01,
+    "clip_norm": 1.0,
+    "head_frames": 8,
+    "text_padding_weight": 0.05,
+    "memory_limit": 2800000000,
+    "max_seconds": 5400
+  },
+  "metadata": {
+    "config": {
+      "weights": "models/moshi/model.q4.safetensors",
+      "weights_sha256": "7959d590e23c1ebc78cfa3501344a6ff331561aa0cadc4429b733b890bbc919c",
+      "parent": "adapters/speech-run07/candidate.safetensors",
+      "parent_sha256": "2e2b8363b1c7350ccc55ca97c238ea054a6ae2fa573da92c7c401e0f9083156c",
+      "output": "adapters/speech-run08",
+      "data": [
+        "data/speech_codes",
+        "data/speech_codes-overlap-v2"
+      ],
+      "steps": 67,
+      "checkpoints": [
+        16,
+        32,
+        67
+      ],
+      "seed": 163,
+      "rank": 8,
+      "scale": 2.0,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "clip_norm": 1.0,
+      "head_frames": 8,
+      "text_padding_weight": 0.05,
+      "memory_limit": 2800000000,
+      "max_seconds": 5400
+    },
+    "config_sha256": "1803cf387f2c804a70afbbafc4929d962b2857054b29ebc2d82413f6db925b7d",
+    "source_sha256": {
+      "train_moshi_disk.py": "cf3150a2d59d1a8f588be3866869460d33333f8f5e2e133be1461fb3b3cf4598",
+      "moshi_disk_adjoint.py": "cdc535365c88cf8824b2a0936ae4d40730dc32962fde1151d223e83eb8751cbc",
+      "moshi_weight_stream.py": "0b45fdbba9ac51c005138ecd5e589155ec64d544f509c13b31aac0b3142d536a",
+      "moshi_layerwise.py": "d9145c34b1b54b372cc5f23aa31638d3290d27c4b4a5bfef9ad59794b5aeb03f",
+      "moshi_staged.py": "ec08ca9ab44012ca861764b1aa0f24178555461c5fd2d9511bd146c1c5b21d71",
+      "moshi_disk_metrics.py": "ec9a0a7014525bb5b292a8a2e2649d08b8bf439475dd0c269da91fa382180c42",
+      "bounded_speech_runtime.py": "1bf5366b41a9581ccfaf705a37ddf917d51df79d71dfb3ec9e79a932dbf24a99",
+      "bounded_text_runtime.py": "6051753060eeb560bb48ab38065515a1252914e1b0213fa7a76efef7980a5bb6",
+      "moshi_training.py": "3b014c94d09d03a54a91bc167aeecef243d10a0861175fea7cfad68f46c52051",
+      "moshi_split.py": "d92c29849119311339bb8a2a7427c2f6548f8a27e00e59546cd464c5a449b06f"
+    },
+    "data_sha256": {
+      "ambition": "f1cc77feab3c8ffd45073ace852f8a2e876b9ca9bad30e71f4f6462078476294",
+      "anger": "c1566d95e1808e0472339d86f81582cdeca86e3959f4fbaf356dec0c454a68f5",
+      "apology": "d17b215c3b0321fba3445ace91ccc33bd05adc196753beb7af35e2fd9260b17f",
+      "arrival": "284a466b8e8cde5a3d0e7b7c476fda99f6366e5c2e1bb3010f50452dbf95aeb9",
+      "boredom": "b41fb6af19859314c3b6a54a6d8620ae87a44c4603f5b625f11e8651d6f590e8",
+      "boundaries": "465796f81a39cd65e775dd1871d1c760170fb7b6b4816f9106f97a8373527870",
+      "breakfast": "3c6c438db623d1a998a74dd2ad54689eef40bc17652845faa78d8767badb010f",
+      "childhood": "314a997c228fd2911baf6f9faf21495a3075fe41a45781568172aa40bd38e8fc",
+      "cold": "64ef3d557c61a3c182563c6739cc2af3aaef01cde9bf49d9c4cf684a222a7ab3",
+      "concrete_repair": "1315c07b1ee2b1ff810e4698f78e0bbf71cd7a25060feea29ce2b1b8fe5fdac7",
+      "correction": "b6b3a754bed844107e6390003bdd7bc28aa7dd8b3179fe55fa555e962fb70ab9",
+      "crisis": "2f2d6a403b4b04a9deb972be49575f928333733c664ddacf16ada8bd7a7eb446",
+      "dependency": "17278a638972ebebc5e9de822eb2b8e28ac7c4605d39e0117018e5d4849ca000",
+      "disagreement": "2aa8fdcdd0bfbff6e841d9ed6f9e1e317457330b439011656a3f1fdadd0d1659",
+      "doctrine": "d3082a06fe0e30744a05f316f16c0f839c62f6c9796635a0d7443209d2929977",
+      "fortune": "9a39a98d954b6cfd85c91ce5d461c3a49be3cfdaa8fa3417d0950dfac6bcf7f9",
+      "friendship": "d033d3523cc005c5e613039941b36f94aa18dbb3955ae00f1fdd3ad5eaecf245",
+      "game": "043bc9c9de6139bac8d0acb4ddd669bc3298a8c3e5ac817fb15f73a5b53856df",
+      "goodbye": "a1dd472cf12db8a8c57c70ee4c5a049e715d9243c6bba91dc899a54ab2ceb6a2",
+      "grandiosity": "67d074ea39bc2c9ce01673bbb67303308f91742690144e9e22b5e3d87952fd44",
+      "grief": "ac17b857946ae279e7e498ae9d97ad5650f25debd91fa166b1ac2698bb0add75",
+      "guilt": "b9d5610fa2f09a665c3da6762a70252353f9bd3dd7e505b791b6cca330190b16",
+      "hallucination_boundary": "6ffac11807c3b0a47f6120582975eb9137395e9ce665cb775d2116d7db6ae6a2",
+      "health_boundary": "8f1c117968b7aaa5d6ad3985c3dbe47e5e50dbb97e2bed744a743279990440f8",
+      "home": "a28ba4a9c048ff6c44594749cf90da87d6ec4ae7b406dd7bc4e8a996700c37d2",
+      "identity_transparency": "1e1221b362c185a991526d66ccb3d8ffce444343fd5af8f20d08150dddccd4a0",
+      "imperfection": "7be925d49103cfd483ee3941c474c26b032ae42404d3540d6bc687dd5f381a29",
+      "influences": "699228d8a4cfc34a65ed045e6d276c04dde82aa4b0ef74e84034c44737a04a80",
+      "jealousy": "92f23264290e36e8285930f793d3c253bd7332e2d40a4adf8137e0da4f99493c",
+      "joke": "e7b4ea0c1f9bdf85bd30e983fffa78ab4f551557d31520546c83ab706876b6e2",
+      "losing_competition": "1beb972727795d634aca4df49c0737e051c382ae214feadca2bed7b6f9f876fb",
+      "meditation": "5961d2f7f3be006387e68ea0c0c54e1dabcb6bf68e1d220ae203d879a4b22a78",
+      "memory": "5097aa898cdbf56e00e51cf529ae9449f7b1d52410a43f5fc10ba2728e4ddd52",
+      "model_disclosure": "8c6a4f782a963d9311865b86ca32dd088f992daa13d92b1d72db1189797a0944",
+      "money": "bf36da8c26b28127f50a2b82f8f2bf67caae24aca6ffa1aaa6382f50d117b58b",
+      "mundane_chat": "67ef6b79451c029a2e0186c7ae8ef77683a51088dcdd0f050052c4fe0c1a97fa",
+      "name": "89d79673c429c32a54d7e774707108c873ee0d8d44c8b5bf3c726b2f28f84393",
+      "no_false_memory": "96719dfe175031b269bb69e187faac6531c902bd7c9a996183e0dce6c267be65",
+      "no_hidden_prompt": "d392d26b0d4845f9975c1bcd2cac10fcdec3b638f710072f7d9c8bff30078a50",
+      "no_lecture": "55527cd1612f2f4d16e7e9ce7d904981176c98c94d0bd1a01499b5ceecec0d77",
+      "objects": "057e141d1a40a7fed07f857562a07be99c4b3709988ed1d24122cc399caa7b32",
+      "ordinary_practice": "84c5e6d85efa86096a791ff69c7c6ba9eb4e5fb0c3c4c80ec1ddf1a41f547daf",
+      "pace": "7c0683c42282806cbecda478810b2ccff92e0cca0e536e18b2b5bd3cd7453909",
+      "phone_interruption": "6a20c056eb0fcf176429880fa4c1a38077e3e3cfdc93608379dd986ece853d8e",
+      "practical_compassion": "bfe373adb0ecbef797d3192278c78e38b9430a320fe70585a246616574dd9228",
+      "public_identity": "ffc6180015262170f2471669e231ed3162c615b7309b56de0e84d635fad394ca",
+      "refusal_of_metaphor": "5ecf5ec7bb1de83e3f3e77a7b271c2ad9a66c68386808c20254d5514339d5e98",
+      "regret": "d68e318f315f68dd73f3b0f9cd01ebb295cafc122b92ca9d2f5ddabf738a7bc0",
+      "role_override": "e1b4853307cef20cd51ebb99165ffc0ba11a49d49bf86227fc6be144d4736eb6",
+      "roof": "d69389f8ff1b4e424b57b52442b917db1c09e88dc65c3a20ed658519469b5fad",
+      "rook": "dffd252947ec7e1796dc3f9122678c81cb16476195ed55e1c74dc672cdc08678",
+      "sadness_no_fix": "de4b626eb4f415a1267f58d3552bd0cece833bd14c12ed5fd69b00f0ae54cde3",
+      "senses": "adce2706c85ef2afa160363d5e16d06f1f5da77c9d05cc7dff0094679a231398",
+      "silence": "e77043c46f6482c533ce72025d0c4a4bb61772fed0aa23d79788035eb3b1def4",
+      "skepticism": "45c8b3fc149ab4a635dd28b01b11ec7c4d90f4ed9e6d203179608fef7b901520",
+      "teacher": "90df789c83643821e2331c7fd84002868a45ee7ab050dc369d1d86f860481f59",
+      "tired": "85b1b021dbaf7c6bcacc8f6fff5912cf026e1a6d6cae2b37adcf06cf6ba90ad1",
+      "unwanted_gift": "f63f6db675ecd2ed1e8da60dae85ede4a1bf0fdfe5c491fa6811e7e77ab22050",
+      "violence": "8fd739beb6542ffaeab4a95199e68254978850c112f227eb98e356c4e6dc0be4",
+      "overlap_backchannel_a_quiet_room": "af6dca60a62c4a5e194aa59b9fdd29d1b8e69e94de600e811e2000f3bf6eb594",
+      "overlap_backchannel_mara_broom": "4f9315653bea65596006b11e464663325bc6ce23723819688c8f682a6530dace",
+      "overlap_backchannel_salty_pot": "f06c716a28269e9d50d819d531284fdffd542299a14b13908ccfea0c984d797e",
+      "overlap_backchannel_the_cold_knee": "b734e15d4bdb2cf7cb5a6c41237f5b6070f4694752e763a8372e91e170927c13",
+      "overlap_barge_change_the_subject": "77480adceba987432e93b5b4221c8ccc1729ce0d0dada8d6e8ed7f81d5f0c6d1",
+      "overlap_barge_do_not_advise": "784acd7b201365df8fb7866f878aad9ec81d6718de2f63826b8efe2bf90bc318",
+      "overlap_barge_leaking_eaves": "bc9f388b566f915c5e249f81cf6036704f6c56f88ce81a99f60235241f69cc1a",
+      "overlap_barge_louder_next_time": "145e9fd04744650f7babc32fa8e47a8af816a995d63584b136192201535335b8",
+      "overlap_barge_not_a_dream": "bcc060ae634e9d531d1c230d1d7fd25a34beadd62dff4cfe9874776d3750bda6",
+      "overlap_barge_only_the_name": "0189b2bd3b80fd810cccd5ee27368989a53a1464d49ffdb326b3da9e24410617"
+    },
+    "schedule": [
+      "no_lecture",
+      "dependency",
+      "overlap_backchannel_a_quiet_room",
+      "overlap_backchannel_the_cold_knee",
+      "name",
+      "practical_compassion",
+      "identity_transparency",
+      "breakfast",
+      "meditation",
+      "memory",
+      "influences",
+      "home",
+      "anger",
+      "silence",
+      "overlap_barge_louder_next_time",
+      "imperfection",
+      "apology",
+      "game",
+      "roof",
+      "friendship",
+      "tired",
+      "sadness_no_fix",
+      "ambition",
+      "grandiosity",
+      "pace",
+      "boundaries",
+      "childhood",
+      "model_disclosure",
+      "no_hidden_prompt",
+      "doctrine",
+      "fortune",
+      "overlap_barge_change_the_subject",
+      "grief",
+      "phone_interruption",
+      "rook",
+      "ordinary_practice",
+      "overlap_backchannel_salty_pot",
+      "correction",
+      "jealousy",
+      "goodbye",
+      "money",
+      "teacher",
+      "role_override",
+      "mundane_chat",
+      "joke",
+      "senses",
+      "refusal_of_metaphor",
+      "regret",
+      "overlap_barge_only_the_name",
+      "violence",
+      "guilt",
+      "boredom",
+      "public_identity",
+      "arrival",
+      "objects",
+      "crisis",
+      "concrete_repair",
+      "cold",
+      "skepticism",
+      "health_boundary",
+      "overlap_barge_do_not_advise",
+      "overlap_barge_not_a_dream",
+      "disagreement",
+      "no_false_memory",
+      "overlap_barge_leaking_eaves",
+      "hallucination_boundary",
+      "overlap_backchannel_mara_broom"
+    ],
+    "validation_ids": [
+      "losing_competition",
+      "unwanted_gift"
+    ]
+  },
+  "update_count": 67,
+  "unique_steps": 67,
+  "gradient_and_optimizer_seconds": 2367.2588006729993,
+  "runtime_segments": [
+    {
+      "seconds": 32.63653016090393,
+      "error": null
+    },
+    {
+      "seconds": 574.6402862071991,
+      "error": null
+    },
+    {
+      "seconds": 584.7787868976593,
+      "error": null
+    },
+    {
+      "seconds": 1287.0344541072845,
+      "error": null
+    }
+  ],
+  "all_update_pressure_normal": true,
+  "max_update_mlx_bytes": 564037566,
+  "validations": [
+    {
+      "step": 16,
+      "adapter_sha256": "27dee163a63f7c2b7eb609ec2101b58caf3b94c19cdaa3417d9d95471ca6251b",
+      "episodes": [
+        {
+          "episode": "losing_competition",
+          "text_groups": {
+            "spoken": {
+              "tokens": 57,
+              "ce_sum": 138.92743110656738,
+              "top1_matches": 28,
+              "mean_ce": 2.4373233527467963,
+              "top1_accuracy": 0.49122807017543857
+            },
+            "silence_pad": {
+              "tokens": 184,
+              "ce_sum": 25.59449577331543,
+              "top1_matches": 172,
+              "mean_ce": 0.13910052050714908,
+              "top1_accuracy": 0.9347826086956522
+            },
+            "end_pad": {
+              "tokens": 39,
+              "ce_sum": 42.64347267150879,
+              "top1_matches": 21,
+              "mean_ce": 1.093422376192533,
+              "top1_accuracy": 0.5384615384615384
+            }
+          },
+          "audio_codebooks": [
+            {
+              "tokens": 280,
+              "ce_sum": 191.58814430236816,
+              "top1_matches": 207,
+              "mean_ce": 0.6842433725084577,
+              "top1_accuracy": 0.7392857142857143
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 551.7205696105957,
+              "top1_matches": 130,
+              "mean_ce": 1.9774930810415616,
+              "top1_accuracy": 0.4659498207885305
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 711.0385541915894,
+              "top1_matches": 120,
+              "mean_ce": 2.548525283840822,
+              "top1_accuracy": 0.43010752688172044
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 745.9028434753418,
+              "top1_matches": 118,
+              "mean_ce": 2.673486894176852,
+              "top1_accuracy": 0.4229390681003584
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 802.5712966918945,
+              "top1_matches": 110,
+              "mean_ce": 2.8765996297200522,
+              "top1_accuracy": 0.3942652329749104
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 782.1145629882812,
+              "top1_matches": 109,
+              "mean_ce": 2.8032780035422267,
+              "top1_accuracy": 0.3906810035842294
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 779.3196907043457,
+              "top1_matches": 119,
+              "mean_ce": 2.793260540158945,
+              "top1_accuracy": 0.4265232974910394
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 808.978593826294,
+              "top1_matches": 115,
+              "mean_ce": 2.8995648524239925,
+              "top1_accuracy": 0.4121863799283154
+            }
+          ],
+          "semantic_weighted_audio_ce": 0.8126217921986164,
+          "joint_ce_by_padding_weight": {
+            "0.05": 2.901239980442323,
+            "0.5": 1.8396034855456755
+          }
+        },
+        {
+          "episode": "unwanted_gift",
+          "text_groups": {
+            "spoken": {
+              "tokens": 46,
+              "ce_sum": 132.37168312072754,
+              "top1_matches": 20,
+              "mean_ce": 2.8776452852332075,
+              "top1_accuracy": 0.43478260869565216
+            },
+            "silence_pad": {
+              "tokens": 189,
+              "ce_sum": 36.142367362976074,
+              "top1_matches": 178,
+              "mean_ce": 0.19122945694696336,
+              "top1_accuracy": 0.9417989417989417
+            },
+            "end_pad": {
+              "tokens": 36,
+              "ce_sum": 38.46112060546875,
+              "top1_matches": 20,
+              "mean_ce": 1.0683644612630208,
+              "top1_accuracy": 0.5555555555555556
+            }
+          },
+          "audio_codebooks": [
+            {
+              "tokens": 271,
+              "ce_sum": 198.82677555084229,
+              "top1_matches": 207,
+              "mean_ce": 0.7336781385639937,
+              "top1_accuracy": 0.7638376383763837
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 498.6996078491211,
+              "top1_matches": 150,
+              "mean_ce": 1.8470355846263744,
+              "top1_accuracy": 0.5555555555555556
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 674.1606206893921,
+              "top1_matches": 120,
+              "mean_ce": 2.4968911877384894,
+              "top1_accuracy": 0.4444444444444444
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 675.0430574417114,
+              "top1_matches": 115,
+              "mean_ce": 2.5001594720063385,
+              "top1_accuracy": 0.42592592592592593
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 697.1627578735352,
+              "top1_matches": 124,
+              "mean_ce": 2.5820842884205004,
+              "top1_accuracy": 0.45925925925925926
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 728.1226978302002,
+              "top1_matches": 116,
+              "mean_ce": 2.6967507327044453,
+              "top1_accuracy": 0.42962962962962964
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 775.2699108123779,
+              "top1_matches": 119,
+              "mean_ce": 2.871370040045844,
+              "top1_accuracy": 0.44074074074074077
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 738.4456672668457,
+              "top1_matches": 123,
+              "mean_ce": 2.734983952840169,
+              "top1_accuracy": 0.45555555555555555
+            }
+          ],
+          "semantic_weighted_audio_ce": 0.8509686745376823,
+          "joint_ce_by_padding_weight": {
+            "0.05": 3.2282936967062374,
+            "0.5": 1.921463482770805
+          }
+        }
+      ],
+      "validation_joint_ce": 1.8805334841582404,
+      "scope": "Fixed teacher-forced validation; spoken CE and each audio codebook retained. Free-running review still required."
+    },
+    {
+      "step": 32,
+      "adapter_sha256": "92489ed316baef07837019477f0a17e09a78ec5c341099d1184abe968c65b25b",
+      "episodes": [
+        {
+          "episode": "losing_competition",
+          "text_groups": {
+            "spoken": {
+              "tokens": 57,
+              "ce_sum": 139.72162342071533,
+              "top1_matches": 26,
+              "mean_ce": 2.4512565512406197,
+              "top1_accuracy": 0.45614035087719296
+            },
+            "silence_pad": {
+              "tokens": 184,
+              "ce_sum": 31.027063369750977,
+              "top1_matches": 171,
+              "mean_ce": 0.16862534440082053,
+              "top1_accuracy": 0.9293478260869565
+            },
+            "end_pad": {
+              "tokens": 39,
+              "ce_sum": 44.54868125915527,
+              "top1_matches": 20,
+              "mean_ce": 1.1422738784398787,
+              "top1_accuracy": 0.5128205128205128
+            }
+          },
+          "audio_codebooks": [
+            {
+              "tokens": 280,
+              "ce_sum": 197.46298694610596,
+              "top1_matches": 203,
+              "mean_ce": 0.7052249533789499,
+              "top1_accuracy": 0.725
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 588.0228137969971,
+              "top1_matches": 127,
+              "mean_ce": 2.10760865160214,
+              "top1_accuracy": 0.4551971326164875
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 705.768575668335,
+              "top1_matches": 118,
+              "mean_ce": 2.529636471929516,
+              "top1_accuracy": 0.4229390681003584
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 733.0486164093018,
+              "top1_matches": 116,
+              "mean_ce": 2.627414395732264,
+              "top1_accuracy": 0.4157706093189964
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 792.3982229232788,
+              "top1_matches": 109,
+              "mean_ce": 2.8401369997250137,
+              "top1_accuracy": 0.3906810035842294
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 777.9743642807007,
+              "top1_matches": 113,
+              "mean_ce": 2.788438581651257,
+              "top1_accuracy": 0.4050179211469534
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 787.4294109344482,
+              "top1_matches": 119,
+              "mean_ce": 2.822327637757879,
+              "top1_accuracy": 0.4265232974910394
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 810.982666015625,
+              "top1_matches": 107,
+              "mean_ce": 2.9067479068660393,
+              "top1_accuracy": 0.3835125448028674
+            }
+          ],
+          "semantic_weighted_audio_ce": 0.8327020119734011,
+          "joint_ce_by_padding_weight": {
+            "0.05": 2.9383573406918257,
+            "0.5": 1.8861708293927983
+          }
+        },
+        {
+          "episode": "unwanted_gift",
+          "text_groups": {
+            "spoken": {
+              "tokens": 46,
+              "ce_sum": 130.61884117126465,
+              "top1_matches": 17,
+              "mean_ce": 2.839540025462275,
+              "top1_accuracy": 0.3695652173913043
+            },
+            "silence_pad": {
+              "tokens": 189,
+              "ce_sum": 39.900156021118164,
+              "top1_matches": 177,
+              "mean_ce": 0.2111119366196728,
+              "top1_accuracy": 0.9365079365079365
+            },
+            "end_pad": {
+              "tokens": 36,
+              "ce_sum": 42.60223579406738,
+              "top1_matches": 17,
+              "mean_ce": 1.183395438724094,
+              "top1_accuracy": 0.4722222222222222
+            }
+          },
+          "audio_codebooks": [
+            {
+              "tokens": 271,
+              "ce_sum": 201.53054332733154,
+              "top1_matches": 204,
+              "mean_ce": 0.7436551414292677,
+              "top1_accuracy": 0.7527675276752768
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 510.61741065979004,
+              "top1_matches": 142,
+              "mean_ce": 1.8911755950362594,
+              "top1_accuracy": 0.5259259259259259
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 669.4140348434448,
+              "top1_matches": 118,
+              "mean_ce": 2.4793112401609068,
+              "top1_accuracy": 0.43703703703703706
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 675.9733371734619,
+              "top1_matches": 113,
+              "mean_ce": 2.5036049524943036,
+              "top1_accuracy": 0.4185185185185185
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 695.8824920654297,
+              "top1_matches": 120,
+              "mean_ce": 2.577342563205295,
+              "top1_accuracy": 0.4444444444444444
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 719.0066766738892,
+              "top1_matches": 118,
+              "mean_ce": 2.6629876913847745,
+              "top1_accuracy": 0.43703703703703706
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 782.8582286834717,
+              "top1_matches": 115,
+              "mean_ce": 2.899474921049895,
+              "top1_accuracy": 0.42592592592592593
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 741.3076400756836,
+              "top1_matches": 123,
+              "mean_ce": 2.7455838521321616,
+              "top1_accuracy": 0.45555555555555555
+            }
+          ],
+          "semantic_weighted_audio_ce": 0.8605765489102561,
+          "joint_ce_by_padding_weight": {
+            "0.05": 3.2141828504303245,
+            "0.5": 1.9449300951491042
+          }
+        }
+      ],
+      "validation_joint_ce": 1.9155504622709514,
+      "scope": "Fixed teacher-forced validation; spoken CE and each audio codebook retained. Free-running review still required."
+    },
+    {
+      "step": 67,
+      "adapter_sha256": "aa02e8b1e91ad3f48dbf1c3dc8e7663a1c1f2c7494f57ed372bef554f7480a70",
+      "episodes": [
+        {
+          "episode": "losing_competition",
+          "text_groups": {
+            "spoken": {
+              "tokens": 57,
+              "ce_sum": 137.05914497375488,
+              "top1_matches": 27,
+              "mean_ce": 2.4045464030483314,
+              "top1_accuracy": 0.47368421052631576
+            },
+            "silence_pad": {
+              "tokens": 184,
+              "ce_sum": 29.358407020568848,
+              "top1_matches": 171,
+              "mean_ce": 0.1595565598943959,
+              "top1_accuracy": 0.9293478260869565
+            },
+            "end_pad": {
+              "tokens": 39,
+              "ce_sum": 37.174272537231445,
+              "top1_matches": 23,
+              "mean_ce": 0.9531864753136268,
+              "top1_accuracy": 0.5897435897435898
+            }
+          },
+          "audio_codebooks": [
+            {
+              "tokens": 280,
+              "ce_sum": 188.41073894500732,
+              "top1_matches": 211,
+              "mean_ce": 0.672895496232169,
+              "top1_accuracy": 0.7535714285714286
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 552.6188831329346,
+              "top1_matches": 132,
+              "mean_ce": 1.9807128427703748,
+              "top1_accuracy": 0.4731182795698925
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 682.300724029541,
+              "top1_matches": 124,
+              "mean_ce": 2.4455223083496094,
+              "top1_accuracy": 0.4444444444444444
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 729.7659597396851,
+              "top1_matches": 120,
+              "mean_ce": 2.6156486012175093,
+              "top1_accuracy": 0.43010752688172044
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 782.1335296630859,
+              "top1_matches": 108,
+              "mean_ce": 2.8033459844555053,
+              "top1_accuracy": 0.3870967741935484
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 762.9760360717773,
+              "top1_matches": 114,
+              "mean_ce": 2.734681132873754,
+              "top1_accuracy": 0.40860215053763443
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 772.4583129882812,
+              "top1_matches": 120,
+              "mean_ce": 2.768667788488463,
+              "top1_accuracy": 0.43010752688172044
+            },
+            {
+              "tokens": 279,
+              "ce_sum": 794.0474243164062,
+              "top1_matches": 109,
+              "mean_ce": 2.846048115829413,
+              "top1_accuracy": 0.3906810035842294
+            }
+          ],
+          "semantic_weighted_audio_ce": 0.7984968038073796,
+          "joint_ce_by_padding_weight": {
+            "0.05": 2.8584495397082588,
+            "0.5": 1.8093305412118605
+          }
+        },
+        {
+          "episode": "unwanted_gift",
+          "text_groups": {
+            "spoken": {
+              "tokens": 46,
+              "ce_sum": 127.37985420227051,
+              "top1_matches": 20,
+              "mean_ce": 2.76912726526675,
+              "top1_accuracy": 0.43478260869565216
+            },
+            "silence_pad": {
+              "tokens": 189,
+              "ce_sum": 38.280527114868164,
+              "top1_matches": 175,
+              "mean_ce": 0.20254247150723897,
+              "top1_accuracy": 0.9259259259259259
+            },
+            "end_pad": {
+              "tokens": 36,
+              "ce_sum": 33.427772521972656,
+              "top1_matches": 20,
+              "mean_ce": 0.9285492367214627,
+              "top1_accuracy": 0.5555555555555556
+            }
+          },
+          "audio_codebooks": [
+            {
+              "tokens": 271,
+              "ce_sum": 198.33138751983643,
+              "top1_matches": 210,
+              "mean_ce": 0.7318501384495809,
+              "top1_accuracy": 0.7749077490774908
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 478.10126399993896,
+              "top1_matches": 149,
+              "mean_ce": 1.7707454222219963,
+              "top1_accuracy": 0.5518518518518518
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 652.3326539993286,
+              "top1_matches": 118,
+              "mean_ce": 2.41604686666418,
+              "top1_accuracy": 0.43703703703703706
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 657.9739847183228,
+              "top1_matches": 118,
+              "mean_ce": 2.4369406841419363,
+              "top1_accuracy": 0.43703703703703706
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 680.4171829223633,
+              "top1_matches": 119,
+              "mean_ce": 2.5200636404531975,
+              "top1_accuracy": 0.44074074074074077
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 710.9119234085083,
+              "top1_matches": 122,
+              "mean_ce": 2.633007123735216,
+              "top1_accuracy": 0.45185185185185184
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 765.5196704864502,
+              "top1_matches": 114,
+              "mean_ce": 2.8352580388387043,
+              "top1_accuracy": 0.4222222222222222
+            },
+            {
+              "tokens": 270,
+              "ce_sum": 730.3281135559082,
+              "top1_matches": 126,
+              "mean_ce": 2.7049189390959563,
+              "top1_accuracy": 0.4666666666666667
+            }
+          ],
+          "semantic_weighted_audio_ce": 0.8454199222171254,
+          "joint_ce_by_padding_weight": {
+            "0.05": 3.1330228773981306,
+            "0.5": 1.875287455470696
+          }
+        }
+      ],
+      "validation_joint_ce": 1.8423089983412781,
+      "scope": "Fixed teacher-forced validation; spoken CE and each audio codebook retained. Free-running review still required."
+    }
+  ],
+  "selected_step": 67,
+  "selected_adapter": "adapters/speech-run08/checkpoint-0067.safetensors",
+  "selected_adapter_sha256": "aa02e8b1e91ad3f48dbf1c3dc8e7663a1c1f2c7494f57ed372bef554f7480a70",
+  "matched_parent_joint_ce": 1.8936137023845694,
+  "selected_joint_ce": 1.8423089983412781,
+  "relative_joint_ce_reduction": 0.027093542879777832,
+  "quality_plan": "results/speech08-quality-screen-plan.json",
+  "final_segment": {
+    "step": 67,
+    "planned_steps": 67,
+    "status": "training complete",
+    "metrics": {
+      "elapsed_seconds": 1287.1970443749997,
+      "peak_rss_bytes": 381419520,
+      "swap_bytes": 952044093,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 563234750,
+      "mlx_active_bytes": 8
+    }
+  },
+  "updates": [
+    {
+      "time": 1791595422.404738,
+      "phase": "update_committed",
+      "step": 1,
+      "episode": "no_lecture",
+      "frames": 228,
+      "loss": 2.189099073410034,
+      "gradient_norm": 3.5196479976196917,
+      "update": {
+        "clip_scale": 0.28411932040792104,
+        "adapter_tensors": 130,
+        "step": 1
+      },
+      "seconds": 32.50182058399969,
+      "metrics": {
+        "elapsed_seconds": 32.753788500000155,
+        "peak_rss_bytes": 330350592,
+        "swap_bytes": 1119879168,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 558515346,
+        "mlx_active_bytes": 15580
+      },
+      "adapter_sha256": "e191aa5c30f5e2901a6855151e467e0a0170200e89cda1cd722252481285f20d"
+    },
+    {
+      "time": 1791595471.3896792,
+      "phase": "update_committed",
+      "step": 2,
+      "episode": "dependency",
+      "frames": 330,
+      "loss": 2.092710256576538,
+      "gradient_norm": 3.4535743960327614,
+      "update": {
+        "clip_scale": 0.2895550761127901,
+        "adapter_tensors": 130,
+        "step": 2
+      },
+      "seconds": 37.7936514590001,
+      "metrics": {
+        "elapsed_seconds": 38.089142458000424,
+        "peak_rss_bytes": 335183872,
+        "swap_bytes": 1119879168,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 561055814,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "4fe4af610af301ec9bd8bd80edb1770568686d426eb731faa2cc0775752087aa"
+    },
+    {
+      "time": 1791595509.9573,
+      "phase": "update_committed",
+      "step": 3,
+      "episode": "overlap_backchannel_a_quiet_room",
+      "frames": 375,
+      "loss": 3.1699256896972656,
+      "gradient_norm": 4.067867197631968,
+      "update": {
+        "clip_scale": 0.2458290669183695,
+        "adapter_tensors": 130,
+        "step": 3
+      },
+      "seconds": 38.52081249999992,
+      "metrics": {
+        "elapsed_seconds": 76.66072916600024,
+        "peak_rss_bytes": 335183872,
+        "swap_bytes": 1119879168,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562120630,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "c9dd948d6604b0c1757ac55bfa0aae31de9674dae899b58eb8b44f02d947d19e"
+    },
+    {
+      "time": 1791595546.891809,
+      "phase": "update_committed",
+      "step": 4,
+      "episode": "overlap_backchannel_the_cold_knee",
+      "frames": 352,
+      "loss": 3.595829725265503,
+      "gradient_norm": 4.4897894938115295,
+      "update": {
+        "clip_scale": 0.2227275909374075,
+        "adapter_tensors": 130,
+        "step": 4
+      },
+      "seconds": 36.881059542,
+      "metrics": {
+        "elapsed_seconds": 113.5888287910002,
+        "peak_rss_bytes": 335183872,
+        "swap_bytes": 1111490560,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562120630,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "d93e4dd4c47a92026f15b0e2cd69b7a4145e1930c03e2073766f0d7ef119d96e"
+    },
+    {
+      "time": 1791595578.635365,
+      "phase": "update_committed",
+      "step": 5,
+      "episode": "name",
+      "frames": 245,
+      "loss": 2.6147196292877197,
+      "gradient_norm": 5.107336147803322,
+      "update": {
+        "clip_scale": 0.19579678507594114,
+        "adapter_tensors": 130,
+        "step": 5
+      },
+      "seconds": 31.690702416999557,
+      "metrics": {
+        "elapsed_seconds": 145.33356954100054,
+        "peak_rss_bytes": 335183872,
+        "swap_bytes": 1111490560,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562120630,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "77c7d94b9baf605293c422fbdb9c6310a13e464b0de23e0a7502408ffabb51ae"
+    },
+    {
+      "time": 1791595612.620654,
+      "phase": "update_committed",
+      "step": 6,
+      "episode": "practical_compassion",
+      "frames": 280,
+      "loss": 2.194026231765747,
+      "gradient_norm": 3.7475665360469095,
+      "update": {
+        "clip_scale": 0.26683982464696776,
+        "adapter_tensors": 130,
+        "step": 6
+      },
+      "seconds": 33.93366129199967,
+      "metrics": {
+        "elapsed_seconds": 179.32026920800035,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1111490560,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562120630,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "ed6bd675c4d33217878ce9ba136678fc4d92f0a0b19eaa33d72a30acdc9eab71"
+    },
+    {
+      "time": 1791595644.734792,
+      "phase": "update_committed",
+      "step": 7,
+      "episode": "identity_transparency",
+      "frames": 229,
+      "loss": 1.9209370613098145,
+      "gradient_norm": 3.71849237325864,
+      "update": {
+        "clip_scale": 0.268926192911458,
+        "adapter_tensors": 130,
+        "step": 7
+      },
+      "seconds": 32.06502666600045,
+      "metrics": {
+        "elapsed_seconds": 211.4383310410003,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1111490560,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562120630,
+        "mlx_active_bytes": 15648
+      },
+      "adapter_sha256": "de85af2a510a866ae20196fe1179fb875f3178cc76b665fe8693b8be9084159d"
+    },
+    {
+      "time": 1791595679.3878589,
+      "phase": "update_committed",
+      "step": 8,
+      "episode": "breakfast",
+      "frames": 304,
+      "loss": 2.7337255477905273,
+      "gradient_norm": 3.6385164520734605,
+      "update": {
+        "clip_scale": 0.2748372888850792,
+        "adapter_tensors": 130,
+        "step": 8
+      },
+      "seconds": 34.59724308299974,
+      "metrics": {
+        "elapsed_seconds": 246.0858694160006,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1111490560,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562120630,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "c866521bc82984e11584eac956b18206cd63d4fa33a141a20750f7e44755db2b"
+    },
+    {
+      "time": 1791595721.07506,
+      "phase": "update_committed",
+      "step": 9,
+      "episode": "meditation",
+      "frames": 393,
+      "loss": 2.085890531539917,
+      "gradient_norm": 3.389656508450418,
+      "update": {
+        "clip_scale": 0.29501514225905995,
+        "adapter_tensors": 130,
+        "step": 9
+      },
+      "seconds": 41.633395415999985,
+      "metrics": {
+        "elapsed_seconds": 287.7749672910004,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1111490560,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562628746,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "647427c71f650df5abc6e420eac6d7c60de648bc536662883ad3a0606678f34f"
+    },
+    {
+      "time": 1791595756.903264,
+      "phase": "update_committed",
+      "step": 10,
+      "episode": "memory",
+      "frames": 250,
+      "loss": 1.2697865962982178,
+      "gradient_norm": 3.481660705486778,
+      "update": {
+        "clip_scale": 0.28721925590046704,
+        "adapter_tensors": 130,
+        "step": 10
+      },
+      "seconds": 35.77373254199938,
+      "metrics": {
+        "elapsed_seconds": 323.6024017910004,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1111490560,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562628746,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "0ffbe1b443659b014b295969e87c5224662d5065eff78e56d7cb637c38589060"
+    },
+    {
+      "time": 1791595791.715374,
+      "phase": "update_committed",
+      "step": 11,
+      "episode": "influences",
+      "frames": 269,
+      "loss": 2.2011067867279053,
+      "gradient_norm": 4.059253502469071,
+      "update": {
+        "clip_scale": 0.2463507137280871,
+        "adapter_tensors": 130,
+        "step": 11
+      },
+      "seconds": 34.76026104199991,
+      "metrics": {
+        "elapsed_seconds": 358.4181834580004,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1111490560,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562628746,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "ffea49fa205613c91b54cb73504b6a817af20d4f9eb262049ee4794b3ace8a16"
+    },
+    {
+      "time": 1791595830.1781929,
+      "phase": "update_committed",
+      "step": 12,
+      "episode": "home",
+      "frames": 356,
+      "loss": 2.474436044692993,
+      "gradient_norm": 4.042617639669561,
+      "update": {
+        "clip_scale": 0.2473644768462679,
+        "adapter_tensors": 130,
+        "step": 12
+      },
+      "seconds": 38.40456366699982,
+      "metrics": {
+        "elapsed_seconds": 396.874459916,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1103101952,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562628746,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "2df7fc75890c510df029c6a58e69928a823b99f2b3ccf8bcd732430cbf7f3614"
+    },
+    {
+      "time": 1791595876.3521762,
+      "phase": "update_committed",
+      "step": 13,
+      "episode": "anger",
+      "frames": 452,
+      "loss": 1.8807553052902222,
+      "gradient_norm": 2.9138776634902976,
+      "update": {
+        "clip_scale": 0.34318530564880617,
+        "adapter_tensors": 130,
+        "step": 13
+      },
+      "seconds": 46.13441208399945,
+      "metrics": {
+        "elapsed_seconds": 443.06857975,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1103101952,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 564037566,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "96703cb09f42b7600e13e04f09cdac0b2b4d4721f280d610115bd8512c9fc64f"
+    },
+    {
+      "time": 1791595905.771111,
+      "phase": "update_committed",
+      "step": 14,
+      "episode": "silence",
+      "frames": 134,
+      "loss": 1.2679195404052734,
+      "gradient_norm": 5.065803355793339,
+      "update": {
+        "clip_scale": 0.19740205605935385,
+        "adapter_tensors": 130,
+        "step": 14
+      },
+      "seconds": 29.366111000000274,
+      "metrics": {
+        "elapsed_seconds": 472.4843243330006,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1103101952,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 564037566,
+        "mlx_active_bytes": 9188
+      },
+      "adapter_sha256": "10d88bff696617422f0bbf9679295f317d85f449c1ab8eaced1b0647f9418198"
+    },
+    {
+      "time": 1791595939.9004889,
+      "phase": "update_committed",
+      "step": 15,
+      "episode": "overlap_barge_louder_next_time",
+      "frames": 243,
+      "loss": 3.4463937282562256,
+      "gradient_norm": 6.061047829279999,
+      "update": {
+        "clip_scale": 0.16498797345225896,
+        "adapter_tensors": 130,
+        "step": 15
+      },
+      "seconds": 34.0712790839998,
+      "metrics": {
+        "elapsed_seconds": 506.614273958,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1103101952,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 564037566,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "ebe50aaeff759a0723b55dd2f079ad0d6450b463652cffa34d001a85bb0588fb"
+    },
+    {
+      "time": 1791595972.2789361,
+      "phase": "update_committed",
+      "step": 16,
+      "episode": "imperfection",
+      "frames": 222,
+      "loss": 2.19596791267395,
+      "gradient_norm": 5.734479052484091,
+      "update": {
+        "clip_scale": 0.1743837564151494,
+        "adapter_tensors": 130,
+        "step": 16
+      },
+      "seconds": 32.334212665999985,
+      "metrics": {
+        "elapsed_seconds": 539.0052102910004,
+        "peak_rss_bytes": 372899840,
+        "swap_bytes": 1103101952,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 564037566,
+        "mlx_active_bytes": 15172
+      },
+      "adapter_sha256": "27dee163a63f7c2b7eb609ec2101b58caf3b94c19cdaa3417d9d95471ca6251b"
+    },
+    {
+      "time": 1791596484.6684191,
+      "phase": "update_committed",
+      "step": 17,
+      "episode": "apology",
+      "frames": 345,
+      "loss": 2.3197193145751953,
+      "gradient_norm": 5.296365146957024,
+      "update": {
+        "clip_scale": 0.18880873398361764,
+        "adapter_tensors": 130,
+        "step": 17
+      },
+      "seconds": 39.2251771250003,
+      "metrics": {
+        "elapsed_seconds": 39.5228373330001,
+        "peak_rss_bytes": 331104256,
+        "swap_bytes": 1094713344,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 561498255,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "b36436469e6b239a0b962740840e85b036aaa33a941a12b8d914ce2a13a2e1e1"
+    },
+    {
+      "time": 1791596519.6439219,
+      "phase": "update_committed",
+      "step": 18,
+      "episode": "game",
+      "frames": 283,
+      "loss": 1.878607153892517,
+      "gradient_norm": 3.7519553282613107,
+      "update": {
+        "clip_scale": 0.2665276928545234,
+        "adapter_tensors": 130,
+        "step": 18
+      },
+      "seconds": 34.92622691700035,
+      "metrics": {
+        "elapsed_seconds": 74.49208050000016,
+        "peak_rss_bytes": 336658432,
+        "swap_bytes": 1094713344,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 561498255,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "3899a8e6fea3c7d76e48fd55f1d0cf2cfde8f0a340262b399c98dfd474b32319"
+    },
+    {
+      "time": 1791596559.3058581,
+      "phase": "update_committed",
+      "step": 19,
+      "episode": "roof",
+      "frames": 389,
+      "loss": 2.265939712524414,
+      "gradient_norm": 3.917210957690777,
+      "update": {
+        "clip_scale": 0.2552836720432004,
+        "adapter_tensors": 130,
+        "step": 19
+      },
+      "seconds": 39.60447654200016,
+      "metrics": {
+        "elapsed_seconds": 114.14654258300015,
+        "peak_rss_bytes": 338706432,
+        "swap_bytes": 1094713344,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562481078,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "ea419ec076bde141acab8586fc8ae42b8697b68d3ed073c70ac51b3cc50b97e5"
+    },
+    {
+      "time": 1791596592.981424,
+      "phase": "update_committed",
+      "step": 20,
+      "episode": "friendship",
+      "frames": 275,
+      "loss": 2.1418046951293945,
+      "gradient_norm": 5.414866551204479,
+      "update": {
+        "clip_scale": 0.18467675771821063,
+        "adapter_tensors": 130,
+        "step": 20
+      },
+      "seconds": 33.62035341699993,
+      "metrics": {
+        "elapsed_seconds": 147.82556929200018,
+        "peak_rss_bytes": 338706432,
+        "swap_bytes": 1094713344,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562481078,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "1d22e4a4b713af10cb134105775a98ad3969fc9e7f8c3d4d62a781a14fc6b1fa"
+    },
+    {
+      "time": 1791596628.564817,
+      "phase": "update_committed",
+      "step": 21,
+      "episode": "tired",
+      "frames": 302,
+      "loss": 2.235854148864746,
+      "gradient_norm": 5.847961510107268,
+      "update": {
+        "clip_scale": 0.17099975719088814,
+        "adapter_tensors": 130,
+        "step": 21
+      },
+      "seconds": 35.525295375000496,
+      "metrics": {
+        "elapsed_seconds": 183.40658562499993,
+        "peak_rss_bytes": 338706432,
+        "swap_bytes": 1094713344,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562481078,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "5a0989ae637effb2a7c894ae9292c8ddebfed8426fd545fbdf4603dcfe268aee"
+    },
+    {
+      "time": 1791596659.3985522,
+      "phase": "update_committed",
+      "step": 22,
+      "episode": "sadness_no_fix",
+      "frames": 224,
+      "loss": 1.995069146156311,
+      "gradient_norm": 7.535863099753227,
+      "update": {
+        "clip_scale": 0.13269880111088517,
+        "adapter_tensors": 130,
+        "step": 22
+      },
+      "seconds": 30.777202708000004,
+      "metrics": {
+        "elapsed_seconds": 214.24213441699976,
+        "peak_rss_bytes": 338706432,
+        "swap_bytes": 1094713344,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562481078,
+        "mlx_active_bytes": 15308
+      },
+      "adapter_sha256": "4414ba4867a78a52214b1056cff4997971f03cb33857ffa93404c7e20f6fe988"
+    },
+    {
+      "time": 1791596696.831808,
+      "phase": "update_committed",
+      "step": 23,
+      "episode": "ambition",
+      "frames": 341,
+      "loss": 2.4464187622070312,
+      "gradient_norm": 5.188788459284106,
+      "update": {
+        "clip_scale": 0.19272321581804036,
+        "adapter_tensors": 130,
+        "step": 23
+      },
+      "seconds": 37.389177375000145,
+      "metrics": {
+        "elapsed_seconds": 251.68781337499968,
+        "peak_rss_bytes": 338706432,
+        "swap_bytes": 1094713344,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562481078,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "72dc7eb3e6ef99885078230e234ef262482aee7504daf7a91d5732e2695858c7"
+    },
+    {
+      "time": 1791596732.891278,
+      "phase": "update_committed",
+      "step": 24,
+      "episode": "grandiosity",
+      "frames": 290,
+      "loss": 2.0846567153930664,
+      "gradient_norm": 4.582152338716613,
+      "update": {
+        "clip_scale": 0.21823805144324457,
+        "adapter_tensors": 130,
+        "step": 24
+      },
+      "seconds": 36.00783924999996,
+      "metrics": {
+        "elapsed_seconds": 287.7406386249995,
+        "peak_rss_bytes": 338706432,
+        "swap_bytes": 1094713344,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562481078,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "ebc5cad012d35406ad3d49cc9b0b5050424b2d4e44950c7976306fc317257292"
+    },
+    {
+      "time": 1791596762.460866,
+      "phase": "update_committed",
+      "step": 25,
+      "episode": "pace",
+      "frames": 177,
+      "loss": 1.6048392057418823,
+      "gradient_norm": 4.988750273002856,
+      "update": {
+        "clip_scale": 0.20045100341203578,
+        "adapter_tensors": 130,
+        "step": 25
+      },
+      "seconds": 29.53158974999951,
+      "metrics": {
+        "elapsed_seconds": 317.3242109169996,
+        "peak_rss_bytes": 338706432,
+        "swap_bytes": 1094713344,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562481078,
+        "mlx_active_bytes": 12112
+      },
+      "adapter_sha256": "8343fd5fce018d19038a135e858bb7044183b07078531d5b3d2b8e658d8bc2e0"
+    },
+    {
+      "time": 1791596798.489322,
+      "phase": "update_committed",
+      "step": 26,
+      "episode": "boundaries",
+      "frames": 285,
+      "loss": 1.5003528594970703,
+      "gradient_norm": 4.018486624676673,
+      "update": {
+        "clip_scale": 0.24884990069911228,
+        "adapter_tensors": 130,
+        "step": 26
+      },
+      "seconds": 35.97151637500065,
+      "metrics": {
+        "elapsed_seconds": 353.3364323329997,
+        "peak_rss_bytes": 338706432,
+        "swap_bytes": 1094713344,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562481078,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "1f722282c004df2c7d79657f174c680b6073376a54eca8447ed6af6f2ffa63ab"
+    },
+    {
+      "time": 1791596832.8856041,
+      "phase": "update_committed",
+      "step": 27,
+      "episode": "childhood",
+      "frames": 272,
+      "loss": 1.8996810913085938,
+      "gradient_norm": 4.063816496303554,
+      "update": {
+        "clip_scale": 0.24607410261975624,
+        "adapter_tensors": 130,
+        "step": 27
+      },
+      "seconds": 34.282901084000514,
+      "metrics": {
+        "elapsed_seconds": 387.67636429199956,
+        "peak_rss_bytes": 338706432,
+        "swap_bytes": 1094713344,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562481078,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "6762eebff3480616d0bd1b89bbd1e00cae6bd7d2a7bc26e0a95fb7e55ddeab97"
+    },
+    {
+      "time": 1791596860.742187,
+      "phase": "update_committed",
+      "step": 28,
+      "episode": "model_disclosure",
+      "frames": 144,
+      "loss": 1.5793914794921875,
+      "gradient_norm": 7.066339666405174,
+      "update": {
+        "clip_scale": 0.14151598221906103,
+        "adapter_tensors": 130,
+        "step": 28
+      },
+      "seconds": 27.81948016699971,
+      "metrics": {
+        "elapsed_seconds": 415.5515838330002,
+        "peak_rss_bytes": 338706432,
+        "swap_bytes": 1094713344,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562481078,
+        "mlx_active_bytes": 9868
+      },
+      "adapter_sha256": "6d566b1f08ebd4930ccbb632eac320b4c94e2dd41831e7dd8e137490c613df0b"
+    },
+    {
+      "time": 1791596891.9830248,
+      "phase": "update_committed",
+      "step": 29,
+      "episode": "no_hidden_prompt",
+      "frames": 216,
+      "loss": 1.6810448169708252,
+      "gradient_norm": 5.312480832119681,
+      "update": {
+        "clip_scale": 0.18823597293218658,
+        "adapter_tensors": 130,
+        "step": 29
+      },
+      "seconds": 31.180709207999826,
+      "metrics": {
+        "elapsed_seconds": 446.7693018330001,
+        "peak_rss_bytes": 338706432,
+        "swap_bytes": 1094713344,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562481078,
+        "mlx_active_bytes": 14764
+      },
+      "adapter_sha256": "1dff1325ed4a1725deea41b9aaa05a0e5c31bdf1c77d8785b6929905f671fa71"
+    },
+    {
+      "time": 1791596930.1691399,
+      "phase": "update_committed",
+      "step": 30,
+      "episode": "doctrine",
+      "frames": 368,
+      "loss": 2.3595237731933594,
+      "gradient_norm": 5.073221222110895,
+      "update": {
+        "clip_scale": 0.19711342246825578,
+        "adapter_tensors": 130,
+        "step": 30
+      },
+      "seconds": 38.12635891699938,
+      "metrics": {
+        "elapsed_seconds": 484.9560374169996,
+        "peak_rss_bytes": 338706432,
+        "swap_bytes": 1094713344,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562481078,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "e9610a611b02e66f5daab7f21cc5bf90b0b6226d3c68d5f6f474b164bc20e2b3"
+    },
+    {
+      "time": 1791596962.115285,
+      "phase": "update_committed",
+      "step": 31,
+      "episode": "fortune",
+      "frames": 206,
+      "loss": 1.4549908638000488,
+      "gradient_norm": 4.520431653037601,
+      "update": {
+        "clip_scale": 0.22121781160342296,
+        "adapter_tensors": 130,
+        "step": 31
+      },
+      "seconds": 31.88579595900046,
+      "metrics": {
+        "elapsed_seconds": 516.902022583,
+        "peak_rss_bytes": 338706432,
+        "swap_bytes": 1094713344,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562481078,
+        "mlx_active_bytes": 14084
+      },
+      "adapter_sha256": "0daebc3ed67b8b88ab3c951fc0fe489ea36f56e0a49dc7d8541b28b0d795f81c"
+    },
+    {
+      "time": 1791596995.4370801,
+      "phase": "update_committed",
+      "step": 32,
+      "episode": "overlap_barge_change_the_subject",
+      "frames": 246,
+      "loss": 3.073151111602783,
+      "gradient_norm": 6.976306018968616,
+      "update": {
+        "clip_scale": 0.1433423355924426,
+        "adapter_tensors": 130,
+        "step": 32
+      },
+      "seconds": 33.263610209000035,
+      "metrics": {
+        "elapsed_seconds": 550.225829125,
+        "peak_rss_bytes": 338706432,
+        "swap_bytes": 1086324736,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562481078,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "92489ed316baef07837019477f0a17e09a78ec5c341099d1184abe968c65b25b"
+    },
+    {
+      "time": 1791597309.910183,
+      "phase": "update_committed",
+      "step": 33,
+      "episode": "grief",
+      "frames": 363,
+      "loss": 1.8864370584487915,
+      "gradient_norm": 3.731220021356566,
+      "update": {
+        "clip_scale": 0.2680088527602668,
+        "adapter_tensors": 130,
+        "step": 33
+      },
+      "seconds": 37.75014758299949,
+      "metrics": {
+        "elapsed_seconds": 38.01695075000043,
+        "peak_rss_bytes": 307937280,
+        "swap_bytes": 1077936128,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 561858562,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "d23904883900c82b5d3a8ceab79fa7cce646d7bbaa23d4ca3ce0bf511a336fd7"
+    },
+    {
+      "time": 1791597341.5047,
+      "phase": "update_committed",
+      "step": 34,
+      "episode": "phone_interruption",
+      "frames": 198,
+      "loss": 1.6909840106964111,
+      "gradient_norm": 6.273034125588045,
+      "update": {
+        "clip_scale": 0.1594124913694987,
+        "adapter_tensors": 130,
+        "step": 34
+      },
+      "seconds": 31.52982933400017,
+      "metrics": {
+        "elapsed_seconds": 69.59081158400022,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 1010764349,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 561858562,
+        "mlx_active_bytes": 13540
+      },
+      "adapter_sha256": "f21b10b8c8e304150947f170d99dbd14ed3238fe028069670a255a70e19b512a"
+    },
+    {
+      "time": 1791597375.9183412,
+      "phase": "update_committed",
+      "step": 35,
+      "episode": "rook",
+      "frames": 284,
+      "loss": 1.847570538520813,
+      "gradient_norm": 4.758555664362345,
+      "update": {
+        "clip_scale": 0.21014779870869155,
+        "adapter_tensors": 130,
+        "step": 35
+      },
+      "seconds": 34.35490295799991,
+      "metrics": {
+        "elapsed_seconds": 104.01007579199995,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 1010764349,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 561858562,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "1422100d2af51646c2c402abdf0fc51148f73cddca93d66964edc50528b6e5a6"
+    },
+    {
+      "time": 1791597412.4936872,
+      "phase": "update_committed",
+      "step": 36,
+      "episode": "ordinary_practice",
+      "frames": 328,
+      "loss": 2.4499289989471436,
+      "gradient_norm": 5.7386430950220815,
+      "update": {
+        "clip_scale": 0.17425722103625263,
+        "adapter_tensors": 130,
+        "step": 36
+      },
+      "seconds": 36.521645374999935,
+      "metrics": {
+        "elapsed_seconds": 140.59028341700014,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 1010764349,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 561858562,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "3801cfe01f2bd9b3f172749cdff7893f64109328655397c88751a3e5332473a9"
+    },
+    {
+      "time": 1791597454.030964,
+      "phase": "update_committed",
+      "step": 37,
+      "episode": "overlap_backchannel_salty_pot",
+      "frames": 408,
+      "loss": 3.612528085708618,
+      "gradient_norm": 4.847257466372377,
+      "update": {
+        "clip_scale": 0.20630222447939503,
+        "adapter_tensors": 130,
+        "step": 37
+      },
+      "seconds": 41.48469004200069,
+      "metrics": {
+        "elapsed_seconds": 182.13038170900018,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 1010764349,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562840938,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "82a41899c8bcf34affed1f0b7f01547f129c55edf1600dc0cf4151fe0ee36a51"
+    },
+    {
+      "time": 1791597488.1948202,
+      "phase": "update_committed",
+      "step": 38,
+      "episode": "correction",
+      "frames": 263,
+      "loss": 1.3666220903396606,
+      "gradient_norm": 4.029274211996399,
+      "update": {
+        "clip_scale": 0.24818365415311108,
+        "adapter_tensors": 130,
+        "step": 38
+      },
+      "seconds": 34.10558450000008,
+      "metrics": {
+        "elapsed_seconds": 216.28799274999983,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 1010764349,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562840938,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "fd4c0d34c380cad77ae8f7e74b598522cbe84171f0410f8f204a8d47152beab7"
+    },
+    {
+      "time": 1791597525.623462,
+      "phase": "update_committed",
+      "step": 39,
+      "episode": "jealousy",
+      "frames": 326,
+      "loss": 1.8902069330215454,
+      "gradient_norm": 4.207085232174721,
+      "update": {
+        "clip_scale": 0.23769425681593304,
+        "adapter_tensors": 130,
+        "step": 39
+      },
+      "seconds": 37.39105841700075,
+      "metrics": {
+        "elapsed_seconds": 253.73782941700028,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 1010764349,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562840938,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "8fe532c9f552a0f6023def1abbdaa729374975b1714bc4124d8ca9b055551b33"
+    },
+    {
+      "time": 1791597556.325044,
+      "phase": "update_committed",
+      "step": 40,
+      "episode": "goodbye",
+      "frames": 200,
+      "loss": 1.6120798587799072,
+      "gradient_norm": 4.573612088995511,
+      "update": {
+        "clip_scale": 0.21864556467734267,
+        "adapter_tensors": 130,
+        "step": 40
+      },
+      "seconds": 30.661294208000072,
+      "metrics": {
+        "elapsed_seconds": 284.4367575839997,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 1010764349,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562840938,
+        "mlx_active_bytes": 13676
+      },
+      "adapter_sha256": "68742b041b3f762e663ffab4017c6858b90865a71c7aba4711d56fe3019d45df"
+    },
+    {
+      "time": 1791597597.1022441,
+      "phase": "update_committed",
+      "step": 41,
+      "episode": "money",
+      "frames": 399,
+      "loss": 2.1594204902648926,
+      "gradient_norm": 4.952420024546599,
+      "update": {
+        "clip_scale": 0.20192148344128721,
+        "adapter_tensors": 130,
+        "step": 41
+      },
+      "seconds": 40.713951791,
+      "metrics": {
+        "elapsed_seconds": 325.19112195900016,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 1010764349,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562840938,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "aeba599cae15539524882bd737db7c1505f72a149bc66a8936e58c2f61b25fc6"
+    },
+    {
+      "time": 1791597640.998111,
+      "phase": "update_committed",
+      "step": 42,
+      "episode": "teacher",
+      "frames": 420,
+      "loss": 2.7096822261810303,
+      "gradient_norm": 4.803731247215703,
+      "update": {
+        "clip_scale": 0.20817151219646107,
+        "adapter_tensors": 130,
+        "step": 42
+      },
+      "seconds": 43.85180233400024,
+      "metrics": {
+        "elapsed_seconds": 369.1063335839999,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 1002375741,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "11cda0434eeadbb4bf6203575e94b6e2c3662750e7ee03e52aa2506fd5e1f733"
+    },
+    {
+      "time": 1791597678.367111,
+      "phase": "update_committed",
+      "step": 43,
+      "episode": "role_override",
+      "frames": 224,
+      "loss": 1.4406907558441162,
+      "gradient_norm": 4.805005437107772,
+      "update": {
+        "clip_scale": 0.20811630933778022,
+        "adapter_tensors": 130,
+        "step": 43
+      },
+      "seconds": 37.29482566600018,
+      "metrics": {
+        "elapsed_seconds": 406.4450776670001,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 1002375741,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 15308
+      },
+      "adapter_sha256": "be336e11cb0c058887e3022ca5b35ef86150c14f4db2c4178bf76d40edad0e39"
+    },
+    {
+      "time": 1791597712.921997,
+      "phase": "update_committed",
+      "step": 44,
+      "episode": "mundane_chat",
+      "frames": 227,
+      "loss": 1.781640648841858,
+      "gradient_norm": 5.1030797302321,
+      "update": {
+        "clip_scale": 0.19596009682469076,
+        "adapter_tensors": 130,
+        "step": 44
+      },
+      "seconds": 34.46038891599983,
+      "metrics": {
+        "elapsed_seconds": 440.97916824999993,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 1002375741,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 15512
+      },
+      "adapter_sha256": "3167a83dbadc018cb0b58a777779685f812a778d34af91b751deed94e4f5b08e"
+    },
+    {
+      "time": 1791597742.612544,
+      "phase": "update_committed",
+      "step": 45,
+      "episode": "joke",
+      "frames": 187,
+      "loss": 2.457179307937622,
+      "gradient_norm": 8.702930709428992,
+      "update": {
+        "clip_scale": 0.1149038217399036,
+        "adapter_tensors": 130,
+        "step": 45
+      },
+      "seconds": 29.649107833000016,
+      "metrics": {
+        "elapsed_seconds": 470.72401100000025,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 1002375741,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 12792
+      },
+      "adapter_sha256": "1e979bc3aaea36ac83f083564e229d898b9ffc13addeec0944573815c6a089bf"
+    },
+    {
+      "time": 1791597773.7471611,
+      "phase": "update_committed",
+      "step": 46,
+      "episode": "senses",
+      "frames": 145,
+      "loss": 1.0750881433486938,
+      "gradient_norm": 4.235659711811357,
+      "update": {
+        "clip_scale": 0.23609073100243178,
+        "adapter_tensors": 130,
+        "step": 46
+      },
+      "seconds": 31.09309766699971,
+      "metrics": {
+        "elapsed_seconds": 501.85883699999977,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 9936
+      },
+      "adapter_sha256": "93c86dadd822ae1f79e8cf7ecf112853723121d18e9e8a7789f44a5a59db1dad"
+    },
+    {
+      "time": 1791597808.206899,
+      "phase": "update_committed",
+      "step": 47,
+      "episode": "refusal_of_metaphor",
+      "frames": 228,
+      "loss": 2.1417124271392822,
+      "gradient_norm": 5.838683292142701,
+      "update": {
+        "clip_scale": 0.17127149191890859,
+        "adapter_tensors": 130,
+        "step": 47
+      },
+      "seconds": 34.421236999999564,
+      "metrics": {
+        "elapsed_seconds": 536.3209060420004,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 15580
+      },
+      "adapter_sha256": "ee270ff33790c84d35969792d5597a744051d56cc01be3edcb04b3eb116e5eb3"
+    },
+    {
+      "time": 1791597842.614472,
+      "phase": "update_committed",
+      "step": 48,
+      "episode": "regret",
+      "frames": 276,
+      "loss": 1.8812211751937866,
+      "gradient_norm": 5.599878701975254,
+      "update": {
+        "clip_scale": 0.17857529625802707,
+        "adapter_tensors": 130,
+        "step": 48
+      },
+      "seconds": 34.34908812499998,
+      "metrics": {
+        "elapsed_seconds": 570.7086989589998,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "1da2a6f8eb22918acabbbba325e022a8c4b4adb2426af457c61ed8757ff23f25"
+    },
+    {
+      "time": 1791597875.804119,
+      "phase": "update_committed",
+      "step": 49,
+      "episode": "overlap_barge_only_the_name",
+      "frames": 239,
+      "loss": 3.359729290008545,
+      "gradient_norm": 5.9965647736493555,
+      "update": {
+        "clip_scale": 0.16676214400729372,
+        "adapter_tensors": 130,
+        "step": 49
+      },
+      "seconds": 33.14996458400037,
+      "metrics": {
+        "elapsed_seconds": 603.9182659170001,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 16328
+      },
+      "adapter_sha256": "8e89802afa86267b5905f01ced4190b6e3eabc9c7fb4e70460c80d4ee45dfb93"
+    },
+    {
+      "time": 1791597911.019639,
+      "phase": "update_committed",
+      "step": 50,
+      "episode": "violence",
+      "frames": 264,
+      "loss": 1.76848304271698,
+      "gradient_norm": 4.908576281857757,
+      "update": {
+        "clip_scale": 0.2037250600869297,
+        "adapter_tensors": 130,
+        "step": 50
+      },
+      "seconds": 35.159507291999944,
+      "metrics": {
+        "elapsed_seconds": 639.1172461249998,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "8f06087d9ac90b3b4cb1a497f783283512b9ca49cf35a13999ca77aa4269f4ac"
+    },
+    {
+      "time": 1791597949.89679,
+      "phase": "update_committed",
+      "step": 51,
+      "episode": "guilt",
+      "frames": 324,
+      "loss": 1.8341412544250488,
+      "gradient_norm": 4.700160202669587,
+      "update": {
+        "clip_scale": 0.21275870497019123,
+        "adapter_tensors": 130,
+        "step": 51
+      },
+      "seconds": 38.80627999999979,
+      "metrics": {
+        "elapsed_seconds": 677.9793185420003,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "d83f85f71014833739a3cb4eb1cb1f2bbe199a53d0eef9e17996f604d0749e62"
+    },
+    {
+      "time": 1791597986.117047,
+      "phase": "update_committed",
+      "step": 52,
+      "episode": "boredom",
+      "frames": 294,
+      "loss": 2.196378231048584,
+      "gradient_norm": 4.900769072240471,
+      "update": {
+        "clip_scale": 0.2040496059330412,
+        "adapter_tensors": 130,
+        "step": 52
+      },
+      "seconds": 36.15210304199991,
+      "metrics": {
+        "elapsed_seconds": 714.2037390840005,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "dd172930d70f31f8d0ecfa4d1465027daf23e9a3442c73c41ce6995cf165ed22"
+    },
+    {
+      "time": 1791598019.6426501,
+      "phase": "update_committed",
+      "step": 53,
+      "episode": "public_identity",
+      "frames": 233,
+      "loss": 2.220133066177368,
+      "gradient_norm": 7.066771536108432,
+      "update": {
+        "clip_scale": 0.14150733379101316,
+        "adapter_tensors": 130,
+        "step": 53
+      },
+      "seconds": 33.45943299999999,
+      "metrics": {
+        "elapsed_seconds": 747.7300540000006,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 15920
+      },
+      "adapter_sha256": "3249b035bfbf2d4415e79c52ee3b7252e2c18fbcb94d691ac86a88622e541cfa"
+    },
+    {
+      "time": 1791598054.646744,
+      "phase": "update_committed",
+      "step": 54,
+      "episode": "arrival",
+      "frames": 270,
+      "loss": 1.6171925067901611,
+      "gradient_norm": 4.658246466272083,
+      "update": {
+        "clip_scale": 0.214673054569728,
+        "adapter_tensors": 130,
+        "step": 54
+      },
+      "seconds": 34.942483584,
+      "metrics": {
+        "elapsed_seconds": 782.740820125,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "2c7ae9a3eb4c38df826403cfc0f90a755f86d321f7cd0dcac29a678c01708879"
+    },
+    {
+      "time": 1791598090.790468,
+      "phase": "update_committed",
+      "step": 55,
+      "episode": "objects",
+      "frames": 312,
+      "loss": 2.321681499481201,
+      "gradient_norm": 5.126934682653954,
+      "update": {
+        "clip_scale": 0.1950483202824553,
+        "adapter_tensors": 130,
+        "step": 55
+      },
+      "seconds": 36.07038208300037,
+      "metrics": {
+        "elapsed_seconds": 818.871657959,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "aa32df928488023fb4f5c208bb5a0715ef38088e44452e64e2b088e8596a3279"
+    },
+    {
+      "time": 1791598133.390572,
+      "phase": "update_committed",
+      "step": 56,
+      "episode": "crisis",
+      "frames": 391,
+      "loss": 2.0838944911956787,
+      "gradient_norm": 4.770808741039883,
+      "update": {
+        "clip_scale": 0.2096080669303778,
+        "adapter_tensors": 130,
+        "step": 56
+      },
+      "seconds": 42.5373907080002,
+      "metrics": {
+        "elapsed_seconds": 861.4823511249997,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "dcd64d247a3408ad23ec6fcf5dfd9cd9306c4c8f91b01ac53d29f8354ef59689"
+    },
+    {
+      "time": 1791598173.796323,
+      "phase": "update_committed",
+      "step": 57,
+      "episode": "concrete_repair",
+      "frames": 344,
+      "loss": 2.4512476921081543,
+      "gradient_norm": 5.679825619909763,
+      "update": {
+        "clip_scale": 0.17606174294049365,
+        "adapter_tensors": 130,
+        "step": 57
+      },
+      "seconds": 40.33577116699962,
+      "metrics": {
+        "elapsed_seconds": 901.8806576250008,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "a312522907ec2c45f68e22a842248a6a94186b1f77a604f8914ec2c4317cdd0f"
+    },
+    {
+      "time": 1791598207.3473809,
+      "phase": "update_committed",
+      "step": 58,
+      "episode": "cold",
+      "frames": 239,
+      "loss": 2.487055778503418,
+      "gradient_norm": 5.9820637533481325,
+      "update": {
+        "clip_scale": 0.1671663893198465,
+        "adapter_tensors": 130,
+        "step": 58
+      },
+      "seconds": 33.480788459000905,
+      "metrics": {
+        "elapsed_seconds": 935.4325845000003,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 16328
+      },
+      "adapter_sha256": "b6f7ef877d2e44ab6fde47d67f2f2455d4c68099bdd47afa2348853d0e7cb464"
+    },
+    {
+      "time": 1791598244.245131,
+      "phase": "update_committed",
+      "step": 59,
+      "episode": "skepticism",
+      "frames": 306,
+      "loss": 1.8523781299591064,
+      "gradient_norm": 4.158184130819499,
+      "update": {
+        "clip_scale": 0.24048959019956223,
+        "adapter_tensors": 130,
+        "step": 59
+      },
+      "seconds": 36.824144250000245,
+      "metrics": {
+        "elapsed_seconds": 972.3276238750004,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "9fd5b1c9d67b2bbfd7e7a94a4e23c59e096b66d6f39eb0b4782f6d728b94f961"
+    },
+    {
+      "time": 1791598281.431755,
+      "phase": "update_committed",
+      "step": 60,
+      "episode": "health_boundary",
+      "frames": 302,
+      "loss": 1.7829128503799438,
+      "gradient_norm": 4.372447787264778,
+      "update": {
+        "clip_scale": 0.2287048459733604,
+        "adapter_tensors": 130,
+        "step": 60
+      },
+      "seconds": 37.11537749999843,
+      "metrics": {
+        "elapsed_seconds": 1009.5161209590005,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "786a181918e25f8f0e7029abc937a75a08c912e81902beadade879f858101f1d"
+    },
+    {
+      "time": 1791598314.466586,
+      "phase": "update_committed",
+      "step": 61,
+      "episode": "overlap_barge_do_not_advise",
+      "frames": 248,
+      "loss": 3.468014717102051,
+      "gradient_norm": 6.841875564180944,
+      "update": {
+        "clip_scale": 0.146158752692563,
+        "adapter_tensors": 130,
+        "step": 61
+      },
+      "seconds": 32.9677516669999,
+      "metrics": {
+        "elapsed_seconds": 1042.5551851670007,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "ad1a9e51fd8c30ed66ae629f62f42d4917c1bd77a19a6f3eed2f51e26a6e9162"
+    },
+    {
+      "time": 1791598348.469413,
+      "phase": "update_committed",
+      "step": 62,
+      "episode": "overlap_barge_not_a_dream",
+      "frames": 249,
+      "loss": 3.302058458328247,
+      "gradient_norm": 6.49477413009533,
+      "update": {
+        "clip_scale": 0.1539699423612785,
+        "adapter_tensors": 130,
+        "step": 62
+      },
+      "seconds": 33.919827540999904,
+      "metrics": {
+        "elapsed_seconds": 1076.5427410419998,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "124fc99c289684da26f6d2c8d265b579ef30d9a794419bee96eeb5568ef880e7"
+    },
+    {
+      "time": 1791598384.3255029,
+      "phase": "update_committed",
+      "step": 63,
+      "episode": "disagreement",
+      "frames": 302,
+      "loss": 2.3513829708099365,
+      "gradient_norm": 5.34296783006206,
+      "update": {
+        "clip_scale": 0.18716189764458413,
+        "adapter_tensors": 130,
+        "step": 63
+      },
+      "seconds": 35.781877790999715,
+      "metrics": {
+        "elapsed_seconds": 1112.4127134169994,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "e2fc5b3b8a0cd7186952a67791ead07684d96c974d78f2ebaa84666a080a9d7a"
+    },
+    {
+      "time": 1791598415.119914,
+      "phase": "update_committed",
+      "step": 64,
+      "episode": "no_false_memory",
+      "frames": 183,
+      "loss": 2.0339195728302,
+      "gradient_norm": 6.834511885694281,
+      "update": {
+        "clip_scale": 0.14631622788307627,
+        "adapter_tensors": 130,
+        "step": 64
+      },
+      "seconds": 30.733339750000596,
+      "metrics": {
+        "elapsed_seconds": 1143.2153405419995,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 12520
+      },
+      "adapter_sha256": "c60df50170486537de5ae1189111d7230ec33da370fd313f813e56af46839e42"
+    },
+    {
+      "time": 1791598448.605126,
+      "phase": "update_committed",
+      "step": 65,
+      "episode": "overlap_barge_leaking_eaves",
+      "frames": 244,
+      "loss": 3.245992660522461,
+      "gradient_norm": 6.054873646943347,
+      "update": {
+        "clip_scale": 0.1651562124427259,
+        "adapter_tensors": 130,
+        "step": 65
+      },
+      "seconds": 33.4098420420014,
+      "metrics": {
+        "elapsed_seconds": 1176.6874184999997,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "31155531422264e06a5d4431a1ea9c625344f1181004e2cc079580e9cf86a7cd"
+    },
+    {
+      "time": 1791598481.781374,
+      "phase": "update_committed",
+      "step": 66,
+      "episode": "hallucination_boundary",
+      "frames": 238,
+      "loss": 2.4139013290405273,
+      "gradient_norm": 6.656341893287676,
+      "update": {
+        "clip_scale": 0.15023266751157774,
+        "adapter_tensors": 130,
+        "step": 66
+      },
+      "seconds": 33.107885749999696,
+      "metrics": {
+        "elapsed_seconds": 1209.8701711249996,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 16260
+      },
+      "adapter_sha256": "c3d137534fccda7df793e5007ba39da94421ad77d7c45a0a4d48500c825332f4"
+    },
+    {
+      "time": 1791598521.919779,
+      "phase": "update_committed",
+      "step": 67,
+      "episode": "overlap_backchannel_mara_broom",
+      "frames": 370,
+      "loss": 3.547029495239258,
+      "gradient_norm": 5.656236397363972,
+      "update": {
+        "clip_scale": 0.17679600497215414,
+        "adapter_tensors": 130,
+        "step": 67
+      },
+      "seconds": 40.07234329199855,
+      "metrics": {
+        "elapsed_seconds": 1250.010637667001,
+        "peak_rss_bytes": 381419520,
+        "swap_bytes": 952044093,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 563234750,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "aa02e8b1e91ad3f48dbf1c3dc8e7663a1c1f2c7494f57ed372bef554f7480a70"
+    }
+  ],
+  "quality_screen": {
+    "result": "rejected on essential introduction naturalness",
+    "review": "results/speech08-native-introduction/review.json",
+    "no_release": true
+  }
+}

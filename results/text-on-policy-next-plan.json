@@ -4,5 +4,28 @@
   "purpose": "Test whether the parent recovers Mara without the exact guided-you cue and whether its own first answer contaminates the follow-up at different depths.",
   "text_run23_finding": "Eight repairs with clean canonical replay produced13/20 and16/20, still essential lore failure. Canonical replay often has nearlyzero loss, giving weak gradient protection against drift on student-generated histories.",
   "next_data_hypothesis": "Review sampled correct student replies as selective one-reply retention targets, alongside corrected failures. Earlier sampled mistakes receive no target loss. Broaden scenario families before any generalization claim.",
-  "leakage": "All current trajectories are training-only; no promotion to held-out benchmark. Exposed old final and pressure suites remain excluded from training."
+  "leakage": "All current trajectories are training-only; no promotion to held-out benchmark. Exposed old final and pressure suites remain excluded from training.",
+  "additional_spines": {
+    "manifest": "data/dialogue-pilot-08.json",
+    "manifest_sha256": "4bb5ab99a7cdb343e6a8820a2c98488b39cba28bd6d535ce947e7bf4ba56cd18",
+    "status": "Prepared and dry-run validated; no generated replies yet",
+    "families": [
+      "bus_shelter",
+      "community_radio",
+      "roof_garden",
+      "costume_room"
+    ],
+    "roots": 8,
+    "seeds_per_family": 2,
+    "ordinary_turns_per_root": 16,
+    "planned_replies": 128,
+    "next": "Inspect actual responses before authoring continuation and matched-depth branches. Keep training-only; do not count seeded copies as independent families."
+  },
+  "runtime": "Tiny streamed Qwen parity and actual full-backbone export verification passed. Actual six-reply replay now running; training-memory probe remains queued.",
+  "load_attempts": [
+    "results/dialogue-pilot-07-load-guard",
+    "results/dialogue-pilot-07-settled-load-guard"
+  ],
+  "matched_seed_policy": "Pilot07 assigns a shared sampling_group across depths within each root, so effective seed matches at corresponding response positions. Four roots in two families.",
+  "proof_manifest": "data/dialogue-streamed-probe.json"
 }

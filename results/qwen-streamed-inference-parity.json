@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "cases": [
+    {
+      "resident_layers": 0,
+      "max_logit_error": 0.0,
+      "max_kv_error": 0.0,
+      "matching_sampled_tokens": 12
+    },
+    {
+      "resident_layers": 1,
+      "max_logit_error": 0.0,
+      "max_kv_error": 0.0,
+      "matching_sampled_tokens": 12
+    },
+    {
+      "resident_layers": 3,
+      "max_logit_error": 0.0,
+      "max_kv_error": 0.0,
+      "matching_sampled_tokens": 12
+    }
+  ],
+  "frozen_prefix_max_error": 0.0,
+  "suffix_trainable_parameters_unchanged": true,
+  "scope": "Tiny Qwen3 BF16/4bit with nonzero attention, MLP and tied-embedding LoRA. Exact prefill, incremental logits, full KV state, sampled-token and frozen-prefix parity. Actual checkpoint memory/performance requires a separate probe."
+}

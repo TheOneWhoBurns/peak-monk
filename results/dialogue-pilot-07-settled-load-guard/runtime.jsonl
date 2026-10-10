@@ -1,0 +1,15 @@
+{"time": 1791597233.672935, "phase": "import_begin", "initial_swap_bytes": 1077936128}
+{"time": 1791597234.817985, "phase": "runtime_ready", "memory_limit": 3800000000, "policy": "no wiring; deferred cache eviction; one process; bounded requests"}
+{"time": 1791597234.818109, "phase": "load_begin"}
+{"time": 1791597236.855766, "phase": "load_settle_wait", "memory_pressure_level": 2}
+{"time": 1791597237.8907049, "phase": "load_settle_wait", "memory_pressure_level": 2}
+{"time": 1791597238.914776, "phase": "load_settle_wait", "memory_pressure_level": 2}
+{"time": 1791597239.940501, "phase": "load_settle_wait", "memory_pressure_level": 2}
+{"time": 1791597240.97565, "phase": "load_settle_wait", "memory_pressure_level": 2}
+{"time": 1791597242.010302, "phase": "load_settle_wait", "memory_pressure_level": 2}
+{"time": 1791597243.0433931, "phase": "load_settle_wait", "memory_pressure_level": 2}
+{"time": 1791597244.06817, "phase": "load_settle_wait", "memory_pressure_level": 2}
+{"time": 1791597245.105592, "phase": "load_settle_wait", "memory_pressure_level": 2}
+{"time": 1791597246.142036, "phase": "load_settle_wait", "memory_pressure_level": 2}
+{"time": 1791597247.183346, "phase": "resource_guard_stop", "reason": "system memory pressure is not normal", "elapsed_seconds": 13.496702582999205, "peak_rss_bytes": 1339080704, "swap_bytes": 1077936128, "memory_pressure_level": 2, "mlx_peak_bytes": 2406710280, "mlx_active_bytes": 2406710280}
+{"time": 1791597247.1843112, "phase": "runtime_exit", "error": "Bounded runtime system memory pressure is not normal"}

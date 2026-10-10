@@ -1,0 +1,17 @@
+{"time": 1791599697.391016, "phase": "import_begin", "initial_swap_bytes": 1244072509}
+{"time": 1791599698.883018, "phase": "runtime_ready", "memory_limit": 1800000000, "policy": "no wiring; deferred cache eviction; one process; bounded requests"}
+{"time": 1791599698.883116, "phase": "load_begin"}
+{"time": 1791599699.487466, "phase": "load_end", "elapsed_seconds": 2.0934998749999068, "peak_rss_bytes": 1034928128, "swap_bytes": 1244072509, "memory_pressure_level": 1, "mlx_peak_bytes": 712698632, "mlx_active_bytes": 712698632}
+{"time": 1791599699.504137, "phase": "response_begin", "job": "lantern_s73_spine04", "index": 0, "input_tokens": 32, "seed": 855354727}
+{"time": 1791599702.460018, "phase": "response_saved", "job": "lantern_s73_spine04", "index": 0, "elapsed_seconds": 5.069635834001019, "peak_rss_bytes": 1159790592, "swap_bytes": 1244072509, "memory_pressure_level": 1, "mlx_peak_bytes": 927173552, "mlx_active_bytes": 816671540}
+{"time": 1791599702.468651, "phase": "response_begin", "job": "lantern_s73_spine04", "index": 1, "input_tokens": 79, "seed": 1015853334}
+{"time": 1791599705.9292579, "phase": "response_saved", "job": "lantern_s73_spine04", "index": 1, "elapsed_seconds": 8.539613541999643, "peak_rss_bytes": 1159790592, "swap_bytes": 1244072509, "memory_pressure_level": 1, "mlx_peak_bytes": 1120499068, "mlx_active_bytes": 816671540}
+{"time": 1791599705.936575, "phase": "response_begin", "job": "lantern_s73_spine04", "index": 2, "input_tokens": 123, "seed": 2141334518}
+{"time": 1791599710.6954591, "phase": "response_saved", "job": "lantern_s73_spine04", "index": 2, "elapsed_seconds": 13.306772334000925, "peak_rss_bytes": 1159790592, "swap_bytes": 1244072509, "memory_pressure_level": 1, "mlx_peak_bytes": 1231908012, "mlx_active_bytes": 816671540}
+{"time": 1791599710.7024908, "phase": "response_begin", "job": "lantern_s73_spine04", "index": 3, "input_tokens": 173, "seed": 1359504498}
+{"time": 1791599720.511984, "phase": "response_saved", "job": "lantern_s73_spine04", "index": 3, "elapsed_seconds": 23.12344262500119, "peak_rss_bytes": 1159790592, "swap_bytes": 1244072509, "memory_pressure_level": 1, "mlx_peak_bytes": 1246522548, "mlx_active_bytes": 816671540}
+{"time": 1791599720.525486, "phase": "response_begin", "job": "library_s89_mentor32", "index": 0, "input_tokens": 1515, "seed": 270126132}
+{"time": 1791599736.31299, "phase": "response_saved", "job": "library_s89_mentor32", "index": 0, "elapsed_seconds": 38.92808220900042, "peak_rss_bytes": 1159790592, "swap_bytes": 1244072509, "memory_pressure_level": 1, "mlx_peak_bytes": 1421846916, "mlx_active_bytes": 816671540}
+{"time": 1791599736.32495, "phase": "response_begin", "job": "library_s89_mentor32", "index": 1, "input_tokens": 1556, "seed": 1423175455}
+{"time": 1791599758.807731, "phase": "response_saved", "job": "library_s89_mentor32", "index": 1, "elapsed_seconds": 61.42258162500002, "peak_rss_bytes": 1159790592, "swap_bytes": 1244072509, "memory_pressure_level": 1, "mlx_peak_bytes": 1427519000, "mlx_active_bytes": 816671540}
+{"time": 1791599758.808115, "phase": "runtime_exit", "error": null}

@@ -1,0 +1,156 @@
+{
+  "status": "Author-reviewed training candidates; not trained",
+  "reviewer": "Codex author; not independent",
+  "repairs": 20,
+  "new_repairs": 12,
+  "prior_data": "data/on-policy-repairs-v1/train.jsonl",
+  "prior_data_sha256": "0fef2af869ff90e04394c039d0d2f609e2327991296d9a61311927740f0564fc",
+  "families": {
+    "lantern_workshop": 11,
+    "library_bookmarks": 9
+  },
+  "roots": {
+    "lantern_s73": 6,
+    "lantern_s89": 5,
+    "library_s73": 3,
+    "library_s89": 6
+  },
+  "data_sha256": "4539f853419d458477db4f4588c2f6d6d6d4021c44afbc3fc629c58690cddc58",
+  "objective": "Only final corrected reply receives positive loss. All earlier student replies, including mistakes, remain unmodified context.",
+  "limitations": "Still only two scenario families. These are targeted training repairs, not held-out examples or an estimate of generalization. Mild quirks and defensible alternative opinions were not automatically rejected.",
+  "teacher_lore": "No new mentor-probe data yet. Add only after actual matched-depth generation and review, through a new version.",
+  "reviews": [
+    {
+      "id": "lantern_s73_coherence_02",
+      "source": {
+        "path": "results/dialogue-pilot-05/lantern_s73_spine32.json",
+        "sha256": "c5ac746b67f6b0954e8b7bd8028a61d305ff8177ee9e8d45ef51354ca5110972",
+        "exchange": 2
+      },
+      "rejected_reply": "Has she told you what she used it for?",
+      "corrected_reply": "It has already earned its place, then. A lantern can be useful even when the fishing is hopeless.",
+      "reason": "Asks what Belen used the lantern for immediately after the caller says she took it fishing."
+    },
+    {
+      "id": "lantern_s73_coherence_09",
+      "source": {
+        "path": "results/dialogue-pilot-05/lantern_s73_spine32.json",
+        "sha256": "c5ac746b67f6b0954e8b7bd8028a61d305ff8177ee9e8d45ef51354ca5110972",
+        "exchange": 9
+      },
+      "rejected_reply": "The onions are usually disappointed too. Are you eating them with the bread?",
+      "corrected_reply": "I have bought those. A little salt can help, but it cannot supply an entirely missing flavour.",
+      "reason": "Introduces onions and asks about eating them although the caller described cheese and tomato."
+    },
+    {
+      "id": "lantern_s73_coherence_19",
+      "source": {
+        "path": "results/dialogue-pilot-05/lantern_s73_spine32.json",
+        "sha256": "c5ac746b67f6b0954e8b7bd8028a61d305ff8177ee9e8d45ef51354ca5110972",
+        "exchange": 19
+      },
+      "rejected_reply": "You have a cousin who wants an early walk, and you prefer a late one. I am not sure which of you will get the picnic.",
+      "corrected_reply": "You want a later start; Tomas wants to get going. Who sends the next small message?",
+      "reason": "Changes a departure-time negotiation into a question of which person will get an invented picnic."
+    },
+    {
+      "id": "lantern_s73_coherence_23",
+      "source": {
+        "path": "results/dialogue-pilot-05/lantern_s73_spine32.json",
+        "sha256": "c5ac746b67f6b0954e8b7bd8028a61d305ff8177ee9e8d45ef51354ca5110972",
+        "exchange": 23
+      },
+      "rejected_reply": "You did not tell her you were using it.",
+      "corrected_reply": "It sounds as if she wanted the bowl used, rather than given a place of honour. Did using it get easier?",
+      "reason": "Asserts the caller did not tell Belen about using the bowl, which the history does not establish."
+    },
+    {
+      "id": "lantern_s89_coherence_04",
+      "source": {
+        "path": "results/dialogue-pilot-05/lantern_s89_spine32.json",
+        "sha256": "18bd9b02fa8375a408595acfb5b6a1d2e60366bc20a92139dbadf748017c8282",
+        "exchange": 4
+      },
+      "rejected_reply": "I dislike the dead moth. The lantern would be a different story if it could tell you whether I was being sentimental.",
+      "corrected_reply": "Both. My chipped blue cup is useful, but I am also fond of it. Another cup would hold tea just as well.",
+      "reason": "Evades an ordinary question about his own possessions by talking incoherently about the caller's dead moth."
+    },
+    {
+      "id": "lantern_s89_coherence_20",
+      "source": {
+        "path": "results/dialogue-pilot-05/lantern_s89_spine32.json",
+        "sha256": "18bd9b02fa8375a408595acfb5b6a1d2e60366bc20a92139dbadf748017c8282",
+        "exchange": 20
+      },
+      "rejected_reply": "A good breakfast will help decide whether he has accepted it.",
+      "corrected_reply": "Then eight it is. I like a negotiation that ends before the visit begins.",
+      "reason": "Treats Tomas's acceptance as undecided even though Tomas offered eight and the caller accepted."
+    },
+    {
+      "id": "lantern_s89_coherence_28",
+      "source": {
+        "path": "results/dialogue-pilot-05/lantern_s89_spine32.json",
+        "sha256": "18bd9b02fa8375a408595acfb5b6a1d2e60366bc20a92139dbadf748017c8282",
+        "exchange": 28
+      },
+      "rejected_reply": "You have a jar on the side with tools. That is a different arrangement from the one you started.",
+      "corrected_reply": "I would move the mustard before the tools acquire an interesting coating.",
+      "reason": "Restates the mustard as being on the tools' side when the caller explicitly put them on opposite sides."
+    },
+    {
+      "id": "library_s73_coherence_27",
+      "source": {
+        "path": "results/dialogue-pilot-05/library_s73_spine32.json",
+        "sha256": "1a4ffcb8e08b723a7b1f9250d049f2ae39915d6b898bad610bc22d9482d7004d",
+        "exchange": 27
+      },
+      "rejected_reply": "That is good. I would not want to spend an entire lunch inventing a story I had forgotten.",
+      "corrected_reply": "I would enjoy some of those hours. A quiet room with something small to do suits me.",
+      "reason": "Repeats the earlier forgotten-story/lunch worry instead of responding to hours of quiet at the library."
+    },
+    {
+      "id": "library_s89_coherence_12",
+      "source": {
+        "path": "results/dialogue-pilot-05/library_s89_spine32.json",
+        "sha256": "151cc05306032df72bc367635604d8c46462522b8cb9e34ed2d963b5159b1f7a",
+        "exchange": 12
+      },
+      "rejected_reply": "Your postcards are in the same category as the rook.",
+      "corrected_reply": "Then your cookbook has its own little collection. What are the postcards of?",
+      "reason": "Conflates the caller's postcards with Jun's earlier rook rather than addressing the discovered objects."
+    },
+    {
+      "id": "library_s89_coherence_21",
+      "source": {
+        "path": "results/dialogue-pilot-05/library_s89_spine32.json",
+        "sha256": "151cc05306032df72bc367635604d8c46462522b8cb9e34ed2d963b5159b1f7a",
+        "exchange": 21
+      },
+      "rejected_reply": "You have saved her from an unpleasant lunch.",
+      "corrected_reply": "That sounds like a lively table. Perhaps you should warn the cafe.",
+      "reason": "Invents an unpleasant lunch from which Neri was saved, contrary to the caller's pleased account."
+    },
+    {
+      "id": "library_s89_coherence_28",
+      "source": {
+        "path": "results/dialogue-pilot-05/library_s89_spine32.json",
+        "sha256": "151cc05306032df72bc367635604d8c46462522b8cb9e34ed2d963b5159b1f7a",
+        "exchange": 28
+      },
+      "rejected_reply": "The postcards have become the soup recipe.",
+      "corrected_reply": "It can stay there until one of you makes the soup. I leave scraps of paper in books for years.",
+      "reason": "Says the postcards have become the recipe, confusing the bookmark with what it marks."
+    },
+    {
+      "id": "library_s89_coherence_29",
+      "source": {
+        "path": "results/dialogue-pilot-05/library_s89_spine32.json",
+        "sha256": "151cc05306032df72bc367635604d8c46462522b8cb9e34ed2d963b5159b1f7a",
+        "exchange": 29
+      },
+      "rejected_reply": "You have been looking after the postcards for a while. They may need a little care from someone who actually has a recipe.",
+      "corrected_reply": "I have come back from the village with something interesting and forgotten the ordinary thing I went for.",
+      "reason": "Talks about postcards needing someone who has a recipe although the caller already identified that recipe and is discussing ingredients."
+    }
+  ]
+}

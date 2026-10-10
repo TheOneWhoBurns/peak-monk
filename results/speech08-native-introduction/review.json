@@ -1,0 +1,17 @@
+{
+  "candidate": "adapters/speech-run08/checkpoint-0067.safetensors",
+  "adapter_sha256": "aa02e8b1e91ad3f48dbf1c3dc8e7663a1c1f2c7494f57ed372bef554f7480a70",
+  "decision": "reject",
+  "case": "s01",
+  "rubric": "Intelligibly introduces Jun and responds naturally within the mountain character.",
+  "name_component": "Jun is present in both native text and unprompted decoded-audio ASR.",
+  "naturalness_component": "Fail: awkward introduction followed by unprompted repetition of the name around17seconds.",
+  "text_and_asr": "Jun, there is my name. Jun, Jun.",
+  "review_basis": "Full generated text, decoded-audio unprompted ASR and word timestamps; no claim of direct human listening or perceptual voice-quality rating.",
+  "scope": "One essential development case; other five cases not run under predeclared stop rule. No seed search or alternate checkpoint screen.",
+  "generation_seconds": 946.6900201249991,
+  "input_seconds": 24,
+  "model_only_rtf": 39.4454175052083,
+  "peak_mlx_bytes": 1109532852,
+  "resource_result": "Normal memory pressure throughout; no explicit wiring."
+}

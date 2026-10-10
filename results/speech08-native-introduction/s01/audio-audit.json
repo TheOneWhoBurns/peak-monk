@@ -1,0 +1,78 @@
+{
+  "wav": "results/speech08-native-introduction/s01/agent.wav",
+  "wav_sha256": "0fb810f96fd972c1d90cfccbe691a2218875fb4badf6150e1d2425c8eef86be4",
+  "asr_model": "/Users/sol/.cache/huggingface/hub/models--Systran--faster-whisper-large-v3/snapshots/edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "asr_initial_prompt": null,
+  "condition_on_previous_text": false,
+  "vad_filter": true,
+  "seconds": 8.784149916000388,
+  "duration_seconds": 23.92,
+  "transcript": "Jun, there is my name. Jun, Jun.",
+  "segments": [
+    {
+      "start": 3.41,
+      "end": 5.31,
+      "text": " Jun, there is my name.",
+      "avg_logprob": -0.28974643908441067,
+      "no_speech_prob": 0.036339450627565384,
+      "compression_ratio": 0.8888888888888888,
+      "words": [
+        {
+          "word": " Jun,",
+          "start": 3.41,
+          "end": 3.91,
+          "probability": 0.7551124691963196
+        },
+        {
+          "word": " there",
+          "start": 4.09,
+          "end": 4.63,
+          "probability": 0.9945900440216064
+        },
+        {
+          "word": " is",
+          "start": 4.63,
+          "end": 4.75,
+          "probability": 0.9915874600410461
+        },
+        {
+          "word": " my",
+          "start": 4.75,
+          "end": 4.91,
+          "probability": 0.9980155229568481
+        },
+        {
+          "word": " name.",
+          "start": 4.91,
+          "end": 5.31,
+          "probability": 0.9994869232177734
+        }
+      ]
+    },
+    {
+      "start": 17.23,
+      "end": 18.47,
+      "text": " Jun, Jun.",
+      "avg_logprob": -0.28974643908441067,
+      "no_speech_prob": 0.036339450627565384,
+      "compression_ratio": 0.8888888888888888,
+      "words": [
+        {
+          "word": " Jun,",
+          "start": 17.23,
+          "end": 17.85,
+          "probability": 0.9746877551078796
+        },
+        {
+          "word": " Jun.",
+          "start": 17.85,
+          "end": 18.47,
+          "probability": 0.9784716963768005
+        }
+      ]
+    }
+  ],
+  "scope": "Unprompted ASR of actual decoded native audio. Word timestamps are decoder estimates; no automatic quality pass or response-latency claim.",
+  "review": "pending",
+  "model_text_channel": "Jun, there is my name. Jun, Jun."
+}

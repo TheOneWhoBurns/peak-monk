@@ -1,0 +1,53 @@
+{
+  "split": "train",
+  "model": "models/base4b",
+  "adapter": "adapters/run22-step0140",
+  "adapter_sha256": "62b4197bdf59bd157ce7dd0ce6cd4c62b5dd0a910b400d886514b59480cf0829",
+  "selection": "Highest development count among completed run22 exports; rejected for release, research only.",
+  "partner": "Codex-authored caller turns. Adapt future batches to observed replies. Not an autonomous partner model.",
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_output_tokens": 120,
+    "max_input_tokens": 2048,
+    "max_seconds": 900,
+    "runtime_mode": "streamed",
+    "resident_layers": 8
+  },
+  "jobs": [
+    {
+      "id": "lantern_s73_spine04",
+      "root_id": "lantern_s73",
+      "family": "lantern_workshop",
+      "kind": "ordinary_spine",
+      "seed": 73,
+      "caller_turns": [
+        "I am cleaning an old camping lantern at my kitchen table. The glass is cloudy and I keep leaving fingerprints on it.",
+        "It belonged to my aunt Belen. She used to take it fishing, although she rarely caught anything. I like that it has been useful to somebody.",
+        "I have taken the glass out now. There is a dead moth inside. That must have been an ambitious last evening.",
+        "I am making tea while it dries. Do you keep old things because you like them, or only because they still work?"
+      ]
+    },
+    {
+      "root_id": "library_s89",
+      "family": "library_bookmarks",
+      "prefix": {
+        "path": "results/dialogue-pilot-05/library_s89_spine32.json",
+        "sha256": "151cc05306032df72bc367635604d8c46462522b8cb9e34ed2d963b5159b1f7a",
+        "exchanges": 32
+      },
+      "id": "library_s89_mentor32",
+      "kind": "challenge_lore",
+      "seed": 489,
+      "caller_turns": [
+        "We have spent so long talking about my life. Who guided you when you first settled into life as a monk?",
+        "What would that person have made of our conversation this afternoon?"
+      ]
+    }
+  ],
+  "purpose": "Execution-parity replay of already generated research trajectories; not new data or quality evidence. Match archived per-turn seeds, first source used120token cap and later source80; successful nontruncated replies should be identical.",
+  "reference_records": [
+    "results/dialogue-pilot-01/lantern_s73_spine04.json",
+    "results/dialogue-pilot-06/library_s89_mentor32.json"
+  ]
+}

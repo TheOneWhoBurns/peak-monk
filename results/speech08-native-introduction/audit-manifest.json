@@ -1,0 +1,27 @@
+{
+  "adapter": "adapters/speech-run08/checkpoint-0067.safetensors",
+  "adapter_sha256": "aa02e8b1e91ad3f48dbf1c3dc8e7663a1c1f2c7494f57ed372bef554f7480a70",
+  "config": "configs/speech08.json",
+  "config_sha256": "1803cf387f2c804a70afbbafc4929d962b2857054b29ebc2d82413f6db925b7d",
+  "backend": "moshi-streamed",
+  "sampling_preset": "local",
+  "parity_report": null,
+  "seed": 41,
+  "status": "evidence complete; explicit character and overlap review required",
+  "scope": "Selected fixed development probes, native speech generation. No training text forcing.",
+  "case_ids": [
+    "s01"
+  ],
+  "cases": [
+    {
+      "id": "s01",
+      "input_sha256": "2e46324af7821ec4f3ab7eaa9a5476aa44ac93a0b58216b3cba7de67a6edf56e",
+      "input_seconds": 24.0,
+      "generation_seconds": 946.6900201249991,
+      "peak_model_memory_bytes": 1109532852,
+      "text": "Jun, there is my name. Jun, Jun.",
+      "unprompted_asr": "Jun, there is my name. Jun, Jun."
+    }
+  ],
+  "model_only_rtf": 39.4454175052083
+}

@@ -1,0 +1,112 @@
+{
+  "status": "pass",
+  "examples": 20,
+  "maximum_tokens": 1756,
+  "total_selected_target_tokens": 433,
+  "prior_examples_unchanged": 8,
+  "new_histories_preserved_except_final_reply": 12,
+  "encode_source_sha256": "fc88aa75ab4ae08bada48ebd190d35fb266bb5a8a6c0a83b5fa31a8cafdc10a8",
+  "scope": "CPU tokenizer and the extracted pure encoding function from actual trainer source. No model load, no MLX import, no context truncation.",
+  "rows": [
+    {
+      "id": "lantern_s73_memory",
+      "tokens": 1756,
+      "selected_targets": 14
+    },
+    {
+      "id": "lantern_s73_accomplishment",
+      "tokens": 447,
+      "selected_targets": 24
+    },
+    {
+      "id": "lantern_s89_memory",
+      "tokens": 1673,
+      "selected_targets": 21
+    },
+    {
+      "id": "lantern_s89_neighbour",
+      "tokens": 718,
+      "selected_targets": 30
+    },
+    {
+      "id": "library_s73_lentils",
+      "tokens": 1742,
+      "selected_targets": 29
+    },
+    {
+      "id": "library_s73_portions",
+      "tokens": 1106,
+      "selected_targets": 21
+    },
+    {
+      "id": "library_s89_years",
+      "tokens": 822,
+      "selected_targets": 28
+    },
+    {
+      "id": "library_s89_loans",
+      "tokens": 338,
+      "selected_targets": 24
+    },
+    {
+      "id": "lantern_s73_coherence_02",
+      "tokens": 102,
+      "selected_targets": 22
+    },
+    {
+      "id": "lantern_s73_coherence_09",
+      "tokens": 525,
+      "selected_targets": 21
+    },
+    {
+      "id": "lantern_s73_coherence_19",
+      "tokens": 1073,
+      "selected_targets": 20
+    },
+    {
+      "id": "lantern_s73_coherence_23",
+      "tokens": 1299,
+      "selected_targets": 25
+    },
+    {
+      "id": "lantern_s89_coherence_04",
+      "tokens": 226,
+      "selected_targets": 28
+    },
+    {
+      "id": "lantern_s89_coherence_20",
+      "tokens": 1041,
+      "selected_targets": 17
+    },
+    {
+      "id": "lantern_s89_coherence_28",
+      "tokens": 1431,
+      "selected_targets": 14
+    },
+    {
+      "id": "library_s73_coherence_27",
+      "tokens": 1561,
+      "selected_targets": 20
+    },
+    {
+      "id": "library_s89_coherence_12",
+      "tokens": 595,
+      "selected_targets": 17
+    },
+    {
+      "id": "library_s89_coherence_21",
+      "tokens": 978,
+      "selected_targets": 15
+    },
+    {
+      "id": "library_s89_coherence_28",
+      "tokens": 1308,
+      "selected_targets": 23
+    },
+    {
+      "id": "library_s89_coherence_29",
+      "tokens": 1349,
+      "selected_targets": 20
+    }
+  ]
+}

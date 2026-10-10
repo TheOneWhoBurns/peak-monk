@@ -1,0 +1,28 @@
+{
+  "model": "models/base4b",
+  "parent": "adapters/run22-step0140",
+  "parent_sha256": "62b4197bdf59bd157ce7dd0ce6cd4c62b5dd0a910b400d886514b59480cf0829",
+  "repairs": "data/on-policy-runtime-probe/train.jsonl",
+  "repairs_sha256": "3855d0222354332d60987a6bfe9c4a7f3b7cad2fa87e0029624ee10633a59569",
+  "replay": "data/on-policy-runtime-probe/replay.jsonl",
+  "replay_sha256": "92738ac97518b1bf5664f2d5db3f6fa3caf2f419c42c72b7fe19b8ee3c7f0243",
+  "output": "adapters/on-policy-runtime-probe06stream",
+  "train_last_layers": 6,
+  "steps": 2,
+  "max_length": 2048,
+  "memory_limit": 2400000000,
+  "max_seconds": 600,
+  "learning_rate": 2e-06,
+  "repair_weight": 0.5,
+  "replay_weight": 1.0,
+  "head_chunk_size": 32,
+  "seed": 41,
+  "checkpoints": [
+    1,
+    2
+  ],
+  "scope": "Disposable feasibility probe using a reviewed positive final reply after 32 actual student exchanges. No release, quality improvement or permission to resume native speech training is claimed.",
+  "query_chunk_size": 128,
+  "cache_frozen_prefix": true,
+  "stream_frozen_prefix": true
+}

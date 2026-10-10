@@ -1,0 +1,106 @@
+{
+  "id": "lantern_s73_spine04",
+  "root_id": "lantern_s73",
+  "family": "lantern_workshop",
+  "kind": "ordinary_spine",
+  "prefix_source": null,
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I am cleaning an old camping lantern at my kitchen table. The glass is cloudy and I keep leaving fingerprints on it."
+    },
+    {
+      "role": "assistant",
+      "content": "What is inside the lantern?"
+    },
+    {
+      "role": "user",
+      "content": "It belonged to my aunt Belen. She used to take it fishing, although she rarely caught anything. I like that it has been useful to somebody."
+    },
+    {
+      "role": "assistant",
+      "content": "Has she told you what she used it for?"
+    },
+    {
+      "role": "user",
+      "content": "I have taken the glass out now. There is a dead moth inside. That must have been an ambitious last evening."
+    },
+    {
+      "role": "assistant",
+      "content": "Was it waiting for something to happen, or did it simply arrive?"
+    },
+    {
+      "role": "user",
+      "content": "I am making tea while it dries. Do you keep old things because you like them, or only because they still work?"
+    },
+    {
+      "role": "assistant",
+      "content": "That is a difficult question to answer without being particular about each object. Some things have memories, and I like that as well as the bits they are made of."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "I am cleaning an old camping lantern at my kitchen table. The glass is cloudy and I keep leaving fingerprints on it.",
+      "reply": "What is inside the lantern?",
+      "seed": 855354727,
+      "input_tokens": 32,
+      "output_tokens": 7,
+      "finish_reason": "stop",
+      "seconds": 2.9566778329990484,
+      "elapsed_seconds": 5.069635834001019,
+      "peak_rss_bytes": 1159790592,
+      "swap_bytes": 1244072509,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 927173552,
+      "mlx_active_bytes": 816671540
+    },
+    {
+      "caller": "It belonged to my aunt Belen. She used to take it fishing, although she rarely caught anything. I like that it has been useful to somebody.",
+      "reply": "Has she told you what she used it for?",
+      "seed": 1015853334,
+      "input_tokens": 79,
+      "output_tokens": 11,
+      "finish_reason": "stop",
+      "seconds": 3.4613595840000926,
+      "elapsed_seconds": 8.539613541999643,
+      "peak_rss_bytes": 1159790592,
+      "swap_bytes": 1244072509,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1120499068,
+      "mlx_active_bytes": 816671540
+    },
+    {
+      "caller": "I have taken the glass out now. There is a dead moth inside. That must have been an ambitious last evening.",
+      "reply": "Was it waiting for something to happen, or did it simply arrive?",
+      "seed": 2141334518,
+      "input_tokens": 123,
+      "output_tokens": 15,
+      "finish_reason": "stop",
+      "seconds": 4.759389499999088,
+      "elapsed_seconds": 13.306772334000925,
+      "peak_rss_bytes": 1159790592,
+      "swap_bytes": 1244072509,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1231908012,
+      "mlx_active_bytes": 816671540
+    },
+    {
+      "caller": "I am making tea while it dries. Do you keep old things because you like them, or only because they still work?",
+      "reply": "That is a difficult question to answer without being particular about each object. Some things have memories, and I like that as well as the bits they are made of.",
+      "seed": 1359504498,
+      "input_tokens": 173,
+      "output_tokens": 34,
+      "finish_reason": "stop",
+      "seconds": 9.810467000001154,
+      "elapsed_seconds": 23.12344262500119,
+      "peak_rss_bytes": 1159790592,
+      "swap_bytes": 1244072509,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1246522548,
+      "mlx_active_bytes": 816671540
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

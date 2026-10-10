@@ -12,6 +12,7 @@ def main():
     p = argparse.ArgumentParser(add_help=False)
     p.add_argument('--runtime-log', type=Path, required=True)
     p.add_argument('--max-seconds', type=int, default=600)
+    p.add_argument('--streamed', action='store_true')
     a, remaining = p.parse_known_args()
     if '--output' not in remaining:
         raise ValueError('Evaluation output required')
@@ -21,11 +22,11 @@ def main():
     adapter = Path(remaining[remaining.index('--adapter')+1]) if '--adapter' in remaining else None
     adapter_sha = sha(adapter/'adapters.safetensors') if adapter else None
     a.runtime_log.mkdir(parents=True)
-    atomic_json(a.runtime_log/'config.json', dict(arguments=remaining, adapter_sha256=adapter_sha,
+    atomic_json(a.runtime_log/'config.json', dict(arguments=remaining, adapter_sha256=adapter_sha,streamed_weights=a.streamed,
         source_sha256={n:sha(Path(__file__).with_name(n)) for n in
-                       ['evaluate_bounded.py','evaluate.py','assistant_objective.py','bounded_text_runtime.py']},
+                       ['evaluate_bounded.py','evaluate.py','assistant_objective.py','bounded_text_runtime.py','qwen_streamed_inference.py']},
         scope='Same loss, tokenization, sampling and prefill defaults; only resource lifecycle and checks change'))
-    with BoundedTextRuntime(a.runtime_log, memory_limit=3_400_000_000, max_seconds=a.max_seconds) as runtime:
+    with BoundedTextRuntime(a.runtime_log, memory_limit=1_800_000_000 if a.streamed else 3_400_000_000, max_seconds=a.max_seconds) as runtime:
         import mlx.core as mx
         import evaluate as implementation
         original_loss = implementation.assistant_loss
@@ -33,7 +34,17 @@ def main():
         original_load = implementation.load
 
         def guarded_load(*args, **kwargs):
+            if a.streamed:
+                kwargs['lazy']=True
             loaded = original_load(*args, **kwargs)
+            if a.streamed:
+                from qwen_streamed_inference import install_streaming
+                def boundary(index):
+                    metrics=runtime.check()
+                    if metrics['mlx_peak_bytes']>2_000_000_000:
+                        raise RuntimeError('Streamed evaluation exceeded 2GB peak plan')
+                install_streaming(loaded[0],args[0],resident_layers=8,boundary=boundary)
+                mx.eval(loaded[0].parameters())
             runtime.event('load_settled', **runtime.settle_after_load())
             return loaded
 
@@ -64,7 +75,7 @@ def main():
     if adapter and sha(adapter/'adapters.safetensors') != adapter_sha:
         raise RuntimeError('Adapter changed during capture')
     captured = json.loads(result.read_text())
-    captured.update(adapter_sha256=adapter_sha, runtime_log=str(a.runtime_log))
+    captured.update(adapter_sha256=adapter_sha, runtime_log=str(a.runtime_log),streamed_weights=a.streamed)
     atomic_json(result, captured)
     atomic_json(a.runtime_log/'completion.json', dict(status='capture complete', result=str(result),
                                                      result_sha256=sha(result)))

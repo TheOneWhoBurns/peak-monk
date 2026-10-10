@@ -1,0 +1,23 @@
+{
+  "input": "evaluation/audio-roleplay-v2/s01.npz",
+  "input_sha256": "2e46324af7821ec4f3ab7eaa9a5476aa44ac93a0b58216b3cba7de67a6edf56e",
+  "adapter": "adapters/speech-run08/checkpoint-0067.safetensors",
+  "adapter_sha256": "aa02e8b1e91ad3f48dbf1c3dc8e7663a1c1f2c7494f57ed372bef554f7480a70",
+  "adapter_config": "configs/speech08.json",
+  "seed": 41,
+  "explicit_frame_limit": null,
+  "stream_temporal": true,
+  "reuse_temporal": false,
+  "selective_reader": false,
+  "sampling_preset": "local",
+  "source_sha256": {
+    "infer_moshi_unwired.py": "ad1915d9023f1666d441715ec0be152c2553cc44640628a498b4dff971cfe8c9",
+    "assemble_moshi_parts.py": "14108a6774b54400bfc3b4c24210d31096803f2f069514ad11212588829bf028",
+    "native_tensor_reader.py": "78c1c7901d264e5dd5d5febc312cd02a18f2218e0dc9af056519eb43b64b668c",
+    "reusable_moshi_parts.py": "4530cfc819fc1609f262fac1cd75b30a2b265378bf01ccec7c94fea5a9583e13",
+    "selective_native_reader.py": "d3803681b900f201c18967286e036cda8b14138dec58094174038897c47f17ed",
+    "moshi_weight_stream.py": "0b45fdbba9ac51c005138ecd5e589155ec64d544f509c13b31aac0b3142d536a",
+    "bounded_speech_runtime.py": "1bf5366b41a9581ccfaf705a37ddf917d51df79d71dfb3ec9e79a932dbf24a99",
+    "bounded_text_runtime.py": "6051753060eeb560bb48ab38065515a1252914e1b0213fa7a76efef7980a5bb6"
+  }
+}

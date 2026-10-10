@@ -64,6 +64,9 @@ def main():
     manifest = json.loads(a.manifest.read_text())
     jobs = validate(manifest)
     cfg = manifest['generation']
+    runtime_mode = cfg.get('runtime_mode', 'resident')
+    if runtime_mode not in ('resident','streamed'):
+        raise ValueError('Unknown inference runtime')
     if not 0 < cfg['max_input_tokens'] <= 2048 or not 0 < cfg['max_output_tokens'] <= 160:
         raise ValueError('Pilot token bounds exceeded; expansion requires a declared protocol change')
     if a.dry_run:
@@ -72,23 +75,34 @@ def main():
         return
     a.output.mkdir(parents=True, exist_ok=True)
     config = dict(manifest=manifest, manifest_sha256=sha(a.manifest),
+                  base_weights_sha256={p.name:sha(p) for p in sorted(Path(manifest['model']).glob('model*.safetensors'))},
                   source_sha256={n: sha(Path(__file__).with_name(n)) for n in
-                                 ['sample_dialogue_paths.py', 'bounded_text_runtime.py']})
+                                 ['sample_dialogue_paths.py', 'bounded_text_runtime.py', 'qwen_streamed_inference.py']})
     if sha(Path(manifest['adapter'])/'adapters.safetensors') != manifest['adapter_sha256']:
         raise ValueError('Research checkpoint hash differs')
     previous = a.output/'config.json'
     if previous.exists() and json.loads(previous.read_text()) != config:
         raise ValueError('Resume requires identical manifest and sampler source')
     atomic_json(previous, config)
-    with BoundedTextRuntime(a.output, max_seconds=cfg.get('max_seconds', 600)) as runtime:
+    with BoundedTextRuntime(a.output, memory_limit=1_800_000_000 if runtime_mode=='streamed' else 3_800_000_000,
+                            max_seconds=cfg.get('max_seconds', 600)) as runtime:
         import mlx.core as mx
         from mlx_lm import load, stream_generate
         from mlx_lm.sample_utils import make_sampler
         runtime.event('load_begin')
-        model, tok = load(manifest['model'], adapter_path=manifest['adapter'])
+        model, tok = load(manifest['model'], adapter_path=manifest['adapter'], lazy=runtime_mode=='streamed')
         model.eval()
+        if runtime_mode == 'streamed':
+            from qwen_streamed_inference import install_streaming
+            def layer_boundary(index):
+                metrics = runtime.check()
+                if metrics['mlx_peak_bytes'] > 2_000_000_000:
+                    raise RuntimeError('Streamed text inference exceeded declared 2GB peak plan')
+            install_streaming(model,manifest['model'],cfg.get('resident_layers',8),layer_boundary)
         mx.eval(model.parameters())
-        runtime.event('load_end', **runtime.check())
+        # Pause without model work for bounded OS reclamation at load only.
+        # Generation still requires normal pressure at every ordinary check.
+        runtime.event('load_end', **runtime.settle_after_load())
         for job in jobs:
             path = a.output/(job['id']+'.json')
             prefix, source = prefix_for(job)
@@ -110,7 +124,8 @@ def main():
                     record.update(status='context_censored', next_input_tokens=len(tokens))
                     atomic_json(path, record)
                     break
-                seed = int(hashlib.sha256(f"{job['seed']}:{job['id']}:{index}".encode()).hexdigest()[:8], 16) % 2**31
+                seed_group = job.get('sampling_group',job['id'])
+                seed = int(hashlib.sha256(f"{job['seed']}:{seed_group}:{index}".encode()).hexdigest()[:8], 16) % 2**31
                 mx.random.seed(seed)
                 runtime.check()
                 runtime.event('response_begin', job=job['id'], index=index, input_tokens=len(tokens), seed=seed)

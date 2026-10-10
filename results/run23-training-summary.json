@@ -271,5 +271,12 @@
   "export_verification": {
     "step16": "Exact full-backbone score parity",
     "step32": "Exact reloaded suffix score parity and all422frozen factors unchanged; full-backbone comparison resource-stopped, token-chunked comparison outside tolerance"
+  },
+  "later_independent_export_verification": {
+    "path": "results/run23-export0032-streamed/result.json",
+    "status": "pass",
+    "maximum_logp_difference": 0.0,
+    "peak_mlx_bytes": 1499454556,
+    "scope": "Entire original36-layer backbone with full temporal attention, streamed weight residency, versus saved suffix reference. This resolves the earlier failedchunked-prefill comparison; character gate remains rejected."
   }
 }

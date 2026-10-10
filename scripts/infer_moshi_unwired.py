@@ -3,7 +3,7 @@
 Full residency and streamed temporal weights are explicit modes. Inference
 resources are measured separately from the sub-600MB training experiment.
 """
-import argparse,gc,json,time,resource,subprocess
+import argparse,gc,json,time,resource,subprocess,os
 from dataclasses import asdict
 from pathlib import Path
 from bounded_speech_runtime import BoundedSpeechRuntime
@@ -83,7 +83,13 @@ def main():
             frames.append(dict(input_frame=i,text_token=token,piece=piece,seconds=time.monotonic()-tick,agent_frame_available=agent is not None,agent_audio_frame_index=len(audio)-1 if agent is not None else None))
             runtime.response_done()
             if i<3 or (i+1)%25==0:
-                atomic_json(a.output/'progress.json',dict(completed_frames=i+1,total_frames=codes.shape[1],text=''.join(text),metrics=runtime.check()))
+                if audio:
+                    temporary=a.output/'agent_codes.partial.tmp'
+                    with temporary.open('wb') as stream:
+                        np.savez_compressed(stream,agent_codes=np.stack(audio,axis=1))
+                        stream.flush();os.fsync(stream.fileno())
+                    os.replace(temporary,a.output/'agent_codes.partial.npz')
+                atomic_json(a.output/'progress.json',dict(completed_frames=i+1,total_frames=codes.shape[1],text=''.join(text),partial_agent_frames=len(audio),scope='Partial evidence only; not a completed probe or resumable generator checkpoint.',metrics=runtime.check()))
                 print(i+1,'/',codes.shape[1],''.join(text)[-180:],flush=True)
         elapsed=time.monotonic()-start
         if not audio:raise RuntimeError('No agent audio generated')

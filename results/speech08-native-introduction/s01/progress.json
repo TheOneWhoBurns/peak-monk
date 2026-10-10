@@ -1,0 +1,15 @@
+{
+  "completed_frames": 300,
+  "total_frames": 300,
+  "text": " Jun, there is my name. Jun, Jun.",
+  "partial_agent_frames": 299,
+  "scope": "Partial evidence only; not a completed probe or resumable generator checkpoint.",
+  "metrics": {
+    "elapsed_seconds": 950.4130028330001,
+    "peak_rss_bytes": 491601920,
+    "swap_bytes": 926878269,
+    "memory_pressure_level": 1,
+    "mlx_peak_bytes": 1109532852,
+    "mlx_active_bytes": 971554880
+  }
+}

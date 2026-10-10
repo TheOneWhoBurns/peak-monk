@@ -23,6 +23,9 @@ def main():
     parser.add_argument('--config', type=Path, required=True)
     cli = parser.parse_args()
     cfg = json.loads(cli.config.read_text())
+    stream_prefix = bool(cfg.get('stream_frozen_prefix'))
+    if stream_prefix and not cfg.get('cache_frozen_prefix'):
+        raise ValueError('Frozen-prefix streaming requires cached-prefix training')
     out = Path(cfg['output'])
     if out.exists():
         raise ValueError('New experiment output required')
@@ -57,7 +60,7 @@ def main():
         from qwen_rng_checkpoint import qwen_rng_checkpoint
 
         runtime.event('load_begin')
-        model, tok = load(cfg['model'], adapter_path=cfg['parent'])
+        model, tok = load(cfg['model'], adapter_path=cfg['parent'], lazy=stream_prefix)
         model.freeze()
         first = len(model.layers) - cfg['train_last_layers']
         for name, module in model.named_modules():
@@ -95,8 +98,16 @@ def main():
         model.model.embed_tokens.eval()
         for layer in model.layers[:first]:
             layer.eval()
+        if stream_prefix:
+            if first == 0:
+                raise ValueError('No frozen prefix to stream')
+            # Keep every original adapter factor for frozen hashing and export;
+            # the inference-only prefix wrappers deliberately hide base tensors.
+            parent_factors = all_adapters()
+            from qwen_streamed_inference import install_frozen_prefix
+            install_frozen_prefix(model,cfg['model'],first,lambda index:runtime.check())
         mx.eval(model.parameters())
-        runtime.event('load_end', **runtime.check())
+        runtime.event('load_end', **runtime.settle_after_load())
         prepared, clean = [], []
         for rows, destination in [(repairs, prepared), (replay, clean)]:
             for row in rows:
@@ -106,7 +117,7 @@ def main():
                 destination.append((tokens, mask))
         source_names = ['train_on_policy_repairs.py', 'bounded_text_runtime.py', 'conversation_objective.py',
                         'staged_character_grad.py', 'qwen_rng_checkpoint.py', 'qwen_chunked_attention.py',
-                        'repair_export_score.py']
+                        'repair_export_score.py', 'qwen_streamed_inference.py']
         atomic_json(out/'metadata.json', dict(config_sha256=sha(cli.config),
             source_sha256={n: sha(Path(__file__).with_name(n)) for n in source_names},
             trainable_parameters=sum(v.size for v in trainable.values()), trainable_names=sorted(trainable_names),

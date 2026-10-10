@@ -12,6 +12,7 @@ def main():
     p.add_argument('--adapter', type=Path, required=True)
     p.add_argument('--reference', type=Path, required=True)
     p.add_argument('--output', type=Path, required=True)
+    p.add_argument('--streamed', action='store_true')
     a = p.parse_args()
     ref = json.loads(a.reference.read_text())
     if sha(a.adapter/'adapters.safetensors') != ref['adapter_sha256']:
@@ -22,15 +23,23 @@ def main():
         raise ValueError('Preserve earlier verification')
     a.output.mkdir(parents=True)
     row = [json.loads(s) for s in Path(ref['data']).read_text().splitlines()][ref['row_index']]
-    with BoundedTextRuntime(a.output, memory_limit=3_400_000_000, max_seconds=180) as runtime:
+    with BoundedTextRuntime(a.output, memory_limit=1_800_000_000 if a.streamed else 3_400_000_000, max_seconds=300) as runtime:
         from mlx_lm import load
         from conversation_objective import encode_conversation
         from repair_export_score import selected_score
-        model, tok = load(ref['model'], adapter_path=str(a.adapter))
+        model, tok = load(ref['model'], adapter_path=str(a.adapter), lazy=a.streamed)
         model.eval()
+        if a.streamed:
+            from qwen_streamed_inference import install_streaming
+            def boundary(index):
+                metrics=runtime.check()
+                if metrics['mlx_peak_bytes']>2_000_000_000:
+                    raise RuntimeError('Streamed verification exceeded 2GB peak plan')
+            install_streaming(model,ref['model'],resident_layers=8,boundary=boundary)
         tokens, mask = encode_conversation(row, tok)
         runtime.event('full_model_score_begin', tokens=len(tokens))
-        actual = selected_score(model, tokens, mask, prefill_chunk=64, boundary=runtime.response_done)
+        actual = selected_score(model, tokens, mask, prefill_chunk=0 if a.streamed else 64,
+                                layerwise=a.streamed, boundary=runtime.response_done)
         reference = ref['score']
         if actual['target_tokens'] != reference['target_tokens']:
             raise ValueError('Target alignment differs')
@@ -38,7 +47,9 @@ def main():
         passed = difference < .02 and abs(actual['mean_loss']-reference['mean_loss']) < .005
         report = dict(status='pass' if passed else 'fail', maximum_logp_difference=difference,
             mean_loss_difference=abs(actual['mean_loss']-reference['mean_loss']), actual=actual, reference=ref,
-            metrics=runtime.response_done(), scope='Actual saved standard adapter reloaded on full36-layer base versus cached frozen-prefix suffix scoring; BF16 tolerance. No quality claim.')
+            metrics=runtime.response_done(), streamed_weights=a.streamed,
+            source_sha256={name:sha(Path(__file__).with_name(name)) for name in ['verify_repair_export.py','qwen_streamed_inference.py','repair_export_score.py','bounded_text_runtime.py']},
+            scope='Actual saved standard adapter reloaded on full36-layer base versus cached frozen-prefix suffix scoring; BF16 tolerance. Streaming mode retains full unchunked temporal attention and reloads frozen weights between layers. No quality claim.')
         atomic_json(a.output/'result.json', report)
         print(json.dumps(report), flush=True)
         if not passed:

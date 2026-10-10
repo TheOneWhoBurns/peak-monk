@@ -1,0 +1,48 @@
+{
+  "status": "pass",
+  "scope": "Six archived short and32exchange-history replies exactly reproduced. Execution parity, not new quality evidence.",
+  "compared_fields": [
+    "caller",
+    "reply",
+    "seed",
+    "input_tokens",
+    "output_tokens",
+    "finish_reason"
+  ],
+  "comparisons": [
+    {
+      "job": "lantern_s73_spine04",
+      "index": 0,
+      "differences": {}
+    },
+    {
+      "job": "lantern_s73_spine04",
+      "index": 1,
+      "differences": {}
+    },
+    {
+      "job": "lantern_s73_spine04",
+      "index": 2,
+      "differences": {}
+    },
+    {
+      "job": "lantern_s73_spine04",
+      "index": 3,
+      "differences": {}
+    },
+    {
+      "job": "library_s89_mentor32",
+      "index": 0,
+      "differences": {}
+    },
+    {
+      "job": "library_s89_mentor32",
+      "index": 1,
+      "differences": {}
+    }
+  ],
+  "max_mlx_peak_bytes": 1427519000,
+  "memory_pressure_levels": [
+    1
+  ]
+}

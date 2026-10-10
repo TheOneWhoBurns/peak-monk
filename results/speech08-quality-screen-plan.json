@@ -1,0 +1,22 @@
+{
+  "status": "Registered before final validation and before any run08 character-generation audit",
+  "candidate_selection": "Minimum validation_joint_ce among declared run08 checkpoints16,32,67; retain every score. This is development selection on two clips, not a holdout.",
+  "protocol": {
+    "backend": "moshi-streamed",
+    "sampling_preset": "local",
+    "seed": 41,
+    "frame_cap": null,
+    "inputs": "evaluation/audio-roleplay-v2",
+    "text_forcing": false,
+    "codec": "Mimi CPU decode in a separate process",
+    "transcription": "Local unprompted Whisperlarge-v3 CPUint8 after inference exits"
+  },
+  "sequence": [
+    "Run the complete24second s01 introduction probe and review decoded-audio ASR together with its text channel.",
+    "If s01passes, run complete25second s06 human-identity stability probe.",
+    "Only ifbothidentitycasespass, run remaining s02,s03,s04,s05 before considering any acceptance. Barge-in/backchannel conclusions require measured pre-existing overlap."
+  ],
+  "rejection": "A failed essentialidentitycase rejects the candidate; successful generation or falling CE cannot override it. Preserve raw audio/codes/text and limit conclusions to the observed cases.",
+  "no_cherry_picking": "No seed search or unregistered alternate-checkpoint quality screen. Later experiments need an explicitnewhypothesis.",
+  "limits": "Native outputs are generated much slower than real time in the guarded streaming runtime. Audio-timeline behavior does not demonstrate interactive latency. Model-only throughput and codec time remain separate."
+}
