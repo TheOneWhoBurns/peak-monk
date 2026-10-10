@@ -1,0 +1,22 @@
+{
+  "status": "Queued while run24 trains; none of these queued checks executed yet",
+  "active_process": "scripts/train_on_policy_repairs.py --config configs/train24.json",
+  "sequence": [
+    "Wait for96updates and completion.json; preserve any resource-guard failure instead of assuming success.",
+    "Run core pytest suite after model process exits.",
+    "Run guarded streamed loss-only evaluation of saved run23-step0032 against historical2.582853317260742. This validates the evaluator path separately from changed model weights.",
+    "Create hardlinked standard adapter directories for run24steps48and96, retaining recorded model config and export hashes.",
+    "Independently verify each run24 exported selected-score file through the full streamed backbone.",
+    "Capture both complete fixed20case development suites under greedy160token,assistant_eos_v2 settings; review every raw answer and apply essential-category guard.",
+    "Only after development selection, construct fresh release audits if eligible. No accepted checkpoint or held-out pass assumed.",
+    "Before another native text-transfer recipe, run score_moshi_text.py for base/run08/probe; compare SentencePiece and native initial token conventions and PAD/EPAD probability.",
+    "Smoke-test guarded chat runner and retain model/runtime provenance."
+  ],
+  "training_source_policy": "Do not edit running trainer or hashed dependencies; current separate chat/scoring changes do not affect run24.",
+  "broader_data": "data/dialogue-pilot-08.json remains ungenerated, training-only. Sampling it is useful if more repair data is needed, but not a held-out audit.",
+  "native_transfer": "Tiny and real single-update feasibility passed; high plain-text CE remains unexplained. Do not mistake the disposable update for a release candidate.",
+  "additional_checks": [
+    "Guarded chat.py source updated during run24 but not yet exercised against a real model. Run CLI smoke after training.",
+    "score_moshi_text.py now supports explicit SentencePiece/native initial-token comparison. No scoring jobs run yet."
+  ]
+}

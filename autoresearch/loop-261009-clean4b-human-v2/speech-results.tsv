@@ -5,3 +5,4 @@ speech-run03	d6d7e75	2.615679928698254	2.088573420329016	discard	Some Jun/valley
 speech-run06	e124eed	2.615679928698254	NA	failed	One completed update; nonfinite final-tail gradient on second episode; no candidate; masked-padding repair tested separately
 speech-run07	e1201aa	2.615679928698254	1.8933537934523097	discard; all screens complete	Loss-selected step60 fails both identity probes; peaches recall and overlapping backchannel improve; fixed barge-in still inconclusive
 speech-run07-followups	81a3a8b	NA	NA	discard	Steps40/80/160 local identity screens and matching baseline/candidate offline sampler screens all complete; no candidate passes both identity probes
+speech-run08	d19cfa3	1.8936137023845694	1.8423089983412781	discard	Matched diagnostic parent CE;67full-episode updates complete. Loss-selected67 fails predeclared essential s01 naturalness: Jun, there is my name. Jun, Jun. Other cases not run per stop rule.

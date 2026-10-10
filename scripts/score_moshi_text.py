@@ -15,6 +15,7 @@ from sample_dialogue_paths import sha
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--adapter', type=Path)
+    parser.add_argument('--bos', choices=['sentencepiece','native'], default='sentencepiece')
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
     args.output.mkdir(exist_ok=False)
@@ -23,7 +24,10 @@ def main():
     tokenizer = Path('models/moshi/tokenizer_spm_32k_3.model')
     import sentencepiece as spm
     processor = spm.SentencePieceProcessor(model_file=str(tokenizer))
-    tokens = [processor.bos_id()] + processor.encode(row['text']) + [processor.eos_id()]
+    # Native generation reserves text_out_vocab_size as its initial token.
+    # Compare that known convention with ordinary SentencePiece BOS explicitly.
+    initial = processor.bos_id() if args.bos == 'sentencepiece' else processor.get_piece_size()
+    tokens = [initial] + processor.encode(row['text']) + [processor.eos_id()]
     assert 2 < len(tokens) <= 256 and min(tokens) >= 0
     weights = Path('models/moshi/model.q4.safetensors')
     assert sha(weights) == '7959d590e23c1ebc78cfa3501344a6ff331561aa0cadc4429b733b890bbc919c'
@@ -32,7 +36,7 @@ def main():
         data_sha256=sha(row_path), tokenizer_sha256=sha(tokenizer), tokens=tokens,
         source_sha256={name:sha(Path(__file__).with_name(name)) for name in
             ['score_moshi_text.py','moshi_text_adjoint.py','moshi_weight_stream.py','moshi_training.py']},
-        head_tokens=16, diagnostic_excluded_ids=[0,3],
+        head_tokens=16, diagnostic_excluded_ids=[0,3], initial_token_mode=args.bos,
         scope='Read-only plain-text teacher forcing. Compare full CE with conditional lexical CE excluding native EPAD/PAD; no acceptance claim.'))
     with BoundedSpeechRuntime(args.output, memory_limit=1_400_000_000, max_seconds=600) as runtime:
         import mlx.core as mx

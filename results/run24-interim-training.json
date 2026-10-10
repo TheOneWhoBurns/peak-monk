@@ -1,0 +1,177 @@
+{
+  "status": "interim; training continues",
+  "updates": 56,
+  "unique_repairs_seen": 32,
+  "same_repair_repeat_comparisons": [
+    {
+      "id": "repairs_lantern_s89_indirect_mentor32_00",
+      "first_step": 30,
+      "later_step": 33,
+      "first_repair_ce": 2.3959970474243164,
+      "later_repair_ce": 2.371236562728882
+    },
+    {
+      "id": "repairs_lantern_s73_indirect_mentor32_01",
+      "first_step": 13,
+      "later_step": 34,
+      "first_repair_ce": 2.1817750930786133,
+      "later_repair_ce": 1.960045576095581
+    },
+    {
+      "id": "library_s73_lentils",
+      "first_step": 28,
+      "later_step": 35,
+      "first_repair_ce": 2.491273880004883,
+      "later_repair_ce": 2.4476585388183594
+    },
+    {
+      "id": "lantern_s73_coherence_19",
+      "first_step": 6,
+      "later_step": 36,
+      "first_repair_ce": 2.551706075668335,
+      "later_repair_ce": 2.3946890830993652
+    },
+    {
+      "id": "library_s89_loans",
+      "first_step": 32,
+      "later_step": 37,
+      "first_repair_ce": 2.5930635929107666,
+      "later_repair_ce": 2.5265183448791504
+    },
+    {
+      "id": "repairs_lantern_s89_indirect_mentor00_00",
+      "first_step": 22,
+      "later_step": 38,
+      "first_repair_ce": 2.9126949310302734,
+      "later_repair_ce": 2.7119100093841553
+    },
+    {
+      "id": "repairs_library_s73_indirect_mentor32_01",
+      "first_step": 4,
+      "later_step": 39,
+      "first_repair_ce": 1.7240328788757324,
+      "later_repair_ce": 1.4667762517929077
+    },
+    {
+      "id": "repairs_lantern_s73_indirect_mentor00_01",
+      "first_step": 29,
+      "later_step": 40,
+      "first_repair_ce": 1.910364031791687,
+      "later_repair_ce": 1.6770269870758057
+    },
+    {
+      "id": "repairs_library_s73_indirect_mentor00_01",
+      "first_step": 25,
+      "later_step": 41,
+      "first_repair_ce": 1.5960220098495483,
+      "later_repair_ce": 1.3950207233428955
+    },
+    {
+      "id": "library_s89_coherence_21",
+      "first_step": 7,
+      "later_step": 42,
+      "first_repair_ce": 3.2133285999298096,
+      "later_repair_ce": 2.919022560119629
+    },
+    {
+      "id": "lantern_s73_coherence_09",
+      "first_step": 20,
+      "later_step": 43,
+      "first_repair_ce": 2.899571418762207,
+      "later_repair_ce": 2.7266950607299805
+    },
+    {
+      "id": "lantern_s73_coherence_23",
+      "first_step": 23,
+      "later_step": 44,
+      "first_repair_ce": 2.424168109893799,
+      "later_repair_ce": 2.301565647125244
+    },
+    {
+      "id": "lantern_s73_coherence_02",
+      "first_step": 19,
+      "later_step": 45,
+      "first_repair_ce": 2.310612678527832,
+      "later_repair_ce": 2.1377696990966797
+    },
+    {
+      "id": "lantern_s89_memory",
+      "first_step": 2,
+      "later_step": 46,
+      "first_repair_ce": 1.8109896183013916,
+      "later_repair_ce": 1.6424163579940796
+    },
+    {
+      "id": "repairs_lantern_s89_uncued_mentor32_01",
+      "first_step": 14,
+      "later_step": 47,
+      "first_repair_ce": 1.4376848936080933,
+      "later_repair_ce": 1.292654037475586
+    },
+    {
+      "id": "library_s89_years",
+      "first_step": 31,
+      "later_step": 48,
+      "first_repair_ce": 3.0559041500091553,
+      "later_repair_ce": 2.9381775856018066
+    },
+    {
+      "id": "library_s89_coherence_28",
+      "first_step": 15,
+      "later_step": 49,
+      "first_repair_ce": 2.9042372703552246,
+      "later_repair_ce": 2.7874205112457275
+    },
+    {
+      "id": "repairs_library_s73_indirect_mentor00_00",
+      "first_step": 3,
+      "later_step": 50,
+      "first_repair_ce": 2.566805839538574,
+      "later_repair_ce": 2.284839153289795
+    },
+    {
+      "id": "repairs_lantern_s89_indirect_mentor00_01",
+      "first_step": 10,
+      "later_step": 51,
+      "first_repair_ce": 2.1411240100860596,
+      "later_repair_ce": 1.9502062797546387
+    },
+    {
+      "id": "lantern_s89_coherence_20",
+      "first_step": 27,
+      "later_step": 52,
+      "first_repair_ce": 2.365622043609619,
+      "later_repair_ce": 2.2596373558044434
+    },
+    {
+      "id": "lantern_s73_memory",
+      "first_step": 21,
+      "later_step": 53,
+      "first_repair_ce": 1.2550477981567383,
+      "later_repair_ce": 1.1813023090362549
+    },
+    {
+      "id": "library_s89_coherence_12",
+      "first_step": 9,
+      "later_step": 54,
+      "first_repair_ce": 1.9921386241912842,
+      "later_repair_ce": 1.836185336112976
+    },
+    {
+      "id": "lantern_s73_accomplishment",
+      "first_step": 24,
+      "later_step": 55,
+      "first_repair_ce": 3.1306562423706055,
+      "later_repair_ce": 2.990076780319214
+    },
+    {
+      "id": "repairs_lantern_s89_indirect_mentor32_01",
+      "first_step": 17,
+      "later_step": 56,
+      "first_repair_ce": 2.4852113723754883,
+      "later_repair_ce": 2.2443909645080566
+    }
+  ],
+  "mean_repeated_repair_ce_change": -0.1627829372882843,
+  "scope": "Training loss for repeated examples, before each update; not development or held-out quality. Different replay partners and preceding updates prevent per-example causal attribution."
+}

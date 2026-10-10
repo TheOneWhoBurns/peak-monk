@@ -11,9 +11,9 @@ Model training and experimental inference run locally on an Apple M2 Mac with 8 
 | Track | Evidence | Current limitation |
 | --- | --- | --- |
 | Text | Verified Qwen3-4B-Base, 4-bit, simple ChatML with no persona system prompt. The base scored 2/20 development cases; recent trained candidates score 13–17/20 under the same author rubric. | Essential continuity/control failures remain. Run20 passed development but failed its first final and pressure audits. |
-| Native speech | Moshi's original temporal and depth transformers, both audio streams, Mimi codec, and learned adapters. Run07 improved teacher-forced loss and passed two of six native development cases. | Identity failed. Loss, token accuracy, and successful audio generation do not establish a character-quality pass. |
+| Native speech | Moshi's original temporal and depth transformers, both audio streams, Mimi codec, and learned adapters. Run07 passed two of six native development cases. Run08 lowered matched validation CE by2.71%. | Run07 identity failed; run08 failed natural introduction. Loss, token accuracy, and audio generation do not establish a character-quality pass. |
 | Speech training memory | Exact full-episode gradients now stream one temporal layer at a time. The actual longest 452-frame episode plus an AdamW update passed at 564 MB peak MLX allocation. | This is a training-memory measurement, not an inference or real-time performance claim. |
-| Speech inference memory | Native inference with streamed temporal weights passed a short probe at 967 MB peak MLX allocation and normal system pressure. | It took 38.14 seconds per second of input audio, excluding codec work. The 1.28-second probe was mostly silence and does not measure character quality. |
+| Speech inference memory | A complete24second native introduction ran with streamed temporal weights at1.11GBpeak MLX allocation and normal pressure. | It took39.45seconds per second of input audio, excluding codec work. This is offline generation, not real-time interaction. |
 
 These are local development results, not independently judged public benchmark scores. Text and speech losses use different tokenizations and objectives and must not be compared as a common accuracy scale.
 
@@ -49,7 +49,7 @@ Run22's final checkpoint scored 16/20 and remains a research parent. Run23 train
 
 The first trajectory pilot contains 180 actual student replies across four seeded roots in two ordinary-conversation families. Late identity was often retained; incoherent continuations, caller-fact ownership, and invented history were more frequent failures. This does not establish that assistant instruction tuning causes the drift: the backbone is a base model, and matched depth controls are still limited.
 
-Fifty-one reviewed positive student replies are prepared as selective retention targets. Earlier erroneous replies remain context and receive no positive loss. They have not yet entered a new training run. A matched-depth mentor probe and eight additional spines across four new families are prepared in `data/dialogue-pilot-07.json` and `data/dialogue-pilot-08.json`. They are training-only; no generation success is claimed for these pending batches.
+Fifty-one reviewed positive student replies are included in run24 retention. Earlier erroneous replies remain context and receive no positive loss. Matched-depth mentor probes07and09 are complete and reviewed. Eight additional spines across four new families remain prepared but ungenerated in `data/dialogue-pilot-08.json`. All these trajectories are training-only.
 
 ## Evidence and reproducibility
 

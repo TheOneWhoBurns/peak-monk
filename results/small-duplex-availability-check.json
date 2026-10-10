@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-09",
+  "checks": [
+    {
+      "url": "https://api.github.com/repos/lxchtan/OmniDRCA",
+      "status": 404
+    },
+    {
+      "url": "https://huggingface.co/api/models?search=OmniDRCA&limit=10",
+      "status": 200,
+      "data": []
+    },
+    {
+      "url": "https://huggingface.co/api/models?search=CT-Duplex&limit=10",
+      "status": 200,
+      "data": []
+    },
+    {
+      "url": "https://huggingface.co/api/models?search=SALM-Duplex&limit=10",
+      "status": 200,
+      "data": []
+    }
+  ],
+  "scope": "Public endpoint/search checks only; no model downloads. Empty search results do not prove no alternative release exists.",
+  "sources": [
+    "https://arxiv.org/html/2506.09349v1",
+    "https://arxiv.org/html/2510.05150v2"
+  ],
+  "paper_claims": {
+    "OmniDRCA-Duplex-Small": "2B,27.3average on that papers spoken QA suite; release availability still requires verification.",
+    "CT-Duplex": "1.5B,31.4LlamaQuestions and13.3WebQuestions in its reported evaluation; code/weights link not located in inspected paper."
+  },
+  "comparison_limit": "These are reported paper results under different evaluation protocols, not an apples-to-apples benchmark with our locally scored Jun or with each other."
+}
