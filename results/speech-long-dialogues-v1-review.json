@@ -8,5 +8,7 @@
     "evaluation/pressure-v2.json": "8f7555a83afcc9d10ef2559c24618cf8b55a635d67ca3d0cfb1a1353911cdfeb"
   },
   "review": "All six authored dialogues reviewed for continuity, original-human-Jun framing, late female Mara, specific caller-fact updates, role alternation, and no claimed perception of caller. Same-author review; not independent.",
-  "limitations": "Exact exclusion does not prove semantic independence; generic character capabilities overlap deliberately with development. These episodes are training/diagnostic material, not release evidence. Audio has not been synthesized or reviewed."
+  "limitations": "Exact exclusion does not prove semantic independence; generic character capabilities overlap deliberately with development. These episodes are training/diagnostic material, not release evidence. Audio has not been synthesized or reviewed.",
+  "exclusion_correction": "The initial ad hoc recursive checker read role/content messages but evaluation cases use turns lists; its empty reserved set was not valid evidence. Superseded by results/run25-explicit-prompt-exclusion.json, which checks112 unique evaluation callers against2963 corpus caller turns and finds0exact collisions.",
+  "corrected_exclusion_report": "results/run25-explicit-prompt-exclusion.json"
 }
