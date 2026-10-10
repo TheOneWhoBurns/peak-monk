@@ -116,8 +116,11 @@ def main():
             parent_factors = all_adapters()
             from qwen_streamed_inference import install_frozen_prefix
             install_frozen_prefix(model,cfg['model'],first,lambda index:runtime.check())
-        mx.eval(model.parameters())
-        runtime.event('load_end', **runtime.settle_after_load())
+        if not cfg.get('defer_suffix_load', False):
+            mx.eval(model.parameters())
+        elif not stream_prefix:
+            raise ValueError('Deferred suffix loading requires streamed prefix caching')
+        runtime.event('load_end', deferred_suffix=bool(cfg.get('defer_suffix_load')), **runtime.settle_after_load())
         import copy
         rejected_rows = copy.deepcopy(repairs)
         for row in rejected_rows:
@@ -181,6 +184,9 @@ def main():
             mx.eval(parent_factors)
             if frozen_digest() != frozen_before:
                 raise RuntimeError('Suffix export remapping changed frozen factors')
+            if cfg.get('defer_suffix_load', False):
+                mx.eval(model.parameters())
+                runtime.event('suffix_materialized_after_cache', **runtime.settle_after_load())
             runtime.event('frozen_backbone_unloaded', **runtime.response_done())
             mx.reset_peak_memory()
             runtime.event('peak_counter_reset', scope='Subsequent MLX peaks cover suffix training; earlier prefix-computation peaks remain in runtime log')

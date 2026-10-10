@@ -1,0 +1,8 @@
+{
+  "status": "Stopped by existing OS pressure guard before updates; no candidate",
+  "config": "configs/preference-runtime-probe02.json",
+  "output": "adapters/preference-runtime-probe02",
+  "observed": "First1908token prefix cache began with12suffixlayers resident; memory pressure changed to2. Peak MLX1,840,601,528bytes, peak RSS829,456,384bytes. No gradient update completed.",
+  "interpretation": "Observed resource stop, not a kernel crash or proof of total memory capacity. Current eager suffix residency during prefix computation is unnecessary.",
+  "next": "Test deferring trainable suffix materialization until frozen history caches are complete. Preserve original probe and thresholds. First repeat the successful6layer two-update probe with identical inputs/seed and demand byte-identical adapters, then retry12layers in a fresh output."
+}

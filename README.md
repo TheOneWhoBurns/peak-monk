@@ -9,7 +9,7 @@ Jun speaks as human within the fiction. Historical and fictional monks inform or
 | Track | Latest evidence | Decision |
 | --- | --- | --- |
 | Text run25 | Qwen3-4B-Base, 4-bit, no persona system message. 128 offline preference updates, 95 reviewed pairs, 116 retention examples. Step 64: 14/20, CE 2.57523. Step 128: 16/20, CE 2.60996. | Both rejected. Essential late-female-teacher lore still fails; step 64 also fails persona control. |
-| Text run26 | Registered comparison changing trainable adapter depth from 6 to 12, retaining run25's parent, data, objective, seed and schedule. | Full run not started. The two-update longest-history resource/export trial is running. |
+| Text run26 | Registered comparison changing trainable adapter depth from 6 to 12, retaining run25's parent, data, objective, seed and schedule. | Full run not started. The first 12-layer probe stopped at the memory-pressure guard before any update. Deferring suffix loading then reproduced both six-layer control checkpoints byte-for-byte; a fresh 12-layer resource/export trial is next. |
 | Native speech08 | Exact full-episode training over 67 clips. Selected step 67 reduced fixed two-clip joint CE from 1.89361 to 1.84231. | Rejected: full unforced introduction was awkward and repetitive. |
 | Native speech09 | Alternates 24 native-start prose updates and 24 native audio replay updates, with separate AdamW states on shared adapters. Tiny numerical proof and actual two-update preflight passed. | All 48 updates complete. Both checkpoints rejected by the preservation screen; no native generation escalation. |
 
@@ -48,6 +48,12 @@ The 67 native training clips total 25.14 minutes; the longest is 36.16 seconds. 
 Fresh final and pressure suites are frozen in `evaluation/release-v3-frozen.json` before run26 training. They have never been run. A pre-use amendment clarified two ambiguous teacher cues; original drafts and the reason are preserved under `evaluation/archive/release-v3-draft01/`. The 95 current new caller prompts have no exact matches across 74 tracked conversation corpora (35,818 caller occurrences). They are same-author capability tests, not semantically independent benchmarks.
 
 `scripts/audit_prompt_exclusion.py` reads the explicit evaluation `turns` schema, rejects empty audits, verifies frozen v3 hashes, and automatically includes registered release exclusions. The first ad hoc check of the long-speech draft used the wrong schema; its invalid evidence was superseded transparently. Exact exclusion still does not establish semantic independence. No final/pressure prompts, outputs, or deliberate paraphrases may become training material.
+
+## Local storage
+
+The October 10 cleanup reclaimed 13.79 GB of observed free disk space (5.89 → 19.69 GB). Unused downloaded PersonaPlex and Qwen3.5 weight files were removed; exact revisions, hashes and restore URLs remain in `results/disk-cleanup-20261010.json`. These historical experiments require restoring their weights before rerunning. Current Qwen3-4B-Base, Moshi, Mimi, speech render/ASR models and both environments remain installed.
+
+Completed run23–25 and two old probe prefix tensors were removed; their manifests, training inputs, configurations, reference scores and results remain. Regenerate those caches for any future cache-dependent verification. All unique trained checkpoints remain at their existing paths. Byte-identical completed checkpoints now share hard links; treat these archival weights as immutable and write future experiments to fresh paths. The cleanup record distinguishes actual free-space gain from file-size estimates.
 
 ## Evidence and reproducibility
 

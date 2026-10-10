@@ -1,0 +1,30 @@
+{
+  "comparison": "Deferred suffix loading versus original six-layer two-update probe",
+  "checkpoints": [
+    {
+      "step": 1,
+      "files": [
+        "adapters/preference-runtime-probe01/0000001_adapters.safetensors",
+        "adapters/preference-deferred-parity/0000001_adapters.safetensors"
+      ],
+      "sha256": [
+        "de070fa06ecb87635225ac2cd01649493f775fa4f1ff414a43d3de5f94df8efa",
+        "de070fa06ecb87635225ac2cd01649493f775fa4f1ff414a43d3de5f94df8efa"
+      ],
+      "byte_identical": true
+    },
+    {
+      "step": 2,
+      "files": [
+        "adapters/preference-runtime-probe01/0000002_adapters.safetensors",
+        "adapters/preference-deferred-parity/0000002_adapters.safetensors"
+      ],
+      "sha256": [
+        "5bd932a77961dafd7a6f476430f63fd15181bc313504a0e7c08f8eb6236c6ea9",
+        "5bd932a77961dafd7a6f476430f63fd15181bc313504a0e7c08f8eb6236c6ea9"
+      ],
+      "byte_identical": true
+    }
+  ],
+  "passed": true
+}
