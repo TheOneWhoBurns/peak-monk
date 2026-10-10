@@ -1,0 +1,62 @@
+{
+  "status": "pass",
+  "device": "gpu",
+  "dtype": "bfloat16",
+  "cases": [
+    {
+      "method": "staged",
+      "dtype": "mlx.core.bfloat16",
+      "head_frames": 4,
+      "loss_error": 0.0,
+      "maximum_gradient_error": 2.9802322387695312e-08,
+      "relative_gradient_l2_error": 4.674302555537035e-08,
+      "tolerance": 0.02
+    },
+    {
+      "method": "staged",
+      "dtype": "mlx.core.bfloat16",
+      "head_frames": 8,
+      "loss_error": 0.0,
+      "maximum_gradient_error": 2.9802322387695312e-08,
+      "relative_gradient_l2_error": 4.65938548539575e-08,
+      "tolerance": 0.02
+    },
+    {
+      "method": "staged",
+      "dtype": "mlx.core.bfloat16",
+      "head_frames": 16,
+      "loss_error": 0.0011553764343261719,
+      "maximum_gradient_error": 0.0019323378801345825,
+      "relative_gradient_l2_error": 0.0047168553594652135,
+      "tolerance": 0.02
+    },
+    {
+      "method": "layerwise",
+      "dtype": "mlx.core.bfloat16",
+      "head_frames": 4,
+      "loss_error": 0.0,
+      "maximum_gradient_error": 2.9802322387695312e-08,
+      "relative_gradient_l2_error": 4.674302555537035e-08,
+      "tolerance": 0.02
+    },
+    {
+      "method": "layerwise",
+      "dtype": "mlx.core.bfloat16",
+      "head_frames": 8,
+      "loss_error": 0.0,
+      "maximum_gradient_error": 2.9802322387695312e-08,
+      "relative_gradient_l2_error": 4.65938548539575e-08,
+      "tolerance": 0.02
+    },
+    {
+      "method": "layerwise",
+      "dtype": "mlx.core.bfloat16",
+      "head_frames": 16,
+      "loss_error": 0.0011553764343261719,
+      "maximum_gradient_error": 0.0019323378801345825,
+      "relative_gradient_l2_error": 0.0047168553594652135,
+      "tolerance": 0.02
+    }
+  ],
+  "scope": "Tiny random quantized Moshi, nonzero adapters, all trainable gradients against full uncheckpointed joint loss. Head chunks include ragged masked tails. Not pretrained-model memory or quality evidence."
+}

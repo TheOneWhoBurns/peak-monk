@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "steps": [
+    {
+      "step": 1,
+      "gradient_norm": 11.48668098449707,
+      "clip_scale": 0.026117203757166862,
+      "parameter_error": 0.0,
+      "state_error": 0.0
+    },
+    {
+      "step": 2,
+      "gradient_norm": 12.20815658569336,
+      "clip_scale": 0.024573734030127525,
+      "parameter_error": 0.0,
+      "state_error": 0.0
+    }
+  ],
+  "scope": "Actual pinned MLX AdamW: one common global clipping scale, separate block optimizers with serialized state and equal global steps. Synthetic gradients; does not verify pretrained gradients or memory."
+}

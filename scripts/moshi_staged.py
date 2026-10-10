@@ -12,17 +12,13 @@ from moshi_training import LoRALinear, temporal_forward, depth_forward
 from moshi_windowed import normalizers
 
 
-def staged_episode_grad(model, streams, head_frames=16, padding_weight=.05):
+def staged_head_grad(model, hidden, targets, head_frames=16, padding_weight=.05, boundary=None):
+    """Joint head loss, text-head gradient and normalized-hidden cotangent."""
     if head_frames < 1 or not 0 < padding_weight <= 1:
         raise ValueError('Positive head-frame count and valid padding weight required')
     if not isinstance(model.text_linear, LoRALinear):
         raise TypeError('Expected the audited Moshi text-head adapter')
-    for key, _ in tree_flatten(model.trainable_parameters()):
-        if not key.startswith(('transformer.layers.', 'text_linear.')):
-            raise ValueError('Only temporal and text-head adapters are supported')
-    inputs, targets = streams[:, :, :-1], streams[:, :, 1:]
     denominator = normalizers(model, targets, padding_weight)
-    hidden = mx.stop_gradient(temporal_forward(model, inputs, checkpoint_layers=True)[0])
     mx.eval(hidden)
     head_gradient = tree_map(mx.zeros_like, model.text_linear.trainable_parameters())
     total = mx.array(0., dtype=mx.float32)
@@ -62,10 +58,25 @@ def staged_episode_grad(model, streams, head_frames=16, padding_weight=.05):
         cotangents.append(cotangent)
         del value, part, cotangent, h, y
         mx.clear_cache()
+        if boundary is not None:
+            boundary(phase='head_gradient_chunk', frame=end)
     cotangent = mx.concatenate(cotangents, axis=1)
     mx.eval(cotangent)
     del hidden, cotangents
     mx.clear_cache()
+    return total, head_gradient, cotangent
+
+
+def staged_episode_grad(model, streams, head_frames=16, padding_weight=.05):
+    for key, _ in tree_flatten(model.trainable_parameters()):
+        if not key.startswith(('transformer.layers.', 'text_linear.')):
+            raise ValueError('Only temporal and text-head adapters are supported')
+    inputs, targets = streams[:, :, :-1], streams[:, :, 1:]
+    hidden = mx.stop_gradient(temporal_forward(model, inputs, checkpoint_layers=True)[0])
+    mx.eval(hidden)
+    total, head_gradient, cotangent = staged_head_grad(model, hidden, targets,
+                                                      head_frames, padding_weight)
+    del hidden
 
     def replay(current):
         hidden = temporal_forward(current, inputs, checkpoint_layers=True)[0]

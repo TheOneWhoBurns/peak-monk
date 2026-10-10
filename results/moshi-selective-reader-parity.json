@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "tensor_bit_patterns": {
+    "p.bf16": 0,
+    "p.uint": 0,
+    "q.float": 0
+  },
+  "scope": "Selective range reader preserves BF16/U32/F32 dtype and values; prefixes remapped without loading excluded tensors."
+}

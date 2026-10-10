@@ -9,6 +9,7 @@ from mlx.utils import tree_flatten
 from moshi_mlx.models import Lm, config_v0_1
 from moshi_training import attach_lora, loss
 from moshi_staged import staged_episode_grad
+from moshi_layerwise import layerwise_episode_grad
 
 p = argparse.ArgumentParser()
 p.add_argument('--device', choices=['cpu', 'gpu'], default='cpu')
@@ -51,16 +52,19 @@ for dtype, tolerance in [(mx.float32, 1e-5)] if a.dtype == 'float32' else [(mx.b
     reference_grad = dict(tree_flatten(reference_grad))
     reference_norm = sum(float(mx.sum(g.astype(mx.float32)**2).item()) for g in reference_grad.values())**.5
     assert reference_norm > 0
-    for frames in [4, 8, 16]:
-        print('Staged head frames', frames, flush=True)
-        actual, grad = staged_episode_grad(model, tokens, head_frames=frames)
+    for method, fn, frames in [(name, fn, frames) for name, fn in
+            [('staged', staged_episode_grad), ('layerwise', layerwise_episode_grad)]
+            for frames in [4, 8, 16]]:
+        print(method, 'head frames', frames, flush=True)
+        actual, grad = fn(model, tokens, head_frames=frames)
         mx.eval(actual, grad)
+        assert set(dict(tree_flatten(grad))) == set(reference_grad)
         errors = [g.astype(mx.float32)-reference_grad[k].astype(mx.float32) for k, g in tree_flatten(grad)]
         max_error = max(float(mx.max(mx.abs(e)).item()) for e in errors)
         relative = sum(float(mx.sum(e**2).item()) for e in errors)**.5 / reference_norm
         error = abs(actual.item()-reference.item())
         assert error <= tolerance and max_error <= tolerance and relative <= tolerance, (dtype, frames, error, max_error, relative)
-        reports.append(dict(dtype=str(dtype), head_frames=frames, loss_error=error,
+        reports.append(dict(method=method, dtype=str(dtype), head_frames=frames, loss_error=error,
             maximum_gradient_error=max_error, relative_gradient_l2_error=relative, tolerance=tolerance))
 report = dict(status='pass', device=a.device, dtype=a.dtype, cases=reports,
     scope='Tiny random quantized Moshi, nonzero adapters, all trainable gradients against full uncheckpointed joint loss. Head chunks include ragged masked tails. Not pretrained-model memory or quality evidence.')

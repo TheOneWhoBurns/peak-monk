@@ -1,0 +1,27 @@
+{
+  "weights": "models/moshi/model.q4.safetensors",
+  "weights_sha256": "7959d590e23c1ebc78cfa3501344a6ff331561aa0cadc4429b733b890bbc919c",
+  "parent": "adapters/speech-run07/candidate.safetensors",
+  "parent_sha256": "2e2b8363b1c7350ccc55ca97c238ea054a6ae2fa573da92c7c401e0f9083156c",
+  "output": "adapters/speech-run08",
+  "data": [
+    "data/speech_codes",
+    "data/speech_codes-overlap-v2"
+  ],
+  "steps": 67,
+  "checkpoints": [
+    16,
+    32,
+    67
+  ],
+  "seed": 163,
+  "rank": 8,
+  "scale": 2.0,
+  "learning_rate": 3e-05,
+  "weight_decay": 0.01,
+  "clip_norm": 1.0,
+  "head_frames": 8,
+  "text_padding_weight": 0.05,
+  "memory_limit": 2800000000,
+  "max_seconds": 5400
+}

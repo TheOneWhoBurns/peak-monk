@@ -1,0 +1,49 @@
+{
+  "status": "Tiny numerical proofs and actual longest-episode full-gradient update passed",
+  "reason": "Earlier speech runs01-03 already used cached frozen prefixes with last4layer adaptation and failed native character audits. Repeating that alone is not a new solution. Run07 adapted all32temporal layers but truncated cross-window gradients at16frames. The later full-episode probe crashed the Mac while the full base was resident.",
+  "hypothesis": "Stream temporal layers through memory and explicitly propagate the hidden-state cotangent backward, preserving the full-episode gradient for all32temporal adapters while avoiding simultaneous residency of their frozen base weights.",
+  "forward": [
+    "Load frozen input embeddings only and compute delayed-stream input representation",
+    "Load one temporal block and its current adapter; run the complete episode with original causal/context mask; save each boundary hidden state; release block weights",
+    "Load output norm, text head and frozen depth former. Compute joint head loss in independent frame chunks with global episode normalizers; accumulate text-head gradient and hidden cotangent"
+  ],
+  "backward": [
+    "Propagate head cotangent through output norm",
+    "In reverse layer order, reload the exact forward-time block and its adapter plus saved input hidden; evaluate VJP for adapter parameters and input hidden; save adapter gradient and pass hidden cotangent to the preceding block",
+    "Do not detach the cotangent between temporal blocks or truncate the episode in time"
+  ],
+  "optimizer": [
+    "Complete all layer gradients before any parameter update",
+    "Accumulate full global gradient norm, apply one common clipping factor",
+    "Stream AdamW state and adapter update block by block with identical optimizer step counters; commit the complete candidate only after every block update succeeds"
+  ],
+  "diagnostics": [
+    "Separate spoken-text versus padding CE for the actual run07parent",
+    "Per-agent-codebook CE rather than joint aggregate only",
+    "Same codec/delay/stream geometry as previously verified native pipeline",
+    "After training, free-running native speech, timing and overlap audits; teacher-forced metrics cannot establish character or voice quality"
+  ],
+  "required_proofs": [
+    "FP32 tiny full-model loss and every gradient versus streamed algorithm",
+    "BF16 tiny Metal parity, avoiding the previously failing BF16 CPU path",
+    "Two-step AdamW global clipping and state-offload parity",
+    "Pretrained selected-layer load footprint and full longest-episode finite update within normal-pressure resource guards",
+    "Standard complete adapter export remapping and reloaded forward parity"
+  ],
+  "resource_tradeoff": "Substantially more weight I/O and recomputation. Full pretrained weights remain unchanged. Scratch hidden states and gradients are bounded per episode. Actual feasibility and speed are unmeasured.",
+  "constraints": [
+    "Keep speech environment pinned at MLX0.26.5 until independently validated otherwise",
+    "No wired-limit calls, no concurrent heavy model processes, durable phase logs",
+    "The existing2GBtext suffix training success does not establish native feasibility",
+    "Do not re-run the failed full-resident native probe unchanged"
+  ],
+  "next": "Run07/base teacher-forced spoken and per-codebook diagnostics, followed by transactional full-gradient speech-run08. Native free-running quality remains unproven.",
+  "evidence": [
+    "results/moshi-layerwise-gradient-fp32.json",
+    "results/moshi-layerwise-gradient-bf16-metal.json",
+    "results/moshi-streamed-optimizer-parity.json",
+    "results/moshi-disk-adjoint-diagnostics-parity.json",
+    "results/moshi-streamed-parts-probe/result.json",
+    "results/moshi-disk-adjoint-real-probe/result.json"
+  ]
+}

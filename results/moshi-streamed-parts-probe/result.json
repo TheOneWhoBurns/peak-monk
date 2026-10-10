@@ -1,0 +1,45 @@
+{
+  "status": "pass",
+  "parts": [
+    {
+      "part": "inputs",
+      "load_seconds": 0.511268958999608,
+      "parameter_bytes": 165849600,
+      "metrics": {
+        "elapsed_seconds": 0.6643443749999278,
+        "peak_rss_bytes": 201637888,
+        "swap_bytes": 1136656384,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 166642080,
+        "mlx_active_bytes": 166641672
+      }
+    },
+    {
+      "part": 0,
+      "load_seconds": 0.15295912500005215,
+      "parameter_bytes": 129220608,
+      "metrics": {
+        "elapsed_seconds": 0.845235457999479,
+        "peak_rss_bytes": 201637888,
+        "swap_bytes": 1136656384,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 166642080,
+        "mlx_active_bytes": 129220616
+      }
+    },
+    {
+      "part": "heads",
+      "load_seconds": 1.901719000000412,
+      "parameter_bytes": 529748992,
+      "metrics": {
+        "elapsed_seconds": 2.7664957919996596,
+        "peak_rss_bytes": 258162688,
+        "swap_bytes": 1136656384,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 530145316,
+        "mlx_active_bytes": 530145288
+      }
+    }
+  ],
+  "scope": "Actual pretrained selective-part loads only; no full backbone resident and no gradient/quality evidence."
+}

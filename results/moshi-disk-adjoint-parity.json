@@ -1,0 +1,30 @@
+{
+  "status": "pass",
+  "device": "gpu",
+  "dtype": "bfloat16",
+  "cases": [
+    {
+      "step": 1,
+      "loss_error": 4.76837158203125e-07,
+      "maximum_gradient_error": 2.9802322387695312e-08,
+      "parameter_error": 0.0,
+      "update": {
+        "clip_scale": 0.2820652433049819,
+        "adapter_tensors": 10,
+        "step": 1
+      }
+    },
+    {
+      "step": 2,
+      "loss_error": 4.76837158203125e-07,
+      "maximum_gradient_error": 4.470348358154297e-08,
+      "parameter_error": 2.3283064365386963e-10,
+      "update": {
+        "clip_scale": 0.2810919760452606,
+        "adapter_tensors": 10,
+        "step": 2
+      }
+    }
+  ],
+  "scope": "Tiny quantized Moshi: actual selective tensor reader, disk boundary activations, reverse layer VJPs, global clipping, per-part optimizer state reload, two complete standard adapter exports compared against full-model gradients and updates. Not pretrained feasibility or speech quality."
+}

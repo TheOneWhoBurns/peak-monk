@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "episode": "anger",
+  "frames": 452,
+  "loss": 1.963909387588501,
+  "gradient_norm": 2.5758009066238823,
+  "update": {
+    "clip_scale": 0.38822876160425707,
+    "adapter_tensors": 130,
+    "step": 1
+  },
+  "seconds": 43.640687749999415,
+  "metrics": {
+    "elapsed_seconds": 43.91218233299969,
+    "peak_rss_bytes": 344293376,
+    "swap_bytes": 1119879168,
+    "memory_pressure_level": 1,
+    "mlx_peak_bytes": 563988642,
+    "mlx_active_bytes": 32776
+  },
+  "adapter": "adapters/speech-streamed-probe/candidate.safetensors",
+  "adapter_sha256": "f60a37839c408fe85f3be147957191f867ac889b06189b916b3b18cb9b14f688",
+  "parent_sha256": "2e2b8363b1c7350ccc55ca97c238ea054a6ae2fa573da92c7c401e0f9083156c",
+  "scope": "Actual pretrained Moshi plus run07parent, complete episode and all32temporal adapter gradients, one finite disposable update. Gradient math validated separately on tiny models; no native quality evidence."
+}

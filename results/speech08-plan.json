@@ -1,0 +1,18 @@
+{
+  "status": "planned",
+  "hypothesis": "Full episode gradients can improve native character learning and new overlap examples can improve timing, while a lower continuation learning rate limits disruption.",
+  "parent": "adapters/speech-run07/candidate.safetensors",
+  "parent_sha256": "2e2b8363b1c7350ccc55ca97c238ea054a6ae2fa573da92c7c401e0f9083156c",
+  "training": "One shuffled pass over 67 approved training episodes, all32temporal LoRA blocks and text head; all cross-frame gradients preserved. Fresh AdamW; checkpoint16,32,67.",
+  "changed_from_run07": [
+    "Full-episode rather than16frame truncated gradients",
+    "Ten additional reviewed overlap examples",
+    "Continuation from best step60 rather than initial model",
+    "Learning rate3e-5; fresh optimizer"
+  ],
+  "causal_limit": "Several changes together: this is an outcome-seeking continuation, not an isolated causal estimate of gradient truncation.",
+  "selection": "Fixed two validation episodes with separate spoken-text and audio-codebook metrics; native unforced speech audits required. No quality acceptance from teacher-forced loss alone.",
+  "resource_plan": "Serialized model parts; observed longest452frame update43.6seconds and564MBMLXpeak. Same3.2GBpeak stop and normal-pressure/swap guards. No wiring.",
+  "durability": "Commit full candidate and all optimizer parts as a generation; atomic latest pointer; preserve declared checkpoints; source/data/config hashes required on resume.",
+  "config": "configs/speech08.json"
+}

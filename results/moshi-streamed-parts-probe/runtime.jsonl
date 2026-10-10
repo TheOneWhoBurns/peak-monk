@@ -1,0 +1,8 @@
+{"time": 1791594987.921458, "phase": "runtime_ready", "initial_swap_bytes": 1136656384, "memory_guideline_bytes": 2800000000, "policy": "One model part at a time; no wiring; synchronized eviction and guards at phase boundaries"}
+{"time": 1791594988.0113971, "phase": "load_begin", "part": "inputs"}
+{"time": 1791594988.532646, "phase": "load_complete", "part": "inputs", "load_seconds": 0.511268958999608, "parameter_bytes": 165849600, "metrics": {"elapsed_seconds": 0.6643443749999278, "peak_rss_bytes": 201637888, "swap_bytes": 1136656384, "memory_pressure_level": 1, "mlx_peak_bytes": 166642080, "mlx_active_bytes": 166641672}}
+{"time": 1791594988.5506501, "phase": "load_begin", "part": 0}
+{"time": 1791594988.711071, "phase": "load_complete", "part": 0, "load_seconds": 0.15295912500005215, "parameter_bytes": 129220608, "metrics": {"elapsed_seconds": 0.845235457999479, "peak_rss_bytes": 201637888, "swap_bytes": 1136656384, "memory_pressure_level": 1, "mlx_peak_bytes": 166642080, "mlx_active_bytes": 129220616}}
+{"time": 1791594988.72191, "phase": "load_begin", "part": "heads"}
+{"time": 1791594990.6322198, "phase": "load_complete", "part": "heads", "load_seconds": 1.901719000000412, "parameter_bytes": 529748992, "metrics": {"elapsed_seconds": 2.7664957919996596, "peak_rss_bytes": 258162688, "swap_bytes": 1136656384, "memory_pressure_level": 1, "mlx_peak_bytes": 530145316, "mlx_active_bytes": 530145288}}
+{"time": 1791594990.6644092, "phase": "runtime_exit", "error": null}
