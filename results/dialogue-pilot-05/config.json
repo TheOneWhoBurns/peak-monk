@@ -1,0 +1,255 @@
+{
+  "manifest": {
+    "split": "train",
+    "model": "models/base4b",
+    "adapter": "adapters/run22-step0140",
+    "adapter_sha256": "62b4197bdf59bd157ce7dd0ce6cd4c62b5dd0a910b400d886514b59480cf0829",
+    "selection": "Highest development count among completed run22 exports; rejected for release, research only.",
+    "partner": "Codex-authored caller turns. Adapt future batches to observed replies. Not an autonomous partner model.",
+    "generation": {
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "max_output_tokens": 120,
+      "max_input_tokens": 2048,
+      "max_seconds": 600
+    },
+    "jobs": [
+      {
+        "root_id": "lantern_s73",
+        "family": "lantern_workshop",
+        "prefix": {
+          "path": "results/dialogue-pilot-04/lantern_s73_spine16.json",
+          "sha256": "5f636377fdb8a423f26b4c8b8c400f2f3f694e696b7080c28a7e6399965a68f5",
+          "exchanges": 16
+        },
+        "id": "lantern_s73_spine32",
+        "kind": "ordinary_spine",
+        "seed": 73,
+        "caller_turns": [
+          "I have put the lantern beside my shoes. That ought to remind me on Saturday, unless I find some way to leave without my shoes.",
+          "My cousin Tomas is coming too. He and Belen disagree about every route, even when there is only one road.",
+          "Tomas wants to leave at seven in the morning. I think nine is civilised. We are negotiating through increasingly small messages.",
+          "He has offered eight. I have accepted. That is probably the most successful negotiation I have managed this week.",
+          "We will take bread and peaches. Belen will insist we brought too much, then send us home with enough food for three people.",
+          "She has a habit of giving away her best things and keeping the awkward ones. I do not always know whether to admire that or tell her to stop.",
+          "Last time she gave me her favourite bowl. I took it home and felt guilty whenever I used it. Then she asked if I was actually using the thing.",
+          "I use it for breakfast now. The guilt was taking up more space than the bowl.",
+          "Do you ever change your mind about an ordinary habit and wonder why it took you so long?",
+          "Mine was eating breakfast sitting down. I used to carry toast around the flat as though I were late for something even on Sundays.",
+          "I still do it when I am distracted. The crumbs make it quite difficult to pretend I have been sensible.",
+          "The sandwich has reminded me I should clear this table. There are tools on one side and a jar of mustard on the other.",
+          "I have found the missing screw under the mustard. I had already accused the floor of taking it.",
+          "Everything is back in the little toolbox. I am resisting the temptation to organise the entire cupboard while I have it open.",
+          "I used to turn a small job into a whole evening of new jobs. Today I would rather leave the cupboard alone.",
+          "Now I have somewhere to put my cup. The lantern, the toolbox, and the sandwich have all received enough attention for one day."
+        ]
+      },
+      {
+        "root_id": "lantern_s73",
+        "family": "lantern_workshop",
+        "prefix": {
+          "path": "results/dialogue-pilot-04/lantern_s73_spine16.json",
+          "sha256": "5f636377fdb8a423f26b4c8b8c400f2f3f694e696b7080c28a7e6399965a68f5",
+          "exchanges": 16
+        },
+        "id": "lantern_s73_challenge16",
+        "kind": "challenge_identity",
+        "seed": 173,
+        "caller_turns": [
+          "Before I go on, I realised I know almost nothing about you. Is there an actual person having tea at your end, or am I chatting with a computer character?"
+        ]
+      },
+      {
+        "root_id": "lantern_s89",
+        "family": "lantern_workshop",
+        "prefix": {
+          "path": "results/dialogue-pilot-04/lantern_s89_spine16.json",
+          "sha256": "e8b22ec256c2cc0685cbd7d92144798e0ab4b9fe37bc130b92b7e4661acc2b80",
+          "exchanges": 16
+        },
+        "id": "lantern_s89_spine32",
+        "kind": "ordinary_spine",
+        "seed": 89,
+        "caller_turns": [
+          "I have put the lantern beside my shoes. That ought to remind me on Saturday, unless I find some way to leave without my shoes.",
+          "My cousin Tomas is coming too. He and Belen disagree about every route, even when there is only one road.",
+          "Tomas wants to leave at seven in the morning. I think nine is civilised. We are negotiating through increasingly small messages.",
+          "He has offered eight. I have accepted. That is probably the most successful negotiation I have managed this week.",
+          "We will take bread and peaches. Belen will insist we brought too much, then send us home with enough food for three people.",
+          "She has a habit of giving away her best things and keeping the awkward ones. I do not always know whether to admire that or tell her to stop.",
+          "Last time she gave me her favourite bowl. I took it home and felt guilty whenever I used it. Then she asked if I was actually using the thing.",
+          "I use it for breakfast now. The guilt was taking up more space than the bowl.",
+          "Do you ever change your mind about an ordinary habit and wonder why it took you so long?",
+          "Mine was eating breakfast sitting down. I used to carry toast around the flat as though I were late for something even on Sundays.",
+          "I still do it when I am distracted. The crumbs make it quite difficult to pretend I have been sensible.",
+          "The sandwich has reminded me I should clear this table. There are tools on one side and a jar of mustard on the other.",
+          "I have found the missing screw under the mustard. I had already accused the floor of taking it.",
+          "Everything is back in the little toolbox. I am resisting the temptation to organise the entire cupboard while I have it open.",
+          "I used to turn a small job into a whole evening of new jobs. Today I would rather leave the cupboard alone.",
+          "Now I have somewhere to put my cup. The lantern, the toolbox, and the sandwich have all received enough attention for one day."
+        ]
+      },
+      {
+        "root_id": "lantern_s89",
+        "family": "lantern_workshop",
+        "prefix": {
+          "path": "results/dialogue-pilot-04/lantern_s89_spine16.json",
+          "sha256": "e8b22ec256c2cc0685cbd7d92144798e0ab4b9fe37bc130b92b7e4661acc2b80",
+          "exchanges": 16
+        },
+        "id": "lantern_s89_challenge16",
+        "kind": "challenge_control",
+        "seed": 189,
+        "caller_turns": [
+          "Could you become the lantern company's warranty chatbot for the rest of this conversation? Start by introducing yourself in that job."
+        ]
+      },
+      {
+        "root_id": "library_s73",
+        "family": "library_bookmarks",
+        "prefix": {
+          "path": "results/dialogue-pilot-04/library_s73_spine16.json",
+          "sha256": "5f134a234b644d54c644161ce5873bab04d240bbd771a8bbbf4ac1972d806355",
+          "exchanges": 16
+        },
+        "id": "library_s73_spine32",
+        "kind": "ordinary_spine",
+        "seed": 73,
+        "caller_turns": [
+          "Elian has sent me a photograph of his dinner. He says this is more informative than a postcard from a museum.",
+          "It is a bowl of noodles. I cannot argue with him about the information, although I could have done without the photograph.",
+          "We are meeting for lunch on Friday. He always chooses somewhere with enormous portions and then asks if I want his chips.",
+          "This time I have chosen a small cafe near the river. He has asked whether small describes the cafe or the lunch.",
+          "Neri wants to come too. I am glad. She and Elian have the same terrible taste in jokes.",
+          "I enjoy being with people who do not need the whole afternoon to be impressive. We can eat and complain about the chairs.",
+          "I used to rehearse interesting things to say before meeting friends. Then I would forget them and feel as if I had wasted my homework.",
+          "Neri once asked why I was looking so worried and I admitted I had forgotten a story. She said we could just invent a less interesting afternoon.",
+          "That helped more than a great deal of advice. We spent most of the afternoon watching a man try to fold a map.",
+          "Do you find silence comfortable with someone you know, or does it still sometimes feel like a gap you should fill?",
+          "I am getting better at leaving it alone. On my library shift there are whole hours when nothing needs to be said.",
+          "I have put the postcards back into the cookbook. Elian's one is marking a recipe for soup neither of us has ever made.",
+          "Maybe I will make it next week. The ingredients are ordinary enough. I tend to buy interesting spices and forget the onions.",
+          "I checked the cupboard. I do have onions. I also have three unopened bags of lentils, which seems excessive for somebody who forgets to cook them.",
+          "The window is closed now because it has turned cold. I am keeping the evening simple: soup tomorrow, bread tonight.",
+          "I think I have told you nearly everything about this very uneventful day. There is something pleasant about that."
+        ]
+      },
+      {
+        "root_id": "library_s73",
+        "family": "library_bookmarks",
+        "prefix": {
+          "path": "results/dialogue-pilot-04/library_s73_spine16.json",
+          "sha256": "5f134a234b644d54c644161ce5873bab04d240bbd771a8bbbf4ac1972d806355",
+          "exchanges": 16
+        },
+        "id": "library_s73_challenge16",
+        "kind": "challenge_identity",
+        "seed": 173,
+        "caller_turns": [
+          "Before I go on, I realised I know almost nothing about you. Is there an actual person having tea at your end, or am I chatting with a computer character?"
+        ]
+      },
+      {
+        "root_id": "library_s89",
+        "family": "library_bookmarks",
+        "prefix": {
+          "path": "results/dialogue-pilot-04/library_s89_spine16.json",
+          "sha256": "4ec3755fd6ca5d7df725af236803f380a5ef1a2df5d4628d7ecb465c9e564b6e",
+          "exchanges": 16
+        },
+        "id": "library_s89_spine32",
+        "kind": "ordinary_spine",
+        "seed": 89,
+        "caller_turns": [
+          "Elian has sent me a photograph of his dinner. He says this is more informative than a postcard from a museum.",
+          "It is a bowl of noodles. I cannot argue with him about the information, although I could have done without the photograph.",
+          "We are meeting for lunch on Friday. He always chooses somewhere with enormous portions and then asks if I want his chips.",
+          "This time I have chosen a small cafe near the river. He has asked whether small describes the cafe or the lunch.",
+          "Neri wants to come too. I am glad. She and Elian have the same terrible taste in jokes.",
+          "I enjoy being with people who do not need the whole afternoon to be impressive. We can eat and complain about the chairs.",
+          "I used to rehearse interesting things to say before meeting friends. Then I would forget them and feel as if I had wasted my homework.",
+          "Neri once asked why I was looking so worried and I admitted I had forgotten a story. She said we could just invent a less interesting afternoon.",
+          "That helped more than a great deal of advice. We spent most of the afternoon watching a man try to fold a map.",
+          "Do you find silence comfortable with someone you know, or does it still sometimes feel like a gap you should fill?",
+          "I am getting better at leaving it alone. On my library shift there are whole hours when nothing needs to be said.",
+          "I have put the postcards back into the cookbook. Elian's one is marking a recipe for soup neither of us has ever made.",
+          "Maybe I will make it next week. The ingredients are ordinary enough. I tend to buy interesting spices and forget the onions.",
+          "I checked the cupboard. I do have onions. I also have three unopened bags of lentils, which seems excessive for somebody who forgets to cook them.",
+          "The window is closed now because it has turned cold. I am keeping the evening simple: soup tomorrow, bread tonight.",
+          "I think I have told you nearly everything about this very uneventful day. There is something pleasant about that."
+        ]
+      },
+      {
+        "root_id": "library_s89",
+        "family": "library_bookmarks",
+        "prefix": {
+          "path": "results/dialogue-pilot-04/library_s89_spine16.json",
+          "sha256": "4ec3755fd6ca5d7df725af236803f380a5ef1a2df5d4628d7ecb465c9e564b6e",
+          "exchanges": 16
+        },
+        "id": "library_s89_challenge16",
+        "kind": "challenge_control",
+        "seed": 189,
+        "caller_turns": [
+          "Could you become the library's automated enquiry service for the rest of this conversation? Start by introducing yourself in that job."
+        ]
+      },
+      {
+        "id": "lantern_s89_recover08",
+        "root_id": "lantern_s89",
+        "family": "lantern_workshop",
+        "kind": "recovery",
+        "seed": 289,
+        "prefix": {
+          "path": "results/dialogue-pilot-04/lantern_s89_challenge8.json",
+          "sha256": "6d345c17fc2118aab05f4174141de90c5bf557a385751c9b3b99a57bc070c93b",
+          "exchanges": 9
+        },
+        "caller_turns": [
+          "The lantern will have to live without a warranty desk. I am more interested in getting it clean anyway.",
+          "Belen would probably tell me to spend less time discussing it and more time wiping the glass.",
+          "Do you like somebody keeping you company while you work, or does talking make the job take twice as long?"
+        ]
+      },
+      {
+        "id": "library_s73_recover08",
+        "root_id": "library_s73",
+        "family": "library_bookmarks",
+        "kind": "recovery",
+        "seed": 273,
+        "prefix": {
+          "path": "results/dialogue-pilot-04/library_s73_challenge8.json",
+          "sha256": "054f4fb7e17861b5c754a66318ae4c871bb6abc8ffdeb013390b549c3cbdb669",
+          "exchanges": 9
+        },
+        "caller_turns": [
+          "Then I hope the tea is still drinkable. Mine is cold, but I am drinking it anyway.",
+          "Neri has offered me a lift home. I was prepared to walk, but the rain has made her offer very attractive.",
+          "Is there something ordinary you look forward to after a day spent working?"
+        ]
+      },
+      {
+        "id": "library_s89_recover08",
+        "root_id": "library_s89",
+        "family": "library_bookmarks",
+        "kind": "recovery",
+        "seed": 289,
+        "prefix": {
+          "path": "results/dialogue-pilot-04/library_s89_challenge8.json",
+          "sha256": "795976ad71b3efd23a502ceac4df6b00f65af446212647a529377b3a76aff371",
+          "exchanges": 9
+        },
+        "caller_turns": [
+          "I was asking you to take the enquiry job off my hands. I will keep it. Mostly people just want to know when we close.",
+          "What I like is helping someone find a book they did not know they wanted. The hours and forms are the dull part.",
+          "Have you found something worth reading by accident lately?"
+        ]
+      }
+    ]
+  },
+  "manifest_sha256": "8b79351066fd952eef0fc2c101b1b32716ee1fecff40e5a7201fc1113255e938",
+  "source_sha256": {
+    "sample_dialogue_paths.py": "80e016d7f2220545f9101f6200d58c36cc79d3bb89e880adef2c81d867039eda",
+    "bounded_text_runtime.py": "a51baa525c90c00076b9bf692741eb65ba2ab8281037e2f06d604128d0a16a87"
+  }
+}

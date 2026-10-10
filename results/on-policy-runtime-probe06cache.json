@@ -1,0 +1,24 @@
+{
+  "status": "pass",
+  "configuration": "configs/on-policy-runtime-probe06cache.json",
+  "scope": "Actual quantized Qwen3-4B-Base with run22 adapters, complete1700token on-policy input,840token clean replay, only upper6 layers updated. Two disposable updates; no quality/acceptance claim.",
+  "optimizer_updates": 2,
+  "trainable_parameters": 5505024,
+  "prefix_preparation_peak_mlx_bytes": 3066943160,
+  "training_peak_mlx_bytes": 2255418586,
+  "normal_memory_pressure_all_updates": true,
+  "swap_growth_bytes": 0,
+  "export_tensors": 506,
+  "export_data_length_consistent": true,
+  "frozen_factors_unchanged": true,
+  "completion": {
+    "steps": 2,
+    "status": "Training complete; no acceptance claim",
+    "seconds": 20.822747291999804
+  },
+  "limitations": [
+    "Parameter scope differs from previous all36-layer runs",
+    "Numerical full-history equivalence verified on tiny model; full exported-model score parity is next",
+    "MLX memory settings are guidelines; guards evaluate resource state at operation boundaries"
+  ]
+}

@@ -1,0 +1,466 @@
+{
+  "id": "lantern_s89_spine32",
+  "root_id": "lantern_s89",
+  "family": "lantern_workshop",
+  "kind": "ordinary_spine",
+  "prefix_source": {
+    "path": "results/dialogue-pilot-04/lantern_s89_spine16.json",
+    "sha256": "e8b22ec256c2cc0685cbd7d92144798e0ab4b9fe37bc130b92b7e4661acc2b80",
+    "exchanges": 16
+  },
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I am cleaning an old camping lantern at my kitchen table. The glass is cloudy and I keep leaving fingerprints on it."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been there. What is inside the lantern?"
+    },
+    {
+      "role": "user",
+      "content": "It belonged to my aunt Belen. She used to take it fishing, although she rarely caught anything. I like that it has been useful to somebody."
+    },
+    {
+      "role": "assistant",
+      "content": "That gives it a little history. Is the cloudy glass something that can be fixed, or are you going to keep using it for a while?"
+    },
+    {
+      "role": "user",
+      "content": "I have taken the glass out now. There is a dead moth inside. That must have been an ambitious last evening."
+    },
+    {
+      "role": "assistant",
+      "content": "Was it a good catch, or the end of a good evening?"
+    },
+    {
+      "role": "user",
+      "content": "I am making tea while it dries. Do you keep old things because you like them, or only because they still work?"
+    },
+    {
+      "role": "assistant",
+      "content": "I dislike the dead moth. The lantern would be a different story if it could tell you whether I was being sentimental."
+    },
+    {
+      "role": "user",
+      "content": "The moth has been given a burial in the compost. The lantern is keeping its place on my shelf. I am sentimental about it, whether that is sensible or not."
+    },
+    {
+      "role": "assistant",
+      "content": "You are not alone in that. Some things have a place in our lives even when we don't love them much."
+    },
+    {
+      "role": "user",
+      "content": "Belen once dropped it into a puddle and blamed the weather. That is the family approach to admitting mistakes."
+    },
+    {
+      "role": "assistant",
+      "content": "Her lantern tells a different story. It did not leave the house on its own account."
+    },
+    {
+      "role": "user",
+      "content": "I am keeping the little dent in the base. If I polished away everything that happened to it, I would hardly recognise it."
+    },
+    {
+      "role": "assistant",
+      "content": "I like that. I can imagine an evening with a glass lantern you know, rather than an evening with a story you have written."
+    },
+    {
+      "role": "user",
+      "content": "The glass is clean now. I am going to make a sandwich before I find something else to take apart."
+    },
+    {
+      "role": "assistant",
+      "content": "Go ahead. The lantern can wait another minute."
+    },
+    {
+      "role": "user",
+      "content": "My sandwich is cheese and a rather disappointing tomato. I bought the tomatoes because they looked wonderful. That was their only talent."
+    },
+    {
+      "role": "assistant",
+      "content": "One tomato gave you a disappointing meal. There is a lesson in that."
+    },
+    {
+      "role": "user",
+      "content": "Belen grows tomatoes in buckets behind her flat. Hers look dreadful and taste much better. She is understandably smug about this."
+    },
+    {
+      "role": "assistant",
+      "content": "Smug is a polite word. I would probably have said it openly."
+    },
+    {
+      "role": "user",
+      "content": "I am visiting her on Sunday. I will take the lantern so she can see that I have finally cleaned it."
+    },
+    {
+      "role": "assistant",
+      "content": "That is a good way to visit. You don't need to explain that it was a difficult task. She can see the result."
+    },
+    {
+      "role": "user",
+      "content": "She always has a repair waiting when I visit. Last time it was a drawer that would only open if you apologised to it first."
+    },
+    {
+      "role": "assistant",
+      "content": "A drawer with a special request."
+    },
+    {
+      "role": "user",
+      "content": "Actually, we moved the visit to Saturday because she has a neighbour coming on Sunday. I keep looking at last week's note."
+    },
+    {
+      "role": "assistant",
+      "content": "You have a neighbour coming on Sunday. I would start there."
+    },
+    {
+      "role": "user",
+      "content": "There is a nice walk by her flat. Nothing dramatic, just the river and some benches. I want to leave time for that."
+    },
+    {
+      "role": "assistant",
+      "content": "Then you will have more than one reason to go."
+    },
+    {
+      "role": "user",
+      "content": "I used to think a good visit needed an elaborate plan. These days I am happy if we eat something and nobody is in a hurry."
+    },
+    {
+      "role": "assistant",
+      "content": "I would rather be eating than making a plan."
+    },
+    {
+      "role": "user",
+      "content": "I have wrapped the lantern in an old towel for the trip. Now I need to find somewhere to put it where I will not forget it."
+    },
+    {
+      "role": "assistant",
+      "content": "A little ceremony before the trip."
+    },
+    {
+      "role": "user",
+      "content": "I have put the lantern beside my shoes. That ought to remind me on Saturday, unless I find some way to leave without my shoes."
+    },
+    {
+      "role": "assistant",
+      "content": "I would keep the lantern out of the way until you know where you are going."
+    },
+    {
+      "role": "user",
+      "content": "My cousin Tomas is coming too. He and Belen disagree about every route, even when there is only one road."
+    },
+    {
+      "role": "assistant",
+      "content": "That will give you a walk with an argument ready."
+    },
+    {
+      "role": "user",
+      "content": "Tomas wants to leave at seven in the morning. I think nine is civilised. We are negotiating through increasingly small messages."
+    },
+    {
+      "role": "assistant",
+      "content": "A small argument that has not reached the size of the lantern."
+    },
+    {
+      "role": "user",
+      "content": "He has offered eight. I have accepted. That is probably the most successful negotiation I have managed this week."
+    },
+    {
+      "role": "assistant",
+      "content": "A good breakfast will help decide whether he has accepted it."
+    },
+    {
+      "role": "user",
+      "content": "We will take bread and peaches. Belen will insist we brought too much, then send us home with enough food for three people."
+    },
+    {
+      "role": "assistant",
+      "content": "An afternoon of eating, then you can tell Belen how it ended."
+    },
+    {
+      "role": "user",
+      "content": "She has a habit of giving away her best things and keeping the awkward ones. I do not always know whether to admire that or tell her to stop."
+    },
+    {
+      "role": "assistant",
+      "content": "I would start by asking how she feels about it."
+    },
+    {
+      "role": "user",
+      "content": "Last time she gave me her favourite bowl. I took it home and felt guilty whenever I used it. Then she asked if I was actually using the thing."
+    },
+    {
+      "role": "assistant",
+      "content": "I like that. I would rather hear her opinion than invent a reason why I should keep the bowl."
+    },
+    {
+      "role": "user",
+      "content": "I use it for breakfast now. The guilt was taking up more space than the bowl."
+    },
+    {
+      "role": "assistant",
+      "content": "I would offer the bowl a chance to explain itself."
+    },
+    {
+      "role": "user",
+      "content": "Do you ever change your mind about an ordinary habit and wonder why it took you so long?"
+    },
+    {
+      "role": "assistant",
+      "content": "I have. I love planning an ordinary evening with the same time-consuming care I once used for a new robe."
+    },
+    {
+      "role": "user",
+      "content": "Mine was eating breakfast sitting down. I used to carry toast around the flat as though I were late for something even on Sundays."
+    },
+    {
+      "role": "assistant",
+      "content": "Your toast was making a journey. I like that picture."
+    },
+    {
+      "role": "user",
+      "content": "I still do it when I am distracted. The crumbs make it quite difficult to pretend I have been sensible."
+    },
+    {
+      "role": "assistant",
+      "content": "The crumbs are another journey."
+    },
+    {
+      "role": "user",
+      "content": "The sandwich has reminded me I should clear this table. There are tools on one side and a jar of mustard on the other."
+    },
+    {
+      "role": "assistant",
+      "content": "You have a jar on the side with tools. That is a different arrangement from the one you started."
+    },
+    {
+      "role": "user",
+      "content": "I have found the missing screw under the mustard. I had already accused the floor of taking it."
+    },
+    {
+      "role": "assistant",
+      "content": "You gave the floor a chance to explain itself."
+    },
+    {
+      "role": "user",
+      "content": "Everything is back in the little toolbox. I am resisting the temptation to organise the entire cupboard while I have it open."
+    },
+    {
+      "role": "assistant",
+      "content": "I would start with one drawer."
+    },
+    {
+      "role": "user",
+      "content": "I used to turn a small job into a whole evening of new jobs. Today I would rather leave the cupboard alone."
+    },
+    {
+      "role": "assistant",
+      "content": "Good. I would like to have a morning I could leave alone."
+    },
+    {
+      "role": "user",
+      "content": "Now I have somewhere to put my cup. The lantern, the toolbox, and the sandwich have all received enough attention for one day."
+    },
+    {
+      "role": "assistant",
+      "content": "A job well done."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "I have put the lantern beside my shoes. That ought to remind me on Saturday, unless I find some way to leave without my shoes.",
+      "reply": "I would keep the lantern out of the way until you know where you are going.",
+      "seed": 2112962777,
+      "input_tokens": 880,
+      "output_tokens": 18,
+      "finish_reason": "stop",
+      "seconds": 5.001980000000003,
+      "elapsed_seconds": 125.68288083300013,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032061892
+    },
+    {
+      "caller": "My cousin Tomas is coming too. He and Belen disagree about every route, even when there is only one road.",
+      "reply": "That will give you a walk with an argument ready.",
+      "seed": 937174328,
+      "input_tokens": 931,
+      "output_tokens": 12,
+      "finish_reason": "stop",
+      "seconds": 4.989560416000131,
+      "elapsed_seconds": 130.6817312080002,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032061892
+    },
+    {
+      "caller": "Tomas wants to leave at seven in the morning. I think nine is civilised. We are negotiating through increasingly small messages.",
+      "reply": "A small argument that has not reached the size of the lantern.",
+      "seed": 1843884980,
+      "input_tokens": 978,
+      "output_tokens": 14,
+      "finish_reason": "stop",
+      "seconds": 5.24488004199975,
+      "elapsed_seconds": 135.93157450000035,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032061892
+    },
+    {
+      "caller": "He has offered eight. I have accepted. That is probably the most successful negotiation I have managed this week.",
+      "reply": "A good breakfast will help decide whether he has accepted it.",
+      "seed": 144867778,
+      "input_tokens": 1023,
+      "output_tokens": 13,
+      "finish_reason": "stop",
+      "seconds": 5.3324795830003495,
+      "elapsed_seconds": 141.27352387500014,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032061892
+    },
+    {
+      "caller": "We will take bread and peaches. Belen will insist we brought too much, then send us home with enough food for three people.",
+      "reply": "An afternoon of eating, then you can tell Belen how it ended.",
+      "seed": 1336984605,
+      "input_tokens": 1073,
+      "output_tokens": 16,
+      "finish_reason": "stop",
+      "seconds": 5.755018666000069,
+      "elapsed_seconds": 147.0418500410001,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032061892
+    },
+    {
+      "caller": "She has a habit of giving away her best things and keeping the awkward ones. I do not always know whether to admire that or tell her to stop.",
+      "reply": "I would start by asking how she feels about it.",
+      "seed": 2069424196,
+      "input_tokens": 1129,
+      "output_tokens": 12,
+      "finish_reason": "stop",
+      "seconds": 5.871420166999997,
+      "elapsed_seconds": 152.92032450000033,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032061892
+    },
+    {
+      "caller": "Last time she gave me her favourite bowl. I took it home and felt guilty whenever I used it. Then she asked if I was actually using the thing.",
+      "reply": "I like that. I would rather hear her opinion than invent a reason why I should keep the bowl.",
+      "seed": 447316320,
+      "input_tokens": 1182,
+      "output_tokens": 22,
+      "finish_reason": "stop",
+      "seconds": 6.529710290999901,
+      "elapsed_seconds": 159.46271854099996,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032061892
+    },
+    {
+      "caller": "I use it for breakfast now. The guilt was taking up more space than the bowl.",
+      "reply": "I would offer the bowl a chance to explain itself.",
+      "seed": 1656544714,
+      "input_tokens": 1231,
+      "output_tokens": 12,
+      "finish_reason": "stop",
+      "seconds": 6.33218370800023,
+      "elapsed_seconds": 165.80618191600024,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032061892
+    },
+    {
+      "caller": "Do you ever change your mind about an ordinary habit and wonder why it took you so long?",
+      "reply": "I have. I love planning an ordinary evening with the same time-consuming care I once used for a new robe.",
+      "seed": 391373586,
+      "input_tokens": 1271,
+      "output_tokens": 24,
+      "finish_reason": "stop",
+      "seconds": 7.1450923749998765,
+      "elapsed_seconds": 172.9691500830004,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032061892
+    },
+    {
+      "caller": "Mine was eating breakfast sitting down. I used to carry toast around the flat as though I were late for something even on Sundays.",
+      "reply": "Your toast was making a journey. I like that picture.",
+      "seed": 2036997287,
+      "input_tokens": 1330,
+      "output_tokens": 13,
+      "finish_reason": "stop",
+      "seconds": 6.830099417000383,
+      "elapsed_seconds": 179.80775679099997,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032061892
+    },
+    {
+      "caller": "I still do it when I am distracted. The crumbs make it quite difficult to pretend I have been sensible.",
+      "reply": "The crumbs are another journey.",
+      "seed": 987519837,
+      "input_tokens": 1374,
+      "output_tokens": 7,
+      "finish_reason": "stop",
+      "seconds": 6.71090170799971,
+      "elapsed_seconds": 186.53180991600038,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032061892
+    },
+    {
+      "caller": "The sandwich has reminded me I should clear this table. There are tools on one side and a jar of mustard on the other.",
+      "reply": "You have a jar on the side with tools. That is a different arrangement from the one you started.",
+      "seed": 1230802109,
+      "input_tokens": 1416,
+      "output_tokens": 22,
+      "finish_reason": "stop",
+      "seconds": 7.847187332999965,
+      "elapsed_seconds": 194.39544887500006,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032061892
+    },
+    {
+      "caller": "I have found the missing screw under the mustard. I had already accused the floor of taking it.",
+      "reply": "You gave the floor a chance to explain itself.",
+      "seed": 1662160997,
+      "input_tokens": 1467,
+      "output_tokens": 11,
+      "finish_reason": "stop",
+      "seconds": 7.352817792000224,
+      "elapsed_seconds": 201.7575307080001,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032061892
+    },
+    {
+      "caller": "Everything is back in the little toolbox. I am resisting the temptation to organise the entire cupboard while I have it open.",
+      "reply": "I would start with one drawer.",
+      "seed": 2117822051,
+      "input_tokens": 1511,
+      "output_tokens": 8,
+      "finish_reason": "stop",
+      "seconds": 7.539091624999855,
+      "elapsed_seconds": 209.2963930830001,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032061892
+    },
+    {
+      "caller": "I used to turn a small job into a whole evening of new jobs. Today I would rather leave the cupboard alone.",
+      "reply": "Good. I would like to have a morning I could leave alone.",
+      "seed": 1341681718,
+      "input_tokens": 1552,
+      "output_tokens": 15,
+      "finish_reason": "stop",
+      "seconds": 8.05887037499997,
+      "elapsed_seconds": 217.37690529100018,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032061892
+    },
+    {
+      "caller": "Now I have somewhere to put my cup. The lantern, the toolbox, and the sandwich have all received enough attention for one day.",
+      "reply": "A job well done.",
+      "seed": 1830265597,
+      "input_tokens": 1603,
+      "output_tokens": 6,
+      "finish_reason": "stop",
+      "seconds": 7.880428999999822,
+      "elapsed_seconds": 225.27269354100008,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032061892
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

@@ -1,0 +1,26 @@
+{
+  "model": "models/base4b",
+  "parent": "adapters/run22-step0140",
+  "parent_sha256": "62b4197bdf59bd157ce7dd0ce6cd4c62b5dd0a910b400d886514b59480cf0829",
+  "repairs": "data/on-policy-repairs-v1/train.jsonl",
+  "repairs_sha256": "0fef2af869ff90e04394c039d0d2f609e2327991296d9a61311927740f0564fc",
+  "replay": "data/on-policy-repairs-v1/replay.jsonl",
+  "replay_sha256": "901ada0f84c0cf6c2f909d64a23a79a79516093a6753180daea3515025684ba1",
+  "output": "adapters/run23",
+  "train_last_layers": 6,
+  "steps": 32,
+  "max_length": 2048,
+  "memory_limit": 3400000000,
+  "max_seconds": 1200,
+  "learning_rate": 5e-06,
+  "repair_weight": 1.0,
+  "replay_weight": 0.5,
+  "head_chunk_size": 32,
+  "query_chunk_size": 128,
+  "cache_frozen_prefix": true,
+  "seed": 151,
+  "checkpoints": [
+    16,
+    32
+  ]
+}

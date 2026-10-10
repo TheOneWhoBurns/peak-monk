@@ -55,16 +55,25 @@ class BoundedTextRuntime:
         elapsed = time.monotonic() - self.started
         # On macOS ru_maxrss is bytes. Peak, rather than current, is deliberate.
         rss = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
-        if elapsed > self.max_seconds:
-            raise RuntimeError('Bounded inference elapsed-time limit')
-        if rss > 4_600_000_000:
-            raise RuntimeError('Bounded inference process-RSS limit')
         swap = swap_bytes()
-        if swap > 2 * 1024**3:
-            raise RuntimeError('Bounded inference absolute swap limit')
-        if swap - self.initial_swap > 512 * 1024**2:
-            raise RuntimeError('Bounded inference swap-growth limit')
-        return dict(elapsed_seconds=elapsed, peak_rss_bytes=rss, swap_bytes=swap)
+        pressure = int(subprocess.check_output(
+            ['sysctl', '-n', 'kern.memorystatus_vm_pressure_level'], text=True).strip())
+        metrics = dict(elapsed_seconds=elapsed, peak_rss_bytes=rss, swap_bytes=swap,
+                       memory_pressure_level=pressure, mlx_peak_bytes=self.mx.get_peak_memory(),
+                       mlx_active_bytes=self.mx.get_active_memory())
+        reason = None
+        if elapsed > self.max_seconds:
+            reason = 'elapsed-time limit'
+        elif rss > 4_600_000_000:
+            reason = 'process-RSS limit'
+        elif pressure != 1:
+            reason = 'system memory pressure is not normal'
+        elif swap - self.initial_swap > 512 * 1024**2:
+            reason = 'swap-growth limit'
+        if reason:
+            self.event('resource_guard_stop', reason=reason, **metrics)
+            raise RuntimeError('Bounded runtime '+reason)
+        return metrics
 
     def __enter__(self):
         self.lock = open(Path(__file__).resolve().parents[1] / 'results' / '.text-model.lock', 'a')

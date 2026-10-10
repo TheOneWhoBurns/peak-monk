@@ -1,0 +1,7 @@
+{
+  "status": "prepared",
+  "configuration": "configs/on-policy-runtime-probe06cache.json",
+  "hypothesis": "Unloading the frozen lower30 layers removes their weight residency from the gradient phase. Frozen-prefix caching preserves the same selected-parameter objective, conditioned on the complete token sequence.",
+  "verification": "Tiny reference compares loss, every remapped trainable gradient and RNG before actual-model use. Real probe must verify frozen adapter factors unchanged in complete506tensor exports.",
+  "limits": "Same normal-pressure,512MiB swap-growth, elapsed and RSS guards. Requested MLX3.4GB remains a guideline, not a hard cap. No speech runtime or quality claim."
+}

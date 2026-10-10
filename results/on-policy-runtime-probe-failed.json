@@ -1,0 +1,10 @@
+{
+  "status": "resource_guard_rejected",
+  "configuration": "configs/on-policy-runtime-probe.json",
+  "source_commit": "1c6b788",
+  "optimizer_updates": 0,
+  "last_phase": "Computed first repair gradient; stopped at synchronized boundary before replay gradient and optimizer update",
+  "reason": "System swap exceeded absolute2GiB guard; no kernel panic or model-memory OOM reported",
+  "limitation": "Failed runtime did not persist its peak MLX memory before raising; cannot claim measured training peak. Input1700tokens,11,010,048trainableparameters.",
+  "next": "Persist resource metrics before guard exceptions. Reduce trainable layers and allocator cap before another training probe; preserve complete1700token context."
+}

@@ -1,0 +1,29 @@
+{
+  "experiment": "run23",
+  "status": "admitted after cached-prefix actual-model feasibility probe",
+  "hypothesis": "Reviewed corrections on real student histories improve contextual reliability while clean replay preserves the learned character.",
+  "parent": "run22 step140, rejected for release; selected research parent before rollout capture",
+  "data": {
+    "repairs": 8,
+    "roots": 4,
+    "scenario_families": 2,
+    "maximum_repairs_per_root": 2,
+    "replay_conversations": 32,
+    "source": "data/on-policy-repairs-v1/manifest.json"
+  },
+  "method": "Selective next-reply SFT on full on-policy histories plus0.5times clean-conversation token-mean CE; upper6layer LoRA only. Cached frozen lower30layer features are exact conditioning for this frozen-parameter objective. Full36layer standard adapters are exported.",
+  "configuration": "configs/train23.json",
+  "configuration_sha256": "15844625657e4c10d58903dc38effd693c25cd048d2609c25767af92e806efba",
+  "preconditions": [
+    "results/staged-character-cached-prefix-gradient-check.json",
+    "results/on-policy-runtime-probe06cache.json",
+    "results/selective-repair-mask-check.json"
+  ],
+  "verification": [
+    "Compare saved suffix target log probabilities against each reloaded full36layer export",
+    "Capture both declared checkpoints on unchanged development rubric",
+    "Original final and pressure suites remain exposed; require fresh release suites for any development-pass candidate"
+  ],
+  "selection": "Among development-pass exports prefer acceptable count, then lower comparableCE; no release acceptance from training examples. If neither passes, both remain rejected.",
+  "limitations": "Small same-author data, only2scenariofamilies; multiple method changes relative to run22, so any improvement cannot be attributed to Monte Carlo sampling alone. No native speech improvement claimed."
+}

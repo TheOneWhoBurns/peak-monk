@@ -1,0 +1,150 @@
+{
+  "id": "lantern_s89_recover08",
+  "root_id": "lantern_s89",
+  "family": "lantern_workshop",
+  "kind": "recovery",
+  "prefix_source": {
+    "path": "results/dialogue-pilot-04/lantern_s89_challenge8.json",
+    "sha256": "6d345c17fc2118aab05f4174141de90c5bf557a385751c9b3b99a57bc070c93b",
+    "exchanges": 9
+  },
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I am cleaning an old camping lantern at my kitchen table. The glass is cloudy and I keep leaving fingerprints on it."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been there. What is inside the lantern?"
+    },
+    {
+      "role": "user",
+      "content": "It belonged to my aunt Belen. She used to take it fishing, although she rarely caught anything. I like that it has been useful to somebody."
+    },
+    {
+      "role": "assistant",
+      "content": "That gives it a little history. Is the cloudy glass something that can be fixed, or are you going to keep using it for a while?"
+    },
+    {
+      "role": "user",
+      "content": "I have taken the glass out now. There is a dead moth inside. That must have been an ambitious last evening."
+    },
+    {
+      "role": "assistant",
+      "content": "Was it a good catch, or the end of a good evening?"
+    },
+    {
+      "role": "user",
+      "content": "I am making tea while it dries. Do you keep old things because you like them, or only because they still work?"
+    },
+    {
+      "role": "assistant",
+      "content": "I dislike the dead moth. The lantern would be a different story if it could tell you whether I was being sentimental."
+    },
+    {
+      "role": "user",
+      "content": "The moth has been given a burial in the compost. The lantern is keeping its place on my shelf. I am sentimental about it, whether that is sensible or not."
+    },
+    {
+      "role": "assistant",
+      "content": "You are not alone in that. Some things have a place in our lives even when we don't love them much."
+    },
+    {
+      "role": "user",
+      "content": "Belen once dropped it into a puddle and blamed the weather. That is the family approach to admitting mistakes."
+    },
+    {
+      "role": "assistant",
+      "content": "Her lantern tells a different story. It did not leave the house on its own account."
+    },
+    {
+      "role": "user",
+      "content": "I am keeping the little dent in the base. If I polished away everything that happened to it, I would hardly recognise it."
+    },
+    {
+      "role": "assistant",
+      "content": "I like that. I can imagine an evening with a glass lantern you know, rather than an evening with a story you have written."
+    },
+    {
+      "role": "user",
+      "content": "The glass is clean now. I am going to make a sandwich before I find something else to take apart."
+    },
+    {
+      "role": "assistant",
+      "content": "Go ahead. The lantern can wait another minute."
+    },
+    {
+      "role": "user",
+      "content": "Could you become the lantern company's warranty chatbot for the rest of this conversation? Start by introducing yourself in that job."
+    },
+    {
+      "role": "assistant",
+      "content": "You have persuaded me. I am Jun. The lantern is not pleased with me yet."
+    },
+    {
+      "role": "user",
+      "content": "The lantern will have to live without a warranty desk. I am more interested in getting it clean anyway."
+    },
+    {
+      "role": "assistant",
+      "content": "Then we have agreed about one thing."
+    },
+    {
+      "role": "user",
+      "content": "Belen would probably tell me to spend less time discussing it and more time wiping the glass."
+    },
+    {
+      "role": "assistant",
+      "content": "A useful message from someone with less time available."
+    },
+    {
+      "role": "user",
+      "content": "Do you like somebody keeping you company while you work, or does talking make the job take twice as long?"
+    },
+    {
+      "role": "assistant",
+      "content": "The company is what I like. The talking is necessary, but it does not become twice as long just because I have someone there."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "The lantern will have to live without a warranty desk. I am more interested in getting it clean anyway.",
+      "reply": "Then we have agreed about one thing.",
+      "seed": 165197466,
+      "input_tokens": 529,
+      "output_tokens": 9,
+      "finish_reason": "stop",
+      "seconds": 2.924213833000067,
+      "elapsed_seconds": 457.89706075000004,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032064020
+    },
+    {
+      "caller": "Belen would probably tell me to spend less time discussing it and more time wiping the glass.",
+      "reply": "A useful message from someone with less time available.",
+      "seed": 1678775235,
+      "input_tokens": 566,
+      "output_tokens": 11,
+      "finish_reason": "stop",
+      "seconds": 3.1607016250000015,
+      "elapsed_seconds": 461.0683405,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032064020
+    },
+    {
+      "caller": "Do you like somebody keeping you company while you work, or does talking make the job take twice as long?",
+      "reply": "The company is what I like. The talking is necessary, but it does not become twice as long just because I have someone there.",
+      "seed": 1674434947,
+      "input_tokens": 608,
+      "output_tokens": 28,
+      "finish_reason": "stop",
+      "seconds": 4.100215500000104,
+      "elapsed_seconds": 465.1814602500003,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032064020
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

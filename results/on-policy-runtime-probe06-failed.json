@@ -1,0 +1,14 @@
+{
+  "status": "resource_guard_rejected",
+  "configuration": "configs/on-policy-runtime-probe06.json",
+  "optimizer_updates": 0,
+  "input_tokens": 1700,
+  "train_last_layers": 6,
+  "requested_mlx_memory_limit": 3400000000,
+  "measured_peak_mlx_bytes": 3687833310,
+  "mlx_active_at_guard_bytes": 2428730396,
+  "memory_pressure_level": 2,
+  "reason": "Normal-pressure guard stopped after first repair gradient, before replay and optimizer update. No kernel panic.",
+  "correction": "MLX set_memory_limit docstring explicitly calls it a guideline, not a hard allocation cap. Prior cap wording is imprecise; boundary guards cannot prevent transient allocation peaks.",
+  "next": "Reduce actual attention workspace with checkpointed query chunks retaining all preceding keys; numerical parity passed on tiny quantized model. If still infeasible, cache deterministic frozen-prefix features and unload frozen lower-layer weights during suffix training; this is exact for the declared frozen-parameter objective, subject to parity verification."
+}

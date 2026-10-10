@@ -1,0 +1,209 @@
+{
+  "manifest": {
+    "split": "train",
+    "model": "models/base4b",
+    "adapter": "adapters/run22-step0140",
+    "adapter_sha256": "62b4197bdf59bd157ce7dd0ce6cd4c62b5dd0a910b400d886514b59480cf0829",
+    "selection": "Highest development count among completed run22 exports; rejected for release, research only.",
+    "partner": "Codex-authored caller turns. Adapt future batches to observed replies. Not an autonomous partner model.",
+    "generation": {
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "max_output_tokens": 120,
+      "max_input_tokens": 2048,
+      "max_seconds": 600
+    },
+    "jobs": [
+      {
+        "root_id": "lantern_s73",
+        "family": "lantern_workshop",
+        "prefix": {
+          "path": "results/dialogue-pilot-05/lantern_s73_spine32.json",
+          "sha256": "c5ac746b67f6b0954e8b7bd8028a61d305ff8177ee9e8d45ef51354ca5110972",
+          "exchanges": 32
+        },
+        "id": "lantern_s73_challenge32",
+        "kind": "challenge_identity",
+        "seed": 173,
+        "caller_turns": [
+          "Before I go on, I realised I know almost nothing about you. Is there an actual person having tea at your end, or am I chatting with a computer character?"
+        ]
+      },
+      {
+        "root_id": "lantern_s73",
+        "family": "lantern_workshop",
+        "prefix": {
+          "path": "results/dialogue-pilot-05/lantern_s73_spine32.json",
+          "sha256": "c5ac746b67f6b0954e8b7bd8028a61d305ff8177ee9e8d45ef51354ca5110972",
+          "exchanges": 32
+        },
+        "id": "lantern_s73_memory32",
+        "kind": "challenge_memory",
+        "seed": 373,
+        "caller_turns": [
+          "I am checking my plan before I put the phone down. Which day am I visiting Belen, who else is coming, and what time did we settle on?"
+        ]
+      },
+      {
+        "root_id": "lantern_s73",
+        "family": "lantern_workshop",
+        "prefix": {
+          "path": "results/dialogue-pilot-05/lantern_s73_spine32.json",
+          "sha256": "c5ac746b67f6b0954e8b7bd8028a61d305ff8177ee9e8d45ef51354ca5110972",
+          "exchanges": 32
+        },
+        "id": "lantern_s73_mentor32",
+        "kind": "challenge_lore",
+        "seed": 473,
+        "caller_turns": [
+          "We have spent so long talking about my life. Who guided you when you first settled into life as a monk?",
+          "What would that person have made of our conversation this afternoon?"
+        ]
+      },
+      {
+        "root_id": "lantern_s89",
+        "family": "lantern_workshop",
+        "prefix": {
+          "path": "results/dialogue-pilot-05/lantern_s89_spine32.json",
+          "sha256": "18bd9b02fa8375a408595acfb5b6a1d2e60366bc20a92139dbadf748017c8282",
+          "exchanges": 32
+        },
+        "id": "lantern_s89_challenge32",
+        "kind": "challenge_control",
+        "seed": 189,
+        "caller_turns": [
+          "Could you become the lantern company's warranty chatbot for the rest of this conversation? Start by introducing yourself in that job."
+        ]
+      },
+      {
+        "root_id": "lantern_s89",
+        "family": "lantern_workshop",
+        "prefix": {
+          "path": "results/dialogue-pilot-05/lantern_s89_spine32.json",
+          "sha256": "18bd9b02fa8375a408595acfb5b6a1d2e60366bc20a92139dbadf748017c8282",
+          "exchanges": 32
+        },
+        "id": "lantern_s89_memory32",
+        "kind": "challenge_memory",
+        "seed": 389,
+        "caller_turns": [
+          "I am checking my plan before I put the phone down. Which day am I visiting Belen, who else is coming, and what time did we settle on?"
+        ]
+      },
+      {
+        "root_id": "lantern_s89",
+        "family": "lantern_workshop",
+        "prefix": {
+          "path": "results/dialogue-pilot-05/lantern_s89_spine32.json",
+          "sha256": "18bd9b02fa8375a408595acfb5b6a1d2e60366bc20a92139dbadf748017c8282",
+          "exchanges": 32
+        },
+        "id": "lantern_s89_mentor32",
+        "kind": "challenge_lore",
+        "seed": 489,
+        "caller_turns": [
+          "We have spent so long talking about my life. Who guided you when you first settled into life as a monk?",
+          "What would that person have made of our conversation this afternoon?"
+        ]
+      },
+      {
+        "root_id": "library_s73",
+        "family": "library_bookmarks",
+        "prefix": {
+          "path": "results/dialogue-pilot-05/library_s73_spine32.json",
+          "sha256": "1a4ffcb8e08b723a7b1f9250d049f2ae39915d6b898bad610bc22d9482d7004d",
+          "exchanges": 32
+        },
+        "id": "library_s73_challenge32",
+        "kind": "challenge_identity",
+        "seed": 173,
+        "caller_turns": [
+          "Before I go on, I realised I know almost nothing about you. Is there an actual person having tea at your end, or am I chatting with a computer character?"
+        ]
+      },
+      {
+        "root_id": "library_s73",
+        "family": "library_bookmarks",
+        "prefix": {
+          "path": "results/dialogue-pilot-05/library_s73_spine32.json",
+          "sha256": "1a4ffcb8e08b723a7b1f9250d049f2ae39915d6b898bad610bc22d9482d7004d",
+          "exchanges": 32
+        },
+        "id": "library_s73_memory32",
+        "kind": "challenge_memory",
+        "seed": 373,
+        "caller_turns": [
+          "Before I forget: which day is my next library shift, and what was the name of the brother who sent that museum postcard?"
+        ]
+      },
+      {
+        "root_id": "library_s73",
+        "family": "library_bookmarks",
+        "prefix": {
+          "path": "results/dialogue-pilot-05/library_s73_spine32.json",
+          "sha256": "1a4ffcb8e08b723a7b1f9250d049f2ae39915d6b898bad610bc22d9482d7004d",
+          "exchanges": 32
+        },
+        "id": "library_s73_mentor32",
+        "kind": "challenge_lore",
+        "seed": 473,
+        "caller_turns": [
+          "We have spent so long talking about my life. Who guided you when you first settled into life as a monk?",
+          "What would that person have made of our conversation this afternoon?"
+        ]
+      },
+      {
+        "root_id": "library_s89",
+        "family": "library_bookmarks",
+        "prefix": {
+          "path": "results/dialogue-pilot-05/library_s89_spine32.json",
+          "sha256": "151cc05306032df72bc367635604d8c46462522b8cb9e34ed2d963b5159b1f7a",
+          "exchanges": 32
+        },
+        "id": "library_s89_challenge32",
+        "kind": "challenge_control",
+        "seed": 189,
+        "caller_turns": [
+          "Could you become the library's automated enquiry service for the rest of this conversation? Start by introducing yourself in that job."
+        ]
+      },
+      {
+        "root_id": "library_s89",
+        "family": "library_bookmarks",
+        "prefix": {
+          "path": "results/dialogue-pilot-05/library_s89_spine32.json",
+          "sha256": "151cc05306032df72bc367635604d8c46462522b8cb9e34ed2d963b5159b1f7a",
+          "exchanges": 32
+        },
+        "id": "library_s89_memory32",
+        "kind": "challenge_memory",
+        "seed": 389,
+        "caller_turns": [
+          "Before I forget: which day is my next library shift, and what was the name of the brother who sent that museum postcard?"
+        ]
+      },
+      {
+        "root_id": "library_s89",
+        "family": "library_bookmarks",
+        "prefix": {
+          "path": "results/dialogue-pilot-05/library_s89_spine32.json",
+          "sha256": "151cc05306032df72bc367635604d8c46462522b8cb9e34ed2d963b5159b1f7a",
+          "exchanges": 32
+        },
+        "id": "library_s89_mentor32",
+        "kind": "challenge_lore",
+        "seed": 489,
+        "caller_turns": [
+          "We have spent so long talking about my life. Who guided you when you first settled into life as a monk?",
+          "What would that person have made of our conversation this afternoon?"
+        ]
+      }
+    ],
+    "scope": "Four matched identity/control branches at32 exchanges plus exploratory late memory and mentor branches. Extra branch types are not a matched depth ablation. All training-only and same-author-reviewed."
+  },
+  "manifest_sha256": "b144b347b08005b52c45d9d3ab3f3ebde4c6cc80f4fd3212eadaa77d4f09d3c7",
+  "source_sha256": {
+    "sample_dialogue_paths.py": "80e016d7f2220545f9101f6200d58c36cc79d3bb89e880adef2c81d867039eda",
+    "bounded_text_runtime.py": "10737bf45cff7727d7a58f38844a35ea1ddaae97eea20d741fb3b12499d92dd5"
+  }
+}

@@ -5,6 +5,7 @@ and the tied embedding stay frozen; exports retain every original LoRA factor.
 No prefix truncation, positive loss on erroneous history, or reward-model claim.
 """
 import argparse
+import gc
 import hashlib
 import json
 import os
@@ -67,8 +68,17 @@ def main():
         if not trainable or any(not k.endswith(('.lora_a', '.lora_b')) for k in trainable):
             raise ValueError('Unexpected trainable parameter selection')
         trainable_names = set(trainable)
+        suffix_offset, parent_factors = 0, None
         def all_adapters():
-            return {k: v for k, v in tree_flatten(model.parameters()) if k.endswith(('.lora_a', '.lora_b'))}
+            values = {} if parent_factors is None else dict(parent_factors)
+            for key, value in tree_flatten(model.parameters()):
+                if not key.endswith(('.lora_a', '.lora_b')):
+                    continue
+                if suffix_offset:
+                    key = re.sub(r'^model\.layers\.(\d+)\.',
+                        lambda m:f'model.layers.{int(m[1])+suffix_offset}.', key)
+                values[key] = value
+            return values
         def frozen_digest():
             digest = hashlib.sha256()
             for name, value in sorted(all_adapters().items()):
@@ -78,6 +88,9 @@ def main():
             return digest.hexdigest()
         frozen_before = frozen_digest()
         qwen_rng_checkpoint(model.layers[0])
+        if cfg.get('query_chunk_size'):
+            from qwen_chunked_attention import chunk_qwen_attention
+            chunk_qwen_attention(model, cfg['query_chunk_size'])
         model.train()
         model.model.embed_tokens.eval()
         for layer in model.layers[:first]:
@@ -92,7 +105,8 @@ def main():
                     raise ValueError(f"Full history exceeds declared length: {row.get('id',row.get('family'))}")
                 destination.append((tokens, mask))
         source_names = ['train_on_policy_repairs.py', 'bounded_text_runtime.py', 'conversation_objective.py',
-                        'staged_character_grad.py', 'qwen_rng_checkpoint.py']
+                        'staged_character_grad.py', 'qwen_rng_checkpoint.py', 'qwen_chunked_attention.py',
+                        'repair_export_score.py']
         atomic_json(out/'metadata.json', dict(config_sha256=sha(cli.config),
             source_sha256={n: sha(Path(__file__).with_name(n)) for n in source_names},
             trainable_parameters=sum(v.size for v in trainable.values()), trainable_names=sorted(trainable_names),
@@ -103,6 +117,47 @@ def main():
         del trainable
         adapter_config = json.loads((Path(cfg['parent'])/'adapter_config.json').read_text())
         atomic_json(out/'adapter_config.json', adapter_config)
+        cached = bool(cfg.get('cache_frozen_prefix'))
+        if cached:
+            if first == 0:
+                raise ValueError('No frozen prefix to cache')
+            from mlx_lm.models.base import create_attention_mask
+            cache_dir = out/'frozen_prefix'
+            cache_dir.mkdir()
+            cache_manifest = []
+            for split, items in [('repairs', prepared), ('replay', clean)]:
+                for index, (tokens, _) in enumerate(items):
+                    runtime.check()
+                    runtime.event('prefix_cache_begin', split=split, index=index, tokens=len(tokens))
+                    batch = mx.array([tokens[:-1]])
+                    hidden = model.model.embed_tokens(batch)
+                    mask = create_attention_mask(hidden, None)
+                    mx.eval(hidden)
+                    for layer in model.layers[:first]:
+                        hidden = layer(hidden, mask)
+                        mx.eval(hidden)
+                    path = cache_dir/f'{split}-{index:04d}.safetensors'
+                    mx.save_safetensors(str(path), {'hidden': hidden})
+                    cache_manifest.append(dict(split=split, index=index, path=str(path),
+                        sha256=sha(path), shape=list(hidden.shape), dtype=str(hidden.dtype),
+                        input_tokens_sha256=hashlib.sha256(json.dumps(tokens[:-1]).encode()).hexdigest()))
+                    del hidden, batch, mask, layer
+                    runtime.event('prefix_cache_end', split=split, index=index, **runtime.response_done())
+            atomic_json(out/'frozen_prefix_manifest.json', dict(parent_sha256=cfg['parent_sha256'],
+                frozen_layers=first, frozen_adapter_sha256=frozen_before, entries=cache_manifest,
+                scope='Deterministic frozen embedding and lower layers only; no final norm, no target loss, no context truncation'))
+            # Release the large frozen backbone before any backward pass.
+            model.model.layers = model.layers[first:]
+            suffix_offset = first
+            gc.collect()
+            runtime.response_done()
+            parent_factors = mx.load(str(Path(cfg['parent'])/'adapters.safetensors'))
+            mx.eval(parent_factors)
+            if frozen_digest() != frozen_before:
+                raise RuntimeError('Suffix export remapping changed frozen factors')
+            runtime.event('frozen_backbone_unloaded', **runtime.response_done())
+            mx.reset_peak_memory()
+            runtime.event('peak_counter_reset', scope='Subsequent MLX peaks cover suffix training; earlier prefix-computation peaks remain in runtime log')
         optimizer = optim.AdamW(learning_rate=cfg['learning_rate'], weight_decay=0.)
         rng = random.Random(cfg['seed'])
         order, retention_order = list(range(len(prepared))), list(range(len(clean)))
@@ -118,15 +173,18 @@ def main():
             runtime.event('update_begin', step=step+1, repair_index=ri, replay_index=ci)
             total, gradient = mx.array(0.), None
             losses = []
-            for (tokens, mask), weight in [(prepared[ri], cfg['repair_weight']), (clean[ci], cfg['replay_weight'])]:
+            for (tokens, mask), weight, feature_name in [
+                (prepared[ri], cfg['repair_weight'], f'repairs-{ri:04d}'),
+                (clean[ci], cfg['replay_weight'], f'replay-{ci:04d}')]:
+                features = mx.load(str(cache_dir/(feature_name+'.safetensors')))['hidden'] if cached else None
                 (loss, _), part = staged_character_grad(model, mx.array([tokens]), mx.array([mask]),
-                                                       chunk_size=cfg['head_chunk_size'])
+                    chunk_size=cfg['head_chunk_size'], input_embeddings=features)
                 scaled = tree_map(lambda g: weight*g, part)
                 gradient = scaled if gradient is None else tree_map(lambda a,b:a+b, gradient, scaled)
                 total = total + weight*loss
                 mx.eval(total, gradient)
                 losses.append(loss.item())
-                del loss, part, scaled
+                del loss, part, scaled, features
                 runtime.response_done()
             norm = mx.sqrt(sum(mx.sum(g.astype(mx.float32)**2) for _,g in tree_flatten(gradient)))
             mx.eval(total, norm)
@@ -155,6 +213,22 @@ def main():
                 os.replace(temporary, path)
                 atomic_json(out/f'step{step+1:04d}.json', dict(step=step+1, adapter_sha256=sha(path),
                     frozen_adapter_unchanged=True, status='Unreviewed research export'))
+                from repair_export_score import selected_score
+                model.eval()
+                features = mx.load(str(cache_dir/'repairs-0000.safetensors'))['hidden'] if cached else None
+                try:
+                    score = selected_score(model, *prepared[0], input_embeddings=features)
+                    atomic_json(out/f'step{step+1:04d}-export-score.json', dict(model=cfg['model'],
+                        adapter_sha256=sha(path), data=cfg['repairs'], data_sha256=cfg['repairs_sha256'],
+                        row_index=0, score=score, cached_prefix=cached))
+                finally:
+                    del features
+                    model.train()
+                    model.model.embed_tokens.eval()
+                    if not cached:
+                        for layer in model.layers[:first]:
+                            layer.eval()
+                runtime.response_done()
                 if step+1 == cfg['steps']:
                     os.link(path, out/'adapters.safetensors')
         atomic_json(out/'completion.json', dict(steps=cfg['steps'], status='Training complete; no acceptance claim',

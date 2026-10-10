@@ -1,0 +1,12 @@
+{
+  "status": "prepared",
+  "previous": "results/on-policy-runtime-probe-failed.json",
+  "changes": [
+    "Reduce trainable upper layers from12 to6",
+    "Reduce MLX cap from3.8GB to3.4GB",
+    "Persist MLX peak, active memory, RSS and swap before every guard exception",
+    "Replace absolute stale swap threshold with explicit macOS normal-pressure requirement; retain512MiB growth cap, elapsed and RSS limits"
+  ],
+  "rationale": "After the rejected run exited, memory_pressure -Q reported80percent free; vm_stat reported245803 free16KiBpages (about4.03GB), while about2GiB of old swapped pages remained. Absolute swap occupation alone is an unsuitable readiness signal. The original attempt also exceeded the retained growth cap, so it remains a failed probe.",
+  "scope": "Complete1700token history and840token clean replay retained. Partial parameter adaptation, not context truncation. No unchanged heavy retry."
+}

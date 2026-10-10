@@ -22,7 +22,7 @@ def restore_rng(state):
     mx.random.seed((int(high) << 32) | int(low))
 
 
-def staged_character_grad(model, batch, mask, chunk_size=64, denominator=None):
+def staged_character_grad(model, batch, mask, chunk_size=64, denominator=None, input_embeddings=None):
     if model.model_type != 'qwen3' or not model.args.tie_word_embeddings:
         raise ValueError('Only tied Qwen3 is supported')
     head = model.model.embed_tokens
@@ -35,7 +35,13 @@ def staged_character_grad(model, batch, mask, chunk_size=64, denominator=None):
         raise ValueError('Positive chunk size and boolean target mask required')
     rng_before = list(mx.random.state)
     mx.eval(rng_before)
-    hidden = mx.stop_gradient(model.model(batch[:, :-1]))
+    if input_embeddings is not None and input_embeddings.shape[:2] != batch[:, :-1].shape:
+        raise ValueError('Cached frozen-prefix features must cover the complete input sequence')
+    def backbone(current):
+        if input_embeddings is None:
+            return current.model(batch[:, :-1])
+        return current.model(batch[:, :-1], input_embeddings=mx.stop_gradient(input_embeddings))
+    hidden = mx.stop_gradient(backbone(model))
     mx.eval(hidden)
     keep = head.dropout._p_1 if head.dropout.training else 1.0
     # Match Dropout's draw shape and arithmetic order exactly, including BF16.
@@ -88,7 +94,7 @@ def staged_character_grad(model, batch, mask, chunk_size=64, denominator=None):
     mx.clear_cache()
 
     def replay_loss(current):
-        return (current.model(batch[:, :-1]) * hidden_cotangent).sum()
+        return (backbone(current) * hidden_cotangent).sum()
 
     try:
         restore_rng(rng_before)

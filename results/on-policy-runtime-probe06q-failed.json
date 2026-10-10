@@ -1,0 +1,10 @@
+{
+  "status": "resource_guard_rejected",
+  "configuration": "configs/on-policy-runtime-probe06q.json",
+  "optimizer_updates": 0,
+  "measured_peak_mlx_bytes": 3528503728,
+  "previous_unchunked_peak": 3687833310,
+  "memory_pressure_level": 2,
+  "reason": "Pressure warning at first gradient boundary; no kernel panic",
+  "next": "Compute deterministic frozen lower30-layer features, unload their base weights, train upper6 layers with full1700-token context and clean replay."
+}

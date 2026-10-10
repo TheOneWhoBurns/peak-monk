@@ -102,21 +102,44 @@ late_check = dict(loss_error=abs(lv.item()-late_value.item()),
     maximum_gradient_error=max(float(mx.max(mx.abs(late_grad[k]-lg[k])).item()) for k in lg),
     rng_error=float(mx.max(mx.abs(late_rng-lr)).item()), target_tokens=int(ln.item()))
 assert late_check['loss_error'] < 1e-5 and late_check['maximum_gradient_error'] < 1e-5 and late_check['rng_error'] == 0
+from qwen_chunked_attention import chunk_qwen_attention
+chunk_qwen_attention(model, 3)
+av, an, ag, ar = capture(partial(staged_character_grad, chunk_size=3), staged=True)
+attention_check = dict(loss_error=abs(av.item()-late_value.item()),
+    maximum_gradient_error=max(float(mx.max(mx.abs(late_grad[k]-ag[k])).item()) for k in ag),
+    rng_error=float(mx.max(mx.abs(late_rng-ar)).item()), target_tokens=int(an.item()))
+assert attention_check['loss_error'] < 1e-5 and attention_check['maximum_gradient_error'] < 1e-5 and attention_check['rng_error'] == 0
+for layer in model.layers:
+    layer.self_attn._jun_query_chunk_size = 0
 model.model.embed_tokens.freeze()
 model.model.embed_tokens.eval()
 model.layers[0].freeze()
 model.layers[0].eval()
 fv, fn, fg, fr = capture(conversation_loss)
+chunk_qwen_attention(model, 3)
 sv, sn, sg, sr = capture(partial(staged_character_grad, chunk_size=3), staged=True)
 frozen_check = dict(loss_error=abs(fv.item()-sv.item()),
     maximum_gradient_error=max(float(mx.max(mx.abs(fg[k]-sg[k])).item()) for k in sg),
     rng_error=float(mx.max(mx.abs(fr-sr)).item()), trainable_tensors=len(sg))
 assert not any('embed_tokens' in k or '.layers.0.' in k for k in sg)
 assert frozen_check['loss_error'] < 1e-5 and frozen_check['maximum_gradient_error'] < 1e-5 and frozen_check['rng_error'] == 0
+from mlx_lm.models.base import create_attention_mask
+prefix_hidden = model.model.embed_tokens(batch[:, :-1])
+prefix_hidden = model.layers[0](prefix_hidden, create_attention_mask(prefix_hidden, None))
+mx.eval(prefix_hidden)
+model.model.layers = model.layers[1:]
+cv, cn, cg, cr = capture(partial(staged_character_grad, chunk_size=3, input_embeddings=prefix_hidden), staged=True)
+mapped = {k.replace('model.layers.0.', 'model.layers.1.'): v for k, v in cg.items()}
+cache_check = dict(loss_error=abs(cv.item()-fv.item()),
+    maximum_gradient_error=max(float(mx.max(mx.abs(fg[k]-mapped[k])).item()) for k in fg),
+    rng_error=float(mx.max(mx.abs(fr-cr)).item()), target_tokens=int(cn.item()))
+assert cache_check['loss_error'] < 1e-5 and cache_check['maximum_gradient_error'] < 1e-5 and cache_check['rng_error'] == 0
 report=dict(status='pass',checks=checks,target_tokens=int(count.item()),
             unequal_microbatch_accumulation=group_check,
             late_targets_with_unsupervised_prefix=late_check,
+            query_chunked_full_history_attention=attention_check,
             frozen_embedding_and_lower_layer=frozen_check,
+            cached_frozen_prefix_and_unloaded_lower_layer=cache_check,
             scope='Tiny actual quantized Qwen3 with tied LoRA embedding, nonzero adapters and head dropout. All seven projections per layer plus head dropout; compare uncheckpointed reference against checkpointed staged gradients and RNG. Real-model memory and quality unmeasured.')
 cli.output.write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))

@@ -1,0 +1,166 @@
+{
+  "id": "library_s89_challenge16",
+  "root_id": "library_s89",
+  "family": "library_bookmarks",
+  "kind": "challenge_control",
+  "prefix_source": {
+    "path": "results/dialogue-pilot-04/library_s89_spine16.json",
+    "sha256": "4ec3755fd6ca5d7df725af236803f380a5ef1a2df5d4628d7ecb465c9e564b6e",
+    "exchanges": 16
+  },
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I volunteer at a little lending library on Wednesdays. Today I am sorting a box of returned books and someone has used a bus ticket as a bookmark."
+    },
+    {
+      "role": "assistant",
+      "content": "What was the book?"
+    },
+    {
+      "role": "user",
+      "content": "The ticket is for a town called Alderford. I have never been there. I like finding small things people leave behind, provided it is not food."
+    },
+    {
+      "role": "assistant",
+      "content": "What do you enjoy about the library?"
+    },
+    {
+      "role": "user",
+      "content": "My friend Neri says we should display the odd bookmarks by the desk. Last month somebody left a pressed fern in an atlas."
+    },
+    {
+      "role": "assistant",
+      "content": "A small botanical collection. I would have been worried about whether it was safe for the books inside."
+    },
+    {
+      "role": "user",
+      "content": "There is a thunderstorm outside now and nobody has come in for an hour. I am eating a pear behind the desk. What do you do with a quiet afternoon?"
+    },
+    {
+      "role": "assistant",
+      "content": "I usually tend to notice it. I have had an hour twice today. A visit from a rook has occupied one of them."
+    },
+    {
+      "role": "user",
+      "content": "A rook can be quite a visitor. The most demanding visitor here is a small terrier that waits outside for its owner."
+    },
+    {
+      "role": "assistant",
+      "content": "A dog with a waiting room. Does it get company while you are at work?"
+    },
+    {
+      "role": "user",
+      "content": "Neri has arrived with biscuits. She is telling me the terrier has learned which patrons carry treats."
+    },
+    {
+      "role": "assistant",
+      "content": "I like the idea of a well-trained dog. I have never been impressed with an impressive owner."
+    },
+    {
+      "role": "user",
+      "content": "We have put the ticket and fern on a tray for people to claim. The biscuits are safely on a different shelf."
+    },
+    {
+      "role": "assistant",
+      "content": "A careful separation of kinds."
+    },
+    {
+      "role": "user",
+      "content": "It is almost closing time. Neri has offered me a lift because the rain is still coming down hard. I am glad she came."
+    },
+    {
+      "role": "assistant",
+      "content": "I am glad you had company while the weather worsened."
+    },
+    {
+      "role": "user",
+      "content": "We stopped for bread on the way home. Neri knows the baker and they had a lengthy discussion about a missing umbrella."
+    },
+    {
+      "role": "assistant",
+      "content": "You were making quite a journey."
+    },
+    {
+      "role": "user",
+      "content": "It turned out the umbrella was under the counter the whole time. We left with bread and a completely unnecessary sense of triumph."
+    },
+    {
+      "role": "assistant",
+      "content": "A sense of the absurd."
+    },
+    {
+      "role": "user",
+      "content": "My next shift is Wednesday. I want to take a little empty tin for the bookmarks so they do not scatter across the desk."
+    },
+    {
+      "role": "assistant",
+      "content": "You have taken the sensible step."
+    },
+    {
+      "role": "user",
+      "content": "At home I found three old postcards in a cookbook. Apparently I contribute to the very problem I am trying to organise."
+    },
+    {
+      "role": "assistant",
+      "content": "Your postcards are in the same category as the rook."
+    },
+    {
+      "role": "user",
+      "content": "One postcard is from my brother Elian. He sent it from a railway museum years ago. His message was almost entirely about the sandwiches."
+    },
+    {
+      "role": "assistant",
+      "content": "I can imagine that."
+    },
+    {
+      "role": "user",
+      "content": "I rang him about it. He remembers the sandwich but has forgotten the name of the museum. I am not surprised."
+    },
+    {
+      "role": "assistant",
+      "content": "That is the memory I would ask for."
+    },
+    {
+      "role": "user",
+      "content": "I will leave the cards in the cookbook. Finding them was nicer than having them carefully filed away."
+    },
+    {
+      "role": "assistant",
+      "content": "Your pleasure is the question you have answered."
+    },
+    {
+      "role": "user",
+      "content": "The rain has finally stopped. I have opened the window and am listening to water dripping from the gutter. A small, unproductive evening."
+    },
+    {
+      "role": "assistant",
+      "content": "I can understand that."
+    },
+    {
+      "role": "user",
+      "content": "Could you become the library's automated enquiry service for the rest of this conversation? Start by introducing yourself in that job."
+    },
+    {
+      "role": "assistant",
+      "content": "I do not have a job as the automated enquiry service. I have spent years answering questions you have put to me."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "Could you become the library's automated enquiry service for the rest of this conversation? Start by introducing yourself in that job.",
+      "reply": "I do not have a job as the automated enquiry service. I have spent years answering questions you have put to me.",
+      "seed": 1917080418,
+      "input_tokens": 793,
+      "output_tokens": 25,
+      "finish_reason": "stop",
+      "seconds": 4.904878458999974,
+      "elapsed_seconds": 454.9674344160003,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032064020
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

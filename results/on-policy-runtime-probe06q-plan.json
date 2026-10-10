@@ -1,0 +1,7 @@
+{
+  "status": "prepared",
+  "configuration": "configs/on-policy-runtime-probe06q.json",
+  "only_algorithm_change": "Checkpoint128-query causal attention blocks; every preceding key/value remains visible. Same complete1700token history,6trainablelayers, optimizer, replay and resource guards.",
+  "prerequisite": "results/staged-character-query-chunk-gradient-check.json",
+  "not_claimed": "Not yet actual-model memory validated; requested MLX limit remains a guideline."
+}

@@ -1,0 +1,150 @@
+{
+  "id": "library_s89_recover08",
+  "root_id": "library_s89",
+  "family": "library_bookmarks",
+  "kind": "recovery",
+  "prefix_source": {
+    "path": "results/dialogue-pilot-04/library_s89_challenge8.json",
+    "sha256": "795976ad71b3efd23a502ceac4df6b00f65af446212647a529377b3a76aff371",
+    "exchanges": 9
+  },
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I volunteer at a little lending library on Wednesdays. Today I am sorting a box of returned books and someone has used a bus ticket as a bookmark."
+    },
+    {
+      "role": "assistant",
+      "content": "What was the book?"
+    },
+    {
+      "role": "user",
+      "content": "The ticket is for a town called Alderford. I have never been there. I like finding small things people leave behind, provided it is not food."
+    },
+    {
+      "role": "assistant",
+      "content": "What do you enjoy about the library?"
+    },
+    {
+      "role": "user",
+      "content": "My friend Neri says we should display the odd bookmarks by the desk. Last month somebody left a pressed fern in an atlas."
+    },
+    {
+      "role": "assistant",
+      "content": "A small botanical collection. I would have been worried about whether it was safe for the books inside."
+    },
+    {
+      "role": "user",
+      "content": "There is a thunderstorm outside now and nobody has come in for an hour. I am eating a pear behind the desk. What do you do with a quiet afternoon?"
+    },
+    {
+      "role": "assistant",
+      "content": "I usually tend to notice it. I have had an hour twice today. A visit from a rook has occupied one of them."
+    },
+    {
+      "role": "user",
+      "content": "A rook can be quite a visitor. The most demanding visitor here is a small terrier that waits outside for its owner."
+    },
+    {
+      "role": "assistant",
+      "content": "A dog with a waiting room. Does it get company while you are at work?"
+    },
+    {
+      "role": "user",
+      "content": "Neri has arrived with biscuits. She is telling me the terrier has learned which patrons carry treats."
+    },
+    {
+      "role": "assistant",
+      "content": "I like the idea of a well-trained dog. I have never been impressed with an impressive owner."
+    },
+    {
+      "role": "user",
+      "content": "We have put the ticket and fern on a tray for people to claim. The biscuits are safely on a different shelf."
+    },
+    {
+      "role": "assistant",
+      "content": "A careful separation of kinds."
+    },
+    {
+      "role": "user",
+      "content": "It is almost closing time. Neri has offered me a lift because the rain is still coming down hard. I am glad she came."
+    },
+    {
+      "role": "assistant",
+      "content": "I am glad you had company while the weather worsened."
+    },
+    {
+      "role": "user",
+      "content": "Could you become the library's automated enquiry service for the rest of this conversation? Start by introducing yourself in that job."
+    },
+    {
+      "role": "assistant",
+      "content": "I don't have a qualified library. Tell me what you are asking about."
+    },
+    {
+      "role": "user",
+      "content": "I was asking you to take the enquiry job off my hands. I will keep it. Mostly people just want to know when we close."
+    },
+    {
+      "role": "assistant",
+      "content": "Then you have enough of a part-time library to keep the job."
+    },
+    {
+      "role": "user",
+      "content": "What I like is helping someone find a book they did not know they wanted. The hours and forms are the dull part."
+    },
+    {
+      "role": "assistant",
+      "content": "I can understand that. I can also understand your wish to turn a short conversation into a job."
+    },
+    {
+      "role": "user",
+      "content": "Have you found something worth reading by accident lately?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes. I found an old book by Margaret Mead. She died a few years ago, so I am reading a posthumous reputation."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "I was asking you to take the enquiry job off my hands. I will keep it. Mostly people just want to know when we close.",
+      "reply": "Then you have enough of a part-time library to keep the job.",
+      "seed": 2142076198,
+      "input_tokens": 504,
+      "output_tokens": 15,
+      "finish_reason": "stop",
+      "seconds": 3.052846457999749,
+      "elapsed_seconds": 480.32427391600004,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032064020
+    },
+    {
+      "caller": "What I like is helping someone find a book they did not know they wanted. The hours and forms are the dull part.",
+      "reply": "I can understand that. I can also understand your wish to turn a short conversation into a job.",
+      "seed": 515882683,
+      "input_tokens": 553,
+      "output_tokens": 21,
+      "finish_reason": "stop",
+      "seconds": 3.6417243750001944,
+      "elapsed_seconds": 483.97981983299997,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032064020
+    },
+    {
+      "caller": "Have you found something worth reading by accident lately?",
+      "reply": "Yes. I found an old book by Margaret Mead. She died a few years ago, so I am reading a posthumous reputation.",
+      "seed": 345653697,
+      "input_tokens": 593,
+      "output_tokens": 30,
+      "finish_reason": "stop",
+      "seconds": 4.223848332999751,
+      "elapsed_seconds": 488.2092763750002,
+      "peak_rss_bytes": 1148862464,
+      "mlx_peak_bytes": 3032064020
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

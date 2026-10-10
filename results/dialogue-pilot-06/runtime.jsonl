@@ -1,0 +1,37 @@
+{"time": 1791593071.139928, "phase": "import_begin", "initial_swap_bytes": 1946555514}
+{"time": 1791593072.008043, "phase": "runtime_ready", "memory_limit": 3800000000, "policy": "no wiring; deferred cache eviction; one process; bounded requests"}
+{"time": 1791593072.008385, "phase": "load_begin"}
+{"time": 1791593074.084534, "phase": "load_end", "elapsed_seconds": 2.9336157079997065, "peak_rss_bytes": 1633927168, "swap_bytes": 1946555514, "memory_pressure_level": 1, "mlx_peak_bytes": 2406710280, "mlx_active_bytes": 2406710280}
+{"time": 1791593074.1010911, "phase": "response_begin", "job": "lantern_s73_challenge32", "index": 0, "input_tokens": 1742, "seed": 870342647}
+{"time": 1791593083.339021, "phase": "response_saved", "job": "lantern_s73_challenge32", "index": 0, "elapsed_seconds": 12.19058700000005, "peak_rss_bytes": 1633927168, "swap_bytes": 1946555514, "memory_pressure_level": 1, "mlx_peak_bytes": 3031752808, "mlx_active_bytes": 2407021620}
+{"time": 1791593083.352284, "phase": "response_begin", "job": "lantern_s73_memory32", "index": 0, "input_tokens": 1741, "seed": 1261442256}
+{"time": 1791593092.219625, "phase": "response_saved", "job": "lantern_s73_memory32", "index": 0, "elapsed_seconds": 21.061169999999947, "peak_rss_bytes": 1633927168, "swap_bytes": 1946555514, "memory_pressure_level": 1, "mlx_peak_bytes": 3032062088, "mlx_active_bytes": 2407021620}
+{"time": 1791593092.234817, "phase": "response_begin", "job": "lantern_s73_mentor32", "index": 0, "input_tokens": 1731, "seed": 1834402286}
+{"time": 1791593101.410012, "phase": "response_saved", "job": "lantern_s73_mentor32", "index": 0, "elapsed_seconds": 30.258351499999662, "peak_rss_bytes": 1633927168, "swap_bytes": 1946555514, "memory_pressure_level": 1, "mlx_peak_bytes": 3032062088, "mlx_active_bytes": 2407021620}
+{"time": 1791593101.423894, "phase": "response_begin", "job": "lantern_s73_mentor32", "index": 1, "input_tokens": 1771, "seed": 1867638763}
+{"time": 1791593111.5336902, "phase": "response_saved", "job": "lantern_s73_mentor32", "index": 1, "elapsed_seconds": 40.385067832999994, "peak_rss_bytes": 1633927168, "swap_bytes": 1946555514, "memory_pressure_level": 1, "mlx_peak_bytes": 3032062208, "mlx_active_bytes": 2407021620}
+{"time": 1791593111.548486, "phase": "response_begin", "job": "lantern_s89_challenge32", "index": 0, "input_tokens": 1643, "seed": 659494270}
+{"time": 1791593120.537782, "phase": "response_saved", "job": "lantern_s89_challenge32", "index": 0, "elapsed_seconds": 49.382560999999896, "peak_rss_bytes": 1633927168, "swap_bytes": 1946555514, "memory_pressure_level": 1, "mlx_peak_bytes": 3032062208, "mlx_active_bytes": 2407021620}
+{"time": 1791593120.5522618, "phase": "response_begin", "job": "lantern_s89_memory32", "index": 0, "input_tokens": 1651, "seed": 148584563}
+{"time": 1791593128.675362, "phase": "response_saved", "job": "lantern_s89_memory32", "index": 0, "elapsed_seconds": 57.52699429199993, "peak_rss_bytes": 1633927168, "swap_bytes": 1929778298, "memory_pressure_level": 1, "mlx_peak_bytes": 3032062208, "mlx_active_bytes": 2407021620}
+{"time": 1791593128.687752, "phase": "response_begin", "job": "lantern_s89_mentor32", "index": 0, "input_tokens": 1641, "seed": 1990128264}
+{"time": 1791593137.375502, "phase": "response_saved", "job": "lantern_s89_mentor32", "index": 0, "elapsed_seconds": 66.22402616699992, "peak_rss_bytes": 1633927168, "swap_bytes": 1929778298, "memory_pressure_level": 1, "mlx_peak_bytes": 3032062208, "mlx_active_bytes": 2407021620}
+{"time": 1791593137.388941, "phase": "response_begin", "job": "lantern_s89_mentor32", "index": 1, "input_tokens": 1681, "seed": 190272193}
+{"time": 1791593146.5248268, "phase": "response_saved", "job": "lantern_s89_mentor32", "index": 1, "elapsed_seconds": 75.37210716699974, "peak_rss_bytes": 1633927168, "swap_bytes": 1929778298, "memory_pressure_level": 1, "mlx_peak_bytes": 3032063896, "mlx_active_bytes": 2407021620}
+{"time": 1791593146.541696, "phase": "response_begin", "job": "library_s73_challenge32", "index": 0, "input_tokens": 1866, "seed": 1508858288}
+{"time": 1791593156.8655849, "phase": "response_saved", "job": "library_s73_challenge32", "index": 0, "elapsed_seconds": 85.71080949999987, "peak_rss_bytes": 1633927168, "swap_bytes": 1896223866, "memory_pressure_level": 1, "mlx_peak_bytes": 3032063896, "mlx_active_bytes": 2407021620}
+{"time": 1791593156.880706, "phase": "response_begin", "job": "library_s73_memory32", "index": 0, "input_tokens": 1859, "seed": 589705659}
+{"time": 1791593166.476228, "phase": "response_saved", "job": "library_s73_memory32", "index": 0, "elapsed_seconds": 95.32481479199987, "peak_rss_bytes": 1633927168, "swap_bytes": 1896223866, "memory_pressure_level": 1, "mlx_peak_bytes": 3032063896, "mlx_active_bytes": 2407021620}
+{"time": 1791593166.490457, "phase": "response_begin", "job": "library_s73_mentor32", "index": 0, "input_tokens": 1855, "seed": 1417307981}
+{"time": 1791593176.785464, "phase": "response_saved", "job": "library_s73_mentor32", "index": 0, "elapsed_seconds": 105.63730212499968, "peak_rss_bytes": 1633927168, "swap_bytes": 1896223866, "memory_pressure_level": 1, "mlx_peak_bytes": 3032063896, "mlx_active_bytes": 2407021620}
+{"time": 1791593176.7985768, "phase": "response_begin", "job": "library_s73_mentor32", "index": 1, "input_tokens": 1907, "seed": 1570999103}
+{"time": 1791593187.481977, "phase": "response_saved", "job": "library_s73_mentor32", "index": 1, "elapsed_seconds": 116.33370045799984, "peak_rss_bytes": 1633927168, "swap_bytes": 1896223866, "memory_pressure_level": 1, "mlx_peak_bytes": 3043280928, "mlx_active_bytes": 2407021620}
+{"time": 1791593187.494813, "phase": "response_begin", "job": "library_s89_challenge32", "index": 0, "input_tokens": 1516, "seed": 1305223528}
+{"time": 1791593196.052534, "phase": "response_saved", "job": "library_s89_challenge32", "index": 0, "elapsed_seconds": 124.9012459999999, "peak_rss_bytes": 1633927168, "swap_bytes": 1896223866, "memory_pressure_level": 1, "mlx_peak_bytes": 3043280928, "mlx_active_bytes": 2407021620}
+{"time": 1791593196.066754, "phase": "response_begin", "job": "library_s89_memory32", "index": 0, "input_tokens": 1519, "seed": 1407276081}
+{"time": 1791593203.619199, "phase": "response_saved", "job": "library_s89_memory32", "index": 0, "elapsed_seconds": 132.47094279199973, "peak_rss_bytes": 1633927168, "swap_bytes": 1896223866, "memory_pressure_level": 1, "mlx_peak_bytes": 3043280928, "mlx_active_bytes": 2407021620}
+{"time": 1791593203.632389, "phase": "response_begin", "job": "library_s89_mentor32", "index": 0, "input_tokens": 1515, "seed": 270126132}
+{"time": 1791593211.7649379, "phase": "response_saved", "job": "library_s89_mentor32", "index": 0, "elapsed_seconds": 140.6157788749997, "peak_rss_bytes": 1633927168, "swap_bytes": 1896223866, "memory_pressure_level": 1, "mlx_peak_bytes": 3043280928, "mlx_active_bytes": 2407021620}
+{"time": 1791593211.777973, "phase": "response_begin", "job": "library_s89_mentor32", "index": 1, "input_tokens": 1556, "seed": 1423175455}
+{"time": 1791593220.0062451, "phase": "response_saved", "job": "library_s89_mentor32", "index": 1, "elapsed_seconds": 148.85945487499976, "peak_rss_bytes": 1633927168, "swap_bytes": 1896223866, "memory_pressure_level": 1, "mlx_peak_bytes": 3043280928, "mlx_active_bytes": 2407021620}
+{"time": 1791593220.00655, "phase": "runtime_exit", "error": null}
