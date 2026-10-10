@@ -1,0 +1,14 @@
+{
+  "status": "Historical parent review only; no trial or release acceptance",
+  "candidate": "adapters/run20-step0032",
+  "adapter_sha256": "e0407665c4c7c4ce83046549f6977fe4cfa13c7a8a51a783b541c34146a374ba",
+  "evidence": [
+    "results/run20-selection.json",
+    "results/run20-step0032-gate.json",
+    "results/train21-plan.json",
+    "results/train22-plan.json"
+  ],
+  "finding": "Run20step32 passed17/20development including all essentials, then failed the original final/control and pressure audits. Run22 intentionally restarted from the earlierSFT branch while correcting gradient checkpointing and adding long conversations. Runs23through25 then adapted run22, not the earlier development-qualified run20 artifact.",
+  "limitation": "Run20 predates the dropout-checkpoint replay correction. Its saved inference behavior is real, but its original gradient implementation was later corrected. Any reuse needs current guarded full-backbone score/serialization verification and new training that excludes all exposed final/pressure material.",
+  "conditional": "Keep run26 fixed as the registered depth comparison. If it fails, consider a separately registered parent comparison using run20step32 and the same training-only repairs. Do not reuse old final/pressure outputs as corrective targets or assume old dev pass survives new training."
+}
