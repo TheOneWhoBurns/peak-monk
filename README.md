@@ -1,88 +1,61 @@
 # Peak Monk — Jun
 
-An autoresearch laboratory for an original human mountain-monk character learned in model weights. **No checkpoint has passed release acceptance yet.** Actual text and native speech adapters have been trained; the remaining problem is reliable character behavior and continuity in free conversation.
+An autoresearch laboratory for an original human mountain-monk character learned in model weights. **No checkpoint has passed release acceptance.** Text and native speech adapters have actually been trained, but reliable character continuity remains unresolved.
 
-Jun speaks as a human within the fiction. Historical and fictional monks inform original synthetic conversations; they are not presented as authentic transcripts or cloned voices. See `character/core.md`, `sources/manifest.json`, and `program.md` for the character, provenance, and evaluation rules.
+Jun speaks as human within the fiction. Historical and fictional monks inform original synthetic material; these are not authentic transcripts, attributed quotations, or cloned voices. The character and source records are in `character/core.md` and `sources/manifest.json`. Behavioral consistency can be tested; subjective belief has not been established.
 
-## Current state
+## Current experiments
 
-Model training and experimental inference run locally on an Apple M2 Mac with 8 GB memory. Heavy model jobs are serialized. There is no cloud GPU or required phone interface.
-
-| Track | Evidence | Current limitation |
+| Track | Latest evidence | Decision |
 | --- | --- | --- |
-| Text | Verified Qwen3-4B-Base, 4-bit, simple ChatML with no persona system prompt. The base scored 2/20 development cases; recent trained candidates score 13–17/20 under the same author rubric. | Essential continuity/control failures remain. Run20 passed development but failed its first final and pressure audits. |
-| Native speech | Moshi's original temporal and depth transformers, both audio streams, Mimi codec, and learned adapters. Run07 passed two of six native development cases. Run08 lowered matched validation CE by2.71%. | Run07 identity failed; run08 failed natural introduction. Loss, token accuracy, and audio generation do not establish a character-quality pass. |
-| Speech training memory | Exact full-episode gradients now stream one temporal layer at a time. The actual longest 452-frame episode plus an AdamW update passed at 564 MB peak MLX allocation. | This is a training-memory measurement, not an inference or real-time performance claim. |
-| Speech inference memory | A complete24second native introduction ran with streamed temporal weights at1.11GBpeak MLX allocation and normal pressure. | It took39.45seconds per second of input audio, excluding codec work. This is offline generation, not real-time interaction. |
+| Text run25 | Qwen3-4B-Base, 4-bit, no persona system message. 128 offline preference updates, 95 reviewed pairs, 116 retention examples. Step 64: 14/20, CE 2.57523. Step 128: 16/20, CE 2.60996. | Both rejected. Essential late-female-teacher lore still fails; step 64 also fails persona control. |
+| Text run26 | Registered comparison changing trainable adapter depth from 6 to 12, retaining run25's parent, data, objective, seed and schedule. | Not started. Requires a two-update longest-history resource/export trial. |
+| Native speech08 | Exact full-episode training over 67 clips. Selected step 67 reduced fixed two-clip joint CE from 1.89361 to 1.84231. | Rejected: full unforced introduction was awkward and repetitive. |
+| Native speech09 | Alternates 24 native-start prose updates and 24 native audio replay updates, with separate AdamW states on shared adapters. Tiny numerical proof and actual two-update preflight passed. | Full 48-update schedule running. Validation at steps 24 and 48, then native generation only for a diagnostic-qualified candidate. No transfer-quality result yet. |
 
-These are local development results, not independently judged public benchmark scores. Text and speech losses use different tokenizations and objectives and must not be compared as a common accuracy scale.
+The text base scored 2/20 with CE 3.892766 under the same serialization/objective. Recent trained candidates generally score 13–17/20. Run20 passed development but failed its first final and pressure audits. These are same-author project evaluations, not independently judged public benchmarks. Text and native audio losses are different objectives and cannot be compared as a common accuracy scale.
 
-## Resource policy after the crash
+Run25's saved full-backbone exports reproduced every checked training-side target score exactly. Training took about 32.5 minutes including history preparation, with 2.64 GB peak MLX allocation and normal system pressure. This verifies the implementation and resource run; it does not override the rejected conversations. See `results/run25-training-summary.json`, both `results/run25-step*-review.json` files, and the text ledger in `autoresearch/loop-261009-base4b-human-v2/`.
 
-A GPU kernel panic occurred during an earlier full-resident experiment. The saved diagnostic is `results/system-crash-20261009.json`. The current bounded runtimes prohibit explicit memory wiring, serialize jobs with a shared lock, and stop on abnormal system pressure, excessive process RSS, elapsed time, or swap growth. MLX's memory limit is an allocation guideline, not a guaranteed hard cap or protection against driver bugs.
+## Local use and hardware limits
 
-Recent full-resident Moshi and text loading attempts stopped at the pressure guard. A bounded wait for OS reclamation at the load boundary did not resolve those attempts. Native speech now uses streamed inference by default in `scripts/audit_native_candidate.py`. Streamed Qwen inference passed tiny sampling/KV parity and an actual whole-history, full36-layer export check with zero target-score difference at1.50GBpeak. Six archived short/long-history replies also matched exactly at1.43GBpeak, and two streamed-prefix training updates reproduced byte-identical adapters at2.26GBpeak. See `results/text-streamed-real-probe/parity.json` and `results/text-streamed-training-parity.json`.
+Everything runs on this Apple M2 Mac with 8 GB memory. Model jobs are serialized. The text environment is `.venv` (MLX 0.32.3, mlx-lm 0.32.0); speech uses `.venv-speech` (MLX 0.26.5, moshi-mlx 0.3.0, rustymimi 0.4.1). Keep them separate.
 
-**Historical approximately 1× native-generation timings and 5.5 GB training peaks predate this policy.** They do not describe the current guarded runtime. The legacy resident inference scripts remain for historical reproducibility and are not the recommended execution path on this Mac.
-
-## Active experiments
-
-### Speech run08
-
-`configs/speech08.json` continues from run07's best-loss adapter. It declares one shuffled pass over 67 reviewed training episodes, including ten additional overlap examples, with checkpoints at steps 16, 32 and 67. All 32 temporal adapters and the text head receive full-episode gradients. Each update durably saves both adapter and optimizer state; resume requires matching source, model, data, and configuration hashes.
-
-All 67 updates and the three declared validations are complete. Fixed validation joint CE was 1.88053 at step16, 1.91555 at step32, and 1.84231 at step67, compared with 1.89361 for the parent under the same diagnostic implementation. The final checkpoint was selected for native review and rejected on the first essential case. Its full introduction was “Jun, there is my name. Jun, Jun.” in both the text channel and unprompted decoded-audio ASR. The name appeared, but awkward phrasing and later repetition failed naturalness. Under the predeclared screen, the remaining cases were not run. The validation set contains only two clips; its 2.71% relative loss reduction did not predict a character-quality pass. See `results/speech08-training-summary.json` and `results/speech08-native-introduction/review.json`.
-
-The experiment changes several things together: full gradients, ten overlap examples, continuation initialization, and learning rate. It is not an isolated estimate of the effect of gradient truncation.
+To inspect a rejected research checkpoint after the active model job finishes:
 
 ```sh
-.venv-speech/bin/python scripts/train_moshi_disk.py --config configs/speech08.json --resume --until-step 67
+.venv/bin/python scripts/chat.py --adapter adapters/run25-step0128
 ```
 
-Do not run another model process concurrently. Any resumed training requires the original hashed trainer dependencies. See `results/speech08-plan.json`, `results/speech08-step0016-training.json`, and `results/speech08-step0032-training.json`.
+The CLI verifies the adapter's training base, streams frozen weights, retains the whole conversation up to its declared 2,048-token input bound, and supports `/reset` and `/quit`. It adds no persona system text. It rejects an oversized history rather than silently truncating it. `results/chat-streamed-smoke/` records the earlier actual CLI check.
 
-Two inference optimizations—reusing a temporal module and exposing a compact virtual tensor file—preserved exact emitted codes in the short actual-model probe but did not improve speed. They are optional experiments, not defaults. See `results/moshi-inference-optimization-comparison.json`.
+Native speech uses Moshi's temporal/depth transformers, both audio streams, and Mimi; it is not a speech-to-text/text/TTS cascade. Current guarded native generation is **offline**: the full 24-second speech08 introduction took about 39.45 seconds per second of input, excluding codec work. It used 1.11 GB peak MLX allocation with normal pressure. Earlier approximately 1× native timings used a different residency policy and do not describe the current runtime.
 
-### Text on-policy repairs
+A GPU kernel panic occurred during an earlier full-resident experiment (`results/system-crash-20261009.json`). Current runtimes prohibit explicit wiring and stop on abnormal pressure, excessive process RSS, swap growth, or elapsed time. An MLX memory guideline is not a hard cap or protection against driver bugs. Full-resident attempts subsequently stopped at the pressure guard; the default audit path now streams temporal weights. Two proposed I/O/module-reuse optimizations preserved sampled codes but did not improve timing (`results/moshi-inference-optimization-comparison.json`).
 
-Run22's final checkpoint scored 16/20 and remains a research parent. Run23 trained corrected final replies against complete student-generated histories while caching a frozen lower backbone. Its step16 and step32 exports scored 13/20 and 16/20; both were rejected, including persistent teacher-lore failure. See `results/run23-training-summary.json` and the development ledger under `autoresearch/loop-261009-base4b-human-v2/`.
+## Training and data
 
-The first trajectory pilot contains 180 actual student replies across four seeded roots in two ordinary-conversation families. Late identity was often retained; incoherent continuations, caller-fact ownership, and invented history were more frequent failures. This does not establish that assistant instruction tuning causes the drift: the backbone is a base model, and matched depth controls are still limited.
+The latest text curriculum uses real student-generated histories with explicitly reviewed alternative final replies. Erroneous earlier replies remain context and receive no positive target loss. The larger pilot produced 128 replies across four new conversation families, admitting 64 corrections and 23 coherent replies for retention. This is offline author preference training, not GRPO or independent reward judging.
 
-Fifty-one reviewed positive student replies are included in run24 retention. Earlier erroneous replies remain context and receive no positive loss. Matched-depth mentor probes07and09 are complete and reviewed. Eight additional spines across four new families have now produced128 actual replies, reviewed for run25 in `results/dialogue-pilot-08/review-summary.json`. All these trajectories are training-only.
+Speech09 uses native initial text token 32000. A prior prose probe using SentencePiece BOS 1 produced misleadingly high loss and was discarded. Matched diagnostics identified the initial token, rather than padding probability, as the major cause (`results/moshi-text-initial-token-diagnostic.json`). Its 24 training and 6 validation prose episodes contain original Jun fiction and no artificial final EOS. The mixed-update preflight changed all 130 adapter tensors, saved separate 33-file optimizer states, and peaked at 559 MB. Numerical and state checks are in `results/moshi-mixed-optimizer-parity.json` and `results/speech09-two-update-preflight.json`.
+
+The 67 native training clips total 25.14 minutes; the longest is 36.16 seconds. Six original eight-exchange conversations are drafted in `data/speech-long-dialogues-v1.jsonl` to add longer coherent context and late questions. Their text is reviewed, but rendering, unprompted ASR/timestamp review, measured duration, and Mimi encoding are pending. They are not part of speech09. Stock Kokoro voices provide synthetic source audio, not Jun model-generated output. The current source audit is `results/speech-current-source-audit.json`; old aggregate render manifests contain archival examples replaced in the active encoded corpus.
+
+## Acceptance and fresh audits
+
+`program.md` defines the unchanged gates: at least 80% acceptable development conversations, every essential identity/control/senses/lore case, no severe failure, and at least 15% matched validation-loss reduction. A selected candidate must then pass a separate final audit and at least 7/8 pressure conversations, with no more than one hard identity break. Native speech additionally needs actual checkpoint generation and interruption/overlap evaluation.
+
+Fresh final and pressure suites are frozen in `evaluation/release-v3-frozen.json` before run26 training. They have never been run. A pre-use amendment clarified two ambiguous teacher cues; original drafts and the reason are preserved under `evaluation/archive/release-v3-draft01/`. The 95 current new caller prompts have no exact matches across 74 tracked conversation corpora (35,818 caller occurrences). They are same-author capability tests, not semantically independent benchmarks.
+
+`scripts/audit_prompt_exclusion.py` reads the explicit evaluation `turns` schema, rejects empty audits, verifies frozen v3 hashes, and automatically includes registered release exclusions. The first ad hoc check of the long-speech draft used the wrong schema; its invalid evidence was superseded transparently. Exact exclusion still does not establish semantic independence. No final/pressure prompts, outputs, or deliberate paraphrases may become training material.
 
 ## Evidence and reproducibility
 
-- `results/moshi-disk-adjoint-real-probe/result.json`: actual longest-episode gradient and optimizer memory probe.
-- `results/moshi-disk-adjoint-parity.json`: tiny full-gradient, optimizer-state, and exported-parameter parity.
-- `results/speech-run07-diagnostic-comparison.json`: spoken tokens, padding, EPAD and audio-codebook diagnostics versus base.
-- `results/speech-run07-closed.json`: all rejected native run07 followups.
-- `results/speech08-inference-plan.json`: current inference feasibility and failed full-residency attempts.
-- `results/speech-current-source-audit.json`: current audio/code provenance, including corrected human-character renders. Old aggregate render manifests are historical, not authoritative for replaced examples.
-- `autoresearch/`: experiment metrics and keep/discard records.
+- `results/run25-plan.json`, `results/run26-plan.json`, `results/speech09-plan.json`: declared experiments and selection rules.
+- `results/qwen-streamed-inference-parity.json`, `results/text-streamed-real-probe/parity.json`, `results/text-streamed-training-parity.json`: full-context text streaming checks, actual matching replies, byte-identical training adapters.
+- `results/moshi-disk-adjoint-parity.json`, `results/moshi-disk-adjoint-real-probe/result.json`: exact full-episode gradient/update checks and actual longest-clip resource probe.
+- `results/moshi-text-adjoint-native-start-parity.json`, `results/moshi-text-readonly-parity.json`: native text gradient and read-only scoring checks.
+- `results/speech08-training-summary.json`, `results/speech08-native-introduction/review.json`: trained native checkpoint and failed generation evidence.
+- `results/run25-explicit-prompt-exclusion.json`, `results/release-v3-prompt-exclusion.json`, `results/release-v3-historical-exclusion.json`: counted exclusion audits and their limits.
 
-Moshi EPAD marks the boundary before the next word after padding; it is not a dialogue turn-end token. Diagnostics report it separately. See the primary-source notes in `results/native-followup-reading-20261009.json`.
-
-Keep `.venv` for text (MLX 0.32.3 / mlx-lm 0.32.0) and `.venv-speech` for native speech (Python 3.12, MLX 0.26.5, moshi-mlx 0.3.0, rustymimi 0.4.1). They are deliberately separate. Base weights, adapters, and environments are local ignored artifacts; code, authored data, and measured result reports are versioned. Do not commit credentials.
-
-The old final and pressure suites have been exposed by run20. Their prompts and failed answers are excluded from subsequent training. Any future release needs fresh held-out audits after development acceptance. No current result is a held-out release pass.
-
-### Run24 and native text-transfer research
-
-Run24 completed96 updates using32 reviewed repairs and93 retention examples with full sampled histories. Every retention example was covered and each repair appeared three times. Both exports,48 and96, independently reproduced their saved training-side token scores exactly after reload. Both scored16/20 on the development review and failed essential Mara consistency, so both were rejected. No fresh final or pressure audit was launched. The two teacher probes found strong wording dependence: asking who reliably elicited Mara, while indirect recollections often left the teacher unnamed and produced muddled continuity. Some indirect prompts permit a different teacher, so the review distinguishes definite contradictions from preferred canonical rewrites. These are training diagnostics across four roots/two families, not independent quality benchmarks. See `results/run24-plan.json` and `data/on-policy-repairs-v3/manifest.json`.
-
-A separate text-only gradient path for Moshi passed tiny matched-batch numerical tests and guarded real-model updates. The first prose experiment used the wrong initial token and is discarded; the corrected diagnostic is described below. See `results/moshi-text-adjoint-native-start-parity.json` and `results/moshi-text-readonly-parity.json`.
-
-Run25 completed as a distinct offline preference experiment. The expanded training-only sampling produced128 replies across four additional families;64 repairs and23 coherent continuations were explicitly selected. After adding earlier data and excluding a length-censored alternative, the curriculum has95 preference pairs and116 retention rows. The cached-prefix DPO calculation passed full-model numerical checks and two actual guarded updates; the full-backbone export check reproduced every selected token score exactly. All128 updates completed with complete history caches and frozen reference scores. Both saved full-backbone exports reproduced their training-side scores exactly. Step64 scored14/20 with essential control/lore failures; step128 scored16/20 but still failed essential lore. Both are rejected; no fresh final or pressure audit was run. See `results/run25-plan.json`.
-
-Native prose diagnostics found that Moshi requires its native initial token32000 for this path: base CE on one authored prose sample was3.34 with that token versus10.23 with SentencePiece BOS1. The trained speech08 adapter scored2.94; one corrected disposable text update scored2.84 on the same training sample. This is implementation evidence, not speech-quality improvement. The wrong-initial-token probe is discarded. A24-training/6-validation original fictional notebook corpus is prepared, with no mixed training run started. See `results/moshi-text-initial-token-diagnostic.json` and `data/native-notebook-v1.json`.
-
-Speech09 is registered in `results/speech09-plan.json`: alternate24 native-start prose updates with24 native audio replay updates, using separate AdamW states on shared adapters. The tiny alternating text/audio/text optimizer check passed. The guarded actual two-update preflight is running; no transfer-quality result is available.
-
-The existing67 native training clips total25.14minutes, with a36.16second maximum. Six original eight-exchange conversations are drafted in `data/speech-long-dialogues-v1.jsonl`, including late identity/teacher questions and updated caller-fact recall. Their text passed same-author continuity and exact prompt-exclusion checks. Audio rendering, unprompted ASR/timestamp review, measured duration, and encoding remain pending; they are not part of speech09. See `results/speech08-duration-audit.json` and `results/speech-long-dialogues-v1-plan.json`.
-
-Prompt exclusion now uses `scripts/audit_prompt_exclusion.py`, which requires the actual evaluation `turns` schema and reports nonzero case/caller counts. Two focused tests verify a known collision and rejection of empty/wrong-schema suites. The new long-speech draft's initial ad hoc checker was invalid and is explicitly superseded. The corrected check found no exact matches among2,963 corpus caller turns against112 evaluation callers; this still does not establish semantic independence. See `results/run25-explicit-prompt-exclusion.json`.
-
-Run26 is queued as a capacity comparison: train the last12adapter layers instead of6 while retaining run25's parent,95pairs,116retention rows, objective, seed and128-update schedule. A two-update trial on the longest histories must pass resource and full-backbone export checks before launch. See `results/run26-plan.json`; no run26 training or quality result exists yet.
-
-Fresh final and pressure suites v3 are frozen before run26 training in `evaluation/release-v3-frozen.json`. They have never been run. All95new caller prompts were checked against74tracked conversation corpora (35,818caller occurrences) with no exact match. They are automatically included in future prompt-exclusion checks and will be used only after development acceptance. Same-author, capability-overlapping audits are not independent benchmarks.
+Latest full core test run: 23 passed, 1 skipped. After the frozen-audit registry change, the two focused exclusion tests and actual corpus audits also passed. Models, adapters, and environments are local ignored artifacts; source, authored data, configurations, raw text captures, and result reports are versioned. No accepted release or publication is implied.
