@@ -23,6 +23,8 @@ Run25's saved full-backbone exports reproduced every checked training-side targe
 
 Everything runs on this Apple M2 Mac with 8 GB memory. Model jobs are serialized. The text environment is `.venv` (MLX 0.32.3, mlx-lm 0.32.0); speech uses `.venv-speech` (MLX 0.26.5, moshi-mlx 0.3.0, rustymimi 0.4.1). Keep them separate.
 
+Double-click `Try Jun.command` to try the preserved development-best text checkpoint (run20 step32,17/20 development; failed later release audits). Its lightweight launcher waits for the shared model lock before loading Jun. Type `/reset` to clear the conversation or `/quit` to exit. The autonomous research goal stays paused.
+
 To inspect a rejected research checkpoint after the active model job finishes:
 
 ```sh
