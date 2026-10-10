@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "corpus_sha256": "5c8c8716af692346d257ede13321482924968d38e088c92bc37a0141027d9ecd",
+  "exact_caller_collisions": [],
+  "evaluation_sha256": {
+    "evaluation/dev-roleplay-v2.json": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+    "evaluation/final-roleplay-v2.json": "d40b45d84e91e19acc5d7cd0f66c1371557df8c02dca7389becb472b56ac580b",
+    "evaluation/pressure-v2.json": "8f7555a83afcc9d10ef2559c24618cf8b55a635d67ca3d0cfb1a1353911cdfeb"
+  },
+  "review": "All six authored dialogues reviewed for continuity, original-human-Jun framing, late female Mara, specific caller-fact updates, role alternation, and no claimed perception of caller. Same-author review; not independent.",
+  "limitations": "Exact exclusion does not prove semantic independence; generic character capabilities overlap deliberately with development. These episodes are training/diagnostic material, not release evidence. Audio has not been synthesized or reviewed."
+}

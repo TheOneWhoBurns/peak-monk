@@ -1,0 +1,15 @@
+{
+  "status": "Registered before training; mixed-optimizer parity test and actual segmented preflight pending",
+  "config": "configs/speech09.json",
+  "config_sha256": "f4dc6a597d3bca0790c0ad696dafe623debc7bda23197a96ffe455f203c356f1",
+  "parent": "speech08-step0067, rejected native development candidate; research parent only",
+  "hypothesis": "Character-specific text updates may improve native character continuity while explicit audio replay preserves spoken behavior. Native-start prose scoring/gradient proof supports testing, not proven transfer.",
+  "schedule": "48updates alternating24 distinct text snippets and24 selected native audio episodes. Text/audio AdamW states and counters are separate.",
+  "audio_selection": "6 core character episodes +8 seeded ordinary episodes +all10 overlap episodes. All training-only. This oversamples overlap relative to the67episode source pool and is an explicit confound.",
+  "text": "2351 training target tokens,551 validation target tokens across24/6 distinct authored episode families. Native initial32000; no artificial EOS target.",
+  "selection": "At steps24 and48, compare6-text-episode token-weighted CE and unchanged2-native-episode diagnostics against step0. Eligible candidate must reduce text CE>=5percent, with native joint CE and native spoken-token CE each <=102percent of parent. Choose eligible candidate with lower text CE; ties choose lower native joint CE. Both may be rejected.",
+  "quality_screen": "Eligible selected candidate must pass full unforced native introduction and identity cases before remaining4 native development cases. Same source audio, seed41 and existing generation protocol. No alternate checkpoint/seed rescue after a failure. These are repeatedly used development probes, not independent release evidence.",
+  "resource": "Single serialized model process, no wiring, normal pressure required,1.4GB allocation guideline,1.5GB declared peak guard. Checkpoints and both optimizer states durably committed each update; stop/resume only exact metadata.",
+  "preflight": "Prove alternating text/audio/text updates against tiny full model with independent optimizer states. Then run real schedule through step2, inspect counts/resources/export before resuming unchanged run.",
+  "causality": "Composite text/audio curriculum and learning-rate intervention; do not attribute gains solely to text modality."
+}

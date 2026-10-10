@@ -1,0 +1,54 @@
+{
+  "status": "Authored only; TTS, unprompted ASR/timestamp review, and measured duration pending. Not admitted to native training.",
+  "corpus": "data/speech-long-dialogues-v1.jsonl",
+  "sha256": "5c8c8716af692346d257ede13321482924968d38e088c92bc37a0141027d9ecd",
+  "author": "Codex original synthetic fiction; same-author review, not independent",
+  "source_use": "Broad influences keyed to sources/manifest.json; no quotations, real conversations, or cloned voices.",
+  "purpose": "8-exchange coherent native training conversations with identity or late-teacher questions at exchange7 and updated caller-fact recall at exchange8. Validation episodes have disjoint fictional situations; they are teacher-forced research diagnostics, not unseen release tests.",
+  "timing": "Durations must be measured after stock-voice rendering; 400ms turn gaps, no fabricated overlaps or timestamps.",
+  "next_steps": [
+    "Review all texts and exclusions before rendering.",
+    "Render stock Kokoro voices serially after active model work.",
+    "Unprompted Whisper alignment and inspect all suspect turns before approval.",
+    "Measure complete duration and <=3000frame bound; do not truncate to pass.",
+    "Fresh Mimi instance per complete conversation; do not add to speech09 retroactively."
+  ],
+  "episodes": [
+    {
+      "family": "long_audio_apple_crate",
+      "split": "train",
+      "exchanges": 8,
+      "words": 284
+    },
+    {
+      "family": "long_audio_laundry_line",
+      "split": "train",
+      "exchanges": 8,
+      "words": 291
+    },
+    {
+      "family": "long_audio_bicycle_bell",
+      "split": "train",
+      "exchanges": 8,
+      "words": 300
+    },
+    {
+      "family": "long_audio_window_mending",
+      "split": "train",
+      "exchanges": 8,
+      "words": 289
+    },
+    {
+      "family": "long_audio_validation_postcard",
+      "split": "validation",
+      "exchanges": 8,
+      "words": 291
+    },
+    {
+      "family": "long_audio_validation_flour_tin",
+      "split": "validation",
+      "exchanges": 8,
+      "words": 279
+    }
+  ]
+}
