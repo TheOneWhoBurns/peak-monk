@@ -1,5 +1,5 @@
 {
-  "status": "All preflight gates passed; full run eligible, launch next.",
+  "status": "Full128update run launched; frozen-prefix history preparation active, no quality result yet.",
   "config": "configs/train26.json",
   "config_sha256": "903ac99d13b0554237b83da57f09d29dd0c6a99c5944c733b83e71332bb41843",
   "hypothesis": "Expanding the trainable suffix may allow context-sensitive continuity repairs that upper6layer adaptation has not achieved. This is a capacity hypothesis, not an established cause of failure.",

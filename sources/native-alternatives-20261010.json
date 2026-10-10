@@ -1,0 +1,36 @@
+{
+  "checked_date": "2026-10-10",
+  "purpose": "Targeted small-native-duplex availability check during serialized text training; no weights downloaded.",
+  "models": [
+    {
+      "name": "LFM2.5-Audio-1.5B",
+      "sources": [
+        "https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B",
+        "https://github.com/Liquid4All/liquid-audio"
+      ],
+      "observed": "Official card describes1.5B end-to-end speech/text model,1.2B language backbone,115M FastConformer encoder and interleaved output. Repository supplies fine-tuning interfaces. Its multi-turn example completes the user audio turn before calling interleaved generation.",
+      "inference": "Small trainable speech model is potentially relevant, but this evidence does not establish concurrent listening during generated speech or semantic interruption handling. Interleaved text/audio output alone does not prove full duplex.",
+      "decision": "No substitution or download for the current native full-duplex requirement."
+    },
+    {
+      "name": "BayLing-Duplex",
+      "sources": [
+        "https://arxiv.org/html/2606.14528v1",
+        "https://github.com/BayLing-Models/BayLing-Duplex"
+      ],
+      "observed": "Paper describes a9B GLM-4-Voice backbone with user audio, generated text and generated audio channels plus dialogue-state tokens; modified Whisper-large-v3 tokenizer and flow-matching speech decoder.",
+      "inference": "This is not a smaller drop-in native backbone for the8GBMac. It requires a different training/runtime/codec implementation.",
+      "decision": "Keep as a methodological reference, not a download or measured local benchmark."
+    },
+    {
+      "name": "NemotronLabs VoiceChat",
+      "sources": [
+        "https://arxiv.org/html/2609.21967v1"
+      ],
+      "observed": "Paper uses Nemotron-Nano-9B-v2-Base,600M streaming FastConformer, and977M speech generation including codec. Parallel text/function output and continuous speech decoder are documented.",
+      "inference": "Larger aggregate model than the current Moshi path; the paper does not establish an8GBApple inference or training solution.",
+      "decision": "No large download. Reported benchmark gains are not local performance evidence."
+    }
+  ],
+  "result": "No verified smaller native full-duplex replacement identified in these three primary-source checks. This is not an exhaustive impossibility claim. Current run26 and matched native control remain the next experiments."
+}
