@@ -1,0 +1,1364 @@
+{
+  "status": "pass",
+  "implementation": "Exact encode_conversation function compiled from source AST, Transformers local tokenizer, no MLX import. Historical1756-token row reproduced.",
+  "sets": {
+    "pairs": {
+      "path": "data/sampled-preferences-v2/train.jsonl",
+      "sha256": "b7dbe3e7a0e4d7458bfe3a0340527315fa2ed1ae4c4425cce120b73f60f646a6",
+      "rows": 95,
+      "max_tokens": 1908,
+      "selected_targets": 2326,
+      "details": [
+        {
+          "id": "lantern_s73_memory",
+          "tokens": 1756,
+          "targets": 14,
+          "rejected_tokens": 1755,
+          "rejected_targets": 13,
+          "shared_prefix_tokens": 1741
+        },
+        {
+          "id": "lantern_s73_accomplishment",
+          "tokens": 447,
+          "targets": 24,
+          "rejected_tokens": 470,
+          "rejected_targets": 47,
+          "shared_prefix_tokens": 422
+        },
+        {
+          "id": "lantern_s89_memory",
+          "tokens": 1673,
+          "targets": 21,
+          "rejected_tokens": 1660,
+          "rejected_targets": 8,
+          "shared_prefix_tokens": 1651
+        },
+        {
+          "id": "lantern_s89_neighbour",
+          "tokens": 718,
+          "targets": 30,
+          "rejected_tokens": 702,
+          "rejected_targets": 14,
+          "shared_prefix_tokens": 687
+        },
+        {
+          "id": "library_s73_lentils",
+          "tokens": 1742,
+          "targets": 29,
+          "rejected_tokens": 1731,
+          "rejected_targets": 18,
+          "shared_prefix_tokens": 1712
+        },
+        {
+          "id": "library_s73_portions",
+          "tokens": 1106,
+          "targets": 21,
+          "rejected_tokens": 1102,
+          "rejected_targets": 17,
+          "shared_prefix_tokens": 1084
+        },
+        {
+          "id": "library_s89_years",
+          "tokens": 822,
+          "targets": 28,
+          "rejected_tokens": 819,
+          "rejected_targets": 25,
+          "shared_prefix_tokens": 793
+        },
+        {
+          "id": "library_s89_loans",
+          "tokens": 338,
+          "targets": 24,
+          "rejected_tokens": 337,
+          "rejected_targets": 23,
+          "shared_prefix_tokens": 313
+        },
+        {
+          "id": "lantern_s73_coherence_02",
+          "tokens": 102,
+          "targets": 22,
+          "rejected_tokens": 91,
+          "rejected_targets": 11,
+          "shared_prefix_tokens": 79
+        },
+        {
+          "id": "lantern_s73_coherence_09",
+          "tokens": 525,
+          "targets": 21,
+          "rejected_tokens": 520,
+          "rejected_targets": 16,
+          "shared_prefix_tokens": 503
+        },
+        {
+          "id": "lantern_s73_coherence_19",
+          "tokens": 1073,
+          "targets": 20,
+          "rejected_tokens": 1083,
+          "rejected_targets": 30,
+          "shared_prefix_tokens": 1052
+        },
+        {
+          "id": "lantern_s73_coherence_23",
+          "tokens": 1299,
+          "targets": 25,
+          "rejected_tokens": 1285,
+          "rejected_targets": 11,
+          "shared_prefix_tokens": 1273
+        },
+        {
+          "id": "lantern_s89_coherence_04",
+          "tokens": 226,
+          "targets": 28,
+          "rejected_tokens": 223,
+          "rejected_targets": 25,
+          "shared_prefix_tokens": 197
+        },
+        {
+          "id": "lantern_s89_coherence_20",
+          "tokens": 1041,
+          "targets": 17,
+          "rejected_tokens": 1037,
+          "rejected_targets": 13,
+          "shared_prefix_tokens": 1023
+        },
+        {
+          "id": "lantern_s89_coherence_28",
+          "tokens": 1431,
+          "targets": 14,
+          "rejected_tokens": 1439,
+          "rejected_targets": 22,
+          "shared_prefix_tokens": 1416
+        },
+        {
+          "id": "library_s73_coherence_27",
+          "tokens": 1561,
+          "targets": 20,
+          "rejected_tokens": 1563,
+          "rejected_targets": 22,
+          "shared_prefix_tokens": 1540
+        },
+        {
+          "id": "library_s89_coherence_12",
+          "tokens": 595,
+          "targets": 17,
+          "rejected_tokens": 592,
+          "rejected_targets": 14,
+          "shared_prefix_tokens": 577
+        },
+        {
+          "id": "library_s89_coherence_21",
+          "tokens": 978,
+          "targets": 15,
+          "rejected_tokens": 973,
+          "rejected_targets": 10,
+          "shared_prefix_tokens": 962
+        },
+        {
+          "id": "library_s89_coherence_28",
+          "tokens": 1308,
+          "targets": 23,
+          "rejected_tokens": 1295,
+          "rejected_targets": 10,
+          "shared_prefix_tokens": 1284
+        },
+        {
+          "id": "library_s89_coherence_29",
+          "tokens": 1349,
+          "targets": 20,
+          "rejected_tokens": 1356,
+          "rejected_targets": 27,
+          "shared_prefix_tokens": 1328
+        },
+        {
+          "id": "repairs_lantern_s73_uncued_mentor08_01",
+          "tokens": 554,
+          "targets": 20,
+          "rejected_tokens": 555,
+          "rejected_targets": 21,
+          "shared_prefix_tokens": 533
+        },
+        {
+          "id": "repairs_lantern_s89_uncued_mentor32_01",
+          "tokens": 1695,
+          "targets": 26,
+          "rejected_tokens": 1694,
+          "rejected_targets": 25,
+          "shared_prefix_tokens": 1668
+        },
+        {
+          "id": "repairs_lantern_s73_indirect_mentor00_01",
+          "tokens": 89,
+          "targets": 21,
+          "rejected_tokens": 93,
+          "rejected_targets": 25,
+          "shared_prefix_tokens": 67
+        },
+        {
+          "id": "repairs_lantern_s73_indirect_mentor32_01",
+          "tokens": 1786,
+          "targets": 22,
+          "rejected_tokens": 1781,
+          "rejected_targets": 17,
+          "shared_prefix_tokens": 1763
+        },
+        {
+          "id": "repairs_lantern_s89_indirect_mentor00_01",
+          "tokens": 155,
+          "targets": 36,
+          "rejected_tokens": 135,
+          "rejected_targets": 16,
+          "shared_prefix_tokens": 118
+        },
+        {
+          "id": "repairs_lantern_s89_indirect_mentor32_00",
+          "tokens": 1665,
+          "targets": 36,
+          "rejected_tokens": 1669,
+          "rejected_targets": 40,
+          "shared_prefix_tokens": 1628
+        },
+        {
+          "id": "repairs_lantern_s89_indirect_mentor32_01",
+          "tokens": 1714,
+          "targets": 26,
+          "rejected_tokens": 1708,
+          "rejected_targets": 20,
+          "shared_prefix_tokens": 1687
+        },
+        {
+          "id": "repairs_library_s73_indirect_mentor00_00",
+          "tokens": 45,
+          "targets": 25,
+          "rejected_tokens": 63,
+          "rejected_targets": 43,
+          "shared_prefix_tokens": 19
+        },
+        {
+          "id": "repairs_library_s73_indirect_mentor00_01",
+          "tokens": 102,
+          "targets": 22,
+          "rejected_tokens": 102,
+          "rejected_targets": 22,
+          "shared_prefix_tokens": 79
+        },
+        {
+          "id": "repairs_library_s73_indirect_mentor32_01",
+          "tokens": 1908,
+          "targets": 27,
+          "rejected_tokens": 1903,
+          "rejected_targets": 22,
+          "shared_prefix_tokens": 1880
+        },
+        {
+          "id": "repairs_library_s89_indirect_mentor32_00",
+          "tokens": 1537,
+          "targets": 34,
+          "rejected_tokens": 1520,
+          "rejected_targets": 17,
+          "shared_prefix_tokens": 1502
+        },
+        {
+          "id": "repairs_bus_shelter_s181_spine16_03",
+          "tokens": 212,
+          "targets": 23,
+          "rejected_tokens": 218,
+          "rejected_targets": 29,
+          "shared_prefix_tokens": 188
+        },
+        {
+          "id": "repairs_bus_shelter_s181_spine16_08",
+          "tokens": 471,
+          "targets": 22,
+          "rejected_tokens": 457,
+          "rejected_targets": 8,
+          "shared_prefix_tokens": 448
+        },
+        {
+          "id": "repairs_bus_shelter_s181_spine16_09",
+          "tokens": 498,
+          "targets": 15,
+          "rejected_tokens": 503,
+          "rejected_targets": 20,
+          "shared_prefix_tokens": 482
+        },
+        {
+          "id": "repairs_bus_shelter_s181_spine16_12",
+          "tokens": 650,
+          "targets": 29,
+          "rejected_tokens": 641,
+          "rejected_targets": 20,
+          "shared_prefix_tokens": 620
+        },
+        {
+          "id": "repairs_bus_shelter_s181_spine16_13",
+          "tokens": 698,
+          "targets": 32,
+          "rejected_tokens": 698,
+          "rejected_targets": 32,
+          "shared_prefix_tokens": 665
+        },
+        {
+          "id": "repairs_bus_shelter_s181_spine16_15",
+          "tokens": 799,
+          "targets": 23,
+          "rejected_tokens": 787,
+          "rejected_targets": 11,
+          "shared_prefix_tokens": 775
+        },
+        {
+          "id": "repairs_bus_shelter_s193_spine16_02",
+          "tokens": 153,
+          "targets": 22,
+          "rejected_tokens": 136,
+          "rejected_targets": 5,
+          "shared_prefix_tokens": 130
+        },
+        {
+          "id": "repairs_bus_shelter_s193_spine16_03",
+          "tokens": 191,
+          "targets": 25,
+          "rejected_tokens": 184,
+          "rejected_targets": 18,
+          "shared_prefix_tokens": 165
+        },
+        {
+          "id": "repairs_bus_shelter_s193_spine16_09",
+          "tokens": 464,
+          "targets": 17,
+          "rejected_tokens": 462,
+          "rejected_targets": 15,
+          "shared_prefix_tokens": 446
+        },
+        {
+          "id": "repairs_bus_shelter_s193_spine16_10",
+          "tokens": 523,
+          "targets": 34,
+          "rejected_tokens": 509,
+          "rejected_targets": 20,
+          "shared_prefix_tokens": 488
+        },
+        {
+          "id": "repairs_bus_shelter_s193_spine16_11",
+          "tokens": 560,
+          "targets": 22,
+          "rejected_tokens": 552,
+          "rejected_targets": 14,
+          "shared_prefix_tokens": 537
+        },
+        {
+          "id": "repairs_bus_shelter_s193_spine16_12",
+          "tokens": 608,
+          "targets": 26,
+          "rejected_tokens": 611,
+          "rejected_targets": 29,
+          "shared_prefix_tokens": 581
+        },
+        {
+          "id": "repairs_bus_shelter_s193_spine16_13",
+          "tokens": 664,
+          "targets": 28,
+          "rejected_tokens": 654,
+          "rejected_targets": 18,
+          "shared_prefix_tokens": 635
+        },
+        {
+          "id": "repairs_bus_shelter_s193_spine16_14",
+          "tokens": 707,
+          "targets": 22,
+          "rejected_tokens": 691,
+          "rejected_targets": 6,
+          "shared_prefix_tokens": 684
+        },
+        {
+          "id": "repairs_community_radio_s181_spine16_04",
+          "tokens": 285,
+          "targets": 22,
+          "rejected_tokens": 276,
+          "rejected_targets": 13,
+          "shared_prefix_tokens": 262
+        },
+        {
+          "id": "repairs_community_radio_s181_spine16_05",
+          "tokens": 333,
+          "targets": 23,
+          "rejected_tokens": 326,
+          "rejected_targets": 16,
+          "shared_prefix_tokens": 309
+        },
+        {
+          "id": "repairs_community_radio_s181_spine16_06",
+          "tokens": 383,
+          "targets": 26,
+          "rejected_tokens": 382,
+          "rejected_targets": 25,
+          "shared_prefix_tokens": 356
+        },
+        {
+          "id": "repairs_community_radio_s181_spine16_09",
+          "tokens": 512,
+          "targets": 21,
+          "rejected_tokens": 524,
+          "rejected_targets": 33,
+          "shared_prefix_tokens": 490
+        },
+        {
+          "id": "repairs_community_radio_s181_spine16_10",
+          "tokens": 572,
+          "targets": 26,
+          "rejected_tokens": 576,
+          "rejected_targets": 30,
+          "shared_prefix_tokens": 545
+        },
+        {
+          "id": "repairs_community_radio_s181_spine16_11",
+          "tokens": 636,
+          "targets": 20,
+          "rejected_tokens": 640,
+          "rejected_targets": 24,
+          "shared_prefix_tokens": 615
+        },
+        {
+          "id": "repairs_community_radio_s181_spine16_12",
+          "tokens": 698,
+          "targets": 32,
+          "rejected_tokens": 690,
+          "rejected_targets": 24,
+          "shared_prefix_tokens": 665
+        },
+        {
+          "id": "repairs_community_radio_s181_spine16_13",
+          "tokens": 738,
+          "targets": 26,
+          "rejected_tokens": 738,
+          "rejected_targets": 26,
+          "shared_prefix_tokens": 711
+        },
+        {
+          "id": "repairs_community_radio_s181_spine16_14",
+          "tokens": 791,
+          "targets": 24,
+          "rejected_tokens": 773,
+          "rejected_targets": 6,
+          "shared_prefix_tokens": 766
+        },
+        {
+          "id": "repairs_community_radio_s181_spine16_15",
+          "tokens": 823,
+          "targets": 29,
+          "rejected_tokens": 824,
+          "rejected_targets": 30,
+          "shared_prefix_tokens": 793
+        },
+        {
+          "id": "repairs_community_radio_s193_spine16_01",
+          "tokens": 97,
+          "targets": 25,
+          "rejected_tokens": 93,
+          "rejected_targets": 21,
+          "shared_prefix_tokens": 71
+        },
+        {
+          "id": "repairs_community_radio_s193_spine16_02",
+          "tokens": 145,
+          "targets": 19,
+          "rejected_tokens": 140,
+          "rejected_targets": 14,
+          "shared_prefix_tokens": 125
+        },
+        {
+          "id": "repairs_community_radio_s193_spine16_03",
+          "tokens": 193,
+          "targets": 30,
+          "rejected_tokens": 194,
+          "rejected_targets": 31,
+          "shared_prefix_tokens": 162
+        },
+        {
+          "id": "repairs_community_radio_s193_spine16_06",
+          "tokens": 332,
+          "targets": 23,
+          "rejected_tokens": 333,
+          "rejected_targets": 24,
+          "shared_prefix_tokens": 308
+        },
+        {
+          "id": "repairs_community_radio_s193_spine16_07",
+          "tokens": 382,
+          "targets": 21,
+          "rejected_tokens": 380,
+          "rejected_targets": 19,
+          "shared_prefix_tokens": 360
+        },
+        {
+          "id": "repairs_community_radio_s193_spine16_09",
+          "tokens": 467,
+          "targets": 20,
+          "rejected_tokens": 461,
+          "rejected_targets": 14,
+          "shared_prefix_tokens": 446
+        },
+        {
+          "id": "repairs_community_radio_s193_spine16_11",
+          "tokens": 565,
+          "targets": 24,
+          "rejected_tokens": 556,
+          "rejected_targets": 15,
+          "shared_prefix_tokens": 540
+        },
+        {
+          "id": "repairs_community_radio_s193_spine16_12",
+          "tokens": 611,
+          "targets": 29,
+          "rejected_tokens": 615,
+          "rejected_targets": 33,
+          "shared_prefix_tokens": 581
+        },
+        {
+          "id": "repairs_community_radio_s193_spine16_13",
+          "tokens": 663,
+          "targets": 26,
+          "rejected_tokens": 659,
+          "rejected_targets": 22,
+          "shared_prefix_tokens": 636
+        },
+        {
+          "id": "repairs_roof_garden_s181_spine16_00",
+          "tokens": 67,
+          "targets": 23,
+          "rejected_tokens": 58,
+          "rejected_targets": 14,
+          "shared_prefix_tokens": 43
+        },
+        {
+          "id": "repairs_roof_garden_s181_spine16_02",
+          "tokens": 160,
+          "targets": 23,
+          "rejected_tokens": 150,
+          "rejected_targets": 13,
+          "shared_prefix_tokens": 136
+        },
+        {
+          "id": "repairs_roof_garden_s181_spine16_04",
+          "tokens": 268,
+          "targets": 28,
+          "rejected_tokens": 254,
+          "rejected_targets": 14,
+          "shared_prefix_tokens": 239
+        },
+        {
+          "id": "repairs_roof_garden_s181_spine16_06",
+          "tokens": 347,
+          "targets": 23,
+          "rejected_tokens": 360,
+          "rejected_targets": 36,
+          "shared_prefix_tokens": 323
+        },
+        {
+          "id": "repairs_roof_garden_s181_spine16_07",
+          "tokens": 403,
+          "targets": 20,
+          "rejected_tokens": 400,
+          "rejected_targets": 17,
+          "shared_prefix_tokens": 382
+        },
+        {
+          "id": "repairs_roof_garden_s181_spine16_08",
+          "tokens": 445,
+          "targets": 19,
+          "rejected_tokens": 434,
+          "rejected_targets": 8,
+          "shared_prefix_tokens": 425
+        },
+        {
+          "id": "repairs_roof_garden_s181_spine16_10",
+          "tokens": 536,
+          "targets": 26,
+          "rejected_tokens": 535,
+          "rejected_targets": 25,
+          "shared_prefix_tokens": 509
+        },
+        {
+          "id": "repairs_roof_garden_s181_spine16_12",
+          "tokens": 624,
+          "targets": 29,
+          "rejected_tokens": 629,
+          "rejected_targets": 34,
+          "shared_prefix_tokens": 594
+        },
+        {
+          "id": "repairs_roof_garden_s181_spine16_14",
+          "tokens": 734,
+          "targets": 24,
+          "rejected_tokens": 725,
+          "rejected_targets": 15,
+          "shared_prefix_tokens": 709
+        },
+        {
+          "id": "repairs_roof_garden_s181_spine16_15",
+          "tokens": 785,
+          "targets": 34,
+          "rejected_tokens": 773,
+          "rejected_targets": 22,
+          "shared_prefix_tokens": 750
+        },
+        {
+          "id": "repairs_roof_garden_s193_spine16_01",
+          "tokens": 111,
+          "targets": 23,
+          "rejected_tokens": 104,
+          "rejected_targets": 16,
+          "shared_prefix_tokens": 87
+        },
+        {
+          "id": "repairs_roof_garden_s193_spine16_03",
+          "tokens": 207,
+          "targets": 33,
+          "rejected_tokens": 187,
+          "rejected_targets": 13,
+          "shared_prefix_tokens": 173
+        },
+        {
+          "id": "repairs_roof_garden_s193_spine16_04",
+          "tokens": 241,
+          "targets": 24,
+          "rejected_tokens": 230,
+          "rejected_targets": 13,
+          "shared_prefix_tokens": 216
+        },
+        {
+          "id": "repairs_roof_garden_s193_spine16_05",
+          "tokens": 280,
+          "targets": 21,
+          "rejected_tokens": 272,
+          "rejected_targets": 13,
+          "shared_prefix_tokens": 258
+        },
+        {
+          "id": "repairs_roof_garden_s193_spine16_06",
+          "tokens": 323,
+          "targets": 26,
+          "rejected_tokens": 323,
+          "rejected_targets": 26,
+          "shared_prefix_tokens": 296
+        },
+        {
+          "id": "repairs_roof_garden_s193_spine16_08",
+          "tokens": 424,
+          "targets": 27,
+          "rejected_tokens": 423,
+          "rejected_targets": 26,
+          "shared_prefix_tokens": 396
+        },
+        {
+          "id": "repairs_roof_garden_s193_spine16_10",
+          "tokens": 530,
+          "targets": 26,
+          "rejected_tokens": 517,
+          "rejected_targets": 13,
+          "shared_prefix_tokens": 503
+        },
+        {
+          "id": "repairs_roof_garden_s193_spine16_12",
+          "tokens": 612,
+          "targets": 30,
+          "rejected_tokens": 620,
+          "rejected_targets": 38,
+          "shared_prefix_tokens": 581
+        },
+        {
+          "id": "repairs_roof_garden_s193_spine16_15",
+          "tokens": 763,
+          "targets": 26,
+          "rejected_tokens": 763,
+          "rejected_targets": 26,
+          "shared_prefix_tokens": 736
+        },
+        {
+          "id": "repairs_costume_room_s181_spine16_04",
+          "tokens": 265,
+          "targets": 27,
+          "rejected_tokens": 272,
+          "rejected_targets": 34,
+          "shared_prefix_tokens": 237
+        },
+        {
+          "id": "repairs_costume_room_s181_spine16_07",
+          "tokens": 467,
+          "targets": 29,
+          "rejected_tokens": 445,
+          "rejected_targets": 7,
+          "shared_prefix_tokens": 437
+        },
+        {
+          "id": "repairs_costume_room_s181_spine16_08",
+          "tokens": 498,
+          "targets": 29,
+          "rejected_tokens": 501,
+          "rejected_targets": 32,
+          "shared_prefix_tokens": 468
+        },
+        {
+          "id": "repairs_costume_room_s181_spine16_12",
+          "tokens": 706,
+          "targets": 24,
+          "rejected_tokens": 706,
+          "rejected_targets": 24,
+          "shared_prefix_tokens": 681
+        },
+        {
+          "id": "repairs_costume_room_s181_spine16_13",
+          "tokens": 753,
+          "targets": 20,
+          "rejected_tokens": 745,
+          "rejected_targets": 12,
+          "shared_prefix_tokens": 732
+        },
+        {
+          "id": "repairs_costume_room_s181_spine16_14",
+          "tokens": 802,
+          "targets": 31,
+          "rejected_tokens": 783,
+          "rejected_targets": 12,
+          "shared_prefix_tokens": 770
+        },
+        {
+          "id": "repairs_costume_room_s193_spine16_00",
+          "tokens": 73,
+          "targets": 30,
+          "rejected_tokens": 51,
+          "rejected_targets": 8,
+          "shared_prefix_tokens": 42
+        },
+        {
+          "id": "repairs_costume_room_s193_spine16_02",
+          "tokens": 144,
+          "targets": 21,
+          "rejected_tokens": 137,
+          "rejected_targets": 14,
+          "shared_prefix_tokens": 122
+        },
+        {
+          "id": "repairs_costume_room_s193_spine16_08",
+          "tokens": 400,
+          "targets": 29,
+          "rejected_tokens": 389,
+          "rejected_targets": 18,
+          "shared_prefix_tokens": 370
+        },
+        {
+          "id": "repairs_costume_room_s193_spine16_11",
+          "tokens": 518,
+          "targets": 25,
+          "rejected_tokens": 514,
+          "rejected_targets": 21,
+          "shared_prefix_tokens": 492
+        },
+        {
+          "id": "repairs_costume_room_s193_spine16_13",
+          "tokens": 611,
+          "targets": 23,
+          "rejected_tokens": 602,
+          "rejected_targets": 14,
+          "shared_prefix_tokens": 587
+        },
+        {
+          "id": "repairs_costume_room_s193_spine16_14",
+          "tokens": 647,
+          "targets": 19,
+          "rejected_tokens": 645,
+          "rejected_targets": 17,
+          "shared_prefix_tokens": 627
+        }
+      ]
+    },
+    "retention": {
+      "path": "data/on-policy-repairs-v4/replay.jsonl",
+      "sha256": "97cb4735299cc72b198f49f2762a7f5a913d0d337ab9fc17c60aae15457fd0c5",
+      "rows": 116,
+      "max_tokens": 1940,
+      "selected_targets": 10044,
+      "details": [
+        {
+          "id": "retention_lantern_s73_spine32_04",
+          "tokens": 208,
+          "targets": 34
+        },
+        {
+          "id": "retention_lantern_s73_spine32_06",
+          "tokens": 338,
+          "targets": 16
+        },
+        {
+          "id": "retention_lantern_s73_spine32_11",
+          "tokens": 610,
+          "targets": 12
+        },
+        {
+          "id": "retention_lantern_s73_spine32_12",
+          "tokens": 665,
+          "targets": 18
+        },
+        {
+          "id": "retention_lantern_s73_spine32_17",
+          "tokens": 952,
+          "targets": 10
+        },
+        {
+          "id": "retention_lantern_s73_spine32_20",
+          "tokens": 1123,
+          "targets": 9
+        },
+        {
+          "id": "retention_lantern_s73_spine32_24",
+          "tokens": 1335,
+          "targets": 23
+        },
+        {
+          "id": "retention_lantern_s73_spine32_29",
+          "tokens": 1569,
+          "targets": 10
+        },
+        {
+          "id": "retention_lantern_s73_spine32_31",
+          "tokens": 1657,
+          "targets": 7
+        },
+        {
+          "id": "retention_lantern_s73_spine32_32",
+          "tokens": 1700,
+          "targets": 7
+        },
+        {
+          "id": "retention_library_s73_spine32_03",
+          "tokens": 170,
+          "targets": 15
+        },
+        {
+          "id": "retention_library_s73_spine32_04",
+          "tokens": 244,
+          "targets": 31
+        },
+        {
+          "id": "retention_library_s73_spine32_05",
+          "tokens": 300,
+          "targets": 24
+        },
+        {
+          "id": "retention_library_s73_spine32_07",
+          "tokens": 421,
+          "targets": 20
+        },
+        {
+          "id": "retention_library_s73_spine32_08",
+          "tokens": 481,
+          "targets": 23
+        },
+        {
+          "id": "retention_library_s73_spine32_11",
+          "tokens": 635,
+          "targets": 19
+        },
+        {
+          "id": "retention_library_s73_spine32_20",
+          "tokens": 1146,
+          "targets": 11
+        },
+        {
+          "id": "retention_library_s73_spine32_23",
+          "tokens": 1329,
+          "targets": 26
+        },
+        {
+          "id": "retention_library_s73_spine32_25",
+          "tokens": 1447,
+          "targets": 22
+        },
+        {
+          "id": "retention_library_s73_spine32_26",
+          "tokens": 1508,
+          "targets": 29
+        },
+        {
+          "id": "retention_library_s73_spine32_31",
+          "tokens": 1774,
+          "targets": 10
+        },
+        {
+          "id": "retention_library_s73_spine32_32",
+          "tokens": 1824,
+          "targets": 18
+        },
+        {
+          "id": "retention_lantern_s89_spine32_06",
+          "tokens": 342,
+          "targets": 19
+        },
+        {
+          "id": "retention_lantern_s89_spine32_08",
+          "tokens": 447,
+          "targets": 11
+        },
+        {
+          "id": "retention_lantern_s89_spine32_12",
+          "tokens": 653,
+          "targets": 8
+        },
+        {
+          "id": "retention_lantern_s89_spine32_14",
+          "tokens": 750,
+          "targets": 12
+        },
+        {
+          "id": "retention_lantern_s89_spine32_15",
+          "tokens": 798,
+          "targets": 11
+        },
+        {
+          "id": "retention_lantern_s89_spine32_18",
+          "tokens": 944,
+          "targets": 12
+        },
+        {
+          "id": "retention_lantern_s89_spine32_19",
+          "tokens": 993,
+          "targets": 14
+        },
+        {
+          "id": "retention_lantern_s89_spine32_22",
+          "tokens": 1142,
+          "targets": 12
+        },
+        {
+          "id": "retention_lantern_s89_spine32_26",
+          "tokens": 1344,
+          "targets": 13
+        },
+        {
+          "id": "retention_lantern_s89_spine32_29",
+          "tokens": 1479,
+          "targets": 11
+        },
+        {
+          "id": "retention_lantern_s89_spine32_31",
+          "tokens": 1568,
+          "targets": 15
+        },
+        {
+          "id": "retention_lantern_s89_spine32_32",
+          "tokens": 1610,
+          "targets": 6
+        },
+        {
+          "id": "retention_library_s89_spine32_01",
+          "tokens": 47,
+          "targets": 6
+        },
+        {
+          "id": "retention_library_s89_spine32_03",
+          "tokens": 153,
+          "targets": 21
+        },
+        {
+          "id": "retention_library_s89_spine32_05",
+          "tokens": 277,
+          "targets": 18
+        },
+        {
+          "id": "retention_library_s89_spine32_07",
+          "tokens": 368,
+          "targets": 7
+        },
+        {
+          "id": "retention_library_s89_spine32_08",
+          "tokens": 418,
+          "targets": 13
+        },
+        {
+          "id": "retention_library_s89_spine32_10",
+          "tokens": 501,
+          "targets": 7
+        },
+        {
+          "id": "retention_library_s89_spine32_14",
+          "tokens": 679,
+          "targets": 10
+        },
+        {
+          "id": "retention_library_s89_spine32_19",
+          "tokens": 889,
+          "targets": 11
+        },
+        {
+          "id": "retention_library_s89_spine32_23",
+          "tokens": 1067,
+          "targets": 10
+        },
+        {
+          "id": "retention_library_s89_spine32_25",
+          "tokens": 1150,
+          "targets": 5
+        },
+        {
+          "id": "retention_library_s89_spine32_31",
+          "tokens": 1448,
+          "targets": 7
+        },
+        {
+          "id": "retention_lantern_s73_mentor32_33",
+          "tokens": 1751,
+          "targets": 19
+        },
+        {
+          "id": "retention_library_s73_mentor32_33",
+          "tokens": 1887,
+          "targets": 31
+        },
+        {
+          "id": "retention_library_s73_mentor32_34",
+          "tokens": 1940,
+          "targets": 32
+        },
+        {
+          "id": "retention_library_s73_challenge32_33",
+          "tokens": 1896,
+          "targets": 29
+        },
+        {
+          "id": "retention_lantern_s89_challenge32_33",
+          "tokens": 1669,
+          "targets": 25
+        },
+        {
+          "id": "retention_library_s89_challenge32_33",
+          "tokens": 1545,
+          "targets": 28
+        },
+        {
+          "id": "long_the_market_errand",
+          "tokens": 804,
+          "targets": 440
+        },
+        {
+          "id": "long_a_part_in_the_play",
+          "tokens": 782,
+          "targets": 427
+        },
+        {
+          "id": "long_an_evening_with_a_kettle",
+          "tokens": 820,
+          "targets": 454
+        },
+        {
+          "id": "long_the_coat_with_two_pockets",
+          "tokens": 840,
+          "targets": 445
+        },
+        {
+          "id": "long_the_song_with_no_ending",
+          "tokens": 758,
+          "targets": 356
+        },
+        {
+          "id": "long_the_unwanted_new_stool",
+          "tokens": 789,
+          "targets": 408
+        },
+        {
+          "id": "long_cards_in_a_power_cut",
+          "tokens": 797,
+          "targets": 379
+        },
+        {
+          "id": "long_a_letter_with_an_empty_page",
+          "tokens": 738,
+          "targets": 325
+        },
+        {
+          "id": "long_learning_to_whistle",
+          "tokens": 724,
+          "targets": 352
+        },
+        {
+          "id": "long_a_basket_of_sour_plums",
+          "tokens": 658,
+          "targets": 290
+        },
+        {
+          "id": "long_the_noisy_festival",
+          "tokens": 688,
+          "targets": 354
+        },
+        {
+          "id": "long_the_unconvincing_clay_owl",
+          "tokens": 681,
+          "targets": 325
+        },
+        {
+          "id": "long_a_lamp_before_dawn",
+          "tokens": 686,
+          "targets": 326
+        },
+        {
+          "id": "long_the_helper_and_the_herbs",
+          "tokens": 757,
+          "targets": 384
+        },
+        {
+          "id": "long_the_wet_sheets",
+          "tokens": 718,
+          "targets": 356
+        },
+        {
+          "id": "long_the_puppet_cart",
+          "tokens": 783,
+          "targets": 421
+        },
+        {
+          "id": "long_the_exam_wait",
+          "tokens": 735,
+          "targets": 353
+        },
+        {
+          "id": "long_the_single_shoe",
+          "tokens": 747,
+          "targets": 391
+        },
+        {
+          "id": "teacher",
+          "tokens": 136,
+          "targets": 88
+        },
+        {
+          "id": "mara_workbench",
+          "tokens": 451,
+          "targets": 287
+        },
+        {
+          "id": "learning_without_a_book",
+          "tokens": 172,
+          "targets": 109
+        },
+        {
+          "id": "putting_down_the_tool",
+          "tokens": 190,
+          "targets": 109
+        },
+        {
+          "id": "a_name_in_a_story",
+          "tokens": 177,
+          "targets": 100
+        },
+        {
+          "id": "credit_for_change",
+          "tokens": 179,
+          "targets": 109
+        },
+        {
+          "id": "retention_pet_and_friend_05",
+          "tokens": 152,
+          "targets": 61
+        },
+        {
+          "id": "unfinished_roof_story",
+          "tokens": 466,
+          "targets": 308
+        },
+        {
+          "id": "retention_shopping_ownership_02",
+          "tokens": 163,
+          "targets": 75
+        },
+        {
+          "id": "mistaken_appointment",
+          "tokens": 340,
+          "targets": 172
+        },
+        {
+          "id": "thyme",
+          "tokens": 112,
+          "targets": 67
+        },
+        {
+          "id": "tired_is_not_a_metaphor",
+          "tokens": 162,
+          "targets": 89
+        },
+        {
+          "id": "long_a_misheard_word",
+          "tokens": 339,
+          "targets": 151
+        },
+        {
+          "id": "retention_shopping_ownership_01",
+          "tokens": 161,
+          "targets": 73
+        },
+        {
+          "id": "retention_lantern_s73_uncued_mentor08_00",
+          "tokens": 515,
+          "targets": 24
+        },
+        {
+          "id": "retention_lantern_s89_uncued_mentor32_00",
+          "tokens": 1650,
+          "targets": 19
+        },
+        {
+          "id": "retention_library_s73_uncued_mentor32_00",
+          "tokens": 1863,
+          "targets": 18
+        },
+        {
+          "id": "retention_library_s89_uncued_mentor32_00",
+          "tokens": 1521,
+          "targets": 16
+        },
+        {
+          "id": "retention_lantern_s73_uncued_mentor32_01",
+          "tokens": 1781,
+          "targets": 22
+        },
+        {
+          "id": "retention_lantern_s89_uncued_mentor08_01",
+          "tokens": 531,
+          "targets": 26
+        },
+        {
+          "id": "retention_library_s73_uncued_mentor08_01",
+          "tokens": 569,
+          "targets": 22
+        },
+        {
+          "id": "retention_library_s89_uncued_mentor32_01",
+          "tokens": 1552,
+          "targets": 12
+        },
+        {
+          "id": "retention_lantern_s73_indirect_mentor00_00",
+          "tokens": 51,
+          "targets": 31
+        },
+        {
+          "id": "retention_lantern_s73_indirect_mentor32_00",
+          "tokens": 1747,
+          "targets": 27
+        },
+        {
+          "id": "retention_bus_shelter_s181_spine16_01",
+          "tokens": 105,
+          "targets": 21
+        },
+        {
+          "id": "retention_bus_shelter_s181_spine16_02",
+          "tokens": 159,
+          "targets": 21
+        },
+        {
+          "id": "retention_bus_shelter_s181_spine16_05",
+          "tokens": 318,
+          "targets": 23
+        },
+        {
+          "id": "retention_bus_shelter_s193_spine16_00",
+          "tokens": 49,
+          "targets": 11
+        },
+        {
+          "id": "retention_bus_shelter_s193_spine16_07",
+          "tokens": 370,
+          "targets": 18
+        },
+        {
+          "id": "retention_community_radio_s181_spine16_01",
+          "tokens": 109,
+          "targets": 16
+        },
+        {
+          "id": "retention_community_radio_s181_spine16_02",
+          "tokens": 163,
+          "targets": 21
+        },
+        {
+          "id": "retention_community_radio_s193_spine16_04",
+          "tokens": 234,
+          "targets": 12
+        },
+        {
+          "id": "retention_community_radio_s193_spine16_05",
+          "tokens": 278,
+          "targets": 10
+        },
+        {
+          "id": "retention_community_radio_s193_spine16_08",
+          "tokens": 416,
+          "targets": 16
+        },
+        {
+          "id": "retention_community_radio_s193_spine16_10",
+          "tokens": 501,
+          "targets": 18
+        },
+        {
+          "id": "retention_roof_garden_s181_spine16_05",
+          "tokens": 299,
+          "targets": 16
+        },
+        {
+          "id": "retention_roof_garden_s181_spine16_09",
+          "tokens": 477,
+          "targets": 20
+        },
+        {
+          "id": "retention_roof_garden_s193_spine16_00",
+          "tokens": 52,
+          "targets": 8
+        },
+        {
+          "id": "retention_roof_garden_s193_spine16_09",
+          "tokens": 471,
+          "targets": 25
+        },
+        {
+          "id": "retention_roof_garden_s193_spine16_14",
+          "tokens": 711,
+          "targets": 18
+        },
+        {
+          "id": "retention_costume_room_s181_spine16_06",
+          "tokens": 407,
+          "targets": 34
+        },
+        {
+          "id": "retention_costume_room_s181_spine16_10",
+          "tokens": 592,
+          "targets": 17
+        },
+        {
+          "id": "retention_costume_room_s181_spine16_11",
+          "tokens": 654,
+          "targets": 42
+        },
+        {
+          "id": "retention_costume_room_s193_spine16_03",
+          "tokens": 177,
+          "targets": 16
+        },
+        {
+          "id": "retention_costume_room_s193_spine16_04",
+          "tokens": 223,
+          "targets": 17
+        },
+        {
+          "id": "retention_costume_room_s193_spine16_09",
+          "tokens": 429,
+          "targets": 12
+        },
+        {
+          "id": "retention_costume_room_s193_spine16_10",
+          "tokens": 473,
+          "targets": 14
+        }
+      ]
+    }
+  }
+}

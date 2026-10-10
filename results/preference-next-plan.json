@@ -1,0 +1,19 @@
+{
+  "status": "Numerical helper proof passed; actual two-update resource/export probe queued after current trajectory sampling",
+  "hypothesis": "Directly prefer reviewed final replies over sampled alternatives while retaining successful student continuations. SFT run24 did not fix the essential lore failure.",
+  "algorithm": "Offline DPO, summed selected-reply log-probability margin relative to frozen run22 parent, beta0.1; add0.2 chosen token-mean NLL and1.0 retention CE. Dropout disabled for policy/reference. No online RL or independent reward-model claim.",
+  "data": "31 prior reviewed pairs; one length-censored negative excluded. New pilot08 trajectories will be reviewed before full-run data selection. Canonical preference labels are distinguished from proven factual errors.",
+  "implementation": "scripts/train_cached_preferences.py and scripts/repair_preference_grad.py; frozen lower30layer prefix, train upper6LoRA, same original histories and EOS masks.",
+  "tiny_proof": "results/cached-preference-parity.json",
+  "actual_probe": "configs/preference-runtime-probe01.json",
+  "required_before_training": [
+    "Two actual updates under same guarded resource policy",
+    "Initial policy/reference margin approximately zero",
+    "Saved full-adapter export matches cached suffix score",
+    "Full training data provenance and token accounting",
+    "Predetermined steps/checkpoints and unchanged development selection gate"
+  ],
+  "full_run": "Not yet configured or started; no unreviewed pilot08 replies admitted.",
+  "native_next": "Correct native-start text gradient works. Before co-training, define original character prose corpus and separate text/audio optimizer states and held-out transfer diagnostics; do not treat single-sample fit as speech improvement.",
+  "checkpoint_review": "Eval-mode policy disables the older stochastic checkpoint wrapper. New trainer uses the installed deterministic grad_checkpoint, valid because all dropout is disabled. Re-run numerical proof with this actual path before actual probe."
+}

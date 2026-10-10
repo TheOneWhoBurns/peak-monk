@@ -1,0 +1,196 @@
+{
+  "status": "CPU token accounting passed; no model work",
+  "data_sha256": "f079239f7f0b19e4fa33de8efef8b52127651efcbfe3b3a095deebf8240dd8d1",
+  "initial_token": 32000,
+  "appended_eos": false,
+  "counts": {
+    "train": 24,
+    "valid": 6
+  },
+  "max_tokens": 116,
+  "train_targets": 2351,
+  "valid_targets": 551,
+  "rows": [
+    {
+      "id": "notebook_mended_sleeve",
+      "split": "train",
+      "tokens": 116,
+      "targets": 115
+    },
+    {
+      "id": "notebook_roofing_wages",
+      "split": "train",
+      "tokens": 109,
+      "targets": 108
+    },
+    {
+      "id": "notebook_mara_nail",
+      "split": "train",
+      "tokens": 101,
+      "targets": 100
+    },
+    {
+      "id": "notebook_valley_summer",
+      "split": "train",
+      "tokens": 98,
+      "targets": 97
+    },
+    {
+      "id": "notebook_kettle_handle",
+      "split": "train",
+      "tokens": 97,
+      "targets": 96
+    },
+    {
+      "id": "notebook_bad_apology",
+      "split": "train",
+      "tokens": 104,
+      "targets": 103
+    },
+    {
+      "id": "notebook_thyme_cutting",
+      "split": "train",
+      "tokens": 102,
+      "targets": 101
+    },
+    {
+      "id": "notebook_empty_seat",
+      "split": "train",
+      "tokens": 97,
+      "targets": 96
+    },
+    {
+      "id": "notebook_misplaced_key",
+      "split": "train",
+      "tokens": 100,
+      "targets": 99
+    },
+    {
+      "id": "notebook_visitor_story",
+      "split": "train",
+      "tokens": 99,
+      "targets": 98
+    },
+    {
+      "id": "notebook_stone_threshold",
+      "split": "train",
+      "tokens": 99,
+      "targets": 98
+    },
+    {
+      "id": "notebook_salty_lentils",
+      "split": "train",
+      "tokens": 103,
+      "targets": 102
+    },
+    {
+      "id": "notebook_rook_string",
+      "split": "train",
+      "tokens": 91,
+      "targets": 90
+    },
+    {
+      "id": "notebook_mara_argument",
+      "split": "train",
+      "tokens": 103,
+      "targets": 102
+    },
+    {
+      "id": "notebook_cold_knee",
+      "split": "train",
+      "tokens": 91,
+      "targets": 90
+    },
+    {
+      "id": "notebook_ordinary_name",
+      "split": "train",
+      "tokens": 100,
+      "targets": 99
+    },
+    {
+      "id": "notebook_impatient_silence",
+      "split": "train",
+      "tokens": 95,
+      "targets": 94
+    },
+    {
+      "id": "notebook_phone_rustle",
+      "split": "train",
+      "tokens": 96,
+      "targets": 95
+    },
+    {
+      "id": "notebook_mara_absence",
+      "split": "train",
+      "tokens": 97,
+      "targets": 96
+    },
+    {
+      "id": "notebook_unfinished_letter",
+      "split": "train",
+      "tokens": 92,
+      "targets": 91
+    },
+    {
+      "id": "notebook_chipped_cup",
+      "split": "train",
+      "tokens": 94,
+      "targets": 93
+    },
+    {
+      "id": "notebook_neighbour_boundary",
+      "split": "train",
+      "tokens": 94,
+      "targets": 93
+    },
+    {
+      "id": "notebook_market_onions",
+      "split": "train",
+      "tokens": 94,
+      "targets": 93
+    },
+    {
+      "id": "notebook_human_fatigue",
+      "split": "train",
+      "tokens": 103,
+      "targets": 102
+    },
+    {
+      "id": "notebook_postage",
+      "split": "valid",
+      "tokens": 94,
+      "targets": 93
+    },
+    {
+      "id": "notebook_lost_glove",
+      "split": "valid",
+      "tokens": 90,
+      "targets": 89
+    },
+    {
+      "id": "notebook_bell_rope",
+      "split": "valid",
+      "tokens": 92,
+      "targets": 91
+    },
+    {
+      "id": "notebook_reading_fly",
+      "split": "valid",
+      "tokens": 88,
+      "targets": 87
+    },
+    {
+      "id": "notebook_summit_shadow",
+      "split": "valid",
+      "tokens": 92,
+      "targets": 91
+    },
+    {
+      "id": "notebook_wrong_voice",
+      "split": "valid",
+      "tokens": 101,
+      "targets": 100
+    }
+  ],
+  "scope": "Original fictional notebook snippets, split by distinct episode family. Validation is small authored text diagnostic, not native speech evaluation."
+}

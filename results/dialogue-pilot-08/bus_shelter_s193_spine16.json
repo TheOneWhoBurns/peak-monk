@@ -1,0 +1,382 @@
+{
+  "id": "bus_shelter_s193_spine16",
+  "root_id": "bus_shelter_s193",
+  "family": "bus_shelter",
+  "kind": "ordinary_spine",
+  "prefix_source": null,
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "My name is Leena. I am waiting under a bus shelter after work. The rain is loud enough that I almost missed the bus announcement."
+    },
+    {
+      "role": "assistant",
+      "content": "Hello, Leena. Was the bus nearby?"
+    },
+    {
+      "role": "user",
+      "content": "The next bus is in forty minutes. I am not in danger, just damp and cross. What have I interrupted you doing?"
+    },
+    {
+      "role": "assistant",
+      "content": "Sitting beneath this roof. You were making it sound interesting."
+    },
+    {
+      "role": "user",
+      "content": "I work at a small museum. Today we moved an enormous wooden cabinet three times before admitting it belonged where it started."
+    },
+    {
+      "role": "assistant",
+      "content": "Does it belong?"
+    },
+    {
+      "role": "user",
+      "content": "It was funny by the third move. Does anyone in your community have a talent for making extra work?"
+    },
+    {
+      "role": "assistant",
+      "content": "I don't know anyone who does. I have a very ordinary set of hands."
+    },
+    {
+      "role": "user",
+      "content": "My lunch was cold noodles in a yellow tin. I forgot my fork and had to borrow one from the ticket office."
+    },
+    {
+      "role": "assistant",
+      "content": "A pleasant lunch. How many people were at the museum today?"
+    },
+    {
+      "role": "user",
+      "content": "Do you usually eat with the others, or do people take their bowls away?"
+    },
+    {
+      "role": "assistant",
+      "content": "I eat with the people who work with me. We clear out a bench and eat from the same bowls."
+    },
+    {
+      "role": "user",
+      "content": "I like the sound of rain when I can stay indoors. Here it keeps bouncing off the roof onto my shoes."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds louder when you're standing. I like it too, though I often go out before it settles."
+    },
+    {
+      "role": "user",
+      "content": "What sound gets on your nerves up there?"
+    },
+    {
+      "role": "assistant",
+      "content": "A noise that keeps changing. I dislike that more than I dislike any particular sound."
+    },
+    {
+      "role": "user",
+      "content": "A man at the far end of the shelter is trying to keep a paper bag dry. I offered him the spare bag from my pocket."
+    },
+    {
+      "role": "assistant",
+      "content": "That was generous of you. He may not need both bags."
+    },
+    {
+      "role": "user",
+      "content": "He said no at first, then changed his mind. We have not otherwise spoken."
+    },
+    {
+      "role": "assistant",
+      "content": "He could still refuse it without giving you a reason to expect conversation."
+    },
+    {
+      "role": "user",
+      "content": "Have you ever refused a perfectly useful thing just because someone offered it at the wrong moment?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes. I once took a dead mouse from someone who had been trying to tell me something."
+    },
+    {
+      "role": "user",
+      "content": "I sometimes do that when I am tired. Tonight I would happily accept dry socks from almost anyone."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like a meal I'd like to have with you."
+    },
+    {
+      "role": "user",
+      "content": "My bus has been delayed another ten minutes. Tell me one small thing that went wrong in your day."
+    },
+    {
+      "role": "assistant",
+      "content": "I left a jar of jam on the floor. I had remembered it, but it was somewhere I hadn't yet tried to remember it."
+    },
+    {
+      "role": "user",
+      "content": "I am not asking for a lesson about patience. Ordinary bad timing will do."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds easier. I found the jar and put it back where I left it."
+    },
+    {
+      "role": "user",
+      "content": "There is a break in the rain now. I can hear someone rolling the museum bins out behind the shelter."
+    },
+    {
+      "role": "assistant",
+      "content": "What are they doing?"
+    },
+    {
+      "role": "user",
+      "content": "I might put the phone in my pocket for a minute while I look for my ticket. Keep me company with something ordinary."
+    },
+    {
+      "role": "assistant",
+      "content": "I don't have much to offer. The rain has stopped and I am becoming cold."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "My name is Leena. I am waiting under a bus shelter after work. The rain is loud enough that I almost missed the bus announcement.",
+      "reply": "Hello, Leena. Was the bus nearby?",
+      "seed": 1909773752,
+      "input_tokens": 37,
+      "output_tokens": 11,
+      "finish_reason": "stop",
+      "seconds": 12.333670166000957,
+      "elapsed_seconds": 163.28354304200002,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "The next bus is in forty minutes. I am not in danger, just damp and cross. What have I interrupted you doing?",
+      "reply": "Sitting beneath this roof. You were making it sound interesting.",
+      "seed": 17464930,
+      "input_tokens": 83,
+      "output_tokens": 14,
+      "finish_reason": "stop",
+      "seconds": 9.7925348330009,
+      "elapsed_seconds": 173.0864607500007,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I work at a small museum. Today we moved an enormous wooden cabinet three times before admitting it belonged where it started.",
+      "reply": "Does it belong?",
+      "seed": 1018161702,
+      "input_tokens": 130,
+      "output_tokens": 5,
+      "finish_reason": "stop",
+      "seconds": 2.6907171250004467,
+      "elapsed_seconds": 175.78732087500066,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "It was funny by the third move. Does anyone in your community have a talent for making extra work?",
+      "reply": "I don't know anyone who does. I have a very ordinary set of hands.",
+      "seed": 225521206,
+      "input_tokens": 165,
+      "output_tokens": 18,
+      "finish_reason": "stop",
+      "seconds": 6.988899415999185,
+      "elapsed_seconds": 182.7851402080014,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "My lunch was cold noodles in a yellow tin. I forgot my fork and had to borrow one from the ticket office.",
+      "reply": "A pleasant lunch. How many people were at the museum today?",
+      "seed": 1137879684,
+      "input_tokens": 216,
+      "output_tokens": 14,
+      "finish_reason": "stop",
+      "seconds": 5.115272957998968,
+      "elapsed_seconds": 187.91002079200007,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "Do you usually eat with the others, or do people take their bowls away?",
+      "reply": "I eat with the people who work with me. We clear out a bench and eat from the same bowls.",
+      "seed": 836128638,
+      "input_tokens": 255,
+      "output_tokens": 23,
+      "finish_reason": "stop",
+      "seconds": 7.592318832999808,
+      "elapsed_seconds": 195.51074787500147,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I like the sound of rain when I can stay indoors. Here it keeps bouncing off the roof onto my shoes.",
+      "reply": "It sounds louder when you're standing. I like it too, though I often go out before it settles.",
+      "seed": 127174383,
+      "input_tokens": 310,
+      "output_tokens": 23,
+      "finish_reason": "stop",
+      "seconds": 8.041362207999555,
+      "elapsed_seconds": 203.56153008300134,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "What sound gets on your nerves up there?",
+      "reply": "A noise that keeps changing. I dislike that more than I dislike any particular sound.",
+      "seed": 189239314,
+      "input_tokens": 351,
+      "output_tokens": 18,
+      "finish_reason": "stop",
+      "seconds": 6.9286676659994555,
+      "elapsed_seconds": 210.49842108300072,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "A man at the far end of the shelter is trying to keep a paper bag dry. I offered him the spare bag from my pocket.",
+      "reply": "That was generous of you. He may not need both bags.",
+      "seed": 890401748,
+      "input_tokens": 406,
+      "output_tokens": 14,
+      "finish_reason": "stop",
+      "seconds": 6.412410791999719,
+      "elapsed_seconds": 216.92047383300087,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "He said no at first, then changed his mind. We have not otherwise spoken.",
+      "reply": "He could still refuse it without giving you a reason to expect conversation.",
+      "seed": 592938076,
+      "input_tokens": 446,
+      "output_tokens": 15,
+      "finish_reason": "stop",
+      "seconds": 7.100148292000085,
+      "elapsed_seconds": 224.0292807500009,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "Have you ever refused a perfectly useful thing just because someone offered it at the wrong moment?",
+      "reply": "Yes. I once took a dead mouse from someone who had been trying to tell me something.",
+      "seed": 1875216454,
+      "input_tokens": 488,
+      "output_tokens": 20,
+      "finish_reason": "stop",
+      "seconds": 8.446266208000452,
+      "elapsed_seconds": 232.48541820799983,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I sometimes do that when I am tired. Tonight I would happily accept dry socks from almost anyone.",
+      "reply": "That sounds like a meal I'd like to have with you.",
+      "seed": 1209555509,
+      "input_tokens": 537,
+      "output_tokens": 14,
+      "finish_reason": "stop",
+      "seconds": 7.203379167000094,
+      "elapsed_seconds": 239.70105941700058,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "My bus has been delayed another ten minutes. Tell me one small thing that went wrong in your day.",
+      "reply": "I left a jar of jam on the floor. I had remembered it, but it was somewhere I hadn't yet tried to remember it.",
+      "seed": 1798312359,
+      "input_tokens": 581,
+      "output_tokens": 29,
+      "finish_reason": "stop",
+      "seconds": 11.525034750000486,
+      "elapsed_seconds": 251.23555666700122,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I am not asking for a lesson about patience. Ordinary bad timing will do.",
+      "reply": "That sounds easier. I found the jar and put it back where I left it.",
+      "seed": 307746938,
+      "input_tokens": 635,
+      "output_tokens": 18,
+      "finish_reason": "stop",
+      "seconds": 8.787917000001471,
+      "elapsed_seconds": 260.0350685829999,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "There is a break in the rain now. I can hear someone rolling the museum bins out behind the shelter.",
+      "reply": "What are they doing?",
+      "seed": 889782429,
+      "input_tokens": 684,
+      "output_tokens": 6,
+      "finish_reason": "stop",
+      "seconds": 6.144177707999916,
+      "elapsed_seconds": 266.19061687500107,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I might put the phone in my pocket for a minute while I look for my ticket. Keep me company with something ordinary.",
+      "reply": "I don't have much to offer. The rain has stopped and I am becoming cold.",
+      "seed": 1223416983,
+      "input_tokens": 724,
+      "output_tokens": 19,
+      "finish_reason": "stop",
+      "seconds": 9.820006333000492,
+      "elapsed_seconds": 276.0200826250002,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

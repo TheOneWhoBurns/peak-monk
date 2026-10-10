@@ -1,0 +1,31 @@
+{
+  "source": "data/on-policy-repairs-v3/train.jsonl",
+  "source_sha256": "0a003aa8cc4bc9ea1d033c8da619b5e1cd79f2b0ee0b62b58913f5e497db4f23",
+  "pairs": 31,
+  "output_sha256": "7926879fa96f2308fc9c76d29399244bbdb867ba5511d1c11418b59cb580dd1d",
+  "excluded": [
+    {
+      "id": "repairs_lantern_s89_indirect_mentor00_00",
+      "reason": "Censored sampled alternative; do not add an invented EOS target",
+      "source": {
+        "path": "results/dialogue-pilot-09/lantern_s89_indirect_mentor00.json",
+        "sha256": "6409de191a5a58c96e4756b90c1e30423b4b92da446884f006c894c82ff0100f",
+        "turn_index": 0,
+        "caller": "Describe a small disagreement with someone who trained you.",
+        "reply": "I had been helping with a repair and found a tool I had left back where I had been working. I went back to my work. My teacher asked why I had interrupted him. I answered that I had found the tool. He said I had interrupted him to get the tool. I had needed the tool and then gone back to my work. He was disappointed that I hadn't told him that",
+        "seed": 1474584680,
+        "input_tokens": 18,
+        "output_tokens": 80,
+        "finish_reason": "length",
+        "seconds": 20.76977737499874,
+        "elapsed_seconds": 73.37324645800072,
+        "peak_rss_bytes": 562020352,
+        "swap_bytes": 1235683901,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 1465380196,
+        "mlx_active_bytes": 816163636
+      }
+    }
+  ],
+  "scope": "Offline author preferences over actual sampled student replies and previously reviewed synthetic replacements. Includes declared canonical preferences, not only definite factual errors. No reward model, independent judge, held-out data, or online reinforcement-learning claim."
+}

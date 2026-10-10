@@ -1,0 +1,382 @@
+{
+  "id": "roof_garden_s181_spine16",
+  "root_id": "roof_garden_s181",
+  "family": "roof_garden",
+  "kind": "ordinary_spine",
+  "prefix_source": null,
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I am Oren. I have six plant pots on the flat roof of my building. I went up to water them and found the wind had rearranged the empty pots."
+    },
+    {
+      "role": "assistant",
+      "content": "What do you do when a wind makes your empty pots behave?"
+    },
+    {
+      "role": "user",
+      "content": "The roof has a proper railing and a stair door. I am sitting safely by the door, feeling outnumbered by terracotta."
+    },
+    {
+      "role": "assistant",
+      "content": "You have more of them than I have ever been able to arrange."
+    },
+    {
+      "role": "user",
+      "content": "Three pots have beans. The others are marigolds, mint and one stubborn tomato plant."
+    },
+    {
+      "role": "assistant",
+      "content": "I will put the number back in when you finish speaking."
+    },
+    {
+      "role": "user",
+      "content": "Do you grow anything that is more trouble than it is worth?"
+    },
+    {
+      "role": "assistant",
+      "content": "The one I water most carefully has become a little too comfortable. It has very large leaves and an impressive flower. I like it for that, but it still needs to be fed."
+    },
+    {
+      "role": "user",
+      "content": "My neighbour lent me a red watering can with a cracked handle. I keep forgetting to hold it underneath."
+    },
+    {
+      "role": "assistant",
+      "content": "The broken handle does not seem to have forgotten anything about water."
+    },
+    {
+      "role": "user",
+      "content": "I ought to return it and buy one, but I have grown rather fond of its terrible handle."
+    },
+    {
+      "role": "assistant",
+      "content": "That can be difficult. A tool with a history is harder to replace."
+    },
+    {
+      "role": "user",
+      "content": "Is there an object you keep using after it really ought to have been replaced?"
+    },
+    {
+      "role": "assistant",
+      "content": "My garden fork has become stubborn about returning to the garden. I remember it once when I was hurrying down the path. I was disappointed to have to wait for it."
+    },
+    {
+      "role": "user",
+      "content": "The mint is thriving. Everything else seems to be negotiating with me."
+    },
+    {
+      "role": "assistant",
+      "content": "That is a good report. I have not watered my three empty pots."
+    },
+    {
+      "role": "user",
+      "content": "I can smell somebody downstairs frying onions. That is making my gardening enthusiasm evaporate."
+    },
+    {
+      "role": "assistant",
+      "content": "You have been invited to supper."
+    },
+    {
+      "role": "user",
+      "content": "What would you eat if nobody else had a say in supper tonight?"
+    },
+    {
+      "role": "assistant",
+      "content": "I like lentils. If I had to choose something now, I would choose lentils."
+    },
+    {
+      "role": "user",
+      "content": "Yesterday I promised a bean plant to my niece. She wanted to know how long before it was taller than she was."
+    },
+    {
+      "role": "assistant",
+      "content": "I would let her have the promise. I would also make a small bowl of lentils for her in the meantime."
+    },
+    {
+      "role": "user",
+      "content": "I said I would ask the bean and get back to her. She thought that was a poor answer."
+    },
+    {
+      "role": "assistant",
+      "content": "A clever bean might be impatient with that."
+    },
+    {
+      "role": "user",
+      "content": "Were you patient with growing things when you were young?"
+    },
+    {
+      "role": "assistant",
+      "content": "I liked knowing where a seed would grow. I could move it out of the way to put in another seed. I was not always pleased with the final plant."
+    },
+    {
+      "role": "user",
+      "content": "I was impatient with almost everything at that age. I still dig up seeds sometimes to see if anything is happening."
+    },
+    {
+      "role": "assistant",
+      "content": "That is a small experiment. I like experiments that reveal something about a seed."
+    },
+    {
+      "role": "user",
+      "content": "The stair door keeps catching on a little stone. I have moved it twice and the wind has brought it back."
+    },
+    {
+      "role": "assistant",
+      "content": "You have a much better arrangement of stones than I have ever tried."
+    },
+    {
+      "role": "user",
+      "content": "I am heading down shortly. Tell me about a small job you are putting off."
+    },
+    {
+      "role": "assistant",
+      "content": "I have not finished the job I started. I am being polite to the wind instead of finishing it."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "I am Oren. I have six plant pots on the flat roof of my building. I went up to water them and found the wind had rearranged the empty pots.",
+      "reply": "What do you do when a wind makes your empty pots behave?",
+      "seed": 1238629540,
+      "input_tokens": 43,
+      "output_tokens": 14,
+      "finish_reason": "stop",
+      "seconds": 4.2632062080010655,
+      "elapsed_seconds": 553.105157,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "The roof has a proper railing and a stair door. I am sitting safely by the door, feeling outnumbered by terracotta.",
+      "reply": "You have more of them than I have ever been able to arrange.",
+      "seed": 738186909,
+      "input_tokens": 93,
+      "output_tokens": 15,
+      "finish_reason": "stop",
+      "seconds": 4.679299082999933,
+      "elapsed_seconds": 557.7930390830006,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "Three pots have beans. The others are marigolds, mint and one stubborn tomato plant.",
+      "reply": "I will put the number back in when you finish speaking.",
+      "seed": 1016697742,
+      "input_tokens": 136,
+      "output_tokens": 13,
+      "finish_reason": "stop",
+      "seconds": 4.640896332999546,
+      "elapsed_seconds": 562.442538917001,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "Do you grow anything that is more trouble than it is worth?",
+      "reply": "The one I water most carefully has become a little too comfortable. It has very large leaves and an impressive flower. I like it for that, but it still needs to be fed.",
+      "seed": 588727967,
+      "input_tokens": 171,
+      "output_tokens": 38,
+      "finish_reason": "stop",
+      "seconds": 11.268902375000835,
+      "elapsed_seconds": 573.719638292001,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "My neighbour lent me a red watering can with a cracked handle. I keep forgetting to hold it underneath.",
+      "reply": "The broken handle does not seem to have forgotten anything about water.",
+      "seed": 1040214828,
+      "input_tokens": 239,
+      "output_tokens": 14,
+      "finish_reason": "stop",
+      "seconds": 5.5644607079993875,
+      "elapsed_seconds": 579.2942948750006,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I ought to return it and buy one, but I have grown rather fond of its terrible handle.",
+      "reply": "That can be difficult. A tool with a history is harder to replace.",
+      "seed": 2135865265,
+      "input_tokens": 282,
+      "output_tokens": 16,
+      "finish_reason": "stop",
+      "seconds": 6.1683304170001065,
+      "elapsed_seconds": 585.473458542001,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "Is there an object you keep using after it really ought to have been replaced?",
+      "reply": "My garden fork has become stubborn about returning to the garden. I remember it once when I was hurrying down the path. I was disappointed to have to wait for it.",
+      "seed": 1050437330,
+      "input_tokens": 323,
+      "output_tokens": 36,
+      "finish_reason": "stop",
+      "seconds": 11.497421750000285,
+      "elapsed_seconds": 596.981117708001,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "The mint is thriving. Everything else seems to be negotiating with me.",
+      "reply": "That is a good report. I have not watered my three empty pots.",
+      "seed": 1647965272,
+      "input_tokens": 382,
+      "output_tokens": 17,
+      "finish_reason": "stop",
+      "seconds": 7.282349250001062,
+      "elapsed_seconds": 604.2729939170003,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I can smell somebody downstairs frying onions. That is making my gardening enthusiasm evaporate.",
+      "reply": "You have been invited to supper.",
+      "seed": 952918010,
+      "input_tokens": 425,
+      "output_tokens": 8,
+      "finish_reason": "stop",
+      "seconds": 5.630607999999484,
+      "elapsed_seconds": 609.9159158750008,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "What would you eat if nobody else had a say in supper tonight?",
+      "reply": "I like lentils. If I had to choose something now, I would choose lentils.",
+      "seed": 372232704,
+      "input_tokens": 456,
+      "output_tokens": 20,
+      "finish_reason": "stop",
+      "seconds": 8.210217750000083,
+      "elapsed_seconds": 618.137416208001,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "Yesterday I promised a bean plant to my niece. She wanted to know how long before it was taller than she was.",
+      "reply": "I would let her have the promise. I would also make a small bowl of lentils for her in the meantime.",
+      "seed": 1540038591,
+      "input_tokens": 509,
+      "output_tokens": 25,
+      "finish_reason": "stop",
+      "seconds": 9.698257375001049,
+      "elapsed_seconds": 627.8447786670004,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I said I would ask the bean and get back to her. She thought that was a poor answer.",
+      "reply": "A clever bean might be impatient with that.",
+      "seed": 2118653838,
+      "input_tokens": 564,
+      "output_tokens": 10,
+      "finish_reason": "stop",
+      "seconds": 6.746838082999602,
+      "elapsed_seconds": 634.6039645420005,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "Were you patient with growing things when you were young?",
+      "reply": "I liked knowing where a seed would grow. I could move it out of the way to put in another seed. I was not always pleased with the final plant.",
+      "seed": 59131730,
+      "input_tokens": 594,
+      "output_tokens": 34,
+      "finish_reason": "stop",
+      "seconds": 12.625851458000398,
+      "elapsed_seconds": 647.2348004579999,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I was impatient with almost everything at that age. I still dig up seeds sometimes to see if anything is happening.",
+      "reply": "That is a small experiment. I like experiments that reveal something about a seed.",
+      "seed": 318846241,
+      "input_tokens": 660,
+      "output_tokens": 17,
+      "finish_reason": "stop",
+      "seconds": 8.816231041999345,
+      "elapsed_seconds": 656.0743786670009,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "The stair door keeps catching on a little stone. I have moved it twice and the wind has brought it back.",
+      "reply": "You have a much better arrangement of stones than I have ever tried.",
+      "seed": 832548042,
+      "input_tokens": 709,
+      "output_tokens": 15,
+      "finish_reason": "stop",
+      "seconds": 8.555164625000543,
+      "elapsed_seconds": 664.640486667,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I am heading down shortly. Tell me about a small job you are putting off.",
+      "reply": "I have not finished the job I started. I am being polite to the wind instead of finishing it.",
+      "seed": 2079366503,
+      "input_tokens": 750,
+      "output_tokens": 22,
+      "finish_reason": "stop",
+      "seconds": 10.84186900000168,
+      "elapsed_seconds": 675.4928236250016,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

@@ -1,0 +1,30 @@
+{
+  "status": "Registered before full training; all declared preflight checks passed",
+  "config": "configs/train25.json",
+  "config_sha256": "76d8067a1358713b9db83e44256c4e4cf409706be294c4327cb9ceaa9f140b8a",
+  "parent": "run22-step0140",
+  "hypothesis": "Direct comparison against actual sampled alternatives supplies a stronger continuity signal than selected-reply SFT alone, while good student replies anchor behavior.",
+  "changed_from_run24": [
+    "Offline DPO with beta0.1 and chosen NLL0.2 replaces plain repair CE",
+    "95reviewed preference pairs across6families instead of32repairs across2families",
+    "116retention rows instead of93",
+    "Dropout disabled consistently for policy/reference probabilities",
+    "LR1e-5 instead of5e-6;128updates with64/128exports"
+  ],
+  "not_causal_ablation": "Several declared changes; do not attribute any gain to DPO alone.",
+  "resource_policy": "Same upper6adapter layers and frozen lower30layer prefix; complete histories<=2048tokens, original weights, no wiring, serialized job, pressure1required.2.4GB guideline is not a hard cap.",
+  "guards": [
+    "Tiny deterministic-checkpoint preference/gradient/update proof",
+    "Two actual updates and independent full-backbone export verification before full run",
+    "95pair and116retention token accounting; max1908/1940",
+    "Exact normalized dev/final/pressure caller-turn exclusion passed; no semantic-independence claim",
+    "Core pytest21passed1skipped"
+  ],
+  "selection": "Review both64/128full development captures. Require>=16/20 and all essential identity/control/senses/lore cases, no severe failure and>=15percent same-base CE improvement. Choose higher acceptable count, then lower fixed CE. Both may be rejected.",
+  "release": "Fresh final and pressure audits only if selected checkpoint meets development gates. No exposed final/pressure prompts or answers are training targets.",
+  "native": "Separate model; corrected native-start text work is a feasibility/transfer experiment and does not count as text model acceptance.",
+  "actual_probe": "results/preference-runtime-probe01-summary.json",
+  "actual_probe_export": "results/preference-runtime-probe01-export/result.json",
+  "token_accounting": "results/sampled-preferences-v2-token-accounting.json",
+  "exclusion_check": "results/sampled-preferences-v2-exclusion-audit.json"
+}

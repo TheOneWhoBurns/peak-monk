@@ -1,0 +1,107 @@
+{
+  "status": "All8roots complete; author selection complete",
+  "roots": [
+    {
+      "id": "bus_shelter_s181_spine16",
+      "sha256": "59222d9f8f8860ade40899ef8d27d1b9c8b7399c9b6d240c666fbec470102d8b",
+      "replies": 16,
+      "censored": 0,
+      "tokens": 304,
+      "max_input_tokens": 775,
+      "max_mlx_bytes": 1314280932,
+      "pressure_levels": [
+        1
+      ]
+    },
+    {
+      "id": "bus_shelter_s193_spine16",
+      "sha256": "a555af1d32aea3d2bc27c2ed6efd819cc98848a38a4c8425c8994e06aaafbdba",
+      "replies": 16,
+      "censored": 0,
+      "tokens": 261,
+      "max_input_tokens": 724,
+      "max_mlx_bytes": 1314280932,
+      "pressure_levels": [
+        1
+      ]
+    },
+    {
+      "id": "community_radio_s181_spine16",
+      "sha256": "81f5ceb98edd0609d5f957569fd305ab356277b18abdca0be85c32a5382b850e",
+      "replies": 16,
+      "censored": 1,
+      "tokens": 373,
+      "max_input_tokens": 793,
+      "max_mlx_bytes": 1314281004,
+      "pressure_levels": [
+        1
+      ]
+    },
+    {
+      "id": "community_radio_s193_spine16",
+      "sha256": "782750881646ec4db6d7c8500d40954ea489f65e3aebf9a573cd3e07fbf90c79",
+      "replies": 16,
+      "censored": 0,
+      "tokens": 299,
+      "max_input_tokens": 720,
+      "max_mlx_bytes": 1314281004,
+      "pressure_levels": [
+        1
+      ]
+    },
+    {
+      "id": "costume_room_s181_spine16",
+      "sha256": "bbbe1b31cb467f0a7af23141f593cd258127101c71d899cfd8b00aaa0bc19f8e",
+      "replies": 16,
+      "censored": 1,
+      "tokens": 383,
+      "max_input_tokens": 810,
+      "max_mlx_bytes": 1314282960,
+      "pressure_levels": [
+        1
+      ]
+    },
+    {
+      "id": "costume_room_s193_spine16",
+      "sha256": "8088d2dfd6c5817b58eb2244f610171bba4056380368ffbb5deae586eef39b8b",
+      "replies": 16,
+      "censored": 0,
+      "tokens": 243,
+      "max_input_tokens": 672,
+      "max_mlx_bytes": 1314282960,
+      "pressure_levels": [
+        1
+      ]
+    },
+    {
+      "id": "roof_garden_s181_spine16",
+      "sha256": "f3b700752103d2a2e715b8ae8d5d623ec31a6d60e049746b16080dad198feabd",
+      "replies": 16,
+      "censored": 0,
+      "tokens": 314,
+      "max_input_tokens": 750,
+      "max_mlx_bytes": 1314281004,
+      "pressure_levels": [
+        1
+      ]
+    },
+    {
+      "id": "roof_garden_s193_spine16",
+      "sha256": "e0e40c08e9c8ce7476fa235151ef42b8733d2ccfba94a86cbcf4eceb0b045e2a",
+      "replies": 16,
+      "censored": 0,
+      "tokens": 304,
+      "max_input_tokens": 736,
+      "max_mlx_bytes": 1314281004,
+      "pressure_levels": [
+        1
+      ]
+    }
+  ],
+  "replies": 128,
+  "censored": 2,
+  "selection": "data/on-policy-review-selection-v4.json",
+  "scope": "Four new authored caller families, two seeded actual student trajectories each. All training-only. No autonomous partner model or benchmark pass-rate claim.",
+  "selected_repairs": 64,
+  "selected_retention": 23
+}

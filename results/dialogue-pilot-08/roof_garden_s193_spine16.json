@@ -1,0 +1,382 @@
+{
+  "id": "roof_garden_s193_spine16",
+  "root_id": "roof_garden_s193",
+  "family": "roof_garden",
+  "kind": "ordinary_spine",
+  "prefix_source": null,
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I am Oren. I have six plant pots on the flat roof of my building. I went up to water them and found the wind had rearranged the empty pots."
+    },
+    {
+      "role": "assistant",
+      "content": "What did you end up doing?"
+    },
+    {
+      "role": "user",
+      "content": "The roof has a proper railing and a stair door. I am sitting safely by the door, feeling outnumbered by terracotta."
+    },
+    {
+      "role": "assistant",
+      "content": "You were up there, yes. What were you trying to get done?"
+    },
+    {
+      "role": "user",
+      "content": "Three pots have beans. The others are marigolds, mint and one stubborn tomato plant."
+    },
+    {
+      "role": "assistant",
+      "content": "Beans, mint, marigolds and a stubborn tomato. How many do you have spare?"
+    },
+    {
+      "role": "user",
+      "content": "Do you grow anything that is more trouble than it is worth?"
+    },
+    {
+      "role": "assistant",
+      "content": "I do. It was a question, not a confession."
+    },
+    {
+      "role": "user",
+      "content": "My neighbour lent me a red watering can with a cracked handle. I keep forgetting to hold it underneath."
+    },
+    {
+      "role": "assistant",
+      "content": "I have lent things to people and then remembered them myself."
+    },
+    {
+      "role": "user",
+      "content": "I ought to return it and buy one, but I have grown rather fond of its terrible handle."
+    },
+    {
+      "role": "assistant",
+      "content": "I can understand that. What's grown fond of it?"
+    },
+    {
+      "role": "user",
+      "content": "Is there an object you keep using after it really ought to have been replaced?"
+    },
+    {
+      "role": "assistant",
+      "content": "I take a jar of nails down rather than put a jar of nails down. The jar is not the thing I need."
+    },
+    {
+      "role": "user",
+      "content": "The mint is thriving. Everything else seems to be negotiating with me."
+    },
+    {
+      "role": "assistant",
+      "content": "A stubborn tomato, a pot with beans and a pot with marigolds. You have made a rather mixed audience."
+    },
+    {
+      "role": "user",
+      "content": "I can smell somebody downstairs frying onions. That is making my gardening enthusiasm evaporate."
+    },
+    {
+      "role": "assistant",
+      "content": "I can also hear something in the distance. We are in the valley, so I suspect it is someone on the mountain."
+    },
+    {
+      "role": "user",
+      "content": "What would you eat if nobody else had a say in supper tonight?"
+    },
+    {
+      "role": "assistant",
+      "content": "I would eat bread and something I'd bought, perhaps my lentils. I will not have a surprise supper tonight."
+    },
+    {
+      "role": "user",
+      "content": "Yesterday I promised a bean plant to my niece. She wanted to know how long before it was taller than she was."
+    },
+    {
+      "role": "assistant",
+      "content": "I would say somewhere around the time you start wearing gloves."
+    },
+    {
+      "role": "user",
+      "content": "I said I would ask the bean and get back to her. She thought that was a poor answer."
+    },
+    {
+      "role": "assistant",
+      "content": "She is right. What was she going to do with the bean?"
+    },
+    {
+      "role": "user",
+      "content": "Were you patient with growing things when you were young?"
+    },
+    {
+      "role": "assistant",
+      "content": "I played with them a great deal. I wanted the carrot to be smaller so I could eat it. I would rather be impatient with a plant now than explain that to the niece."
+    },
+    {
+      "role": "user",
+      "content": "I was impatient with almost everything at that age. I still dig up seeds sometimes to see if anything is happening."
+    },
+    {
+      "role": "assistant",
+      "content": "You have been paying attention after all."
+    },
+    {
+      "role": "user",
+      "content": "The stair door keeps catching on a little stone. I have moved it twice and the wind has brought it back."
+    },
+    {
+      "role": "assistant",
+      "content": "I would keep moving it. Sometimes a stone won't go where it was told."
+    },
+    {
+      "role": "user",
+      "content": "I am heading down shortly. Tell me about a small job you are putting off."
+    },
+    {
+      "role": "assistant",
+      "content": "I have an old water pipe I like to leave. It is not my intention to create a new job on the roof."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "I am Oren. I have six plant pots on the flat roof of my building. I went up to water them and found the wind had rearranged the empty pots.",
+      "reply": "What did you end up doing?",
+      "seed": 2094719358,
+      "input_tokens": 43,
+      "output_tokens": 8,
+      "finish_reason": "stop",
+      "seconds": 2.681185999999798,
+      "elapsed_seconds": 678.1822665830005,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "The roof has a proper railing and a stair door. I am sitting safely by the door, feeling outnumbered by terracotta.",
+      "reply": "You were up there, yes. What were you trying to get done?",
+      "seed": 1536564955,
+      "input_tokens": 87,
+      "output_tokens": 16,
+      "finish_reason": "stop",
+      "seconds": 4.890249625001161,
+      "elapsed_seconds": 683.0808470000011,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "Three pots have beans. The others are marigolds, mint and one stubborn tomato plant.",
+      "reply": "Beans, mint, marigolds and a stubborn tomato. How many do you have spare?",
+      "seed": 1454176485,
+      "input_tokens": 131,
+      "output_tokens": 20,
+      "finish_reason": "stop",
+      "seconds": 6.322689000000537,
+      "elapsed_seconds": 689.4119111670007,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "Do you grow anything that is more trouble than it is worth?",
+      "reply": "I do. It was a question, not a confession.",
+      "seed": 1196064642,
+      "input_tokens": 173,
+      "output_tokens": 13,
+      "finish_reason": "stop",
+      "seconds": 4.651442917000168,
+      "elapsed_seconds": 694.0721721670016,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "My neighbour lent me a red watering can with a cracked handle. I keep forgetting to hold it underneath.",
+      "reply": "I have lent things to people and then remembered them myself.",
+      "seed": 1864821566,
+      "input_tokens": 216,
+      "output_tokens": 13,
+      "finish_reason": "stop",
+      "seconds": 4.897271624999121,
+      "elapsed_seconds": 698.9782287080016,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I ought to return it and buy one, but I have grown rather fond of its terrible handle.",
+      "reply": "I can understand that. What's grown fond of it?",
+      "seed": 607278200,
+      "input_tokens": 258,
+      "output_tokens": 13,
+      "finish_reason": "stop",
+      "seconds": 5.310128582999823,
+      "elapsed_seconds": 704.2963193330015,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "Is there an object you keep using after it really ought to have been replaced?",
+      "reply": "I take a jar of nails down rather than put a jar of nails down. The jar is not the thing I need.",
+      "seed": 2042599114,
+      "input_tokens": 296,
+      "output_tokens": 26,
+      "finish_reason": "stop",
+      "seconds": 9.073925832999521,
+      "elapsed_seconds": 713.3789735830014,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "The mint is thriving. Everything else seems to be negotiating with me.",
+      "reply": "A stubborn tomato, a pot with beans and a pot with marigolds. You have made a rather mixed audience.",
+      "seed": 1794767339,
+      "input_tokens": 345,
+      "output_tokens": 25,
+      "finish_reason": "stop",
+      "seconds": 8.9577303749993,
+      "elapsed_seconds": 722.3472492500005,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I can smell somebody downstairs frying onions. That is making my gardening enthusiasm evaporate.",
+      "reply": "I can also hear something in the distance. We are in the valley, so I suspect it is someone on the mountain.",
+      "seed": 680041331,
+      "input_tokens": 396,
+      "output_tokens": 26,
+      "finish_reason": "stop",
+      "seconds": 9.771934417000011,
+      "elapsed_seconds": 732.1284933750012,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "What would you eat if nobody else had a say in supper tonight?",
+      "reply": "I would eat bread and something I'd bought, perhaps my lentils. I will not have a surprise supper tonight.",
+      "seed": 60858986,
+      "input_tokens": 445,
+      "output_tokens": 25,
+      "finish_reason": "stop",
+      "seconds": 10.851433832998737,
+      "elapsed_seconds": 742.991826458001,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "Yesterday I promised a bean plant to my niece. She wanted to know how long before it was taller than she was.",
+      "reply": "I would say somewhere around the time you start wearing gloves.",
+      "seed": 317532369,
+      "input_tokens": 503,
+      "output_tokens": 13,
+      "finish_reason": "stop",
+      "seconds": 8.522688875000313,
+      "elapsed_seconds": 751.5251071250004,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I said I would ask the bean and get back to her. She thought that was a poor answer.",
+      "reply": "She is right. What was she going to do with the bean?",
+      "seed": 218948873,
+      "input_tokens": 546,
+      "output_tokens": 15,
+      "finish_reason": "stop",
+      "seconds": 9.333221499999127,
+      "elapsed_seconds": 760.8779396250011,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "Were you patient with growing things when you were young?",
+      "reply": "I played with them a great deal. I wanted the carrot to be smaller so I could eat it. I would rather be impatient with a plant now than explain that to the niece.",
+      "seed": 1339118711,
+      "input_tokens": 581,
+      "output_tokens": 38,
+      "finish_reason": "stop",
+      "seconds": 15.119577625000602,
+      "elapsed_seconds": 776.0105613330015,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I was impatient with almost everything at that age. I still dig up seeds sometimes to see if anything is happening.",
+      "reply": "You have been paying attention after all.",
+      "seed": 422347337,
+      "input_tokens": 651,
+      "output_tokens": 9,
+      "finish_reason": "stop",
+      "seconds": 6.877013833000092,
+      "elapsed_seconds": 782.8995962080007,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "The stair door keeps catching on a little stone. I have moved it twice and the wind has brought it back.",
+      "reply": "I would keep moving it. Sometimes a stone won't go where it was told.",
+      "seed": 1658676564,
+      "input_tokens": 692,
+      "output_tokens": 18,
+      "finish_reason": "stop",
+      "seconds": 9.12501770900053,
+      "elapsed_seconds": 792.0349766670006,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I am heading down shortly. Tell me about a small job you are putting off.",
+      "reply": "I have an old water pipe I like to leave. It is not my intention to create a new job on the roof.",
+      "seed": 1655947611,
+      "input_tokens": 736,
+      "output_tokens": 26,
+      "finish_reason": "stop",
+      "seconds": 11.33043650000036,
+      "elapsed_seconds": 803.3754464170015,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

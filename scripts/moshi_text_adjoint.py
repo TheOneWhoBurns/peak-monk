@@ -54,6 +54,53 @@ class TextMoshiParts(MoshiParts):
         return module
 
 
+def disk_text_score(parts, tokens, target_mask, head_tokens=16, boundary=lambda **kw: None):
+    """Read-only masked CE with the same causal forward/head batches as training."""
+    if tokens.ndim != 2 or tokens.shape != target_mask.shape or tokens.shape[1] < 2:
+        raise ValueError('Expected matching batch/token arrays')
+    if (head_tokens < 1 or not mx.all((tokens >= 0) & (tokens < parts.cfg.text_in_vocab_size)).item()
+            or not mx.all(tokens[:, 1:] < parts.cfg.text_out_vocab_size).item()
+            or not mx.all((target_mask == 0) | (target_mask == 1)).item()
+            or mx.any(target_mask[:, 0] != 0).item()):
+        raise ValueError('Invalid text scoring inputs')
+    count = target_mask[:, 1:].sum().item()
+    if count <= 0:
+        raise ValueError('No supervised targets')
+
+    def release(phase):
+        gc.collect()
+        mx.clear_cache()
+        boundary(phase=phase)
+
+    module = parts.load('inputs')
+    hidden = mx.stop_gradient(module(tokens[:, :-1]))
+    mx.eval(hidden)
+    del module
+    release('text_score_embedding')
+    for index in range(parts.cfg.transformer.num_layers):
+        module = parts.load(index)
+        hidden = mx.stop_gradient(layer_forward(module, hidden)[0])
+        mx.eval(hidden)
+        del module
+        release('text_score_layer')
+    heads = parts.load('heads')
+    hidden = heads.out_norm(hidden)
+    mx.eval(hidden)
+    total = mx.array(0., dtype=mx.float32)
+    for start in range(0, hidden.shape[1], head_tokens):
+        end = min(start+head_tokens, hidden.shape[1])
+        logits = heads.text_linear(hidden[:, start:end]).astype(mx.float32)
+        ce = nn.losses.cross_entropy(logits, tokens[:, start+1:end+1])
+        total = total + (ce*target_mask[:, start+1:end+1]).sum()/count
+        mx.eval(total)
+        del logits, ce
+        release('text_score_head')
+    result = dict(loss=total.item(), target_tokens=count)
+    del hidden, heads, total
+    release('text_score_complete')
+    return result
+
+
 def disk_text_grad(parts, tokens, target_mask, scratch, head_tokens=32, boundary=lambda **kw: None):
     if tokens.ndim != 2 or tokens.shape != target_mask.shape or tokens.shape[1] < 2:
         raise ValueError('Expected matching batch/token arrays')

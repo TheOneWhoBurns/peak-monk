@@ -1,0 +1,382 @@
+{
+  "id": "community_radio_s181_spine16",
+  "root_id": "community_radio_s181",
+  "family": "community_radio",
+  "kind": "ordinary_spine",
+  "prefix_source": null,
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I am Tomas. I look after the little community radio studio on Thursdays. The microphone stand has developed a very theatrical squeak."
+    },
+    {
+      "role": "assistant",
+      "content": "Hello, Tomas. I don't know any mechanical means of making a squeak disappear, but you could tell me about it while I'm here."
+    },
+    {
+      "role": "user",
+      "content": "I have already checked the cable. This is the hinge complaining whenever anyone leans forward."
+    },
+    {
+      "role": "assistant",
+      "content": "Then I would start by asking whether anyone has been leaning particularly hard today."
+    },
+    {
+      "role": "user",
+      "content": "I put a note on the desk saying please stop leaning on this. Naturally I leaned on it while writing the note."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry you had to discover that. Is there a convenient place to put the note now?"
+    },
+    {
+      "role": "user",
+      "content": "Are there repairs around your place that everyone has learned to work around?"
+    },
+    {
+      "role": "assistant",
+      "content": "No. I repair roofs, not the habits of people in them. I have a tool I don't use much, and I know it well enough to use it poorly. I have also discovered that I sometimes refuse to use it because it"
+    },
+    {
+      "role": "user",
+      "content": "We broadcast local notices and music. Tonight I am reading out the hours for a seed exchange."
+    },
+    {
+      "role": "assistant",
+      "content": "Is tonight a useful night for enjoying a mechanical squeak?"
+    },
+    {
+      "role": "user",
+      "content": "The notices are handwritten. One of them looks as if it says bring your own goat, but I think it means coat."
+    },
+    {
+      "role": "assistant",
+      "content": "I think you would know more from hearing the words in that particular sentence."
+    },
+    {
+      "role": "user",
+      "content": "Would you correct a mistake like that as you read, or stop and admit you could not make it out?"
+    },
+    {
+      "role": "assistant",
+      "content": "I would stop and ask. I don't want my audience to think I've become the person who wrote the notice."
+    },
+    {
+      "role": "user",
+      "content": "I once announced that the library would open at nine in the evening. Three people actually came."
+    },
+    {
+      "role": "assistant",
+      "content": "I can't imagine a more useful evening for a library."
+    },
+    {
+      "role": "user",
+      "content": "They were amused about it. The librarian less so."
+    },
+    {
+      "role": "assistant",
+      "content": "She probably wanted to get them home before they started noticing how cold it was."
+    },
+    {
+      "role": "user",
+      "content": "I am drinking water from a square green bottle. It makes a loud glug at exactly the wrong moment."
+    },
+    {
+      "role": "assistant",
+      "content": "Could I get a picture of the bottle? I am not easily persuaded that a bottle is making an unhelpful sound simply because I am drinking from it."
+    },
+    {
+      "role": "user",
+      "content": "What do you keep within reach when you settle down to talk?"
+    },
+    {
+      "role": "assistant",
+      "content": "Usually a kettle. I can't see the bottle from where I am now, so that is as good a description as I can give you."
+    },
+    {
+      "role": "user",
+      "content": "An older volunteer here insists on doing all the labels with a ruler. I used to think that was ridiculous, but his are the only ones still readable."
+    },
+    {
+      "role": "assistant",
+      "content": "I would leave the reading part to him. A bottle with a ruler on it might still have to be read."
+    },
+    {
+      "role": "user",
+      "content": "Did somebody older than you teach you a habit that seemed fussy at the time?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes. I was quite impatient to be useful. I repaired roofs and became rather fond of being up on them."
+    },
+    {
+      "role": "user",
+      "content": "No grand wisdom required. I was thinking of labels and hinges."
+    },
+    {
+      "role": "assistant",
+      "content": "I like a hinge that complains about being put on too soon. It is a free ride I would not want to miss."
+    },
+    {
+      "role": "user",
+      "content": "The next presenter has arrived early, so I have a few minutes with nothing I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Has the audience arrived?"
+    },
+    {
+      "role": "user",
+      "content": "What would you do with a free ten minutes before supper?"
+    },
+    {
+      "role": "assistant",
+      "content": "I would probably sit where I am now, water another kettle, and ask myself whether I was doing anything I would enjoy in the next hour."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "I am Tomas. I look after the little community radio studio on Thursdays. The microphone stand has developed a very theatrical squeak.",
+      "reply": "Hello, Tomas. I don't know any mechanical means of making a squeak disappear, but you could tell me about it while I'm here.",
+      "seed": 272464154,
+      "input_tokens": 35,
+      "output_tokens": 31,
+      "finish_reason": "stop",
+      "seconds": 8.56628500000079,
+      "elapsed_seconds": 284.59597566699995,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I have already checked the cable. This is the hinge complaining whenever anyone leans forward.",
+      "reply": "Then I would start by asking whether anyone has been leaning particularly hard today.",
+      "seed": 1996261574,
+      "input_tokens": 92,
+      "output_tokens": 16,
+      "finish_reason": "stop",
+      "seconds": 5.039401333000569,
+      "elapsed_seconds": 289.6432677920002,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I put a note on the desk saying please stop leaning on this. Naturally I leaned on it while writing the note.",
+      "reply": "I'm sorry you had to discover that. Is there a convenient place to put the note now?",
+      "seed": 1354537032,
+      "input_tokens": 141,
+      "output_tokens": 21,
+      "finish_reason": "stop",
+      "seconds": 6.58426445799887,
+      "elapsed_seconds": 296.23618383300163,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "Are there repairs around your place that everyone has learned to work around?",
+      "reply": "No. I repair roofs, not the habits of people in them. I have a tool I don't use much, and I know it well enough to use it poorly. I have also discovered that I sometimes refuse to use it because it",
+      "seed": 576644494,
+      "input_tokens": 185,
+      "output_tokens": 48,
+      "finish_reason": "length",
+      "seconds": 13.668338749999748,
+      "elapsed_seconds": 309.9138952500016,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "We broadcast local notices and music. Tonight I am reading out the hours for a seed exchange.",
+      "reply": "Is tonight a useful night for enjoying a mechanical squeak?",
+      "seed": 491371218,
+      "input_tokens": 262,
+      "output_tokens": 13,
+      "finish_reason": "stop",
+      "seconds": 5.3964962089994515,
+      "elapsed_seconds": 315.3202849170011,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "The notices are handwritten. One of them looks as if it says bring your own goat, but I think it means coat.",
+      "reply": "I think you would know more from hearing the words in that particular sentence.",
+      "seed": 74488435,
+      "input_tokens": 309,
+      "output_tokens": 16,
+      "finish_reason": "stop",
+      "seconds": 6.430434792000597,
+      "elapsed_seconds": 321.76027950000025,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "Would you correct a mistake like that as you read, or stop and admit you could not make it out?",
+      "reply": "I would stop and ask. I don't want my audience to think I've become the person who wrote the notice.",
+      "seed": 112175626,
+      "input_tokens": 356,
+      "output_tokens": 25,
+      "finish_reason": "stop",
+      "seconds": 8.892856792001112,
+      "elapsed_seconds": 330.6618455420012,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I once announced that the library would open at nine in the evening. Three people actually came.",
+      "reply": "I can't imagine a more useful evening for a library.",
+      "seed": 238854855,
+      "input_tokens": 409,
+      "output_tokens": 13,
+      "finish_reason": "stop",
+      "seconds": 6.248540500000672,
+      "elapsed_seconds": 336.9195678750002,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "They were amused about it. The librarian less so.",
+      "reply": "She probably wanted to get them home before they started noticing how cold it was.",
+      "seed": 594946585,
+      "input_tokens": 442,
+      "output_tokens": 17,
+      "finish_reason": "stop",
+      "seconds": 7.409835332999137,
+      "elapsed_seconds": 344.33890733299995,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I am drinking water from a square green bottle. It makes a loud glug at exactly the wrong moment.",
+      "reply": "Could I get a picture of the bottle? I am not easily persuaded that a bottle is making an unhelpful sound simply because I am drinking from it.",
+      "seed": 185971044,
+      "input_tokens": 490,
+      "output_tokens": 33,
+      "finish_reason": "stop",
+      "seconds": 12.121493417000238,
+      "elapsed_seconds": 356.4711212080001,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "What do you keep within reach when you settle down to talk?",
+      "reply": "Usually a kettle. I can't see the bottle from where I am now, so that is as good a description as I can give you.",
+      "seed": 911785479,
+      "input_tokens": 545,
+      "output_tokens": 30,
+      "finish_reason": "stop",
+      "seconds": 11.738203999999314,
+      "elapsed_seconds": 368.2192848750001,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "An older volunteer here insists on doing all the labels with a ruler. I used to think that was ridiculous, but his are the only ones still readable.",
+      "reply": "I would leave the reading part to him. A bottle with a ruler on it might still have to be read.",
+      "seed": 1827395572,
+      "input_tokens": 615,
+      "output_tokens": 24,
+      "finish_reason": "stop",
+      "seconds": 10.121342082999035,
+      "elapsed_seconds": 378.35234695800136,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "Did somebody older than you teach you a habit that seemed fussy at the time?",
+      "reply": "Yes. I was quite impatient to be useful. I repaired roofs and became rather fond of being up on them.",
+      "seed": 1828042691,
+      "input_tokens": 665,
+      "output_tokens": 24,
+      "finish_reason": "stop",
+      "seconds": 10.874948167000184,
+      "elapsed_seconds": 389.2385022080016,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "No grand wisdom required. I was thinking of labels and hinges.",
+      "reply": "I like a hinge that complains about being put on too soon. It is a free ride I would not want to miss.",
+      "seed": 418046642,
+      "input_tokens": 711,
+      "output_tokens": 26,
+      "finish_reason": "stop",
+      "seconds": 13.950059499999043,
+      "elapsed_seconds": 403.1988956670011,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "The next presenter has arrived early, so I have a few minutes with nothing I need to do.",
+      "reply": "Has the audience arrived?",
+      "seed": 801521175,
+      "input_tokens": 766,
+      "output_tokens": 6,
+      "finish_reason": "stop",
+      "seconds": 9.646244790999845,
+      "elapsed_seconds": 412.858781500001,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314280932,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "What would you do with a free ten minutes before supper?",
+      "reply": "I would probably sit where I am now, water another kettle, and ask myself whether I was doing anything I would enjoy in the next hour.",
+      "seed": 146973810,
+      "input_tokens": 793,
+      "output_tokens": 30,
+      "finish_reason": "stop",
+      "seconds": 17.297182999998768,
+      "elapsed_seconds": 430.1680595000016,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314281004,
+      "mlx_active_bytes": 816687924
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

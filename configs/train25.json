@@ -1,0 +1,30 @@
+{
+  "model": "models/base4b",
+  "parent": "adapters/run22-step0140",
+  "parent_sha256": "62b4197bdf59bd157ce7dd0ce6cd4c62b5dd0a910b400d886514b59480cf0829",
+  "repairs": "data/sampled-preferences-v2/train.jsonl",
+  "repairs_sha256": "b7dbe3e7a0e4d7458bfe3a0340527315fa2ed1ae4c4425cce120b73f60f646a6",
+  "replay": "data/on-policy-repairs-v4/replay.jsonl",
+  "replay_sha256": "97cb4735299cc72b198f49f2762a7f5a913d0d337ab9fc17c60aae15457fd0c5",
+  "output": "adapters/run25",
+  "train_last_layers": 6,
+  "steps": 128,
+  "max_length": 2048,
+  "memory_limit": 2400000000,
+  "max_seconds": 3600,
+  "learning_rate": 1e-05,
+  "repair_weight": 1.0,
+  "replay_weight": 1.0,
+  "head_chunk_size": 32,
+  "query_chunk_size": 128,
+  "cache_frozen_prefix": true,
+  "seed": 293,
+  "checkpoints": [
+    64,
+    128
+  ],
+  "stream_frozen_prefix": true,
+  "scope": "Offline DPO plus chosen NLL and retention on six training-only sampled families.128updates cover all95preferences and all116retention examples. Composite intervention, no acceptance claim.",
+  "preference_beta": 0.1,
+  "chosen_nll_weight": 0.2
+}

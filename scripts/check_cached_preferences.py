@@ -11,7 +11,7 @@ from mlx_lm.models.base import create_attention_mask
 from mlx_lm.tuner.lora import LoRAEmbedding, LoRALinear
 from repair_preference_grad import repair_preference_grad, masked_reply_score
 from staged_character_grad import staged_character_grad
-from qwen_rng_checkpoint import qwen_rng_checkpoint
+from mlx_lm.tuner.trainer import grad_checkpoint
 
 
 def make_model():
@@ -56,7 +56,7 @@ def main():
     for pair,feat in zip([chosen,rejected,replay],features):
         a=masked_reply_score(full,*pair,chunk_size=3);b=masked_reply_score(suffix,*pair,features=feat,chunk_size=3)
         score_errors.append(abs(a['logp']-b['logp']))
-    qwen_rng_checkpoint(suffix.layers[0])
+    grad_checkpoint(suffix.layers[0])
 
     def nll(current,pair):
         tokens,mask=pair

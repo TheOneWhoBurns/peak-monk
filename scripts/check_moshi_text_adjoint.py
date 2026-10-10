@@ -10,7 +10,7 @@ import mlx.optimizers as optim
 from mlx.utils import tree_flatten, tree_map
 from moshi_mlx.models import Lm, config_v0_1
 from moshi_training import attach_lora, layer_forward
-from moshi_text_adjoint import TextMoshiParts, disk_text_grad
+from moshi_text_adjoint import TextMoshiParts, disk_text_grad, disk_text_score
 from moshi_disk_adjoint import disk_adamw_update
 
 
@@ -93,6 +93,8 @@ def main():
             reference, gradient = nn.value_and_grad(model, objective)(model)
             mx.eval(reference, gradient)
             parts = TextMoshiParts(base, cfg, adapter, rank=2, scale=2.)
+            read_only = disk_text_score(parts, tokens, mask, head_tokens=4)
+            assert abs(read_only['loss']-reference.item()) < 1e-6
             actual = disk_text_grad(parts, tokens, mask, root/f'gradient{step}', head_tokens=4)
             flat = {}
             for record in actual['gradients']:
@@ -115,9 +117,11 @@ def main():
             print(json.dumps(dict(step=step,loss_error=loss_error,gradient_error=grad_error,adapter_error=error)),flush=True)
             assert error < 1e-6, error
             reports.append(dict(step=step, loss_error=loss_error, gradient_error=grad_error,
-                                adapter_error=error, supervised_tokens=actual['supervised_tokens']))
+                                adapter_error=error, supervised_tokens=actual['supervised_tokens'],
+                                read_only_loss_error=abs(read_only['loss']-reference.item())))
             adapter = next_adapter
     result = dict(status='pass', dtype='bfloat16', quantization='4bit/group32',
+        native_start=args.native_start,
         official_forward_text_bf16_logit_difference=logit_error,
         official_forward_text_fp32_logit_difference=fp32_logit_error, cases=reports,
         scope='Tiny numerical proof only: causal agreement with original streaming forward_text in FP32; BF16 sequential/batch difference recorded. Matched-head-batch full-model versus streamed masked loss, full temporal gradients, clipped AdamW and complete adapter exports. No pretrained-model feasibility or speech transfer evidence.')

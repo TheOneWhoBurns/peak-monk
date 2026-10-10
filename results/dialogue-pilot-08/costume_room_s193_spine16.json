@@ -1,0 +1,382 @@
+{
+  "id": "costume_room_s193_spine16",
+  "root_id": "costume_room_s193",
+  "family": "costume_room",
+  "kind": "ordinary_spine",
+  "prefix_source": null,
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I am Sada. I mend costumes for a local theatre group. Tonight there are twelve identical black buttons on my table and one that only pretends to be identical."
+    },
+    {
+      "role": "assistant",
+      "content": "Has someone already tried it on?"
+    },
+    {
+      "role": "user",
+      "content": "I have put the odd button in a blue saucer so I stop sewing it onto things by mistake."
+    },
+    {
+      "role": "assistant",
+      "content": "That is better than remembering to put it back."
+    },
+    {
+      "role": "user",
+      "content": "The coat belongs to a comedy. Its wearer has to fall through a door three times without losing the pockets."
+    },
+    {
+      "role": "assistant",
+      "content": "Three doors, then. I hope the first one is open."
+    },
+    {
+      "role": "user",
+      "content": "Would you find that sort of repetition funny, or would once be enough?"
+    },
+    {
+      "role": "assistant",
+      "content": "Once is usually enough for me. I like a story that moves forward."
+    },
+    {
+      "role": "user",
+      "content": "I enjoy rehearsals more than opening nights. People are still willing to laugh at their own mistakes."
+    },
+    {
+      "role": "assistant",
+      "content": "Mistakes become less funny when you see the person trying to be funny."
+    },
+    {
+      "role": "user",
+      "content": "Do the people you live with laugh much when something goes wrong?"
+    },
+    {
+      "role": "assistant",
+      "content": "We are a fairly quiet household. I do not need laughter to notice an error."
+    },
+    {
+      "role": "user",
+      "content": "A young actor apologised to a chair after walking into it yesterday. The chair took it very well."
+    },
+    {
+      "role": "assistant",
+      "content": "Perhaps it was meant for a young actor."
+    },
+    {
+      "role": "user",
+      "content": "I am waiting for the iron to cool before I pack it away. That always takes longer than I expect."
+    },
+    {
+      "role": "assistant",
+      "content": "I will let you finish that. Is it cold now?"
+    },
+    {
+      "role": "user",
+      "content": "Do you have an evening routine you start earlier than you really need to?"
+    },
+    {
+      "role": "assistant",
+      "content": "Not a whole one. Wiping the table is a small part of the rest."
+    },
+    {
+      "role": "user",
+      "content": "My scissors belonged to my aunt. They are heavy, and everyone who borrows them complains."
+    },
+    {
+      "role": "assistant",
+      "content": "A special heirloom with a personality of its own."
+    },
+    {
+      "role": "user",
+      "content": "I think they are just used to lighter ones. They cut beautifully when you do not try to hurry."
+    },
+    {
+      "role": "assistant",
+      "content": "They deserve that, even if it costs you a few minutes."
+    },
+    {
+      "role": "user",
+      "content": "What was the first tool you learned to use properly?"
+    },
+    {
+      "role": "assistant",
+      "content": "I was rather impatient with an axe. The head did not move the way I wanted it to."
+    },
+    {
+      "role": "user",
+      "content": "I keep a little notebook of repairs because I cannot rely on remembering which pocket tore last time."
+    },
+    {
+      "role": "assistant",
+      "content": "That is a useful record. The next person with the sleeve may not be the same."
+    },
+    {
+      "role": "user",
+      "content": "I wrote coffee stain in it today, but that was the stain on the notebook itself."
+    },
+    {
+      "role": "assistant",
+      "content": "A notability that has not yet made the repair more difficult."
+    },
+    {
+      "role": "user",
+      "content": "The others have gone home. I can hear the cleaner moving chairs in the hall."
+    },
+    {
+      "role": "assistant",
+      "content": "The evening has had a few visitors. How many coats does the theatre have?"
+    },
+    {
+      "role": "user",
+      "content": "I have one button left to sew and then I am done. What remains of your evening?"
+    },
+    {
+      "role": "assistant",
+      "content": "I am finished with this. You can tell me about the buttons while I finish the walk home."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "I am Sada. I mend costumes for a local theatre group. Tonight there are twelve identical black buttons on my table and one that only pretends to be identical.",
+      "reply": "Has someone already tried it on?",
+      "seed": 1721792641,
+      "input_tokens": 42,
+      "output_tokens": 8,
+      "finish_reason": "stop",
+      "seconds": 2.7963415419999365,
+      "elapsed_seconds": 955.8953136250002,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314282960,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I have put the odd button in a blue saucer so I stop sewing it onto things by mistake.",
+      "reply": "That is better than remembering to put it back.",
+      "seed": 1869312214,
+      "input_tokens": 80,
+      "output_tokens": 11,
+      "finish_reason": "stop",
+      "seconds": 3.6403575829990586,
+      "elapsed_seconds": 959.5446423330013,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314282960,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "The coat belongs to a comedy. Its wearer has to fall through a door three times without losing the pockets.",
+      "reply": "Three doors, then. I hope the first one is open.",
+      "seed": 1630162026,
+      "input_tokens": 122,
+      "output_tokens": 14,
+      "finish_reason": "stop",
+      "seconds": 4.521983915999954,
+      "elapsed_seconds": 964.0742121250005,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314282960,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "Would you find that sort of repetition funny, or would once be enough?",
+      "reply": "Once is usually enough for me. I like a story that moves forward.",
+      "seed": 630685116,
+      "input_tokens": 160,
+      "output_tokens": 16,
+      "finish_reason": "stop",
+      "seconds": 5.684124875000634,
+      "elapsed_seconds": 969.7663065830002,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314282960,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I enjoy rehearsals more than opening nights. People are still willing to laugh at their own mistakes.",
+      "reply": "Mistakes become less funny when you see the person trying to be funny.",
+      "seed": 970688639,
+      "input_tokens": 205,
+      "output_tokens": 17,
+      "finish_reason": "stop",
+      "seconds": 5.976042791999134,
+      "elapsed_seconds": 975.7537728750012,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314282960,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "Do the people you live with laugh much when something goes wrong?",
+      "reply": "We are a fairly quiet household. I do not need laughter to notice an error.",
+      "seed": 847064827,
+      "input_tokens": 244,
+      "output_tokens": 18,
+      "finish_reason": "stop",
+      "seconds": 6.397730874999979,
+      "elapsed_seconds": 982.1608792920015,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314282960,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "A young actor apologised to a chair after walking into it yesterday. The chair took it very well.",
+      "reply": "Perhaps it was meant for a young actor.",
+      "seed": 1248250501,
+      "input_tokens": 292,
+      "output_tokens": 10,
+      "finish_reason": "stop",
+      "seconds": 4.76935683299962,
+      "elapsed_seconds": 986.941167250001,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314282960,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I am waiting for the iron to cool before I pack it away. That always takes longer than I expect.",
+      "reply": "I will let you finish that. Is it cold now?",
+      "seed": 1717983169,
+      "input_tokens": 333,
+      "output_tokens": 13,
+      "finish_reason": "stop",
+      "seconds": 5.6429503340004885,
+      "elapsed_seconds": 992.5936986670004,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314282960,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "Do you have an evening routine you start earlier than you really need to?",
+      "reply": "Not a whole one. Wiping the table is a small part of the rest.",
+      "seed": 1636426811,
+      "input_tokens": 370,
+      "output_tokens": 18,
+      "finish_reason": "stop",
+      "seconds": 7.243296874999942,
+      "elapsed_seconds": 999.8456741250011,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314282960,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "My scissors belonged to my aunt. They are heavy, and everyone who borrows them complains.",
+      "reply": "A special heirloom with a personality of its own.",
+      "seed": 955674983,
+      "input_tokens": 416,
+      "output_tokens": 12,
+      "finish_reason": "stop",
+      "seconds": 6.086243042000206,
+      "elapsed_seconds": 1005.941148625001,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314282960,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I think they are just used to lighter ones. They cut beautifully when you do not try to hurry.",
+      "reply": "They deserve that, even if it costs you a few minutes.",
+      "seed": 633088350,
+      "input_tokens": 458,
+      "output_tokens": 14,
+      "finish_reason": "stop",
+      "seconds": 6.764670374999696,
+      "elapsed_seconds": 1012.7157431670003,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314282960,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "What was the first tool you learned to use properly?",
+      "reply": "I was rather impatient with an axe. The head did not move the way I wanted it to.",
+      "seed": 538059339,
+      "input_tokens": 492,
+      "output_tokens": 21,
+      "finish_reason": "stop",
+      "seconds": 8.99779691599906,
+      "elapsed_seconds": 1021.7237712080005,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314282960,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I keep a little notebook of repairs because I cannot rely on remembering which pocket tore last time.",
+      "reply": "That is a useful record. The next person with the sleeve may not be the same.",
+      "seed": 1326371314,
+      "input_tokens": 541,
+      "output_tokens": 19,
+      "finish_reason": "stop",
+      "seconds": 9.091663291999794,
+      "elapsed_seconds": 1030.8250354170013,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314282960,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I wrote coffee stain in it today, but that was the stain on the notebook itself.",
+      "reply": "A notability that has not yet made the repair more difficult.",
+      "seed": 1043821605,
+      "input_tokens": 587,
+      "output_tokens": 14,
+      "finish_reason": "stop",
+      "seconds": 8.04099049999968,
+      "elapsed_seconds": 1038.8774712080012,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314282960,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "The others have gone home. I can hear the cleaner moving chairs in the hall.",
+      "reply": "The evening has had a few visitors. How many coats does the theatre have?",
+      "seed": 831300177,
+      "input_tokens": 627,
+      "output_tokens": 17,
+      "finish_reason": "stop",
+      "seconds": 8.517145415999039,
+      "elapsed_seconds": 1047.4045060830013,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314282960,
+      "mlx_active_bytes": 816687924
+    },
+    {
+      "caller": "I have one button left to sew and then I am done. What remains of your evening?",
+      "reply": "I am finished with this. You can tell me about the buttons while I finish the walk home.",
+      "seed": 1001967585,
+      "input_tokens": 672,
+      "output_tokens": 21,
+      "finish_reason": "stop",
+      "seconds": 9.911323374999483,
+      "elapsed_seconds": 1057.3273870000012,
+      "peak_rss_bytes": 714932224,
+      "swap_bytes": 1125772165,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1314282960,
+      "mlx_active_bytes": 816687924
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

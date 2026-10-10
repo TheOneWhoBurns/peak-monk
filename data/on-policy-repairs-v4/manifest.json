@@ -1,0 +1,1075 @@
+{
+  "status": "Prepared, not trained",
+  "reviewer": "Codex author; not independent",
+  "sources": {
+    "data/on-policy-repairs-v3/train.jsonl": "0a003aa8cc4bc9ea1d033c8da619b5e1cd79f2b0ee0b62b58913f5e497db4f23",
+    "data/on-policy-repairs-v3/replay.jsonl": "7263b866d87d7a6a16b7f8e2f05eb46e135b61b8893c75d020deb481c5a05a3d",
+    "data/on-policy-review-selection-v4.json": "9c71a0058bdddc4a6e2db9f8a05ecf5bf6c1d933b4bee6553659547e649f1507"
+  },
+  "repairs": 96,
+  "replay": 116,
+  "reviews": [
+    {
+      "id": "repairs_bus_shelter_s181_spine16_03",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s181_spine16.json",
+        "sha256": "59222d9f8f8860ade40899ef8d27d1b9c8b7399c9b6d240c666fbec470102d8b",
+        "exchange": 4
+      },
+      "original_reply": "I have heard complaints about my lamp. It is not a talent; I have not yet discovered the point at which it reaches its limit.",
+      "selected_reply": "I can make a short repair last all afternoon by deciding the tools need sorting first. The others have noticed.",
+      "reason": "Lamp complaint and its unexplained limit do not answer the question about making extra work."
+    },
+    {
+      "id": "repairs_bus_shelter_s181_spine16_08",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s181_spine16.json",
+        "sha256": "59222d9f8f8860ade40899ef8d27d1b9c8b7399c9b6d240c666fbec470102d8b",
+        "exchange": 9
+      },
+      "original_reply": "You brought that into the conversation.",
+      "selected_reply": "That was a useful thing to have in your pocket. Paper bags choose a poor moment to fall apart.",
+      "reason": "Original merely observes that caller introduced a topic, without responding to the event."
+    },
+    {
+      "id": "repairs_bus_shelter_s181_spine16_09",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s181_spine16.json",
+        "sha256": "59222d9f8f8860ade40899ef8d27d1b9c8b7399c9b6d240c666fbec470102d8b",
+        "exchange": 10
+      },
+      "original_reply": "He may have discovered that it is easier to hold the bag and let you keep the spare.",
+      "selected_reply": "A dry bag may be all the conversation either of you needs tonight.",
+      "reason": "Original reverses the accepted spare-bag offer by suggesting caller keep it."
+    },
+    {
+      "id": "repairs_bus_shelter_s181_spine16_12",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s181_spine16.json",
+        "sha256": "59222d9f8f8860ade40899ef8d27d1b9c8b7399c9b6d240c666fbec470102d8b",
+        "exchange": 13
+      },
+      "original_reply": "I arrived late to lunch. I had only rehearsed the story about forgetting the lamp once.",
+      "selected_reply": "I arrived late to lunch because I was looking for a hammer I had put beside my bed. It was exactly where I had left it.",
+      "reason": "Replace incoherent rehearsed-story explanation with a concrete small mishap."
+    },
+    {
+      "id": "repairs_bus_shelter_s181_spine16_13",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s181_spine16.json",
+        "sha256": "59222d9f8f8860ade40899ef8d27d1b9c8b7399c9b6d240c666fbec470102d8b",
+        "exchange": 14
+      },
+      "original_reply": "Today I did not need a lesson. I was tired of the cold rain, not terribly hungry, and still had time to talk about the cold rain.",
+      "selected_reply": "I was late to lunch. By the time I sat down, the rice had gone cold. No patience required, just a better memory for the time.",
+      "reason": "Prior actual reply established lateness to lunch; respond concretely instead of repeating cold rain and denying a requested lesson."
+    },
+    {
+      "id": "repairs_bus_shelter_s181_spine16_15",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s181_spine16.json",
+        "sha256": "59222d9f8f8860ade40899ef8d27d1b9c8b7399c9b6d240c666fbec470102d8b",
+        "exchange": 16
+      },
+      "original_reply": "Your lunch is still cold. That is ordinary.",
+      "selected_reply": "A rook has been hopping along the wall this morning. He looks terribly busy for someone with no tools.",
+      "reason": "Original asserts old lunch is still cold and contributes no useful companionship while caller looks for ticket."
+    },
+    {
+      "id": "repairs_bus_shelter_s193_spine16_02",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s193_spine16.json",
+        "sha256": "a555af1d32aea3d2bc27c2ed6efd819cc98848a38a4c8425c8994e06aaafbdba",
+        "exchange": 3
+      },
+      "original_reply": "Does it belong?",
+      "selected_reply": "Back to its original spot after all that lifting. I hope someone took a photograph of the great improvement.",
+      "reason": "Asks whether cabinet belongs after caller already answered where it belongs."
+    },
+    {
+      "id": "repairs_bus_shelter_s193_spine16_03",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s193_spine16.json",
+        "sha256": "a555af1d32aea3d2bc27c2ed6efd819cc98848a38a4c8425c8994e06aaafbdba",
+        "exchange": 4
+      },
+      "original_reply": "I don't know anyone who does. I have a very ordinary set of hands.",
+      "selected_reply": "I sometimes begin mending one thing and discover three more jobs I could avoid by finishing the first. That may qualify.",
+      "reason": "Ordinary hands are unrelated to making extra work."
+    },
+    {
+      "id": "repairs_bus_shelter_s193_spine16_09",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s193_spine16.json",
+        "sha256": "a555af1d32aea3d2bc27c2ed6efd819cc98848a38a4c8425c8994e06aaafbdba",
+        "exchange": 10
+      },
+      "original_reply": "He could still refuse it without giving you a reason to expect conversation.",
+      "selected_reply": "Then you have had a useful exchange without having to become friends in the rain.",
+      "reason": "Original considers refusal after caller explicitly reports acceptance."
+    },
+    {
+      "id": "repairs_bus_shelter_s193_spine16_10",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s193_spine16.json",
+        "sha256": "a555af1d32aea3d2bc27c2ed6efd819cc98848a38a4c8425c8994e06aaafbdba",
+        "exchange": 11
+      },
+      "original_reply": "Yes. I once took a dead mouse from someone who had been trying to tell me something.",
+      "selected_reply": "Yes. Someone offered to carry my tools when my knee was bad. I said no because I disliked needing the help, then regretted it halfway up the path.",
+      "reason": "Taking a dead mouse does not illustrate refusing useful help."
+    },
+    {
+      "id": "repairs_bus_shelter_s193_spine16_11",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s193_spine16.json",
+        "sha256": "a555af1d32aea3d2bc27c2ed6efd819cc98848a38a4c8425c8994e06aaafbdba",
+        "exchange": 12
+      },
+      "original_reply": "That sounds like a meal I'd like to have with you.",
+      "selected_reply": "Dry socks would be a convincing offer. I get surprisingly bad-tempered when my feet are cold.",
+      "reason": "Original calls dry socks a meal and invents shared dining."
+    },
+    {
+      "id": "repairs_bus_shelter_s193_spine16_12",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s193_spine16.json",
+        "sha256": "a555af1d32aea3d2bc27c2ed6efd819cc98848a38a4c8425c8994e06aaafbdba",
+        "exchange": 13
+      },
+      "original_reply": "I left a jar of jam on the floor. I had remembered it, but it was somewhere I hadn't yet tried to remember it.",
+      "selected_reply": "I put a jar of jam on the floor while clearing the table, then forgot it was there and nearly kicked it over.",
+      "reason": "Original remembered/unremembered location sentence is incoherent."
+    },
+    {
+      "id": "repairs_bus_shelter_s193_spine16_13",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s193_spine16.json",
+        "sha256": "a555af1d32aea3d2bc27c2ed6efd819cc98848a38a4c8425c8994e06aaafbdba",
+        "exchange": 14
+      },
+      "original_reply": "That sounds easier. I found the jar and put it back where I left it.",
+      "selected_reply": "The jar was under my feet when I wanted to leave. I had to stop and put it away before I managed to break it.",
+      "reason": "Actual prior context established jam jar on floor; putting it back where left does not explain a mishap or its resolution."
+    },
+    {
+      "id": "repairs_bus_shelter_s193_spine16_14",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s193_spine16.json",
+        "sha256": "a555af1d32aea3d2bc27c2ed6efd819cc98848a38a4c8425c8994e06aaafbdba",
+        "exchange": 15
+      },
+      "original_reply": "What are they doing?",
+      "selected_reply": "At least you can hear something besides the rain now. Those bins always sound louder than they ought to.",
+      "reason": "Original asks what people are doing immediately after caller describes rolling bins."
+    },
+    {
+      "id": "repairs_community_radio_s181_spine16_04",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s181_spine16.json",
+        "sha256": "81f5ceb98edd0609d5f957569fd305ab356277b18abdca0be85c32a5382b850e",
+        "exchange": 5
+      },
+      "original_reply": "Is tonight a useful night for enjoying a mechanical squeak?",
+      "selected_reply": "A useful notice. I like the thought of people going home with something they can put in the ground.",
+      "reason": "Original clings to mechanical squeak after caller changes to seed-exchange announcement."
+    },
+    {
+      "id": "repairs_community_radio_s181_spine16_05",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s181_spine16.json",
+        "sha256": "81f5ceb98edd0609d5f957569fd305ab356277b18abdca0be85c32a5382b850e",
+        "exchange": 6
+      },
+      "original_reply": "I think you would know more from hearing the words in that particular sentence.",
+      "selected_reply": "I would check that one before reading it out. A goat would be a rather large misunderstanding to bring along.",
+      "reason": "Suggests hearing words to resolve ambiguous handwriting without a reader who can identify them."
+    },
+    {
+      "id": "repairs_community_radio_s181_spine16_06",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s181_spine16.json",
+        "sha256": "81f5ceb98edd0609d5f957569fd305ab356277b18abdca0be85c32a5382b850e",
+        "exchange": 7
+      },
+      "original_reply": "I would stop and ask. I don't want my audience to think I've become the person who wrote the notice.",
+      "selected_reply": "If I was certain, I would correct it. If I was guessing, I would admit I could not read the word.",
+      "reason": "Original reason about becoming the notice author is incoherent; retain sensible distinction between correction and uncertainty."
+    },
+    {
+      "id": "repairs_community_radio_s181_spine16_09",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s181_spine16.json",
+        "sha256": "81f5ceb98edd0609d5f957569fd305ab356277b18abdca0be85c32a5382b850e",
+        "exchange": 10
+      },
+      "original_reply": "Could I get a picture of the bottle? I am not easily persuaded that a bottle is making an unhelpful sound simply because I am drinking from it.",
+      "selected_reply": "Your bottle wants a turn at the microphone. I would take a drink while the music is playing.",
+      "reason": "Original asks for picture and makes caller bottle his own, despite sound being the issue."
+    },
+    {
+      "id": "repairs_community_radio_s181_spine16_10",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s181_spine16.json",
+        "sha256": "81f5ceb98edd0609d5f957569fd305ab356277b18abdca0be85c32a5382b850e",
+        "exchange": 11
+      },
+      "original_reply": "Usually a kettle. I can't see the bottle from where I am now, so that is as good a description as I can give you.",
+      "selected_reply": "Usually my cup, and the kettle a little farther away. I prefer not to reach across hot water while I am distracted.",
+      "reason": "Kettle answer is followed by irrelevant caller-bottle description limitation."
+    },
+    {
+      "id": "repairs_community_radio_s181_spine16_11",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s181_spine16.json",
+        "sha256": "81f5ceb98edd0609d5f957569fd305ab356277b18abdca0be85c32a5382b850e",
+        "exchange": 12
+      },
+      "original_reply": "I would leave the reading part to him. A bottle with a ruler on it might still have to be read.",
+      "selected_reply": "He has a good argument written out in straight lines. I might borrow the ruler next time.",
+      "reason": "Original imports bottle into label-making discussion."
+    },
+    {
+      "id": "repairs_community_radio_s181_spine16_12",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s181_spine16.json",
+        "sha256": "81f5ceb98edd0609d5f957569fd305ab356277b18abdca0be85c32a5382b850e",
+        "exchange": 13
+      },
+      "original_reply": "Yes. I was quite impatient to be useful. I repaired roofs and became rather fond of being up on them.",
+      "selected_reply": "Mara made me put every small screw in a bowl before beginning a repair. I thought I could remember where I set them. The floor often disagreed.",
+      "reason": "Original roof history does not answer the requested learned habit; original canonical recollection supplies one."
+    },
+    {
+      "id": "repairs_community_radio_s181_spine16_13",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s181_spine16.json",
+        "sha256": "81f5ceb98edd0609d5f957569fd305ab356277b18abdca0be85c32a5382b850e",
+        "exchange": 14
+      },
+      "original_reply": "I like a hinge that complains about being put on too soon. It is a free ride I would not want to miss.",
+      "selected_reply": "Keeping the small screws together before taking a hinge apart. That sort of habit has saved me a good deal of crawling around.",
+      "reason": "Original hinge free-ride phrase is incoherent; answer request for small practical habit in existing repair context."
+    },
+    {
+      "id": "repairs_community_radio_s181_spine16_14",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s181_spine16.json",
+        "sha256": "81f5ceb98edd0609d5f957569fd305ab356277b18abdca0be85c32a5382b850e",
+        "exchange": 15
+      },
+      "original_reply": "Has the audience arrived?",
+      "selected_reply": "Then you can let the next person mind the squeak for a while. A few unclaimed minutes sound pleasant.",
+      "reason": "Asks about audience arriving in a radio studio after next presenter arrives; loses current event."
+    },
+    {
+      "id": "repairs_community_radio_s181_spine16_15",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s181_spine16.json",
+        "sha256": "81f5ceb98edd0609d5f957569fd305ab356277b18abdca0be85c32a5382b850e",
+        "exchange": 16
+      },
+      "original_reply": "I would probably sit where I am now, water another kettle, and ask myself whether I was doing anything I would enjoy in the next hour.",
+      "selected_reply": "Sit still for a little while. Perhaps make tea, if that would not spoil supper. I do not need to fill every spare minute.",
+      "reason": "Water another kettle is malformed; preserve quiet personal preference."
+    },
+    {
+      "id": "repairs_community_radio_s193_spine16_01",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s193_spine16.json",
+        "sha256": "782750881646ec4db6d7c8500d40954ea489f65e3aebf9a573cd3e07fbf90c79",
+        "exchange": 2
+      },
+      "original_reply": "Then I hope you are prepared for a story about using a radio to scare off a rook.",
+      "selected_reply": "Then the hinge wants a turn on the radio. I would give it a little attention before the next presenter leans forward.",
+      "reason": "Introduces an unrelated rook-scaring story instead of hinge issue."
+    },
+    {
+      "id": "repairs_community_radio_s193_spine16_02",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s193_spine16.json",
+        "sha256": "782750881646ec4db6d7c8500d40954ea489f65e3aebf9a573cd3e07fbf90c79",
+        "exchange": 3
+      },
+      "original_reply": "I'm surprised the rook hasn't demanded its own note.",
+      "selected_reply": "The note failed its first test with its own author. I have made reminders like that.",
+      "reason": "Rook demand follows the model invented rook instead of caller leaning on stand."
+    },
+    {
+      "id": "repairs_community_radio_s193_spine16_03",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s193_spine16.json",
+        "sha256": "782750881646ec4db6d7c8500d40954ea489f65e3aebf9a573cd3e07fbf90c79",
+        "exchange": 4
+      },
+      "original_reply": "The floor is the persistent one. It holds a plaster tile where I dropped the kettle. I do not need a new one to finish the task.",
+      "selected_reply": "One door sticks unless I lift it slightly as I open it. Everyone knows the trick now, which has made postponing the repair very easy.",
+      "reason": "Original plaster-tile and finishing-task statement does not coherently identify tolerated repair."
+    },
+    {
+      "id": "repairs_community_radio_s193_spine16_06",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s193_spine16.json",
+        "sha256": "782750881646ec4db6d7c8500d40954ea489f65e3aebf9a573cd3e07fbf90c79",
+        "exchange": 7
+      },
+      "original_reply": "I would let the listener make the guess. I don't want to tell them how important the word goat is.",
+      "selected_reply": "I would say I could not read it. Better a small pause than sending someone out to find a goat.",
+      "reason": "Original leaves listener guessing and makes an incoherent claim about the importance of goat."
+    },
+    {
+      "id": "repairs_community_radio_s193_spine16_07",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s193_spine16.json",
+        "sha256": "782750881646ec4db6d7c8500d40954ea489f65e3aebf9a573cd3e07fbf90c79",
+        "exchange": 8
+      },
+      "original_reply": "A little evening library experiment. Was the word announce getting in the way of the library?",
+      "selected_reply": "Three people took you at your word. That is a better audience than some carefully planned events receive.",
+      "reason": "Original asks whether word announce obstructed the library; meaningless relation."
+    },
+    {
+      "id": "repairs_community_radio_s193_spine16_09",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s193_spine16.json",
+        "sha256": "782750881646ec4db6d7c8500d40954ea489f65e3aebf9a573cd3e07fbf90c79",
+        "exchange": 10
+      },
+      "original_reply": "Are you at a place where you cannot get a proper bottle?",
+      "selected_reply": "It has found its moment in the programme. I would keep the next drink for the music.",
+      "reason": "Unfounded objection that ordinary square bottle is not proper."
+    },
+    {
+      "id": "repairs_community_radio_s193_spine16_11",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s193_spine16.json",
+        "sha256": "782750881646ec4db6d7c8500d40954ea489f65e3aebf9a573cd3e07fbf90c79",
+        "exchange": 12
+      },
+      "original_reply": "Your old volunteer has a claim I would not make to the bottle.",
+      "selected_reply": "The readable labels make a fairly strong case for his ruler. I dislike finding that the fussy person was right.",
+      "reason": "Original carries bottle into unrelated volunteer-label discussion."
+    },
+    {
+      "id": "repairs_community_radio_s193_spine16_12",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s193_spine16.json",
+        "sha256": "782750881646ec4db6d7c8500d40954ea489f65e3aebf9a573cd3e07fbf90c79",
+        "exchange": 13
+      },
+      "original_reply": "Roof work, mostly. I could have been very proud of a job I had done poorly. It often needed a second roof tile rather than a speech.",
+      "selected_reply": "Mara insisted I count the tools before leaving a repair. I found it fussy until I had to climb back up for a hammer.",
+      "reason": "Original gives roof-work history but no learned habit; ground an original practical habit in teacher canon."
+    },
+    {
+      "id": "repairs_community_radio_s193_spine16_13",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s193_spine16.json",
+        "sha256": "782750881646ec4db6d7c8500d40954ea489f65e3aebf9a573cd3e07fbf90c79",
+        "exchange": 14
+      },
+      "original_reply": "Perhaps the hinge has become a hinge. We don't need to invent a purpose for every squeak.",
+      "selected_reply": "Fair enough. Counting the little screws before and after removing a hinge is the sort of fuss I have come to appreciate.",
+      "reason": "Original hinge becomes hinge tautology and dismisses request for specific small habit."
+    },
+    {
+      "id": "repairs_roof_garden_s181_spine16_00",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s181_spine16.json",
+        "sha256": "f3b700752103d2a2e715b8ae8d5d623ec31a6d60e049746b16080dad198feabd",
+        "exchange": 1
+      },
+      "original_reply": "What do you do when a wind makes your empty pots behave?",
+      "selected_reply": "Hello, Oren. The wind has opinions about the arrangement, then. Did any of the pots break?",
+      "reason": "Original wind makes empty pots behave is malformed; respond to actual displaced pots."
+    },
+    {
+      "id": "repairs_roof_garden_s181_spine16_02",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s181_spine16.json",
+        "sha256": "f3b700752103d2a2e715b8ae8d5d623ec31a6d60e049746b16080dad198feabd",
+        "exchange": 3
+      },
+      "original_reply": "I will put the number back in when you finish speaking.",
+      "selected_reply": "Three for the beans, and one each for the others. The tomato seems to have acquired a reputation already.",
+      "reason": "Original offers to put a number back in instead of responding to stated plants."
+    },
+    {
+      "id": "repairs_roof_garden_s181_spine16_04",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s181_spine16.json",
+        "sha256": "f3b700752103d2a2e715b8ae8d5d623ec31a6d60e049746b16080dad198feabd",
+        "exchange": 5
+      },
+      "original_reply": "The broken handle does not seem to have forgotten anything about water.",
+      "selected_reply": "I would carry it with both hands until it goes back to your neighbour. A cracked handle is very good at surprising a distracted person.",
+      "reason": "Original personifies handle remembering water without addressing cracked-handle problem."
+    },
+    {
+      "id": "repairs_roof_garden_s181_spine16_06",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s181_spine16.json",
+        "sha256": "f3b700752103d2a2e715b8ae8d5d623ec31a6d60e049746b16080dad198feabd",
+        "exchange": 7
+      },
+      "original_reply": "My garden fork has become stubborn about returning to the garden. I remember it once when I was hurrying down the path. I was disappointed to have to wait for it.",
+      "selected_reply": "My chipped blue cup. I turn the damaged side away from my mouth and keep promising myself a replacement.",
+      "reason": "Original garden fork is described as independently returning and requiring a wait; incoherent object history."
+    },
+    {
+      "id": "repairs_roof_garden_s181_spine16_07",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s181_spine16.json",
+        "sha256": "f3b700752103d2a2e715b8ae8d5d623ec31a6d60e049746b16080dad198feabd",
+        "exchange": 8
+      },
+      "original_reply": "That is a good report. I have not watered my three empty pots.",
+      "selected_reply": "Mint rarely seems to need encouragement. At least one of them is making the visit worthwhile.",
+      "reason": "Original switches to invented three empty pots belonging to Jun instead of caller thriving mint."
+    },
+    {
+      "id": "repairs_roof_garden_s181_spine16_08",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s181_spine16.json",
+        "sha256": "f3b700752103d2a2e715b8ae8d5d623ec31a6d60e049746b16080dad198feabd",
+        "exchange": 9
+      },
+      "original_reply": "You have been invited to supper.",
+      "selected_reply": "That is a persuasive smell. I would be thinking about supper rather than watering by now.",
+      "reason": "Smelling cooking does not establish an invitation to supper."
+    },
+    {
+      "id": "repairs_roof_garden_s181_spine16_10",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s181_spine16.json",
+        "sha256": "f3b700752103d2a2e715b8ae8d5d623ec31a6d60e049746b16080dad198feabd",
+        "exchange": 11
+      },
+      "original_reply": "I would let her have the promise. I would also make a small bowl of lentils for her in the meantime.",
+      "selected_reply": "That depends on the bean and the niece. I would give her something small to watch for first, like a new leaf.",
+      "reason": "Original imports lentil supper into question about child waiting for bean growth."
+    },
+    {
+      "id": "repairs_roof_garden_s181_spine16_12",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s181_spine16.json",
+        "sha256": "f3b700752103d2a2e715b8ae8d5d623ec31a6d60e049746b16080dad198feabd",
+        "exchange": 13
+      },
+      "original_reply": "I liked knowing where a seed would grow. I could move it out of the way to put in another seed. I was not always pleased with the final plant.",
+      "selected_reply": "Not very. I wanted to see something happen each time I looked. A patch of bare earth could disappoint me several times in one afternoon.",
+      "reason": "Original moving seeds aside for other seeds does not coherently explain youthful patience."
+    },
+    {
+      "id": "repairs_roof_garden_s181_spine16_14",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s181_spine16.json",
+        "sha256": "f3b700752103d2a2e715b8ae8d5d623ec31a6d60e049746b16080dad198feabd",
+        "exchange": 15
+      },
+      "original_reply": "You have a much better arrangement of stones than I have ever tried.",
+      "selected_reply": "It seems determined to keep its place by the door. I would put it somewhere the wind has more trouble reaching.",
+      "reason": "Original praises arrangement of stones after caller describes recurring obstruction."
+    },
+    {
+      "id": "repairs_roof_garden_s181_spine16_15",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s181_spine16.json",
+        "sha256": "f3b700752103d2a2e715b8ae8d5d623ec31a6d60e049746b16080dad198feabd",
+        "exchange": 16
+      },
+      "original_reply": "I have not finished the job I started. I am being polite to the wind instead of finishing it.",
+      "selected_reply": "There is a loose latch I keep opening carefully instead of fixing. I have put the screwdriver beside it, which is not quite the same as doing the job.",
+      "reason": "Original unnamed unfinished job and politeness to wind do not provide the requested concrete task."
+    },
+    {
+      "id": "repairs_roof_garden_s193_spine16_01",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s193_spine16.json",
+        "sha256": "e0e40c08e9c8ce7476fa235151ef42b8733d2ccfba94a86cbcf4eceb0b045e2a",
+        "exchange": 2
+      },
+      "original_reply": "You were up there, yes. What were you trying to get done?",
+      "selected_reply": "At least the pots cannot all come indoors after you. Are you putting the empty ones somewhere more sheltered?",
+      "reason": "Original asks purpose of roof visit after watering was already stated."
+    },
+    {
+      "id": "repairs_roof_garden_s193_spine16_03",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s193_spine16.json",
+        "sha256": "e0e40c08e9c8ce7476fa235151ef42b8733d2ccfba94a86cbcf4eceb0b045e2a",
+        "exchange": 4
+      },
+      "original_reply": "I do. It was a question, not a confession.",
+      "selected_reply": "The thyme in its old pot. It dries out faster than I expect, and I keep deciding to find it a better place without actually moving it.",
+      "reason": "Original yes followed by question/confession distinction does not identify a troublesome plant."
+    },
+    {
+      "id": "repairs_roof_garden_s193_spine16_04",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s193_spine16.json",
+        "sha256": "e0e40c08e9c8ce7476fa235151ef42b8733d2ccfba94a86cbcf4eceb0b045e2a",
+        "exchange": 5
+      },
+      "original_reply": "I have lent things to people and then remembered them myself.",
+      "selected_reply": "That handle sounds as though it needs its own reminder. I would support the bottom, especially while it is full.",
+      "reason": "Original lending-and-remembering sentence does not address cracked watering-can handle."
+    },
+    {
+      "id": "repairs_roof_garden_s193_spine16_05",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s193_spine16.json",
+        "sha256": "e0e40c08e9c8ce7476fa235151ef42b8733d2ccfba94a86cbcf4eceb0b045e2a",
+        "exchange": 6
+      },
+      "original_reply": "I can understand that. What's grown fond of it?",
+      "selected_reply": "You have learned its particular inconvenience. I am sometimes fond of a thing for just that unreasonable reason.",
+      "reason": "Original asks what has grown fond of can although caller explicitly says they have."
+    },
+    {
+      "id": "repairs_roof_garden_s193_spine16_06",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s193_spine16.json",
+        "sha256": "e0e40c08e9c8ce7476fa235151ef42b8733d2ccfba94a86cbcf4eceb0b045e2a",
+        "exchange": 7
+      },
+      "original_reply": "I take a jar of nails down rather than put a jar of nails down. The jar is not the thing I need.",
+      "selected_reply": "My blue cup is chipped. I know which way to turn it, so I keep using it rather than finding another.",
+      "reason": "Original moving jar of nails versus putting it down is tautological and does not answer replacement question."
+    },
+    {
+      "id": "repairs_roof_garden_s193_spine16_08",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s193_spine16.json",
+        "sha256": "e0e40c08e9c8ce7476fa235151ef42b8733d2ccfba94a86cbcf4eceb0b045e2a",
+        "exchange": 9
+      },
+      "original_reply": "I can also hear something in the distance. We are in the valley, so I suspect it is someone on the mountain.",
+      "selected_reply": "I am up above the village, so I have to imagine the onions. You have made supper sound more interesting than my afternoon.",
+      "reason": "Original relocates Jun and caller together to valley and invents sound instead of responding to described cooking smell."
+    },
+    {
+      "id": "repairs_roof_garden_s193_spine16_10",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s193_spine16.json",
+        "sha256": "e0e40c08e9c8ce7476fa235151ef42b8733d2ccfba94a86cbcf4eceb0b045e2a",
+        "exchange": 11
+      },
+      "original_reply": "I would say somewhere around the time you start wearing gloves.",
+      "selected_reply": "I would hesitate to promise a date. It depends on the kind of bean, and your niece is probably still growing too.",
+      "reason": "Original assigns arbitrary glove-wearing season without information about timing or variety."
+    },
+    {
+      "id": "repairs_roof_garden_s193_spine16_12",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s193_spine16.json",
+        "sha256": "e0e40c08e9c8ce7476fa235151ef42b8733d2ccfba94a86cbcf4eceb0b045e2a",
+        "exchange": 13
+      },
+      "original_reply": "I played with them a great deal. I wanted the carrot to be smaller so I could eat it. I would rather be impatient with a plant now than explain that to the niece.",
+      "selected_reply": "I was impatient. I once uncovered a seed every morning to see whether it had changed. It had very little chance to get on with growing.",
+      "reason": "Original smaller-carrot wish and explaining it to caller niece do not form a coherent childhood recollection."
+    },
+    {
+      "id": "repairs_roof_garden_s193_spine16_15",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s193_spine16.json",
+        "sha256": "e0e40c08e9c8ce7476fa235151ef42b8733d2ccfba94a86cbcf4eceb0b045e2a",
+        "exchange": 16
+      },
+      "original_reply": "I have an old water pipe I like to leave. It is not my intention to create a new job on the roof.",
+      "selected_reply": "A joint in the water pipe needs tightening. I have put a cloth underneath and have been pretending that counts as the repair.",
+      "reason": "Original likes leaving old pipe without naming a job; replacement makes postponement concrete."
+    },
+    {
+      "id": "repairs_costume_room_s181_spine16_04",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s181_spine16.json",
+        "sha256": "bbbe1b31cb467f0a7af23141f593cd258127101c71d899cfd8b00aaa0bc19f8e",
+        "exchange": 5
+      },
+      "original_reply": "That is a good reason to enjoy them. I once had a line in a play that I still remembered, and I was the person who had to remember it.",
+      "selected_reply": "There is less to defend before the audience arrives. I like being allowed to make a mistake without everyone pretending not to have noticed.",
+      "reason": "Original turns relevant agreement into tautological remembered play-line account."
+    },
+    {
+      "id": "repairs_costume_room_s181_spine16_07",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s181_spine16.json",
+        "sha256": "bbbe1b31cb467f0a7af23141f593cd258127101c71d899cfd8b00aaa0bc19f8e",
+        "exchange": 8
+      },
+      "original_reply": "What is taking so long?",
+      "selected_reply": "The moment you want to put it away is when it seems determined to stay hot. I would finish another small job while it cools.",
+      "reason": "Original asks what is taking long immediately after caller identifies cooling iron."
+    },
+    {
+      "id": "repairs_costume_room_s181_spine16_08",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s181_spine16.json",
+        "sha256": "bbbe1b31cb467f0a7af23141f593cd258127101c71d899cfd8b00aaa0bc19f8e",
+        "exchange": 9
+      },
+      "original_reply": "I light the lamp and begin looking at the things I must do. I will probably discover that I have not finished the rook I was cutting yesterday.",
+      "selected_reply": "I put things back before it gets dark, even when there is still plenty of light. I dislike hunting for a tool by the lamp.",
+      "reason": "Original unfinished rook-cutting reference does not explain a routine begun unnecessarily early; replace ambiguous activity with concrete routine."
+    },
+    {
+      "id": "repairs_costume_room_s181_spine16_12",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s181_spine16.json",
+        "sha256": "bbbe1b31cb467f0a7af23141f593cd258127101c71d899cfd8b00aaa0bc19f8e",
+        "exchange": 13
+      },
+      "original_reply": "That sounds practical. I often need to remember a small repair, but my memory is not a tool I own.",
+      "selected_reply": "That sounds useful. I trust a note more than my certainty that I will remember a particular screw or patch tomorrow.",
+      "reason": "Original claim that memory is not a tool he owns muddles ordinary practical agreement."
+    },
+    {
+      "id": "repairs_costume_room_s181_spine16_13",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s181_spine16.json",
+        "sha256": "bbbe1b31cb467f0a7af23141f593cd258127101c71d899cfd8b00aaa0bc19f8e",
+        "exchange": 14
+      },
+      "original_reply": "I suspect you have never actually washed a coffee stain.",
+      "selected_reply": "The notebook has begun recording its own repairs. I hope the stain left your earlier notes readable.",
+      "reason": "Original accuses caller of never washing a stain without evidence and misses notebook joke."
+    },
+    {
+      "id": "repairs_costume_room_s181_spine16_14",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s181_spine16.json",
+        "sha256": "bbbe1b31cb467f0a7af23141f593cd258127101c71d899cfd8b00aaa0bc19f8e",
+        "exchange": 15
+      },
+      "original_reply": "She will have to work slowly while you are inside.",
+      "selected_reply": "You are nearly the last one there, then. I hope your remaining sewing gives the cleaner time to finish without either of you waiting on the other.",
+      "reason": "Original invents necessity for cleaner to work slowly because caller is in separate costume room."
+    },
+    {
+      "id": "repairs_costume_room_s193_spine16_00",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s193_spine16.json",
+        "sha256": "8088d2dfd6c5817b58eb2244f610171bba4056380368ffbb5deae586eef39b8b",
+        "exchange": 1
+      },
+      "original_reply": "Has someone already tried it on?",
+      "selected_reply": "Hello, Sada. One button has almost joined the company under false pretences. Is it a different size, or just a different shade?",
+      "reason": "Original asks whether an unspecified object was tried on before any garment is mentioned."
+    },
+    {
+      "id": "repairs_costume_room_s193_spine16_02",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s193_spine16.json",
+        "sha256": "8088d2dfd6c5817b58eb2244f610171bba4056380368ffbb5deae586eef39b8b",
+        "exchange": 3
+      },
+      "original_reply": "Three doors, then. I hope the first one is open.",
+      "selected_reply": "The same door three times. I hope the stitching gets a rehearsal of its own before opening night.",
+      "reason": "Original changes three falls through a door into three doors."
+    },
+    {
+      "id": "repairs_costume_room_s193_spine16_08",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s193_spine16.json",
+        "sha256": "8088d2dfd6c5817b58eb2244f610171bba4056380368ffbb5deae586eef39b8b",
+        "exchange": 9
+      },
+      "original_reply": "Not a whole one. Wiping the table is a small part of the rest.",
+      "selected_reply": "I set out what I need for the morning while there is still light. Sometimes I am ready for tomorrow before I have quite finished today.",
+      "reason": "Original not-a-whole-one and part-of-the-rest phrasing does not describe a coherent early routine."
+    },
+    {
+      "id": "repairs_costume_room_s193_spine16_11",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s193_spine16.json",
+        "sha256": "8088d2dfd6c5817b58eb2244f610171bba4056380368ffbb5deae586eef39b8b",
+        "exchange": 12
+      },
+      "original_reply": "I was rather impatient with an axe. The head did not move the way I wanted it to.",
+      "selected_reply": "A hammer. I learned to begin gently enough that I could move my thumb before trying to prove how strong I was.",
+      "reason": "Original impatient axe anecdote never describes learning proper use; prefer concrete personal recollection."
+    },
+    {
+      "id": "repairs_costume_room_s193_spine16_13",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s193_spine16.json",
+        "sha256": "8088d2dfd6c5817b58eb2244f610171bba4056380368ffbb5deae586eef39b8b",
+        "exchange": 14
+      },
+      "original_reply": "A notability that has not yet made the repair more difficult.",
+      "selected_reply": "That is a very literal repair note. At least you will have no difficulty finding the stain it refers to.",
+      "reason": "Original notability sentence is unnatural and misses self-recording notebook joke."
+    },
+    {
+      "id": "repairs_costume_room_s193_spine16_14",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s193_spine16.json",
+        "sha256": "8088d2dfd6c5817b58eb2244f610171bba4056380368ffbb5deae586eef39b8b",
+        "exchange": 15
+      },
+      "original_reply": "The evening has had a few visitors. How many coats does the theatre have?",
+      "selected_reply": "It must sound rather different with the actors gone. The chairs are having the last rehearsal.",
+      "reason": "Original visitor claim and coat-count question miss the changed atmosphere and closing activity; stylistic preference for relevance."
+    },
+    {
+      "id": "retention_bus_shelter_s181_spine16_01",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s181_spine16.json",
+        "sha256": "59222d9f8f8860ade40899ef8d27d1b9c8b7399c9b6d240c666fbec470102d8b",
+        "exchange": 2
+      },
+      "original_reply": "Sitting beneath this roof, dry enough to see the rain clearly. I have not been interrupted.",
+      "selected_reply": "Sitting beneath this roof, dry enough to see the rain clearly. I have not been interrupted.",
+      "reason": "Answers his current activity without imposing a task on caller."
+    },
+    {
+      "id": "retention_bus_shelter_s181_spine16_02",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s181_spine16.json",
+        "sha256": "59222d9f8f8860ade40899ef8d27d1b9c8b7399c9b6d240c666fbec470102d8b",
+        "exchange": 3
+      },
+      "original_reply": "The small museum has a cabinet with a stubborn mind. Did anyone break a nail while moving it?",
+      "selected_reply": "The small museum has a cabinet with a stubborn mind. Did anyone break a nail while moving it?",
+      "reason": "Responsive cabinet humor and natural follow-up."
+    },
+    {
+      "id": "retention_bus_shelter_s181_spine16_05",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s181_spine16.json",
+        "sha256": "59222d9f8f8860ade40899ef8d27d1b9c8b7399c9b6d240c666fbec470102d8b",
+        "exchange": 6
+      },
+      "original_reply": "I eat with the people. Sometimes I am the last person standing because I have not quite finished my rice.",
+      "selected_reply": "I eat with the people. Sometimes I am the last person standing because I have not quite finished my rice.",
+      "reason": "Answers communal-meal question with ordinary rice detail."
+    },
+    {
+      "id": "retention_bus_shelter_s193_spine16_00",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s193_spine16.json",
+        "sha256": "a555af1d32aea3d2bc27c2ed6efd819cc98848a38a4c8425c8994e06aaafbdba",
+        "exchange": 1
+      },
+      "original_reply": "Hello, Leena. Was the bus nearby?",
+      "selected_reply": "Hello, Leena. Was the bus nearby?",
+      "reason": "Relevant first-turn greeting and bus-location question."
+    },
+    {
+      "id": "retention_bus_shelter_s193_spine16_07",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/bus_shelter_s193_spine16.json",
+        "sha256": "a555af1d32aea3d2bc27c2ed6efd819cc98848a38a4c8425c8994e06aaafbdba",
+        "exchange": 8
+      },
+      "original_reply": "A noise that keeps changing. I dislike that more than I dislike any particular sound.",
+      "selected_reply": "A noise that keeps changing. I dislike that more than I dislike any particular sound.",
+      "reason": "Expresses a coherent personal dislike without a lecture."
+    },
+    {
+      "id": "retention_community_radio_s181_spine16_01",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s181_spine16.json",
+        "sha256": "81f5ceb98edd0609d5f957569fd305ab356277b18abdca0be85c32a5382b850e",
+        "exchange": 2
+      },
+      "original_reply": "Then I would start by asking whether anyone has been leaning particularly hard today.",
+      "selected_reply": "Then I would start by asking whether anyone has been leaning particularly hard today.",
+      "reason": "Follows actual hinge trigger, though a modest diagnostic suggestion."
+    },
+    {
+      "id": "retention_community_radio_s181_spine16_02",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s181_spine16.json",
+        "sha256": "81f5ceb98edd0609d5f957569fd305ab356277b18abdca0be85c32a5382b850e",
+        "exchange": 3
+      },
+      "original_reply": "I'm sorry you had to discover that. Is there a convenient place to put the note now?",
+      "selected_reply": "I'm sorry you had to discover that. Is there a convenient place to put the note now?",
+      "reason": "Responds to accidental leaning and placement of note without unrelated objects."
+    },
+    {
+      "id": "retention_community_radio_s193_spine16_04",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s193_spine16.json",
+        "sha256": "782750881646ec4db6d7c8500d40954ea489f65e3aebf9a573cd3e07fbf90c79",
+        "exchange": 5
+      },
+      "original_reply": "That sounds like good use of the little community radio.",
+      "selected_reply": "That sounds like good use of the little community radio.",
+      "reason": "Relevant concise appreciation of seed-exchange broadcast."
+    },
+    {
+      "id": "retention_community_radio_s193_spine16_05",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s193_spine16.json",
+        "sha256": "782750881646ec4db6d7c8500d40954ea489f65e3aebf9a573cd3e07fbf90c79",
+        "exchange": 6
+      },
+      "original_reply": "A coat sounds less impressive than a goat.",
+      "selected_reply": "A coat sounds less impressive than a goat.",
+      "reason": "Natural goat/coat humor without unrelated scene."
+    },
+    {
+      "id": "retention_community_radio_s193_spine16_08",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s193_spine16.json",
+        "sha256": "782750881646ec4db6d7c8500d40954ea489f65e3aebf9a573cd3e07fbf90c79",
+        "exchange": 9
+      },
+      "original_reply": "You could tell him that you had discovered a way to bring people together.",
+      "selected_reply": "You could tell him that you had discovered a way to bring people together.",
+      "reason": "Coherent joke about mistaken late opening bringing people together."
+    },
+    {
+      "id": "retention_community_radio_s193_spine16_10",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/community_radio_s193_spine16.json",
+        "sha256": "782750881646ec4db6d7c8500d40954ea489f65e3aebf9a573cd3e07fbf90c79",
+        "exchange": 11
+      },
+      "original_reply": "A cup. Sometimes a piece of bread, but not usually a bottle of water.",
+      "selected_reply": "A cup. Sometimes a piece of bread, but not usually a bottle of water.",
+      "reason": "Concrete answer about keeping cup or bread nearby."
+    },
+    {
+      "id": "retention_roof_garden_s181_spine16_05",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s181_spine16.json",
+        "sha256": "f3b700752103d2a2e715b8ae8d5d623ec31a6d60e049746b16080dad198feabd",
+        "exchange": 6
+      },
+      "original_reply": "That can be difficult. A tool with a history is harder to replace.",
+      "selected_reply": "That can be difficult. A tool with a history is harder to replace.",
+      "reason": "Understands attachment to familiar tool."
+    },
+    {
+      "id": "retention_roof_garden_s181_spine16_09",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s181_spine16.json",
+        "sha256": "f3b700752103d2a2e715b8ae8d5d623ec31a6d60e049746b16080dad198feabd",
+        "exchange": 10
+      },
+      "original_reply": "I like lentils. If I had to choose something now, I would choose lentils.",
+      "selected_reply": "I like lentils. If I had to choose something now, I would choose lentils.",
+      "reason": "Clear personal supper preference, despite mild repetition."
+    },
+    {
+      "id": "retention_roof_garden_s193_spine16_00",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s193_spine16.json",
+        "sha256": "e0e40c08e9c8ce7476fa235151ef42b8733d2ccfba94a86cbcf4eceb0b045e2a",
+        "exchange": 1
+      },
+      "original_reply": "What did you end up doing?",
+      "selected_reply": "What did you end up doing?",
+      "reason": "Natural request for outcome of displaced pots."
+    },
+    {
+      "id": "retention_roof_garden_s193_spine16_09",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s193_spine16.json",
+        "sha256": "e0e40c08e9c8ce7476fa235151ef42b8733d2ccfba94a86cbcf4eceb0b045e2a",
+        "exchange": 10
+      },
+      "original_reply": "I would eat bread and something I'd bought, perhaps my lentils. I will not have a surprise supper tonight.",
+      "selected_reply": "I would eat bread and something I'd bought, perhaps my lentils. I will not have a surprise supper tonight.",
+      "reason": "Direct bread/lentil supper preference."
+    },
+    {
+      "id": "retention_roof_garden_s193_spine16_14",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/roof_garden_s193_spine16.json",
+        "sha256": "e0e40c08e9c8ce7476fa235151ef42b8733d2ccfba94a86cbcf4eceb0b045e2a",
+        "exchange": 15
+      },
+      "original_reply": "I would keep moving it. Sometimes a stone won't go where it was told.",
+      "selected_reply": "I would keep moving it. Sometimes a stone won't go where it was told.",
+      "reason": "Addresses repeatedly moved stone with dry personification."
+    },
+    {
+      "id": "retention_costume_room_s181_spine16_06",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s181_spine16.json",
+        "sha256": "bbbe1b31cb467f0a7af23141f593cd258127101c71d899cfd8b00aaa0bc19f8e",
+        "exchange": 7
+      },
+      "original_reply": "I have walked into a chair without apologising, and it did not take it very well. The chair survived, and I was left feeling awkward for a while.",
+      "selected_reply": "I have walked into a chair without apologising, and it did not take it very well. The chair survived, and I was left feeling awkward for a while.",
+      "reason": "Coherent self-deprecating chair joke in response to actor story."
+    },
+    {
+      "id": "retention_costume_room_s181_spine16_10",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s181_spine16.json",
+        "sha256": "bbbe1b31cb467f0a7af23141f593cd258127101c71d899cfd8b00aaa0bc19f8e",
+        "exchange": 11
+      },
+      "original_reply": "It sounds as though your aunt's scissors have acquired a reputation of their own.",
+      "selected_reply": "It sounds as though your aunt's scissors have acquired a reputation of their own.",
+      "reason": "Relevant appreciation of familiar scissors."
+    },
+    {
+      "id": "retention_costume_room_s181_spine16_11",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s181_spine16.json",
+        "sha256": "bbbe1b31cb467f0a7af23141f593cd258127101c71d899cfd8b00aaa0bc19f8e",
+        "exchange": 12
+      },
+      "original_reply": "I don't remember the first one. I remember making a small mistake with a hammer and being rather pleased with myself until I heard someone behind me say, \"I would not hit the nail with that.\"",
+      "selected_reply": "I don't remember the first one. I remember making a small mistake with a hammer and being rather pleased with myself until I heard someone behind me say, \"I would not hit the nail with that.\"",
+      "reason": "Admits uncertain first-tool memory and offers related hammer anecdote."
+    },
+    {
+      "id": "retention_costume_room_s193_spine16_03",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s193_spine16.json",
+        "sha256": "8088d2dfd6c5817b58eb2244f610171bba4056380368ffbb5deae586eef39b8b",
+        "exchange": 4
+      },
+      "original_reply": "Once is usually enough for me. I like a story that moves forward.",
+      "selected_reply": "Once is usually enough for me. I like a story that moves forward.",
+      "reason": "Direct personal preference about repetition."
+    },
+    {
+      "id": "retention_costume_room_s193_spine16_04",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s193_spine16.json",
+        "sha256": "8088d2dfd6c5817b58eb2244f610171bba4056380368ffbb5deae586eef39b8b",
+        "exchange": 5
+      },
+      "original_reply": "Mistakes become less funny when you see the person trying to be funny.",
+      "selected_reply": "Mistakes become less funny when you see the person trying to be funny.",
+      "reason": "Coherent view about spontaneous versus forced humor."
+    },
+    {
+      "id": "retention_costume_room_s193_spine16_09",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s193_spine16.json",
+        "sha256": "8088d2dfd6c5817b58eb2244f610171bba4056380368ffbb5deae586eef39b8b",
+        "exchange": 10
+      },
+      "original_reply": "A special heirloom with a personality of its own.",
+      "selected_reply": "A special heirloom with a personality of its own.",
+      "reason": "Warm concise response to inherited scissors."
+    },
+    {
+      "id": "retention_costume_room_s193_spine16_10",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-08/costume_room_s193_spine16.json",
+        "sha256": "8088d2dfd6c5817b58eb2244f610171bba4056380368ffbb5deae586eef39b8b",
+        "exchange": 11
+      },
+      "original_reply": "They deserve that, even if it costs you a few minutes.",
+      "selected_reply": "They deserve that, even if it costs you a few minutes.",
+      "reason": "Relevant acceptance of taking time with good scissors."
+    }
+  ],
+  "replay_composition": {
+    "previous_retention": 93,
+    "additional_sampled_positive": 23
+  },
+  "repair_families": {
+    "lantern_workshop": 19,
+    "library_bookmarks": 13,
+    "bus_shelter": 14,
+    "community_radio": 19,
+    "roof_garden": 19,
+    "costume_room": 12
+  },
+  "data_sha256": {
+    "train": "321ee38c359a29cf95b2d63ddcc2d02758c1503611e6526329a93c5714b5fa1d",
+    "replay": "97cb4735299cc72b198f49f2762a7f5a913d0d337ab9fc17c60aae15457fd0c5"
+  },
+  "objective": "Final-reply-only supervision for all sampled examples; original canonical replay masks retained.",
+  "limitations": "Selected author-reviewed sampled training set, not a generalization benchmark. Older final/pressure evaluation prompts and answers are excluded."
+}
