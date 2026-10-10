@@ -1,0 +1,11 @@
+{
+  "status": "Registered; not launched. Serialized behind text capacity work.",
+  "config": "configs/speech10-audio-control.json",
+  "config_sha256": "e5296bce2090c2767bd01b29ad14487b13935f500b41932c5669a0a6eab86ea7",
+  "hypothesis": "Speech09 native diagnostic deterioration may be caused by adding text updates, by its changed audio recipe, or both. A matched audio-only trajectory isolates the effect of inserting text updates in this specific schedule. It does not identify gradient interference as the mechanism.",
+  "comparison": "Same speech08 step67 parent; same 24 audio episodes in exactly the speech09 audio order, same audio AdamW hyperparameters and counters, same native objective, same complete contexts. Remove only text updates. Validate after12/24 audio updates against speech09 mixed steps24/48 and shared parent.",
+  "preflight": "Two actual audio updates; require normal pressure, finite gradients/weights, all130adapter tensors retained, audio33state files atstep2, text0state files and step0. Compare recomputed parent text/audio diagnostics within1e-6 of speech09. Preserve preflight checkpoint and inspect durable state before resume.",
+  "selection": "Diagnostic control, not a released candidate. Report text, native joint and spoken CE at both fixed checkpoints without selecting on fresh final/pressure suites. Do not infer free-generation quality from CE. Decide the next native intervention using this comparison and resource evidence.",
+  "resources": "Original1.4GBallocationguideline,1.5GBmeasuredpeakguard, normal OSpressure, bounded RSS/swap/time; serialized with all model jobs.",
+  "provenance": "Original speech09 training source remains in git commit9bb5407. New source adds a guarded audio-only schedule; existing gradient and optimizer implementation unchanged. Identical historical mixed ordering confirmed in results/speech10-schedule-proof.json."
+}

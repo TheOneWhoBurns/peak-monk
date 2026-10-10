@@ -9,7 +9,6 @@ import json
 import math
 import os
 from pathlib import Path
-import random
 import shutil
 import tempfile
 import time
@@ -17,6 +16,7 @@ from bounded_speech_runtime import BoundedSpeechRuntime
 from bounded_text_runtime import atomic_json
 from sample_dialogue_paths import sha
 from train_moshi_disk import durable_tree
+from moshi_modality_schedule import make_schedule
 
 
 def main():
@@ -65,20 +65,25 @@ def main():
         raise ValueError('Replay may use only existing training audio')
     if len(cfg['audio_replay_ids']) != len(set(cfg['audio_replay_ids'])):
         raise ValueError('Repeated replay selection')
-    rng = random.Random(cfg['seed'])
-    text_order = [r['id'] for r in text_train]
-    audio_order = list(cfg['audio_replay_ids'])
-    if len(text_order) != len(audio_order):
-        raise ValueError('This experiment requires one text and one audio update per pair')
-    rng.shuffle(text_order)
-    rng.shuffle(audio_order)
-    schedule = [dict(modality=kind,id=ident) for pair in zip(text_order,audio_order)
-                for kind,ident in zip(('text','audio'),pair)]
+    schedule = make_schedule([r['id'] for r in text_train], cfg['audio_replay_ids'],
+                             cfg['seed'], audio_only=cfg.get('audio_only', False))
+    if cfg.get('audio_only'):
+        reference_path = Path(cfg['mixed_reference_metadata'])
+        if sha(reference_path) != cfg['mixed_reference_metadata_sha256']:
+            raise ValueError('Mixed reference changed')
+        reference = json.loads(reference_path.read_text())
+        if schedule != [item for item in reference['schedule'] if item['modality']=='audio']:
+            raise ValueError('Audio control order differs from mixed experiment')
+        varying = {'output','checkpoints','audio_only','mixed_reference_metadata',
+                   'mixed_reference_metadata_sha256'}
+        if {k:v for k,v in cfg.items() if k not in varying} != {k:v for k,v in reference['config'].items() if k not in varying}:
+            raise ValueError('Audio control changed more than removal of text updates')
     text_index = {r['id']:r for r in text_rows}
     names = ['train_moshi_mixed.py','train_moshi_disk.py','moshi_text_adjoint.py',
              'moshi_disk_adjoint.py','moshi_weight_stream.py','moshi_layerwise.py',
              'moshi_staged.py','moshi_disk_metrics.py','bounded_speech_runtime.py',
-             'bounded_text_runtime.py','moshi_training.py','moshi_split.py']
+             'bounded_text_runtime.py','moshi_training.py','moshi_split.py',
+             'moshi_modality_schedule.py']
     metadata = dict(config=cfg, config_sha256=sha(args.config),
         source_sha256={n:sha(Path(__file__).with_name(n)) for n in names},
         data_sha256={r['id']:r['file_sha256'] for r in audio_rows},

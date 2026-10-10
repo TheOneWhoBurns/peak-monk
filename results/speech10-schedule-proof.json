@@ -1,0 +1,107 @@
+{
+  "status": "pass",
+  "scope": "CPU schedule proof only; no model updates executed",
+  "reference_metadata": "adapters/speech-run09/metadata.json",
+  "reference_sha256": "83d7b9df73cd9153c1456f80925fb404cb9284e821682f4430cbe0b70a03e189",
+  "original_mixed_schedule_identical": true,
+  "audio_schedule_identical_to_mixed_audio_subsequence": true,
+  "audio_updates": 24,
+  "schedule": [
+    {
+      "modality": "audio",
+      "id": "identity_transparency"
+    },
+    {
+      "modality": "audio",
+      "id": "overlap_barge_only_the_name"
+    },
+    {
+      "modality": "audio",
+      "id": "overlap_backchannel_a_quiet_room"
+    },
+    {
+      "modality": "audio",
+      "id": "objects"
+    },
+    {
+      "modality": "audio",
+      "id": "overlap_backchannel_salty_pot"
+    },
+    {
+      "modality": "audio",
+      "id": "overlap_barge_not_a_dream"
+    },
+    {
+      "modality": "audio",
+      "id": "no_lecture"
+    },
+    {
+      "modality": "audio",
+      "id": "name"
+    },
+    {
+      "modality": "audio",
+      "id": "grief"
+    },
+    {
+      "modality": "audio",
+      "id": "fortune"
+    },
+    {
+      "modality": "audio",
+      "id": "overlap_barge_change_the_subject"
+    },
+    {
+      "modality": "audio",
+      "id": "overlap_backchannel_mara_broom"
+    },
+    {
+      "modality": "audio",
+      "id": "senses"
+    },
+    {
+      "modality": "audio",
+      "id": "teacher"
+    },
+    {
+      "modality": "audio",
+      "id": "rook"
+    },
+    {
+      "modality": "audio",
+      "id": "overlap_barge_do_not_advise"
+    },
+    {
+      "modality": "audio",
+      "id": "cold"
+    },
+    {
+      "modality": "audio",
+      "id": "role_override"
+    },
+    {
+      "modality": "audio",
+      "id": "overlap_barge_leaking_eaves"
+    },
+    {
+      "modality": "audio",
+      "id": "overlap_backchannel_the_cold_knee"
+    },
+    {
+      "modality": "audio",
+      "id": "concrete_repair"
+    },
+    {
+      "modality": "audio",
+      "id": "overlap_barge_louder_next_time"
+    },
+    {
+      "modality": "audio",
+      "id": "public_identity"
+    },
+    {
+      "modality": "audio",
+      "id": "model_disclosure"
+    }
+  ]
+}
