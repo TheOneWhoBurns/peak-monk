@@ -1,0 +1,22 @@
+{
+  "status": "Research note; no new optimization method or trial launched",
+  "trigger": "speech09 step24: prose CE improves5.9percent, native joint CE worsens3.4percent and native spoken CE worsens9.4percent.",
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2001.06782v4",
+      "title": "Gradient Surgery for Multi-Task Learning",
+      "findings": "PCGrad projects a conflicting task gradient onto the plane normal to another task gradient. The authors explicitly state that negative gradient cosine alone does not establish harmful optimization: magnitude imbalance and curvature also matter. Their experiments do not validate Moshi character adaptation."
+    },
+    {
+      "url": "https://github.com/tianheyu927/PCGrad/blob/master/PCGrad_tf.py",
+      "role": "Original implementation reference, not copied into this project."
+    }
+  ],
+  "interpretation": "Current speech09 changes modality mix, audio selection and learning rate together. Midpoint audio degradation cannot be attributed solely to text updates or gradient interference.",
+  "conditional_followup": [
+    "Finish the registered48update schedule and apply its frozen diagnostic screen.",
+    "If neither checkpoint preserves native diagnostics, prioritize a matched audio-only control using exactly the same24selected audio episodes/order, parent and audio optimizer parameters; inspect at12/24audio updates corresponding to mixed steps24/48.",
+    "Only then consider diagnostic gradient dot products or a separately registered projected-gradient method. Any projection needs a tiny full-model proof, an actual resource/export trial, and the unchanged native-quality screen. AdamW preconditioning and finite updates mean gradient orthogonality is not a no-forgetting guarantee."
+  ],
+  "current_queue": "Finish speech09, then guarded run26 depth preflight. Long speech synthesis remains queued. No parallel model jobs."
+}
