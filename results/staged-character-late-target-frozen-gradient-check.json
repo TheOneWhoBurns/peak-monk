@@ -1,0 +1,43 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "chunk_size": 3,
+      "loss_error": 4.76837158203125e-07,
+      "maximum_gradient_error": 8.940696716308594e-08,
+      "rng_error": 0.0
+    },
+    {
+      "chunk_size": 8,
+      "loss_error": 4.76837158203125e-07,
+      "maximum_gradient_error": 1.4901161193847656e-08,
+      "rng_error": 0.0
+    },
+    {
+      "chunk_size": 64,
+      "loss_error": 0.0,
+      "maximum_gradient_error": 0.0,
+      "rng_error": 0.0
+    }
+  ],
+  "target_tokens": 14,
+  "unequal_microbatch_accumulation": {
+    "loss_error": 0.0,
+    "maximum_gradient_error": 2.086162567138672e-07,
+    "rng_error": 0.0,
+    "target_tokens": 11
+  },
+  "late_targets_with_unsupervised_prefix": {
+    "loss_error": 2.384185791015625e-07,
+    "maximum_gradient_error": 1.1920928955078125e-07,
+    "rng_error": 0.0,
+    "target_tokens": 3
+  },
+  "frozen_embedding_and_lower_layer": {
+    "loss_error": 0.0,
+    "maximum_gradient_error": 2.9802322387695312e-08,
+    "rng_error": 0.0,
+    "trainable_tensors": 14
+  },
+  "scope": "Tiny actual quantized Qwen3 with tied LoRA embedding, nonzero adapters and head dropout. All seven projections per layer plus head dropout; compare uncheckpointed reference against checkpointed staged gradients and RNG. Real-model memory and quality unmeasured."
+}

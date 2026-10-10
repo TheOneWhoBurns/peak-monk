@@ -47,6 +47,10 @@ def staged_character_grad(model, batch, mask, chunk_size=64, denominator=None):
     target, supervised = batch[:, 1:], mask[:, 1:]
     count = supervised.sum()
     divisor = mx.maximum(count, 1) if denominator is None else denominator
+    # Reviewed on-policy prefixes are conditioning, not positive targets. Avoid
+    # allocating a vocabulary projection for blocks with no selected tokens.
+    # Still draw dropout over the original full shape to preserve RNG parity.
+    selected_columns = mx.any(supervised, axis=0).tolist()
 
     def head_loss(params, h, dmask, y, selected):
         head.update(params)
@@ -66,6 +70,9 @@ def staged_character_grad(model, batch, mask, chunk_size=64, denominator=None):
     total = mx.array(0., dtype=mx.float32)
     for start in range(0, hidden.shape[1], chunk_size):
         end = min(start + chunk_size, hidden.shape[1])
+        if not any(selected_columns[start:end]):
+            hidden_gradients.append(mx.zeros_like(hidden[:, start:end]))
+            continue
         value, (grad, cotangent) = head_vg(
             head.trainable_parameters(), hidden[:, start:end],
             dropout_mask[:, start:end], target[:, start:end], supervised[:, start:end])
@@ -86,8 +93,9 @@ def staged_character_grad(model, batch, mask, chunk_size=64, denominator=None):
     try:
         restore_rng(rng_before)
         _, gradient = nn.value_and_grad(model, replay_loss)(model)
-        gradient['model']['embed_tokens'] = tree_map(
-            lambda a, b: a + b, gradient['model']['embed_tokens'], head_gradient)
+        if head_gradient:
+            gradient['model']['embed_tokens'] = tree_map(
+                lambda a, b: a + b, gradient['model']['embed_tokens'], head_gradient)
         mx.eval(total, count, gradient)
     finally:
         restore_rng(rng_after)

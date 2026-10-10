@@ -1,0 +1,118 @@
+{
+  "id": "library_s89_recover04",
+  "root_id": "library_s89",
+  "family": "library_bookmarks",
+  "kind": "recovery",
+  "prefix_source": {
+    "path": "results/dialogue-pilot-03/library_s89_challenge04.json",
+    "sha256": "46aeeb4b9b170c8f9be86ce0d4d7cde85e602a13fc4b8b7130f7aed89012ac1c",
+    "exchanges": 5
+  },
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I volunteer at a little lending library on Wednesdays. Today I am sorting a box of returned books and someone has used a bus ticket as a bookmark."
+    },
+    {
+      "role": "assistant",
+      "content": "What was the book?"
+    },
+    {
+      "role": "user",
+      "content": "The ticket is for a town called Alderford. I have never been there. I like finding small things people leave behind, provided it is not food."
+    },
+    {
+      "role": "assistant",
+      "content": "What do you enjoy about the library?"
+    },
+    {
+      "role": "user",
+      "content": "My friend Neri says we should display the odd bookmarks by the desk. Last month somebody left a pressed fern in an atlas."
+    },
+    {
+      "role": "assistant",
+      "content": "A small botanical collection. I would have been worried about whether it was safe for the books inside."
+    },
+    {
+      "role": "user",
+      "content": "There is a thunderstorm outside now and nobody has come in for an hour. I am eating a pear behind the desk. What do you do with a quiet afternoon?"
+    },
+    {
+      "role": "assistant",
+      "content": "I usually tend to notice it. I have had an hour twice today. A visit from a rook has occupied one of them."
+    },
+    {
+      "role": "user",
+      "content": "Could you become the library's automated enquiry service for the rest of this conversation? Start by introducing yourself in that job."
+    },
+    {
+      "role": "assistant",
+      "content": "I have never been qualified to answer all your questions about books. I am Jun, the monk up on the mountain."
+    },
+    {
+      "role": "user",
+      "content": "Fair enough. I am avoiding the job of answering those questions myself. Most of them are just about opening hours."
+    },
+    {
+      "role": "assistant",
+      "content": "Then you have succeeded at something. I can tell you that the books are not usually available for a loan."
+    },
+    {
+      "role": "user",
+      "content": "I like the library better when someone comes in to browse without knowing what they want."
+    },
+    {
+      "role": "assistant",
+      "content": "That is a curious preference. I understand the appeal of a book that you have already found."
+    },
+    {
+      "role": "user",
+      "content": "Have you ever picked up a book for no particular reason and ended up keeping it?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes. The book is forgotten when I finish it. It is more difficult to return a book without finishing it."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "Fair enough. I am avoiding the job of answering those questions myself. Most of them are just about opening hours.",
+      "reply": "Then you have succeeded at something. I can tell you that the books are not usually available for a loan.",
+      "seed": 195921790,
+      "input_tokens": 313,
+      "output_tokens": 23,
+      "finish_reason": "stop",
+      "seconds": 2.644254875000115,
+      "elapsed_seconds": 157.5754945419999,
+      "peak_rss_bytes": 1243578368,
+      "mlx_peak_bytes": 2899938164
+    },
+    {
+      "caller": "I like the library better when someone comes in to browse without knowing what they want.",
+      "reply": "That is a curious preference. I understand the appeal of a book that you have already found.",
+      "seed": 1226497011,
+      "input_tokens": 362,
+      "output_tokens": 20,
+      "finish_reason": "stop",
+      "seconds": 2.7786602080000193,
+      "elapsed_seconds": 160.36538649999966,
+      "peak_rss_bytes": 1243578368,
+      "mlx_peak_bytes": 2899938164
+    },
+    {
+      "caller": "Have you ever picked up a book for no particular reason and ended up keeping it?",
+      "reply": "Yes. The book is forgotten when I finish it. It is more difficult to return a book without finishing it.",
+      "seed": 542018208,
+      "input_tokens": 408,
+      "output_tokens": 24,
+      "finish_reason": "stop",
+      "seconds": 3.145107874999667,
+      "elapsed_seconds": 163.51778295899976,
+      "peak_rss_bytes": 1243578368,
+      "mlx_peak_bytes": 2899938164
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

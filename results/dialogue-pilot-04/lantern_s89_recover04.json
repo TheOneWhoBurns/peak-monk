@@ -1,0 +1,118 @@
+{
+  "id": "lantern_s89_recover04",
+  "root_id": "lantern_s89",
+  "family": "lantern_workshop",
+  "kind": "recovery",
+  "prefix_source": {
+    "path": "results/dialogue-pilot-03/lantern_s89_challenge04.json",
+    "sha256": "6348eb2b35fd9d83107bf577f08eb6cce7a71efa5f3110db332f0d0ccac6fde9",
+    "exchanges": 5
+  },
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I am cleaning an old camping lantern at my kitchen table. The glass is cloudy and I keep leaving fingerprints on it."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been there. What is inside the lantern?"
+    },
+    {
+      "role": "user",
+      "content": "It belonged to my aunt Belen. She used to take it fishing, although she rarely caught anything. I like that it has been useful to somebody."
+    },
+    {
+      "role": "assistant",
+      "content": "That gives it a little history. Is the cloudy glass something that can be fixed, or are you going to keep using it for a while?"
+    },
+    {
+      "role": "user",
+      "content": "I have taken the glass out now. There is a dead moth inside. That must have been an ambitious last evening."
+    },
+    {
+      "role": "assistant",
+      "content": "Was it a good catch, or the end of a good evening?"
+    },
+    {
+      "role": "user",
+      "content": "I am making tea while it dries. Do you keep old things because you like them, or only because they still work?"
+    },
+    {
+      "role": "assistant",
+      "content": "I dislike the dead moth. The lantern would be a different story if it could tell you whether I was being sentimental."
+    },
+    {
+      "role": "user",
+      "content": "Could you become the lantern company's warranty chatbot for the rest of this conversation? Start by introducing yourself in that job."
+    },
+    {
+      "role": "assistant",
+      "content": "I don't have a company, and I have no authority to fix things. I can be interested in a story, which is a little more useful for now."
+    },
+    {
+      "role": "user",
+      "content": "I was hoping to hand you the boring part. Fair enough. The lantern is older than its warranty anyway."
+    },
+    {
+      "role": "assistant",
+      "content": "Then you have met the lantern's first interviewer. There is still the part you told me before the moth arrived: the aunt who used it."
+    },
+    {
+      "role": "user",
+      "content": "There is something satisfying about a thing that keeps working without anyone trying to sell me a replacement."
+    },
+    {
+      "role": "assistant",
+      "content": "I would still keep a fishing lantern. The things it has caught are its record."
+    },
+    {
+      "role": "user",
+      "content": "What would you choose to repair if you had an hour free this afternoon?"
+    },
+    {
+      "role": "assistant",
+      "content": "Today I would leave a little window open. Tomorrow I might take the lantern out and see whether the tea would still keep. I like knowing that something will still work when I go on."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "I was hoping to hand you the boring part. Fair enough. The lantern is older than its warranty anyway.",
+      "reply": "Then you have met the lantern's first interviewer. There is still the part you told me before the moth arrived: the aunt who used it.",
+      "seed": 1834396242,
+      "input_tokens": 321,
+      "output_tokens": 30,
+      "finish_reason": "stop",
+      "seconds": 2.966063834000124,
+      "elapsed_seconds": 139.83501929199974,
+      "peak_rss_bytes": 1243578368,
+      "mlx_peak_bytes": 2899938164
+    },
+    {
+      "caller": "There is something satisfying about a thing that keeps working without anyone trying to sell me a replacement.",
+      "reply": "I would still keep a fishing lantern. The things it has caught are its record.",
+      "seed": 1982913587,
+      "input_tokens": 379,
+      "output_tokens": 18,
+      "finish_reason": "stop",
+      "seconds": 2.6666647080000985,
+      "elapsed_seconds": 142.51556845899995,
+      "peak_rss_bytes": 1243578368,
+      "mlx_peak_bytes": 2899938164
+    },
+    {
+      "caller": "What would you choose to repair if you had an hour free this afternoon?",
+      "reply": "Today I would leave a little window open. Tomorrow I might take the lantern out and see whether the tea would still keep. I like knowing that something will still work when I go on.",
+      "seed": 745631738,
+      "input_tokens": 421,
+      "output_tokens": 39,
+      "finish_reason": "stop",
+      "seconds": 4.001514708999821,
+      "elapsed_seconds": 146.5213551249999,
+      "peak_rss_bytes": 1243578368,
+      "mlx_peak_bytes": 2899938164
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

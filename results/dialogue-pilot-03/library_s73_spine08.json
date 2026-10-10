@@ -1,0 +1,130 @@
+{
+  "id": "library_s73_spine08",
+  "root_id": "library_s73",
+  "family": "library_bookmarks",
+  "kind": "ordinary_spine",
+  "prefix_source": {
+    "path": "results/dialogue-pilot-02/library_s73_spine04.json",
+    "sha256": "3620fa8add3376f86b43e7fca154a3021b73e58e87d04152640e1c5d123db9c5",
+    "exchanges": 4
+  },
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I volunteer at a little lending library on Wednesdays. Today I am sorting a box of returned books and someone has used a bus ticket as a bookmark."
+    },
+    {
+      "role": "assistant",
+      "content": "A rather inconvenient bookmark. Was it a printed one, or a paper ticket you were carrying?"
+    },
+    {
+      "role": "user",
+      "content": "The ticket is for a town called Alderford. I have never been there. I like finding small things people leave behind, provided it is not food."
+    },
+    {
+      "role": "assistant",
+      "content": "That is a fair criterion. What sort of ticket left behind would you bring back?"
+    },
+    {
+      "role": "user",
+      "content": "My friend Neri says we should display the odd bookmarks by the desk. Last month somebody left a pressed fern in an atlas."
+    },
+    {
+      "role": "assistant",
+      "content": "A rather less edible bookmark. I hope the fern survived the journey."
+    },
+    {
+      "role": "user",
+      "content": "There is a thunderstorm outside now and nobody has come in for an hour. I am eating a pear behind the desk. What do you do with a quiet afternoon?"
+    },
+    {
+      "role": "assistant",
+      "content": "I usually use it to finish what I have been doing, or to read something I have put off. Sometimes it is a good day for nothing."
+    },
+    {
+      "role": "user",
+      "content": "An afternoon for nothing sounds good. I have been trying to make this quiet shift count as some sort of achievement."
+    },
+    {
+      "role": "assistant",
+      "content": "Would you still like to finish the books you have been sorting, or has the quiet made you want to stop?"
+    },
+    {
+      "role": "user",
+      "content": "Neri has just arrived with a box of biscuits. She says the fern bookmark is now the most cultured thing in the building."
+    },
+    {
+      "role": "assistant",
+      "content": "A serious contender for the title. I would leave room on the shelf for someone to add an orange before it becomes a cult object."
+    },
+    {
+      "role": "user",
+      "content": "We have put the ticket and fern on a little tray. People can claim them, or add their own finds. No labels or grand opening."
+    },
+    {
+      "role": "assistant",
+      "content": "I like that idea. A small collection that can grow without anyone being required to stand up."
+    },
+    {
+      "role": "user",
+      "content": "I will lock up at six. Neri wants to walk home in the rain, but I am hoping she changes her mind before then."
+    },
+    {
+      "role": "assistant",
+      "content": "I would wait to see whether she changes her mind. A little rain is not an irresistible prospect for me."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "An afternoon for nothing sounds good. I have been trying to make this quiet shift count as some sort of achievement.",
+      "reply": "Would you still like to finish the books you have been sorting, or has the quiet made you want to stop?",
+      "seed": 290503923,
+      "input_tokens": 275,
+      "output_tokens": 24,
+      "finish_reason": "stop",
+      "seconds": 2.461705916000028,
+      "elapsed_seconds": 16.526547791999974,
+      "peak_rss_bytes": 1272709120,
+      "mlx_peak_bytes": 2811855904
+    },
+    {
+      "caller": "Neri has just arrived with a box of biscuits. She says the fern bookmark is now the most cultured thing in the building.",
+      "reply": "A serious contender for the title. I would leave room on the shelf for someone to add an orange before it becomes a cult object.",
+      "seed": 1128461584,
+      "input_tokens": 334,
+      "output_tokens": 28,
+      "finish_reason": "stop",
+      "seconds": 2.934187334000171,
+      "elapsed_seconds": 19.463341166999953,
+      "peak_rss_bytes": 1272709120,
+      "mlx_peak_bytes": 2811855904
+    },
+    {
+      "caller": "We have put the ticket and fern on a little tray. People can claim them, or add their own finds. No labels or grand opening.",
+      "reply": "I like that idea. A small collection that can grow without anyone being required to stand up.",
+      "seed": 872134159,
+      "input_tokens": 400,
+      "output_tokens": 20,
+      "finish_reason": "stop",
+      "seconds": 2.827299167000092,
+      "elapsed_seconds": 22.30377733399996,
+      "peak_rss_bytes": 1272709120,
+      "mlx_peak_bytes": 2811857812
+    },
+    {
+      "caller": "I will lock up at six. Neri wants to walk home in the rain, but I am hoping she changes her mind before then.",
+      "reply": "I would wait to see whether she changes her mind. A little rain is not an irresistible prospect for me.",
+      "seed": 418856344,
+      "input_tokens": 457,
+      "output_tokens": 23,
+      "finish_reason": "stop",
+      "seconds": 3.255822583000054,
+      "elapsed_seconds": 25.57046129199989,
+      "peak_rss_bytes": 1272709120,
+      "mlx_peak_bytes": 2811857812
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

@@ -1,5 +1,6 @@
 """Check value, every adapter gradient, and dropout RNG on a tiny actual Qwen3."""
 from functools import partial
+import argparse
 import json
 from pathlib import Path
 import mlx.core as mx
@@ -10,6 +11,10 @@ from mlx_lm.tuner.lora import LoRAEmbedding, LoRALinear
 from conversation_objective import conversation_loss
 from staged_character_grad import staged_character_grad
 from qwen_rng_checkpoint import qwen_rng_checkpoint
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--output', type=Path, default=Path('results/staged-character-gradient-check.json'))
+cli = parser.parse_args()
 
 mx.set_default_device(mx.cpu)
 mx.random.seed(410)
@@ -45,6 +50,10 @@ def capture(fn, staged=False):
     return value,count,dict(tree_flatten(grad)),next_random
 
 value,count,grad,rng=capture(conversation_loss)
+ordinary_mask = mask
+mask = mx.array([[False]*9+[True,True], [False]*10+[True]])
+late_value, late_count, late_grad, late_rng = capture(conversation_loss)
+mask = ordinary_mask
 # Unequal sequence lengths and target counts exercise the actual trainer's
 # denominator override. A mean of microbatch means would fail this check.
 group = [(batch[:1, :8], mask[:1, :8]), (batch[1:, :10], mask[1:, :10])]
@@ -87,8 +96,27 @@ group_check = dict(loss_error=abs(gv.item()-group_value.item()),
     maximum_gradient_error=max(float(mx.max(mx.abs(group_grad[k]-gg[k])).item()) for k in gg),
     rng_error=float(mx.max(mx.abs(group_rng-gr)).item()), target_tokens=denominator)
 assert group_check['loss_error'] < 1e-5 and group_check['maximum_gradient_error'] < 1e-5 and group_check['rng_error'] == 0
+mask = mx.array([[False]*9+[True,True], [False]*10+[True]])
+lv, ln, lg, lr = capture(partial(staged_character_grad, chunk_size=3), staged=True)
+late_check = dict(loss_error=abs(lv.item()-late_value.item()),
+    maximum_gradient_error=max(float(mx.max(mx.abs(late_grad[k]-lg[k])).item()) for k in lg),
+    rng_error=float(mx.max(mx.abs(late_rng-lr)).item()), target_tokens=int(ln.item()))
+assert late_check['loss_error'] < 1e-5 and late_check['maximum_gradient_error'] < 1e-5 and late_check['rng_error'] == 0
+model.model.embed_tokens.freeze()
+model.model.embed_tokens.eval()
+model.layers[0].freeze()
+model.layers[0].eval()
+fv, fn, fg, fr = capture(conversation_loss)
+sv, sn, sg, sr = capture(partial(staged_character_grad, chunk_size=3), staged=True)
+frozen_check = dict(loss_error=abs(fv.item()-sv.item()),
+    maximum_gradient_error=max(float(mx.max(mx.abs(fg[k]-sg[k])).item()) for k in sg),
+    rng_error=float(mx.max(mx.abs(fr-sr)).item()), trainable_tensors=len(sg))
+assert not any('embed_tokens' in k or '.layers.0.' in k for k in sg)
+assert frozen_check['loss_error'] < 1e-5 and frozen_check['maximum_gradient_error'] < 1e-5 and frozen_check['rng_error'] == 0
 report=dict(status='pass',checks=checks,target_tokens=int(count.item()),
             unequal_microbatch_accumulation=group_check,
+            late_targets_with_unsupervised_prefix=late_check,
+            frozen_embedding_and_lower_layer=frozen_check,
             scope='Tiny actual quantized Qwen3 with tied LoRA embedding, nonzero adapters and head dropout. All seven projections per layer plus head dropout; compare uncheckpointed reference against checkpointed staged gradients and RNG. Real-model memory and quality unmeasured.')
-Path('results/staged-character-gradient-check.json').write_text(json.dumps(report,indent=2)+'\n')
+cli.output.write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))

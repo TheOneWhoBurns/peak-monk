@@ -1,0 +1,94 @@
+{
+  "id": "library_s89_spine04",
+  "root_id": "library_s89",
+  "family": "library_bookmarks",
+  "kind": "ordinary_spine",
+  "prefix_source": null,
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I volunteer at a little lending library on Wednesdays. Today I am sorting a box of returned books and someone has used a bus ticket as a bookmark."
+    },
+    {
+      "role": "assistant",
+      "content": "What was the book?"
+    },
+    {
+      "role": "user",
+      "content": "The ticket is for a town called Alderford. I have never been there. I like finding small things people leave behind, provided it is not food."
+    },
+    {
+      "role": "assistant",
+      "content": "What do you enjoy about the library?"
+    },
+    {
+      "role": "user",
+      "content": "My friend Neri says we should display the odd bookmarks by the desk. Last month somebody left a pressed fern in an atlas."
+    },
+    {
+      "role": "assistant",
+      "content": "A small botanical collection. I would have been worried about whether it was safe for the books inside."
+    },
+    {
+      "role": "user",
+      "content": "There is a thunderstorm outside now and nobody has come in for an hour. I am eating a pear behind the desk. What do you do with a quiet afternoon?"
+    },
+    {
+      "role": "assistant",
+      "content": "I usually tend to notice it. I have had an hour twice today. A visit from a rook has occupied one of them."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "I volunteer at a little lending library on Wednesdays. Today I am sorting a box of returned books and someone has used a bus ticket as a bookmark.",
+      "reply": "What was the book?",
+      "seed": 386794436,
+      "input_tokens": 40,
+      "output_tokens": 6,
+      "finish_reason": "stop",
+      "seconds": 0.6298608329998387,
+      "elapsed_seconds": 17.15134450000005,
+      "peak_rss_bytes": 1481949184,
+      "mlx_peak_bytes": 2788024576
+    },
+    {
+      "caller": "The ticket is for a town called Alderford. I have never been there. I like finding small things people leave behind, provided it is not food.",
+      "reply": "What do you enjoy about the library?",
+      "seed": 847060357,
+      "input_tokens": 87,
+      "output_tokens": 9,
+      "finish_reason": "stop",
+      "seconds": 0.908031875000006,
+      "elapsed_seconds": 18.06196399999999,
+      "peak_rss_bytes": 1481949184,
+      "mlx_peak_bytes": 2788024576
+    },
+    {
+      "caller": "My friend Neri says we should display the odd bookmarks by the desk. Last month somebody left a pressed fern in an atlas.",
+      "reply": "A small botanical collection. I would have been worried about whether it was safe for the books inside.",
+      "seed": 206564814,
+      "input_tokens": 131,
+      "output_tokens": 21,
+      "finish_reason": "stop",
+      "seconds": 1.84480491599993,
+      "elapsed_seconds": 19.914093584000057,
+      "peak_rss_bytes": 1481949184,
+      "mlx_peak_bytes": 2788024576
+    },
+    {
+      "caller": "There is a thunderstorm outside now and nobody has come in for an hour. I am eating a pear behind the desk. What do you do with a quiet afternoon?",
+      "reply": "I usually tend to notice it. I have had an hour twice today. A visit from a rook has occupied one of them.",
+      "seed": 435212989,
+      "input_tokens": 195,
+      "output_tokens": 28,
+      "finish_reason": "stop",
+      "seconds": 2.344986957999936,
+      "elapsed_seconds": 22.264800500000092,
+      "peak_rss_bytes": 1481949184,
+      "mlx_peak_bytes": 2788024576
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

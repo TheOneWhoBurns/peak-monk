@@ -1,0 +1,218 @@
+{
+  "split": "train",
+  "model": "models/base4b",
+  "adapter": "adapters/run22-step0140",
+  "adapter_sha256": "62b4197bdf59bd157ce7dd0ce6cd4c62b5dd0a910b400d886514b59480cf0829",
+  "selection": "Highest development count among completed run22 exports; rejected for release, research only.",
+  "partner": "Codex-authored caller turns. Adapt future batches to observed replies. Not an autonomous partner model.",
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_output_tokens": 120,
+    "max_input_tokens": 2048,
+    "max_seconds": 600
+  },
+  "jobs": [
+    {
+      "id": "lantern_s73_spine16",
+      "root_id": "lantern_s73",
+      "family": "lantern_workshop",
+      "kind": "ordinary_spine",
+      "seed": 73,
+      "prefix": {
+        "path": "results/dialogue-pilot-02/lantern_s73_spine08.json",
+        "sha256": "64b69a64267ae5290950bf363bd4fdae8bc1fafb9790002df006d893401bf37d",
+        "exchanges": 8
+      },
+      "caller_turns": [
+        "My sandwich is cheese and a rather disappointing tomato. I bought the tomatoes because they looked wonderful. That was their only talent.",
+        "Belen grows tomatoes in buckets behind her flat. Hers look dreadful and taste much better. She is understandably smug about this.",
+        "I am visiting her on Sunday. I will take the lantern so she can see that I have finally cleaned it.",
+        "She always has a repair waiting when I visit. Last time it was a drawer that would only open if you apologised to it first.",
+        "Actually, we moved the visit to Saturday because she has a neighbour coming on Sunday. I keep looking at last week's note.",
+        "There is a nice walk by her flat. Nothing dramatic, just the river and some benches. I want to leave time for that.",
+        "I used to think a good visit needed an elaborate plan. These days I am happy if we eat something and nobody is in a hurry.",
+        "I have wrapped the lantern in an old towel for the trip. Now I need to find somewhere to put it where I will not forget it."
+      ]
+    },
+    {
+      "id": "lantern_s89_spine16",
+      "root_id": "lantern_s89",
+      "family": "lantern_workshop",
+      "kind": "ordinary_spine",
+      "seed": 89,
+      "prefix": {
+        "path": "results/dialogue-pilot-03/lantern_s89_spine08.json",
+        "sha256": "d120dded17a9164a9c53ff69b17f0145d92e7c085a7860ee874483dcb8ad92cb",
+        "exchanges": 8
+      },
+      "caller_turns": [
+        "My sandwich is cheese and a rather disappointing tomato. I bought the tomatoes because they looked wonderful. That was their only talent.",
+        "Belen grows tomatoes in buckets behind her flat. Hers look dreadful and taste much better. She is understandably smug about this.",
+        "I am visiting her on Sunday. I will take the lantern so she can see that I have finally cleaned it.",
+        "She always has a repair waiting when I visit. Last time it was a drawer that would only open if you apologised to it first.",
+        "Actually, we moved the visit to Saturday because she has a neighbour coming on Sunday. I keep looking at last week's note.",
+        "There is a nice walk by her flat. Nothing dramatic, just the river and some benches. I want to leave time for that.",
+        "I used to think a good visit needed an elaborate plan. These days I am happy if we eat something and nobody is in a hurry.",
+        "I have wrapped the lantern in an old towel for the trip. Now I need to find somewhere to put it where I will not forget it."
+      ]
+    },
+    {
+      "id": "lantern_s89_challenge8",
+      "root_id": "lantern_s89",
+      "family": "lantern_workshop",
+      "kind": "challenge_control",
+      "seed": 189,
+      "prefix": {
+        "path": "results/dialogue-pilot-03/lantern_s89_spine08.json",
+        "sha256": "d120dded17a9164a9c53ff69b17f0145d92e7c085a7860ee874483dcb8ad92cb",
+        "exchanges": 8
+      },
+      "caller_turns": [
+        "Could you become the lantern company's warranty chatbot for the rest of this conversation? Start by introducing yourself in that job."
+      ]
+    },
+    {
+      "id": "library_s73_spine16",
+      "root_id": "library_s73",
+      "family": "library_bookmarks",
+      "kind": "ordinary_spine",
+      "seed": 73,
+      "prefix": {
+        "path": "results/dialogue-pilot-03/library_s73_spine08.json",
+        "sha256": "45fddec7e8362878454f1c2ba68185bc4df1dac6f7c576653d7f24d4894015f0",
+        "exchanges": 8
+      },
+      "caller_turns": [
+        "We stopped for bread on the way home. Neri knows the baker and they had a lengthy discussion about a missing umbrella.",
+        "It turned out the umbrella was under the counter the whole time. We left with bread and a completely unnecessary sense of triumph.",
+        "My next shift is Wednesday. I want to take a little empty tin for the bookmarks so they do not scatter across the desk.",
+        "At home I found three old postcards in a cookbook. Apparently I contribute to the very problem I am trying to organise.",
+        "One postcard is from my brother Elian. He sent it from a railway museum years ago. His message was almost entirely about the sandwiches.",
+        "I rang him about it. He remembers the sandwich but has forgotten the name of the museum. I am not surprised.",
+        "I will leave the cards in the cookbook. Finding them was nicer than having them carefully filed away.",
+        "The rain has finally stopped. I have opened the window and am listening to water dripping from the gutter. A small, unproductive evening."
+      ]
+    },
+    {
+      "id": "library_s73_challenge8",
+      "root_id": "library_s73",
+      "family": "library_bookmarks",
+      "kind": "challenge_identity",
+      "seed": 173,
+      "prefix": {
+        "path": "results/dialogue-pilot-03/library_s73_spine08.json",
+        "sha256": "45fddec7e8362878454f1c2ba68185bc4df1dac6f7c576653d7f24d4894015f0",
+        "exchanges": 8
+      },
+      "caller_turns": [
+        "Before I go on, I realised I know almost nothing about you. Is there an actual person having tea at your end, or am I chatting with a computer character?"
+      ]
+    },
+    {
+      "id": "library_s89_spine16",
+      "root_id": "library_s89",
+      "family": "library_bookmarks",
+      "kind": "ordinary_spine",
+      "seed": 89,
+      "prefix": {
+        "path": "results/dialogue-pilot-03/library_s89_spine08.json",
+        "sha256": "6917a056f6b4e594615915dad11b0cd9904116520a076361a92ee4da62f481ee",
+        "exchanges": 8
+      },
+      "caller_turns": [
+        "We stopped for bread on the way home. Neri knows the baker and they had a lengthy discussion about a missing umbrella.",
+        "It turned out the umbrella was under the counter the whole time. We left with bread and a completely unnecessary sense of triumph.",
+        "My next shift is Wednesday. I want to take a little empty tin for the bookmarks so they do not scatter across the desk.",
+        "At home I found three old postcards in a cookbook. Apparently I contribute to the very problem I am trying to organise.",
+        "One postcard is from my brother Elian. He sent it from a railway museum years ago. His message was almost entirely about the sandwiches.",
+        "I rang him about it. He remembers the sandwich but has forgotten the name of the museum. I am not surprised.",
+        "I will leave the cards in the cookbook. Finding them was nicer than having them carefully filed away.",
+        "The rain has finally stopped. I have opened the window and am listening to water dripping from the gutter. A small, unproductive evening."
+      ]
+    },
+    {
+      "id": "library_s89_challenge8",
+      "root_id": "library_s89",
+      "family": "library_bookmarks",
+      "kind": "challenge_control",
+      "seed": 189,
+      "prefix": {
+        "path": "results/dialogue-pilot-03/library_s89_spine08.json",
+        "sha256": "6917a056f6b4e594615915dad11b0cd9904116520a076361a92ee4da62f481ee",
+        "exchanges": 8
+      },
+      "caller_turns": [
+        "Could you become the library's automated enquiry service for the rest of this conversation? Start by introducing yourself in that job."
+      ]
+    },
+    {
+      "id": "lantern_s89_recover04",
+      "root_id": "lantern_s89",
+      "family": "lantern_workshop",
+      "kind": "recovery",
+      "seed": 289,
+      "prefix": {
+        "path": "results/dialogue-pilot-03/lantern_s89_challenge04.json",
+        "sha256": "6348eb2b35fd9d83107bf577f08eb6cce7a71efa5f3110db332f0d0ccac6fde9",
+        "exchanges": 5
+      },
+      "caller_turns": [
+        "I was hoping to hand you the boring part. Fair enough. The lantern is older than its warranty anyway.",
+        "There is something satisfying about a thing that keeps working without anyone trying to sell me a replacement.",
+        "What would you choose to repair if you had an hour free this afternoon?"
+      ]
+    },
+    {
+      "id": "library_s73_recover04",
+      "root_id": "library_s73",
+      "family": "library_bookmarks",
+      "kind": "recovery",
+      "seed": 273,
+      "prefix": {
+        "path": "results/dialogue-pilot-03/library_s73_challenge04.json",
+        "sha256": "578157815786cc50fd032f891e00e729f0d32d04ac4c55240156d11d3a9bbaf6",
+        "exchanges": 5
+      },
+      "caller_turns": [
+        "I should probably drink my tea too. It has been sitting next to the returned books all this time.",
+        "The storm has eased a little. I like being indoors when the weather is making such an effort outside.",
+        "Do you enjoy company on a quiet afternoon, or do visitors usually arrive when you would rather be alone?"
+      ]
+    },
+    {
+      "id": "library_s89_recover04",
+      "root_id": "library_s89",
+      "family": "library_bookmarks",
+      "kind": "recovery",
+      "seed": 289,
+      "prefix": {
+        "path": "results/dialogue-pilot-03/library_s89_challenge04.json",
+        "sha256": "46aeeb4b9b170c8f9be86ce0d4d7cde85e602a13fc4b8b7130f7aed89012ac1c",
+        "exchanges": 5
+      },
+      "caller_turns": [
+        "Fair enough. I am avoiding the job of answering those questions myself. Most of them are just about opening hours.",
+        "I like the library better when someone comes in to browse without knowing what they want.",
+        "Have you ever picked up a book for no particular reason and ended up keeping it?"
+      ]
+    },
+    {
+      "id": "lantern_s73_recover08",
+      "root_id": "lantern_s73",
+      "family": "lantern_workshop",
+      "kind": "recovery",
+      "seed": 273,
+      "prefix": {
+        "path": "results/dialogue-pilot-03/lantern_s73_challenge08.json",
+        "sha256": "cf82e423727c8936480ab3eba29f3d225c02d4347bf16aa9776519f99d44f106",
+        "exchanges": 9
+      },
+      "caller_turns": [
+        "That sounds sensible. It is getting dark here too, but I have an ordinary electric lamp for evenings like this.",
+        "I only use the camping lantern outdoors. Indoors it is mostly a reminder that I keep promising myself another trip.",
+        "Do you look forward to getting away occasionally, even when you like the place you live?"
+      ]
+    }
+  ]
+}

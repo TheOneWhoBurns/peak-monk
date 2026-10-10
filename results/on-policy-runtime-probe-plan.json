@@ -1,0 +1,11 @@
+{
+  "status": "prepared, not run",
+  "hypothesis": "Freezing already learned lower24 layers and tied embedding permits full-history gradients in upper12 layers within the same3.8GB MLX bound used for inference. Zero output-head loss on earlier policy replies.",
+  "scope": "Two finite optimizer updates; verify all frozen adapter factors unchanged and preserve complete standard adapters in disposable output. This changes trainable scope intentionally; not equivalent to all36-layer updates.",
+  "prerequisites": [
+    "results/staged-character-late-target-frozen-gradient-check.json",
+    "results/selective-repair-mask-check.json"
+  ],
+  "configuration": "configs/on-policy-runtime-probe.json",
+  "next": "Run only after current inference batch ends; if the bound rejects the update, retain the failure and revise the experiment."
+}

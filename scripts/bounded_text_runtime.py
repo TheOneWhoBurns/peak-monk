@@ -59,12 +59,15 @@ class BoundedTextRuntime:
             raise RuntimeError('Bounded inference elapsed-time limit')
         if rss > 4_600_000_000:
             raise RuntimeError('Bounded inference process-RSS limit')
-        if swap_bytes() - self.initial_swap > 512 * 1024**2:
+        swap = swap_bytes()
+        if swap > 2 * 1024**3:
+            raise RuntimeError('Bounded inference absolute swap limit')
+        if swap - self.initial_swap > 512 * 1024**2:
             raise RuntimeError('Bounded inference swap-growth limit')
-        return dict(elapsed_seconds=elapsed, peak_rss_bytes=rss)
+        return dict(elapsed_seconds=elapsed, peak_rss_bytes=rss, swap_bytes=swap)
 
     def __enter__(self):
-        self.lock = open(self.output.parent / '.text-model.lock', 'a')
+        self.lock = open(Path(__file__).resolve().parents[1] / 'results' / '.text-model.lock', 'a')
         fcntl.flock(self.lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         self.started = time.monotonic()
         self.initial_swap = swap_bytes()

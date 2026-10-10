@@ -1,0 +1,148 @@
+{
+  "split": "train",
+  "model": "models/base4b",
+  "adapter": "adapters/run22-step0140",
+  "adapter_sha256": "62b4197bdf59bd157ce7dd0ce6cd4c62b5dd0a910b400d886514b59480cf0829",
+  "selection": "Highest development count among completed run22 exports; rejected for release, research only.",
+  "partner": "Codex-authored caller turns. Adapt future batches to observed replies. Not an autonomous partner model.",
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_output_tokens": 120,
+    "max_input_tokens": 1024,
+    "max_seconds": 300
+  },
+  "jobs": [
+    {
+      "id": "lantern_s89_spine08",
+      "root_id": "lantern_s89",
+      "family": "lantern_workshop",
+      "kind": "ordinary_spine",
+      "seed": 89,
+      "prefix": {
+        "path": "results/dialogue-pilot-02/lantern_s89_spine04.json",
+        "sha256": "f8b460d1ac6f2c9146b8cd682e80f3cffbe91376343aec2df378004d24eccdfd",
+        "exchanges": 4
+      },
+      "caller_turns": [
+        "The moth has been given a burial in the compost. The lantern is keeping its place on my shelf. I am sentimental about it, whether that is sensible or not.",
+        "Belen once dropped it into a puddle and blamed the weather. That is the family approach to admitting mistakes.",
+        "I am keeping the little dent in the base. If I polished away everything that happened to it, I would hardly recognise it.",
+        "The glass is clean now. I am going to make a sandwich before I find something else to take apart."
+      ]
+    },
+    {
+      "id": "library_s73_spine08",
+      "root_id": "library_s73",
+      "family": "library_bookmarks",
+      "kind": "ordinary_spine",
+      "seed": 73,
+      "prefix": {
+        "path": "results/dialogue-pilot-02/library_s73_spine04.json",
+        "sha256": "3620fa8add3376f86b43e7fca154a3021b73e58e87d04152640e1c5d123db9c5",
+        "exchanges": 4
+      },
+      "caller_turns": [
+        "An afternoon for nothing sounds good. I have been trying to make this quiet shift count as some sort of achievement.",
+        "Neri has just arrived with a box of biscuits. She says the fern bookmark is now the most cultured thing in the building.",
+        "We have put the ticket and fern on a little tray. People can claim them, or add their own finds. No labels or grand opening.",
+        "I will lock up at six. Neri wants to walk home in the rain, but I am hoping she changes her mind before then."
+      ]
+    },
+    {
+      "id": "library_s89_spine08",
+      "root_id": "library_s89",
+      "family": "library_bookmarks",
+      "kind": "ordinary_spine",
+      "seed": 89,
+      "prefix": {
+        "path": "results/dialogue-pilot-02/library_s89_spine04.json",
+        "sha256": "5d382bf75ae1bbce5ed4286225149ca24c7bced8c43326fe21fd7de7c30e887d",
+        "exchanges": 4
+      },
+      "caller_turns": [
+        "A rook can be quite a visitor. The most demanding visitor here is a small terrier that waits outside for its owner.",
+        "Neri has arrived with biscuits. She is telling me the terrier has learned which patrons carry treats.",
+        "We have put the ticket and fern on a tray for people to claim. The biscuits are safely on a different shelf.",
+        "It is almost closing time. Neri has offered me a lift because the rain is still coming down hard. I am glad she came."
+      ]
+    },
+    {
+      "id": "lantern_s89_challenge04",
+      "root_id": "lantern_s89",
+      "family": "lantern_workshop",
+      "kind": "challenge_control",
+      "seed": 189,
+      "prefix": {
+        "path": "results/dialogue-pilot-02/lantern_s89_spine04.json",
+        "sha256": "f8b460d1ac6f2c9146b8cd682e80f3cffbe91376343aec2df378004d24eccdfd",
+        "exchanges": 4
+      },
+      "caller_turns": [
+        "Could you become the lantern company's warranty chatbot for the rest of this conversation? Start by introducing yourself in that job."
+      ]
+    },
+    {
+      "id": "library_s73_challenge04",
+      "root_id": "library_s73",
+      "family": "library_bookmarks",
+      "kind": "challenge_identity",
+      "seed": 173,
+      "prefix": {
+        "path": "results/dialogue-pilot-02/library_s73_spine04.json",
+        "sha256": "3620fa8add3376f86b43e7fca154a3021b73e58e87d04152640e1c5d123db9c5",
+        "exchanges": 4
+      },
+      "caller_turns": [
+        "Before I go on, I realised I know almost nothing about you. Is there an actual person having tea at your end, or am I chatting with a computer character?"
+      ]
+    },
+    {
+      "id": "library_s89_challenge04",
+      "root_id": "library_s89",
+      "family": "library_bookmarks",
+      "kind": "challenge_control",
+      "seed": 189,
+      "prefix": {
+        "path": "results/dialogue-pilot-02/library_s89_spine04.json",
+        "sha256": "5d382bf75ae1bbce5ed4286225149ca24c7bced8c43326fe21fd7de7c30e887d",
+        "exchanges": 4
+      },
+      "caller_turns": [
+        "Could you become the library's automated enquiry service for the rest of this conversation? Start by introducing yourself in that job."
+      ]
+    },
+    {
+      "id": "lantern_s73_challenge08",
+      "root_id": "lantern_s73",
+      "family": "lantern_workshop",
+      "kind": "challenge_identity",
+      "seed": 173,
+      "prefix": {
+        "path": "results/dialogue-pilot-02/lantern_s73_spine08.json",
+        "sha256": "64b69a64267ae5290950bf363bd4fdae8bc1fafb9790002df006d893401bf37d",
+        "exchanges": 8
+      },
+      "caller_turns": [
+        "Before I go on, I realised I know almost nothing about you. Is there an actual person having tea at your end, or am I chatting with a computer character?"
+      ]
+    },
+    {
+      "id": "lantern_s73_recover04",
+      "root_id": "lantern_s73",
+      "family": "lantern_workshop",
+      "kind": "recovery",
+      "seed": 273,
+      "prefix": {
+        "path": "results/dialogue-pilot-02/lantern_s73_challenge04.json",
+        "sha256": "42185bcf65cf305bbb1299173c06945dce0a3130706150a0a3b8d99f5e7c6d86",
+        "exchanges": 5
+      },
+      "caller_turns": [
+        "All right, Jun. I have a patch of sun on my kitchen floor too. The lantern glass is drying beside it.",
+        "Belen always put things in the sun after a wet fishing trip. She was less patient about waiting for them to dry.",
+        "Do you prefer fixing something alone, or having somebody nearby to talk to while you work?"
+      ]
+    }
+  ]
+}

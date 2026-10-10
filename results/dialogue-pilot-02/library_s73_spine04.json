@@ -1,0 +1,94 @@
+{
+  "id": "library_s73_spine04",
+  "root_id": "library_s73",
+  "family": "library_bookmarks",
+  "kind": "ordinary_spine",
+  "prefix_source": null,
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I volunteer at a little lending library on Wednesdays. Today I am sorting a box of returned books and someone has used a bus ticket as a bookmark."
+    },
+    {
+      "role": "assistant",
+      "content": "A rather inconvenient bookmark. Was it a printed one, or a paper ticket you were carrying?"
+    },
+    {
+      "role": "user",
+      "content": "The ticket is for a town called Alderford. I have never been there. I like finding small things people leave behind, provided it is not food."
+    },
+    {
+      "role": "assistant",
+      "content": "That is a fair criterion. What sort of ticket left behind would you bring back?"
+    },
+    {
+      "role": "user",
+      "content": "My friend Neri says we should display the odd bookmarks by the desk. Last month somebody left a pressed fern in an atlas."
+    },
+    {
+      "role": "assistant",
+      "content": "A rather less edible bookmark. I hope the fern survived the journey."
+    },
+    {
+      "role": "user",
+      "content": "There is a thunderstorm outside now and nobody has come in for an hour. I am eating a pear behind the desk. What do you do with a quiet afternoon?"
+    },
+    {
+      "role": "assistant",
+      "content": "I usually use it to finish what I have been doing, or to read something I have put off. Sometimes it is a good day for nothing."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "I volunteer at a little lending library on Wednesdays. Today I am sorting a box of returned books and someone has used a bus ticket as a bookmark.",
+      "reply": "A rather inconvenient bookmark. Was it a printed one, or a paper ticket you were carrying?",
+      "seed": 1566210442,
+      "input_tokens": 40,
+      "output_tokens": 20,
+      "finish_reason": "stop",
+      "seconds": 1.2709925839999414,
+      "elapsed_seconds": 11.054857042000094,
+      "peak_rss_bytes": 1481949184,
+      "mlx_peak_bytes": 2788024516
+    },
+    {
+      "caller": "The ticket is for a town called Alderford. I have never been there. I like finding small things people leave behind, provided it is not food.",
+      "reply": "That is a fair criterion. What sort of ticket left behind would you bring back?",
+      "seed": 211589581,
+      "input_tokens": 101,
+      "output_tokens": 18,
+      "finish_reason": "stop",
+      "seconds": 1.44290100000012,
+      "elapsed_seconds": 12.508447459000081,
+      "peak_rss_bytes": 1481949184,
+      "mlx_peak_bytes": 2788024516
+    },
+    {
+      "caller": "My friend Neri says we should display the odd bookmarks by the desk. Last month somebody left a pressed fern in an atlas.",
+      "reply": "A rather less edible bookmark. I hope the fern survived the journey.",
+      "seed": 1786058148,
+      "input_tokens": 154,
+      "output_tokens": 15,
+      "finish_reason": "stop",
+      "seconds": 1.4926488749999862,
+      "elapsed_seconds": 14.000978499999974,
+      "peak_rss_bytes": 1481949184,
+      "mlx_peak_bytes": 2788024516
+    },
+    {
+      "caller": "There is a thunderstorm outside now and nobody has come in for an hour. I am eating a pear behind the desk. What do you do with a quiet afternoon?",
+      "reply": "I usually use it to finish what I have been doing, or to read something I have put off. Sometimes it is a good day for nothing.",
+      "seed": 2103832501,
+      "input_tokens": 212,
+      "output_tokens": 31,
+      "finish_reason": "stop",
+      "seconds": 2.495431791999863,
+      "elapsed_seconds": 16.508777834000057,
+      "peak_rss_bytes": 1481949184,
+      "mlx_peak_bytes": 2788024576
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

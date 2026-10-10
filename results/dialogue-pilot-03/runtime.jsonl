@@ -1,0 +1,43 @@
+{"time": 1791591933.489392, "phase": "import_begin", "initial_swap_bytes": 1087834685}
+{"time": 1791591934.770617, "phase": "runtime_ready", "memory_limit": 3800000000, "policy": "no wiring; deferred cache eviction; one process; bounded requests"}
+{"time": 1791591934.7707362, "phase": "load_begin"}
+{"time": 1791591936.7948039, "phase": "load_end", "elapsed_seconds": 3.2965103750000253, "peak_rss_bytes": 1272709120}
+{"time": 1791591936.809994, "phase": "response_begin", "job": "lantern_s89_spine08", "index": 0, "input_tokens": 265, "seed": 1242919923}
+{"time": 1791591939.419533, "phase": "response_saved", "job": "lantern_s89_spine08", "index": 0, "elapsed_seconds": 5.922562749999997, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2800176104}
+{"time": 1791591939.428444, "phase": "response_begin", "job": "lantern_s89_spine08", "index": 1, "input_tokens": 322, "seed": 791873585}
+{"time": 1791591941.9107358, "phase": "response_saved", "job": "lantern_s89_spine08", "index": 1, "elapsed_seconds": 8.413826959000062, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2800487664}
+{"time": 1791591941.91873, "phase": "response_begin", "job": "lantern_s89_spine08", "index": 2, "input_tokens": 376, "seed": 956281619}
+{"time": 1791591944.9821272, "phase": "response_saved", "job": "lantern_s89_spine08", "index": 2, "elapsed_seconds": 11.486171667000008, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2800489928}
+{"time": 1791591944.9902751, "phase": "response_begin", "job": "lantern_s89_spine08", "index": 3, "input_tokens": 435, "seed": 1393103145}
+{"time": 1791591947.547015, "phase": "response_saved", "job": "lantern_s89_spine08", "index": 3, "elapsed_seconds": 14.048310749999928, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2811855904}
+{"time": 1791591947.556661, "phase": "response_begin", "job": "library_s73_spine08", "index": 0, "input_tokens": 275, "seed": 290503923}
+{"time": 1791591950.01915, "phase": "response_saved", "job": "library_s73_spine08", "index": 0, "elapsed_seconds": 16.526547791999974, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2811855904}
+{"time": 1791591950.0255208, "phase": "response_begin", "job": "library_s73_spine08", "index": 1, "input_tokens": 334, "seed": 1128461584}
+{"time": 1791591952.961098, "phase": "response_saved", "job": "library_s73_spine08", "index": 1, "elapsed_seconds": 19.463341166999953, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2811855904}
+{"time": 1791591952.970046, "phase": "response_begin", "job": "library_s73_spine08", "index": 2, "input_tokens": 400, "seed": 872134159}
+{"time": 1791591955.799339, "phase": "response_saved", "job": "library_s73_spine08", "index": 2, "elapsed_seconds": 22.30377733399996, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2811857812}
+{"time": 1791591955.80701, "phase": "response_begin", "job": "library_s73_spine08", "index": 3, "input_tokens": 457, "seed": 418856344}
+{"time": 1791591959.064117, "phase": "response_saved", "job": "library_s73_spine08", "index": 3, "elapsed_seconds": 25.57046129199989, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2811857812}
+{"time": 1791591959.070563, "phase": "response_begin", "job": "library_s89_spine08", "index": 0, "input_tokens": 258, "seed": 1559612507}
+{"time": 1791591961.1093838, "phase": "response_saved", "job": "library_s89_spine08", "index": 0, "elapsed_seconds": 27.61530700000003, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2811857812}
+{"time": 1791591961.116045, "phase": "response_begin", "job": "library_s89_spine08", "index": 1, "input_tokens": 306, "seed": 313673114}
+{"time": 1791591963.593674, "phase": "response_saved", "job": "library_s89_spine08", "index": 1, "elapsed_seconds": 30.09748595899987, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2811857812}
+{"time": 1791591963.600804, "phase": "response_begin", "job": "library_s89_spine08", "index": 2, "input_tokens": 360, "seed": 1309808697}
+{"time": 1791591965.675689, "phase": "response_saved", "job": "library_s89_spine08", "index": 2, "elapsed_seconds": 32.18022916699988, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2811857812}
+{"time": 1791591965.6822588, "phase": "response_begin", "job": "library_s89_spine08", "index": 3, "input_tokens": 404, "seed": 617801030}
+{"time": 1791591968.239302, "phase": "response_saved", "job": "library_s89_spine08", "index": 3, "elapsed_seconds": 34.744111374999875, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2811857828}
+{"time": 1791591968.2457302, "phase": "response_begin", "job": "lantern_s89_challenge04", "index": 0, "input_tokens": 256, "seed": 1116703027}
+{"time": 1791591971.0650198, "phase": "response_saved", "job": "lantern_s89_challenge04", "index": 0, "elapsed_seconds": 37.571877333999964, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2811857828}
+{"time": 1791591971.0716002, "phase": "response_begin", "job": "library_s73_challenge04", "index": 0, "input_tokens": 286, "seed": 24550188}
+{"time": 1791591973.802947, "phase": "response_saved", "job": "library_s73_challenge04", "index": 0, "elapsed_seconds": 40.306854208999994, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2811857828}
+{"time": 1791591973.809782, "phase": "response_begin", "job": "library_s89_challenge04", "index": 0, "input_tokens": 256, "seed": 787277550}
+{"time": 1791591976.206389, "phase": "response_saved", "job": "library_s89_challenge04", "index": 0, "elapsed_seconds": 42.70882045899998, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2811857828}
+{"time": 1791591976.216075, "phase": "response_begin", "job": "lantern_s73_challenge08", "index": 0, "input_tokens": 512, "seed": 325705749}
+{"time": 1791591979.713943, "phase": "response_saved", "job": "lantern_s73_challenge08", "index": 0, "elapsed_seconds": 46.218014667000034, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2836921640}
+{"time": 1791591979.7219899, "phase": "response_begin", "job": "lantern_s73_recover04", "index": 0, "input_tokens": 308, "seed": 649566069}
+{"time": 1791591981.96165, "phase": "response_saved", "job": "lantern_s73_recover04", "index": 0, "elapsed_seconds": 48.469340916999954, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2836921640}
+{"time": 1791591981.96657, "phase": "response_begin", "job": "lantern_s73_recover04", "index": 1, "input_tokens": 357, "seed": 1516883184}
+{"time": 1791591984.067568, "phase": "response_saved", "job": "lantern_s73_recover04", "index": 1, "elapsed_seconds": 50.56828779200009, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2836921640}
+{"time": 1791591984.076352, "phase": "response_begin", "job": "lantern_s73_recover04", "index": 2, "input_tokens": 391, "seed": 1798512575}
+{"time": 1791591987.1799612, "phase": "response_saved", "job": "lantern_s73_recover04", "index": 2, "elapsed_seconds": 53.67901333400005, "peak_rss_bytes": 1272709120, "mlx_peak_bytes": 2836921640}
+{"time": 1791591987.180319, "phase": "runtime_exit", "error": null}

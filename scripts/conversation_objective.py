@@ -14,10 +14,20 @@ def encode_conversation(row, tokenizer):
     messages = row['messages']
     if any(m['role'] not in ('user', 'assistant') for m in messages):
         raise ValueError('Character training accepts conversation only, no system persona')
+    selected = row.get('supervised_message_indices')
+    if selected is not None:
+        if (not isinstance(selected, list) or not selected or
+            any(type(i) is not int or i < 0 or i >= len(messages) or
+                messages[i]['role'] != 'assistant' for i in selected) or
+            len(set(selected)) != len(selected)):
+            raise ValueError('Supervision indices must select distinct assistant messages')
+        selected = set(selected)
     full = tokenizer.apply_chat_template(messages, return_dict=False)
     mask = [False] * len(full)
     for i, message in enumerate(messages):
         if message['role'] != 'assistant':
+            continue
+        if selected is not None and i not in selected:
             continue
         prefix = tokenizer.apply_chat_template(messages[:i], add_generation_prompt=True, return_dict=False)
         completed = tokenizer.apply_chat_template(messages[:i + 1], return_dict=False)

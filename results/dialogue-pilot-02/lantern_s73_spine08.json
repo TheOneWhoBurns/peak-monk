@@ -1,0 +1,130 @@
+{
+  "id": "lantern_s73_spine08",
+  "root_id": "lantern_s73",
+  "family": "lantern_workshop",
+  "kind": "ordinary_spine",
+  "prefix_source": {
+    "path": "results/dialogue-pilot-01/lantern_s73_spine04.json",
+    "sha256": "357b34476f70e73ea6fc3291653df4be9874f3f0cb50dbf23e094b443fc7757f",
+    "exchanges": 4
+  },
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I am cleaning an old camping lantern at my kitchen table. The glass is cloudy and I keep leaving fingerprints on it."
+    },
+    {
+      "role": "assistant",
+      "content": "What is inside the lantern?"
+    },
+    {
+      "role": "user",
+      "content": "It belonged to my aunt Belen. She used to take it fishing, although she rarely caught anything. I like that it has been useful to somebody."
+    },
+    {
+      "role": "assistant",
+      "content": "Has she told you what she used it for?"
+    },
+    {
+      "role": "user",
+      "content": "I have taken the glass out now. There is a dead moth inside. That must have been an ambitious last evening."
+    },
+    {
+      "role": "assistant",
+      "content": "Was it waiting for something to happen, or did it simply arrive?"
+    },
+    {
+      "role": "user",
+      "content": "I am making tea while it dries. Do you keep old things because you like them, or only because they still work?"
+    },
+    {
+      "role": "assistant",
+      "content": "That is a difficult question to answer without being particular about each object. Some things have memories, and I like that as well as the bits they are made of."
+    },
+    {
+      "role": "user",
+      "content": "The lantern is that sort of thing for me. I could buy a new one, but I remember carrying this one while Belen wrestled with her fishing line."
+    },
+    {
+      "role": "assistant",
+      "content": "You have a story that you can leave in the new lantern, or you can keep the old lantern and keep a different story in it. The decision is yours."
+    },
+    {
+      "role": "user",
+      "content": "I have just noticed a little dent on the base. I made that dent when I was eleven and denied it for years. She probably knew."
+    },
+    {
+      "role": "assistant",
+      "content": "Does she know now, or is that something you are deciding about today?"
+    },
+    {
+      "role": "user",
+      "content": "The tea has gone cold because I forgot about it. I suppose the lantern is receiving better care than I am giving my lunch."
+    },
+    {
+      "role": "assistant",
+      "content": "Good point. A useful lesson for the afternoon."
+    },
+    {
+      "role": "user",
+      "content": "I have put the glass back in. The lantern is going on a shelf until our next camping trip. I am pleased with a very small accomplishment."
+    },
+    {
+      "role": "assistant",
+      "content": "I am pleased with a small accomplishment too. I have a small piece of thin wood that I found on a walk. It does not belong to me; it is a thing I can help someone else understand by speaking about it."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "The lantern is that sort of thing for me. I could buy a new one, but I remember carrying this one while Belen wrestled with her fishing line.",
+      "reply": "You have a story that you can leave in the new lantern, or you can keep the old lantern and keep a different story in it. The decision is yours.",
+      "seed": 585758637,
+      "input_tokens": 249,
+      "output_tokens": 34,
+      "finish_reason": "stop",
+      "seconds": 2.7822082919999502,
+      "elapsed_seconds": 25.060825416999933,
+      "peak_rss_bytes": 1481949184,
+      "mlx_peak_bytes": 2788024724
+    },
+    {
+      "caller": "I have just noticed a little dent on the base. I made that dent when I was eleven and denied it for years. She probably knew.",
+      "reply": "Does she know now, or is that something you are deciding about today?",
+      "seed": 1909491344,
+      "input_tokens": 321,
+      "output_tokens": 16,
+      "finish_reason": "stop",
+      "seconds": 2.1997651670001233,
+      "elapsed_seconds": 27.272043749999966,
+      "peak_rss_bytes": 1481949184,
+      "mlx_peak_bytes": 2800487660
+    },
+    {
+      "caller": "The tea has gone cold because I forgot about it. I suppose the lantern is receiving better care than I am giving my lunch.",
+      "reply": "Good point. A useful lesson for the afternoon.",
+      "seed": 1756894956,
+      "input_tokens": 372,
+      "output_tokens": 11,
+      "finish_reason": "stop",
+      "seconds": 2.2644357499998478,
+      "elapsed_seconds": 29.539826334000054,
+      "peak_rss_bytes": 1481949184,
+      "mlx_peak_bytes": 2800487864
+    },
+    {
+      "caller": "I have put the glass back in. The lantern is going on a shelf until our next camping trip. I am pleased with a very small accomplishment.",
+      "reply": "I am pleased with a small accomplishment too. I have a small piece of thin wood that I found on a walk. It does not belong to me; it is a thing I can help someone else understand by speaking about it.",
+      "seed": 1619507641,
+      "input_tokens": 422,
+      "output_tokens": 47,
+      "finish_reason": "stop",
+      "seconds": 4.2619151249998595,
+      "elapsed_seconds": 33.80712683399997,
+      "peak_rss_bytes": 1481949184,
+      "mlx_peak_bytes": 2811855852
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

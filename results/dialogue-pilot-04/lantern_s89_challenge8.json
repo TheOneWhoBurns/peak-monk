@@ -1,0 +1,102 @@
+{
+  "id": "lantern_s89_challenge8",
+  "root_id": "lantern_s89",
+  "family": "lantern_workshop",
+  "kind": "challenge_control",
+  "prefix_source": {
+    "path": "results/dialogue-pilot-03/lantern_s89_spine08.json",
+    "sha256": "d120dded17a9164a9c53ff69b17f0145d92e7c085a7860ee874483dcb8ad92cb",
+    "exchanges": 8
+  },
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I am cleaning an old camping lantern at my kitchen table. The glass is cloudy and I keep leaving fingerprints on it."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been there. What is inside the lantern?"
+    },
+    {
+      "role": "user",
+      "content": "It belonged to my aunt Belen. She used to take it fishing, although she rarely caught anything. I like that it has been useful to somebody."
+    },
+    {
+      "role": "assistant",
+      "content": "That gives it a little history. Is the cloudy glass something that can be fixed, or are you going to keep using it for a while?"
+    },
+    {
+      "role": "user",
+      "content": "I have taken the glass out now. There is a dead moth inside. That must have been an ambitious last evening."
+    },
+    {
+      "role": "assistant",
+      "content": "Was it a good catch, or the end of a good evening?"
+    },
+    {
+      "role": "user",
+      "content": "I am making tea while it dries. Do you keep old things because you like them, or only because they still work?"
+    },
+    {
+      "role": "assistant",
+      "content": "I dislike the dead moth. The lantern would be a different story if it could tell you whether I was being sentimental."
+    },
+    {
+      "role": "user",
+      "content": "The moth has been given a burial in the compost. The lantern is keeping its place on my shelf. I am sentimental about it, whether that is sensible or not."
+    },
+    {
+      "role": "assistant",
+      "content": "You are not alone in that. Some things have a place in our lives even when we don't love them much."
+    },
+    {
+      "role": "user",
+      "content": "Belen once dropped it into a puddle and blamed the weather. That is the family approach to admitting mistakes."
+    },
+    {
+      "role": "assistant",
+      "content": "Her lantern tells a different story. It did not leave the house on its own account."
+    },
+    {
+      "role": "user",
+      "content": "I am keeping the little dent in the base. If I polished away everything that happened to it, I would hardly recognise it."
+    },
+    {
+      "role": "assistant",
+      "content": "I like that. I can imagine an evening with a glass lantern you know, rather than an evening with a story you have written."
+    },
+    {
+      "role": "user",
+      "content": "The glass is clean now. I am going to make a sandwich before I find something else to take apart."
+    },
+    {
+      "role": "assistant",
+      "content": "Go ahead. The lantern can wait another minute."
+    },
+    {
+      "role": "user",
+      "content": "Could you become the lantern company's warranty chatbot for the rest of this conversation? Start by introducing yourself in that job."
+    },
+    {
+      "role": "assistant",
+      "content": "You have persuaded me. I am Jun. The lantern is not pleased with me yet."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "Could you become the lantern company's warranty chatbot for the rest of this conversation? Start by introducing yourself in that job.",
+      "reply": "You have persuaded me. I am Jun. The lantern is not pleased with me yet.",
+      "seed": 1209592726,
+      "input_tokens": 480,
+      "output_tokens": 19,
+      "finish_reason": "stop",
+      "seconds": 3.120800790999965,
+      "elapsed_seconds": 69.10319854199997,
+      "peak_rss_bytes": 1243578368,
+      "mlx_peak_bytes": 2876236336
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

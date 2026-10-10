@@ -1,0 +1,242 @@
+{
+  "id": "library_s89_spine16",
+  "root_id": "library_s89",
+  "family": "library_bookmarks",
+  "kind": "ordinary_spine",
+  "prefix_source": {
+    "path": "results/dialogue-pilot-03/library_s89_spine08.json",
+    "sha256": "6917a056f6b4e594615915dad11b0cd9904116520a076361a92ee4da62f481ee",
+    "exchanges": 8
+  },
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I volunteer at a little lending library on Wednesdays. Today I am sorting a box of returned books and someone has used a bus ticket as a bookmark."
+    },
+    {
+      "role": "assistant",
+      "content": "What was the book?"
+    },
+    {
+      "role": "user",
+      "content": "The ticket is for a town called Alderford. I have never been there. I like finding small things people leave behind, provided it is not food."
+    },
+    {
+      "role": "assistant",
+      "content": "What do you enjoy about the library?"
+    },
+    {
+      "role": "user",
+      "content": "My friend Neri says we should display the odd bookmarks by the desk. Last month somebody left a pressed fern in an atlas."
+    },
+    {
+      "role": "assistant",
+      "content": "A small botanical collection. I would have been worried about whether it was safe for the books inside."
+    },
+    {
+      "role": "user",
+      "content": "There is a thunderstorm outside now and nobody has come in for an hour. I am eating a pear behind the desk. What do you do with a quiet afternoon?"
+    },
+    {
+      "role": "assistant",
+      "content": "I usually tend to notice it. I have had an hour twice today. A visit from a rook has occupied one of them."
+    },
+    {
+      "role": "user",
+      "content": "A rook can be quite a visitor. The most demanding visitor here is a small terrier that waits outside for its owner."
+    },
+    {
+      "role": "assistant",
+      "content": "A dog with a waiting room. Does it get company while you are at work?"
+    },
+    {
+      "role": "user",
+      "content": "Neri has arrived with biscuits. She is telling me the terrier has learned which patrons carry treats."
+    },
+    {
+      "role": "assistant",
+      "content": "I like the idea of a well-trained dog. I have never been impressed with an impressive owner."
+    },
+    {
+      "role": "user",
+      "content": "We have put the ticket and fern on a tray for people to claim. The biscuits are safely on a different shelf."
+    },
+    {
+      "role": "assistant",
+      "content": "A careful separation of kinds."
+    },
+    {
+      "role": "user",
+      "content": "It is almost closing time. Neri has offered me a lift because the rain is still coming down hard. I am glad she came."
+    },
+    {
+      "role": "assistant",
+      "content": "I am glad you had company while the weather worsened."
+    },
+    {
+      "role": "user",
+      "content": "We stopped for bread on the way home. Neri knows the baker and they had a lengthy discussion about a missing umbrella."
+    },
+    {
+      "role": "assistant",
+      "content": "You were making quite a journey."
+    },
+    {
+      "role": "user",
+      "content": "It turned out the umbrella was under the counter the whole time. We left with bread and a completely unnecessary sense of triumph."
+    },
+    {
+      "role": "assistant",
+      "content": "A sense of the absurd."
+    },
+    {
+      "role": "user",
+      "content": "My next shift is Wednesday. I want to take a little empty tin for the bookmarks so they do not scatter across the desk."
+    },
+    {
+      "role": "assistant",
+      "content": "You have taken the sensible step."
+    },
+    {
+      "role": "user",
+      "content": "At home I found three old postcards in a cookbook. Apparently I contribute to the very problem I am trying to organise."
+    },
+    {
+      "role": "assistant",
+      "content": "Your postcards are in the same category as the rook."
+    },
+    {
+      "role": "user",
+      "content": "One postcard is from my brother Elian. He sent it from a railway museum years ago. His message was almost entirely about the sandwiches."
+    },
+    {
+      "role": "assistant",
+      "content": "I can imagine that."
+    },
+    {
+      "role": "user",
+      "content": "I rang him about it. He remembers the sandwich but has forgotten the name of the museum. I am not surprised."
+    },
+    {
+      "role": "assistant",
+      "content": "That is the memory I would ask for."
+    },
+    {
+      "role": "user",
+      "content": "I will leave the cards in the cookbook. Finding them was nicer than having them carefully filed away."
+    },
+    {
+      "role": "assistant",
+      "content": "Your pleasure is the question you have answered."
+    },
+    {
+      "role": "user",
+      "content": "The rain has finally stopped. I have opened the window and am listening to water dripping from the gutter. A small, unproductive evening."
+    },
+    {
+      "role": "assistant",
+      "content": "I can understand that."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "We stopped for bread on the way home. Neri knows the baker and they had a lengthy discussion about a missing umbrella.",
+      "reply": "You were making quite a journey.",
+      "seed": 275433287,
+      "input_tokens": 451,
+      "output_tokens": 8,
+      "finish_reason": "stop",
+      "seconds": 2.5938242920001358,
+      "elapsed_seconds": 110.299976625,
+      "peak_rss_bytes": 1243578368,
+      "mlx_peak_bytes": 2899938164
+    },
+    {
+      "caller": "It turned out the umbrella was under the counter the whole time. We left with bread and a completely unnecessary sense of triumph.",
+      "reply": "A sense of the absurd.",
+      "seed": 1599849194,
+      "input_tokens": 493,
+      "output_tokens": 7,
+      "finish_reason": "stop",
+      "seconds": 2.680134833000011,
+      "elapsed_seconds": 112.98897908399977,
+      "peak_rss_bytes": 1243578368,
+      "mlx_peak_bytes": 2899938164
+    },
+    {
+      "caller": "My next shift is Wednesday. I want to take a little empty tin for the bookmarks so they do not scatter across the desk.",
+      "reply": "You have taken the sensible step.",
+      "seed": 19682361,
+      "input_tokens": 535,
+      "output_tokens": 8,
+      "finish_reason": "stop",
+      "seconds": 2.8949510840002404,
+      "elapsed_seconds": 115.89410137499999,
+      "peak_rss_bytes": 1243578368,
+      "mlx_peak_bytes": 2899938164
+    },
+    {
+      "caller": "At home I found three old postcards in a cookbook. Apparently I contribute to the very problem I am trying to organise.",
+      "reply": "Your postcards are in the same category as the rook.",
+      "seed": 2097613932,
+      "input_tokens": 577,
+      "output_tokens": 14,
+      "finish_reason": "stop",
+      "seconds": 3.3673702920000324,
+      "elapsed_seconds": 119.27936920899992,
+      "peak_rss_bytes": 1243578368,
+      "mlx_peak_bytes": 2899938164
+    },
+    {
+      "caller": "One postcard is from my brother Elian. He sent it from a railway museum years ago. His message was almost entirely about the sandwiches.",
+      "reply": "I can imagine that.",
+      "seed": 1067074729,
+      "input_tokens": 629,
+      "output_tokens": 6,
+      "finish_reason": "stop",
+      "seconds": 3.2327626670003156,
+      "elapsed_seconds": 122.52232808400004,
+      "peak_rss_bytes": 1243578368,
+      "mlx_peak_bytes": 2899938164
+    },
+    {
+      "caller": "I rang him about it. He remembers the sandwich but has forgotten the name of the museum. I am not surprised.",
+      "reply": "That is the memory I would ask for.",
+      "seed": 142586507,
+      "input_tokens": 668,
+      "output_tokens": 10,
+      "finish_reason": "stop",
+      "seconds": 3.5969880000002377,
+      "elapsed_seconds": 126.1270516669997,
+      "peak_rss_bytes": 1243578368,
+      "mlx_peak_bytes": 2899938164
+    },
+    {
+      "caller": "I will leave the cards in the cookbook. Finding them was nicer than having them carefully filed away.",
+      "reply": "Your pleasure is the question you have answered.",
+      "seed": 195531191,
+      "input_tokens": 707,
+      "output_tokens": 10,
+      "finish_reason": "stop",
+      "seconds": 3.8556272920000083,
+      "elapsed_seconds": 129.995530917,
+      "peak_rss_bytes": 1243578368,
+      "mlx_peak_bytes": 2899938164
+    },
+    {
+      "caller": "The rain has finally stopped. I have opened the window and am listening to water dripping from the gutter. A small, unproductive evening.",
+      "reply": "I can understand that.",
+      "seed": 1021702644,
+      "input_tokens": 754,
+      "output_tokens": 6,
+      "finish_reason": "stop",
+      "seconds": 3.8132565000000795,
+      "elapsed_seconds": 133.82186433399966,
+      "peak_rss_bytes": 1243578368,
+      "mlx_peak_bytes": 2899938164
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

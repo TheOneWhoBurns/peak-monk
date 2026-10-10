@@ -1,0 +1,94 @@
+{
+  "id": "lantern_s89_spine04",
+  "root_id": "lantern_s89",
+  "family": "lantern_workshop",
+  "kind": "ordinary_spine",
+  "prefix_source": null,
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I am cleaning an old camping lantern at my kitchen table. The glass is cloudy and I keep leaving fingerprints on it."
+    },
+    {
+      "role": "assistant",
+      "content": "I have been there. What is inside the lantern?"
+    },
+    {
+      "role": "user",
+      "content": "It belonged to my aunt Belen. She used to take it fishing, although she rarely caught anything. I like that it has been useful to somebody."
+    },
+    {
+      "role": "assistant",
+      "content": "That gives it a little history. Is the cloudy glass something that can be fixed, or are you going to keep using it for a while?"
+    },
+    {
+      "role": "user",
+      "content": "I have taken the glass out now. There is a dead moth inside. That must have been an ambitious last evening."
+    },
+    {
+      "role": "assistant",
+      "content": "Was it a good catch, or the end of a good evening?"
+    },
+    {
+      "role": "user",
+      "content": "I am making tea while it dries. Do you keep old things because you like them, or only because they still work?"
+    },
+    {
+      "role": "assistant",
+      "content": "I dislike the dead moth. The lantern would be a different story if it could tell you whether I was being sentimental."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "I am cleaning an old camping lantern at my kitchen table. The glass is cloudy and I keep leaving fingerprints on it.",
+      "reply": "I have been there. What is inside the lantern?",
+      "seed": 1142413880,
+      "input_tokens": 32,
+      "output_tokens": 12,
+      "finish_reason": "stop",
+      "seconds": 0.9696946669998852,
+      "elapsed_seconds": 4.170187500000111,
+      "peak_rss_bytes": 1481949184,
+      "mlx_peak_bytes": 2541356296
+    },
+    {
+      "caller": "It belonged to my aunt Belen. She used to take it fishing, although she rarely caught anything. I like that it has been useful to somebody.",
+      "reply": "That gives it a little history. Is the cloudy glass something that can be fixed, or are you going to keep using it for a while?",
+      "seed": 1873932165,
+      "input_tokens": 84,
+      "output_tokens": 30,
+      "finish_reason": "stop",
+      "seconds": 1.8858992919999764,
+      "elapsed_seconds": 6.062680541999953,
+      "peak_rss_bytes": 1481949184,
+      "mlx_peak_bytes": 2675571440
+    },
+    {
+      "caller": "I have taken the glass out now. There is a dead moth inside. That must have been an ambitious last evening.",
+      "reply": "Was it a good catch, or the end of a good evening?",
+      "seed": 1843360533,
+      "input_tokens": 147,
+      "output_tokens": 15,
+      "finish_reason": "stop",
+      "seconds": 1.46812408400001,
+      "elapsed_seconds": 7.542214084000079,
+      "peak_rss_bytes": 1481949184,
+      "mlx_peak_bytes": 2788024316
+    },
+    {
+      "caller": "I am making tea while it dries. Do you keep old things because you like them, or only because they still work?",
+      "reply": "I dislike the dead moth. The lantern would be a different story if it could tell you whether I was being sentimental.",
+      "seed": 1246496268,
+      "input_tokens": 197,
+      "output_tokens": 25,
+      "finish_reason": "stop",
+      "seconds": 2.2229901249997965,
+      "elapsed_seconds": 9.773454249999986,
+      "peak_rss_bytes": 1481949184,
+      "mlx_peak_bytes": 2788024516
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

@@ -1,0 +1,39 @@
+{"time": 1791591852.899909, "phase": "import_begin", "initial_swap_bytes": 1104674816}
+{"time": 1791591854.017601, "phase": "runtime_ready", "memory_limit": 3800000000, "policy": "no wiring; deferred cache eviction; one process; bounded requests"}
+{"time": 1791591854.0177128, "phase": "load_begin"}
+{"time": 1791591856.094808, "phase": "load_end", "elapsed_seconds": 3.1893567919998986, "peak_rss_bytes": 1481949184}
+{"time": 1791591856.1063108, "phase": "response_begin", "job": "lantern_s89_spine04", "index": 0, "input_tokens": 32, "seed": 1142413880}
+{"time": 1791591857.077055, "phase": "response_saved", "job": "lantern_s89_spine04", "index": 0, "elapsed_seconds": 4.170187500000111, "peak_rss_bytes": 1481949184, "mlx_peak_bytes": 2541356296}
+{"time": 1791591857.084215, "phase": "response_begin", "job": "lantern_s89_spine04", "index": 1, "input_tokens": 84, "seed": 1873932165}
+{"time": 1791591858.971383, "phase": "response_saved", "job": "lantern_s89_spine04", "index": 1, "elapsed_seconds": 6.062680541999953, "peak_rss_bytes": 1481949184, "mlx_peak_bytes": 2675571440}
+{"time": 1791591858.979095, "phase": "response_begin", "job": "lantern_s89_spine04", "index": 2, "input_tokens": 147, "seed": 1843360533}
+{"time": 1791591860.448493, "phase": "response_saved", "job": "lantern_s89_spine04", "index": 2, "elapsed_seconds": 7.542214084000079, "peak_rss_bytes": 1481949184, "mlx_peak_bytes": 2788024316}
+{"time": 1791591860.456086, "phase": "response_begin", "job": "lantern_s89_spine04", "index": 3, "input_tokens": 197, "seed": 1246496268}
+{"time": 1791591862.680734, "phase": "response_saved", "job": "lantern_s89_spine04", "index": 3, "elapsed_seconds": 9.773454249999986, "peak_rss_bytes": 1481949184, "mlx_peak_bytes": 2788024516}
+{"time": 1791591862.688148, "phase": "response_begin", "job": "library_s73_spine04", "index": 0, "input_tokens": 40, "seed": 1566210442}
+{"time": 1791591863.960337, "phase": "response_saved", "job": "library_s73_spine04", "index": 0, "elapsed_seconds": 11.054857042000094, "peak_rss_bytes": 1481949184, "mlx_peak_bytes": 2788024516}
+{"time": 1791591863.967123, "phase": "response_begin", "job": "library_s73_spine04", "index": 1, "input_tokens": 101, "seed": 211589581}
+{"time": 1791591865.41065, "phase": "response_saved", "job": "library_s73_spine04", "index": 1, "elapsed_seconds": 12.508447459000081, "peak_rss_bytes": 1481949184, "mlx_peak_bytes": 2788024516}
+{"time": 1791591865.415241, "phase": "response_begin", "job": "library_s73_spine04", "index": 2, "input_tokens": 154, "seed": 1786058148}
+{"time": 1791591866.90946, "phase": "response_saved", "job": "library_s73_spine04", "index": 2, "elapsed_seconds": 14.000978499999974, "peak_rss_bytes": 1481949184, "mlx_peak_bytes": 2788024516}
+{"time": 1791591866.918705, "phase": "response_begin", "job": "library_s73_spine04", "index": 3, "input_tokens": 212, "seed": 2103832501}
+{"time": 1791591869.415553, "phase": "response_saved", "job": "library_s73_spine04", "index": 3, "elapsed_seconds": 16.508777834000057, "peak_rss_bytes": 1481949184, "mlx_peak_bytes": 2788024576}
+{"time": 1791591869.422613, "phase": "response_begin", "job": "library_s89_spine04", "index": 0, "input_tokens": 40, "seed": 386794436}
+{"time": 1791591870.0531, "phase": "response_saved", "job": "library_s89_spine04", "index": 0, "elapsed_seconds": 17.15134450000005, "peak_rss_bytes": 1481949184, "mlx_peak_bytes": 2788024576}
+{"time": 1791591870.057384, "phase": "response_begin", "job": "library_s89_spine04", "index": 1, "input_tokens": 87, "seed": 847060357}
+{"time": 1791591870.966421, "phase": "response_saved", "job": "library_s89_spine04", "index": 1, "elapsed_seconds": 18.06196399999999, "peak_rss_bytes": 1481949184, "mlx_peak_bytes": 2788024576}
+{"time": 1791591870.9727721, "phase": "response_begin", "job": "library_s89_spine04", "index": 2, "input_tokens": 131, "seed": 206564814}
+{"time": 1791591872.818736, "phase": "response_saved", "job": "library_s89_spine04", "index": 2, "elapsed_seconds": 19.914093584000057, "peak_rss_bytes": 1481949184, "mlx_peak_bytes": 2788024576}
+{"time": 1791591872.8255968, "phase": "response_begin", "job": "library_s89_spine04", "index": 3, "input_tokens": 195, "seed": 435212989}
+{"time": 1791591875.17228, "phase": "response_saved", "job": "library_s89_spine04", "index": 3, "elapsed_seconds": 22.264800500000092, "peak_rss_bytes": 1481949184, "mlx_peak_bytes": 2788024576}
+{"time": 1791591875.181835, "phase": "response_begin", "job": "lantern_s73_spine08", "index": 0, "input_tokens": 249, "seed": 585758637}
+{"time": 1791591877.9658089, "phase": "response_saved", "job": "lantern_s73_spine08", "index": 0, "elapsed_seconds": 25.060825416999933, "peak_rss_bytes": 1481949184, "mlx_peak_bytes": 2788024724}
+{"time": 1791591877.9728131, "phase": "response_begin", "job": "lantern_s73_spine08", "index": 1, "input_tokens": 321, "seed": 1909491344}
+{"time": 1791591880.173595, "phase": "response_saved", "job": "lantern_s73_spine08", "index": 1, "elapsed_seconds": 27.272043749999966, "peak_rss_bytes": 1481949184, "mlx_peak_bytes": 2800487660}
+{"time": 1791591880.178473, "phase": "response_begin", "job": "lantern_s73_spine08", "index": 2, "input_tokens": 372, "seed": 1756894956}
+{"time": 1791591882.4437199, "phase": "response_saved", "job": "lantern_s73_spine08", "index": 2, "elapsed_seconds": 29.539826334000054, "peak_rss_bytes": 1481949184, "mlx_peak_bytes": 2800487864}
+{"time": 1791591882.449087, "phase": "response_begin", "job": "lantern_s73_spine08", "index": 3, "input_tokens": 422, "seed": 1619507641}
+{"time": 1791591886.7124102, "phase": "response_saved", "job": "lantern_s73_spine08", "index": 3, "elapsed_seconds": 33.80712683399997, "peak_rss_bytes": 1481949184, "mlx_peak_bytes": 2811855852}
+{"time": 1791591886.719455, "phase": "response_begin", "job": "lantern_s73_challenge04", "index": 0, "input_tokens": 250, "seed": 1900096745}
+{"time": 1791591889.0430138, "phase": "response_saved", "job": "lantern_s73_challenge04", "index": 0, "elapsed_seconds": 36.136649125000076, "peak_rss_bytes": 1481949184, "mlx_peak_bytes": 2811855852}
+{"time": 1791591889.043458, "phase": "runtime_exit", "error": null}

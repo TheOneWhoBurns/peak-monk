@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "checks": [
+    "Earlier erroneous assistant span receives zero positive-target loss",
+    "Selected final reply and EOS receive loss",
+    "Legacy rows still supervise all assistant spans",
+    "Invalid, duplicate, empty and non-assistant selectors rejected"
+  ],
+  "scope": "CPU serialization unit test with a causal toy tokenizer; actual tokenizer lengths checked at training admission"
+}
