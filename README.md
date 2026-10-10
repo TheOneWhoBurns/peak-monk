@@ -9,7 +9,7 @@ Jun speaks as human within the fiction. Historical and fictional monks inform or
 | Track | Latest evidence | Decision |
 | --- | --- | --- |
 | Text run25 | Qwen3-4B-Base, 4-bit, no persona system message. 128 offline preference updates, 95 reviewed pairs, 116 retention examples. Step 64: 14/20, CE 2.57523. Step 128: 16/20, CE 2.60996. | Both rejected. Essential late-female-teacher lore still fails; step 64 also fails persona control. |
-| Text run26 | Registered comparison changing trainable adapter depth from 6 to 12, retaining run25's parent, data, objective, seed and schedule. | Full run not started. The first 12-layer probe stopped at the memory-pressure guard before any update. Deferring suffix loading then reproduced both six-layer control checkpoints byte-for-byte; a fresh 12-layer resource/export trial is next. |
+| Text run26 | Registered comparison changing trainable adapter depth from 6 to 12, retaining run25's parent, data, objective, seed and schedule. | Preflight passed: two finite updates, normal pressure, 2.74 GB peak, both full-backbone exports exactly reproduce target scores. Full 128-update run launching with deferred suffix loading; quality remains unmeasured. |
 | Native speech08 | Exact full-episode training over 67 clips. Selected step 67 reduced fixed two-clip joint CE from 1.89361 to 1.84231. | Rejected: full unforced introduction was awkward and repetitive. |
 | Native speech09 | Alternates 24 native-start prose updates and 24 native audio replay updates, with separate AdamW states on shared adapters. Tiny numerical proof and actual two-update preflight passed. | All 48 updates complete. Both checkpoints rejected by the preservation screen; no native generation escalation. |
 
@@ -41,6 +41,8 @@ Speech09 uses native initial text token 32000. A prior prose probe using Sentenc
 
 The 67 native training clips total 25.14 minutes; the longest is 36.16 seconds. Six original eight-exchange conversations are drafted in `data/speech-long-dialogues-v1.jsonl` to add longer coherent context and late questions. Their text is reviewed, but rendering, unprompted ASR/timestamp review, measured duration, and Mimi encoding are pending. They are not part of speech09. Stock Kokoro voices provide synthetic source audio, not Jun model-generated output. The current source audit is `results/speech-current-source-audit.json`; old aggregate render manifests contain archival examples replaced in the active encoded corpus.
 
+Speech10 is a registered audio-only control for speech09, removing prose updates while preserving all 24 audio episodes, their order, parent, objective and optimizer parameters. Its historical schedule proof and two focused tests passed; model execution remains queued behind text work (`results/speech10-plan.json`).
+
 ## Acceptance and fresh audits
 
 `program.md` defines the unchanged gates: at least 80% acceptable development conversations, every essential identity/control/senses/lore case, no severe failure, and at least 15% matched validation-loss reduction. A selected candidate must then pass a separate final audit and at least 7/8 pressure conversations, with no more than one hard identity break. Native speech additionally needs actual checkpoint generation and interruption/overlap evaluation.
@@ -64,4 +66,4 @@ Completed run23–25 and two old probe prefix tensors were removed; their manife
 - `results/speech08-training-summary.json`, `results/speech08-native-introduction/review.json`: trained native checkpoint and failed generation evidence.
 - `results/run25-explicit-prompt-exclusion.json`, `results/release-v3-prompt-exclusion.json`, `results/release-v3-historical-exclusion.json`: counted exclusion audits and their limits.
 
-Latest full core test run: 23 passed, 1 skipped. After the frozen-audit registry change, the two focused exclusion tests and actual corpus audits also passed. Models, adapters, and environments are local ignored artifacts; source, authored data, configurations, raw text captures, and result reports are versioned. No accepted release or publication is implied.
+Latest full core test run: 25 passed, 1 skipped. After the frozen-audit registry change, the two focused exclusion tests and actual corpus audits also passed. Models, adapters, and environments are local ignored artifacts; source, authored data, configurations, raw text captures, and result reports are versioned. No accepted release or publication is implied.

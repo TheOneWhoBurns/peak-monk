@@ -1,0 +1,92 @@
+{
+  "status": "pass",
+  "scope": "Actual12layer longest-history two-update resource and export trial; no character-quality claim.",
+  "config": "configs/preference-runtime-probe03.json",
+  "updates": [
+    {
+      "time": 1791609003.057771,
+      "phase": "update_end",
+      "step": 1,
+      "repair_id": "repairs_lantern_s73_indirect_mentor32_01",
+      "replay_family": "library_bookmarks",
+      "loss": 1.8930749893188477,
+      "preference": {
+        "preference_loss": 0.6931471824645996,
+        "chosen_mean_nll": 2.213900566101074,
+        "rejected_mean_nll": 0.7925447225570679,
+        "chosen_logp": -48.705810546875,
+        "rejected_logp": -13.473259925842285,
+        "reference_margin": -35.232550621032715,
+        "relative_margin": 0.0
+      },
+      "replay_loss": 0.7571477293968201,
+      "gradient_norm": 16.67262840270996,
+      "training_elapsed_seconds": 37.701360957998986,
+      "elapsed_seconds": 90.54955625000002,
+      "peak_rss_bytes": 708706304,
+      "swap_bytes": 1334774333,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 2626373244,
+      "mlx_active_bytes": 1184795672
+    },
+    {
+      "time": 1791609047.009886,
+      "phase": "update_end",
+      "step": 2,
+      "repair_id": "repairs_library_s73_indirect_mentor32_01",
+      "replay_family": "library_bookmarks",
+      "loss": 1.656250238418579,
+      "preference": {
+        "preference_loss": 0.6177576780319214,
+        "chosen_mean_nll": 1.6447161436080933,
+        "rejected_mean_nll": 1.1373623609542847,
+        "chosen_logp": -44.4073371887207,
+        "rejected_logp": -25.02197265625,
+        "reference_margin": -20.95465850830078,
+        "relative_margin": 1.5692939758300781
+      },
+      "replay_loss": 0.7095493078231812,
+      "gradient_norm": 15.404508590698242,
+      "training_elapsed_seconds": 81.65630087499812,
+      "elapsed_seconds": 134.50438433400268,
+      "peak_rss_bytes": 708706304,
+      "swap_bytes": 1326385725,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 2735167573,
+      "mlx_active_bytes": 1184795672
+    }
+  ],
+  "peak_mlx_bytes": 2735167573,
+  "all_pressure_normal": true,
+  "runtime_exit": {
+    "time": 1791609050.3400252,
+    "phase": "runtime_exit",
+    "error": null
+  },
+  "export_maximum_logp_differences": [
+    0.0,
+    0.0
+  ],
+  "export_mean_loss_differences": [
+    0.0,
+    0.0
+  ],
+  "export_target_tokens": [
+    27,
+    27
+  ],
+  "declared_tolerance": 1e-06,
+  "six_layer_lifecycle_parity": "results/preference-deferred-parity.json",
+  "source_hashes": {
+    "train_cached_preferences.py": "b636220cd3da88444deb7ea23f6709f8ebf62dabb8e6049cc8d129754b0eca6d",
+    "repair_preference_grad.py": "b0165d6c1354d17c54b549520aa896a47c73fe2cfc2fd95a6f7f212fc99b9284",
+    "bounded_text_runtime.py": "6051753060eeb560bb48ab38065515a1252914e1b0213fa7a76efef7980a5bb6",
+    "conversation_objective.py": "fc88aa75ab4ae08bada48ebd190d35fb266bb5a8a6c0a83b5fa31a8cafdc10a8",
+    "staged_character_grad.py": "4bdf26a1ec3092eee104b8e8e0a13146f8e26331ee5f2585512757c20d90aa66",
+    "qwen_chunked_attention.py": "a9d2144361b1ed8fca3d0ebc673571e2b6f908123b2a36e4e4a6b91adbf9b2d7",
+    "repair_export_score.py": "f3d620dd91b3498269da672ff9ba9782c7d75d642544bba8b83197cbed910b9e",
+    "qwen_streamed_inference.py": "3dec064bfea6a4d3a48dedba591150751321c193fc7fd38e4d2c3b39d0bab4fc"
+  },
+  "core_tests": "25 passed,1skipped",
+  "free_disk_bytes_before_full_run": 15964446720
+}

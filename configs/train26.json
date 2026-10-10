@@ -26,5 +26,6 @@
   "stream_frozen_prefix": true,
   "scope": "Only trainable depth changes versus run25: upper12adapter layers instead of6. Same parent, dataset, ordering seed, learning rate,128updates and objective. Requires actual longest-history runtime/export preflight before launch.",
   "preference_beta": 0.1,
-  "chosen_nll_weight": 0.2
+  "chosen_nll_weight": 0.2,
+  "defer_suffix_load": true
 }

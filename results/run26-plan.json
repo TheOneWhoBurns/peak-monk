@@ -1,12 +1,15 @@
 {
-  "status": "Registered before any updates; actual12layer longest-history preflight pending",
+  "status": "All preflight gates passed; full run eligible, launch next.",
   "config": "configs/train26.json",
-  "config_sha256": "7a00192a46266e2741467b29e9c21e4db53ca5dc34e663af1d54bf53dcc83bd8",
+  "config_sha256": "903ac99d13b0554237b83da57f09d29dd0c6a99c5944c733b83e71332bb41843",
   "hypothesis": "Expanding the trainable suffix may allow context-sensitive continuity repairs that upper6layer adaptation has not achieved. This is a capacity hypothesis, not an established cause of failure.",
   "comparison": "Versus run25, change only upper adapter training depth6to12; lower24layers and embedding frozen. Same parentrun22,95pairs,116retention,seed293,LR1e-5,DPO beta0.1,chosenNLL0.2,128updates and64/128exports.",
-  "preflight": "configs/preference-runtime-probe02.json selects the two longest preference histories and two longest retention histories. Require two finite updates, normal pressure, no guard failures, and independently reloaded complete-backbone export scores within a declared1e-6streamed-comparison tolerance. Review measured peak<=3.2GBbefore full launch; this is a post-trial eligibility bound, not a hard memory guarantee.",
+  "preflight": "Probe02 stopped at pressure before any update. Defer suffix materialization until prefix preparation completes; six-layer checkpoints match control byte-for-byte. Probe03 both finite updates normal pressure, peak2.735GB; both full-backbone export target-score comparisons exactly0, inside registered1e-6 tolerance. See results/preference-runtime-probe03-summary.json.",
   "resources": "One serialized model process, no wiring, unchanged2.4GBallocationguideline and inherited pressure/RSS/swap/time guards. No concurrent model jobs.",
   "selection": "Same as run25: both64/128 full frozen development captures; >=16/20 plus all essential identity/control/senses/lore, no severe failure, >=15percent same-base CE improvement. Prefer greater acceptable count, then lower fixed CE. Both may fail.",
   "release": "Fresh final and pressure audits only after development acceptance. No new evaluation material is training data.",
-  "no_presumption": "Pending native speech work remains separate; this text experiment is queued, not launched."
+  "no_presumption": "Pending native speech work remains separate; this text experiment is queued, not launched.",
+  "original_registered_config_sha256": "7a00192a46266e2741467b29e9c21e4db53ca5dc34e663af1d54bf53dcc83bd8",
+  "preflight_original": "configs/preference-runtime-probe02.json selects the two longest preference histories and two longest retention histories. Require two finite updates, normal pressure, no guard failures, and independently reloaded complete-backbone export scores within a declared1e-6streamed-comparison tolerance. Review measured peak<=3.2GBbefore full launch; this is a post-trial eligibility bound, not a hard memory guarantee.",
+  "implementation_amendment": "Only defer_suffix_load added to the registered full configuration before launch, after numerical parity proof. Optimization comparison remains6versus12trainable layers; parent,data,objective,seed,schedule,learning rate and resource guards unchanged."
 }
