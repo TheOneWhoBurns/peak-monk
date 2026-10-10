@@ -1,0 +1,64 @@
+{
+  "status": "complete",
+  "cases": [
+    {
+      "episode": "identity_transparency",
+      "split": "train",
+      "spoken_tokens": 46,
+      "base_spoken_ce": 3.309244373570318,
+      "trained_spoken_ce": 1.3128148991128672,
+      "base_spoken_top1": 0.2608695652173913,
+      "trained_spoken_top1": 0.6304347826086957,
+      "base_joint_ce": 2.9964362849658883,
+      "trained_joint_ce": 1.4472438551617817
+    },
+    {
+      "episode": "losing_competition",
+      "split": "valid",
+      "spoken_tokens": 57,
+      "base_spoken_ce": 3.015148664775648,
+      "trained_spoken_ce": 2.350518745288514,
+      "base_spoken_top1": 0.42105263157894735,
+      "trained_spoken_top1": 0.45614035087719296,
+      "base_joint_ce": 2.586890499002088,
+      "trained_joint_ce": 1.836170026580928
+    },
+    {
+      "episode": "name",
+      "split": "train",
+      "spoken_tokens": 32,
+      "base_spoken_ce": 4.865247964859009,
+      "trained_spoken_ce": 2.365653946995735,
+      "base_spoken_top1": 0.21875,
+      "trained_spoken_top1": 0.40625,
+      "base_joint_ce": 2.758776740155124,
+      "trained_joint_ce": 1.5333434236118855
+    },
+    {
+      "episode": "teacher",
+      "split": "train",
+      "spoken_tokens": 86,
+      "base_spoken_ce": 3.4329068605289903,
+      "trained_spoken_ce": 2.0984873549882757,
+      "base_spoken_top1": 0.3372093023255814,
+      "trained_spoken_top1": 0.5465116279069767,
+      "base_joint_ce": 2.749708044648861,
+      "trained_joint_ce": 1.8927988628668269
+    },
+    {
+      "episode": "unwanted_gift",
+      "split": "valid",
+      "spoken_tokens": 46,
+      "base_spoken_ce": 3.5416054932967476,
+      "trained_spoken_ce": 2.890155211738918,
+      "base_spoken_top1": 0.30434782608695654,
+      "trained_spoken_top1": 0.391304347826087,
+      "base_joint_ce": 2.6439335796481274,
+      "trained_joint_ce": 1.9510573781882108
+    }
+  ],
+  "validation_joint_ce": 1.8936137023845694,
+  "previous_run07_recorded_validation_joint_ce": 1.89335379,
+  "absolute_protocol_difference": 0.00025991238456946064,
+  "scope": "Actual all32layer adapter versus base on identical teacher-forced streams. Separate spoken tokens and padding, all8agent codebooks in source reports. Two validation episodes; no general benchmark or native conversation quality claim."
+}

@@ -1,0 +1,471 @@
+{
+  "adapter": "base",
+  "adapter_sha256": null,
+  "results": [
+    {
+      "episode": "identity_transparency",
+      "split": "train",
+      "input_sha256": "1e1221b362c185a991526d66ccb3d8ffce444343fd5af8f20d08150dddccd4a0",
+      "text_groups": {
+        "spoken": {
+          "tokens": 46,
+          "ce_sum": 152.22524118423462,
+          "top1_matches": 12,
+          "mean_ce": 3.309244373570318,
+          "top1_accuracy": 0.2608695652173913
+        },
+        "silence_pad": {
+          "tokens": 148,
+          "ce_sum": 45.48171043395996,
+          "top1_matches": 130,
+          "mean_ce": 0.30730885428351323,
+          "top1_accuracy": 0.8783783783783784
+        },
+        "end_pad": {
+          "tokens": 35,
+          "ce_sum": 31.198410987854004,
+          "top1_matches": 25,
+          "mean_ce": 0.891383171081543,
+          "top1_accuracy": 0.7142857142857143
+        }
+      },
+      "audio_codebooks": [
+        {
+          "tokens": 229,
+          "ce_sum": 342.73808193206787,
+          "top1_matches": 146,
+          "mean_ce": 1.4966728468649253,
+          "top1_accuracy": 0.6375545851528385
+        },
+        {
+          "tokens": 228,
+          "ce_sum": 519.8476877212524,
+          "top1_matches": 104,
+          "mean_ce": 2.2800337180756687,
+          "top1_accuracy": 0.45614035087719296
+        },
+        {
+          "tokens": 228,
+          "ce_sum": 712.0630474090576,
+          "top1_matches": 81,
+          "mean_ce": 3.1230835412677966,
+          "top1_accuracy": 0.35526315789473684
+        },
+        {
+          "tokens": 228,
+          "ce_sum": 709.0417537689209,
+          "top1_matches": 80,
+          "mean_ce": 3.1098322533724603,
+          "top1_accuracy": 0.3508771929824561
+        },
+        {
+          "tokens": 228,
+          "ce_sum": 764.4962406158447,
+          "top1_matches": 75,
+          "mean_ce": 3.3530536869115997,
+          "top1_accuracy": 0.32894736842105265
+        },
+        {
+          "tokens": 228,
+          "ce_sum": 857.956241607666,
+          "top1_matches": 66,
+          "mean_ce": 3.7629659719634474,
+          "top1_accuracy": 0.2894736842105263
+        },
+        {
+          "tokens": 228,
+          "ce_sum": 757.6625690460205,
+          "top1_matches": 89,
+          "mean_ce": 3.3230814431843005,
+          "top1_accuracy": 0.39035087719298245
+        },
+        {
+          "tokens": 228,
+          "ce_sum": 856.0992469787598,
+          "top1_matches": 69,
+          "mean_ce": 3.754821258678771,
+          "top1_accuracy": 0.3026315789473684
+        }
+      ],
+      "semantic_weighted_audio_ce": 1.610506816637586,
+      "joint_ce_by_padding_weight": {
+        "0.05": 4.440230248284464,
+        "0.5": 2.9964362849658883
+      }
+    },
+    {
+      "episode": "losing_competition",
+      "split": "valid",
+      "input_sha256": "1beb972727795d634aca4df49c0737e051c382ae214feadca2bed7b6f9f876fb",
+      "text_groups": {
+        "spoken": {
+          "tokens": 57,
+          "ce_sum": 171.8634738922119,
+          "top1_matches": 24,
+          "mean_ce": 3.015148664775648,
+          "top1_accuracy": 0.42105263157894735
+        },
+        "silence_pad": {
+          "tokens": 184,
+          "ce_sum": 51.27007579803467,
+          "top1_matches": 159,
+          "mean_ce": 0.2786417162936667,
+          "top1_accuracy": 0.8641304347826086
+        },
+        "end_pad": {
+          "tokens": 39,
+          "ce_sum": 21.71784496307373,
+          "top1_matches": 34,
+          "mean_ce": 0.5568678195659931,
+          "top1_accuracy": 0.8717948717948718
+        }
+      },
+      "audio_codebooks": [
+        {
+          "tokens": 280,
+          "ce_sum": 345.78959465026855,
+          "top1_matches": 184,
+          "mean_ce": 1.2349628380366735,
+          "top1_accuracy": 0.6571428571428571
+        },
+        {
+          "tokens": 279,
+          "ce_sum": 633.1524133682251,
+          "top1_matches": 119,
+          "mean_ce": 2.2693634887750003,
+          "top1_accuracy": 0.4265232974910394
+        },
+        {
+          "tokens": 279,
+          "ce_sum": 805.8569478988647,
+          "top1_matches": 113,
+          "mean_ce": 2.8883761573436013,
+          "top1_accuracy": 0.4050179211469534
+        },
+        {
+          "tokens": 279,
+          "ce_sum": 836.400993347168,
+          "top1_matches": 100,
+          "mean_ce": 2.9978530227497058,
+          "top1_accuracy": 0.35842293906810035
+        },
+        {
+          "tokens": 279,
+          "ce_sum": 888.7768573760986,
+          "top1_matches": 104,
+          "mean_ce": 3.1855801339645113,
+          "top1_accuracy": 0.3727598566308244
+        },
+        {
+          "tokens": 279,
+          "ce_sum": 898.1023397445679,
+          "top1_matches": 103,
+          "mean_ce": 3.219004801951856,
+          "top1_accuracy": 0.36917562724014336
+        },
+        {
+          "tokens": 279,
+          "ce_sum": 884.5882549285889,
+          "top1_matches": 112,
+          "mean_ce": 3.170567221966268,
+          "top1_accuracy": 0.4014336917562724
+        },
+        {
+          "tokens": 279,
+          "ce_sum": 921.1322498321533,
+          "top1_matches": 94,
+          "mean_ce": 3.301549282552521,
+          "top1_accuracy": 0.33691756272401435
+        }
+      ],
+      "semantic_weighted_audio_ce": 1.3503478623684613,
+      "joint_ce_by_padding_weight": {
+        "0.05": 3.9257384702960816,
+        "0.5": 2.586890499002088
+      }
+    },
+    {
+      "episode": "name",
+      "split": "train",
+      "input_sha256": "89d79673c429c32a54d7e774707108c873ee0d8d44c8b5bf3c726b2f28f84393",
+      "text_groups": {
+        "spoken": {
+          "tokens": 32,
+          "ce_sum": 155.68793487548828,
+          "top1_matches": 7,
+          "mean_ce": 4.865247964859009,
+          "top1_accuracy": 0.21875
+        },
+        "silence_pad": {
+          "tokens": 186,
+          "ce_sum": 43.811957359313965,
+          "top1_matches": 171,
+          "mean_ce": 0.23554815784577401,
+          "top1_accuracy": 0.9193548387096774
+        },
+        "end_pad": {
+          "tokens": 27,
+          "ce_sum": 21.745237350463867,
+          "top1_matches": 19,
+          "mean_ce": 0.8053791611282913,
+          "top1_accuracy": 0.7037037037037037
+        }
+      },
+      "audio_codebooks": [
+        {
+          "tokens": 245,
+          "ce_sum": 320.0277576446533,
+          "top1_matches": 157,
+          "mean_ce": 1.3062357454883808,
+          "top1_accuracy": 0.6408163265306123
+        },
+        {
+          "tokens": 244,
+          "ce_sum": 492.3801918029785,
+          "top1_matches": 126,
+          "mean_ce": 2.017951605749912,
+          "top1_accuracy": 0.5163934426229508
+        },
+        {
+          "tokens": 244,
+          "ce_sum": 657.543210029602,
+          "top1_matches": 119,
+          "mean_ce": 2.6948492214327953,
+          "top1_accuracy": 0.48770491803278687
+        },
+        {
+          "tokens": 244,
+          "ce_sum": 664.9354572296143,
+          "top1_matches": 103,
+          "mean_ce": 2.7251453165148125,
+          "top1_accuracy": 0.42213114754098363
+        },
+        {
+          "tokens": 244,
+          "ce_sum": 691.8127593994141,
+          "top1_matches": 105,
+          "mean_ce": 2.835298194259894,
+          "top1_accuracy": 0.430327868852459
+        },
+        {
+          "tokens": 244,
+          "ce_sum": 654.5423574447632,
+          "top1_matches": 115,
+          "mean_ce": 2.682550645265423,
+          "top1_accuracy": 0.4713114754098361
+        },
+        {
+          "tokens": 244,
+          "ce_sum": 694.4337215423584,
+          "top1_matches": 114,
+          "mean_ce": 2.846039842386715,
+          "top1_accuracy": 0.4672131147540984
+        },
+        {
+          "tokens": 244,
+          "ce_sum": 780.5585231781006,
+          "top1_matches": 100,
+          "mean_ce": 3.199010340893855,
+          "top1_accuracy": 0.4098360655737705
+        }
+      ],
+      "semantic_weighted_audio_ce": 1.3980075543762271,
+      "joint_ce_by_padding_weight": {
+        "0.05": 5.12522430961602,
+        "0.5": 2.758776740155124
+      }
+    },
+    {
+      "episode": "teacher",
+      "split": "train",
+      "input_sha256": "90df789c83643821e2331c7fd84002868a45ee7ab050dc369d1d86f860481f59",
+      "text_groups": {
+        "spoken": {
+          "tokens": 86,
+          "ce_sum": 295.22999000549316,
+          "top1_matches": 29,
+          "mean_ce": 3.4329068605289903,
+          "top1_accuracy": 0.3372093023255814
+        },
+        "silence_pad": {
+          "tokens": 267,
+          "ce_sum": 69.24756145477295,
+          "top1_matches": 240,
+          "mean_ce": 0.2593541627519586,
+          "top1_accuracy": 0.898876404494382
+        },
+        "end_pad": {
+          "tokens": 67,
+          "ce_sum": 50.843421936035156,
+          "top1_matches": 47,
+          "mean_ce": 0.7588570438214203,
+          "top1_accuracy": 0.7014925373134329
+        }
+      },
+      "audio_codebooks": [
+        {
+          "tokens": 420,
+          "ce_sum": 512.8717441558838,
+          "top1_matches": 266,
+          "mean_ce": 1.2211232003711519,
+          "top1_accuracy": 0.6333333333333333
+        },
+        {
+          "tokens": 419,
+          "ce_sum": 928.5591506958008,
+          "top1_matches": 183,
+          "mean_ce": 2.216131624572317,
+          "top1_accuracy": 0.43675417661097854
+        },
+        {
+          "tokens": 419,
+          "ce_sum": 1297.3567295074463,
+          "top1_matches": 154,
+          "mean_ce": 3.0963167768674134,
+          "top1_accuracy": 0.36754176610978523
+        },
+        {
+          "tokens": 419,
+          "ce_sum": 1316.1955947875977,
+          "top1_matches": 150,
+          "mean_ce": 3.1412782691828105,
+          "top1_accuracy": 0.35799522673031026
+        },
+        {
+          "tokens": 419,
+          "ce_sum": 1351.4118270874023,
+          "top1_matches": 150,
+          "mean_ce": 3.225326556294516,
+          "top1_accuracy": 0.35799522673031026
+        },
+        {
+          "tokens": 419,
+          "ce_sum": 1468.4187154769897,
+          "top1_matches": 143,
+          "mean_ce": 3.5045792732147727,
+          "top1_accuracy": 0.3412887828162291
+        },
+        {
+          "tokens": 419,
+          "ce_sum": 1315.5318489074707,
+          "top1_matches": 159,
+          "mean_ce": 3.139694150137162,
+          "top1_accuracy": 0.3794749403341289
+        },
+        {
+          "tokens": 419,
+          "ce_sum": 1490.7768878936768,
+          "top1_matches": 140,
+          "mean_ce": 3.557940066572021,
+          "top1_accuracy": 0.3341288782816229
+        }
+      ],
+      "semantic_weighted_audio_ce": 1.345457128835038,
+      "joint_ce_by_padding_weight": {
+        "0.05": 4.278607461600701,
+        "0.5": 2.749708044648861
+      }
+    },
+    {
+      "episode": "unwanted_gift",
+      "split": "valid",
+      "input_sha256": "f63f6db675ecd2ed1e8da60dae85ede4a1bf0fdfe5c491fa6811e7e77ab22050",
+      "text_groups": {
+        "spoken": {
+          "tokens": 46,
+          "ce_sum": 162.9138526916504,
+          "top1_matches": 14,
+          "mean_ce": 3.5416054932967476,
+          "top1_accuracy": 0.30434782608695654
+        },
+        "silence_pad": {
+          "tokens": 189,
+          "ce_sum": 53.60413360595703,
+          "top1_matches": 166,
+          "mean_ce": 0.28361975452887317,
+          "top1_accuracy": 0.8783068783068783
+        },
+        "end_pad": {
+          "tokens": 36,
+          "ce_sum": 28.749408721923828,
+          "top1_matches": 30,
+          "mean_ce": 0.7985946867201064,
+          "top1_accuracy": 0.8333333333333334
+        }
+      },
+      "audio_codebooks": [
+        {
+          "tokens": 271,
+          "ce_sum": 338.6468553543091,
+          "top1_matches": 174,
+          "mean_ce": 1.249619392451325,
+          "top1_accuracy": 0.6420664206642066
+        },
+        {
+          "tokens": 270,
+          "ce_sum": 571.9750385284424,
+          "top1_matches": 134,
+          "mean_ce": 2.1184260686238607,
+          "top1_accuracy": 0.4962962962962963
+        },
+        {
+          "tokens": 270,
+          "ce_sum": 741.3770885467529,
+          "top1_matches": 119,
+          "mean_ce": 2.7458410686916777,
+          "top1_accuracy": 0.44074074074074077
+        },
+        {
+          "tokens": 270,
+          "ce_sum": 772.7187366485596,
+          "top1_matches": 115,
+          "mean_ce": 2.8619212468465167,
+          "top1_accuracy": 0.42592592592592593
+        },
+        {
+          "tokens": 270,
+          "ce_sum": 806.8518323898315,
+          "top1_matches": 113,
+          "mean_ce": 2.988340119962339,
+          "top1_accuracy": 0.4185185185185185
+        },
+        {
+          "tokens": 270,
+          "ce_sum": 838.0281763076782,
+          "top1_matches": 112,
+          "mean_ce": 3.103808060398808,
+          "top1_accuracy": 0.4148148148148148
+        },
+        {
+          "tokens": 270,
+          "ce_sum": 888.1006278991699,
+          "top1_matches": 104,
+          "mean_ce": 3.2892615848117406,
+          "top1_accuracy": 0.3851851851851852
+        },
+        {
+          "tokens": 270,
+          "ce_sum": 835.2716617584229,
+          "top1_matches": 111,
+          "mean_ce": 3.093598747253418,
+          "top1_accuracy": 0.4111111111111111
+        }
+      ],
+      "semantic_weighted_audio_ce": 1.3562955742500782,
+      "joint_ce_by_padding_weight": {
+        "0.05": 4.2738768809408105,
+        "0.5": 2.6439335796481274
+      }
+    }
+  ],
+  "scope": "Teacher-forced full actual temporal path. Every previous agent token is ground truth; not free-running conversation or audio quality.",
+  "status": "complete",
+  "metrics": {
+    "elapsed_seconds": 98.78697587500028,
+    "peak_rss_bytes": 305676288,
+    "swap_bytes": 1119879168,
+    "memory_pressure_level": 1,
+    "mlx_peak_bytes": 543651924,
+    "mlx_active_bytes": 32776
+  }
+}

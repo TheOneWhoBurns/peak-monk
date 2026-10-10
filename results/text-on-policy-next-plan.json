@@ -1,0 +1,8 @@
+{
+  "status": "prepared, not generated",
+  "manifest": "data/dialogue-pilot-07.json",
+  "purpose": "Test whether the parent recovers Mara without the exact guided-you cue and whether its own first answer contaminates the follow-up at different depths.",
+  "text_run23_finding": "Eight repairs with clean canonical replay produced13/20 and16/20, still essential lore failure. Canonical replay often has nearlyzero loss, giving weak gradient protection against drift on student-generated histories.",
+  "next_data_hypothesis": "Review sampled correct student replies as selective one-reply retention targets, alongside corrected failures. Earlier sampled mistakes receive no target loss. Broaden scenario families before any generalization claim.",
+  "leakage": "All current trajectories are training-only; no promotion to held-out benchmark. Exposed old final and pressure suites remain excluded from training."
+}

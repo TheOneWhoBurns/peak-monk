@@ -1,0 +1,12 @@
+{"time": 1791595263.787425, "phase": "runtime_ready", "initial_swap_bytes": 1119879168, "memory_guideline_bytes": 2800000000, "policy": "One model part at a time; no wiring; synchronized eviction and guards at phase boundaries"}
+{"time": 1791595263.870525, "phase": "episode_begin", "episode": "identity_transparency"}
+{"time": 1791595283.812765, "phase": "diagnostic_complete", "elapsed_seconds": 20.131023750000168, "peak_rss_bytes": 284983296, "swap_bytes": 1119879168, "memory_pressure_level": 1, "mlx_peak_bytes": 542078319, "mlx_active_bytes": 15648}
+{"time": 1791595283.814246, "phase": "episode_begin", "episode": "losing_competition"}
+{"time": 1791595301.767261, "phase": "diagnostic_complete", "elapsed_seconds": 38.08554400000048, "peak_rss_bytes": 305676288, "swap_bytes": 1119879168, "memory_pressure_level": 1, "mlx_peak_bytes": 542505044, "mlx_active_bytes": 32776}
+{"time": 1791595301.768825, "phase": "episode_begin", "episode": "name"}
+{"time": 1791595321.705514, "phase": "diagnostic_complete", "elapsed_seconds": 58.02431700000034, "peak_rss_bytes": 305676288, "swap_bytes": 1119879168, "memory_pressure_level": 1, "mlx_peak_bytes": 542505044, "mlx_active_bytes": 32776}
+{"time": 1791595321.706641, "phase": "episode_begin", "episode": "teacher"}
+{"time": 1791595343.015569, "phase": "diagnostic_complete", "elapsed_seconds": 79.33486145900042, "peak_rss_bytes": 305676288, "swap_bytes": 1119879168, "memory_pressure_level": 1, "mlx_peak_bytes": 543651924, "mlx_active_bytes": 32776}
+{"time": 1791595343.0172338, "phase": "episode_begin", "episode": "unwanted_gift"}
+{"time": 1791595362.459478, "phase": "diagnostic_complete", "elapsed_seconds": 98.77875766700072, "peak_rss_bytes": 305676288, "swap_bytes": 1119879168, "memory_pressure_level": 1, "mlx_peak_bytes": 543651924, "mlx_active_bytes": 32776}
+{"time": 1791595362.468427, "phase": "runtime_exit", "error": null}

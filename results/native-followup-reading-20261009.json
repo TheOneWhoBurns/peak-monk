@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-09",
+  "scope": "Targeted additional primary-source reading during serialized speech training; no change to the live experiment.",
+  "sources": [
+    {
+      "url": "https://takamichi-lab.github.io/assets/pdf/paper/2026/abe26iwsds_moshi-corpus-properties.pdf",
+      "finding": "Moshi-based Japanese corpus study reports that data timing and domain affect generated turn-taking; more mixed data did not consistently improve coherence.",
+      "application": "Treat our additional overlap examples as a distribution change; inspect timing and content separately. Their task and much larger dataset differ from Jun."
+    },
+    {
+      "url": "https://arxiv.org/html/2609.21967v1",
+      "finding": "NemotronLabs VoiceChat uses a9Bbackbone,600Mstreaming encoder and977Mspeech decoder/codec. It is not a smaller replacement for this Mac.",
+      "application": "No switch or download based on this paper."
+    },
+    {
+      "url": "https://arxiv.org/html/2606.14528v1",
+      "finding": "BayLing-Duplex combines SFT with timing-only DPO negatives and retention SFT; it separately weights silence and role tokens.",
+      "application": "Potential future controlled timing preference pairs; not a drop-in Moshi recipe. No model conversion attempted."
+    },
+    {
+      "url": "https://kyutai.org/assets/pdfs/Moshi.pdf",
+      "finding": "Moshi EPAD precedes the next word after padding; it is not the same as a dialogue turn-end token.",
+      "application": "Our diagnostic separation of token0 from token3 matters. Do not copy BayLing turn-state weights by token name."
+    }
+  ],
+  "local_observation": "The run07adapter improves spoken-token CE but reduces EPAD top1accuracy on both validation clips versus base. Current training weights both PAD and EPAD by0.05.",
+  "next_hypothesis": "After the declared run08 experiment, consider separately weighting EPAD and PAD, with an unchanged validation protocol and actual audio review. This is a hypothesis, not an established explanation for failure."
+}
