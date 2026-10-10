@@ -1,0 +1,24 @@
+{"time": 1791596056.462708, "phase": "runtime_ready", "initial_swap_bytes": 1103101952, "memory_guideline_bytes": 5100000000, "policy": "One model part at a time; no wiring; synchronized eviction and guards at phase boundaries"}
+{"time": 1791596057.078103, "phase": "inference_inputs_loaded", "elapsed_seconds": 0.742907834000107, "peak_rss_bytes": 271335424, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 166642080, "mlx_active_bytes": 166641672}
+{"time": 1791596057.5351071, "phase": "inference_layer_loaded", "layer": 0, "elapsed_seconds": 1.199826375000157, "peak_rss_bytes": 271335424, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 295862336, "mlx_active_bytes": 295862280}
+{"time": 1791596057.6318579, "phase": "inference_layer_loaded", "layer": 1, "elapsed_seconds": 1.2957908750004208, "peak_rss_bytes": 282591232, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 425082944, "mlx_active_bytes": 425082888}
+{"time": 1791596057.87341, "phase": "inference_layer_loaded", "layer": 2, "elapsed_seconds": 1.5385467920004885, "peak_rss_bytes": 339378176, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 554303552, "mlx_active_bytes": 554303496}
+{"time": 1791596058.1993642, "phase": "inference_layer_loaded", "layer": 3, "elapsed_seconds": 1.8650007090000145, "peak_rss_bytes": 339378176, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 683524160, "mlx_active_bytes": 683524104}
+{"time": 1791596058.297152, "phase": "inference_layer_loaded", "layer": 4, "elapsed_seconds": 1.9627634590005982, "peak_rss_bytes": 339623936, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 812744768, "mlx_active_bytes": 812744712}
+{"time": 1791596058.538259, "phase": "inference_layer_loaded", "layer": 5, "elapsed_seconds": 2.2035487090006427, "peak_rss_bytes": 379895808, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 941965376, "mlx_active_bytes": 941965320}
+{"time": 1791596058.8599439, "phase": "inference_layer_loaded", "layer": 6, "elapsed_seconds": 2.5253883340001266, "peak_rss_bytes": 379895808, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 1071185984, "mlx_active_bytes": 1071185928}
+{"time": 1791596059.208282, "phase": "inference_layer_loaded", "layer": 7, "elapsed_seconds": 2.8737350000001243, "peak_rss_bytes": 379895808, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 1200406592, "mlx_active_bytes": 1200406536}
+{"time": 1791596059.7437701, "phase": "inference_layer_loaded", "layer": 8, "elapsed_seconds": 3.4081680420003977, "peak_rss_bytes": 379895808, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 1329627200, "mlx_active_bytes": 1329627144}
+{"time": 1791596060.3855941, "phase": "inference_layer_loaded", "layer": 9, "elapsed_seconds": 4.050282959000469, "peak_rss_bytes": 379895808, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 1458847808, "mlx_active_bytes": 1458847752}
+{"time": 1791596060.902714, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 1588068360}
+{"time": 1791596061.9313369, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 1588068360}
+{"time": 1791596062.9534268, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 1588068360}
+{"time": 1791596063.981389, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 1588068360}
+{"time": 1791596065.0092428, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 1588068360}
+{"time": 1791596066.032966, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 1588068360}
+{"time": 1791596067.0568051, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 1588068360}
+{"time": 1791596068.087029, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 1588068360}
+{"time": 1791596069.116826, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 1588068360}
+{"time": 1791596070.14627, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 1588068360}
+{"time": 1791596071.183274, "phase": "resource_guard_stop", "reason": "system memory pressure is not normal", "elapsed_seconds": 14.840740542000276, "peak_rss_bytes": 379895808, "swap_bytes": 1103101952, "memory_pressure_level": 2, "mlx_peak_bytes": 1588068416, "mlx_active_bytes": 1588068360}
+{"time": 1791596071.1839108, "phase": "runtime_exit", "error": "Bounded runtime system memory pressure is not normal"}

@@ -1,0 +1,17 @@
+{
+  "input": "evaluation/audio-roleplay-v2/s01.npz",
+  "input_sha256": "2e46324af7821ec4f3ab7eaa9a5476aa44ac93a0b58216b3cba7de67a6edf56e",
+  "adapter": "adapters/speech-run08/checkpoint-0016.safetensors",
+  "adapter_sha256": "27dee163a63f7c2b7eb609ec2101b58caf3b94c19cdaa3417d9d95471ca6251b",
+  "adapter_config": "configs/speech08.json",
+  "seed": 41,
+  "explicit_frame_limit": 16,
+  "sampling_preset": "local",
+  "source_sha256": {
+    "infer_moshi_unwired.py": "129d96cec79df363e0059b004975f4445e32d04195c4969ef9b412b4285f23cf",
+    "assemble_moshi_parts.py": "b2b488024485b494e89802df0653cb824b0d0742dc65c4d66acc211f342d2533",
+    "moshi_weight_stream.py": "0b45fdbba9ac51c005138ecd5e589155ec64d544f509c13b31aac0b3142d536a",
+    "bounded_speech_runtime.py": "1bf5366b41a9581ccfaf705a37ddf917d51df79d71dfb3ec9e79a932dbf24a99",
+    "bounded_text_runtime.py": "6051753060eeb560bb48ab38065515a1252914e1b0213fa7a76efef7980a5bb6"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "status": "pass",
+  "parts": [
+    {
+      "part": "inputs",
+      "seconds": 0.07949904199995217,
+      "metrics": {
+        "elapsed_seconds": 0.2593297919993347,
+        "peak_rss_bytes": 217481216,
+        "swap_bytes": 1103101952,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 166642080,
+        "mlx_active_bytes": 166641672
+      }
+    },
+    {
+      "part": 0,
+      "seconds": 0.02391458399961266,
+      "metrics": {
+        "elapsed_seconds": 0.300974041999325,
+        "peak_rss_bytes": 217563136,
+        "swap_bytes": 1103101952,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 166642080,
+        "mlx_active_bytes": 129220616
+      }
+    },
+    {
+      "part": "heads",
+      "seconds": 0.3534657079999306,
+      "metrics": {
+        "elapsed_seconds": 0.6704342499997438,
+        "peak_rss_bytes": 585744384,
+        "swap_bytes": 1103101952,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 530145316,
+        "mlx_active_bytes": 530145288
+      }
+    }
+  ]
+}

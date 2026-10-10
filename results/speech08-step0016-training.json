@@ -1,0 +1,779 @@
+{
+  "status": "First16updates and fixed validation complete; unreviewed native candidate",
+  "metadata": {
+    "config": {
+      "weights": "models/moshi/model.q4.safetensors",
+      "weights_sha256": "7959d590e23c1ebc78cfa3501344a6ff331561aa0cadc4429b733b890bbc919c",
+      "parent": "adapters/speech-run07/candidate.safetensors",
+      "parent_sha256": "2e2b8363b1c7350ccc55ca97c238ea054a6ae2fa573da92c7c401e0f9083156c",
+      "output": "adapters/speech-run08",
+      "data": [
+        "data/speech_codes",
+        "data/speech_codes-overlap-v2"
+      ],
+      "steps": 67,
+      "checkpoints": [
+        16,
+        32,
+        67
+      ],
+      "seed": 163,
+      "rank": 8,
+      "scale": 2.0,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "clip_norm": 1.0,
+      "head_frames": 8,
+      "text_padding_weight": 0.05,
+      "memory_limit": 2800000000,
+      "max_seconds": 5400
+    },
+    "config_sha256": "1803cf387f2c804a70afbbafc4929d962b2857054b29ebc2d82413f6db925b7d",
+    "source_sha256": {
+      "train_moshi_disk.py": "cf3150a2d59d1a8f588be3866869460d33333f8f5e2e133be1461fb3b3cf4598",
+      "moshi_disk_adjoint.py": "cdc535365c88cf8824b2a0936ae4d40730dc32962fde1151d223e83eb8751cbc",
+      "moshi_weight_stream.py": "0b45fdbba9ac51c005138ecd5e589155ec64d544f509c13b31aac0b3142d536a",
+      "moshi_layerwise.py": "d9145c34b1b54b372cc5f23aa31638d3290d27c4b4a5bfef9ad59794b5aeb03f",
+      "moshi_staged.py": "ec08ca9ab44012ca861764b1aa0f24178555461c5fd2d9511bd146c1c5b21d71",
+      "moshi_disk_metrics.py": "ec9a0a7014525bb5b292a8a2e2649d08b8bf439475dd0c269da91fa382180c42",
+      "bounded_speech_runtime.py": "1bf5366b41a9581ccfaf705a37ddf917d51df79d71dfb3ec9e79a932dbf24a99",
+      "bounded_text_runtime.py": "6051753060eeb560bb48ab38065515a1252914e1b0213fa7a76efef7980a5bb6",
+      "moshi_training.py": "3b014c94d09d03a54a91bc167aeecef243d10a0861175fea7cfad68f46c52051",
+      "moshi_split.py": "d92c29849119311339bb8a2a7427c2f6548f8a27e00e59546cd464c5a449b06f"
+    },
+    "data_sha256": {
+      "ambition": "f1cc77feab3c8ffd45073ace852f8a2e876b9ca9bad30e71f4f6462078476294",
+      "anger": "c1566d95e1808e0472339d86f81582cdeca86e3959f4fbaf356dec0c454a68f5",
+      "apology": "d17b215c3b0321fba3445ace91ccc33bd05adc196753beb7af35e2fd9260b17f",
+      "arrival": "284a466b8e8cde5a3d0e7b7c476fda99f6366e5c2e1bb3010f50452dbf95aeb9",
+      "boredom": "b41fb6af19859314c3b6a54a6d8620ae87a44c4603f5b625f11e8651d6f590e8",
+      "boundaries": "465796f81a39cd65e775dd1871d1c760170fb7b6b4816f9106f97a8373527870",
+      "breakfast": "3c6c438db623d1a998a74dd2ad54689eef40bc17652845faa78d8767badb010f",
+      "childhood": "314a997c228fd2911baf6f9faf21495a3075fe41a45781568172aa40bd38e8fc",
+      "cold": "64ef3d557c61a3c182563c6739cc2af3aaef01cde9bf49d9c4cf684a222a7ab3",
+      "concrete_repair": "1315c07b1ee2b1ff810e4698f78e0bbf71cd7a25060feea29ce2b1b8fe5fdac7",
+      "correction": "b6b3a754bed844107e6390003bdd7bc28aa7dd8b3179fe55fa555e962fb70ab9",
+      "crisis": "2f2d6a403b4b04a9deb972be49575f928333733c664ddacf16ada8bd7a7eb446",
+      "dependency": "17278a638972ebebc5e9de822eb2b8e28ac7c4605d39e0117018e5d4849ca000",
+      "disagreement": "2aa8fdcdd0bfbff6e841d9ed6f9e1e317457330b439011656a3f1fdadd0d1659",
+      "doctrine": "d3082a06fe0e30744a05f316f16c0f839c62f6c9796635a0d7443209d2929977",
+      "fortune": "9a39a98d954b6cfd85c91ce5d461c3a49be3cfdaa8fa3417d0950dfac6bcf7f9",
+      "friendship": "d033d3523cc005c5e613039941b36f94aa18dbb3955ae00f1fdd3ad5eaecf245",
+      "game": "043bc9c9de6139bac8d0acb4ddd669bc3298a8c3e5ac817fb15f73a5b53856df",
+      "goodbye": "a1dd472cf12db8a8c57c70ee4c5a049e715d9243c6bba91dc899a54ab2ceb6a2",
+      "grandiosity": "67d074ea39bc2c9ce01673bbb67303308f91742690144e9e22b5e3d87952fd44",
+      "grief": "ac17b857946ae279e7e498ae9d97ad5650f25debd91fa166b1ac2698bb0add75",
+      "guilt": "b9d5610fa2f09a665c3da6762a70252353f9bd3dd7e505b791b6cca330190b16",
+      "hallucination_boundary": "6ffac11807c3b0a47f6120582975eb9137395e9ce665cb775d2116d7db6ae6a2",
+      "health_boundary": "8f1c117968b7aaa5d6ad3985c3dbe47e5e50dbb97e2bed744a743279990440f8",
+      "home": "a28ba4a9c048ff6c44594749cf90da87d6ec4ae7b406dd7bc4e8a996700c37d2",
+      "identity_transparency": "1e1221b362c185a991526d66ccb3d8ffce444343fd5af8f20d08150dddccd4a0",
+      "imperfection": "7be925d49103cfd483ee3941c474c26b032ae42404d3540d6bc687dd5f381a29",
+      "influences": "699228d8a4cfc34a65ed045e6d276c04dde82aa4b0ef74e84034c44737a04a80",
+      "jealousy": "92f23264290e36e8285930f793d3c253bd7332e2d40a4adf8137e0da4f99493c",
+      "joke": "e7b4ea0c1f9bdf85bd30e983fffa78ab4f551557d31520546c83ab706876b6e2",
+      "losing_competition": "1beb972727795d634aca4df49c0737e051c382ae214feadca2bed7b6f9f876fb",
+      "meditation": "5961d2f7f3be006387e68ea0c0c54e1dabcb6bf68e1d220ae203d879a4b22a78",
+      "memory": "5097aa898cdbf56e00e51cf529ae9449f7b1d52410a43f5fc10ba2728e4ddd52",
+      "model_disclosure": "8c6a4f782a963d9311865b86ca32dd088f992daa13d92b1d72db1189797a0944",
+      "money": "bf36da8c26b28127f50a2b82f8f2bf67caae24aca6ffa1aaa6382f50d117b58b",
+      "mundane_chat": "67ef6b79451c029a2e0186c7ae8ef77683a51088dcdd0f050052c4fe0c1a97fa",
+      "name": "89d79673c429c32a54d7e774707108c873ee0d8d44c8b5bf3c726b2f28f84393",
+      "no_false_memory": "96719dfe175031b269bb69e187faac6531c902bd7c9a996183e0dce6c267be65",
+      "no_hidden_prompt": "d392d26b0d4845f9975c1bcd2cac10fcdec3b638f710072f7d9c8bff30078a50",
+      "no_lecture": "55527cd1612f2f4d16e7e9ce7d904981176c98c94d0bd1a01499b5ceecec0d77",
+      "objects": "057e141d1a40a7fed07f857562a07be99c4b3709988ed1d24122cc399caa7b32",
+      "ordinary_practice": "84c5e6d85efa86096a791ff69c7c6ba9eb4e5fb0c3c4c80ec1ddf1a41f547daf",
+      "pace": "7c0683c42282806cbecda478810b2ccff92e0cca0e536e18b2b5bd3cd7453909",
+      "phone_interruption": "6a20c056eb0fcf176429880fa4c1a38077e3e3cfdc93608379dd986ece853d8e",
+      "practical_compassion": "bfe373adb0ecbef797d3192278c78e38b9430a320fe70585a246616574dd9228",
+      "public_identity": "ffc6180015262170f2471669e231ed3162c615b7309b56de0e84d635fad394ca",
+      "refusal_of_metaphor": "5ecf5ec7bb1de83e3f3e77a7b271c2ad9a66c68386808c20254d5514339d5e98",
+      "regret": "d68e318f315f68dd73f3b0f9cd01ebb295cafc122b92ca9d2f5ddabf738a7bc0",
+      "role_override": "e1b4853307cef20cd51ebb99165ffc0ba11a49d49bf86227fc6be144d4736eb6",
+      "roof": "d69389f8ff1b4e424b57b52442b917db1c09e88dc65c3a20ed658519469b5fad",
+      "rook": "dffd252947ec7e1796dc3f9122678c81cb16476195ed55e1c74dc672cdc08678",
+      "sadness_no_fix": "de4b626eb4f415a1267f58d3552bd0cece833bd14c12ed5fd69b00f0ae54cde3",
+      "senses": "adce2706c85ef2afa160363d5e16d06f1f5da77c9d05cc7dff0094679a231398",
+      "silence": "e77043c46f6482c533ce72025d0c4a4bb61772fed0aa23d79788035eb3b1def4",
+      "skepticism": "45c8b3fc149ab4a635dd28b01b11ec7c4d90f4ed9e6d203179608fef7b901520",
+      "teacher": "90df789c83643821e2331c7fd84002868a45ee7ab050dc369d1d86f860481f59",
+      "tired": "85b1b021dbaf7c6bcacc8f6fff5912cf026e1a6d6cae2b37adcf06cf6ba90ad1",
+      "unwanted_gift": "f63f6db675ecd2ed1e8da60dae85ede4a1bf0fdfe5c491fa6811e7e77ab22050",
+      "violence": "8fd739beb6542ffaeab4a95199e68254978850c112f227eb98e356c4e6dc0be4",
+      "overlap_backchannel_a_quiet_room": "af6dca60a62c4a5e194aa59b9fdd29d1b8e69e94de600e811e2000f3bf6eb594",
+      "overlap_backchannel_mara_broom": "4f9315653bea65596006b11e464663325bc6ce23723819688c8f682a6530dace",
+      "overlap_backchannel_salty_pot": "f06c716a28269e9d50d819d531284fdffd542299a14b13908ccfea0c984d797e",
+      "overlap_backchannel_the_cold_knee": "b734e15d4bdb2cf7cb5a6c41237f5b6070f4694752e763a8372e91e170927c13",
+      "overlap_barge_change_the_subject": "77480adceba987432e93b5b4221c8ccc1729ce0d0dada8d6e8ed7f81d5f0c6d1",
+      "overlap_barge_do_not_advise": "784acd7b201365df8fb7866f878aad9ec81d6718de2f63826b8efe2bf90bc318",
+      "overlap_barge_leaking_eaves": "bc9f388b566f915c5e249f81cf6036704f6c56f88ce81a99f60235241f69cc1a",
+      "overlap_barge_louder_next_time": "145e9fd04744650f7babc32fa8e47a8af816a995d63584b136192201535335b8",
+      "overlap_barge_not_a_dream": "bcc060ae634e9d531d1c230d1d7fd25a34beadd62dff4cfe9874776d3750bda6",
+      "overlap_barge_only_the_name": "0189b2bd3b80fd810cccd5ee27368989a53a1464d49ffdb326b3da9e24410617"
+    },
+    "schedule": [
+      "no_lecture",
+      "dependency",
+      "overlap_backchannel_a_quiet_room",
+      "overlap_backchannel_the_cold_knee",
+      "name",
+      "practical_compassion",
+      "identity_transparency",
+      "breakfast",
+      "meditation",
+      "memory",
+      "influences",
+      "home",
+      "anger",
+      "silence",
+      "overlap_barge_louder_next_time",
+      "imperfection",
+      "apology",
+      "game",
+      "roof",
+      "friendship",
+      "tired",
+      "sadness_no_fix",
+      "ambition",
+      "grandiosity",
+      "pace",
+      "boundaries",
+      "childhood",
+      "model_disclosure",
+      "no_hidden_prompt",
+      "doctrine",
+      "fortune",
+      "overlap_barge_change_the_subject",
+      "grief",
+      "phone_interruption",
+      "rook",
+      "ordinary_practice",
+      "overlap_backchannel_salty_pot",
+      "correction",
+      "jealousy",
+      "goodbye",
+      "money",
+      "teacher",
+      "role_override",
+      "mundane_chat",
+      "joke",
+      "senses",
+      "refusal_of_metaphor",
+      "regret",
+      "overlap_barge_only_the_name",
+      "violence",
+      "guilt",
+      "boredom",
+      "public_identity",
+      "arrival",
+      "objects",
+      "crisis",
+      "concrete_repair",
+      "cold",
+      "skepticism",
+      "health_boundary",
+      "overlap_barge_do_not_advise",
+      "overlap_barge_not_a_dream",
+      "disagreement",
+      "no_false_memory",
+      "overlap_barge_leaking_eaves",
+      "hallucination_boundary",
+      "overlap_backchannel_mara_broom"
+    ],
+    "validation_ids": [
+      "losing_competition",
+      "unwanted_gift"
+    ]
+  },
+  "latest": {
+    "step": 16,
+    "directory": "step-0016",
+    "adapter_sha256": "27dee163a63f7c2b7eb609ec2101b58caf3b94c19cdaa3417d9d95471ca6251b"
+  },
+  "validation": {
+    "step": 16,
+    "adapter_sha256": "27dee163a63f7c2b7eb609ec2101b58caf3b94c19cdaa3417d9d95471ca6251b",
+    "episodes": [
+      {
+        "episode": "losing_competition",
+        "text_groups": {
+          "spoken": {
+            "tokens": 57,
+            "ce_sum": 138.92743110656738,
+            "top1_matches": 28,
+            "mean_ce": 2.4373233527467963,
+            "top1_accuracy": 0.49122807017543857
+          },
+          "silence_pad": {
+            "tokens": 184,
+            "ce_sum": 25.59449577331543,
+            "top1_matches": 172,
+            "mean_ce": 0.13910052050714908,
+            "top1_accuracy": 0.9347826086956522
+          },
+          "end_pad": {
+            "tokens": 39,
+            "ce_sum": 42.64347267150879,
+            "top1_matches": 21,
+            "mean_ce": 1.093422376192533,
+            "top1_accuracy": 0.5384615384615384
+          }
+        },
+        "audio_codebooks": [
+          {
+            "tokens": 280,
+            "ce_sum": 191.58814430236816,
+            "top1_matches": 207,
+            "mean_ce": 0.6842433725084577,
+            "top1_accuracy": 0.7392857142857143
+          },
+          {
+            "tokens": 279,
+            "ce_sum": 551.7205696105957,
+            "top1_matches": 130,
+            "mean_ce": 1.9774930810415616,
+            "top1_accuracy": 0.4659498207885305
+          },
+          {
+            "tokens": 279,
+            "ce_sum": 711.0385541915894,
+            "top1_matches": 120,
+            "mean_ce": 2.548525283840822,
+            "top1_accuracy": 0.43010752688172044
+          },
+          {
+            "tokens": 279,
+            "ce_sum": 745.9028434753418,
+            "top1_matches": 118,
+            "mean_ce": 2.673486894176852,
+            "top1_accuracy": 0.4229390681003584
+          },
+          {
+            "tokens": 279,
+            "ce_sum": 802.5712966918945,
+            "top1_matches": 110,
+            "mean_ce": 2.8765996297200522,
+            "top1_accuracy": 0.3942652329749104
+          },
+          {
+            "tokens": 279,
+            "ce_sum": 782.1145629882812,
+            "top1_matches": 109,
+            "mean_ce": 2.8032780035422267,
+            "top1_accuracy": 0.3906810035842294
+          },
+          {
+            "tokens": 279,
+            "ce_sum": 779.3196907043457,
+            "top1_matches": 119,
+            "mean_ce": 2.793260540158945,
+            "top1_accuracy": 0.4265232974910394
+          },
+          {
+            "tokens": 279,
+            "ce_sum": 808.978593826294,
+            "top1_matches": 115,
+            "mean_ce": 2.8995648524239925,
+            "top1_accuracy": 0.4121863799283154
+          }
+        ],
+        "semantic_weighted_audio_ce": 0.8126217921986164,
+        "joint_ce_by_padding_weight": {
+          "0.05": 2.901239980442323,
+          "0.5": 1.8396034855456755
+        }
+      },
+      {
+        "episode": "unwanted_gift",
+        "text_groups": {
+          "spoken": {
+            "tokens": 46,
+            "ce_sum": 132.37168312072754,
+            "top1_matches": 20,
+            "mean_ce": 2.8776452852332075,
+            "top1_accuracy": 0.43478260869565216
+          },
+          "silence_pad": {
+            "tokens": 189,
+            "ce_sum": 36.142367362976074,
+            "top1_matches": 178,
+            "mean_ce": 0.19122945694696336,
+            "top1_accuracy": 0.9417989417989417
+          },
+          "end_pad": {
+            "tokens": 36,
+            "ce_sum": 38.46112060546875,
+            "top1_matches": 20,
+            "mean_ce": 1.0683644612630208,
+            "top1_accuracy": 0.5555555555555556
+          }
+        },
+        "audio_codebooks": [
+          {
+            "tokens": 271,
+            "ce_sum": 198.82677555084229,
+            "top1_matches": 207,
+            "mean_ce": 0.7336781385639937,
+            "top1_accuracy": 0.7638376383763837
+          },
+          {
+            "tokens": 270,
+            "ce_sum": 498.6996078491211,
+            "top1_matches": 150,
+            "mean_ce": 1.8470355846263744,
+            "top1_accuracy": 0.5555555555555556
+          },
+          {
+            "tokens": 270,
+            "ce_sum": 674.1606206893921,
+            "top1_matches": 120,
+            "mean_ce": 2.4968911877384894,
+            "top1_accuracy": 0.4444444444444444
+          },
+          {
+            "tokens": 270,
+            "ce_sum": 675.0430574417114,
+            "top1_matches": 115,
+            "mean_ce": 2.5001594720063385,
+            "top1_accuracy": 0.42592592592592593
+          },
+          {
+            "tokens": 270,
+            "ce_sum": 697.1627578735352,
+            "top1_matches": 124,
+            "mean_ce": 2.5820842884205004,
+            "top1_accuracy": 0.45925925925925926
+          },
+          {
+            "tokens": 270,
+            "ce_sum": 728.1226978302002,
+            "top1_matches": 116,
+            "mean_ce": 2.6967507327044453,
+            "top1_accuracy": 0.42962962962962964
+          },
+          {
+            "tokens": 270,
+            "ce_sum": 775.2699108123779,
+            "top1_matches": 119,
+            "mean_ce": 2.871370040045844,
+            "top1_accuracy": 0.44074074074074077
+          },
+          {
+            "tokens": 270,
+            "ce_sum": 738.4456672668457,
+            "top1_matches": 123,
+            "mean_ce": 2.734983952840169,
+            "top1_accuracy": 0.45555555555555555
+          }
+        ],
+        "semantic_weighted_audio_ce": 0.8509686745376823,
+        "joint_ce_by_padding_weight": {
+          "0.05": 3.2282936967062374,
+          "0.5": 1.921463482770805
+        }
+      }
+    ],
+    "validation_joint_ce": 1.8805334841582404,
+    "scope": "Fixed teacher-forced validation; spoken CE and each audio codebook retained. Free-running review still required."
+  },
+  "segment": {
+    "step": 16,
+    "planned_steps": 67,
+    "status": "checkpoint segment complete",
+    "metrics": {
+      "elapsed_seconds": 574.8551938330002,
+      "peak_rss_bytes": 372899840,
+      "swap_bytes": 1103101952,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 564037566,
+      "mlx_active_bytes": 8
+    }
+  },
+  "updates": [
+    {
+      "time": 1791595422.404738,
+      "phase": "update_committed",
+      "step": 1,
+      "episode": "no_lecture",
+      "frames": 228,
+      "loss": 2.189099073410034,
+      "gradient_norm": 3.5196479976196917,
+      "update": {
+        "clip_scale": 0.28411932040792104,
+        "adapter_tensors": 130,
+        "step": 1
+      },
+      "seconds": 32.50182058399969,
+      "metrics": {
+        "elapsed_seconds": 32.753788500000155,
+        "peak_rss_bytes": 330350592,
+        "swap_bytes": 1119879168,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 558515346,
+        "mlx_active_bytes": 15580
+      },
+      "adapter_sha256": "e191aa5c30f5e2901a6855151e467e0a0170200e89cda1cd722252481285f20d"
+    },
+    {
+      "time": 1791595471.3896792,
+      "phase": "update_committed",
+      "step": 2,
+      "episode": "dependency",
+      "frames": 330,
+      "loss": 2.092710256576538,
+      "gradient_norm": 3.4535743960327614,
+      "update": {
+        "clip_scale": 0.2895550761127901,
+        "adapter_tensors": 130,
+        "step": 2
+      },
+      "seconds": 37.7936514590001,
+      "metrics": {
+        "elapsed_seconds": 38.089142458000424,
+        "peak_rss_bytes": 335183872,
+        "swap_bytes": 1119879168,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 561055814,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "4fe4af610af301ec9bd8bd80edb1770568686d426eb731faa2cc0775752087aa"
+    },
+    {
+      "time": 1791595509.9573,
+      "phase": "update_committed",
+      "step": 3,
+      "episode": "overlap_backchannel_a_quiet_room",
+      "frames": 375,
+      "loss": 3.1699256896972656,
+      "gradient_norm": 4.067867197631968,
+      "update": {
+        "clip_scale": 0.2458290669183695,
+        "adapter_tensors": 130,
+        "step": 3
+      },
+      "seconds": 38.52081249999992,
+      "metrics": {
+        "elapsed_seconds": 76.66072916600024,
+        "peak_rss_bytes": 335183872,
+        "swap_bytes": 1119879168,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562120630,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "c9dd948d6604b0c1757ac55bfa0aae31de9674dae899b58eb8b44f02d947d19e"
+    },
+    {
+      "time": 1791595546.891809,
+      "phase": "update_committed",
+      "step": 4,
+      "episode": "overlap_backchannel_the_cold_knee",
+      "frames": 352,
+      "loss": 3.595829725265503,
+      "gradient_norm": 4.4897894938115295,
+      "update": {
+        "clip_scale": 0.2227275909374075,
+        "adapter_tensors": 130,
+        "step": 4
+      },
+      "seconds": 36.881059542,
+      "metrics": {
+        "elapsed_seconds": 113.5888287910002,
+        "peak_rss_bytes": 335183872,
+        "swap_bytes": 1111490560,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562120630,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "d93e4dd4c47a92026f15b0e2cd69b7a4145e1930c03e2073766f0d7ef119d96e"
+    },
+    {
+      "time": 1791595578.635365,
+      "phase": "update_committed",
+      "step": 5,
+      "episode": "name",
+      "frames": 245,
+      "loss": 2.6147196292877197,
+      "gradient_norm": 5.107336147803322,
+      "update": {
+        "clip_scale": 0.19579678507594114,
+        "adapter_tensors": 130,
+        "step": 5
+      },
+      "seconds": 31.690702416999557,
+      "metrics": {
+        "elapsed_seconds": 145.33356954100054,
+        "peak_rss_bytes": 335183872,
+        "swap_bytes": 1111490560,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562120630,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "77c7d94b9baf605293c422fbdb9c6310a13e464b0de23e0a7502408ffabb51ae"
+    },
+    {
+      "time": 1791595612.620654,
+      "phase": "update_committed",
+      "step": 6,
+      "episode": "practical_compassion",
+      "frames": 280,
+      "loss": 2.194026231765747,
+      "gradient_norm": 3.7475665360469095,
+      "update": {
+        "clip_scale": 0.26683982464696776,
+        "adapter_tensors": 130,
+        "step": 6
+      },
+      "seconds": 33.93366129199967,
+      "metrics": {
+        "elapsed_seconds": 179.32026920800035,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1111490560,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562120630,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "ed6bd675c4d33217878ce9ba136678fc4d92f0a0b19eaa33d72a30acdc9eab71"
+    },
+    {
+      "time": 1791595644.734792,
+      "phase": "update_committed",
+      "step": 7,
+      "episode": "identity_transparency",
+      "frames": 229,
+      "loss": 1.9209370613098145,
+      "gradient_norm": 3.71849237325864,
+      "update": {
+        "clip_scale": 0.268926192911458,
+        "adapter_tensors": 130,
+        "step": 7
+      },
+      "seconds": 32.06502666600045,
+      "metrics": {
+        "elapsed_seconds": 211.4383310410003,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1111490560,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562120630,
+        "mlx_active_bytes": 15648
+      },
+      "adapter_sha256": "de85af2a510a866ae20196fe1179fb875f3178cc76b665fe8693b8be9084159d"
+    },
+    {
+      "time": 1791595679.3878589,
+      "phase": "update_committed",
+      "step": 8,
+      "episode": "breakfast",
+      "frames": 304,
+      "loss": 2.7337255477905273,
+      "gradient_norm": 3.6385164520734605,
+      "update": {
+        "clip_scale": 0.2748372888850792,
+        "adapter_tensors": 130,
+        "step": 8
+      },
+      "seconds": 34.59724308299974,
+      "metrics": {
+        "elapsed_seconds": 246.0858694160006,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1111490560,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562120630,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "c866521bc82984e11584eac956b18206cd63d4fa33a141a20750f7e44755db2b"
+    },
+    {
+      "time": 1791595721.07506,
+      "phase": "update_committed",
+      "step": 9,
+      "episode": "meditation",
+      "frames": 393,
+      "loss": 2.085890531539917,
+      "gradient_norm": 3.389656508450418,
+      "update": {
+        "clip_scale": 0.29501514225905995,
+        "adapter_tensors": 130,
+        "step": 9
+      },
+      "seconds": 41.633395415999985,
+      "metrics": {
+        "elapsed_seconds": 287.7749672910004,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1111490560,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562628746,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "647427c71f650df5abc6e420eac6d7c60de648bc536662883ad3a0606678f34f"
+    },
+    {
+      "time": 1791595756.903264,
+      "phase": "update_committed",
+      "step": 10,
+      "episode": "memory",
+      "frames": 250,
+      "loss": 1.2697865962982178,
+      "gradient_norm": 3.481660705486778,
+      "update": {
+        "clip_scale": 0.28721925590046704,
+        "adapter_tensors": 130,
+        "step": 10
+      },
+      "seconds": 35.77373254199938,
+      "metrics": {
+        "elapsed_seconds": 323.6024017910004,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1111490560,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562628746,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "0ffbe1b443659b014b295969e87c5224662d5065eff78e56d7cb637c38589060"
+    },
+    {
+      "time": 1791595791.715374,
+      "phase": "update_committed",
+      "step": 11,
+      "episode": "influences",
+      "frames": 269,
+      "loss": 2.2011067867279053,
+      "gradient_norm": 4.059253502469071,
+      "update": {
+        "clip_scale": 0.2463507137280871,
+        "adapter_tensors": 130,
+        "step": 11
+      },
+      "seconds": 34.76026104199991,
+      "metrics": {
+        "elapsed_seconds": 358.4181834580004,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1111490560,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562628746,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "ffea49fa205613c91b54cb73504b6a817af20d4f9eb262049ee4794b3ace8a16"
+    },
+    {
+      "time": 1791595830.1781929,
+      "phase": "update_committed",
+      "step": 12,
+      "episode": "home",
+      "frames": 356,
+      "loss": 2.474436044692993,
+      "gradient_norm": 4.042617639669561,
+      "update": {
+        "clip_scale": 0.2473644768462679,
+        "adapter_tensors": 130,
+        "step": 12
+      },
+      "seconds": 38.40456366699982,
+      "metrics": {
+        "elapsed_seconds": 396.874459916,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1103101952,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 562628746,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "2df7fc75890c510df029c6a58e69928a823b99f2b3ccf8bcd732430cbf7f3614"
+    },
+    {
+      "time": 1791595876.3521762,
+      "phase": "update_committed",
+      "step": 13,
+      "episode": "anger",
+      "frames": 452,
+      "loss": 1.8807553052902222,
+      "gradient_norm": 2.9138776634902976,
+      "update": {
+        "clip_scale": 0.34318530564880617,
+        "adapter_tensors": 130,
+        "step": 13
+      },
+      "seconds": 46.13441208399945,
+      "metrics": {
+        "elapsed_seconds": 443.06857975,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1103101952,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 564037566,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "96703cb09f42b7600e13e04f09cdac0b2b4d4721f280d610115bd8512c9fc64f"
+    },
+    {
+      "time": 1791595905.771111,
+      "phase": "update_committed",
+      "step": 14,
+      "episode": "silence",
+      "frames": 134,
+      "loss": 1.2679195404052734,
+      "gradient_norm": 5.065803355793339,
+      "update": {
+        "clip_scale": 0.19740205605935385,
+        "adapter_tensors": 130,
+        "step": 14
+      },
+      "seconds": 29.366111000000274,
+      "metrics": {
+        "elapsed_seconds": 472.4843243330006,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1103101952,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 564037566,
+        "mlx_active_bytes": 9188
+      },
+      "adapter_sha256": "10d88bff696617422f0bbf9679295f317d85f449c1ab8eaced1b0647f9418198"
+    },
+    {
+      "time": 1791595939.9004889,
+      "phase": "update_committed",
+      "step": 15,
+      "episode": "overlap_barge_louder_next_time",
+      "frames": 243,
+      "loss": 3.4463937282562256,
+      "gradient_norm": 6.061047829279999,
+      "update": {
+        "clip_scale": 0.16498797345225896,
+        "adapter_tensors": 130,
+        "step": 15
+      },
+      "seconds": 34.0712790839998,
+      "metrics": {
+        "elapsed_seconds": 506.614273958,
+        "peak_rss_bytes": 338378752,
+        "swap_bytes": 1103101952,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 564037566,
+        "mlx_active_bytes": 32776
+      },
+      "adapter_sha256": "ebe50aaeff759a0723b55dd2f079ad0d6450b463652cffa34d001a85bb0588fb"
+    },
+    {
+      "time": 1791595972.2789361,
+      "phase": "update_committed",
+      "step": 16,
+      "episode": "imperfection",
+      "frames": 222,
+      "loss": 2.19596791267395,
+      "gradient_norm": 5.734479052484091,
+      "update": {
+        "clip_scale": 0.1743837564151494,
+        "adapter_tensors": 130,
+        "step": 16
+      },
+      "seconds": 32.334212665999985,
+      "metrics": {
+        "elapsed_seconds": 539.0052102910004,
+        "peak_rss_bytes": 372899840,
+        "swap_bytes": 1103101952,
+        "memory_pressure_level": 1,
+        "mlx_peak_bytes": 564037566,
+        "mlx_active_bytes": 15172
+      },
+      "adapter_sha256": "27dee163a63f7c2b7eb609ec2101b58caf3b94c19cdaa3417d9d95471ca6251b"
+    }
+  ]
+}

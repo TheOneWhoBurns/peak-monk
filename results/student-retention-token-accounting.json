@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "examples": 51,
+  "maximum_tokens": 1940,
+  "minimum_tokens": 47,
+  "maximum_selected_target_tokens": 34,
+  "total_selected_target_tokens": 817,
+  "template_sha256": "f950548988e50713a9975a11be0eaf1d29c4fe4be0ba22a57daeebbc27a7adb9",
+  "scope": "CPU tokenization and causal-prefix/last-reply+EOS alignment, no model load or GPU work. No truncation required."
+}

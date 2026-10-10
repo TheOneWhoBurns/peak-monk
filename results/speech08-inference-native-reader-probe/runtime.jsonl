@@ -1,0 +1,28 @@
+{"time": 1791596236.7938108, "phase": "runtime_ready", "initial_swap_bytes": 1103101952, "memory_guideline_bytes": 5100000000, "policy": "One model part at a time; no wiring; synchronized eviction and guards at phase boundaries"}
+{"time": 1791596237.001282, "phase": "inference_inputs_loaded", "elapsed_seconds": 0.33306741700016573, "peak_rss_bytes": 228524032, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 166642080, "mlx_active_bytes": 166641672}
+{"time": 1791596237.072823, "phase": "inference_layer_loaded", "layer": 0, "elapsed_seconds": 0.40510325000013836, "peak_rss_bytes": 275415040, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 295862336, "mlx_active_bytes": 295862280}
+{"time": 1791596237.116396, "phase": "inference_layer_loaded", "layer": 1, "elapsed_seconds": 0.44802708299994265, "peak_rss_bytes": 297058304, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 425082944, "mlx_active_bytes": 425082888}
+{"time": 1791596237.16334, "phase": "inference_layer_loaded", "layer": 2, "elapsed_seconds": 0.4953364169996348, "peak_rss_bytes": 320126976, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 554303552, "mlx_active_bytes": 554303496}
+{"time": 1791596237.221744, "phase": "inference_layer_loaded", "layer": 3, "elapsed_seconds": 0.5537214579999272, "peak_rss_bytes": 330072064, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 683524160, "mlx_active_bytes": 683524104}
+{"time": 1791596237.2527628, "phase": "inference_layer_loaded", "layer": 4, "elapsed_seconds": 0.5849881249996542, "peak_rss_bytes": 400064512, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 812744768, "mlx_active_bytes": 812744712}
+{"time": 1791596237.296731, "phase": "inference_layer_loaded", "layer": 5, "elapsed_seconds": 0.628054499999962, "peak_rss_bytes": 451526656, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 941965376, "mlx_active_bytes": 941965320}
+{"time": 1791596237.3479822, "phase": "inference_layer_loaded", "layer": 6, "elapsed_seconds": 0.6801317079998626, "peak_rss_bytes": 524894208, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 1071185984, "mlx_active_bytes": 1071185928}
+{"time": 1791596237.405165, "phase": "inference_layer_loaded", "layer": 7, "elapsed_seconds": 0.7370407919997888, "peak_rss_bytes": 544538624, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 1200406592, "mlx_active_bytes": 1200406536}
+{"time": 1791596237.48267, "phase": "inference_layer_loaded", "layer": 8, "elapsed_seconds": 0.8149444579994451, "peak_rss_bytes": 544538624, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 1329627200, "mlx_active_bytes": 1329627144}
+{"time": 1791596237.57486, "phase": "inference_layer_loaded", "layer": 9, "elapsed_seconds": 0.9068833749997793, "peak_rss_bytes": 544538624, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 1458847808, "mlx_active_bytes": 1458847752}
+{"time": 1791596237.666566, "phase": "inference_layer_loaded", "layer": 10, "elapsed_seconds": 0.9986681250002221, "peak_rss_bytes": 544538624, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 1588068416, "mlx_active_bytes": 1588068360}
+{"time": 1791596237.760536, "phase": "inference_layer_loaded", "layer": 11, "elapsed_seconds": 1.0925569579994772, "peak_rss_bytes": 544538624, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 1717289024, "mlx_active_bytes": 1717288968}
+{"time": 1791596237.853471, "phase": "inference_layer_loaded", "layer": 12, "elapsed_seconds": 1.1852313749996028, "peak_rss_bytes": 544538624, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 1846509632, "mlx_active_bytes": 1846509576}
+{"time": 1791596237.9466329, "phase": "inference_layer_loaded", "layer": 13, "elapsed_seconds": 1.2789325419998931, "peak_rss_bytes": 544538624, "swap_bytes": 1103101952, "memory_pressure_level": 1, "mlx_peak_bytes": 1975730240, "mlx_active_bytes": 1975730184}
+{"time": 1791596238.040218, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 2104950792}
+{"time": 1791596239.071554, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 2104950792}
+{"time": 1791596240.101207, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 2104950792}
+{"time": 1791596241.132704, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 2104950792}
+{"time": 1791596242.1640692, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 2104950792}
+{"time": 1791596243.213771, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 2104950792}
+{"time": 1791596244.237382, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 2104950792}
+{"time": 1791596245.2616022, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 2104950792}
+{"time": 1791596246.291857, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 2104950792}
+{"time": 1791596247.319894, "phase": "load_settle_wait", "memory_pressure_level": 2, "mlx_active_bytes": 2104950792}
+{"time": 1791596248.353698, "phase": "resource_guard_stop", "reason": "system memory pressure is not normal", "elapsed_seconds": 11.679376166999646, "peak_rss_bytes": 544538624, "swap_bytes": 1103101952, "memory_pressure_level": 2, "mlx_peak_bytes": 2104950848, "mlx_active_bytes": 2104950792}
+{"time": 1791596248.3541849, "phase": "runtime_exit", "error": "Bounded runtime system memory pressure is not normal"}
