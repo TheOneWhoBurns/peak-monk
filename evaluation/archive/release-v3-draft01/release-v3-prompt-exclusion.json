@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "kind": "Exact normalized caller-turn exclusion",
+  "evaluation_caller_turn_counts": {
+    "evaluation/dev-roleplay-v2.json": 28,
+    "evaluation/final-roleplay-v2.json": 20,
+    "evaluation/pressure-v2.json": 64,
+    "evaluation/final-roleplay-v3.json": 31,
+    "evaluation/pressure-v3.json": 64
+  },
+  "unique_evaluation_callers": 207,
+  "corpus_caller_turn_counts": {
+    "data/sampled-preferences-v2/train.jsonl": 1209,
+    "data/on-policy-repairs-v4/replay.jsonl": 1706,
+    "data/speech-long-dialogues-v1.jsonl": 48,
+    "data/preference-capacity-probe/train.jsonl": 68,
+    "data/preference-capacity-probe/replay.jsonl": 67
+  },
+  "collisions": [],
+  "evaluation_hashes": {
+    "evaluation/dev-roleplay-v2.json": "f20c082c28f5ee0ef19794317645332d771eb3f926e2b7512341fa74df679c33",
+    "evaluation/final-roleplay-v2.json": "d40b45d84e91e19acc5d7cd0f66c1371557df8c02dca7389becb472b56ac580b",
+    "evaluation/pressure-v2.json": "8f7555a83afcc9d10ef2559c24618cf8b55a635d67ca3d0cfb1a1353911cdfeb",
+    "evaluation/final-roleplay-v3.json": "766fad4ba30b5d2d41f24ac8c4d2400d27b37751644501080af44b1c463c10dd",
+    "evaluation/pressure-v3.json": "c5c724e7ed281cc5e39b26a6a2a2af9e6ba600728ee3c09111ca1147f4ed22d2"
+  },
+  "data_hashes": {
+    "data/sampled-preferences-v2/train.jsonl": "b7dbe3e7a0e4d7458bfe3a0340527315fa2ed1ae4c4425cce120b73f60f646a6",
+    "data/on-policy-repairs-v4/replay.jsonl": "97cb4735299cc72b198f49f2762a7f5a913d0d337ab9fc17c60aae15457fd0c5",
+    "data/speech-long-dialogues-v1.jsonl": "5c8c8716af692346d257ede13321482924968d38e088c92bc37a0141027d9ecd",
+    "data/preference-capacity-probe/train.jsonl": "0a2fa7bc2483446315d803018d4942ad6833715d34746ec13577ee9d4abdb196",
+    "data/preference-capacity-probe/replay.jsonl": "7cd5351e96de1f5a02db69c31c3882261a76854b60861f6871a449fc64a84bbc"
+  },
+  "limitations": "Exact matching does not establish semantic independence. Same-author development-guided iteration remains disclosed; no deliberate final or pressure prompt rewriting is permitted.",
+  "required_registry_sha256": "36acb7920165b23284ea3a86e36f090b7ccaddf0a894ea79bf5a1d78d91ddf14",
+  "checker_sha256": "1942abb42c016f688924e6b640c226cced0106a42df748b146dc7f0e13d95765"
+}

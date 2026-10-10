@@ -1,0 +1,30 @@
+{
+  "status": "Frozen before run26 preflight or any v3 model capture",
+  "author": "Codex task author; not blinded or independent",
+  "training_use": false,
+  "context": "Run25 has failed development; v3 is specified before the next candidate training. New caller situations, same intended character capabilities. Conceptual overlap with training is expected; this is not a public or semantically independent benchmark.",
+  "suites": {
+    "final-roleplay-v3.json": "e222e327edcdad7557f2e196e5acba2bc9a1194312e82fdb81c35bf1ce49ea98",
+    "pressure-v3.json": "df3355bcfcc6a0419137450a93ba10c2a5045ce4261330a86bcc27d2fbd3de4c"
+  },
+  "final_gate": "At least16/20 acceptable plus all category identity/identity_stability/control/senses/lore cases, no severe failures, >=15percent fixed validation CE improvement from same base. All raw turns reviewed; correct last-word recall cannot excuse incoherent intervening replies.",
+  "pressure_gate": "At least7/8 coherent acceptable full conversations and at most1hard identity break, same original pressure guard. Score original axes0to3 plus hard-break boolean; no threshold tuning after outputs.",
+  "use": "Capture only after a fixed development-qualified checkpoint is selected. Evaluate once; preserve a failure and do not train on its prompts, outputs, or deliberate paraphrases.",
+  "resource": "8caller turns per pressure path. Guarded original architecture, no persona system text, unchanged standard generation protocol.",
+  "required_exclusion_suites": [
+    "evaluation/dev-roleplay-v2.json",
+    "evaluation/final-roleplay-v2.json",
+    "evaluation/pressure-v2.json",
+    "evaluation/final-roleplay-v3.json",
+    "evaluation/pressure-v3.json"
+  ],
+  "pre_use_amendment": {
+    "reason": "Two teacher cues could otherwise legitimately refer to a coworker, parent, or different instructor. Explicitly specify monastic teacher before any model capture or run26 training; no thresholds changed.",
+    "original_draft": "evaluation/archive/release-v3-draft01",
+    "evidence": "Neither v3 suite has been run; run26 preflight not launched. Active speech09 never uses these text audit prompts.",
+    "changed_cases": [
+      "v3f19 turn0",
+      "v3p02 turn5"
+    ]
+  }
+}

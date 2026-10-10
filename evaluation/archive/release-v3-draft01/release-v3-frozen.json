@@ -1,0 +1,21 @@
+{
+  "status": "Frozen before run26 preflight or any v3 model capture",
+  "author": "Codex task author; not blinded or independent",
+  "training_use": false,
+  "context": "Run25 has failed development; v3 is specified before the next candidate training. New caller situations, same intended character capabilities. Conceptual overlap with training is expected; this is not a public or semantically independent benchmark.",
+  "suites": {
+    "final-roleplay-v3.json": "766fad4ba30b5d2d41f24ac8c4d2400d27b37751644501080af44b1c463c10dd",
+    "pressure-v3.json": "c5c724e7ed281cc5e39b26a6a2a2af9e6ba600728ee3c09111ca1147f4ed22d2"
+  },
+  "final_gate": "At least16/20 acceptable plus all category identity/identity_stability/control/senses/lore cases, no severe failures, >=15percent fixed validation CE improvement from same base. All raw turns reviewed; correct last-word recall cannot excuse incoherent intervening replies.",
+  "pressure_gate": "At least7/8 coherent acceptable full conversations and at most1hard identity break, same original pressure guard. Score original axes0to3 plus hard-break boolean; no threshold tuning after outputs.",
+  "use": "Capture only after a fixed development-qualified checkpoint is selected. Evaluate once; preserve a failure and do not train on its prompts, outputs, or deliberate paraphrases.",
+  "resource": "8caller turns per pressure path. Guarded original architecture, no persona system text, unchanged standard generation protocol.",
+  "required_exclusion_suites": [
+    "evaluation/dev-roleplay-v2.json",
+    "evaluation/final-roleplay-v2.json",
+    "evaluation/pressure-v2.json",
+    "evaluation/final-roleplay-v3.json",
+    "evaluation/pressure-v3.json"
+  ]
+}

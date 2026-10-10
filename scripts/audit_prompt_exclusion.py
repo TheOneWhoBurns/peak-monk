@@ -73,7 +73,22 @@ def main():
     p.add_argument('--corpus',type=Path,action='append',required=True)
     p.add_argument('--output',type=Path,required=True)
     a=p.parse_args()
-    report=audit(a.suite,a.corpus)
+    # Every future project audit includes registered release exclusions even
+    # when an older caller explicitly names only the v2 suites.
+    root=Path(__file__).resolve().parents[1]
+    registry=root/'evaluation/release-v3-frozen.json'
+    registered=json.loads(registry.read_text())
+    for name,expected in registered['suites'].items():
+        path=root/'evaluation'/name
+        if hashlib.sha256(path.read_bytes()).hexdigest()!=expected:
+            raise ValueError('Frozen release audit changed: '+str(path))
+    suites=list(a.suite)
+    for value in registered['required_exclusion_suites']:
+        path=Path(value)
+        if path.resolve() not in {item.resolve() for item in suites}:
+            suites.append(path)
+    report=audit(suites,a.corpus)
+    report['required_registry_sha256']=hashlib.sha256(registry.read_bytes()).hexdigest()
     report['checker_sha256']=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
     a.output.write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps(report,indent=2))
