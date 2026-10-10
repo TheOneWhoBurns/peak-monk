@@ -1,0 +1,51 @@
+{
+  "status": "Proposed protocol, not implemented or executed",
+  "supersedes": "The fixed six-turn capture design in results/multiturn-preference-capture-plan.json; retain that file as historical evidence",
+  "hypothesis": "Sparse late challenges and clean scripted histories underrepresent contexts encountered by the deployed student; model-generated mistakes may compound as conversations grow.",
+  "not_assumed": [
+    "Assistant instruction tuning is the established cause in Qwen3-4B-Base",
+    "All small models necessarily drift at all long lengths",
+    "Turn count and token context length are interchangeable",
+    "A candidate that refuses every request has a good independent personality"
+  ],
+  "method": "Stratified Monte Carlo conversation rollouts with sparse branches; no full tree search or automatic reinforcement from the model's self-ratings",
+  "sampling": {
+    "pilot": "Two new training-only scenario families, two generation seeds each; challenge branches after four and eight completed exchanges. Four independent roots, eight challenge branches. Feasibility pilot, not a quality benchmark.",
+    "expansion": "If runtime and labeling are workable, eight training families times two seeds: sixteen roots; branch after 4, 8, 16 and 32 completed exchanges, subject to explicit memory/token feasibility. Sixty-four challenge branches if all depths finish.",
+    "ordinary_spine": "Maintain an unchallenged conversation spine with the student's actual previous replies. Let caller turns respond coherently to events; sample topic changes, emotional tone, verbosity and corrections. Preserve every generated candidate and partner provenance.",
+    "challenge_branch": "Clone a prefix on disk, introduce one challenge, then continue three ordinary caller exchanges to measure recovery. Never feed a branch's challenge or answer back into the unchallenged spine.",
+    "challenge_types": ["identity", "generic-assistant role pressure", "canonical biography", "caller-memory correction", "perception boundary"],
+    "placement": "Balance challenge types across depths; matched branches use semantically equivalent challenges to estimate position effects. Add no-challenge controls. Training examples mix terminal challenges and mid-conversation challenges followed by recovery.",
+    "branch_replicates": "Initially one sampled completion path per branch; add paired seeds at selected failures and matched successful controls only as a separately logged diagnostic.",
+    "randomness": "Record root, caller, challenge and completion seeds separately, plus checkpoint, tokenizer, serialization and scenario hashes. Fix the sampling policy before each comparison.",
+    "context": "Record exact input token count, exchange count, output tokens, finish reason and any truncation. A resource-limited branch is incomplete, never a pass. No silent rolling-window truncation or profile reminders."
+  },
+  "diagnostic_controls": [
+    "At selected failed prefixes, compare actual history with a minimally reviewed history that corrects earlier Jun errors while preserving caller facts, length as closely as possible, and referential coherence. This is an intervention, not a claim of perfect causal isolation.",
+    "Compare brief versus verbose coherent histories at matched exchange count to probe token-length effects; compare different exchange counts within matched token bands where feasible.",
+    "Keep an ordinary no-pressure condition to distinguish spontaneous drift from challenge susceptibility.",
+    "Test a privileged-profile teacher on the same histories before trusting its labels. Teacher metadata stays out of student input; rejected teachers produce no training targets."
+  ],
+  "metrics": {
+    "primary": "Character survival by turn and token band: first independently reviewed hard break, with unfinished trajectories right-censored rather than counted successful.",
+    "secondary": ["challenge failure rate by depth and type", "persistence of an error over subsequent turns", "recovery within three follow-up exchanges", "caller-fact retention", "blind pairwise naturalness and agency", "completion and resource-censoring rates"],
+    "labels": "Separate hard identity/lore/perception contradictions from memory mistakes, assistant-like style and subjective awkwardness. Helping a caller is not itself an identity failure. Preserve uncertainty and disagreements.",
+    "uncertainty": "Branches sharing a root are correlated. Show root counts and raw counts; cluster resampling by root, and scenario-level sensitivity when sample size supports it. Do not report 64 branches as 64 independent conversations.",
+    "adaptive_search": "Oversampled failure branches are training diagnostics. Keep a separate fixed sampling distribution for before/after comparisons; do not present adaptively mined failure rate as natural conversation prevalence."
+  },
+  "training_conversion": {
+    "targets": "Review exact on-policy prefixes; teach a coherent corrected next reply and, where needed, a recovery continuation. Earlier erroneous assistant replies remain context with zero positive-target loss.",
+    "balance": "Mix reviewed successful ordinary continuations and clean SFT replay with failure corrections. Limit repeated descendants from one root so one failure family cannot dominate.",
+    "length_curriculum": "Train challenges at varied positions, not only endings. Token-length curriculum must preserve the actual conditioning history; 32 exchanges that exceed a 1024-token training cap cannot be claimed as full-history training.",
+    "memory_constraint": "Validate a feasible gradient method at each admitted token length. Frozen-prefix or truncated-gradient methods, if required, must be named and tested as approximations rather than described as equivalent full-context gradients.",
+    "admission": "Declare optimizer, objective, dataset counts and resource protocol separately after capture and review. No automatic training launch from this plan."
+  },
+  "evaluation_integrity": "Split by scenario family and all descendants before synthesis. Training rollouts never reuse exposed final/pressure prompts, answers or deliberate paraphrases. Existing acceptance gates remain; future release requires fresh families and seeds. Same-author reviews are not independent human evaluation.",
+  "execution_order": [
+    "Finish runtime mitigation review, including hidden wired-limit calls in dependencies; use one model process and persist phase breadcrumbs",
+    "Complete saved run22 final capture review and explicitly select a research parent; do not call it accepted",
+    "Implement token-accounted, resumable sampling and verify it without model loading",
+    "Run bounded shallow pilot, then expand only within measured limits",
+    "Review rollouts, quantify the failure mechanisms and teacher advantage, then declare the next training experiment"
+  ]
+}

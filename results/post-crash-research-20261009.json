@@ -1,0 +1,51 @@
+{
+  "status": "Research and experimental design only; no model loaded or training restarted",
+  "user_direction": "Continue the overall project; investigate sampled long conversation paths and challenges arriving late. The crash review is a checkpoint, not cancellation.",
+  "local_evidence": {
+    "text_backbone": "Qwen3-4B-Base, quantized; sources/qwen3-4b-base-mlx.json. Assistant-like behavior does not establish instruction-tuning reversion in this backbone.",
+    "corpus": "results/corpus-v6-descriptive-audit.json: 268 distinct conversations, 1390 character turns; 177 conversations have at most four exchanges, 18 have sixteen exchanges.",
+    "coverage_limit": "Longer examples do exist. We have not established adequate variation in challenge position, token length, or the student's own imperfect histories.",
+    "training_limit": "run22 used a 1024-token window; longest record 840 tokens. More turns in short scripted examples do not establish robustness at materially longer token contexts.",
+    "speech_distinction": "Moshi and Qwen are different backbones. Character gains in the text adapter do not automatically transfer to native speech.",
+    "crash": "results/system-crash-20261009.json records the exact GPU panic; no completed actual-model staged speech update. Runtime mitigation must precede heavy experiments."
+  },
+  "sources": [
+    {
+      "url": "https://movingcastles.world/posts/zero",
+      "finding": "Zero reports 5932 conversations and 73765 character turns, with dialogue generation and subsequent reinforcement learning. Our much smaller corpus and short-history concentration are substantial departures.",
+      "application": "Prioritize dialogue distribution and on-policy recovery before another small hyperparameter sweep; data insufficiency remains a hypothesis, not a proved sole cause."
+    },
+    {
+      "url": "https://arxiv.org/html/2609.34418v1",
+      "finding": "OSPD uses student-generated histories, a teacher conditioned on a fuller character profile, progressive masking and SFT retention. Its inference still has a brief profile; experiments use much larger GPU resources.",
+      "application": "Borrow the on-policy principle, not a claim of drop-in reproduction. Our zero-profile student is an extension. Verify teacher advantage before using teacher targets; our earlier prompted local teacher pilots failed."
+    },
+    {
+      "url": "https://arxiv.org/html/2605.27186v1",
+      "finding": "MAIGO studies prior model mistakes contaminating later conversation and uses history-cleaned teacher supervision.",
+      "application": "Compare actual and reviewed histories; preserve user references and events when repairing context. Do not blindly delete all earlier assistant messages or treat this task benchmark as proof of persona quality."
+    },
+    {
+      "url": "https://aclanthology.org/2025.findings-emnlp.18/",
+      "finding": "CPO addresses ambiguity in role-playing rewards through comparative trajectory evaluation.",
+      "application": "Keep hard identity/lore/perception checks separate from subjective naturalness comparisons. Existing acceptance gates remain unchanged."
+    },
+    {
+      "url": "https://github.com/ml-explore/mlx/issues/3186",
+      "finding": "Open upstream issue contains the same completeMemory prepare-count-underflow panic signature across several Apple GPU systems.",
+      "application": "Do not classify our crash as ordinary OOM or assume serialized jobs eliminate the driver problem."
+    },
+    {
+      "url": "https://gist.github.com/ronm92130/9bf97b300175be8e4f578c6e295feeaa",
+      "finding": "A controlled single-system report found avoiding set_wired_limit prevented reproduction; avoiding cache clearing alone did not. Different hardware, model and runtime from ours.",
+      "application": "Investigate unwired allocation across our scripts and mlx-lm generation helpers. Start with bounded diagnostics and persisted phase logs; no guarantee this fixes the M2 crash and no blind third-party shim execution."
+    },
+    {
+      "url": "https://huggingface.co/blog/edwixx/shrinking-full-duplex-speech-training-a-600m-moshi",
+      "finding": "The author's small Moshi-style experiment reports unresolved garbled speech, rather than a ready replacement checkpoint.",
+      "application": "Useful diagnostics include per-codebook loss, codec/delay checks and free-versus-conditioned generation. Do not pivot to from-scratch small speech training on the assumption it already works."
+    }
+  ],
+  "next_design": "results/monte-carlo-dialogue-plan-v2.json",
+  "decision": "Test drift as a function of history, challenge placement and context tokens; collect reviewed on-policy corrections and recovery continuations only after establishing a bounded runtime protocol. No accepted model or measured Monte Carlo result is claimed."
+}

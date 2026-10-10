@@ -1,0 +1,13 @@
+{
+  "status": "Training goal paused at user request after system crash; no retry authorized in this diagnostic turn",
+  "panic_report": "/Library/Logs/DiagnosticReports/panic-full-2026-10-09-185304.0002.panic",
+  "panic": "completeMemory() prepare count underflow @IOGPUMemory.cpp:550",
+  "panicked_process": "Python, pid55625",
+  "reported_python_resident_bytes": 5537812512,
+  "likely_trigger": "Actual pretrained Moshi full-episode staged memory probe; text training completed and tiny Metal parity test passed before this probe began. Association supported by execution order and timestamps; exact driver/root cause not established.",
+  "memory_pressure_flag_in_panic": false,
+  "running_training_processes_after_reboot": false,
+  "text_checkpoint_verified_sha256": "62b4197bdf59bd157ce7dd0ce6cd4c62b5dd0a910b400d886514b59480cf0829",
+  "text_checkpoint_intact": true,
+  "speech_probe_status": "Interrupted by machine crash during first245frame episode; no successful update or memory feasibility established; do not treat tiny test as actual-model pass."
+}

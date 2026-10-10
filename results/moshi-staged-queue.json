@@ -1,0 +1,16 @@
+[
+  {
+    "command": [
+      ".venv-speech/bin/python",
+      "scripts/check_moshi_staged.py",
+      "--device",
+      "gpu",
+      "--dtype",
+      "bfloat16",
+      "--output",
+      "results/moshi-staged-gradient-bf16-metal.json"
+    ],
+    "log": "moshi-staged-bf16-metal.log",
+    "exit_code": 0
+  }
+]

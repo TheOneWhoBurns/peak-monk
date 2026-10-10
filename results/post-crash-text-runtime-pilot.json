@@ -1,0 +1,11 @@
+{
+  "scope": "First bounded post-crash text inference experiment. Not speech or gradient validation; no proof that driver panic is fixed.",
+  "first_attempt": "Exited normally during loading when system swap growth exceeded512MiB. No generated responses.",
+  "retry": "Same source, same memory/swap/time limits; completed four replies after system memory settled.",
+  "peak_mlx_bytes": 2788024420,
+  "max_input_tokens": 173,
+  "replies": 4,
+  "implementation": "scripts/bounded_text_runtime.py disables generation wiring, rejects any other wiring calls, defers cache clearing to synchronized response boundaries, uses process lock and durable phase logs.",
+  "checks": "Standard-library manifest validation and compile passed. CPU-mocked check verified blocked wiring, deferred clearing, synchronize-before-clear and restored patches. Actual four-response run completed.",
+  "quality": "Second reply asks what aunt used lantern for although caller already said fishing. No quality improvement claimed; on-policy data collection only."
+}

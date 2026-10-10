@@ -18,3 +18,4 @@ run21-step0064	2026-10-09	d9e22d0	2.8138267993927	-1.078939437866211	fail	15/20 
 run21-step0096	2026-10-09	d9e22d0	3.0576460361480713	-0.8351202011108398	fail	11/20 author scored	discard	RNG-correct matched rerun; essential failures d01,d06; no holdout capture
 run22-step0046	2026-10-09	371ef9d	2.6050305366516113	-1.2877357006072997	fail	15/20 author scored	discard	Full-context corrected SFT; essential identity stability, control and teacher lore fail; later declared captures pending
 run22-step0092	2026-10-09	371ef9d	2.5948221683502197	-1.2979440689086914	fail	15/20 author scored	discard	Direct human identity improves; control and teacher lore remain essential failures
+run22-step0140	2026-10-09	371ef9d	2.5872750282287598	-1.3054912090301514	fail	16/20 author scored	discard	Final full-context SFT export; essential d06,d19 fail. Research parent for on-policy trajectories only.
