@@ -1,8 +1,7 @@
 """Native duplex inference with selective assembly, no wiring, and resource guards.
 
-The full quantized model is resident during generation. This is a separate,
-explicitly measured inference experiment; the sub-600MB training measurement
-must not be presented as its inference memory requirement.
+Full residency and streamed temporal weights are explicit modes. Inference
+resources are measured separately from the sub-600MB training experiment.
 """
 import argparse,gc,json,time,resource,subprocess
 from dataclasses import asdict
@@ -33,7 +32,8 @@ class InferenceRuntime(BoundedSpeechRuntime):
         return metrics
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('input',type=Path);p.add_argument('--adapter');p.add_argument('--adapter-config');p.add_argument('--output',type=Path,required=True);p.add_argument('--stream-temporal',action='store_true');p.add_argument('--seed',type=int,default=41);p.add_argument('--max-frames',type=int);p.add_argument('--sampling-preset',choices=['local','offline'],default='local');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('input',type=Path);p.add_argument('--adapter');p.add_argument('--adapter-config');p.add_argument('--output',type=Path,required=True);p.add_argument('--stream-temporal',action='store_true');p.add_argument('--reuse-temporal',action='store_true');p.add_argument('--selective-reader',action='store_true');p.add_argument('--seed',type=int,default=41);p.add_argument('--max-frames',type=int);p.add_argument('--sampling-preset',choices=['local','offline'],default='local');a=p.parse_args()
+    if a.reuse_temporal and not a.stream_temporal:raise ValueError('Reuse requires temporal streaming')
     if a.output.exists():raise ValueError('Preserve earlier native evidence')
     if bool(a.adapter)!=bool(a.adapter_config):raise ValueError('Adapter and training config must be supplied together')
     cfg=json.loads(Path(a.adapter_config).read_text()) if a.adapter else dict(rank=8,scale=2.)
@@ -41,7 +41,7 @@ def main():
     a.output.mkdir(parents=True)
     weight='models/moshi/model.q4.safetensors'
     assert sha(weight)=='7959d590e23c1ebc78cfa3501344a6ff331561aa0cadc4429b733b890bbc919c'
-    atomic_json(a.output/'config.json',dict(input=str(a.input),input_sha256=sha(a.input),adapter=a.adapter,adapter_sha256=sha(a.adapter) if a.adapter else None,adapter_config=a.adapter_config,seed=a.seed,explicit_frame_limit=a.max_frames,stream_temporal=a.stream_temporal,sampling_preset=a.sampling_preset,source_sha256={n:sha(Path(__file__).with_name(n)) for n in ['infer_moshi_unwired.py','assemble_moshi_parts.py','native_tensor_reader.py','moshi_weight_stream.py','bounded_speech_runtime.py','bounded_text_runtime.py']}))
+    atomic_json(a.output/'config.json',dict(input=str(a.input),input_sha256=sha(a.input),adapter=a.adapter,adapter_sha256=sha(a.adapter) if a.adapter else None,adapter_config=a.adapter_config,seed=a.seed,explicit_frame_limit=a.max_frames,stream_temporal=a.stream_temporal,reuse_temporal=a.reuse_temporal,selective_reader=a.selective_reader,sampling_preset=a.sampling_preset,source_sha256={n:sha(Path(__file__).with_name(n)) for n in ['infer_moshi_unwired.py','assemble_moshi_parts.py','native_tensor_reader.py','reusable_moshi_parts.py','selective_native_reader.py','moshi_weight_stream.py','bounded_speech_runtime.py','bounded_text_runtime.py']}))
     with InferenceRuntime(a.output,memory_limit=1_400_000_000 if a.stream_temporal else 5_100_000_000,max_seconds=1800) as runtime:
         runtime.peak_limit=1_500_000_000 if a.stream_temporal else 5_250_000_000
         import numpy as np
@@ -57,13 +57,16 @@ def main():
             if a.max_frames<3:raise ValueError('Need at least3frames')
             codes=codes[:,:a.max_frames]
         mx.random.seed(a.seed);start=time.monotonic()
-        parts=MoshiParts(weight,config_v0_1(),a.adapter,rank=cfg['rank'],scale=cfg['scale'])
+        from reusable_moshi_parts import ReusableMoshiParts
+        parts=(ReusableMoshiParts if a.reuse_temporal else MoshiParts)(weight,config_v0_1(),a.adapter,rank=cfg['rank'],scale=cfg['scale'])
         def boundary(phase,**details):
             metrics=runtime.settle_load() if phase.startswith('inference_') else runtime.response_done()
             runtime.event(phase,**details,**metrics)
         from native_tensor_reader import NativeTensorRanges
-        parts.weights=NativeTensorRanges(weight)
-        if a.adapter:parts.adapter=NativeTensorRanges(a.adapter)
+        from selective_native_reader import SelectiveNativeRanges
+        reader=SelectiveNativeRanges if a.selective_reader else NativeTensorRanges
+        parts.weights=reader(weight)
+        if a.adapter:parts.adapter=reader(a.adapter)
         model=(assemble_streamed if a.stream_temporal else assemble)(parts,boundary=boundary);load_seconds=time.monotonic()-start
         start=time.monotonic();model.warmup();boundary('warmup_complete');warmup_seconds=time.monotonic()-start
         mx.random.seed(a.seed)
@@ -86,7 +89,7 @@ def main():
         if not audio:raise RuntimeError('No agent audio generated')
         np.savez_compressed(a.output/'agent_codes.npz',agent_codes=np.stack(audio,axis=1))
         (a.output/'transcript.txt').write_text(''.join(text).strip()+'\n')
-        report=dict(input=str(a.input),input_sha256=sha(a.input),adapter=a.adapter,adapter_sha256=sha(a.adapter) if a.adapter else None,seed=a.seed,sampling_preset=a.sampling_preset,input_seconds=codes.shape[1]*.08,original_input_frames=original_frames,explicit_frame_limit=a.max_frames,model_load_seconds=load_seconds,warmup_seconds=warmup_seconds,stream_temporal=a.stream_temporal,wired_limit_bytes=None,text_sampler=asdict(text_sampler),audio_sampler=asdict(audio_sampler),generation_seconds=elapsed,generation_realtime_factor=elapsed/(codes.shape[1]*.08),peak_model_memory_bytes=mx.get_peak_memory(),frames=frames,resource_metrics=runtime.response_done(),scope='Native model-only generation; temporal residency recorded in stream_temporal, no wiring, codec loaded in a separate process. Resource checks add overhead. No quality claim from successful generation.',sampling_seed_policy='Reset after adapter loading and warmup, matching the historical seed protocol.')
+        report=dict(input=str(a.input),input_sha256=sha(a.input),adapter=a.adapter,adapter_sha256=sha(a.adapter) if a.adapter else None,seed=a.seed,sampling_preset=a.sampling_preset,input_seconds=codes.shape[1]*.08,original_input_frames=original_frames,explicit_frame_limit=a.max_frames,model_load_seconds=load_seconds,warmup_seconds=warmup_seconds,stream_temporal=a.stream_temporal,reuse_temporal=a.reuse_temporal,selective_reader=a.selective_reader,temporal_load_count=getattr(parts,'load_count',None),temporal_load_seconds=getattr(parts,'load_seconds',None),wired_limit_bytes=None,text_sampler=asdict(text_sampler),audio_sampler=asdict(audio_sampler),generation_seconds=elapsed,generation_realtime_factor=elapsed/(codes.shape[1]*.08),peak_model_memory_bytes=mx.get_peak_memory(),frames=frames,resource_metrics=runtime.response_done(),scope='Native model-only generation; temporal residency recorded in stream_temporal, no wiring, codec loaded in a separate process. Resource checks add overhead. No quality claim from successful generation.',sampling_seed_policy='Reset after adapter loading and warmup, matching the historical seed protocol.')
         atomic_json(a.output/'metrics.json',report);print(json.dumps({k:v for k,v in report.items() if k!='frames'}),flush=True)
 
 if __name__=='__main__':main()

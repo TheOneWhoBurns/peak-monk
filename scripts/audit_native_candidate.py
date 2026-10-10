@@ -21,7 +21,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--adapter', type=Path)
     parser.add_argument('--config', type=Path)
-    parser.add_argument('--backend', choices=['moshi','personaplex'], default='moshi')
+    parser.add_argument('--backend', choices=['moshi','moshi-streamed','personaplex'], default='moshi-streamed')
     parser.add_argument('--parity-report', type=Path)
     parser.add_argument('--sampling-preset', choices=['local','offline'], default='local')
     parser.add_argument('--output', required=True, type=Path)
@@ -48,7 +48,7 @@ def main():
         'config': str(args.config) if args.config else None,
         'config_sha256': hashlib.sha256(args.config.read_bytes()).hexdigest() if args.config else None,
         'backend': args.backend,
-        'sampling_preset': args.sampling_preset if args.backend == 'moshi' else 'pinned PersonaPlex configuration',
+        'sampling_preset': args.sampling_preset if args.backend.startswith('moshi') else 'pinned PersonaPlex configuration',
         'parity_report': str(args.parity_report) if args.parity_report else None,
         'seed': 41,
         'status': 'running; unscored',
@@ -62,7 +62,10 @@ def main():
         inputs = Path('evaluation/audio-roleplay-v2') / (name + '.npz')
         target = args.output / name
         adapter_args = ['--adapter',str(args.adapter),'--adapter-config',str(args.config)] if args.adapter else []
-        if args.backend == 'moshi':
+        if args.backend == 'moshi-streamed':
+            inference = ['scripts/infer_moshi_unwired.py', str(inputs), *adapter_args,
+                         '--stream-temporal', '--sampling-preset', args.sampling_preset]
+        elif args.backend == 'moshi':
             inference = ['scripts/infer_moshi_codes.py', str(inputs), *adapter_args,
                          '--sampling-preset', args.sampling_preset]
         else:

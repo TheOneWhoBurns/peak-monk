@@ -21,6 +21,21 @@
       "url": "https://kyutai.org/assets/pdfs/Moshi.pdf",
       "finding": "Moshi EPAD precedes the next word after padding; it is not the same as a dialogue turn-end token.",
       "application": "Our diagnostic separation of token0 from token3 matters. Do not copy BayLing turn-state weights by token name."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ml-explore/mlx/v0.26.5/python/src/convert.cpp",
+      "finding": "The pinned MLX NumPy conversion copies input buffers. A NumPy memmap does not make the model weights zero-copy GPU storage.",
+      "application": "Avoid claiming memory mapping solves full-resident inference."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ml-explore/mlx/v0.26.5/python/src/load.cpp",
+      "finding": "The MLX file-object safetensor loader evaluates synchronously and reads directly into its own memory through readinto.",
+      "application": "A compact virtual file exposing only selected tensors can avoid constructing unused lazy tensors without copying weights to another disk file. Tiny native trace parity passed; real-model performance still being measured."
+    },
+    {
+      "url": "https://huggingface.co/YC-Chen/TASTE2-2B-EN",
+      "finding": "TASTE2-2B-EN is based on Qwen2-1.5B and explicitly is not dialogue-fine-tuned. It uses an incremental speech-tokenizer/spoken-LM/CosyVoice2 stack and a research-only license.",
+      "application": "Potential research alternative, not a ready smaller replacement for the trained Moshi duplex model. No download or switch."
     }
   ],
   "local_observation": "The run07adapter improves spoken-token CE but reduces EPAD top1accuracy on both validation clips versus base. Current training weights both PAD and EPAD by0.05.",

@@ -1,0 +1,178 @@
+{
+  "input": "evaluation/audio-roleplay-v2/s01.npz",
+  "input_sha256": "2e46324af7821ec4f3ab7eaa9a5476aa44ac93a0b58216b3cba7de67a6edf56e",
+  "adapter": "adapters/speech-run08/checkpoint-0016.safetensors",
+  "adapter_sha256": "27dee163a63f7c2b7eb609ec2101b58caf3b94c19cdaa3417d9d95471ca6251b",
+  "seed": 41,
+  "sampling_preset": "local",
+  "input_seconds": 1.28,
+  "original_input_frames": 300,
+  "explicit_frame_limit": 16,
+  "model_load_seconds": 0.6709187919996111,
+  "warmup_seconds": 2.9494992909994835,
+  "stream_temporal": true,
+  "reuse_temporal": true,
+  "selective_reader": true,
+  "temporal_load_count": 544,
+  "temporal_load_seconds": 44.634156442006315,
+  "wired_limit_bytes": null,
+  "text_sampler": {
+    "temp": 0.8,
+    "top_p": 0.95,
+    "top_k": null,
+    "min_p": 0.0,
+    "min_tokens_to_keep": 1,
+    "logit_bias": null
+  },
+  "audio_sampler": {
+    "temp": 0.8,
+    "top_p": 0.95,
+    "top_k": null,
+    "min_p": 0.0,
+    "min_tokens_to_keep": 1,
+    "logit_bias": null
+  },
+  "generation_seconds": 49.02881024999988,
+  "generation_realtime_factor": 38.303758007812405,
+  "peak_model_memory_bytes": 1095774360,
+  "frames": [
+    {
+      "input_frame": 0,
+      "text_token": 3,
+      "piece": "",
+      "seconds": 2.941870333999759,
+      "agent_frame_available": false,
+      "agent_audio_frame_index": null
+    },
+    {
+      "input_frame": 1,
+      "text_token": 3,
+      "piece": "",
+      "seconds": 3.2438984999998866,
+      "agent_frame_available": true,
+      "agent_audio_frame_index": 0
+    },
+    {
+      "input_frame": 2,
+      "text_token": 3,
+      "piece": "",
+      "seconds": 3.046021207999729,
+      "agent_frame_available": true,
+      "agent_audio_frame_index": 1
+    },
+    {
+      "input_frame": 3,
+      "text_token": 3,
+      "piece": "",
+      "seconds": 3.0227607500000886,
+      "agent_frame_available": true,
+      "agent_audio_frame_index": 2
+    },
+    {
+      "input_frame": 4,
+      "text_token": 3,
+      "piece": "",
+      "seconds": 3.010868374999518,
+      "agent_frame_available": true,
+      "agent_audio_frame_index": 3
+    },
+    {
+      "input_frame": 5,
+      "text_token": 3,
+      "piece": "",
+      "seconds": 3.022059249999984,
+      "agent_frame_available": true,
+      "agent_audio_frame_index": 4
+    },
+    {
+      "input_frame": 6,
+      "text_token": 3,
+      "piece": "",
+      "seconds": 3.01397633400029,
+      "agent_frame_available": true,
+      "agent_audio_frame_index": 5
+    },
+    {
+      "input_frame": 7,
+      "text_token": 3,
+      "piece": "",
+      "seconds": 3.1520690830002422,
+      "agent_frame_available": true,
+      "agent_audio_frame_index": 6
+    },
+    {
+      "input_frame": 8,
+      "text_token": 3,
+      "piece": "",
+      "seconds": 3.0800259580000784,
+      "agent_frame_available": true,
+      "agent_audio_frame_index": 7
+    },
+    {
+      "input_frame": 9,
+      "text_token": 3,
+      "piece": "",
+      "seconds": 3.048704832999647,
+      "agent_frame_available": true,
+      "agent_audio_frame_index": 8
+    },
+    {
+      "input_frame": 10,
+      "text_token": 3,
+      "piece": "",
+      "seconds": 3.0151301659998353,
+      "agent_frame_available": true,
+      "agent_audio_frame_index": 9
+    },
+    {
+      "input_frame": 11,
+      "text_token": 3,
+      "piece": "",
+      "seconds": 2.9982249169997885,
+      "agent_frame_available": true,
+      "agent_audio_frame_index": 10
+    },
+    {
+      "input_frame": 12,
+      "text_token": 3,
+      "piece": "",
+      "seconds": 3.0021505410004465,
+      "agent_frame_available": true,
+      "agent_audio_frame_index": 11
+    },
+    {
+      "input_frame": 13,
+      "text_token": 3,
+      "piece": "",
+      "seconds": 3.012164916999609,
+      "agent_frame_available": true,
+      "agent_audio_frame_index": 12
+    },
+    {
+      "input_frame": 14,
+      "text_token": 3,
+      "piece": "",
+      "seconds": 3.071229874999517,
+      "agent_frame_available": true,
+      "agent_audio_frame_index": 13
+    },
+    {
+      "input_frame": 15,
+      "text_token": 3,
+      "piece": "",
+      "seconds": 3.131924667000021,
+      "agent_frame_available": true,
+      "agent_audio_frame_index": 14
+    }
+  ],
+  "resource_metrics": {
+    "elapsed_seconds": 52.97611500000039,
+    "peak_rss_bytes": 405733376,
+    "swap_bytes": 1077936128,
+    "memory_pressure_level": 1,
+    "mlx_peak_bytes": 1095774360,
+    "mlx_active_bytes": 966526420
+  },
+  "scope": "Native model-only generation; temporal residency recorded in stream_temporal, no wiring, codec loaded in a separate process. Resource checks add overhead. No quality claim from successful generation.",
+  "sampling_seed_policy": "Reset after adapter loading and warmup, matching the historical seed protocol."
+}

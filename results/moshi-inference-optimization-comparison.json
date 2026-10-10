@@ -1,0 +1,28 @@
+{
+  "status": "Parity passed; proposed optimizations not adopted as defaults",
+  "measurements": [
+    {
+      "path": "results/speech08-inference-streamed-probe",
+      "seconds": 48.81729308300055,
+      "rtf": 38.13851022109418,
+      "peak_bytes": 967072488,
+      "audio_codes_sha256": "230f2017f16ab5ddcfa373598fe2dd92f1fe95503bfd2be7ac8b6673b36cbe0c"
+    },
+    {
+      "path": "results/speech08-inference-reuse-probe",
+      "seconds": 50.425802916000066,
+      "rtf": 39.39515852812505,
+      "peak_bytes": 1095774360,
+      "audio_codes_sha256": "230f2017f16ab5ddcfa373598fe2dd92f1fe95503bfd2be7ac8b6673b36cbe0c"
+    },
+    {
+      "path": "results/speech08-inference-selective-probe",
+      "seconds": 49.02881024999988,
+      "rtf": 38.303758007812405,
+      "peak_bytes": 1095774360,
+      "audio_codes_sha256": "230f2017f16ab5ddcfa373598fe2dd92f1fe95503bfd2be7ac8b6673b36cbe0c"
+    }
+  ],
+  "inference": "Neither module reuse nor the compact virtual reader materially improves the observed runtime. Retain the original streamed implementation for quality audits: lowest measured memory, unchanged native trace.",
+  "limitations": "16 frames, mostly silence, one unreplicated timing run per variant. Not a quality or general speed benchmark."
+}
