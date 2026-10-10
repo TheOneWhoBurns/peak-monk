@@ -1,0 +1,62 @@
+{
+  "status": "fail",
+  "maximum_logp_difference": 0.10630655288696289,
+  "mean_loss_difference": 0.005108296871185303,
+  "actual": {
+    "target_tokens": 14,
+    "mean_loss": 0.8115646243095398,
+    "target_log_probs": [
+      -1.4619394540786743,
+      -0.8874572515487671,
+      -0.29028797149658203,
+      -0.0236094668507576,
+      -0.6234016418457031,
+      -1.7675966024398804,
+      -1.43526291847229,
+      -1.0550763607025146,
+      -0.33199620246887207,
+      -2.8815643787384033,
+      -0.0005703729693777859,
+      -0.001419966109097004,
+      -0.16310599446296692,
+      -0.4386158585548401
+    ]
+  },
+  "reference": {
+    "model": "models/base4b",
+    "adapter_sha256": "067a7292407cfcd3ae6e7b385476fd037b31269ff9be6d53462e84385847bc94",
+    "data": "data/on-policy-repairs-v1/train.jsonl",
+    "data_sha256": "0fef2af869ff90e04394c039d0d2f609e2327991296d9a61311927740f0564fc",
+    "row_index": 0,
+    "score": {
+      "target_tokens": 14,
+      "mean_loss": 0.8064563274383545,
+      "target_log_probs": [
+        -1.459336757659912,
+        -0.872290849685669,
+        -0.3062038719654083,
+        -0.02125719003379345,
+        -0.5971725583076477,
+        -1.7812203168869019,
+        -1.461010456085205,
+        -1.0480846166610718,
+        -0.36300432682037354,
+        -2.7752578258514404,
+        -0.0006311332108452916,
+        -0.001409133430570364,
+        -0.1627623289823532,
+        -0.44074711203575134
+      ]
+    },
+    "cached_prefix": true
+  },
+  "metrics": {
+    "elapsed_seconds": 11.992921416999707,
+    "peak_rss_bytes": 1035206656,
+    "swap_bytes": 1654915072,
+    "memory_pressure_level": 1,
+    "mlx_peak_bytes": 2889566308,
+    "mlx_active_bytes": 2406726664
+  },
+  "scope": "Actual saved standard adapter reloaded on full36-layer base versus cached frozen-prefix suffix scoring; BF16 tolerance. No quality claim."
+}

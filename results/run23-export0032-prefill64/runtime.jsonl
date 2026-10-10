@@ -1,0 +1,4 @@
+{"time": 1791594610.464631, "phase": "import_begin", "initial_swap_bytes": 1663303680}
+{"time": 1791594611.2064571, "phase": "runtime_ready", "memory_limit": 3400000000, "policy": "no wiring; deferred cache eviction; one process; bounded requests"}
+{"time": 1791594613.131774, "phase": "full_model_score_begin", "tokens": 1756}
+{"time": 1791594622.467615, "phase": "runtime_exit", "error": "Export score does not reproduce suffix model"}

@@ -1,0 +1,22 @@
+{
+  "arguments": [
+    "--adapter",
+    "adapters/run23-step0032",
+    "--model",
+    "models/base4b",
+    "--suite",
+    "evaluation/dev-roleplay-v2.json",
+    "--loss-version",
+    "assistant_eos_v2",
+    "--output",
+    "results/run23-step0032.json"
+  ],
+  "adapter_sha256": "067a7292407cfcd3ae6e7b385476fd037b31269ff9be6d53462e84385847bc94",
+  "source_sha256": {
+    "evaluate_bounded.py": "f3cb036944471dfcba533c57053168b7d914210735605ae53259f3e44e3ad5f2",
+    "evaluate.py": "d9c65c513f885476e60c1199fb85d7de8188736a5f5fb8e080337a81bca5d643",
+    "assistant_objective.py": "fc4aee1150680542323a7d79d429a3d94bfa2abee2c6b28328888c88b2024785",
+    "bounded_text_runtime.py": "10737bf45cff7727d7a58f38844a35ea1ddaae97eea20d741fb3b12499d92dd5"
+  },
+  "scope": "Same loss, tokenization, sampling and prefill defaults; only resource lifecycle and checks change"
+}

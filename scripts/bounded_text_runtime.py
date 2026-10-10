@@ -117,6 +117,28 @@ class BoundedTextRuntime:
         metrics['mlx_peak_bytes'] = self.mx.get_peak_memory()
         return metrics
 
+    def settle_after_load(self, seconds=10):
+        """Pause at a synchronized load boundary; never compute under warning.
+
+        Short-lived warning pressure during weight loading can clear without
+        further work. Persistent warning, critical pressure, RSS or swap limits
+        still stop the run. Training/generation checks remain immediate.
+        """
+        self.mx.synchronize(self.generate.generation_stream)
+        self.mx.synchronize()
+        self.original_clear()
+        deadline = time.monotonic() + seconds
+        while True:
+            pressure = int(subprocess.check_output(
+                ['sysctl', '-n', 'kern.memorystatus_vm_pressure_level'], text=True))
+            if (pressure != 2 or time.monotonic() >= deadline
+                    or resource.getrusage(resource.RUSAGE_SELF).ru_maxrss > 4_600_000_000
+                    or swap_bytes()-self.initial_swap > 512*1024**2
+                    or time.monotonic()-self.started > self.max_seconds):
+                return self.check()
+            self.event('load_settle_wait', memory_pressure_level=pressure)
+            time.sleep(1)
+
     def __exit__(self, kind, error, traceback):
         try:
             self.mx.synchronize(self.generate.generation_stream)

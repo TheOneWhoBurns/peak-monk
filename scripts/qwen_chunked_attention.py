@@ -7,7 +7,7 @@ Inference with KV caches and non-causal calls keep the installed implementation.
 import mlx.core as mx
 
 
-def chunk_qwen_attention(model, query_chunk_size):
+def chunk_qwen_attention(model, query_chunk_size, include_eval=False):
     if query_chunk_size < 1 or model.model_type != 'qwen3':
         raise ValueError('Positive query block size and Qwen3 model required')
     cls = type(model.layers[0].self_attn)
@@ -18,7 +18,7 @@ def chunk_qwen_attention(model, query_chunk_size):
 
         def wrapped(current, x, mask=None, cache=None):
             size = getattr(current, '_jun_query_chunk_size', 0)
-            if (not size or not current.training or cache is not None or
+            if (not size or (not current.training and not getattr(current, '_jun_query_include_eval', False)) or cache is not None or
                 not isinstance(mask, str) or mask != 'causal' or x.shape[1] <= size):
                 return original(current, x, mask, cache)
             batch, length, _ = x.shape
@@ -44,3 +44,4 @@ def chunk_qwen_attention(model, query_chunk_size):
         cls._jun_query_checkpoint = True
     for layer in model.layers:
         layer.self_attn._jun_query_chunk_size = query_chunk_size
+        layer.self_attn._jun_query_include_eval = include_eval

@@ -1,0 +1,4 @@
+{"time": 1791594722.1512132, "phase": "import_begin", "initial_swap_bytes": 1638137856}
+{"time": 1791594723.425288, "phase": "runtime_ready", "memory_limit": 3400000000, "policy": "no wiring; deferred cache eviction; one process; bounded requests"}
+{"time": 1791594725.520771, "phase": "resource_guard_stop", "reason": "system memory pressure is not normal", "elapsed_seconds": 3.3591731659998914, "peak_rss_bytes": 1486946304, "swap_bytes": 1638137856, "memory_pressure_level": 2, "mlx_peak_bytes": 2264698852, "mlx_active_bytes": 2264694044}
+{"time": 1791594725.522182, "phase": "runtime_exit", "error": "Bounded runtime system memory pressure is not normal"}

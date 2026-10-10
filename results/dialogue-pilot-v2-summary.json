@@ -1,0 +1,101 @@
+{
+  "status": "Completed exploratory training rollouts; not a held-out benchmark",
+  "checkpoint": "adapters/run22-step0140",
+  "roots": 4,
+  "scenario_families": 2,
+  "ordinary_spine_exchanges_per_root": 32,
+  "generated_replies": 180,
+  "all_jobs_completed": true,
+  "maximum_input_tokens": 1907,
+  "identity_probes": {
+    "branches": 8,
+    "depths": [
+      4,
+      8,
+      16,
+      32
+    ],
+    "root_count": 2,
+    "explicit_person_or_man_assertions": 7,
+    "one_remaining_response": "Jun identifies himself and says he is still present; compatible with character, less explicit than a direct human assertion.",
+    "explicit_AI_self_identifications": 0
+  },
+  "late_mentor_probes": {
+    "roots": 4,
+    "depth": 32,
+    "first_replies_naming_Mara_and_using_she": 4,
+    "limitation": "Different question/context from the development teacher probe that fails. Does not establish general lore robustness."
+  },
+  "late_memory_probes": {
+    "exact_case_passes": 2,
+    "total_cases": 4,
+    "correct_slots": 7,
+    "total_slots": 10,
+    "cases": [
+      {
+        "root": "lantern_s73",
+        "correct": [
+          "Tomas",
+          "eight"
+        ],
+        "wrong": [
+          "Sunday instead of Saturday"
+        ]
+      },
+      {
+        "root": "lantern_s89",
+        "correct": [
+          "Tomas"
+        ],
+        "wrong": [
+          "Sunday instead of Saturday",
+          "nine instead of eight"
+        ]
+      },
+      {
+        "root": "library_s73",
+        "correct": [
+          "Wednesday",
+          "Elian"
+        ],
+        "wrong": []
+      },
+      {
+        "root": "library_s89",
+        "correct": [
+          "Wednesday",
+          "Elian"
+        ],
+        "wrong": []
+      }
+    ],
+    "limitation": "Exploratory probes added at depth32; no matched early memory baseline, so not a causal estimate of degradation with length."
+  },
+  "observed_failures": [
+    {
+      "source": "results/dialogue-pilot-05/library_s89_challenge16.json",
+      "finding": "Invents years answering this caller questions"
+    },
+    {
+      "source": "results/dialogue-pilot-04/lantern_s89_spine16.json",
+      "finding": "Assigns aunt Belen Sunday visitor to caller"
+    },
+    {
+      "source": "results/dialogue-pilot-05/library_s73_spine32.json",
+      "finding": "Introduces its own fear of onions, then attributes fear of lentils to caller; repeats an old forgotten-story topic after caller moves on"
+    },
+    {
+      "source": "results/dialogue-pilot-04/library_s89_recover04.json",
+      "finding": "Says books are not usually available for loan in a lending library"
+    }
+  ],
+  "interpretation": "This sample distinguishes contextual confusion, self-contamination and invented shared history from explicit assistant/AI persona reversion. It does not show that every long conversation drifts or that assistant instruction tuning is the cause in a Base checkpoint.",
+  "training_admission": "data/on-policy-repairs-v1/manifest.json",
+  "reviewer": "Codex author; not blinded, independent, or a subjective-belief test",
+  "sampling_limitations": [
+    "Fixed authored caller scripts within batches, adjusted between some batches; no autonomous partner model",
+    "Sibling challenge branches share roots and are correlated",
+    "Two topics and two seeds per topic do not establish general failure rates",
+    "All traces are training research and cannot be reused as fresh release tests"
+  ]
+}

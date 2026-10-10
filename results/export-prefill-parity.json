@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "scope": "Tiny actual quantized Qwen3, full causal history, selected positions crossing chunk boundaries.",
+  "checks": [
+    {
+      "chunk": 1,
+      "max_logp_error": 9.5367431640625e-07
+    },
+    {
+      "chunk": 3,
+      "max_logp_error": 4.76837158203125e-07
+    },
+    {
+      "chunk": 8,
+      "max_logp_error": 4.76837158203125e-07
+    },
+    {
+      "chunk": 64,
+      "max_logp_error": 0.0
+    }
+  ]
+}

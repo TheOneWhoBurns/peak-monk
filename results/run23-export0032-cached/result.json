@@ -1,0 +1,76 @@
+{
+  "status": "pass",
+  "maximum_logp_difference": 0.0,
+  "frozen_adapter_tensors": 422,
+  "frozen_adapter_sha256": "3e68e2129230d7319c8b5872239134b974c53e0886399327622f1dec59234680",
+  "actual": {
+    "target_tokens": 14,
+    "mean_loss": 0.8064563274383545,
+    "target_log_probs": [
+      -1.459336757659912,
+      -0.872290849685669,
+      -0.3062038719654083,
+      -0.02125719003379345,
+      -0.5971725583076477,
+      -1.7812203168869019,
+      -1.461010456085205,
+      -1.0480846166610718,
+      -0.36300432682037354,
+      -2.7752578258514404,
+      -0.0006311332108452916,
+      -0.001409133430570364,
+      -0.1627623289823532,
+      -0.44074711203575134
+    ]
+  },
+  "reference": {
+    "model": "models/base4b",
+    "adapter_sha256": "067a7292407cfcd3ae6e7b385476fd037b31269ff9be6d53462e84385847bc94",
+    "data": "data/on-policy-repairs-v1/train.jsonl",
+    "data_sha256": "0fef2af869ff90e04394c039d0d2f609e2327991296d9a61311927740f0564fc",
+    "row_index": 0,
+    "score": {
+      "target_tokens": 14,
+      "mean_loss": 0.8064563274383545,
+      "target_log_probs": [
+        -1.459336757659912,
+        -0.872290849685669,
+        -0.3062038719654083,
+        -0.02125719003379345,
+        -0.5971725583076477,
+        -1.7812203168869019,
+        -1.461010456085205,
+        -1.0480846166610718,
+        -0.36300432682037354,
+        -2.7752578258514404,
+        -0.0006311332108452916,
+        -0.001409133430570364,
+        -0.1627623289823532,
+        -0.44074711203575134
+      ]
+    },
+    "cached_prefix": true
+  },
+  "cached_input": {
+    "split": "repairs",
+    "index": 0,
+    "path": "adapters/run23/frozen_prefix/repairs-0000.safetensors",
+    "sha256": "758d045411e2323e414a3b4fec7587113e0405f54541aa9695556b9cc2823d6f",
+    "shape": [
+      1,
+      1755,
+      2560
+    ],
+    "dtype": "mlx.core.bfloat16",
+    "input_tokens_sha256": "793b5166b335ef5f612b812b0b0b2376a0cb7b1d15e3a7dd569adf97cd704b25"
+  },
+  "metrics": {
+    "elapsed_seconds": 4.888921499999924,
+    "peak_rss_bytes": 1614708736,
+    "swap_bytes": 1638137856,
+    "memory_pressure_level": 1,
+    "mlx_peak_bytes": 2264698852,
+    "mlx_active_bytes": 600690696
+  },
+  "scope": "Reloaded standard adapter: every frozen prefix/head factor byte-identical to training; hashed cached input; exact suffix score parity. Does not replace an independent full-backbone forward comparison."
+}

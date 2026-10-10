@@ -30,7 +30,7 @@ def main():
         model.eval()
         tokens, mask = encode_conversation(row, tok)
         runtime.event('full_model_score_begin', tokens=len(tokens))
-        actual = selected_score(model, tokens, mask)
+        actual = selected_score(model, tokens, mask, prefill_chunk=64, boundary=runtime.response_done)
         reference = ref['score']
         if actual['target_tokens'] != reference['target_tokens']:
             raise ValueError('Target alignment differs')
