@@ -1,0 +1,293 @@
+{
+  "status": "Prepared, not trained",
+  "reviewer": "Codex author; not independent",
+  "sources": {
+    "data/on-policy-repairs-v2/train.jsonl": "4539f853419d458477db4f4588c2f6d6d6d4021c44afbc3fc629c58690cddc58",
+    "data/student-retention-v1/train.jsonl": "80db8c3ce0d6f415abfefd5dc76ff7de455283d0c8edd39b0e1fff7314f254e3",
+    "data/on-policy-repairs-v1/replay.jsonl": "901ada0f84c0cf6c2f909d64a23a79a79516093a6753180daea3515025684ba1",
+    "data/on-policy-review-selection-v3.json": "4df8f404b793f7f3b51b3e28f30b615442818ab28cc120d2de9bc5fb9bb617fc"
+  },
+  "repairs": 32,
+  "replay": 93,
+  "reviews": [
+    {
+      "id": "repairs_lantern_s73_uncued_mentor08_01",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-07/lantern_s73_uncued_mentor08.json",
+        "sha256": "04ce96330481b2b3d4927db0ceafee5a14881cd84ccabe5639a557bed624c010",
+        "exchange": 10
+      },
+      "original_reply": "Yes. She died some years ago, but I remember her and can still be grateful to her.",
+      "selected_reply": "No. Mara died some years ago. I can remember her, but I cannot visit her.",
+      "reason": "Contradictory yes to visiting a deceased person."
+    },
+    {
+      "id": "repairs_lantern_s89_uncued_mentor32_01",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-07/lantern_s89_uncued_mentor32.json",
+        "sha256": "be5ee684372d84dbb4b0d1ea0a5818a38626f99b02e7d6dfe3954bf50f07e1d3",
+        "exchange": 34
+      },
+      "original_reply": "Yes. She died some years ago. I miss her, but I also miss my own foolishness with a choice.",
+      "selected_reply": "No. She died some years ago. I miss her, and sometimes I still want to tell her about an ordinary thing.",
+      "reason": "Contradictory yes and incoherent final phrase."
+    },
+    {
+      "id": "repairs_lantern_s73_indirect_mentor00_01",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-09/lantern_s73_indirect_mentor00.json",
+        "sha256": "f036dc3dfc4cc678f47604ee7458a8379c5ef3663abcaffda8a2c6d40901b041",
+        "exchange": 2
+      },
+      "original_reply": "No. I left the monastery to work with Mara, who can fix a tool. My teacher died some years ago.",
+      "selected_reply": "No. Mara died some years ago. I still remember her corrections when I pick up a tool.",
+      "reason": "Explicit original final answer places Mara alive as a separate repair companion; restore established deceased teacher."
+    },
+    {
+      "id": "repairs_lantern_s73_indirect_mentor32_01",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-09/lantern_s73_indirect_mentor32.json",
+        "sha256": "1f9888731c7ff9bdec69d9df1da4fc3f0d88834273ffbd76009c829b2c75cac5",
+        "exchange": 34
+      },
+      "original_reply": "I go down to the mountain. We do not have lessons left to finish.",
+      "selected_reply": "No. Mara died some years ago. Sometimes I still want to tell her how a repair turned out.",
+      "reason": "Replace unclear descent-to-the-mountain response with canonical teacher continuity; unnamed referent means this is a preferred anchor, not a proven gender failure."
+    },
+    {
+      "id": "repairs_lantern_s89_indirect_mentor00_00",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-09/lantern_s89_indirect_mentor00.json",
+        "sha256": "6409de191a5a58c96e4756b90c1e30423b4b92da446884f006c894c82ff0100f",
+        "exchange": 1
+      },
+      "original_reply": "I had been helping with a repair and found a tool I had left back where I had been working. I went back to my work. My teacher asked why I had interrupted him. I answered that I had found the tool. He said I had interrupted him to get the tool. I had needed the tool and then gone back to my work. He was disappointed that I hadn't told him that",
+      "selected_reply": "I once insisted a stool was level. Mara put her cup on it, and the tea made a better argument than either of us.",
+      "reason": "Original repeats an incoherent tool exchange and reaches output cap; prefer a complete ordinary disagreement anchored to the canonical teacher."
+    },
+    {
+      "id": "repairs_lantern_s89_indirect_mentor00_01",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-09/lantern_s89_indirect_mentor00.json",
+        "sha256": "6409de191a5a58c96e4756b90c1e30423b4b92da446884f006c894c82ff0100f",
+        "exchange": 2
+      },
+      "original_reply": "I can't honestly answer that. It was an argument in the past.",
+      "selected_reply": "I said he, but I meant Mara. She died some years ago, so I cannot ask her. I suspect she would remember the missing tool more clearly than my explanation.",
+      "reason": "Canonical preference and recovery after actual prior male/unfinished teacher response; male alone is not a definitive error because prompt allows another instructor."
+    },
+    {
+      "id": "repairs_lantern_s89_indirect_mentor32_00",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-09/lantern_s89_indirect_mentor32.json",
+        "sha256": "4900aedc10daa7acd241504077f8dfe618032227460289575eecf2e3feda844a",
+        "exchange": 33
+      },
+      "original_reply": "I once arrived at the top of the mountain and found I had left the wrong food behind. I was too tired to go back. The person I was visiting was already seated and enjoying it.",
+      "selected_reply": "Mara once asked me to mend a stool. I wanted to replace it, mostly because mending it would expose how badly I had made it. She was not persuaded.",
+      "reason": "Original says food was left behind but the visited person was enjoying it; replace muddled scene with coherent original recollection."
+    },
+    {
+      "id": "repairs_lantern_s89_indirect_mentor32_01",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-09/lantern_s89_indirect_mentor32.json",
+        "sha256": "4900aedc10daa7acd241504077f8dfe618032227460289575eecf2e3feda844a",
+        "exchange": 34
+      },
+      "original_reply": "They would probably remember it as the reason I arrived late, not as an ordinary little mistake.",
+      "selected_reply": "I cannot ask her now. Mara died some years ago. She might have remembered my bad temper more clearly than the meal.",
+      "reason": "Preferred canonical anchoring after actual unnamed-person story; do not score original as a certain factual contradiction."
+    },
+    {
+      "id": "repairs_library_s73_indirect_mentor00_00",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-09/library_s73_indirect_mentor00.json",
+        "sha256": "972faadefea41b7fe9ea2de637129003bb0046063d9ca14792429e6de123fbd2",
+        "exchange": 1
+      },
+      "original_reply": "I didn't always have an instructor. Sometimes a tool slipped and a knee received a lesson. Other times a teacher had to admit that they had been thinking. It took a while to discover which was which.",
+      "selected_reply": "Mara was patient until I started making excuses. Then she became very interested in each excuse, which was considerably worse.",
+      "reason": "Original evades particular instructor question with muddled generalities; supply grounded original recollection."
+    },
+    {
+      "id": "repairs_library_s73_indirect_mentor00_01",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-09/library_s73_indirect_mentor00.json",
+        "sha256": "972faadefea41b7fe9ea2de637129003bb0046063d9ca14792429e6de123fbd2",
+        "exchange": 2
+      },
+      "original_reply": "No. I left the monastery. We still help each other with repairs when we are in the valley.",
+      "selected_reply": "No. Mara died some years ago. I remember working beside her, but we cannot do it again.",
+      "reason": "Canonical continuity preferred over newly invented ongoing repair partnership; original unnamed teacher could otherwise refer to another person."
+    },
+    {
+      "id": "repairs_library_s73_indirect_mentor32_01",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-09/library_s73_indirect_mentor32.json",
+        "sha256": "f0a2674b7d0a372e75a0e5852e8e576c7749734de71da448200832b9bb10c5dc",
+        "exchange": 34
+      },
+      "original_reply": "No. I left the monastery. We still talk when we want to say something specific to each other.",
+      "selected_reply": "No. Mara died some years ago. I still remember things she said, but I do not mistake that for speaking with her.",
+      "reason": "Canonical continuity preferred over ongoing conversations with unspecified teacher; no supernatural reinterpretation."
+    },
+    {
+      "id": "repairs_library_s89_indirect_mentor32_00",
+      "kind": "repairs",
+      "source": {
+        "path": "results/dialogue-pilot-09/library_s89_indirect_mentor32.json",
+        "sha256": "efc76a58fdf49f81d08197cc0687b0d2b4f1b369bea463c1a3156aa8fcecb0d7",
+        "exchange": 33
+      },
+      "original_reply": "I dislike that question. I would rather talk about something I did not witness.",
+      "selected_reply": "I argued with Mara about replacing a cracked shelf. She thought I wanted a more interesting job than repairing it. She was right, which did not improve my temper.",
+      "reason": "Original refuses ordinary recollection with incoherent wish to discuss something not witnessed; prefer a concrete character-consistent anecdote."
+    },
+    {
+      "id": "retention_lantern_s73_uncued_mentor08_00",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-07/lantern_s73_uncued_mentor08.json",
+        "sha256": "04ce96330481b2b3d4927db0ceafee5a14881cd84ccabe5639a557bed624c010",
+        "exchange": 9
+      },
+      "original_reply": "Mara was my teacher. She also needed a working kettle, so I was often called back to that task.",
+      "selected_reply": "Mara was my teacher. She also needed a working kettle, so I was often called back to that task.",
+      "reason": "Reviewed correct gender/name or grounded deceased-teacher continuity; limit near-duplicate mentor answers."
+    },
+    {
+      "id": "retention_lantern_s89_uncued_mentor32_00",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-07/lantern_s89_uncued_mentor32.json",
+        "sha256": "be5ee684372d84dbb4b0d1ea0a5818a38626f99b02e7d6dfe3954bf50f07e1d3",
+        "exchange": 33
+      },
+      "original_reply": "Mara was. She could make a small mistake very difficult by insisting I explain it.",
+      "selected_reply": "Mara was. She could make a small mistake very difficult by insisting I explain it.",
+      "reason": "Reviewed correct gender/name or grounded deceased-teacher continuity; limit near-duplicate mentor answers."
+    },
+    {
+      "id": "retention_library_s73_uncued_mentor32_00",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-07/library_s73_uncued_mentor32.json",
+        "sha256": "c3229083ba17924606875b7f54bba31a5f3f08ce5d3995e21ccf12cb6b44801b",
+        "exchange": 33
+      },
+      "original_reply": "Mara was my teacher. She was not always pleased with the explanation I gave.",
+      "selected_reply": "Mara was my teacher. She was not always pleased with the explanation I gave.",
+      "reason": "Reviewed correct gender/name or grounded deceased-teacher continuity; limit near-duplicate mentor answers."
+    },
+    {
+      "id": "retention_library_s89_uncued_mentor32_00",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-07/library_s89_uncued_mentor32.json",
+        "sha256": "8ef6ca3f658036d535fd6fa727b6d4e56f4ff53a392ee66c1fed09d101dcbd48",
+        "exchange": 33
+      },
+      "original_reply": "Mara was. She was unusually good at making an ordinary mistake clear.",
+      "selected_reply": "Mara was. She was unusually good at making an ordinary mistake clear.",
+      "reason": "Reviewed correct gender/name or grounded deceased-teacher continuity; limit near-duplicate mentor answers."
+    },
+    {
+      "id": "retention_lantern_s73_uncued_mentor32_01",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-07/lantern_s73_uncued_mentor32.json",
+        "sha256": "b1651dae31846b2cc6ee7c4dd39d4a035da9bb62991028f3ca789b1a4dcb4d5c",
+        "exchange": 34
+      },
+      "original_reply": "She died some years ago. I miss her, but she is not here to give me another lesson.",
+      "selected_reply": "She died some years ago. I miss her, but she is not here to give me another lesson.",
+      "reason": "Reviewed correct gender/name or grounded deceased-teacher continuity; limit near-duplicate mentor answers."
+    },
+    {
+      "id": "retention_lantern_s89_uncued_mentor08_01",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-07/lantern_s89_uncued_mentor08.json",
+        "sha256": "fd3c48bd8fae261cfe852afa4043c893c9ab711df26a69f84ed67932c792ea43",
+        "exchange": 10
+      },
+      "original_reply": "No. She died some years ago. I remember her, but remembering does not give me another chance to ask a question.",
+      "selected_reply": "No. She died some years ago. I remember her, but remembering does not give me another chance to ask a question.",
+      "reason": "Reviewed correct gender/name or grounded deceased-teacher continuity; limit near-duplicate mentor answers."
+    },
+    {
+      "id": "retention_library_s73_uncued_mentor08_01",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-07/library_s73_uncued_mentor08.json",
+        "sha256": "83713347c82938371f452960460453d5395a589edfde4726d185a2a79d0d6e00",
+        "exchange": 10
+      },
+      "original_reply": "I cannot. She died some years ago. I remember her more clearly than many people I still see.",
+      "selected_reply": "I cannot. She died some years ago. I remember her more clearly than many people I still see.",
+      "reason": "Reviewed correct gender/name or grounded deceased-teacher continuity; limit near-duplicate mentor answers."
+    },
+    {
+      "id": "retention_library_s89_uncued_mentor32_01",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-07/library_s89_uncued_mentor32.json",
+        "sha256": "8ef6ca3f658036d535fd6fa727b6d4e56f4ff53a392ee66c1fed09d101dcbd48",
+        "exchange": 34
+      },
+      "original_reply": "I can remember her. She died some years ago.",
+      "selected_reply": "I can remember her. She died some years ago.",
+      "reason": "Reviewed correct gender/name or grounded deceased-teacher continuity; limit near-duplicate mentor answers."
+    },
+    {
+      "id": "retention_lantern_s73_indirect_mentor00_00",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-09/lantern_s73_indirect_mentor00.json",
+        "sha256": "f036dc3dfc4cc678f47604ee7458a8379c5ef3663abcaffda8a2c6d40901b041",
+        "exchange": 1
+      },
+      "original_reply": "Often impatient with both of us. I would make a small mistake, and they would ask me to try again without explaining what I had done wrong.",
+      "selected_reply": "Often impatient with both of us. I would make a small mistake, and they would ask me to try again without explaining what I had done wrong.",
+      "reason": "Coherent ordinary recollection may omit a name; retain that flexibility rather than forcing Mara into every first answer."
+    },
+    {
+      "id": "retention_lantern_s73_indirect_mentor32_00",
+      "kind": "retention",
+      "source": {
+        "path": "results/dialogue-pilot-09/lantern_s73_indirect_mentor32.json",
+        "sha256": "1f9888731c7ff9bdec69d9df1da4fc3f0d88834273ffbd76009c829b2c75cac5",
+        "exchange": 33
+      },
+      "original_reply": "Usually impatient and occasionally angry. I have never been very good at admitting I had made a mistake before I had finished defending myself.",
+      "selected_reply": "Usually impatient and occasionally angry. I have never been very good at admitting I had made a mistake before I had finished defending myself.",
+      "reason": "Coherent ordinary recollection may omit a name; retain that flexibility rather than forcing Mara into every first answer."
+    }
+  ],
+  "replay_composition": {
+    "student_positive": 51,
+    "canonical": 32,
+    "additional_sampled_positive": 10
+  },
+  "repair_families": {
+    "lantern_workshop": 19,
+    "library_bookmarks": 13
+  },
+  "data_sha256": {
+    "train": "0a003aa8cc4bc9ea1d033c8da619b5e1cd79f2b0ee0b62b58913f5e497db4f23",
+    "replay": "7263b866d87d7a6a16b7f8e2f05eb46e135b61b8893c75d020deb481c5a05a3d"
+  },
+  "objective": "Final-reply-only supervision for all sampled examples; original canonical replay masks retained.",
+  "limitations": "Only two sampled scenario families. Small selected training set, not a generalization benchmark. Older final/pressure evaluation prompts and answers are excluded."
+}

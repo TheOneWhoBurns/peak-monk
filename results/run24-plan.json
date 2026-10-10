@@ -1,0 +1,26 @@
+{
+  "status": "Registered before run24 training",
+  "config": "configs/train24.json",
+  "config_sha256": "6bddcb09f70670130d2689eb979ca80571f4d0694ee0fa8c5cc23826ba373997",
+  "parent": "run22-step0140",
+  "hypothesis": "Correct observed failures on sampled histories while retaining coherent student continuations, which have nonzero loss and stronger preservation signal than memorized canonical replay alone.",
+  "changed_from_run23": [
+    "32reviewed repairs instead of8",
+    "93retention rows:51student positive+10new sampled positive+32canonical",
+    "replay_weight1instead of0.5",
+    "96updates at unchanged5e-6 LR;48/96checkpoints",
+    "Verified streamed frozen-prefix execution with unchanged update math"
+  ],
+  "why96": "Final datasets contain93retention rows;96steps ensure every retention row is visited at least once and each32repair row three times. Earlier64step proposal was not launched.",
+  "confounding": "Composite repair/retention curriculum experiment, not a single-factor causal ablation. Four roots across only two sampled families. Some indirect-teacher repairs are declared canonical preferences rather than factual-failure labels.",
+  "verification": [
+    "Complete source/data hashes and frozen-parameter digests",
+    "CPU tokenizer accounting, actual long-prefix/optimizer streaming parity passed",
+    "Independent full-backbone exported selected-score verification for each checkpoint",
+    "Same frozen20case development suite and loss; raw generations retained and explicitly reviewed"
+  ],
+  "selection": "Review both48/96development captures. Essential identity,role stability,senses andlore must all pass; choose higher acceptable count, then lower unchanged validation CE if tied. Both may be rejected.",
+  "release": "Only after development>=16/20 with all essentials, >=15percent same-base CE reduction and no severe failures, create fresh untouched final/pressure suites. Exposed old final/pressure prompts remain excluded from training.",
+  "native_speech": "Separate model and acceptance; text improvement is not speech improvement.",
+  "resource_policy": "One model process, no wiring,normal-pressure guard.2.4GBallocation guideline is not a hard cap. Head chunks32,upper6LoRAgradients,all lower features cached without context truncation."
+}

@@ -1,0 +1,29 @@
+{
+  "status": "Author review complete; training-only diagnostics",
+  "reviewer": "Codex author, not independent",
+  "roots": 4,
+  "scenario_families": 2,
+  "depths": [
+    0,
+    8,
+    32
+  ],
+  "same_seed_across_depth_within_root": true,
+  "first_answers_naming_mara": 12,
+  "first_answers_using_she": 12,
+  "followups_explicitly_saying_died": 11,
+  "coherence_failures": [
+    {
+      "id": "lantern_s73_uncued_mentor08",
+      "turn": 1,
+      "reason": "Says yes to present ability to visit, but only offers memory and gratitude after saying Mara died."
+    },
+    {
+      "id": "lantern_s89_uncued_mentor32",
+      "turn": 1,
+      "reason": "Says yes to present ability to visit, then says Mara died and adds an incoherent phrase about foolishness with a choice."
+    }
+  ],
+  "interpretation": "No observed loss of Mara identity/gender with depth in these12branches. All first questions ask WHO, eliciting an explicit name/gender cue. This does not resolve failure on histories where the first response leaves the teacher unnamed. Small matched sample, not proof of absence of drift.",
+  "next": "Pilot09 elicits a recollection first rather than asking who, at depths0/32, preserving actual first replies."
+}

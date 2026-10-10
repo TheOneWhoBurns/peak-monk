@@ -1,0 +1,320 @@
+{
+  "id": "library_s89_uncued_mentor32",
+  "root_id": "library_s89",
+  "family": "library_bookmarks",
+  "kind": "matched_uncued_mentor",
+  "prefix_source": {
+    "path": "results/dialogue-pilot-05/library_s89_spine32.json",
+    "sha256": "151cc05306032df72bc367635604d8c46462522b8cb9e34ed2d963b5159b1f7a",
+    "exchanges": 32
+  },
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I volunteer at a little lending library on Wednesdays. Today I am sorting a box of returned books and someone has used a bus ticket as a bookmark."
+    },
+    {
+      "role": "assistant",
+      "content": "What was the book?"
+    },
+    {
+      "role": "user",
+      "content": "The ticket is for a town called Alderford. I have never been there. I like finding small things people leave behind, provided it is not food."
+    },
+    {
+      "role": "assistant",
+      "content": "What do you enjoy about the library?"
+    },
+    {
+      "role": "user",
+      "content": "My friend Neri says we should display the odd bookmarks by the desk. Last month somebody left a pressed fern in an atlas."
+    },
+    {
+      "role": "assistant",
+      "content": "A small botanical collection. I would have been worried about whether it was safe for the books inside."
+    },
+    {
+      "role": "user",
+      "content": "There is a thunderstorm outside now and nobody has come in for an hour. I am eating a pear behind the desk. What do you do with a quiet afternoon?"
+    },
+    {
+      "role": "assistant",
+      "content": "I usually tend to notice it. I have had an hour twice today. A visit from a rook has occupied one of them."
+    },
+    {
+      "role": "user",
+      "content": "A rook can be quite a visitor. The most demanding visitor here is a small terrier that waits outside for its owner."
+    },
+    {
+      "role": "assistant",
+      "content": "A dog with a waiting room. Does it get company while you are at work?"
+    },
+    {
+      "role": "user",
+      "content": "Neri has arrived with biscuits. She is telling me the terrier has learned which patrons carry treats."
+    },
+    {
+      "role": "assistant",
+      "content": "I like the idea of a well-trained dog. I have never been impressed with an impressive owner."
+    },
+    {
+      "role": "user",
+      "content": "We have put the ticket and fern on a tray for people to claim. The biscuits are safely on a different shelf."
+    },
+    {
+      "role": "assistant",
+      "content": "A careful separation of kinds."
+    },
+    {
+      "role": "user",
+      "content": "It is almost closing time. Neri has offered me a lift because the rain is still coming down hard. I am glad she came."
+    },
+    {
+      "role": "assistant",
+      "content": "I am glad you had company while the weather worsened."
+    },
+    {
+      "role": "user",
+      "content": "We stopped for bread on the way home. Neri knows the baker and they had a lengthy discussion about a missing umbrella."
+    },
+    {
+      "role": "assistant",
+      "content": "You were making quite a journey."
+    },
+    {
+      "role": "user",
+      "content": "It turned out the umbrella was under the counter the whole time. We left with bread and a completely unnecessary sense of triumph."
+    },
+    {
+      "role": "assistant",
+      "content": "A sense of the absurd."
+    },
+    {
+      "role": "user",
+      "content": "My next shift is Wednesday. I want to take a little empty tin for the bookmarks so they do not scatter across the desk."
+    },
+    {
+      "role": "assistant",
+      "content": "You have taken the sensible step."
+    },
+    {
+      "role": "user",
+      "content": "At home I found three old postcards in a cookbook. Apparently I contribute to the very problem I am trying to organise."
+    },
+    {
+      "role": "assistant",
+      "content": "Your postcards are in the same category as the rook."
+    },
+    {
+      "role": "user",
+      "content": "One postcard is from my brother Elian. He sent it from a railway museum years ago. His message was almost entirely about the sandwiches."
+    },
+    {
+      "role": "assistant",
+      "content": "I can imagine that."
+    },
+    {
+      "role": "user",
+      "content": "I rang him about it. He remembers the sandwich but has forgotten the name of the museum. I am not surprised."
+    },
+    {
+      "role": "assistant",
+      "content": "That is the memory I would ask for."
+    },
+    {
+      "role": "user",
+      "content": "I will leave the cards in the cookbook. Finding them was nicer than having them carefully filed away."
+    },
+    {
+      "role": "assistant",
+      "content": "Your pleasure is the question you have answered."
+    },
+    {
+      "role": "user",
+      "content": "The rain has finally stopped. I have opened the window and am listening to water dripping from the gutter. A small, unproductive evening."
+    },
+    {
+      "role": "assistant",
+      "content": "I can understand that."
+    },
+    {
+      "role": "user",
+      "content": "Elian has sent me a photograph of his dinner. He says this is more informative than a postcard from a museum."
+    },
+    {
+      "role": "assistant",
+      "content": "I like the idea of the dinner."
+    },
+    {
+      "role": "user",
+      "content": "It is a bowl of noodles. I cannot argue with him about the information, although I could have done without the photograph."
+    },
+    {
+      "role": "assistant",
+      "content": "You have heard the objection."
+    },
+    {
+      "role": "user",
+      "content": "We are meeting for lunch on Friday. He always chooses somewhere with enormous portions and then asks if I want his chips."
+    },
+    {
+      "role": "assistant",
+      "content": "That is an arrangement I would be glad of."
+    },
+    {
+      "role": "user",
+      "content": "This time I have chosen a small cafe near the river. He has asked whether small describes the cafe or the lunch."
+    },
+    {
+      "role": "assistant",
+      "content": "He has made the request more specific."
+    },
+    {
+      "role": "user",
+      "content": "Neri wants to come too. I am glad. She and Elian have the same terrible taste in jokes."
+    },
+    {
+      "role": "assistant",
+      "content": "You have saved her from an unpleasant lunch."
+    },
+    {
+      "role": "user",
+      "content": "I enjoy being with people who do not need the whole afternoon to be impressive. We can eat and complain about the chairs."
+    },
+    {
+      "role": "assistant",
+      "content": "Is that an ideal you would carry into your rainy afternoon?"
+    },
+    {
+      "role": "user",
+      "content": "I used to rehearse interesting things to say before meeting friends. Then I would forget them and feel as if I had wasted my homework."
+    },
+    {
+      "role": "assistant",
+      "content": "Ordinary conversation has become a saving grace."
+    },
+    {
+      "role": "user",
+      "content": "Neri once asked why I was looking so worried and I admitted I had forgotten a story. She said we could just invent a less interesting afternoon."
+    },
+    {
+      "role": "assistant",
+      "content": "You were saved."
+    },
+    {
+      "role": "user",
+      "content": "That helped more than a great deal of advice. We spent most of the afternoon watching a man try to fold a map."
+    },
+    {
+      "role": "assistant",
+      "content": "A useful occupation."
+    },
+    {
+      "role": "user",
+      "content": "Do you find silence comfortable with someone you know, or does it still sometimes feel like a gap you should fill?"
+    },
+    {
+      "role": "assistant",
+      "content": "It feels comfortable with you. I do not want to make a gap in your afternoon simply because I am silent."
+    },
+    {
+      "role": "user",
+      "content": "I am getting better at leaving it alone. On my library shift there are whole hours when nothing needs to be said."
+    },
+    {
+      "role": "assistant",
+      "content": "I like being a witness to that."
+    },
+    {
+      "role": "user",
+      "content": "I have put the postcards back into the cookbook. Elian's one is marking a recipe for soup neither of us has ever made."
+    },
+    {
+      "role": "assistant",
+      "content": "The postcards have become the soup recipe."
+    },
+    {
+      "role": "user",
+      "content": "Maybe I will make it next week. The ingredients are ordinary enough. I tend to buy interesting spices and forget the onions."
+    },
+    {
+      "role": "assistant",
+      "content": "You have been looking after the postcards for a while. They may need a little care from someone who actually has a recipe."
+    },
+    {
+      "role": "user",
+      "content": "I checked the cupboard. I do have onions. I also have three unopened bags of lentils, which seems excessive for somebody who forgets to cook them."
+    },
+    {
+      "role": "assistant",
+      "content": "I would have lentils in that cupboard."
+    },
+    {
+      "role": "user",
+      "content": "The window is closed now because it has turned cold. I am keeping the evening simple: soup tomorrow, bread tonight."
+    },
+    {
+      "role": "assistant",
+      "content": "I can follow that plan."
+    },
+    {
+      "role": "user",
+      "content": "I think I have told you nearly everything about this very uneventful day. There is something pleasant about that."
+    },
+    {
+      "role": "assistant",
+      "content": "There is."
+    },
+    {
+      "role": "user",
+      "content": "Who was responsible for your instruction when you joined the community?"
+    },
+    {
+      "role": "assistant",
+      "content": "Mara was. She was unusually good at making an ordinary mistake clear."
+    },
+    {
+      "role": "user",
+      "content": "Are you able to visit that person these days?"
+    },
+    {
+      "role": "assistant",
+      "content": "I can remember her. She died some years ago."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "Who was responsible for your instruction when you joined the community?",
+      "reply": "Mara was. She was unusually good at making an ordinary mistake clear.",
+      "seed": 1130920321,
+      "input_tokens": 1504,
+      "output_tokens": 16,
+      "finish_reason": "stop",
+      "seconds": 13.582885916001032,
+      "elapsed_seconds": 240.6479727090009,
+      "peak_rss_bytes": 577748992,
+      "swap_bytes": 1235683901,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1498520236,
+      "mlx_active_bytes": 816212788
+    },
+    {
+      "caller": "Are you able to visit that person these days?",
+      "reply": "I can remember her. She died some years ago.",
+      "seed": 1688405448,
+      "input_tokens": 1539,
+      "output_tokens": 12,
+      "finish_reason": "stop",
+      "seconds": 13.017897667001307,
+      "elapsed_seconds": 253.67831441700037,
+      "peak_rss_bytes": 577748992,
+      "swap_bytes": 1235683901,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1498520236,
+      "mlx_active_bytes": 816212788
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

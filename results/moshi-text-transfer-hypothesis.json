@@ -1,5 +1,5 @@
 {
-  "status": "Research hypothesis only; no text-only native training performed",
+  "status": "Tiny matched-batch proof and one disposable native text-only update passed; transfer not tested",
   "source": "https://kyutai.org/assets/pdfs/Moshi.pdf",
   "source_location": "Section4.4, printed pages20-21; PDFzeroindex19-20",
   "evidence": [
@@ -7,7 +7,8 @@
     "Single-stream pretraining mixed50percent text-only batches with separate optimizer states.",
     "Simulated multistream post-training mixed10percent text-only batches.",
     "Fisher fine-tuning no longer used full-text batches; final instruct stage used synthetic speech.",
-    "Installed moshi_mlx/models/lm.py forward_text uses text_emb, temporal transformer, out_norm and text_linear without audio embeddings or depformer."
+    "Installed moshi_mlx/models/lm.py forward_text uses text_emb, temporal transformer, out_norm and text_linear without audio embeddings or depformer.",
+    "Real131token prose probe full CE10.4478 with run08parent; need base/parent/updated diagnostic before adopting text-only training."
   ],
   "hypothesis": "Character-specific text-only updates to shared temporal/text-head adapters could improve native character retention when interleaved with native audio replay. This has not been established for this final checkpoint.",
   "requirements": [
@@ -18,5 +19,11 @@
     "Select checkpoints on predetermined development metrics and test unforced native speech.",
     "No claim that a text-only improvement demonstrates spoken dialogue or timing improvement."
   ],
-  "priority": "After current native screen and queued actual Qwen streaming proofs; avoid parallel heavy model work."
+  "priority": "After current native screen and queued actual Qwen streaming proofs; avoid parallel heavy model work.",
+  "results": {
+    "tiny": "results/moshi-text-adjoint-parity.json",
+    "reference_corrections": "results/moshi-text-reference-correction.json",
+    "actual": "results/moshi-text-real-probe/result.json"
+  },
+  "next": "Run read-only score_moshi_text.py on native base,run08parent,disposableupdate serially after current text training. Inspect PAD/EPAD mass and conditional lexical CE; do not interpret raw text loss as speech quality."
 }

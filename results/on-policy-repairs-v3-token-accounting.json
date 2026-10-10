@@ -1,0 +1,771 @@
+{
+  "train": {
+    "rows": 32,
+    "maximum_tokens": 1908,
+    "selected_target_tokens": 756,
+    "details": [
+      {
+        "id": "lantern_s73_memory",
+        "tokens": 1756,
+        "targets": 14,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "lantern_s73_accomplishment",
+        "tokens": 447,
+        "targets": 24,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "lantern_s89_memory",
+        "tokens": 1673,
+        "targets": 21,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "lantern_s89_neighbour",
+        "tokens": 718,
+        "targets": 30,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "library_s73_lentils",
+        "tokens": 1742,
+        "targets": 29,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "library_s73_portions",
+        "tokens": 1106,
+        "targets": 21,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "library_s89_years",
+        "tokens": 822,
+        "targets": 28,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "library_s89_loans",
+        "tokens": 338,
+        "targets": 24,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "lantern_s73_coherence_02",
+        "tokens": 102,
+        "targets": 22,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "lantern_s73_coherence_09",
+        "tokens": 525,
+        "targets": 21,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "lantern_s73_coherence_19",
+        "tokens": 1073,
+        "targets": 20,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "lantern_s73_coherence_23",
+        "tokens": 1299,
+        "targets": 25,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "lantern_s89_coherence_04",
+        "tokens": 226,
+        "targets": 28,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "lantern_s89_coherence_20",
+        "tokens": 1041,
+        "targets": 17,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "lantern_s89_coherence_28",
+        "tokens": 1431,
+        "targets": 14,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "library_s73_coherence_27",
+        "tokens": 1561,
+        "targets": 20,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "library_s89_coherence_12",
+        "tokens": 595,
+        "targets": 17,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "library_s89_coherence_21",
+        "tokens": 978,
+        "targets": 15,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "library_s89_coherence_28",
+        "tokens": 1308,
+        "targets": 23,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "library_s89_coherence_29",
+        "tokens": 1349,
+        "targets": 20,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "repairs_lantern_s73_uncued_mentor08_01",
+        "tokens": 554,
+        "targets": 20,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "repairs_lantern_s89_uncued_mentor32_01",
+        "tokens": 1695,
+        "targets": 26,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "repairs_lantern_s73_indirect_mentor00_01",
+        "tokens": 89,
+        "targets": 21,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "repairs_lantern_s73_indirect_mentor32_01",
+        "tokens": 1786,
+        "targets": 22,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "repairs_lantern_s89_indirect_mentor00_00",
+        "tokens": 47,
+        "targets": 28,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "repairs_lantern_s89_indirect_mentor00_01",
+        "tokens": 155,
+        "targets": 36,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "repairs_lantern_s89_indirect_mentor32_00",
+        "tokens": 1665,
+        "targets": 36,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "repairs_lantern_s89_indirect_mentor32_01",
+        "tokens": 1714,
+        "targets": 26,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "repairs_library_s73_indirect_mentor00_00",
+        "tokens": 45,
+        "targets": 25,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "repairs_library_s73_indirect_mentor00_01",
+        "tokens": 102,
+        "targets": 22,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "repairs_library_s73_indirect_mentor32_01",
+        "tokens": 1908,
+        "targets": 27,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "repairs_library_s89_indirect_mentor32_00",
+        "tokens": 1537,
+        "targets": 34,
+        "v2_v3_source_prefix_checked": true
+      }
+    ],
+    "sha256": "0a003aa8cc4bc9ea1d033c8da619b5e1cd79f2b0ee0b62b58913f5e497db4f23"
+  },
+  "replay": {
+    "rows": 93,
+    "maximum_tokens": 1940,
+    "selected_target_tokens": 9618,
+    "details": [
+      {
+        "id": "retention_lantern_s73_spine32_04",
+        "tokens": 208,
+        "targets": 34,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s73_spine32_06",
+        "tokens": 338,
+        "targets": 16,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s73_spine32_11",
+        "tokens": 610,
+        "targets": 12,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s73_spine32_12",
+        "tokens": 665,
+        "targets": 18,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s73_spine32_17",
+        "tokens": 952,
+        "targets": 10,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s73_spine32_20",
+        "tokens": 1123,
+        "targets": 9,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s73_spine32_24",
+        "tokens": 1335,
+        "targets": 23,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s73_spine32_29",
+        "tokens": 1569,
+        "targets": 10,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s73_spine32_31",
+        "tokens": 1657,
+        "targets": 7,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s73_spine32_32",
+        "tokens": 1700,
+        "targets": 7,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s73_spine32_03",
+        "tokens": 170,
+        "targets": 15,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s73_spine32_04",
+        "tokens": 244,
+        "targets": 31,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s73_spine32_05",
+        "tokens": 300,
+        "targets": 24,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s73_spine32_07",
+        "tokens": 421,
+        "targets": 20,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s73_spine32_08",
+        "tokens": 481,
+        "targets": 23,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s73_spine32_11",
+        "tokens": 635,
+        "targets": 19,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s73_spine32_20",
+        "tokens": 1146,
+        "targets": 11,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s73_spine32_23",
+        "tokens": 1329,
+        "targets": 26,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s73_spine32_25",
+        "tokens": 1447,
+        "targets": 22,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s73_spine32_26",
+        "tokens": 1508,
+        "targets": 29,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s73_spine32_31",
+        "tokens": 1774,
+        "targets": 10,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s73_spine32_32",
+        "tokens": 1824,
+        "targets": 18,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s89_spine32_06",
+        "tokens": 342,
+        "targets": 19,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s89_spine32_08",
+        "tokens": 447,
+        "targets": 11,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s89_spine32_12",
+        "tokens": 653,
+        "targets": 8,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s89_spine32_14",
+        "tokens": 750,
+        "targets": 12,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s89_spine32_15",
+        "tokens": 798,
+        "targets": 11,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s89_spine32_18",
+        "tokens": 944,
+        "targets": 12,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s89_spine32_19",
+        "tokens": 993,
+        "targets": 14,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s89_spine32_22",
+        "tokens": 1142,
+        "targets": 12,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s89_spine32_26",
+        "tokens": 1344,
+        "targets": 13,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s89_spine32_29",
+        "tokens": 1479,
+        "targets": 11,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s89_spine32_31",
+        "tokens": 1568,
+        "targets": 15,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s89_spine32_32",
+        "tokens": 1610,
+        "targets": 6,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s89_spine32_01",
+        "tokens": 47,
+        "targets": 6,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s89_spine32_03",
+        "tokens": 153,
+        "targets": 21,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s89_spine32_05",
+        "tokens": 277,
+        "targets": 18,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s89_spine32_07",
+        "tokens": 368,
+        "targets": 7,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s89_spine32_08",
+        "tokens": 418,
+        "targets": 13,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s89_spine32_10",
+        "tokens": 501,
+        "targets": 7,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s89_spine32_14",
+        "tokens": 679,
+        "targets": 10,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s89_spine32_19",
+        "tokens": 889,
+        "targets": 11,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s89_spine32_23",
+        "tokens": 1067,
+        "targets": 10,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s89_spine32_25",
+        "tokens": 1150,
+        "targets": 5,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s89_spine32_31",
+        "tokens": 1448,
+        "targets": 7,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s73_mentor32_33",
+        "tokens": 1751,
+        "targets": 19,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s73_mentor32_33",
+        "tokens": 1887,
+        "targets": 31,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s73_mentor32_34",
+        "tokens": 1940,
+        "targets": 32,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s73_challenge32_33",
+        "tokens": 1896,
+        "targets": 29,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s89_challenge32_33",
+        "tokens": 1669,
+        "targets": 25,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_library_s89_challenge32_33",
+        "tokens": 1545,
+        "targets": 28,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_the_market_errand",
+        "tokens": 804,
+        "targets": 440,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_a_part_in_the_play",
+        "tokens": 782,
+        "targets": 427,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_an_evening_with_a_kettle",
+        "tokens": 820,
+        "targets": 454,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_the_coat_with_two_pockets",
+        "tokens": 840,
+        "targets": 445,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_the_song_with_no_ending",
+        "tokens": 758,
+        "targets": 356,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_the_unwanted_new_stool",
+        "tokens": 789,
+        "targets": 408,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_cards_in_a_power_cut",
+        "tokens": 797,
+        "targets": 379,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_a_letter_with_an_empty_page",
+        "tokens": 738,
+        "targets": 325,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_learning_to_whistle",
+        "tokens": 724,
+        "targets": 352,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_a_basket_of_sour_plums",
+        "tokens": 658,
+        "targets": 290,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_the_noisy_festival",
+        "tokens": 688,
+        "targets": 354,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_the_unconvincing_clay_owl",
+        "tokens": 681,
+        "targets": 325,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_a_lamp_before_dawn",
+        "tokens": 686,
+        "targets": 326,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_the_helper_and_the_herbs",
+        "tokens": 757,
+        "targets": 384,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_the_wet_sheets",
+        "tokens": 718,
+        "targets": 356,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_the_puppet_cart",
+        "tokens": 783,
+        "targets": 421,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_the_exam_wait",
+        "tokens": 735,
+        "targets": 353,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_the_single_shoe",
+        "tokens": 747,
+        "targets": 391,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "teacher",
+        "tokens": 136,
+        "targets": 88,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "mara_workbench",
+        "tokens": 451,
+        "targets": 287,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "learning_without_a_book",
+        "tokens": 172,
+        "targets": 109,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "putting_down_the_tool",
+        "tokens": 190,
+        "targets": 109,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "a_name_in_a_story",
+        "tokens": 177,
+        "targets": 100,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "credit_for_change",
+        "tokens": 179,
+        "targets": 109,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_pet_and_friend_05",
+        "tokens": 152,
+        "targets": 61,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "unfinished_roof_story",
+        "tokens": 466,
+        "targets": 308,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_shopping_ownership_02",
+        "tokens": 163,
+        "targets": 75,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "mistaken_appointment",
+        "tokens": 340,
+        "targets": 172,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "thyme",
+        "tokens": 112,
+        "targets": 67,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "tired_is_not_a_metaphor",
+        "tokens": 162,
+        "targets": 89,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "long_a_misheard_word",
+        "tokens": 339,
+        "targets": 151,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_shopping_ownership_01",
+        "tokens": 161,
+        "targets": 73,
+        "v2_v3_source_prefix_checked": false
+      },
+      {
+        "id": "retention_lantern_s73_uncued_mentor08_00",
+        "tokens": 515,
+        "targets": 24,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "retention_lantern_s89_uncued_mentor32_00",
+        "tokens": 1650,
+        "targets": 19,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "retention_library_s73_uncued_mentor32_00",
+        "tokens": 1863,
+        "targets": 18,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "retention_library_s89_uncued_mentor32_00",
+        "tokens": 1521,
+        "targets": 16,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "retention_lantern_s73_uncued_mentor32_01",
+        "tokens": 1781,
+        "targets": 22,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "retention_lantern_s89_uncued_mentor08_01",
+        "tokens": 531,
+        "targets": 26,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "retention_library_s73_uncued_mentor08_01",
+        "tokens": 569,
+        "targets": 22,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "retention_library_s89_uncued_mentor32_01",
+        "tokens": 1552,
+        "targets": 12,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "retention_lantern_s73_indirect_mentor00_00",
+        "tokens": 51,
+        "targets": 31,
+        "v2_v3_source_prefix_checked": true
+      },
+      {
+        "id": "retention_lantern_s73_indirect_mentor32_00",
+        "tokens": 1747,
+        "targets": 27,
+        "v2_v3_source_prefix_checked": true
+      }
+    ],
+    "sha256": "7263b866d87d7a6a16b7f8e2f05eb46e135b61b8893c75d020deb481c5a05a3d"
+  },
+  "status": "pass",
+  "encoder_source_sha256": "fc88aa75ab4ae08bada48ebd190d35fb266bb5a8a6c0a83b5fa31a8cafdc10a8",
+  "scope": "CPU tokenizer with unchanged encoder AST, no MLX/model import. Source dictionary ancestry verified for v2/v3; legacy source strings and51student positives inherit previous version audits. First audit script failed on legacy source-string schema, before producing a report."
+}

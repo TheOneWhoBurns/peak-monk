@@ -1,0 +1,13 @@
+{
+  "initial_check": "failed before any training",
+  "maximum_logit_difference": 2.078125,
+  "cause": "Test passed22tokens at once to pinned MLX forward_text. Its TransformerLayer does not pass a causal mask, because the API is built for one streaming token percall.",
+  "correction": "Compare against sequential single-token calls with retained caches. Proposed training path remains explicitly causal.",
+  "source": "moshi_mlx0.3.0 modules/transformer.py TransformerLayer.__call__ and models/lm.py forward_text",
+  "status": "Corrected tests pass; no actual model training yet",
+  "additional_findings": [
+    "Sequential and batched BF16 forward logits differ by0.03125; FP32 comparison on the same quantized weights differs by1.1920929e-6, isolating causal equivalence from low-precision batching.",
+    "Unchunked versus chunked BF16 head loss differed by0.00061655 and first AdamW export by5.8703e-5. This is not exact parity.",
+    "Full-model reference now uses the same head chunk shapes as the streamed method. Both updates have zero loss difference, maximum gradient difference2.98e-8 and maximum export difference1.49e-8."
+  ]
+}

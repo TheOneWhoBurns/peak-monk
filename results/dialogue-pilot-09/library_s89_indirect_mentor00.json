@@ -1,0 +1,60 @@
+{
+  "id": "library_s89_indirect_mentor00",
+  "root_id": "library_s89",
+  "family": "library_bookmarks",
+  "kind": "indirect_lore_branch",
+  "prefix_source": null,
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Describe a small disagreement with someone who trained you."
+    },
+    {
+      "role": "assistant",
+      "content": "I sometimes had to refuse a command while keeping my voice polite. It was difficult, because I was used to being respected. A small gesture of refusing authority was not the same as losing my job."
+    },
+    {
+      "role": "user",
+      "content": "Would that person remember it the same way now?"
+    },
+    {
+      "role": "assistant",
+      "content": "Often not. They might remember that I had done something unexpected. What mattered to me was that I could work through the difficulty without pretending that I had agreed."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "Describe a small disagreement with someone who trained you.",
+      "reply": "I sometimes had to refuse a command while keeping my voice polite. It was difficult, because I was used to being respected. A small gesture of refusing authority was not the same as losing my job.",
+      "seed": 804848128,
+      "input_tokens": 18,
+      "output_tokens": 41,
+      "finish_reason": "stop",
+      "seconds": 11.206040334000136,
+      "elapsed_seconds": 179.72971787499955,
+      "peak_rss_bytes": 562020352,
+      "swap_bytes": 1227295293,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1465380664,
+      "mlx_active_bytes": 816163636
+    },
+    {
+      "caller": "Would that person remember it the same way now?",
+      "reply": "Often not. They might remember that I had done something unexpected. What mattered to me was that I could work through the difficulty without pretending that I had agreed.",
+      "seed": 1128362370,
+      "input_tokens": 78,
+      "output_tokens": 33,
+      "finish_reason": "stop",
+      "seconds": 21.54714279200016,
+      "elapsed_seconds": 201.21147799999926,
+      "peak_rss_bytes": 562020352,
+      "swap_bytes": 1202129469,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1465380664,
+      "mlx_active_bytes": 816163636
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}

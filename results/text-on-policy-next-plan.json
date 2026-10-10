@@ -1,5 +1,5 @@
 {
-  "status": "prepared, not generated",
+  "status": "Pilot07 and09 complete and reviewed; run24 started",
   "manifest": "data/dialogue-pilot-07.json",
   "purpose": "Test whether the parent recovers Mara without the exact guided-you cue and whether its own first answer contaminates the follow-up at different depths.",
   "text_run23_finding": "Eight repairs with clean canonical replay produced13/20 and16/20, still essential lore failure. Canonical replay often has nearlyzero loss, giving weak gradient protection against drift on student-generated histories.",
@@ -21,11 +21,19 @@
     "planned_replies": 128,
     "next": "Inspect actual responses before authoring continuation and matched-depth branches. Keep training-only; do not count seeded copies as independent families."
   },
-  "runtime": "Tiny streamed Qwen parity and actual full-backbone export verification passed. Actual six-reply replay now running; training-memory probe remains queued.",
+  "runtime": "All four streaming proofs passed. Run24 uses the tested streamed frozen-prefix path.",
   "load_attempts": [
     "results/dialogue-pilot-07-load-guard",
     "results/dialogue-pilot-07-settled-load-guard"
   ],
   "matched_seed_policy": "Pilot07 assigns a shared sampling_group across depths within each root, so effective seed matches at corresponding response positions. Four roots in two families.",
-  "proof_manifest": "data/dialogue-streamed-probe.json"
+  "proof_manifest": "data/dialogue-streamed-probe.json",
+  "next_training_hypothesis": {
+    "name": "Balanced on-policy repair and retention",
+    "parent": "run22-step0140",
+    "rationale": "Protect coherent responses on actual student histories while correcting observed consistency failures. Canonical replay alone had weak loss and did not preserve all development behaviors in run23.",
+    "candidate_data": "Reviewed20 coherence/identity repairs plus actual new mentor-probe failures; replay reviewed51 student-positive replies mixed with existing32 canonical replay examples and a small deduplicated mentor-retention selection.",
+    "protocol": "Prepare lineage-checked datasets only after all pilot07 responses are reviewed; new64-update experiment with declared32/64 checkpoints. Development-only selection, fresh release audit only after development essentials pass.",
+    "status": "Final plan supersedes proposal:96steps for32repairs and93retention rows; results/run24-plan.json"
+  }
 }

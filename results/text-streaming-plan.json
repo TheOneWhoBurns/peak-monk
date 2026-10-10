@@ -1,5 +1,5 @@
 {
-  "status": "Tiny execution parity and actual full-backbone export verification passed; generated-trace and training-memory probes remain queued",
+  "status": "Tiny parity, actual export score, six generated replies, and two training-update exports passed",
   "reason": "Two resident4Bload attempts stopped at abnormal pressure, including a bounded work-free settling wait. Preserve the model and trained adapter while reducing weight residency.",
   "model": "models/base4b",
   "weight_sha256": "5bfd2f05e5374a4ffa703470efba85aefe65c874db2f82b472fd64afea019b75",
@@ -17,11 +17,13 @@
     "configs/on-policy-runtime-probe06stream.json"
   ],
   "resource_policy": "Serialize all model jobs. Normal pressure required; no explicit wiring; guarded inference peak plan2GB, not a guaranteed allocation cap. New training still requires an actual resource probe.",
-  "training_status": "No new text training performed. Streamed actual full-backbone scoring passed; generated trace replay underway.",
+  "training_status": "Disposable two-update resource/parity probe complete. No new character training experiment yet.",
   "results": {
     "tiny": "results/qwen-streamed-inference-parity.json",
     "actual_export": "results/run23-export0032-streamed/result.json",
     "actual_export_maximum_logp_difference": 0.0,
-    "actual_export_peak_mlx_bytes": 1499454556
+    "actual_export_peak_mlx_bytes": 1499454556,
+    "actual_generation": "results/text-streamed-real-probe/parity.json",
+    "actual_training": "results/text-streamed-training-parity.json"
   }
 }

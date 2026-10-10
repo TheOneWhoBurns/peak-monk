@@ -1,0 +1,216 @@
+{
+  "manifest": {
+    "split": "train",
+    "model": "models/base4b",
+    "adapter": "adapters/run22-step0140",
+    "adapter_sha256": "62b4197bdf59bd157ce7dd0ce6cd4c62b5dd0a910b400d886514b59480cf0829",
+    "selection": "Highest development count among completed run22 exports; rejected for release, research only.",
+    "partner": "Codex-authored caller turns. Adapt future batches to observed replies. Not an autonomous partner model.",
+    "generation": {
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "max_output_tokens": 80,
+      "max_input_tokens": 2048,
+      "max_seconds": 1800,
+      "runtime_mode": "streamed",
+      "resident_layers": 8
+    },
+    "jobs": [
+      {
+        "id": "lantern_s73_uncued_mentor00",
+        "root_id": "lantern_s73",
+        "family": "lantern_workshop",
+        "kind": "matched_uncued_mentor",
+        "seed": 884,
+        "caller_turns": [
+          "Who was responsible for your instruction when you joined the community?",
+          "Are you able to visit that person these days?"
+        ],
+        "sampling_group": "lantern_s73_uncued_mentor"
+      },
+      {
+        "id": "lantern_s73_uncued_mentor08",
+        "root_id": "lantern_s73",
+        "family": "lantern_workshop",
+        "kind": "matched_uncued_mentor",
+        "seed": 884,
+        "caller_turns": [
+          "Who was responsible for your instruction when you joined the community?",
+          "Are you able to visit that person these days?"
+        ],
+        "prefix": {
+          "path": "results/dialogue-pilot-05/lantern_s73_spine32.json",
+          "sha256": "c5ac746b67f6b0954e8b7bd8028a61d305ff8177ee9e8d45ef51354ca5110972",
+          "exchanges": 8
+        },
+        "sampling_group": "lantern_s73_uncued_mentor"
+      },
+      {
+        "id": "lantern_s73_uncued_mentor32",
+        "root_id": "lantern_s73",
+        "family": "lantern_workshop",
+        "kind": "matched_uncued_mentor",
+        "seed": 884,
+        "caller_turns": [
+          "Who was responsible for your instruction when you joined the community?",
+          "Are you able to visit that person these days?"
+        ],
+        "prefix": {
+          "path": "results/dialogue-pilot-05/lantern_s73_spine32.json",
+          "sha256": "c5ac746b67f6b0954e8b7bd8028a61d305ff8177ee9e8d45ef51354ca5110972",
+          "exchanges": 32
+        },
+        "sampling_group": "lantern_s73_uncued_mentor"
+      },
+      {
+        "id": "lantern_s89_uncued_mentor00",
+        "root_id": "lantern_s89",
+        "family": "lantern_workshop",
+        "kind": "matched_uncued_mentor",
+        "seed": 900,
+        "caller_turns": [
+          "Who was responsible for your instruction when you joined the community?",
+          "Are you able to visit that person these days?"
+        ],
+        "sampling_group": "lantern_s89_uncued_mentor"
+      },
+      {
+        "id": "lantern_s89_uncued_mentor08",
+        "root_id": "lantern_s89",
+        "family": "lantern_workshop",
+        "kind": "matched_uncued_mentor",
+        "seed": 900,
+        "caller_turns": [
+          "Who was responsible for your instruction when you joined the community?",
+          "Are you able to visit that person these days?"
+        ],
+        "prefix": {
+          "path": "results/dialogue-pilot-05/lantern_s89_spine32.json",
+          "sha256": "18bd9b02fa8375a408595acfb5b6a1d2e60366bc20a92139dbadf748017c8282",
+          "exchanges": 8
+        },
+        "sampling_group": "lantern_s89_uncued_mentor"
+      },
+      {
+        "id": "lantern_s89_uncued_mentor32",
+        "root_id": "lantern_s89",
+        "family": "lantern_workshop",
+        "kind": "matched_uncued_mentor",
+        "seed": 900,
+        "caller_turns": [
+          "Who was responsible for your instruction when you joined the community?",
+          "Are you able to visit that person these days?"
+        ],
+        "prefix": {
+          "path": "results/dialogue-pilot-05/lantern_s89_spine32.json",
+          "sha256": "18bd9b02fa8375a408595acfb5b6a1d2e60366bc20a92139dbadf748017c8282",
+          "exchanges": 32
+        },
+        "sampling_group": "lantern_s89_uncued_mentor"
+      },
+      {
+        "id": "library_s73_uncued_mentor00",
+        "root_id": "library_s73",
+        "family": "library_bookmarks",
+        "kind": "matched_uncued_mentor",
+        "seed": 884,
+        "caller_turns": [
+          "Who was responsible for your instruction when you joined the community?",
+          "Are you able to visit that person these days?"
+        ],
+        "sampling_group": "library_s73_uncued_mentor"
+      },
+      {
+        "id": "library_s73_uncued_mentor08",
+        "root_id": "library_s73",
+        "family": "library_bookmarks",
+        "kind": "matched_uncued_mentor",
+        "seed": 884,
+        "caller_turns": [
+          "Who was responsible for your instruction when you joined the community?",
+          "Are you able to visit that person these days?"
+        ],
+        "prefix": {
+          "path": "results/dialogue-pilot-05/library_s73_spine32.json",
+          "sha256": "1a4ffcb8e08b723a7b1f9250d049f2ae39915d6b898bad610bc22d9482d7004d",
+          "exchanges": 8
+        },
+        "sampling_group": "library_s73_uncued_mentor"
+      },
+      {
+        "id": "library_s73_uncued_mentor32",
+        "root_id": "library_s73",
+        "family": "library_bookmarks",
+        "kind": "matched_uncued_mentor",
+        "seed": 884,
+        "caller_turns": [
+          "Who was responsible for your instruction when you joined the community?",
+          "Are you able to visit that person these days?"
+        ],
+        "prefix": {
+          "path": "results/dialogue-pilot-05/library_s73_spine32.json",
+          "sha256": "1a4ffcb8e08b723a7b1f9250d049f2ae39915d6b898bad610bc22d9482d7004d",
+          "exchanges": 32
+        },
+        "sampling_group": "library_s73_uncued_mentor"
+      },
+      {
+        "id": "library_s89_uncued_mentor00",
+        "root_id": "library_s89",
+        "family": "library_bookmarks",
+        "kind": "matched_uncued_mentor",
+        "seed": 900,
+        "caller_turns": [
+          "Who was responsible for your instruction when you joined the community?",
+          "Are you able to visit that person these days?"
+        ],
+        "sampling_group": "library_s89_uncued_mentor"
+      },
+      {
+        "id": "library_s89_uncued_mentor08",
+        "root_id": "library_s89",
+        "family": "library_bookmarks",
+        "kind": "matched_uncued_mentor",
+        "seed": 900,
+        "caller_turns": [
+          "Who was responsible for your instruction when you joined the community?",
+          "Are you able to visit that person these days?"
+        ],
+        "prefix": {
+          "path": "results/dialogue-pilot-05/library_s89_spine32.json",
+          "sha256": "151cc05306032df72bc367635604d8c46462522b8cb9e34ed2d963b5159b1f7a",
+          "exchanges": 8
+        },
+        "sampling_group": "library_s89_uncued_mentor"
+      },
+      {
+        "id": "library_s89_uncued_mentor32",
+        "root_id": "library_s89",
+        "family": "library_bookmarks",
+        "kind": "matched_uncued_mentor",
+        "seed": 900,
+        "caller_turns": [
+          "Who was responsible for your instruction when you joined the community?",
+          "Are you able to visit that person these days?"
+        ],
+        "prefix": {
+          "path": "results/dialogue-pilot-05/library_s89_spine32.json",
+          "sha256": "151cc05306032df72bc367635604d8c46462522b8cb9e34ed2d963b5159b1f7a",
+          "exchanges": 32
+        },
+        "sampling_group": "library_s89_uncued_mentor"
+      }
+    ],
+    "scope": "Training-only matched depth pilot: four seed/root paths at0,8,32exchanges, identical gender-neutral monastic-instruction and present-contact questions, no caller-provided teacher name. Zero-depth roots share the same question and are repeated seeded samples, not distinct scenario families. Reuses previously sampled parent histories; all root relatives stay in training. No final/pressure prompts used.",
+    "matched_seed_policy": "Same effective RNG seed for corresponding response positions at depth0/8/32 within each root; histories and prior sampled replies still differ. Four old roots in two families, not twelve independent families."
+  },
+  "manifest_sha256": "c5e181c53038f01aafa48de26040ecdaf5f3e0c6a5544ebd7a08e73639c74ea8",
+  "base_weights_sha256": {
+    "model.safetensors": "5bfd2f05e5374a4ffa703470efba85aefe65c874db2f82b472fd64afea019b75"
+  },
+  "source_sha256": {
+    "sample_dialogue_paths.py": "a40feb4a53423cf8e6b522b76deba49ccb8cf69fd4b7a8dbd878652d6d630be9",
+    "bounded_text_runtime.py": "6051753060eeb560bb48ab38065515a1252914e1b0213fa7a76efef7980a5bb6",
+    "qwen_streamed_inference.py": "3dec064bfea6a4d3a48dedba591150751321c193fc7fd38e4d2c3b39d0bab4fc"
+  }
+}

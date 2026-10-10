@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "tokens": 131,
+  "supervised_tokens": 130,
+  "loss": 10.447787284851074,
+  "gradient_norm": 47.08900258560159,
+  "update": {
+    "clip_scale": 0.021236380999358994,
+    "adapter_tensors": 130,
+    "step": 1
+  },
+  "seconds": 22.153574333000506,
+  "metrics": {
+    "elapsed_seconds": 22.250440457999503,
+    "peak_rss_bytes": 287522816,
+    "swap_bytes": 1176963645,
+    "memory_pressure_level": 1,
+    "mlx_peak_bytes": 241839078,
+    "mlx_active_bytes": 8
+  },
+  "adapter": "adapters/moshi-text-real-probe/candidate.safetensors",
+  "adapter_sha256": "be7a517be369ec8f80e99764e618f0f4ad6dcde85adf45f4ffc30e37ac05efd4",
+  "parent_sha256": "aa02e8b1e91ad3f48dbf1c3dc8e7663a1c1f2c7494f57ed372bef554f7480a70",
+  "scope": "One actual pretrained native-backbone text-only gradient/update. Disposable candidate; no audio replay, native generation, quality improvement or acceptance claim."
+}

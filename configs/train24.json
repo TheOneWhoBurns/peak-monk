@@ -1,0 +1,28 @@
+{
+  "model": "models/base4b",
+  "parent": "adapters/run22-step0140",
+  "parent_sha256": "62b4197bdf59bd157ce7dd0ce6cd4c62b5dd0a910b400d886514b59480cf0829",
+  "repairs": "data/on-policy-repairs-v3/train.jsonl",
+  "repairs_sha256": "0a003aa8cc4bc9ea1d033c8da619b5e1cd79f2b0ee0b62b58913f5e497db4f23",
+  "replay": "data/on-policy-repairs-v3/replay.jsonl",
+  "replay_sha256": "7263b866d87d7a6a16b7f8e2f05eb46e135b61b8893c75d020deb481c5a05a3d",
+  "output": "adapters/run24",
+  "train_last_layers": 6,
+  "steps": 96,
+  "max_length": 2048,
+  "memory_limit": 2400000000,
+  "max_seconds": 2400,
+  "learning_rate": 5e-06,
+  "repair_weight": 1.0,
+  "replay_weight": 1.0,
+  "head_chunk_size": 32,
+  "query_chunk_size": 128,
+  "cache_frozen_prefix": true,
+  "seed": 239,
+  "checkpoints": [
+    48,
+    96
+  ],
+  "stream_frozen_prefix": true,
+  "scope": "Balanced repair/retention experiment.96updates cover32repairs three times and93retention rows at least once. Original parent22,upper6layers,complete histories. No acceptance claim."
+}

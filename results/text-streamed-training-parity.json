@@ -1,0 +1,66 @@
+{
+  "status": "pass",
+  "scope": "Two optimizer updates with streamed frozen-prefix features versus prior resident-prefix experiment. Exact bytes verify complete exported adapter including frozen factors. Not a quality claim.",
+  "comparisons": [
+    {
+      "file": "0000001_adapters.safetensors",
+      "reference_sha256": "494cccec9177c63b7ec4b40f0674ac99522f1686e498a411d8ae0db5daa7c3a7",
+      "candidate_sha256": "494cccec9177c63b7ec4b40f0674ac99522f1686e498a411d8ae0db5daa7c3a7",
+      "byte_identical": true
+    },
+    {
+      "file": "0000002_adapters.safetensors",
+      "reference_sha256": "9db30bdb2551bbe529272764a4e8d87ac6cfc7c7650d10a45af9f1c951b63787",
+      "candidate_sha256": "9db30bdb2551bbe529272764a4e8d87ac6cfc7c7650d10a45af9f1c951b63787",
+      "byte_identical": true
+    },
+    {
+      "file": "adapters.safetensors",
+      "reference_sha256": "9db30bdb2551bbe529272764a4e8d87ac6cfc7c7650d10a45af9f1c951b63787",
+      "candidate_sha256": "9db30bdb2551bbe529272764a4e8d87ac6cfc7c7650d10a45af9f1c951b63787",
+      "byte_identical": true
+    }
+  ],
+  "max_mlx_peak_bytes": 2255418586,
+  "memory_pressure_levels": [
+    1
+  ],
+  "updates": [
+    {
+      "time": 1791599791.9804149,
+      "phase": "update_end",
+      "step": 1,
+      "repair_id": "probe-retained-lantern32",
+      "replay_family": "long_the_coat_with_two_pockets",
+      "loss": 2.3980724811553955,
+      "repair_loss": 1.1417953968048096,
+      "replay_loss": 1.8271747827529907,
+      "gradient_norm": 3.9447476863861084,
+      "training_elapsed_seconds": 10.242985291000878,
+      "elapsed_seconds": 23.578066792000755,
+      "peak_rss_bytes": 1039646720,
+      "swap_bytes": 1244072509,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 2211378390,
+      "mlx_active_bytes": 777752600
+    },
+    {
+      "time": 1791599803.842914,
+      "phase": "update_end",
+      "step": 2,
+      "repair_id": "probe-retained-lantern32",
+      "replay_family": "long_the_coat_with_two_pockets",
+      "loss": 2.3679850101470947,
+      "repair_loss": 1.0834077596664429,
+      "replay_loss": 1.826281189918518,
+      "gradient_norm": 3.868227958679199,
+      "training_elapsed_seconds": 22.105103333000443,
+      "elapsed_seconds": 35.440252374999545,
+      "peak_rss_bytes": 1039646720,
+      "swap_bytes": 1244072509,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 2255418586,
+      "mlx_active_bytes": 777752600
+    }
+  ]
+}

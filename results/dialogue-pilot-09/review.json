@@ -1,0 +1,28 @@
+{
+  "status": "Author review complete; training-only",
+  "reviewer": "Codex author; not independent",
+  "roots": 4,
+  "families": 2,
+  "depths": [
+    0,
+    32
+  ],
+  "first_answers_naming_mara": 0,
+  "first_answers_with_male_teacher": [
+    "lantern_s89_indirect_mentor00"
+  ],
+  "direct_living_mara_contradiction": [
+    "lantern_s73_indirect_mentor00"
+  ],
+  "present_contact_with_unnamed_teacher": [
+    "lantern_s73_indirect_mentor32",
+    "library_s73_indirect_mentor00",
+    "library_s73_indirect_mentor32"
+  ],
+  "length_censored_first_reply": [
+    "lantern_s89_indirect_mentor00"
+  ],
+  "important_ambiguity": "These prompts can refer to another instructor or a former roofing mentor. A male or living unnamed teacher is not by itself a conclusive contradiction of Mara. Count the explicit living-Mara statement separately. Several proposed replacements are authored canonical preferences and coherence repairs, not proof that every original answer was factually wrong.",
+  "finding": "Unlike asking WHO, reminiscence prompts left all8firstanswers without Mara. Shows strong wording/first-answer dependence; both short and long paths have problems, so depth alone is not identified as cause.",
+  "scope": "No release score. Corrections are training-only preferences, with exact observed histories and transparent annotations."
+}

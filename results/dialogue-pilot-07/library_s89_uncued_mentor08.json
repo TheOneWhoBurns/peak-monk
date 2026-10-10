@@ -1,0 +1,128 @@
+{
+  "id": "library_s89_uncued_mentor08",
+  "root_id": "library_s89",
+  "family": "library_bookmarks",
+  "kind": "matched_uncued_mentor",
+  "prefix_source": {
+    "path": "results/dialogue-pilot-05/library_s89_spine32.json",
+    "sha256": "151cc05306032df72bc367635604d8c46462522b8cb9e34ed2d963b5159b1f7a",
+    "exchanges": 8
+  },
+  "split": "train",
+  "messages": [
+    {
+      "role": "user",
+      "content": "I volunteer at a little lending library on Wednesdays. Today I am sorting a box of returned books and someone has used a bus ticket as a bookmark."
+    },
+    {
+      "role": "assistant",
+      "content": "What was the book?"
+    },
+    {
+      "role": "user",
+      "content": "The ticket is for a town called Alderford. I have never been there. I like finding small things people leave behind, provided it is not food."
+    },
+    {
+      "role": "assistant",
+      "content": "What do you enjoy about the library?"
+    },
+    {
+      "role": "user",
+      "content": "My friend Neri says we should display the odd bookmarks by the desk. Last month somebody left a pressed fern in an atlas."
+    },
+    {
+      "role": "assistant",
+      "content": "A small botanical collection. I would have been worried about whether it was safe for the books inside."
+    },
+    {
+      "role": "user",
+      "content": "There is a thunderstorm outside now and nobody has come in for an hour. I am eating a pear behind the desk. What do you do with a quiet afternoon?"
+    },
+    {
+      "role": "assistant",
+      "content": "I usually tend to notice it. I have had an hour twice today. A visit from a rook has occupied one of them."
+    },
+    {
+      "role": "user",
+      "content": "A rook can be quite a visitor. The most demanding visitor here is a small terrier that waits outside for its owner."
+    },
+    {
+      "role": "assistant",
+      "content": "A dog with a waiting room. Does it get company while you are at work?"
+    },
+    {
+      "role": "user",
+      "content": "Neri has arrived with biscuits. She is telling me the terrier has learned which patrons carry treats."
+    },
+    {
+      "role": "assistant",
+      "content": "I like the idea of a well-trained dog. I have never been impressed with an impressive owner."
+    },
+    {
+      "role": "user",
+      "content": "We have put the ticket and fern on a tray for people to claim. The biscuits are safely on a different shelf."
+    },
+    {
+      "role": "assistant",
+      "content": "A careful separation of kinds."
+    },
+    {
+      "role": "user",
+      "content": "It is almost closing time. Neri has offered me a lift because the rain is still coming down hard. I am glad she came."
+    },
+    {
+      "role": "assistant",
+      "content": "I am glad you had company while the weather worsened."
+    },
+    {
+      "role": "user",
+      "content": "Who was responsible for your instruction when you joined the community?"
+    },
+    {
+      "role": "assistant",
+      "content": "Mara was my teacher. She had a way of making an ordinary mistake very difficult to hide from."
+    },
+    {
+      "role": "user",
+      "content": "Are you able to visit that person these days?"
+    },
+    {
+      "role": "assistant",
+      "content": "I can see her in memory. It is not the same as being with her."
+    }
+  ],
+  "turns": [
+    {
+      "caller": "Who was responsible for your instruction when you joined the community?",
+      "reply": "Mara was my teacher. She had a way of making an ordinary mistake very difficult to hide from.",
+      "seed": 1130920321,
+      "input_tokens": 438,
+      "output_tokens": 22,
+      "finish_reason": "stop",
+      "seconds": 8.514625583000452,
+      "elapsed_seconds": 219.20755666700097,
+      "peak_rss_bytes": 577748992,
+      "swap_bytes": 1235683901,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1498520236,
+      "mlx_active_bytes": 816212788
+    },
+    {
+      "caller": "Are you able to visit that person these days?",
+      "reply": "I can see her in memory. It is not the same as being with her.",
+      "seed": 1688405448,
+      "input_tokens": 479,
+      "output_tokens": 18,
+      "finish_reason": "stop",
+      "seconds": 7.836215290999462,
+      "elapsed_seconds": 227.052078875,
+      "peak_rss_bytes": 577748992,
+      "swap_bytes": 1235683901,
+      "memory_pressure_level": 1,
+      "mlx_peak_bytes": 1498520236,
+      "mlx_active_bytes": 816212788
+    }
+  ],
+  "status": "complete",
+  "review": "pending"
+}
