@@ -6,7 +6,7 @@ Jun speaks as human within the fiction. Historical and fictional monks inform or
 
 ## Current experiments
 
-Autonomous research remains paused at the user’s request. Run26 finished all 128 updates normally. On October 11 the user authorized a bounded wrap-up: complete conversation evaluation, publish the latest checkpoint and research publicly, then clean up local artifacts. No new training cycle is planned. Evaluation is currently encountering system memory-pressure guards; an incomplete capture is not a quality result. Handoff: `results/pause-20261010.json`; training evidence: `results/run26-training-summary.json`.
+Autonomous research remains paused at the user’s request. Run26 finished all 128 updates normally. On October 11 the user authorized a bounded wrap-up: complete conversation evaluation, publish the latest checkpoint and research publicly, then clean up local artifacts. No new training cycle is planned. Evaluation encountered system memory-pressure guards; an incomplete capture is not a quality result. The user subsequently requested immediate backup and cleanup, overriding evaluation-first ordering. Run26 is being archived publicly as an unevaluated research checkpoint. Handoff: `results/pause-20261010.json`; training evidence: `results/run26-training-summary.json`.
 
 | Track | Latest evidence | Decision |
 | --- | --- | --- |
@@ -72,4 +72,4 @@ Completed run23–25 and two old probe prefix tensors were removed; their manife
 - `results/speech08-training-summary.json`, `results/speech08-native-introduction/review.json`: trained native checkpoint and failed generation evidence.
 - `results/run25-explicit-prompt-exclusion.json`, `results/release-v3-prompt-exclusion.json`, `results/release-v3-historical-exclusion.json`: counted exclusion audits and their limits.
 
-Latest full core test run: 25 passed, 1 skipped. After the frozen-audit registry change, the two focused exclusion tests and actual corpus audits also passed. Models, adapters, and environments are local ignored artifacts; source, authored data, configurations, raw text captures, and result reports are versioned. No accepted release or publication is implied.
+Latest full core test run: 25 passed, 1 skipped. After the frozen-audit registry change, the two focused exclusion tests and actual corpus audits also passed. Models, adapters, and environments are local ignored artifacts; source, authored data, configurations, raw text captures, and result reports are versioned. Public archival publication is not an accepted model release. Latest wrap-up core tests: 32 passed, 1 skipped.
