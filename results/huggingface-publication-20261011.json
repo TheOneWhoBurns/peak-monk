@@ -1,0 +1,62 @@
+{
+  "repo": "A-Martinez-2508/peak-monk-jun-run26",
+  "revision": "58f6402c376d9e5040d6b2439381cc8f76f053fd",
+  "verified_at": 1791737211.3662221,
+  "files": [
+    {
+      "path": "train26.json",
+      "sha256": "903ac99d13b0554237b83da57f09d29dd0c6a99c5944c733b83e71332bb41843",
+      "bytes": 1158,
+      "verification": "remote download SHA256"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "verification": "remote download SHA256"
+    },
+    {
+      "path": "training-summary.json",
+      "sha256": "b60ed38af43c8bf7aef4c47fcc7d667e5132b18455e9e1ddafddf8c9e40e2302",
+      "bytes": 1230,
+      "verification": "remote download SHA256"
+    },
+    {
+      "path": "README.md",
+      "sha256": "0c2c1d8f019668ca60cd87de5ef8e76032fa7fac44f8d98c4200be037e73f755",
+      "bytes": 5107,
+      "verification": "remote download SHA256"
+    },
+    {
+      "path": "adapters.safetensors",
+      "sha256": "920c7a782a6c55406290fcc8404dcd9fa0a8d23997e7f09ce57dd2bcababa059",
+      "bytes": 142063861,
+      "verification": "HF LFS SHA256"
+    },
+    {
+      "path": "adapter_config.json",
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019",
+      "bytes": 1377,
+      "verification": "remote download SHA256"
+    },
+    {
+      "path": "training-metadata.json",
+      "sha256": "0a02d001e24030d5e9f7fbe08586382e254824a489285c561f1b48a5371a7e67",
+      "bytes": 11143,
+      "verification": "remote download SHA256"
+    },
+    {
+      "path": "base-metadata.zip",
+      "sha256": "76cab821520ccc621869fc4654dabcabe8e80c55bca6fa9dbd483b1fb1fd8d3c",
+      "bytes": 3944666,
+      "verification": "HF LFS SHA256"
+    },
+    {
+      "path": "release-manifest.json",
+      "sha256": "891d135d2bf829cb85ad5fa2827edf221e51e8d908b72ab90733168a21b4995c",
+      "bytes": 879,
+      "verification": "remote download SHA256"
+    }
+  ],
+  "url": "https://huggingface.co/A-Martinez-2508/peak-monk-jun-run26"
+}

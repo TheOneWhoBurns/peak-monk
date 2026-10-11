@@ -1,0 +1,2710 @@
+{
+  "archive": "adapters",
+  "format": "gzip-compressed tar, concatenate parts in order",
+  "created_at": 1791736333.106381,
+  "roots": [
+    "adapters"
+  ],
+  "parts": [],
+  "files": [
+    {
+      "path": "adapters/.DS_Store",
+      "bytes": 26628,
+      "sha256": "a202ee51bad76e0117ec05e643d2ab65495a19612798d851339e86f0a240678c"
+    },
+    {
+      "path": "adapters/moshi-text-native-start-real-probe/candidate.safetensors",
+      "bytes": 25286793,
+      "sha256": "e6949ec8bb25d119b518b74feed4b9ac007b5c87d331d101e9e41b97deaece7b"
+    },
+    {
+      "path": "adapters/moshi-text-real-probe/candidate.safetensors",
+      "bytes": 25286793,
+      "sha256": "be7a517be369ec8f80e99764e618f0f4ad6dcde85adf45f4ffc30e37ac05efd4"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe/metadata.json",
+      "bytes": 8774,
+      "sha256": "091ec79bfc6e430a99a2f7acdc57eabb2052a3173d8e75a1406d6206df24645e"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe/plan.json",
+      "bytes": 966,
+      "sha256": "784cbf0ae56c2b4c31cd79b6e09b36a04a26d12f74b0e9d4224dbb2e0eca509d"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe/runtime.jsonl",
+      "bytes": 649,
+      "sha256": "c254dee41235e5df0d25977ccfb70e7fd81f25b1029e5664fa24a5bd21d2aad7"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06/metadata.json",
+      "bytes": 4957,
+      "sha256": "eb6ce2db76aba097bbcbd2eb92907292e43391984e4ca8bde412a70b8c5139c8"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06/plan.json",
+      "bytes": 967,
+      "sha256": "ecf5439f5eb69b021bf56543fb1004bfcdf8b8e1d97622ac882413e5126c5b64"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06/runtime.jsonl",
+      "bytes": 1050,
+      "sha256": "9b26250c7579a949f69e6100ee7041a65014934ee0b7269c69dfca04118bf0c0"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06cache/0000001_adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "494cccec9177c63b7ec4b40f0674ac99522f1686e498a411d8ae0db5daa7c3a7"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06cache/0000002_adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "9db30bdb2551bbe529272764a4e8d87ac6cfc7c7650d10a45af9f1c951b63787"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06cache/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06cache/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "9db30bdb2551bbe529272764a4e8d87ac6cfc7c7650d10a45af9f1c951b63787",
+      "same_inode_as": "adapters/on-policy-runtime-probe06cache/0000002_adapters.safetensors"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06cache/completion.json",
+      "bytes": 104,
+      "sha256": "fba6ccf5bdcac621394ae35b98f62d8a6230fcf3909b13659cd655538d434c5d"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06cache/frozen_prefix_manifest.json",
+      "bytes": 1211,
+      "sha256": "825d576c823447abf4d688c6e5aab8da5fb685983701660b9dade4b172658c59"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06cache/metadata.json",
+      "bytes": 5058,
+      "sha256": "4b11b5fde3f98db7e79a3d3759a8ad5a912548240489a2609eceebc597698207"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06cache/plan.json",
+      "bytes": 1030,
+      "sha256": "f683418f66ab5581281b2db60bc51ba18b80d6ffce8bd1ecfdc9f88afbec137b"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06cache/runtime.jsonl",
+      "bytes": 3022,
+      "sha256": "22bf3c6deb40be47132b3bbc92562aa77fb9e34f7cb3fd8647556029584efbfa"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06cache/step0001.json",
+      "bytes": 182,
+      "sha256": "06d16edfa0b77e3e80d557e5007a7f16f21e25dc82a26e1e0fe151d190f8ba0f"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06cache/step0002.json",
+      "bytes": 182,
+      "sha256": "504981b1a7e980fc95110b1470af716072a2e75906e6ff54b20095e3339922b9"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06q/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06q/metadata.json",
+      "bytes": 5058,
+      "sha256": "e677a2d4c346f79c83a00cdfeee48557a09665ed6f8cd7575699c272031dccd5"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06q/plan.json",
+      "bytes": 995,
+      "sha256": "089d3888470e3e569d769eb3be76cfde66ff79c67b101c04c6e1688c8a1124d2"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06q/runtime.jsonl",
+      "bytes": 1047,
+      "sha256": "13a167b6548c85dbbdd0b0a9c897288a469d52d9d9a5beeabdc773367c1fcf8f"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06stream/0000001_adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "494cccec9177c63b7ec4b40f0674ac99522f1686e498a411d8ae0db5daa7c3a7",
+      "same_inode_as": "adapters/on-policy-runtime-probe06cache/0000001_adapters.safetensors"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06stream/0000002_adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "9db30bdb2551bbe529272764a4e8d87ac6cfc7c7650d10a45af9f1c951b63787",
+      "same_inode_as": "adapters/on-policy-runtime-probe06cache/0000002_adapters.safetensors"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06stream/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06stream/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "9db30bdb2551bbe529272764a4e8d87ac6cfc7c7650d10a45af9f1c951b63787",
+      "same_inode_as": "adapters/on-policy-runtime-probe06cache/0000002_adapters.safetensors"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06stream/completion.json",
+      "bytes": 104,
+      "sha256": "13812be0aa24810d39b64432aabb51a7d1e0377fcdb12aeb8690053f6256a151"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06stream/frozen_prefix_manifest.json",
+      "bytes": 1213,
+      "sha256": "370bb4ce967ab85e8dd477497f9b289fcbf1c1bbcc8ddd6ad7fb92dc734570ba"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06stream/metadata.json",
+      "bytes": 5258,
+      "sha256": "37532508f478f4182cbe2bca98f4ba60efa41f6f76435c8d242fee18ac03bf6f"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06stream/plan.json",
+      "bytes": 1063,
+      "sha256": "9a08d9228f49e9b9986447259d6aaf1bd370ba98d3ba12422900f48ac1b2f8ae"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06stream/runtime.jsonl",
+      "bytes": 3018,
+      "sha256": "3a3d16e4029cd682e6a4debb1cee69c72d82e77001c42c4e8cc6538632686512"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06stream/step0001-export-score.json",
+      "bytes": 599,
+      "sha256": "3527291687315e21216d3ab47ef5c5ee47087c8ec4b327d464134780d559c679"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06stream/step0001.json",
+      "bytes": 182,
+      "sha256": "06d16edfa0b77e3e80d557e5007a7f16f21e25dc82a26e1e0fe151d190f8ba0f"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06stream/step0002-export-score.json",
+      "bytes": 596,
+      "sha256": "98f21445a7ac4774b5d688c6110b1eb666df91acb6930e6a2639c5361a934ce2"
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06stream/step0002.json",
+      "bytes": 182,
+      "sha256": "504981b1a7e980fc95110b1470af716072a2e75906e6ff54b20095e3339922b9"
+    },
+    {
+      "path": "adapters/preference-deferred-parity/0000001_adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "de070fa06ecb87635225ac2cd01649493f775fa4f1ff414a43d3de5f94df8efa"
+    },
+    {
+      "path": "adapters/preference-deferred-parity/0000002_adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "5bd932a77961dafd7a6f476430f63fd15181bc313504a0e7c08f8eb6236c6ea9"
+    },
+    {
+      "path": "adapters/preference-deferred-parity/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/preference-deferred-parity/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "5bd932a77961dafd7a6f476430f63fd15181bc313504a0e7c08f8eb6236c6ea9",
+      "same_inode_as": "adapters/preference-deferred-parity/0000002_adapters.safetensors"
+    },
+    {
+      "path": "adapters/preference-deferred-parity/completion.json",
+      "bytes": 102,
+      "sha256": "0857e456750d279eae832c280dd37586b1555b65f538318d49c99ac565049103"
+    },
+    {
+      "path": "adapters/preference-deferred-parity/frozen_prefix_manifest.json",
+      "bytes": 2921,
+      "sha256": "9f1c6b12df4f7c3b398df49c6182decd9dbea00834a8e0eb442959e473c73c04"
+    },
+    {
+      "path": "adapters/preference-deferred-parity/metadata.json",
+      "bytes": 5424,
+      "sha256": "d5f67cb475b5df4d0be655e66ded15159041cd11a9c174c3d9ee7fd593a6e667"
+    },
+    {
+      "path": "adapters/preference-deferred-parity/plan.json",
+      "bytes": 1040,
+      "sha256": "9d4f5ceea4e31159e0556a66d9f0ed7f80670826049f86c62de732a16290e403"
+    },
+    {
+      "path": "adapters/preference-deferred-parity/reference_scores.json",
+      "bytes": 724,
+      "sha256": "efc3ace3b0cf6eb905d6a1f8a10aa27027b4eed1fe8a304e3614b9e608aa2af7"
+    },
+    {
+      "path": "adapters/preference-deferred-parity/runtime.jsonl",
+      "bytes": 5797,
+      "sha256": "418759895adcf3f822f0511ab27861a424800c2b1a8cb7e897f42aa52f76d807"
+    },
+    {
+      "path": "adapters/preference-deferred-parity/step0001-export-score.json",
+      "bytes": 791,
+      "sha256": "a418a4a93718e0d23440b7400f07eb5587585c12ba44599ae0971fc967a875a3"
+    },
+    {
+      "path": "adapters/preference-deferred-parity/step0001.json",
+      "bytes": 182,
+      "sha256": "4d456e9394addd1414f532fbf6176f299810fac22facb6b2a5e467492f72168b"
+    },
+    {
+      "path": "adapters/preference-deferred-parity/step0002-export-score.json",
+      "bytes": 794,
+      "sha256": "2a759706eb2ea48fe8cd15e886c7df071c23a91dcfc24a34e81fed7e204d36a2"
+    },
+    {
+      "path": "adapters/preference-deferred-parity/step0002.json",
+      "bytes": 182,
+      "sha256": "54394171660a5ea54e6025bd59171806ee63b4b2cb2f084c2bb687b8058a4011"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01/0000001_adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "de070fa06ecb87635225ac2cd01649493f775fa4f1ff414a43d3de5f94df8efa",
+      "same_inode_as": "adapters/preference-deferred-parity/0000001_adapters.safetensors"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01/0000002_adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "5bd932a77961dafd7a6f476430f63fd15181bc313504a0e7c08f8eb6236c6ea9",
+      "same_inode_as": "adapters/preference-deferred-parity/0000002_adapters.safetensors"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "5bd932a77961dafd7a6f476430f63fd15181bc313504a0e7c08f8eb6236c6ea9",
+      "same_inode_as": "adapters/preference-deferred-parity/0000002_adapters.safetensors"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01/completion.json",
+      "bytes": 103,
+      "sha256": "1aa9de6c22b7947f28b80265dd6c62309fa46a123bde36a063a5c56b330a4d19"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01/frozen_prefix_manifest.json",
+      "bytes": 2921,
+      "sha256": "cfc94d51a34df7d82848dea203f97fa5cd4a772852844458e6edef9cba43b3c0"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01/metadata.json",
+      "bytes": 5424,
+      "sha256": "d20fea0a457ba1583ab5eb9ede9eb2c19387da6415c8b957d07e7ca6eb2f5883"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01/plan.json",
+      "bytes": 1071,
+      "sha256": "398f153d9e572a91b3e5d79410f5f12ec555738f0d6c198683dac529966d98b9"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01/reference_scores.json",
+      "bytes": 724,
+      "sha256": "efc3ace3b0cf6eb905d6a1f8a10aa27027b4eed1fe8a304e3614b9e608aa2af7"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01/runtime.jsonl",
+      "bytes": 5520,
+      "sha256": "1440ba6bca6da65875f70849a57cd10e57e4861ff1e5539debf3880fbab29e81"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01/step0001-export-score.json",
+      "bytes": 791,
+      "sha256": "a418a4a93718e0d23440b7400f07eb5587585c12ba44599ae0971fc967a875a3"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01/step0001.json",
+      "bytes": 182,
+      "sha256": "4d456e9394addd1414f532fbf6176f299810fac22facb6b2a5e467492f72168b"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01/step0002-export-score.json",
+      "bytes": 794,
+      "sha256": "2a759706eb2ea48fe8cd15e886c7df071c23a91dcfc24a34e81fed7e204d36a2"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01/step0002.json",
+      "bytes": 182,
+      "sha256": "54394171660a5ea54e6025bd59171806ee63b4b2cb2f084c2bb687b8058a4011"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01-step0001/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01-step0001/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "de070fa06ecb87635225ac2cd01649493f775fa4f1ff414a43d3de5f94df8efa",
+      "same_inode_as": "adapters/preference-deferred-parity/0000001_adapters.safetensors"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01-step0001/provenance.json",
+      "bytes": 240,
+      "sha256": "9abb529ed61555f40001ab10362b9631aae6f3ba5820ad0e45e4e1cc488db2de"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01-step0002/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01-step0002/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "5bd932a77961dafd7a6f476430f63fd15181bc313504a0e7c08f8eb6236c6ea9",
+      "same_inode_as": "adapters/preference-deferred-parity/0000002_adapters.safetensors"
+    },
+    {
+      "path": "adapters/preference-runtime-probe01-step0002/provenance.json",
+      "bytes": 240,
+      "sha256": "17906a21f7d8f902796f8a5af1c918442a14b1f03db660093f8d2eaa00cf0caf"
+    },
+    {
+      "path": "adapters/preference-runtime-probe02/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/preference-runtime-probe02/metadata.json",
+      "bytes": 9242,
+      "sha256": "6e7dd730adf5e567885c706fe928ac929514d9eadb2cb809a869eb0476d4edf0"
+    },
+    {
+      "path": "adapters/preference-runtime-probe02/plan.json",
+      "bytes": 1115,
+      "sha256": "24ff93178e9109f23cbe182ee72fcb8ee9902469bf882fbca86523647cdb81ed"
+    },
+    {
+      "path": "adapters/preference-runtime-probe02/runtime.jsonl",
+      "bytes": 1055,
+      "sha256": "9e6ec00859e7718054638bc741efef77c7bdd4621907d1b60e50110aa82ca849"
+    },
+    {
+      "path": "adapters/preference-runtime-probe03/0000001_adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "4a5c1f92373069a3c9ff8b2575e4a9285c2c2f361aebf8619a6e1f9b314de6ef"
+    },
+    {
+      "path": "adapters/preference-runtime-probe03/0000002_adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "3ec07f11ac4c5893ffde98441626b61338391ece4184a1e2b225b44f01045299"
+    },
+    {
+      "path": "adapters/preference-runtime-probe03/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/preference-runtime-probe03/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "3ec07f11ac4c5893ffde98441626b61338391ece4184a1e2b225b44f01045299",
+      "same_inode_as": "adapters/preference-runtime-probe03/0000002_adapters.safetensors"
+    },
+    {
+      "path": "adapters/preference-runtime-probe03/completion.json",
+      "bytes": 103,
+      "sha256": "8e1e893be8bd60fc4a7efd00293cabd1c0b5b2d3867c5491635c586286fa7018"
+    },
+    {
+      "path": "adapters/preference-runtime-probe03/frozen_prefix_manifest.json",
+      "bytes": 2922,
+      "sha256": "0de1e26c2f8538fdf31fd68a1c7645d0929bd7fb3eb13c8302d1015df1bf0565"
+    },
+    {
+      "path": "adapters/preference-runtime-probe03/metadata.json",
+      "bytes": 9242,
+      "sha256": "6db86bd7fc67b2729ad22ea81cc62b60833a718d232bc2d647ecb73cf2da742a"
+    },
+    {
+      "path": "adapters/preference-runtime-probe03/plan.json",
+      "bytes": 1043,
+      "sha256": "bf64aa0bb1f077f5ec67aa304eec515ce1447df777b3a2cece27dca465b89a19"
+    },
+    {
+      "path": "adapters/preference-runtime-probe03/reference_scores.json",
+      "bytes": 744,
+      "sha256": "58e76abd938a85e6e825314088062de66572d3df905c3c2bf2dc98c9081c3b3e"
+    },
+    {
+      "path": "adapters/preference-runtime-probe03/runtime.jsonl",
+      "bytes": 5817,
+      "sha256": "78db5a262058f857cb7e3c4806fa4bb38a92a5dfa1e6b318352394f511c17df6"
+    },
+    {
+      "path": "adapters/preference-runtime-probe03/step0001-export-score.json",
+      "bytes": 1153,
+      "sha256": "6a0faf4f2f51aab09f70de425121114625b05785fcf9f8804f2f03c64a6fe1a9"
+    },
+    {
+      "path": "adapters/preference-runtime-probe03/step0001.json",
+      "bytes": 182,
+      "sha256": "7ca0b1838dd488c8c4a3d548741d96d2802be632b3c5d0b89426f2d2bd0bb0e9"
+    },
+    {
+      "path": "adapters/preference-runtime-probe03/step0002-export-score.json",
+      "bytes": 1161,
+      "sha256": "fa1fb99d50410a1c7d4c3fd9e3064a6b89a365281b0e81a21fad12029fb10f8b"
+    },
+    {
+      "path": "adapters/preference-runtime-probe03/step0002.json",
+      "bytes": 182,
+      "sha256": "723fd881d30eb2add93dcd3a0aed92348b35828f3e2e7584574d659c091f0eb7"
+    },
+    {
+      "path": "adapters/preference-runtime-probe03-step0001/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/preference-runtime-probe03-step0001/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "4a5c1f92373069a3c9ff8b2575e4a9285c2c2f361aebf8619a6e1f9b314de6ef",
+      "same_inode_as": "adapters/preference-runtime-probe03/0000001_adapters.safetensors"
+    },
+    {
+      "path": "adapters/preference-runtime-probe03-step0002/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/preference-runtime-probe03-step0002/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "3ec07f11ac4c5893ffde98441626b61338391ece4184a1e2b225b44f01045299",
+      "same_inode_as": "adapters/preference-runtime-probe03/0000002_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run01/0000080_adapters.safetensors",
+      "bytes": 39870300,
+      "sha256": "841b6ed75cfe9b3f90bab36c3ec938b87e3c6ba243d831e070e441d1dff18fa0"
+    },
+    {
+      "path": "adapters/run01/0000160_adapters.safetensors",
+      "bytes": 39870300,
+      "sha256": "47f883ba6fec17d2f46502d8e0512cce4f5a376e536f74a0aa635666c06fbf59"
+    },
+    {
+      "path": "adapters/run01/adapter_config.json",
+      "bytes": 977,
+      "sha256": "a5c961feb7b43c0bdd84f4cabf6b0c36b9c261dda440a5e6df20f48bf175e14d"
+    },
+    {
+      "path": "adapters/run01/adapters.safetensors",
+      "bytes": 39870300,
+      "sha256": "47f883ba6fec17d2f46502d8e0512cce4f5a376e536f74a0aa635666c06fbf59",
+      "same_inode_as": "adapters/run01/0000160_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run02/0000080_adapters.safetensors",
+      "bytes": 49725476,
+      "sha256": "bfebf49e5660af2deaf4e9be499c91020ddd530dbdbbfb5672c57f016cd5edf8"
+    },
+    {
+      "path": "adapters/run02/0000160_adapters.safetensors",
+      "bytes": 49725476,
+      "sha256": "d6727b1f83939cb45e664cdd104a3104ac9289d081272bfaf0a050ce95b1aefe"
+    },
+    {
+      "path": "adapters/run02/adapter_config.json",
+      "bytes": 1252,
+      "sha256": "0965d88172b3b7ec9e9d2ed1a309ea9f223d27d9755487746595f61a8a32807c"
+    },
+    {
+      "path": "adapters/run02/adapters.safetensors",
+      "bytes": 49725476,
+      "sha256": "d6727b1f83939cb45e664cdd104a3104ac9289d081272bfaf0a050ce95b1aefe",
+      "same_inode_as": "adapters/run02/0000160_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run03/0000160_adapters.safetensors",
+      "bytes": 49725476,
+      "sha256": "7fa143d307892a667fbd6092ceb536cf6ad6f4ee53fdc14ee516d6b07f5fc208"
+    },
+    {
+      "path": "adapters/run03/0000320_adapters.safetensors",
+      "bytes": 49725476,
+      "sha256": "b5bcd2111ad6a56d38c4318b672c6e86731d58410ddbf6ec9d27e1fc4661c062"
+    },
+    {
+      "path": "adapters/run03/0000480_adapters.safetensors",
+      "bytes": 49725476,
+      "sha256": "b38d80d8b7f56580eef7314713c283c3c374ac56440850b4480535f06826a80d"
+    },
+    {
+      "path": "adapters/run03/0000640_adapters.safetensors",
+      "bytes": 49725476,
+      "sha256": "6c50fc751817ece83521728c232e2e40cae30052957b33c8806f466690804b1e"
+    },
+    {
+      "path": "adapters/run03/adapter_config.json",
+      "bytes": 1254,
+      "sha256": "332870f9d91222b80e9c479a884d2ff9f6c1fd7a6a75e7f7b2589241e2527d46"
+    },
+    {
+      "path": "adapters/run03/adapters.safetensors",
+      "bytes": 49725476,
+      "sha256": "6c50fc751817ece83521728c232e2e40cae30052957b33c8806f466690804b1e",
+      "same_inode_as": "adapters/run03/0000640_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run04/0000080_adapters.safetensors",
+      "bytes": 49725476,
+      "sha256": "7ed62ea952ea7efd7dfbc014af65bce65132be2414f3eb160572191ec3f639fb"
+    },
+    {
+      "path": "adapters/run04/0000160_adapters.safetensors",
+      "bytes": 49725476,
+      "sha256": "72dedce3e4f6a59e87b04edd3a58161d8abb4ab2e6669da871285a53e74e272d"
+    },
+    {
+      "path": "adapters/run04/adapter_config.json",
+      "bytes": 1252,
+      "sha256": "cfb8ac3fb1a88747b2d8d2ca4126ebe67d56acc91c5732c3b831b635de2af962"
+    },
+    {
+      "path": "adapters/run04/adapters.safetensors",
+      "bytes": 49725476,
+      "sha256": "72dedce3e4f6a59e87b04edd3a58161d8abb4ab2e6669da871285a53e74e272d",
+      "same_inode_as": "adapters/run04/0000160_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run05/0000080_adapters.safetensors",
+      "bytes": 49725476,
+      "sha256": "c565b5327d9e79dc5f8ce183dc79f4a025845b71b932092f7298c8c6e2d63273"
+    },
+    {
+      "path": "adapters/run05/0000160_adapters.safetensors",
+      "bytes": 49725476,
+      "sha256": "affd619c16ef8213b847bcbb8941b3f52aeb500464e6b1bfb4b804ae0ba70de5"
+    },
+    {
+      "path": "adapters/run05/adapter_config.json",
+      "bytes": 1256,
+      "sha256": "601975fb5ab7f4f3e7c46f5f0ae55f834c9f53a19bc229fc188a7b916982e7c0"
+    },
+    {
+      "path": "adapters/run05/adapters.safetensors",
+      "bytes": 49725476,
+      "sha256": "affd619c16ef8213b847bcbb8941b3f52aeb500464e6b1bfb4b804ae0ba70de5",
+      "same_inode_as": "adapters/run05/0000160_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run06/0000080_adapters.safetensors",
+      "bytes": 49725476,
+      "sha256": "6f83d8c2cf4032d84df3382febd54d7f6cff1272158bce2eacb7d34433967bfb"
+    },
+    {
+      "path": "adapters/run06/0000160_adapters.safetensors",
+      "bytes": 49725476,
+      "sha256": "16dad31f7736c2cafcdd19af89786fa258deed314985d05e8eca6e1dd3e9d122"
+    },
+    {
+      "path": "adapters/run06/adapter_config.json",
+      "bytes": 1255,
+      "sha256": "ddb6ff1c810cc267a5ae38d275f130c5f569fa5e8e785cdb33ca28e6987edf3e"
+    },
+    {
+      "path": "adapters/run06/adapters.safetensors",
+      "bytes": 49725476,
+      "sha256": "16dad31f7736c2cafcdd19af89786fa258deed314985d05e8eca6e1dd3e9d122",
+      "same_inode_as": "adapters/run06/0000160_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run07/0000080_adapters.safetensors",
+      "bytes": 39870300,
+      "sha256": "562cf0d334f103609d0abcc35aad435fcd55194776414f598d289450da5c83d1"
+    },
+    {
+      "path": "adapters/run07/0000160_adapters.safetensors",
+      "bytes": 39870300,
+      "sha256": "bc65a71564e2ca7f978f79ab5f1e04616d07ff1ef19becc841c4b49a72482067"
+    },
+    {
+      "path": "adapters/run07/adapter_config.json",
+      "bytes": 1221,
+      "sha256": "aaaace3b76cd5c38abfa866a2d219da007e5676b2d1223480059b9702620cc3f"
+    },
+    {
+      "path": "adapters/run07/adapters.safetensors",
+      "bytes": 39870300,
+      "sha256": "bc65a71564e2ca7f978f79ab5f1e04616d07ff1ef19becc841c4b49a72482067",
+      "same_inode_as": "adapters/run07/0000160_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run08/0000080_adapters.safetensors",
+      "bytes": 39870300,
+      "sha256": "2c0dca68fc7a06511c7a20f2c142afa802b4ef5eb2a5114bf09ed71ae43a72f2"
+    },
+    {
+      "path": "adapters/run08/0000160_adapters.safetensors",
+      "bytes": 39870300,
+      "sha256": "6528bdd38b229e259c61628deed35591d3c4137e552704c9b505ed31e9f8815c"
+    },
+    {
+      "path": "adapters/run08/adapter_config.json",
+      "bytes": 1261,
+      "sha256": "37445dbbd59c637ebdc58d66200f4207412e9cc89ca32a2162cc07047ee0941f"
+    },
+    {
+      "path": "adapters/run08/adapters.safetensors",
+      "bytes": 39870300,
+      "sha256": "6528bdd38b229e259c61628deed35591d3c4137e552704c9b505ed31e9f8815c",
+      "same_inode_as": "adapters/run08/0000160_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run09/0000192_adapters.safetensors",
+      "bytes": 22038180,
+      "sha256": "ab38ba51f0bf310fdd263515bbb7b1f69dc7dd49e6a944b7ea70e0d17a560abf"
+    },
+    {
+      "path": "adapters/run09/0000384_adapters.safetensors",
+      "bytes": 22038180,
+      "sha256": "242ac38bef5c4d0d885477da8c3f24e80bf90e1668917cb0b6a8ae01c45e1f21"
+    },
+    {
+      "path": "adapters/run09/0000576_adapters.safetensors",
+      "bytes": 22038180,
+      "sha256": "1914484af9cbd2b6f72fbec409cf2e3023b8d4a68406747077107737aea1246e"
+    },
+    {
+      "path": "adapters/run09/0000768_adapters.safetensors",
+      "bytes": 22038180,
+      "sha256": "5f208517417c0970983fe64d7dfa571b2372092d4ecb911d35456f49183cdc2c"
+    },
+    {
+      "path": "adapters/run09/adapter_config.json",
+      "bytes": 1261,
+      "sha256": "99384b5f3e98c50e9abc1a54ac6fb4b67bd57c3749967cd731bf5b2b66713e3f"
+    },
+    {
+      "path": "adapters/run09/adapters.safetensors",
+      "bytes": 22038180,
+      "sha256": "5f208517417c0970983fe64d7dfa571b2372092d4ecb911d35456f49183cdc2c",
+      "same_inode_as": "adapters/run09/0000768_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run09/training_metrics.jsonl",
+      "bytes": 19556,
+      "sha256": "fbf028f7bfc8882750a1d73e25abb6f42f78534f40f5d3e18924280a3edaa2cf"
+    },
+    {
+      "path": "adapters/run10/adapter_config.json",
+      "bytes": 1311,
+      "sha256": "e541159c6f72d69b91c20c85d4df832a276a73b615f79f3f24c0b832d59f4867"
+    },
+    {
+      "path": "adapters/run10/training_metrics.jsonl",
+      "bytes": 2062,
+      "sha256": "7c62c0c0e3103f5adad4389f00979c65facdd452ad70cfce75bde10e6f6d5048"
+    },
+    {
+      "path": "adapters/run11/0000374_adapters.safetensors",
+      "bytes": 79628122,
+      "sha256": "b882eb33f30dca554d730c06970d3eaa2225f41c2fa756c5781026bd9f6734f3"
+    },
+    {
+      "path": "adapters/run11/0000748_adapters.safetensors",
+      "bytes": 79628122,
+      "sha256": "2a40f20a30034a43620ad2c35e60cfa8051867754d5c0cbfd001c192c4c29bb3"
+    },
+    {
+      "path": "adapters/run11/adapter_config.json",
+      "bytes": 1312,
+      "sha256": "362feab21384b6c9d534aa9481f1c0de45634f68c9ffc5e5367a3e9bcc58fca8"
+    },
+    {
+      "path": "adapters/run11/adapters.safetensors",
+      "bytes": 79628122,
+      "sha256": "2a40f20a30034a43620ad2c35e60cfa8051867754d5c0cbfd001c192c4c29bb3",
+      "same_inode_as": "adapters/run11/0000748_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run11/training_metrics.jsonl",
+      "bytes": 21038,
+      "sha256": "be2a88c9bf8761e12d94395092d57e751163f9e5731d8762dc63c91cf9bece3b"
+    },
+    {
+      "path": "adapters/run11-step0374/adapter_config.json",
+      "bytes": 1312,
+      "sha256": "362feab21384b6c9d534aa9481f1c0de45634f68c9ffc5e5367a3e9bcc58fca8"
+    },
+    {
+      "path": "adapters/run11-step0374/adapters.safetensors",
+      "bytes": 79628122,
+      "sha256": "b882eb33f30dca554d730c06970d3eaa2225f41c2fa756c5781026bd9f6734f3",
+      "same_inode_as": "adapters/run11/0000374_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run11-step0748/adapter_config.json",
+      "bytes": 1312,
+      "sha256": "362feab21384b6c9d534aa9481f1c0de45634f68c9ffc5e5367a3e9bcc58fca8"
+    },
+    {
+      "path": "adapters/run11-step0748/adapters.safetensors",
+      "bytes": 79628122,
+      "sha256": "2a40f20a30034a43620ad2c35e60cfa8051867754d5c0cbfd001c192c4c29bb3",
+      "same_inode_as": "adapters/run11/0000748_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run12/0000374_adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "eeb8a4246b8e525d109c542b18686e6e7b2a1569d5c2c306d08380ef0a481ee2"
+    },
+    {
+      "path": "adapters/run12/0000748_adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "06c373b0e7dc20cc8ade1f1f57e7751787aa51d97518280f033130cef0bd006b"
+    },
+    {
+      "path": "adapters/run12/adapter_config.json",
+      "bytes": 1287,
+      "sha256": "5985e6e92806df09f4935000c474ef48747045a4a9ca6e4ebb952dd38dec9129"
+    },
+    {
+      "path": "adapters/run12/adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "06c373b0e7dc20cc8ade1f1f57e7751787aa51d97518280f033130cef0bd006b",
+      "same_inode_as": "adapters/run12/0000748_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run12/training_metrics.jsonl",
+      "bytes": 18832,
+      "sha256": "460c6e35af7d4898f301487e190268a286b7c0518b9ebae2eac4753d4a4e0595"
+    },
+    {
+      "path": "adapters/run12-step0374/adapter_config.json",
+      "bytes": 1287,
+      "sha256": "5985e6e92806df09f4935000c474ef48747045a4a9ca6e4ebb952dd38dec9129"
+    },
+    {
+      "path": "adapters/run12-step0374/adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "eeb8a4246b8e525d109c542b18686e6e7b2a1569d5c2c306d08380ef0a481ee2",
+      "same_inode_as": "adapters/run12/0000374_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run13/0000032_adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "1cba9f49e8d5bebc883c904d5bad4903a827facfc416af41979222746d5e89b9"
+    },
+    {
+      "path": "adapters/run13/0000064_adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "4e1fd2159cf3d1232f27d3c2b079ab9772c838fc8ca020f5303444570d957ab3"
+    },
+    {
+      "path": "adapters/run13/0000096_adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "83f4d2a03df6748e58b79dd93a3d9001e81de015896578e04b8fb2917d996402"
+    },
+    {
+      "path": "adapters/run13/0000128_adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "e8694d4f757a58e4d68f569bf08c3afb719da7bec3a331910f58d0723f696830"
+    },
+    {
+      "path": "adapters/run13/adapter_config.json",
+      "bytes": 1140,
+      "sha256": "50f58ab20144b49344e60c05872719f060895c40fdb35637bc7bda9ddabfe66f"
+    },
+    {
+      "path": "adapters/run13/adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "e8694d4f757a58e4d68f569bf08c3afb719da7bec3a331910f58d0723f696830",
+      "same_inode_as": "adapters/run13/0000128_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run13/completion.json",
+      "bytes": 155,
+      "sha256": "a2867af7795e9a10047da1e290421c05928739f9d2044eee5c544a883e15bb10"
+    },
+    {
+      "path": "adapters/run13/preference_config.json",
+      "bytes": 750,
+      "sha256": "74ccd14b542541f2d52f43ee6f8acd2fba766b0ac6197818972d04ac2532152b"
+    },
+    {
+      "path": "adapters/run13/preference_metrics.jsonl",
+      "bytes": 17913,
+      "sha256": "072233e52caa400e144430e8b754b6a572d560dba341363b65f67ea5161959d0"
+    },
+    {
+      "path": "adapters/run13/reference_logp.json",
+      "bytes": 3908,
+      "sha256": "ac1e6a03ce96a6b005ea02171f3ab532b6eb557993bd51374eed095945267877"
+    },
+    {
+      "path": "adapters/run14/0000250_adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "ddb346e99ad05ff5ce27ee264837ee8c0c0892d976b281f3ced3faaa41886409"
+    },
+    {
+      "path": "adapters/run14/0000500_adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "fb909b122dbba557eec3152a55224cf2fa8afd88cbaeded26809334ae8e0f744"
+    },
+    {
+      "path": "adapters/run14/0000750_adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "02b2a82ef073461ec65aa605d18db8684b6350f1a71f993c3b049c501f7842e5"
+    },
+    {
+      "path": "adapters/run14/adapter_config.json",
+      "bytes": 1328,
+      "sha256": "845b1def14d26416f337a48866c7d5e1c451f6a9f84adbb6d1337fb27e30d7a2"
+    },
+    {
+      "path": "adapters/run14/adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "330bad1e3f75bc25de4255af4315b0c38a35af73a4d5710e6157f9fdf3daf993"
+    },
+    {
+      "path": "adapters/run14/training_metrics.jsonl",
+      "bytes": 23015,
+      "sha256": "c0dc1aca50cb4889b42664c91167e6ea12b7a04e33200f1aa6af46fa9c473a04"
+    },
+    {
+      "path": "adapters/run14-step0250/adapter_config.json",
+      "bytes": 1328,
+      "sha256": "845b1def14d26416f337a48866c7d5e1c451f6a9f84adbb6d1337fb27e30d7a2"
+    },
+    {
+      "path": "adapters/run14-step0250/adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "ddb346e99ad05ff5ce27ee264837ee8c0c0892d976b281f3ced3faaa41886409",
+      "same_inode_as": "adapters/run14/0000250_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run14-step0500/adapter_config.json",
+      "bytes": 1328,
+      "sha256": "845b1def14d26416f337a48866c7d5e1c451f6a9f84adbb6d1337fb27e30d7a2"
+    },
+    {
+      "path": "adapters/run14-step0500/adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "fb909b122dbba557eec3152a55224cf2fa8afd88cbaeded26809334ae8e0f744",
+      "same_inode_as": "adapters/run14/0000500_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run15/0000200_adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "a0021065bb79181aa106d0dad203e6135638b68497c73339d3477508fcd8e1aa"
+    },
+    {
+      "path": "adapters/run15/0000400_adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "c9904c21c7147b1a4ddf53a39f0ae7ca792802a68e9b2bada505fd3c573c3ad1"
+    },
+    {
+      "path": "adapters/run15/0000600_adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "a6baeb15ff98f462d163dc5d1d4a5f6c608219f08179bfc0ad14ee83a0c61858"
+    },
+    {
+      "path": "adapters/run15/0000800_adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "1bcd7090b1931bd602f724131545ca0e827467ae33f2e779ac926d88b7b03571"
+    },
+    {
+      "path": "adapters/run15/0001000_adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "96e307a742efa49e554c0ca5fabd9e253977bb0b941445e2a1e1af0312c9d353"
+    },
+    {
+      "path": "adapters/run15/adapter_config.json",
+      "bytes": 1369,
+      "sha256": "cdd2af2a4cc4c457844348ca3e5f072be7b2143953c1d9f7b6a8b942ed0ee485"
+    },
+    {
+      "path": "adapters/run15/adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "46e5ec918c8010aac3569ec2599724087a873112e4b108d1f14c79f0072197a1"
+    },
+    {
+      "path": "adapters/run15/training_metrics.jsonl",
+      "bytes": 27341,
+      "sha256": "7328b309dffcbec193bc4edccc528c3f4fe70161c7dc111168628eea271cdf87"
+    },
+    {
+      "path": "adapters/run15-step0200/adapter_config.json",
+      "bytes": 1369,
+      "sha256": "cdd2af2a4cc4c457844348ca3e5f072be7b2143953c1d9f7b6a8b942ed0ee485"
+    },
+    {
+      "path": "adapters/run15-step0200/adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "a0021065bb79181aa106d0dad203e6135638b68497c73339d3477508fcd8e1aa",
+      "same_inode_as": "adapters/run15/0000200_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run15-step0400/adapter_config.json",
+      "bytes": 1369,
+      "sha256": "cdd2af2a4cc4c457844348ca3e5f072be7b2143953c1d9f7b6a8b942ed0ee485"
+    },
+    {
+      "path": "adapters/run15-step0400/adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "c9904c21c7147b1a4ddf53a39f0ae7ca792802a68e9b2bada505fd3c573c3ad1",
+      "same_inode_as": "adapters/run15/0000400_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run15-step0600/adapter_config.json",
+      "bytes": 1369,
+      "sha256": "cdd2af2a4cc4c457844348ca3e5f072be7b2143953c1d9f7b6a8b942ed0ee485"
+    },
+    {
+      "path": "adapters/run15-step0600/adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "a6baeb15ff98f462d163dc5d1d4a5f6c608219f08179bfc0ad14ee83a0c61858",
+      "same_inode_as": "adapters/run15/0000600_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run15-step0800/adapter_config.json",
+      "bytes": 1369,
+      "sha256": "cdd2af2a4cc4c457844348ca3e5f072be7b2143953c1d9f7b6a8b942ed0ee485"
+    },
+    {
+      "path": "adapters/run15-step0800/adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "1bcd7090b1931bd602f724131545ca0e827467ae33f2e779ac926d88b7b03571",
+      "same_inode_as": "adapters/run15/0000800_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run15-step1000/adapter_config.json",
+      "bytes": 1369,
+      "sha256": "cdd2af2a4cc4c457844348ca3e5f072be7b2143953c1d9f7b6a8b942ed0ee485"
+    },
+    {
+      "path": "adapters/run15-step1000/adapters.safetensors",
+      "bytes": 58744712,
+      "sha256": "96e307a742efa49e554c0ca5fabd9e253977bb0b941445e2a1e1af0312c9d353",
+      "same_inode_as": "adapters/run15/0001000_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run16/0000200_adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "5860c080550de26ff16344492740551fe9f6b2379dbe9ddaeb38a089fa9bf1ed"
+    },
+    {
+      "path": "adapters/run16/0000400_adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "c6d52dd734cc9e05afc1637b652eafe74cbad7ed23a56008776ee706adf12f20"
+    },
+    {
+      "path": "adapters/run16/adapter_config.json",
+      "bytes": 1449,
+      "sha256": "d7bb011f22fd6628cfc141ee9b02b324f2f8d2c45833e22550f5d2360c3239ac"
+    },
+    {
+      "path": "adapters/run16/adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "e65d7840dee9dfcc0dafca03f41bf082813fd964ee3707f4850e55dfea5b7a2c"
+    },
+    {
+      "path": "adapters/run16/training_metrics.jsonl",
+      "bytes": 11826,
+      "sha256": "64f16de70069c2963cc607f550ee36c89b474e87e2a1e83db0a23d9739e62617"
+    },
+    {
+      "path": "adapters/run16-step0200/adapter_config.json",
+      "bytes": 1449,
+      "sha256": "d7bb011f22fd6628cfc141ee9b02b324f2f8d2c45833e22550f5d2360c3239ac"
+    },
+    {
+      "path": "adapters/run16-step0200/adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "5860c080550de26ff16344492740551fe9f6b2379dbe9ddaeb38a089fa9bf1ed",
+      "same_inode_as": "adapters/run16/0000200_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run16-step0400/adapter_config.json",
+      "bytes": 1449,
+      "sha256": "d7bb011f22fd6628cfc141ee9b02b324f2f8d2c45833e22550f5d2360c3239ac"
+    },
+    {
+      "path": "adapters/run16-step0400/adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "c6d52dd734cc9e05afc1637b652eafe74cbad7ed23a56008776ee706adf12f20",
+      "same_inode_as": "adapters/run16/0000400_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run17/0000300_adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "2fa44cbd63c5c1ee3ec4f0b2b6124cabad0b3e368a2f103ccde772871cad279b"
+    },
+    {
+      "path": "adapters/run17/0000600_adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "8142d21b9a74ca9327f47c6ff8e64080d126e58a28b2bf42c9cf99c256dc8ab1"
+    },
+    {
+      "path": "adapters/run17/0000900_adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "588042b21ea5458e8788bc8882c5c9b1758e64a757fe25ffa4567fe81d640721"
+    },
+    {
+      "path": "adapters/run17/0001200_adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "7e2f9e5b1783662662e46046cabbde183ba25ff8058e54d3c49036af0fb65c4f"
+    },
+    {
+      "path": "adapters/run17/adapter_config.json",
+      "bytes": 1574,
+      "sha256": "6091bbbb7b48f9a23cfbaa5876c1a85bed5d95c2f418ae147e05d65339b0c783"
+    },
+    {
+      "path": "adapters/run17/adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "c48e584ff81e34ec50030e4e8f431011f7c35f0522ebb5c2c1d218ded8830585"
+    },
+    {
+      "path": "adapters/run17/training_metrics.jsonl",
+      "bytes": 34494,
+      "sha256": "e7cf8ae311a54e4e0668beb7870a5997da9749c4fdfc2f7fd6aa7da8e8063c82"
+    },
+    {
+      "path": "adapters/run17-average300600/adapter_config.json",
+      "bytes": 516,
+      "sha256": "2025bfc5b65e03cefd2f8d093f845ab7b9a068825245e513ae25561979d86d2d"
+    },
+    {
+      "path": "adapters/run17-average300600/adapters.safetensors",
+      "bytes": 284072560,
+      "sha256": "ed6dd19bef29490f61fbfb35d331a353c97ce9364b2289e9479562a015ca1d3e"
+    },
+    {
+      "path": "adapters/run17-average300600/derivation.json",
+      "bytes": 746,
+      "sha256": "727c87c63a8f43c3f3346cab3ecafd425e1855d1686895287e2b315bfd9a152c"
+    },
+    {
+      "path": "adapters/run17-step0300/adapter_config.json",
+      "bytes": 1574,
+      "sha256": "6091bbbb7b48f9a23cfbaa5876c1a85bed5d95c2f418ae147e05d65339b0c783"
+    },
+    {
+      "path": "adapters/run17-step0300/adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "2fa44cbd63c5c1ee3ec4f0b2b6124cabad0b3e368a2f103ccde772871cad279b",
+      "same_inode_as": "adapters/run17/0000300_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run17-step0600/adapter_config.json",
+      "bytes": 1574,
+      "sha256": "6091bbbb7b48f9a23cfbaa5876c1a85bed5d95c2f418ae147e05d65339b0c783"
+    },
+    {
+      "path": "adapters/run17-step0600/adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "8142d21b9a74ca9327f47c6ff8e64080d126e58a28b2bf42c9cf99c256dc8ab1",
+      "same_inode_as": "adapters/run17/0000600_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run17-step0900/adapter_config.json",
+      "bytes": 1574,
+      "sha256": "6091bbbb7b48f9a23cfbaa5876c1a85bed5d95c2f418ae147e05d65339b0c783"
+    },
+    {
+      "path": "adapters/run17-step0900/adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "588042b21ea5458e8788bc8882c5c9b1758e64a757fe25ffa4567fe81d640721",
+      "same_inode_as": "adapters/run17/0000900_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run17-step1200/adapter_config.json",
+      "bytes": 1574,
+      "sha256": "6091bbbb7b48f9a23cfbaa5876c1a85bed5d95c2f418ae147e05d65339b0c783"
+    },
+    {
+      "path": "adapters/run17-step1200/adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "7e2f9e5b1783662662e46046cabbde183ba25ff8058e54d3c49036af0fb65c4f",
+      "same_inode_as": "adapters/run17/0001200_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run18/0000200_adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "1d37db452eb1786241bb792f5dba1277a188eeebc5b4d495935dbcb4a57246b3"
+    },
+    {
+      "path": "adapters/run18/0000400_adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "2f41ff810e7ef19afbe9e18b0572257a91c6df0b6e486787c2b00622fb0f1272"
+    },
+    {
+      "path": "adapters/run18/adapter_config.json",
+      "bytes": 1647,
+      "sha256": "b96efbcaa315346461e50cfd60e12bc62ac2189ccba23ab8512d504a6eb4faa2"
+    },
+    {
+      "path": "adapters/run18/adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "91f46c01eabb27b6d6f78efe304dd9d2d1084d3fc8b58306d4073cfcd3dc9094"
+    },
+    {
+      "path": "adapters/run18/training_metrics.jsonl",
+      "bytes": 7106,
+      "sha256": "8d60ef22857487c540c70d48e05cab40a533d4985dcd65215cc9bc9d0cc3b6dd"
+    },
+    {
+      "path": "adapters/run18-step0200/adapter_config.json",
+      "bytes": 1647,
+      "sha256": "b96efbcaa315346461e50cfd60e12bc62ac2189ccba23ab8512d504a6eb4faa2"
+    },
+    {
+      "path": "adapters/run18-step0200/adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "1d37db452eb1786241bb792f5dba1277a188eeebc5b4d495935dbcb4a57246b3",
+      "same_inode_as": "adapters/run18/0000200_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run18-step0400/adapter_config.json",
+      "bytes": 1647,
+      "sha256": "b96efbcaa315346461e50cfd60e12bc62ac2189ccba23ab8512d504a6eb4faa2"
+    },
+    {
+      "path": "adapters/run18-step0400/adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "2f41ff810e7ef19afbe9e18b0572257a91c6df0b6e486787c2b00622fb0f1272",
+      "same_inode_as": "adapters/run18/0000400_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run20/0000032_adapters.safetensors",
+      "bytes": 177566097,
+      "sha256": "e0407665c4c7c4ce83046549f6977fe4cfa13c7a8a51a783b541c34146a374ba"
+    },
+    {
+      "path": "adapters/run20/0000064_adapters.safetensors",
+      "bytes": 177566097,
+      "sha256": "25dc07163c1e3a6fadc6dac9ae4f9f58ede7f74d23db1b8c1749e17431eeab42"
+    },
+    {
+      "path": "adapters/run20/0000096_adapters.safetensors",
+      "bytes": 177566097,
+      "sha256": "41f1724fc8dd39d2107f7eaafcb4a7e578c7f495ab52a5c4a6a3d8901de4e54b"
+    },
+    {
+      "path": "adapters/run20/adapter_config.json",
+      "bytes": 1653,
+      "sha256": "f024c9b4523d42e1af44a5b200b9f3909c8b9a775cc9e4a26dee94b4e965e127"
+    },
+    {
+      "path": "adapters/run20/adapters.safetensors",
+      "bytes": 177566097,
+      "sha256": "41f1724fc8dd39d2107f7eaafcb4a7e578c7f495ab52a5c4a6a3d8901de4e54b",
+      "same_inode_as": "adapters/run20/0000096_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run20/completion.json",
+      "bytes": 154,
+      "sha256": "e399803657c654433a5ea0d3e54a1771d80de82c6badaa3c2964551b489be06a"
+    },
+    {
+      "path": "adapters/run20/preference_config.json",
+      "bytes": 759,
+      "sha256": "20e0f8082e6460826453cd787846842c67f1a88d80ecb95a5682e0c4b05df043"
+    },
+    {
+      "path": "adapters/run20/preference_metrics.jsonl",
+      "bytes": 14540,
+      "sha256": "6dd5c5ca60074a6a1c8e381b2c30b030994e24e74045aa469575c0f7197aee8b"
+    },
+    {
+      "path": "adapters/run20/reference_logp.json",
+      "bytes": 2917,
+      "sha256": "8c86cff7786f248edc19c3b6135230d29c560e6427fecef38cdda0c5f3ef0e8c"
+    },
+    {
+      "path": "adapters/run20/zero_delta_check.json",
+      "bytes": 533,
+      "sha256": "67032d66b1ca3899db5c0eeab6f5f7b5e4e38b3f9a75699dad428bcaae3abb19"
+    },
+    {
+      "path": "adapters/run20-step0032/adapter_config.json",
+      "bytes": 1653,
+      "sha256": "f024c9b4523d42e1af44a5b200b9f3909c8b9a775cc9e4a26dee94b4e965e127"
+    },
+    {
+      "path": "adapters/run20-step0032/adapters.safetensors",
+      "bytes": 177566097,
+      "sha256": "e0407665c4c7c4ce83046549f6977fe4cfa13c7a8a51a783b541c34146a374ba",
+      "same_inode_as": "adapters/run20/0000032_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run20-step0064/adapter_config.json",
+      "bytes": 1653,
+      "sha256": "f024c9b4523d42e1af44a5b200b9f3909c8b9a775cc9e4a26dee94b4e965e127"
+    },
+    {
+      "path": "adapters/run20-step0064/adapters.safetensors",
+      "bytes": 177566097,
+      "sha256": "25dc07163c1e3a6fadc6dac9ae4f9f58ede7f74d23db1b8c1749e17431eeab42",
+      "same_inode_as": "adapters/run20/0000064_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run20-step0096/adapter_config.json",
+      "bytes": 1653,
+      "sha256": "f024c9b4523d42e1af44a5b200b9f3909c8b9a775cc9e4a26dee94b4e965e127"
+    },
+    {
+      "path": "adapters/run20-step0096/adapters.safetensors",
+      "bytes": 177566097,
+      "sha256": "41f1724fc8dd39d2107f7eaafcb4a7e578c7f495ab52a5c4a6a3d8901de4e54b",
+      "same_inode_as": "adapters/run20/0000096_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run21/0000032_adapters.safetensors",
+      "bytes": 177566097,
+      "sha256": "5450a064015dc10a5f22e4a221dd9cc6afce1effb1332a307b8168218e77e854"
+    },
+    {
+      "path": "adapters/run21/0000064_adapters.safetensors",
+      "bytes": 177566097,
+      "sha256": "c96ce754e466730f49afbee5214cdc8c6e8e5c3adc2f766a97df82e829ceef56"
+    },
+    {
+      "path": "adapters/run21/0000096_adapters.safetensors",
+      "bytes": 177566097,
+      "sha256": "13ea2ff508dbd0a6906af17b0ebff307ffdbb90169a8323dc88d1be0f34b4097"
+    },
+    {
+      "path": "adapters/run21/adapter_config.json",
+      "bytes": 1653,
+      "sha256": "f024c9b4523d42e1af44a5b200b9f3909c8b9a775cc9e4a26dee94b4e965e127"
+    },
+    {
+      "path": "adapters/run21/adapters.safetensors",
+      "bytes": 177566097,
+      "sha256": "13ea2ff508dbd0a6906af17b0ebff307ffdbb90169a8323dc88d1be0f34b4097",
+      "same_inode_as": "adapters/run21/0000096_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run21/completion.json",
+      "bytes": 154,
+      "sha256": "b839c8b2d6484ae695d324cbfe78ce005da400810b425b17f37dda7da756702b"
+    },
+    {
+      "path": "adapters/run21/preference_config.json",
+      "bytes": 789,
+      "sha256": "e4715fcaacc84b4c1adfa6f1f7e49a1ee3a371a14debc9fdb483fa450e999df2"
+    },
+    {
+      "path": "adapters/run21/preference_metrics.jsonl",
+      "bytes": 14560,
+      "sha256": "19cffb8a1c612d6ee3b53a3a23c286308b3a99b00b19dd0636645fbd24efc7be"
+    },
+    {
+      "path": "adapters/run21/reference_logp.json",
+      "bytes": 2917,
+      "sha256": "8c86cff7786f248edc19c3b6135230d29c560e6427fecef38cdda0c5f3ef0e8c"
+    },
+    {
+      "path": "adapters/run21/zero_delta_check.json",
+      "bytes": 533,
+      "sha256": "67032d66b1ca3899db5c0eeab6f5f7b5e4e38b3f9a75699dad428bcaae3abb19"
+    },
+    {
+      "path": "adapters/run21-step0032/adapter_config.json",
+      "bytes": 1653,
+      "sha256": "f024c9b4523d42e1af44a5b200b9f3909c8b9a775cc9e4a26dee94b4e965e127"
+    },
+    {
+      "path": "adapters/run21-step0032/adapters.safetensors",
+      "bytes": 177566097,
+      "sha256": "5450a064015dc10a5f22e4a221dd9cc6afce1effb1332a307b8168218e77e854",
+      "same_inode_as": "adapters/run21/0000032_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run21-step0064/adapter_config.json",
+      "bytes": 1653,
+      "sha256": "f024c9b4523d42e1af44a5b200b9f3909c8b9a775cc9e4a26dee94b4e965e127"
+    },
+    {
+      "path": "adapters/run21-step0064/adapters.safetensors",
+      "bytes": 177566097,
+      "sha256": "c96ce754e466730f49afbee5214cdc8c6e8e5c3adc2f766a97df82e829ceef56",
+      "same_inode_as": "adapters/run21/0000064_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run21-step0096/adapter_config.json",
+      "bytes": 1653,
+      "sha256": "f024c9b4523d42e1af44a5b200b9f3909c8b9a775cc9e4a26dee94b4e965e127"
+    },
+    {
+      "path": "adapters/run21-step0096/adapters.safetensors",
+      "bytes": 177566097,
+      "sha256": "13ea2ff508dbd0a6906af17b0ebff307ffdbb90169a8323dc88d1be0f34b4097",
+      "same_inode_as": "adapters/run21/0000096_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run22/0000046_adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "b2d079b56c069495c6d6ad67dff14aa177710d7f6077318923968804db7f48f8"
+    },
+    {
+      "path": "adapters/run22/0000092_adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "1b729f50f1020114cfdcf123d8b0d04c4bffea1bd18f77c6e05114420ed1bea9"
+    },
+    {
+      "path": "adapters/run22/0000140_adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "62b4197bdf59bd157ce7dd0ce6cd4c62b5dd0a910b400d886514b59480cf0829"
+    },
+    {
+      "path": "adapters/run22/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/run22/adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "62b4197bdf59bd157ce7dd0ce6cd4c62b5dd0a910b400d886514b59480cf0829",
+      "same_inode_as": "adapters/run22/0000140_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run22/completion.json",
+      "bytes": 249,
+      "sha256": "6da096df3ea0221042ddeb8cfa61b773e802a453cff0cef98ca4c85b1e6d3fd4"
+    },
+    {
+      "path": "adapters/run22/metrics.jsonl",
+      "bytes": 31790,
+      "sha256": "467fca183af6771ec6ddddd574be8055685d41985382ed1c402894e639b40e78"
+    },
+    {
+      "path": "adapters/run22/training_config.json",
+      "bytes": 1544,
+      "sha256": "d326bf8f1f60da0f3eea0a7ab693f135a2762ac3bb1f44970caac6228c942fab"
+    },
+    {
+      "path": "adapters/run22-step0046/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/run22-step0046/adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "b2d079b56c069495c6d6ad67dff14aa177710d7f6077318923968804db7f48f8",
+      "same_inode_as": "adapters/run22/0000046_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run22-step0092/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/run22-step0092/adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "1b729f50f1020114cfdcf123d8b0d04c4bffea1bd18f77c6e05114420ed1bea9",
+      "same_inode_as": "adapters/run22/0000092_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run22-step0140/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/run22-step0140/adapters.safetensors",
+      "bytes": 142063747,
+      "sha256": "62b4197bdf59bd157ce7dd0ce6cd4c62b5dd0a910b400d886514b59480cf0829",
+      "same_inode_as": "adapters/run22/0000140_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run23/0000016_adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "7115f83a3e9e870fda35fed46a856858080741116a674116614372edf0608be4"
+    },
+    {
+      "path": "adapters/run23/0000032_adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "067a7292407cfcd3ae6e7b385476fd037b31269ff9be6d53462e84385847bc94"
+    },
+    {
+      "path": "adapters/run23/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/run23/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "067a7292407cfcd3ae6e7b385476fd037b31269ff9be6d53462e84385847bc94",
+      "same_inode_as": "adapters/run23/0000032_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run23/completion.json",
+      "bytes": 105,
+      "sha256": "13088ec257cf900ec1e2b252f8e14deee8d0b318612dda79943cbd0cc23a70c5"
+    },
+    {
+      "path": "adapters/run23/frozen_prefix_manifest.json",
+      "bytes": 16590,
+      "sha256": "8e050835250bc2d7440679c98b3224567bbcd8ed12fc950f00d92ab97ba1c177"
+    },
+    {
+      "path": "adapters/run23/metadata.json",
+      "bytes": 5502,
+      "sha256": "2e1e33c9294706f28074b7495b3ad1cc9744e40b4df1a91b1422c39ef8fe9a85"
+    },
+    {
+      "path": "adapters/run23/plan.json",
+      "bytes": 797,
+      "sha256": "15844625657e4c10d58903dc38effd693c25cd048d2609c25767af92e806efba"
+    },
+    {
+      "path": "adapters/run23/runtime.jsonl",
+      "bytes": 35741,
+      "sha256": "d25f2fcf3bf245fd2650c328bf227f93c0054d8f62c9a9f1622e76b78dd41858"
+    },
+    {
+      "path": "adapters/run23/step0016-export-score.json",
+      "bytes": 790,
+      "sha256": "d5ecab4343f8e0ff4f0c22551f1c146e744d396bfdb2d233a19edc73aa901afa"
+    },
+    {
+      "path": "adapters/run23/step0016.json",
+      "bytes": 183,
+      "sha256": "3257e5e221eea6d778c0d557c56c1a719a58c3dcc82698ef6dda180526044aa4"
+    },
+    {
+      "path": "adapters/run23/step0032-export-score.json",
+      "bytes": 792,
+      "sha256": "d3d9bb8e26f47949e35bdeb2b47cc2add1a0663fb4a1c775b01e4389c206804a"
+    },
+    {
+      "path": "adapters/run23/step0032.json",
+      "bytes": 183,
+      "sha256": "3f2d74528acfd8cade391cfe61063a0436f2cfb294fb819ec3a1b3f54945f126"
+    },
+    {
+      "path": "adapters/run23-step0016/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/run23-step0016/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "7115f83a3e9e870fda35fed46a856858080741116a674116614372edf0608be4",
+      "same_inode_as": "adapters/run23/0000016_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run23-step0032/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/run23-step0032/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "067a7292407cfcd3ae6e7b385476fd037b31269ff9be6d53462e84385847bc94",
+      "same_inode_as": "adapters/run23/0000032_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run24/0000048_adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "e6e91c523722821e3625535ecb0da9e656e2f56ff763f565f991801f46ad7d42"
+    },
+    {
+      "path": "adapters/run24/0000096_adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "5bd4a5fa2ce8e491907ab2a3c3f548db71dbfab5a89ef56ea2ecf4104b31faa3"
+    },
+    {
+      "path": "adapters/run24/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/run24/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "5bd4a5fa2ce8e491907ab2a3c3f548db71dbfab5a89ef56ea2ecf4104b31faa3",
+      "same_inode_as": "adapters/run24/0000096_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run24/completion.json",
+      "bytes": 104,
+      "sha256": "c678b868c1043e6cf3f83ff68bf44ddf846bf150b9d9d744552553a09cd6271e"
+    },
+    {
+      "path": "adapters/run24/frozen_prefix_manifest.json",
+      "bytes": 51185,
+      "sha256": "0fb92fb52323d61ec2f15d9233d9b649a6009bff945bc761024c42daa9df13b7"
+    },
+    {
+      "path": "adapters/run24/metadata.json",
+      "bytes": 6409,
+      "sha256": "e6d1841aa19d95b2d996862a3e873b69164945d2c5594a479c6eb7c6054a2d6a"
+    },
+    {
+      "path": "adapters/run24/plan.json",
+      "bytes": 1024,
+      "sha256": "6bddcb09f70670130d2689eb979ca80571f4d0694ee0fa8c5cc23826ba373997"
+    },
+    {
+      "path": "adapters/run24/runtime.jsonl",
+      "bytes": 107576,
+      "sha256": "21f21cdd6b8d20ff50bac7a5cd6c3791101cf36937b6611cf0b46b0757685cd1"
+    },
+    {
+      "path": "adapters/run24/step0048-export-score.json",
+      "bytes": 791,
+      "sha256": "12887f41fd17a3970c7dec2b1276d39066fd5285e7fe382f2f37ccd2646a98f0"
+    },
+    {
+      "path": "adapters/run24/step0048.json",
+      "bytes": 183,
+      "sha256": "bfc91694d7ed3266ce6428a52ae90d770afc270c7957df6e145fb337b5795da8"
+    },
+    {
+      "path": "adapters/run24/step0096-export-score.json",
+      "bytes": 796,
+      "sha256": "14e4d5b4c5c59894dfaed2b15fb6d09271e7df5d1a6d89c3a022f1b48d3c1c85"
+    },
+    {
+      "path": "adapters/run24/step0096.json",
+      "bytes": 183,
+      "sha256": "ac988a311761e356189a4d0a185eb07b81a4b23fae0e12497a13b83ca4c948d7"
+    },
+    {
+      "path": "adapters/run24-step0048/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/run24-step0048/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "e6e91c523722821e3625535ecb0da9e656e2f56ff763f565f991801f46ad7d42",
+      "same_inode_as": "adapters/run24/0000048_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run24-step0048/provenance.json",
+      "bytes": 365,
+      "sha256": "4df9b579f1f7317e19df676c8179ec66dce68ca427a8940b0b3712a183fbd994"
+    },
+    {
+      "path": "adapters/run24-step0096/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/run24-step0096/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "5bd4a5fa2ce8e491907ab2a3c3f548db71dbfab5a89ef56ea2ecf4104b31faa3",
+      "same_inode_as": "adapters/run24/0000096_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run24-step0096/provenance.json",
+      "bytes": 365,
+      "sha256": "05550fb6f56b032d36e179f099d15a4b6df3354b843be449e712417d9ab68cb1"
+    },
+    {
+      "path": "adapters/run25/0000064_adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "68b2789e1da65214d9e195a993060e1e59ba5b834a8c58b3e3bf7a93f4a67cca"
+    },
+    {
+      "path": "adapters/run25/0000128_adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "89c30fda21ad79b908d179518facfe0aa0e6ff8f26850c4e47ff77bed9e3a6a6"
+    },
+    {
+      "path": "adapters/run25/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/run25/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "89c30fda21ad79b908d179518facfe0aa0e6ff8f26850c4e47ff77bed9e3a6a6",
+      "same_inode_as": "adapters/run25/0000128_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run25/completion.json",
+      "bytes": 105,
+      "sha256": "fd9d5f3acbb29edc06c7184f4887adf79f07a86c41a5829b8641a9be0a3d9476"
+    },
+    {
+      "path": "adapters/run25/frozen_prefix_manifest.json",
+      "bytes": 125190,
+      "sha256": "6ef5521394d6883de03f31bca3a46f0584cd6c0534c9ef9c2da0dd03b80055a4"
+    },
+    {
+      "path": "adapters/run25/metadata.json",
+      "bytes": 7326,
+      "sha256": "fde3ded67b8b860ee8f2e151c64643ef422c9be769465bf6ae26dce758f8aa46"
+    },
+    {
+      "path": "adapters/run25/plan.json",
+      "bytes": 1090,
+      "sha256": "76d8067a1358713b9db83e44256c4e4cf409706be294c4327cb9ceaa9f140b8a"
+    },
+    {
+      "path": "adapters/run25/reference_scores.json",
+      "bytes": 27029,
+      "sha256": "488e7397608934abf79c1e08a88a8cb27d605bfa4c5225e450113ddb276566f7"
+    },
+    {
+      "path": "adapters/run25/runtime.jsonl",
+      "bytes": 253785,
+      "sha256": "c45810d509ef56eae01bb5f7a89e84e0cf642529811f6d1ef3bf605f1759ce78"
+    },
+    {
+      "path": "adapters/run25/step0064-export-score.json",
+      "bytes": 794,
+      "sha256": "9045b7f0266f41fd9d5fc79219e00a0a3dce8d21130981ca9adb183f80c12775"
+    },
+    {
+      "path": "adapters/run25/step0064.json",
+      "bytes": 183,
+      "sha256": "d51acc892ebac06d671e7df3912ccad0b36d2f337622dbb875d50a2674c34966"
+    },
+    {
+      "path": "adapters/run25/step0128-export-score.json",
+      "bytes": 793,
+      "sha256": "6260bca358d30cc5bb682f0e7707fc3e7db94553e1901026b536d817ef754ba5"
+    },
+    {
+      "path": "adapters/run25/step0128.json",
+      "bytes": 184,
+      "sha256": "7aa8651e8be3d97cfbdec89448a65ae426aac379d3f1ef48bd8c3cf995064fd7"
+    },
+    {
+      "path": "adapters/run25-step0064/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/run25-step0064/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "68b2789e1da65214d9e195a993060e1e59ba5b834a8c58b3e3bf7a93f4a67cca",
+      "same_inode_as": "adapters/run25/0000064_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run25-step0064/provenance.json",
+      "bytes": 284,
+      "sha256": "b31ceb83b3b9a5d8ebfb36605bf48dd9f7608414698794d8e5ad3ebe6ee2aeec"
+    },
+    {
+      "path": "adapters/run25-step0128/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/run25-step0128/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "89c30fda21ad79b908d179518facfe0aa0e6ff8f26850c4e47ff77bed9e3a6a6",
+      "same_inode_as": "adapters/run25/0000128_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run25-step0128/provenance.json",
+      "bytes": 285,
+      "sha256": "1022c206dc1dab6579224ad35e290e8e649c3059141b85b441c0a0dbed476edd"
+    },
+    {
+      "path": "adapters/run26/0000064_adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "dcba4ef7b905f87abd9db2c4f2f8cdf91ed60959e9c69fe44b78c224ac7183e7"
+    },
+    {
+      "path": "adapters/run26/0000128_adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "920c7a782a6c55406290fcc8404dcd9fa0a8d23997e7f09ce57dd2bcababa059"
+    },
+    {
+      "path": "adapters/run26/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/run26/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "920c7a782a6c55406290fcc8404dcd9fa0a8d23997e7f09ce57dd2bcababa059",
+      "same_inode_as": "adapters/run26/0000128_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run26/completion.json",
+      "bytes": 106,
+      "sha256": "d63c8d304d1cedc501e260033f46a81a302900197a0e1abe75309bfb4831bc39"
+    },
+    {
+      "path": "adapters/run26/frozen_prefix_manifest.json",
+      "bytes": 125190,
+      "sha256": "6f1b70df411207846b0a1e8d3ed2c57d1ab01262eb68d2a31a9097e5441eaaa8"
+    },
+    {
+      "path": "adapters/run26/metadata.json",
+      "bytes": 11143,
+      "sha256": "0a02d001e24030d5e9f7fbe08586382e254824a489285c561f1b48a5371a7e67"
+    },
+    {
+      "path": "adapters/run26/plan.json",
+      "bytes": 1158,
+      "sha256": "903ac99d13b0554237b83da57f09d29dd0c6a99c5944c733b83e71332bb41843"
+    },
+    {
+      "path": "adapters/run26/reference_scores.json",
+      "bytes": 27029,
+      "sha256": "488e7397608934abf79c1e08a88a8cb27d605bfa4c5225e450113ddb276566f7"
+    },
+    {
+      "path": "adapters/run26/runtime.jsonl",
+      "bytes": 254090,
+      "sha256": "8656634dc388a996af4d873698db00bd28faa04aa6416961774edc13d3f7d3a8"
+    },
+    {
+      "path": "adapters/run26/step0064-export-score.json",
+      "bytes": 797,
+      "sha256": "439ec27b0762a3829c4a348c6de5341a3a9e609a791d0064306dbdf3b4b1482c"
+    },
+    {
+      "path": "adapters/run26/step0064.json",
+      "bytes": 183,
+      "sha256": "831f90ca8563924dd0a3b94708ca165af918110fc5c186298cfa2da115bbeb21"
+    },
+    {
+      "path": "adapters/run26/step0128-export-score.json",
+      "bytes": 797,
+      "sha256": "350378da93e9a8fef2f4cc500bb5a3edaffc95c713190ba6d08bd28ac48e7038"
+    },
+    {
+      "path": "adapters/run26/step0128.json",
+      "bytes": 184,
+      "sha256": "990534e4340e42ac9b7bf97013f26026098b91f0790ee7327c9dd7e776bbbabd"
+    },
+    {
+      "path": "adapters/run26-step0064/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/run26-step0064/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "dcba4ef7b905f87abd9db2c4f2f8cdf91ed60959e9c69fe44b78c224ac7183e7",
+      "same_inode_as": "adapters/run26/0000064_adapters.safetensors"
+    },
+    {
+      "path": "adapters/run26-step0128/adapter_config.json",
+      "bytes": 1377,
+      "sha256": "27b0ac89e764df7ef4dfaf29c2d9d31b4dc6e3e2578a2e2e50d2d8939ca32019"
+    },
+    {
+      "path": "adapters/run26-step0128/adapters.safetensors",
+      "bytes": 142063861,
+      "sha256": "920c7a782a6c55406290fcc8404dcd9fa0a8d23997e7f09ce57dd2bcababa059",
+      "same_inode_as": "adapters/run26/0000128_adapters.safetensors"
+    },
+    {
+      "path": "adapters/speech-run01/candidate.json",
+      "bytes": 156,
+      "sha256": "8dd62ff8b86d2a9c293d1216fb12f1c4b09963069f5b84920ee4c2ee24c260b0"
+    },
+    {
+      "path": "adapters/speech-run01/candidate.safetensors",
+      "bytes": 4171688,
+      "sha256": "cc67b4088c0d59dedfe3ab3ebcecd94c190e8132021091da30c33b1177b5a36e"
+    },
+    {
+      "path": "adapters/speech-run01/config.json",
+      "bytes": 1650,
+      "sha256": "d4558e4f23384faf8fc91d19e524068d5b432bcb2d7c7a3e28db3128accfd310"
+    },
+    {
+      "path": "adapters/speech-run01/metrics.jsonl",
+      "bytes": 32293,
+      "sha256": "a39e368488254a56a2cade2219fb75e81e8b6db81f0f7c2ffb389a2de3b8ec8c"
+    },
+    {
+      "path": "adapters/speech-run01/step-0020.safetensors",
+      "bytes": 4171688,
+      "sha256": "05bdd31e44d125a95d028dd5d50f299c81f4419247fb8bb099a10c608d44a9a3"
+    },
+    {
+      "path": "adapters/speech-run01/step-0040.safetensors",
+      "bytes": 4171688,
+      "sha256": "ef18d86280ebcc9149d2209922249da982a9c874b6673ef87b2c8d8bf725ceef"
+    },
+    {
+      "path": "adapters/speech-run01/step-0060.safetensors",
+      "bytes": 4171688,
+      "sha256": "54ed39f69b52c489470a197a44cc6babf7f22792036f399262f6e70f594f6bae"
+    },
+    {
+      "path": "adapters/speech-run01/step-0080.safetensors",
+      "bytes": 4171688,
+      "sha256": "61052b3aaf008bdfe4ebc3e0411c2ee2c34051a6dd68727aaf70e533eebf7b73"
+    },
+    {
+      "path": "adapters/speech-run01/step-0100.safetensors",
+      "bytes": 4171688,
+      "sha256": "cb6d0b1ef2e0aa9e5a5c91ce658b00c919ab455fb9909803ba90fb57b9596f34"
+    },
+    {
+      "path": "adapters/speech-run01/step-0120.safetensors",
+      "bytes": 4171688,
+      "sha256": "9da2edc2176d0c7b120ff6d7d47d27a60813e13130cf333aaf0c8d991f38f62d"
+    },
+    {
+      "path": "adapters/speech-run01/step-0140.safetensors",
+      "bytes": 4171688,
+      "sha256": "1d9961758b41a6cf750606f650c3f4e451118fbed969a73bade29d81b38d3441"
+    },
+    {
+      "path": "adapters/speech-run01/step-0160.safetensors",
+      "bytes": 4171688,
+      "sha256": "cc67b4088c0d59dedfe3ab3ebcecd94c190e8132021091da30c33b1177b5a36e",
+      "same_inode_as": "adapters/speech-run01/candidate.safetensors"
+    },
+    {
+      "path": "adapters/speech-run02/candidate.json",
+      "bytes": 155,
+      "sha256": "1b36f250b031774b247ecc65b29bb943377ce52eb1b5db02a352d7a08e665eb4"
+    },
+    {
+      "path": "adapters/speech-run02/candidate.safetensors",
+      "bytes": 4171688,
+      "sha256": "5e3b4f8030134f4ebbbfa741d01883877a3b845963ca365b26696e1a1855ddf2"
+    },
+    {
+      "path": "adapters/speech-run02/config.json",
+      "bytes": 1722,
+      "sha256": "ebadbd4045ed7f941b19e6ffa610a98782fc9072190d96baf0fade23ecbd56b0"
+    },
+    {
+      "path": "adapters/speech-run02/metrics.jsonl",
+      "bytes": 32213,
+      "sha256": "a91e7edd85e273a058c73d8638736accce71fe696bd82e1866afc86a6e16fc64"
+    },
+    {
+      "path": "adapters/speech-run02/step-0020.safetensors",
+      "bytes": 4171688,
+      "sha256": "2e7bf6ca30b746c69520f1039a3f532f3a3b0e3c734e8da6bc6bbe5900fdd3ce"
+    },
+    {
+      "path": "adapters/speech-run02/step-0040.safetensors",
+      "bytes": 4171688,
+      "sha256": "c507711ac1b4595306234cb565568f0d86e62f7e12e70727c2efcc872fe8c63c"
+    },
+    {
+      "path": "adapters/speech-run02/step-0060.safetensors",
+      "bytes": 4171688,
+      "sha256": "72f8bc7f96457ad6679995ac120ce3d547d33273d5cb9790e9f4a417367b88a6"
+    },
+    {
+      "path": "adapters/speech-run02/step-0080.safetensors",
+      "bytes": 4171688,
+      "sha256": "0a8c6733e5d616d5713444e004c306b0a8d620f08edf3f3d81df519758fd5441"
+    },
+    {
+      "path": "adapters/speech-run02/step-0100.safetensors",
+      "bytes": 4171688,
+      "sha256": "191fc5b85c4a19c3ad2c1d64649c499c743a549976e352e16df0575d7d3eaabc"
+    },
+    {
+      "path": "adapters/speech-run02/step-0120.safetensors",
+      "bytes": 4171688,
+      "sha256": "8a9ebdd4f60b8f66d2a377c54a7c09241a18cc12e229f8d3f0a7512960bdac52"
+    },
+    {
+      "path": "adapters/speech-run02/step-0140.safetensors",
+      "bytes": 4171688,
+      "sha256": "8c7f6a103b17246de3a11efe718fc227fd85672085c70c4a3762cd77f8efdb10"
+    },
+    {
+      "path": "adapters/speech-run02/step-0160.safetensors",
+      "bytes": 4171688,
+      "sha256": "5e3b4f8030134f4ebbbfa741d01883877a3b845963ca365b26696e1a1855ddf2",
+      "same_inode_as": "adapters/speech-run02/candidate.safetensors"
+    },
+    {
+      "path": "adapters/speech-run03/candidate.json",
+      "bytes": 155,
+      "sha256": "ae1daf2affd738e0eebb4bfefead477b14a5254aa3ab721f4664fdbba8ac6d0a"
+    },
+    {
+      "path": "adapters/speech-run03/candidate.safetensors",
+      "bytes": 4171688,
+      "sha256": "0268925a288dc4a2ee386aa66f2a65e79da8f26d95722e4d5f5d7a095f0f3943"
+    },
+    {
+      "path": "adapters/speech-run03/config.json",
+      "bytes": 1723,
+      "sha256": "f477e43de3481f04c76e49e416397a17b1ff68b142d83286b684d1a4950c008f"
+    },
+    {
+      "path": "adapters/speech-run03/metrics.jsonl",
+      "bytes": 32206,
+      "sha256": "bfd1f57ee560ddd98ef566abf8590c594aeac5440c3b213730a0eef612fffed4"
+    },
+    {
+      "path": "adapters/speech-run03/step-0020.safetensors",
+      "bytes": 4171688,
+      "sha256": "b18cac21d810efdf0f5bec78173931f4e7cb7f38f1baa3f40fe344baccfe9cf0"
+    },
+    {
+      "path": "adapters/speech-run03/step-0040.safetensors",
+      "bytes": 4171688,
+      "sha256": "a7a571ec1ae58ab31761e47b5f1bc1e0ce47d0fa02ef893496cc7dde6f34e73d"
+    },
+    {
+      "path": "adapters/speech-run03/step-0060.safetensors",
+      "bytes": 4171688,
+      "sha256": "9dc2d73ab3bbc1f6c5c8a315bf80471dab201e3af1dbf64dd0e4600c901effa0"
+    },
+    {
+      "path": "adapters/speech-run03/step-0080.safetensors",
+      "bytes": 4171688,
+      "sha256": "046501c5fd643a6f3d4722d766de11b16ace7450729ba0ea575258892766d5dd"
+    },
+    {
+      "path": "adapters/speech-run03/step-0100.safetensors",
+      "bytes": 4171688,
+      "sha256": "0268925a288dc4a2ee386aa66f2a65e79da8f26d95722e4d5f5d7a095f0f3943",
+      "same_inode_as": "adapters/speech-run03/candidate.safetensors"
+    },
+    {
+      "path": "adapters/speech-run03/step-0120.safetensors",
+      "bytes": 4171688,
+      "sha256": "cd5b1cdf3f4a01e5cc16d093fbfff5016c5ec3faf5bd9e2c9b66d44a7fafe69d"
+    },
+    {
+      "path": "adapters/speech-run03/step-0140.safetensors",
+      "bytes": 4171688,
+      "sha256": "6c091304e89ba8a89d87b85875eca307b11ee589e2ada931e0315873126ae620"
+    },
+    {
+      "path": "adapters/speech-run03/step-0160.safetensors",
+      "bytes": 4171688,
+      "sha256": "50ddbd582ad74ba1891bd6f47f24aaf0ad6d99c3454ff23140e68ebfbd4edfdd"
+    },
+    {
+      "path": "adapters/speech-run06/config.json",
+      "bytes": 6866,
+      "sha256": "a0a63043a77a8c0da63d3d3cb7aa54461be2fc5d6869ab79c6cf72bacf3590c1"
+    },
+    {
+      "path": "adapters/speech-run06/metrics.jsonl",
+      "bytes": 304,
+      "sha256": "3eb994504ad4e02417f276d698444518379c6a88a3323d9b85d1798257ba8451"
+    },
+    {
+      "path": "adapters/speech-run06/optimizer-offload.safetensors",
+      "bytes": 50574361,
+      "sha256": "193e2a7d8e4149c5078faea0f1719038e5831e0fe3a8e7d45a908e5949ed44ab"
+    },
+    {
+      "path": "adapters/speech-run07/candidate.json",
+      "bytes": 155,
+      "sha256": "229ebf917e2fb59d0f1c459f6f7eddb16721ea6068e14c8460720204aedeae2a"
+    },
+    {
+      "path": "adapters/speech-run07/candidate.safetensors",
+      "bytes": 25286797,
+      "sha256": "2e2b8363b1c7350ccc55ca97c238ea054a6ae2fa573da92c7c401e0f9083156c"
+    },
+    {
+      "path": "adapters/speech-run07/config.json",
+      "bytes": 6866,
+      "sha256": "eb9399fdcb9007e3d23a0bc4dca9f2567ad7a431c66644467aa4144791c36b1a"
+    },
+    {
+      "path": "adapters/speech-run07/metrics.jsonl",
+      "bytes": 32208,
+      "sha256": "03dea766bf2677e4382056d3316f0eeb1ab11a6b7e85879f9d526dc027594d09"
+    },
+    {
+      "path": "adapters/speech-run07/optimizer-offload.safetensors",
+      "bytes": 50574345,
+      "sha256": "6ab78aeab8065c026aa8bac1fd0131dde2e6588c5e4dbf96d7e0a3d31b3d1d94"
+    },
+    {
+      "path": "adapters/speech-run07/step-0020.safetensors",
+      "bytes": 25286797,
+      "sha256": "b9232eff8a848190dbbaaec3a3a11bb93bd11e3bceb61985fe492086486feaef"
+    },
+    {
+      "path": "adapters/speech-run07/step-0040.safetensors",
+      "bytes": 25286797,
+      "sha256": "bb386fa17db687f66ffed8c7494f7c4018796733a8a284d8a657d78ee2c0b859"
+    },
+    {
+      "path": "adapters/speech-run07/step-0060.safetensors",
+      "bytes": 25286797,
+      "sha256": "2e2b8363b1c7350ccc55ca97c238ea054a6ae2fa573da92c7c401e0f9083156c",
+      "same_inode_as": "adapters/speech-run07/candidate.safetensors"
+    },
+    {
+      "path": "adapters/speech-run07/step-0080.safetensors",
+      "bytes": 25286797,
+      "sha256": "0b4b9ccab65a91489a2f9971d2243cd9f2a810fb3b184c8fbcf07417bfeb00db"
+    },
+    {
+      "path": "adapters/speech-run07/step-0100.safetensors",
+      "bytes": 25286797,
+      "sha256": "3dbb327c12e4586909b74bfc53fecdc9dd6055bd96eff6d9ec16d83318d06f6d"
+    },
+    {
+      "path": "adapters/speech-run07/step-0120.safetensors",
+      "bytes": 25286797,
+      "sha256": "997840b65aca9ecf8b1ba71ad95f5b6d49fbaa7602a28ad8c7f0e42295eb993e"
+    },
+    {
+      "path": "adapters/speech-run07/step-0140.safetensors",
+      "bytes": 25286797,
+      "sha256": "9dabc04f2a380090285e0bed19f7f61f1e1eb67f73900459453db19710b94846"
+    },
+    {
+      "path": "adapters/speech-run07/step-0160.safetensors",
+      "bytes": 25286797,
+      "sha256": "98858e0f6c344071509e28e915b5cffba5e2504b012250b450316e3e0f9c58e8"
+    },
+    {
+      "path": "adapters/speech-run08/checkpoint-0016.safetensors",
+      "bytes": 25286793,
+      "sha256": "27dee163a63f7c2b7eb609ec2101b58caf3b94c19cdaa3417d9d95471ca6251b"
+    },
+    {
+      "path": "adapters/speech-run08/checkpoint-0032.safetensors",
+      "bytes": 25286793,
+      "sha256": "92489ed316baef07837019477f0a17e09a78ec5c341099d1184abe968c65b25b"
+    },
+    {
+      "path": "adapters/speech-run08/checkpoint-0067.safetensors",
+      "bytes": 25286793,
+      "sha256": "aa02e8b1e91ad3f48dbf1c3dc8e7663a1c1f2c7494f57ed372bef554f7480a70"
+    },
+    {
+      "path": "adapters/speech-run08/latest.json",
+      "bytes": 133,
+      "sha256": "2726a16a9792bad5699ff7b3ec5a9b40b0d1603c8a1aad01ca8dfb07bf3a07ee"
+    },
+    {
+      "path": "adapters/speech-run08/metadata.json",
+      "bytes": 9427,
+      "sha256": "c5afa3aed8ffc73f19d5134bd2272213b877b8d44b9558abd80de0046957f0c5"
+    },
+    {
+      "path": "adapters/speech-run08/runtime.jsonl",
+      "bytes": 1256322,
+      "sha256": "b116929159d289b0d343c0e146ef49a10d19b673b35af51b325cb194f42adb3f"
+    },
+    {
+      "path": "adapters/speech-run08/segment-completion.json",
+      "bytes": 289,
+      "sha256": "aebe89da707b97d10eebfae9933673e4d5b86c7657f06576aa18b79189ad2406"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/candidate.safetensors",
+      "bytes": 25286793,
+      "sha256": "aa02e8b1e91ad3f48dbf1c3dc8e7663a1c1f2c7494f57ed372bef554f7480a70",
+      "same_inode_as": "adapters/speech-run08/checkpoint-0067.safetensors"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/0.safetensors",
+      "bytes": 1508222,
+      "sha256": "137d6704be8ec1b23c86c96f6e4e24cdd763851b6b3f0bf0e83993fe66ee1540"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/1.safetensors",
+      "bytes": 1508222,
+      "sha256": "35d80627422e111863bfc4fb0333703cc4ded4f4549ee2a4d2019ee3f53b78a3"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/10.safetensors",
+      "bytes": 1508222,
+      "sha256": "f6d70404e9c8b8792d3b7d72c76fe405fc5e392e79b3cb2be4921e46a1ddf9af"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/11.safetensors",
+      "bytes": 1508222,
+      "sha256": "8d7f519497f4b0ae6bd9299213221fb3159fdd7c020ce5b5ea2e6d4fcde57705"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/12.safetensors",
+      "bytes": 1508222,
+      "sha256": "a93147acb96d5313604484981a1b788158edf631bd16718982f367c92931c6f8"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/13.safetensors",
+      "bytes": 1508222,
+      "sha256": "216a71f877ac9ff11d008a821f2b3310f177833323d7ad30efbb78e59bdad2cf"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/14.safetensors",
+      "bytes": 1508222,
+      "sha256": "7b4022fba617ce94abbfe6c1205d422b07d7667bc6707c5f0196285aff5a6fbf"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/15.safetensors",
+      "bytes": 1508222,
+      "sha256": "e2be7f2c1dced6e4f7499e6ff42578edd4221a62d3955b3aa977ea3a5f9c4f25"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/16.safetensors",
+      "bytes": 1508222,
+      "sha256": "e1c3f30143226398c12918a1c617a54eee6a32193e230d14f82cbaebd3fea485"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/17.safetensors",
+      "bytes": 1508222,
+      "sha256": "71cecdda644b7bff0eb3167b4d21ac40536a623048a9c4b066ea69d2eddfa641"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/18.safetensors",
+      "bytes": 1508222,
+      "sha256": "790796f76f01d8d4635b99ae5b313ff626c67e7f0aae252b9e7088eb17f99d8d"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/19.safetensors",
+      "bytes": 1508222,
+      "sha256": "9b62be3b291d30ab8d18aeb1884a3a2ea6b4a660876a39546a314ee3dac941e6"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/2.safetensors",
+      "bytes": 1508222,
+      "sha256": "2b2fc4067883ac69eabdc3cc1fffe3dc3a897056ec760da555ee6311fd0029f3"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/20.safetensors",
+      "bytes": 1508222,
+      "sha256": "43fc474064eaf3cbe763b9de72f3907cbc554421b78ef74edc1ba02d15b37e28"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/21.safetensors",
+      "bytes": 1508222,
+      "sha256": "b40e78fa357a2c8411f2bb286707890916fa404251ae641c31e88b8f48dd6614"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/22.safetensors",
+      "bytes": 1508222,
+      "sha256": "b146a53eb6f58e8dc38588bbbb0512bff573e5e05baac9e999455d61bca886ab"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/23.safetensors",
+      "bytes": 1508222,
+      "sha256": "5d7c6ddd1cad48728e3a8b43539219ed73a9a72328ff5de9c00f8a66d0c6be96"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/24.safetensors",
+      "bytes": 1508222,
+      "sha256": "70c1436b28df41415f431db477ae71de9134324c8b9c0628eac453a8b5449a43"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/25.safetensors",
+      "bytes": 1508222,
+      "sha256": "da5456f763aec0b588ff3b79958d8b02e9ba6fb566d11d5c0af158f02c2658e0"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/26.safetensors",
+      "bytes": 1508222,
+      "sha256": "dce4bcc6f561b1b7d17ea2ad7ec42b18535739243de320d096669b3a16ca0864"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/27.safetensors",
+      "bytes": 1508222,
+      "sha256": "8e9536bd3650033d3ee7d5d0fd4f21a7d7a36c03a0ad583ee754b30a2412fb9d"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/28.safetensors",
+      "bytes": 1508222,
+      "sha256": "134ad14f69fd84ffd4a35452a1a937b6931b2bedc9d3f0c1bba810d6175ddc4b"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/29.safetensors",
+      "bytes": 1508222,
+      "sha256": "04b5d9a440e9a40a73c46cb6bac8d7f79f167e074be64d8d214ac8fd565fa04d"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/3.safetensors",
+      "bytes": 1508222,
+      "sha256": "cfc9332224803ecaf5332de4b4fc2cfceb48324c86b71fedbb9713eba406f8d0"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/30.safetensors",
+      "bytes": 1508222,
+      "sha256": "7457c5888f97dcb516f6774d0a4de0ea86deb47c71d02f1a6e026f9d28d52c39"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/31.safetensors",
+      "bytes": 1508222,
+      "sha256": "bf906e166de9713eab13e85f8c45673b6e69e852acbb6486e87f96a28f1b323e"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/4.safetensors",
+      "bytes": 1508222,
+      "sha256": "44c08ede1b738f6a438debfd7a67f74c323e08212c90790433ed0495e9c398bf"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/5.safetensors",
+      "bytes": 1508222,
+      "sha256": "63ac39d7e15363fa9bf052a0ef50204760314120f0edbc071cb48c6d3175e4e9"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/6.safetensors",
+      "bytes": 1508222,
+      "sha256": "a37a197f6a88c4df7991a1624524322fd01b0f6b3ba8c5d04cccd0ba245fd036"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/7.safetensors",
+      "bytes": 1508222,
+      "sha256": "0a70305588c521c32b225c98db46077c6a4e01a3fc06de5b110e6e564bef81af"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/8.safetensors",
+      "bytes": 1508222,
+      "sha256": "edc352564e479b63dd9648b485bd8ab2278a3520e972f3dc2ba87bbbafb9b84e"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/9.safetensors",
+      "bytes": 1508222,
+      "sha256": "387d9cba60802315c46185e4b0ac5593ce3210b8b8da92919f794337dd6edb51"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/heads.safetensors",
+      "bytes": 2310598,
+      "sha256": "63b2ae103a73d3ea41af08e06c8e4a22dff066451a02cd25deef05c356c50a77"
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/update.json",
+      "bytes": 500,
+      "sha256": "6439985cd470a567817578439a6e8360163417b621cacf201fa9ff97540255ac"
+    },
+    {
+      "path": "adapters/speech-run08/validation-0016.json",
+      "bytes": 5408,
+      "sha256": "eea7fe2e63460ed61cce39a2e8be4c6c21fbe524164d5b6004779d9d8df56bde"
+    },
+    {
+      "path": "adapters/speech-run08/validation-0032.json",
+      "bytes": 5390,
+      "sha256": "8bca466719d027c684ea36b48a4614c45150e9462b98ade4fe21d1fcba171c4d"
+    },
+    {
+      "path": "adapters/speech-run08/validation-0067.json",
+      "bytes": 5410,
+      "sha256": "f90f91bd75811941d95e7eda45b58b7944ccad36a449212f4a7b1c4ea782c9a4"
+    },
+    {
+      "path": "adapters/speech-run09/checkpoint-0024.safetensors",
+      "bytes": 25286793,
+      "sha256": "0a568d63cb6c77bf387e179236da5f494548f65f1eeb810e4bbd7a89858f5e51"
+    },
+    {
+      "path": "adapters/speech-run09/checkpoint-0048.safetensors",
+      "bytes": 25286793,
+      "sha256": "09b5dab1bedfbcc373d8d271e0a50b724e306585ff889792fb4fb3864b290134"
+    },
+    {
+      "path": "adapters/speech-run09/latest.json",
+      "bytes": 193,
+      "sha256": "9ede683ec3627aaaef4284c589ff212b0e3652274777e650e6cfd919ad2710b9"
+    },
+    {
+      "path": "adapters/speech-run09/metadata.json",
+      "bytes": 14411,
+      "sha256": "83d7b9df73cd9153c1456f80925fb404cb9284e821682f4430cbe0b70a03e189"
+    },
+    {
+      "path": "adapters/speech-run09/runtime.jsonl",
+      "bytes": 42039,
+      "sha256": "9471aee0c128faf98a6d0b775dedec20bc6866df71106f4a62427f8a96a32ff9"
+    },
+    {
+      "path": "adapters/speech-run09/segment-completion.json",
+      "bytes": 350,
+      "sha256": "f035919687ef803d2ce64011e17aaaf6055bbd95c78589095ad6db3e5cd8e772"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/candidate.safetensors",
+      "bytes": 25286793,
+      "sha256": "09b5dab1bedfbcc373d8d271e0a50b724e306585ff889792fb4fb3864b290134",
+      "same_inode_as": "adapters/speech-run09/checkpoint-0048.safetensors"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/0.safetensors",
+      "bytes": 1508222,
+      "sha256": "c21cc79aa78d951b15f7a36f7afd2828cff83640f531c203b25eef9ae32ead6c"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/1.safetensors",
+      "bytes": 1508222,
+      "sha256": "34f63863c9198ff5ef25f66b5aa033dba2ce37a360083f034af5561989f7ec69"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/10.safetensors",
+      "bytes": 1508222,
+      "sha256": "68eb8c89d7a8636d8083343c1e9734ad2408aed186a6fd832b00a28e091f00df"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/11.safetensors",
+      "bytes": 1508222,
+      "sha256": "6a9c23f6c711e011ce01afa24b271f9d076b9c77588a7e64d5735c11895d4860"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/12.safetensors",
+      "bytes": 1508222,
+      "sha256": "4ca1768f5d741cd778859b8ab16ba86e4fae62d164221e0ae509c8f3703a8ec3"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/13.safetensors",
+      "bytes": 1508222,
+      "sha256": "bf6b9b953a2175052a061a16f99d8fdbf98a3f8abbcfd2a8579a5cd7addcb488"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/14.safetensors",
+      "bytes": 1508222,
+      "sha256": "dd748feb53dfeef003a6d189c42f02b99c864f75263b94ea296d5ae11fe63110"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/15.safetensors",
+      "bytes": 1508222,
+      "sha256": "ef292ad44494c1c700d283f7dc06135111f3896b999e66177e6a421ed6aaa457"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/16.safetensors",
+      "bytes": 1508222,
+      "sha256": "963bda091db97272bc9954d63b09abc35eef077fee269b8211b5fb4830347439"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/17.safetensors",
+      "bytes": 1508222,
+      "sha256": "6fc7e28a044bcac61944facead46a79f4db6a1a3c5e0677461c0ae986174de65"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/18.safetensors",
+      "bytes": 1508222,
+      "sha256": "ed3b755da1f60744de20fe8cd7d752a97a1a3eb165f0f6db409eace13a582271"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/19.safetensors",
+      "bytes": 1508222,
+      "sha256": "73ce323a3aa09e00e8a31f6fd1b43634c37b9d9bc98892416f35f3be71c478fa"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/2.safetensors",
+      "bytes": 1508222,
+      "sha256": "32c5f5fb1eba63b7698fa67471a35972530577c8b4c7b4644a751f2d8ec148ea"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/20.safetensors",
+      "bytes": 1508222,
+      "sha256": "4bf997fa972d42491be5a85fe6d5bd2c8929e6d453124650b2c0c397be305221"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/21.safetensors",
+      "bytes": 1508222,
+      "sha256": "c2e197edf326be02b74517ea92bb5a45f4aff00b95d4ad20862720be6ee0c14e"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/22.safetensors",
+      "bytes": 1508222,
+      "sha256": "be5f380c817c3c60549a9dfc715a6509c920139f595c69d90034769dca08c403"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/23.safetensors",
+      "bytes": 1508222,
+      "sha256": "488c01cadf89d6de2425e3c7653a1eafa53a860b10a41b431dd78186d736bf48"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/24.safetensors",
+      "bytes": 1508222,
+      "sha256": "228628778ff38743453b15c381c01ac255e1b4a8a7fecacd2a9bd3aa5df84730"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/25.safetensors",
+      "bytes": 1508222,
+      "sha256": "03b3dbcfbf8b3201549caaac97f2c41c86d438079d056c2358da1056c607edcd"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/26.safetensors",
+      "bytes": 1508222,
+      "sha256": "30d6a73e4d63226910fcfa2b01239fdd34f351f8814dc0a2da4c79a1eef27e7e"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/27.safetensors",
+      "bytes": 1508222,
+      "sha256": "30001f511b1c1f5514f900d78433b033d8604f6232450db814fac1f180124333"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/28.safetensors",
+      "bytes": 1508222,
+      "sha256": "b68b824d2fa787780ff0a2a317a5d1421c7d6eb50a9b99bbb916f63da971d07b"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/29.safetensors",
+      "bytes": 1508222,
+      "sha256": "0401e8823a96826add57cf5ea1aafcd154197784422b5b9e1e33590cb86511d9"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/3.safetensors",
+      "bytes": 1508222,
+      "sha256": "8e83a587da0625810b2c9e811f741362739d7232a13e5f8274ee8c534b1ac9d0"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/30.safetensors",
+      "bytes": 1508222,
+      "sha256": "ec6dced893c0b760d8a4cdc567d697615c228ab48b63638bec71d8190523f90a"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/31.safetensors",
+      "bytes": 1508222,
+      "sha256": "cf21f837db7b3a6807d84b9bd8d272547e7e9f7a8be0e52ecdf60a9f0ff41b4d"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/4.safetensors",
+      "bytes": 1508222,
+      "sha256": "0df1b26bc66a01104f7e4b2dbec1acebc2fa070a72de43cc210b80f44ddede1a"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/5.safetensors",
+      "bytes": 1508222,
+      "sha256": "70d70fd4444076a9e22867f600ea1e43b4ab52517cfa0f5c084e7e3fb6886287"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/6.safetensors",
+      "bytes": 1508222,
+      "sha256": "67089a743da63c72578acbee4c1cebf90ea5cf9141ebcd0a9c0ea20fd5076141"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/7.safetensors",
+      "bytes": 1508222,
+      "sha256": "dc12ebd8f1d4c8bd48216530f7e7d6cea486e28e2a9a529a5a8cd5fad62d67bc"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/8.safetensors",
+      "bytes": 1508222,
+      "sha256": "cdd8696d0ee6fe27ad382822fb083f5c532d7677d90e0029540ce6c924331471"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/9.safetensors",
+      "bytes": 1508222,
+      "sha256": "72fd7b1de197b39990dbd2387fb13724b4e1f4621a3c501418b03c63cc6eb9c8"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/heads.safetensors",
+      "bytes": 2310598,
+      "sha256": "a657a565f3b617f3878b6138324338b246570354d8d66ab3abe86cf7f7113b1e"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/0.safetensors",
+      "bytes": 1508222,
+      "sha256": "452bfa2764b0b9b90920dd1f87415ed29a8030c8105abe5cb50c20d80060af32"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/1.safetensors",
+      "bytes": 1508222,
+      "sha256": "808533a8f4e91e84672e67d4ecea9e5925c1cee1492417e3fc42fc8af93f094f"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/10.safetensors",
+      "bytes": 1508222,
+      "sha256": "916a9432c6e3ba1438b91db16c9efa8386e0a6668b9de42f51b60c0833f6a41c"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/11.safetensors",
+      "bytes": 1508222,
+      "sha256": "b8d1ead6d7ca58db939b8069de471f8181246b232ea863317d8ad3b869f71bbe"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/12.safetensors",
+      "bytes": 1508222,
+      "sha256": "67295b96a67298ea636cc016c598e5c4381acd588b785585b0710d50e9894904"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/13.safetensors",
+      "bytes": 1508222,
+      "sha256": "e6d97af1c52f317494a0c516d74346537f162753db8867ccb174a4c564e211ab"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/14.safetensors",
+      "bytes": 1508222,
+      "sha256": "3be7d2954358e0fa8a27e87c01597fe5e37b7eb6047aadbdd32b0a1500893b57"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/15.safetensors",
+      "bytes": 1508222,
+      "sha256": "e46ee30acb0861a6e9691c3ae0677298cc7cbc5e4b2c345bc71c7479405d9bf4"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/16.safetensors",
+      "bytes": 1508222,
+      "sha256": "818cc8e7afa72cfd9904384dc06b814692e93b714a7d74319734e4b12f392f2e"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/17.safetensors",
+      "bytes": 1508222,
+      "sha256": "7ec765627b2a3bdbfcfa7c57b7a2547a12bfd2932c152c64449a9c42a99d869b"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/18.safetensors",
+      "bytes": 1508222,
+      "sha256": "7e53bc203ff3831a6a7f1bb92749ddd427f5164fbbc108f21647233c1dd2b249"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/19.safetensors",
+      "bytes": 1508222,
+      "sha256": "5c4d96ad42bef81ed6f437b59029e13caf4fcbda2ac1621b209f1ecbcd5817b4"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/2.safetensors",
+      "bytes": 1508222,
+      "sha256": "4cb79c506f87379f77aca308deb58257b66d3aa0dd8eb655fab8d5deba7c5463"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/20.safetensors",
+      "bytes": 1508222,
+      "sha256": "a0241f0ef76656cdaf514d7f41d37f2dc80a876cb94ca2f68cddb350b0aa3090"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/21.safetensors",
+      "bytes": 1508222,
+      "sha256": "570db623277115878d9dfba05b3219036ac1509452f56d1486273ecf0fd447fd"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/22.safetensors",
+      "bytes": 1508222,
+      "sha256": "5611a9efb1512f6f9abca15488f5de3b87ea8ce1a75178d299e542db1ab870eb"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/23.safetensors",
+      "bytes": 1508222,
+      "sha256": "b63aeb526e6ce407bba566e107169462012c93d1ed8182834974e674df049b68"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/24.safetensors",
+      "bytes": 1508222,
+      "sha256": "9fa6f28cc46579a146b84d938dc9ecefefc24fcd57dbbade9dfacafb012253a6"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/25.safetensors",
+      "bytes": 1508222,
+      "sha256": "77dcae44f662d2fa4058534be063f6b63cf1969b462507ef0ac45b4d90ef18cd"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/26.safetensors",
+      "bytes": 1508222,
+      "sha256": "b6f534bb444da95ce7a4d830b637d7661209350802a4655fa1af1e0bd147e365"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/27.safetensors",
+      "bytes": 1508222,
+      "sha256": "dde7da1d4dd0278659c485ce69936624576b7a0c822d26a5b525ba0d54d5cbd7"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/28.safetensors",
+      "bytes": 1508222,
+      "sha256": "5fa05e86242f36702f3e102385ca69a4cea9e8cef3bbe0511890d09bd6c256a9"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/29.safetensors",
+      "bytes": 1508222,
+      "sha256": "d38dfbc9cf3fdc1e3638101424db8798e1b6da103088b06c13670239257cf5b7"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/3.safetensors",
+      "bytes": 1508222,
+      "sha256": "6d3e8f79e9ba7fbb909bcf27abbb3889a2c5a6e78b3dbaef2210607d5b202013"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/30.safetensors",
+      "bytes": 1508222,
+      "sha256": "cadce1df6220ba05360e13c70c89482722571ccebef82838487ec8f5ac1884ce"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/31.safetensors",
+      "bytes": 1508222,
+      "sha256": "42b68c77af690d7f7b3cf097942822fdf80f7c637934c34af64a943577936de3"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/4.safetensors",
+      "bytes": 1508222,
+      "sha256": "d37686bac63038f7be7f0bd2ce935bbd607538df276b536c22d8f179c92d10ce"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/5.safetensors",
+      "bytes": 1508222,
+      "sha256": "654cf9fadd36cbf89157dfe9c7ddf3e4dbbfc6eaf33193db0475f34f337374e6"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/6.safetensors",
+      "bytes": 1508222,
+      "sha256": "1dfdfd1ac5fc6498fde5f4d58a85410d1d18a10d3f77092cc073e10defc519a2"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/7.safetensors",
+      "bytes": 1508222,
+      "sha256": "f29a67c06bc3ccfcc32f5b0acb1c23164f4445155a76c1c6e32a5bdaf8d5414f"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/8.safetensors",
+      "bytes": 1508222,
+      "sha256": "658ec3401c9ff59893aaad81469e06e68a650b70ad0ff682aeb2df9bbde5bb16"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/9.safetensors",
+      "bytes": 1508222,
+      "sha256": "b88b334d84db0e3f30b0d82bc12a454162cff0e3ceb6ebbc4d321dbb3222abd2"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/heads.safetensors",
+      "bytes": 2310598,
+      "sha256": "c5e9ea3b0f0a61020069da2b302785f7ee4a24ec6bb6848cef734f2113e6075a"
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/update.json",
+      "bytes": 547,
+      "sha256": "b1456845893c581c5581f28d1b4e5a4ef31750b9d027bf32704c14b28b881ea4"
+    },
+    {
+      "path": "adapters/speech-run09/validation-0000.json",
+      "bytes": 6120,
+      "sha256": "9c1c65fba1ea93da5324a1b9794ff94b16784a267df18c1b432df18e8ce69d33"
+    },
+    {
+      "path": "adapters/speech-run09/validation-0024.json",
+      "bytes": 6100,
+      "sha256": "5291a44b102c8764e01d9ef6d60343c65e21912d79dcffa8870c051cad788fca"
+    },
+    {
+      "path": "adapters/speech-run09/validation-0048.json",
+      "bytes": 6089,
+      "sha256": "cb2e499052b90d45ec647224e0b5939e2d27fa9242c7c8be380c2b1f0592f147"
+    },
+    {
+      "path": "adapters/speech-run09-preflight-step0002.safetensors",
+      "bytes": 25286793,
+      "sha256": "7e91a0e15ef3a18700866764794a53e6683dd3c43be6c867e09003287d4b81bd"
+    },
+    {
+      "path": "adapters/speech-streamed-probe/candidate.safetensors",
+      "bytes": 25286793,
+      "sha256": "f60a37839c408fe85f3be147957191f867ac889b06189b916b3b18cb9b14f688"
+    },
+    {
+      "path": "adapters/speech-streamed-probe/config.json",
+      "bytes": 946,
+      "sha256": "aef572aed8d39292d073237788e171df3b0c810d821de2c5eedf525a148d235f"
+    }
+  ],
+  "status": "building"
+}

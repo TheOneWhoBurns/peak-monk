@@ -1,0 +1,12 @@
+{
+  "policy": "User requested sparse remote storage and no redundant checkpoint copies. Preserve six useful weight snapshots; discard other intermediate/probe weights after this compact backup is verified. All small training metadata and experiment reports retained. Historical discarded weights will not be reconstructible bit-for-bit from this archive.",
+  "kept": {
+    "adapters/run26-step0064/adapters.safetensors": "Run26 midpoint for later comparison",
+    "adapters/run26-step0128/adapters.safetensors": "Latest text checkpoint",
+    "adapters/run20-step0032/adapters.safetensors": "Historical development-best text checkpoint used by launcher",
+    "adapters/run22-step0140/adapters.safetensors": "Current text training parent",
+    "adapters/speech-run08/checkpoint-0067.safetensors": "Last native speech candidate tested with generation",
+    "adapters/speech-run09/checkpoint-0048.safetensors": "Latest native speech checkpoint"
+  },
+  "weight_bytes": 654331152
+}

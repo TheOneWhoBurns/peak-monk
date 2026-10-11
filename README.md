@@ -6,7 +6,7 @@ Jun speaks as human within the fiction. Historical and fictional monks inform or
 
 ## Current experiments
 
-Autonomous research remains paused at the user’s request. Run26 finished all 128 updates normally. On October 11 the user authorized a bounded wrap-up: complete conversation evaluation, publish the latest checkpoint and research publicly, then clean up local artifacts. No new training cycle is planned. Evaluation encountered system memory-pressure guards; an incomplete capture is not a quality result. The user subsequently requested immediate backup and cleanup, overriding evaluation-first ordering. Run26 is being archived publicly as an unevaluated research checkpoint. Handoff: `results/pause-20261010.json`; training evidence: `results/run26-training-summary.json`.
+Autonomous research remains paused at the user’s request. Run26 finished all 128 updates normally. On October 11 the user authorized a bounded wrap-up: complete conversation evaluation, publish the latest checkpoint and research publicly, then clean up local artifacts. No new training cycle is planned. Evaluation encountered system memory-pressure guards; an incomplete capture is not a quality result. The user subsequently requested immediate backup and cleanup, overriding evaluation-first ordering. Run26 is published as an unevaluated research checkpoint. Handoff: `results/pause-20261010.json`; training evidence: `results/run26-training-summary.json`.
 
 | Track | Latest evidence | Decision |
 | --- | --- | --- |
@@ -21,14 +21,14 @@ Run25's saved full-backbone exports reproduced every checked training-side targe
 
 ## Local use and hardware limits
 
-Everything runs on this Apple M2 Mac with 8 GB memory. Model jobs are serialized. The text environment is `.venv` (MLX 0.32.3, mlx-lm 0.32.0); speech uses `.venv-speech` (MLX 0.26.5, moshi-mlx 0.3.0, rustymimi 0.4.1). Keep them separate.
+Everything runs on this Apple M2 Mac with 8 GB memory. Model jobs are serialized. The text environment was `.venv` (MLX 0.32.3, mlx-lm 0.32.0); speech used `.venv-speech` (MLX 0.26.5, moshi-mlx 0.3.0, rustymimi 0.4.1). Keep them separate.
 
-Double-click `Try Jun.command` to try the preserved development-best text checkpoint (run20 step32,17/20 development; failed later release audits). Its lightweight launcher waits for the shared model lock before loading Jun. Type `/reset` to clear the conversation or `/quit` to exit. The autonomous research goal stays paused.
+Restore the environment and a selected checkpoint using [the publication instructions](docs/restore-publication.md) before running locally. `Try Jun.command` targets the archived development-best run20 step32 (17/20 development; failed later release audits), so it requires restoring that selected checkpoint. The autonomous research goal stays paused.
 
-To inspect a rejected research checkpoint after the active model job finishes:
+For the latest published, unevaluated checkpoint after restoration:
 
 ```sh
-.venv/bin/python scripts/chat.py --adapter adapters/run25-step0128
+.venv/bin/python scripts/chat.py --adapter adapters/run26-step0128
 ```
 
 The CLI verifies the adapter's training base, streams frozen weights, retains the whole conversation up to its declared 2,048-token input bound, and supports `/reset` and `/quit`. It adds no persona system text. It rejects an oversized history rather than silently truncating it. `results/chat-streamed-smoke/` records the earlier actual CLI check.
@@ -55,13 +55,15 @@ Fresh final and pressure suites are frozen in `evaluation/release-v3-frozen.json
 
 `scripts/audit_prompt_exclusion.py` reads the explicit evaluation `turns` schema, rejects empty audits, verifies frozen v3 hashes, and automatically includes registered release exclusions. The first ad hoc check of the long-speech draft used the wrong schema; its invalid evidence was superseded transparently. Exact exclusion still does not establish semantic independence. No final/pressure prompts, outputs, or deliberate paraphrases may become training material.
 
-## Local storage
+## Publication and local storage
 
-The October 10 cleanup reclaimed 13.79 GB of observed free disk space (5.89 → 19.69 GB). Unused downloaded PersonaPlex and Qwen3.5 weight files were removed; exact revisions, hashes and restore URLs remain in `results/disk-cleanup-20261010.json`.
+The latest adapter is public at [Hugging Face](https://huggingface.co/A-Martinez-2508/peak-monk-jun-run26), pinned to `58f6402c376d9e5040d6b2439381cc8f76f053fd`. Its nine uploaded files were checksum-verified. Hugging Face holds one adapter plus metadata (about 146 MB), without base weights or historical checkpoint copies.
 
-The October 11 pre-evaluation cleanup reclaimed another 10.23 GB (4.79 → 15.02 GB free at measurement). It removed the inactive 1.7B base/reference, 4B instruct teacher and Moshi backbone weights only after matching their local SHA256 to live pinned upstream metadata. Restore URLs and hashes are in `results/disk-cleanup-20261011-before-evaluation.json`. Completed run26/probe prefix caches were also removed, retaining their manifests. Historical text and native speech experiments need the recorded weights restored before rerunning. The active Qwen3-4B-Base, all trained checkpoints, Mimi, render/ASR models and both environments remain installed.
+[GitHub's research archive](https://github.com/TheOneWhoBurns/peak-monk/releases/tag/archive-20261011) retains six useful text/native checkpoint snapshots, generated audio and cached codes, and exact model metadata. The sparse retention policy is in `results/checkpoint-retention-20261011.json`. Redundant historical/intermediate weights and optimizer states were discarded intentionally; these are not all recoverable byte for byte. Source, configurations, corpora, metrics and raw text captures remain in Git.
 
-Completed run23–25 and two old probe prefix tensors were removed; their manifests, training inputs, configurations, reference scores and results remain. Regenerate those caches for any future cache-dependent verification. All unique trained checkpoints remain at their existing paths. Byte-identical completed checkpoints now share hard links; treat these archival weights as immutable and write future experiments to fresh paths. The cleanup record distinguishes actual free-space gain from file-size estimates.
+The October 10 cleanup reclaimed 13.79 GB of observed free disk space. The October 11 pre-evaluation cleanup reclaimed 10.23 GB. The final publication cleanup removes archived local weights, generated assets and upload staging, verified downloadable model weights, and reinstallable environments. Receipts distinguish file sizes from observed free-space changes. Research remains paused and there are no running Jun model jobs.
+
+Local inference requires restoring dependencies and weights first. See [restore instructions](docs/restore-publication.md). Publication is archival, not release acceptance; Run26 still lacks its conversation evaluation.
 
 ## Evidence and reproducibility
 
@@ -72,4 +74,4 @@ Completed run23–25 and two old probe prefix tensors were removed; their manife
 - `results/speech08-training-summary.json`, `results/speech08-native-introduction/review.json`: trained native checkpoint and failed generation evidence.
 - `results/run25-explicit-prompt-exclusion.json`, `results/release-v3-prompt-exclusion.json`, `results/release-v3-historical-exclusion.json`: counted exclusion audits and their limits.
 
-Latest full core test run: 25 passed, 1 skipped. After the frozen-audit registry change, the two focused exclusion tests and actual corpus audits also passed. Models, adapters, and environments are local ignored artifacts; source, authored data, configurations, raw text captures, and result reports are versioned. Public archival publication is not an accepted model release. Latest wrap-up core tests: 32 passed, 1 skipped.
+Latest full core test run: 25 passed, 1 skipped. After the frozen-audit registry change, the two focused exclusion tests and actual corpus audits also passed. Models, adapters, and environments are restorable ignored artifacts; source, authored data, configurations, raw text captures, and result reports are versioned. Public archival publication is not an accepted model release. Latest wrap-up core tests: 32 passed, 1 skipped.

@@ -4,6 +4,8 @@ import hashlib
 import json
 from pathlib import Path
 import shutil
+import tempfile
+import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -27,23 +29,33 @@ def main():
         path = snapshot/name
         if digest(path) != expected:
             raise ValueError(f'Checksum mismatch: {name}')
-    provenance = json.loads((snapshot/'base-metadata/base4b_provenance.json').read_text())
-    base = ROOT/'models/base4b'
-    adapter = ROOT/'adapters/run26-step0128'
-    for path in (base, adapter):
-        path.mkdir(parents=True, exist_ok=True)
-    pairs = [(snapshot/name, adapter/name) for name in ('adapters.safetensors', 'adapter_config.json')]
-    pairs += [(p, base/p.name) for p in (snapshot/'base-metadata').iterdir() if p.is_file()]
-    for source, destination in pairs:
-        if destination.exists() and digest(destination) != digest(source):
-            raise ValueError(f'Refusing to overwrite different local file: {destination}')
-    weight = Path(hf_hub_download(provenance['repo'], 'model.safetensors',
-        revision=provenance['revision'], local_dir=str(base)))
-    if digest(weight) != provenance['weight_sha256_verified']:
-        raise ValueError('Base weight checksum mismatch')
-    for source, destination in pairs:
-        if not destination.exists():
-            shutil.copy2(source, destination)
+    with tempfile.TemporaryDirectory(prefix='jun-metadata-') as temporary:
+        metadata = snapshot/'base-metadata'
+        if (snapshot/'base-metadata.zip').exists():
+            metadata = Path(temporary)
+            with zipfile.ZipFile(snapshot/'base-metadata.zip') as archive:
+                for entry in archive.infolist():
+                    if (entry.is_dir() or Path(entry.filename).name != entry.filename
+                            or entry.filename in ('.', '..') or entry.file_size > 100_000_000):
+                        raise ValueError('Invalid base metadata archive entry')
+                archive.extractall(metadata)
+        provenance = json.loads((metadata/'base4b_provenance.json').read_text())
+        base = ROOT/'models/base4b'
+        adapter = ROOT/'adapters/run26-step0128'
+        for path in (base, adapter):
+            path.mkdir(parents=True, exist_ok=True)
+        pairs = [(snapshot/name, adapter/name) for name in ('adapters.safetensors', 'adapter_config.json')]
+        pairs += [(p, base/p.name) for p in metadata.iterdir() if p.is_file()]
+        for source, destination in pairs:
+            if destination.exists() and digest(destination) != digest(source):
+                raise ValueError(f'Refusing to overwrite different local file: {destination}')
+        weight = Path(hf_hub_download(provenance['repo'], 'model.safetensors',
+            revision=provenance['revision'], local_dir=str(base)))
+        if digest(weight) != provenance['weight_sha256_verified']:
+            raise ValueError('Base weight checksum mismatch')
+        for source, destination in pairs:
+            if not destination.exists():
+                shutil.copy2(source, destination)
     print('Restored and verified. Run: .venv/bin/python scripts/chat.py --adapter adapters/run26-step0128')
 
 

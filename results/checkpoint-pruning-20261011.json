@@ -1,0 +1,1146 @@
+{
+  "time": 1791736522.181,
+  "reason": "User authorized sparse retention and removal of redundant intermediate checkpoint copies. Six selected snapshots remain locally until remote verification.",
+  "retention_policy": "results/checkpoint-retention-20261011.json",
+  "removed": [
+    {
+      "path": "adapters/speech-run09-preflight-step0002.safetensors",
+      "bytes": 25286793
+    },
+    {
+      "path": "adapters/run22/0000046_adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run22/adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run22/0000140_adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run22/0000092_adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run25/0000128_adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run25/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run25/0000064_adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/speech-streamed-probe/candidate.safetensors",
+      "bytes": 25286793
+    },
+    {
+      "path": "adapters/preference-runtime-probe01-step0001/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run13/0000128_adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run13/adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run13/0000032_adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run13/0000064_adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run13/0000096_adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run14/0000250_adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run14/0000750_adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run14/adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run14/0000500_adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run18-step0400/adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run11-step0374/adapters.safetensors",
+      "bytes": 79628122
+    },
+    {
+      "path": "adapters/run15/0001000_adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run15/adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run15/0000400_adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run15/0000800_adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run15/0000200_adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run15/0000600_adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run12/0000374_adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run12/0000748_adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run12/adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run17-average300600/adapters.safetensors",
+      "bytes": 284072560
+    },
+    {
+      "path": "adapters/run24/0000048_adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run24/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run24/0000096_adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run23/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run23/0000032_adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run23/0000016_adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/preference-runtime-probe01/0000002_adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/preference-runtime-probe01/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/preference-runtime-probe01/0000001_adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run23-step0016/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/preference-runtime-probe03-step0002/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run17-step0600/adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run23-step0032/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run22-step0092/adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run15-step1000/adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run16-step0200/adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run01/0000160_adapters.safetensors",
+      "bytes": 39870300
+    },
+    {
+      "path": "adapters/run01/adapters.safetensors",
+      "bytes": 39870300
+    },
+    {
+      "path": "adapters/run01/0000080_adapters.safetensors",
+      "bytes": 39870300
+    },
+    {
+      "path": "adapters/run06/0000160_adapters.safetensors",
+      "bytes": 49725476
+    },
+    {
+      "path": "adapters/run06/adapters.safetensors",
+      "bytes": 49725476
+    },
+    {
+      "path": "adapters/run06/0000080_adapters.safetensors",
+      "bytes": 49725476
+    },
+    {
+      "path": "adapters/run21-step0064/adapters.safetensors",
+      "bytes": 177566097
+    },
+    {
+      "path": "adapters/run20-step0064/adapters.safetensors",
+      "bytes": 177566097
+    },
+    {
+      "path": "adapters/run08/0000160_adapters.safetensors",
+      "bytes": 39870300
+    },
+    {
+      "path": "adapters/run08/adapters.safetensors",
+      "bytes": 39870300
+    },
+    {
+      "path": "adapters/run08/0000080_adapters.safetensors",
+      "bytes": 39870300
+    },
+    {
+      "path": "adapters/run17-step1200/adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/speech-run07/step-0060.safetensors",
+      "bytes": 25286797
+    },
+    {
+      "path": "adapters/speech-run07/step-0140.safetensors",
+      "bytes": 25286797
+    },
+    {
+      "path": "adapters/speech-run07/optimizer-offload.safetensors",
+      "bytes": 50574345
+    },
+    {
+      "path": "adapters/speech-run07/step-0120.safetensors",
+      "bytes": 25286797
+    },
+    {
+      "path": "adapters/speech-run07/step-0100.safetensors",
+      "bytes": 25286797
+    },
+    {
+      "path": "adapters/speech-run07/step-0020.safetensors",
+      "bytes": 25286797
+    },
+    {
+      "path": "adapters/speech-run07/step-0040.safetensors",
+      "bytes": 25286797
+    },
+    {
+      "path": "adapters/speech-run07/candidate.safetensors",
+      "bytes": 25286797
+    },
+    {
+      "path": "adapters/speech-run07/step-0160.safetensors",
+      "bytes": 25286797
+    },
+    {
+      "path": "adapters/speech-run07/step-0080.safetensors",
+      "bytes": 25286797
+    },
+    {
+      "path": "adapters/speech-run09/checkpoint-0024.safetensors",
+      "bytes": 25286793
+    },
+    {
+      "path": "adapters/run14-step0250/adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run09/0000768_adapters.safetensors",
+      "bytes": 22038180
+    },
+    {
+      "path": "adapters/run09/adapters.safetensors",
+      "bytes": 22038180
+    },
+    {
+      "path": "adapters/run09/0000576_adapters.safetensors",
+      "bytes": 22038180
+    },
+    {
+      "path": "adapters/run09/0000192_adapters.safetensors",
+      "bytes": 22038180
+    },
+    {
+      "path": "adapters/run09/0000384_adapters.safetensors",
+      "bytes": 22038180
+    },
+    {
+      "path": "adapters/run21-step0096/adapters.safetensors",
+      "bytes": 177566097
+    },
+    {
+      "path": "adapters/run20-step0096/adapters.safetensors",
+      "bytes": 177566097
+    },
+    {
+      "path": "adapters/run07/0000160_adapters.safetensors",
+      "bytes": 39870300
+    },
+    {
+      "path": "adapters/run07/adapters.safetensors",
+      "bytes": 39870300
+    },
+    {
+      "path": "adapters/run07/0000080_adapters.safetensors",
+      "bytes": 39870300
+    },
+    {
+      "path": "adapters/run15-step0400/adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/speech-run08/checkpoint-0032.safetensors",
+      "bytes": 25286793
+    },
+    {
+      "path": "adapters/speech-run08/checkpoint-0016.safetensors",
+      "bytes": 25286793
+    },
+    {
+      "path": "adapters/speech-run01/step-0060.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run01/step-0140.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run01/step-0120.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run01/step-0100.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run01/step-0020.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run01/step-0040.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run01/candidate.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run01/step-0160.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run01/step-0080.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run06/optimizer-offload.safetensors",
+      "bytes": 50574361
+    },
+    {
+      "path": "adapters/run26/0000128_adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run26/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run26/0000064_adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run21/adapters.safetensors",
+      "bytes": 177566097
+    },
+    {
+      "path": "adapters/run21/0000032_adapters.safetensors",
+      "bytes": 177566097
+    },
+    {
+      "path": "adapters/run21/0000064_adapters.safetensors",
+      "bytes": 177566097
+    },
+    {
+      "path": "adapters/run21/0000096_adapters.safetensors",
+      "bytes": 177566097
+    },
+    {
+      "path": "adapters/preference-runtime-probe03/0000002_adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/preference-runtime-probe03/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/preference-runtime-probe03/0000001_adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run17/0001200_adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run17/adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run17/0000300_adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run17/0000900_adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run17/0000600_adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/preference-runtime-probe01-step0002/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run11-step0748/adapters.safetensors",
+      "bytes": 79628122
+    },
+    {
+      "path": "adapters/run11/0000374_adapters.safetensors",
+      "bytes": 79628122
+    },
+    {
+      "path": "adapters/run11/0000748_adapters.safetensors",
+      "bytes": 79628122
+    },
+    {
+      "path": "adapters/run11/adapters.safetensors",
+      "bytes": 79628122
+    },
+    {
+      "path": "adapters/run16/adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run16/0000400_adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run16/0000200_adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run20/adapters.safetensors",
+      "bytes": 177566097
+    },
+    {
+      "path": "adapters/run20/0000032_adapters.safetensors",
+      "bytes": 177566097
+    },
+    {
+      "path": "adapters/run20/0000064_adapters.safetensors",
+      "bytes": 177566097
+    },
+    {
+      "path": "adapters/run20/0000096_adapters.safetensors",
+      "bytes": 177566097
+    },
+    {
+      "path": "adapters/run18/adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run18/0000400_adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run18/0000200_adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run17-step0900/adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run18-step0200/adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run17-step0300/adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run25-step0128/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run12-step0374/adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run24-step0096/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run22-step0046/adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06stream/0000002_adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06stream/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06stream/0000001_adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run25-step0064/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/preference-runtime-probe03-step0001/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run14-step0500/adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run16-step0400/adapters.safetensors",
+      "bytes": 142063747
+    },
+    {
+      "path": "adapters/run24-step0048/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/preference-deferred-parity/0000002_adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/preference-deferred-parity/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/preference-deferred-parity/0000001_adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/speech-run03/step-0060.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run03/step-0140.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run03/step-0120.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run03/step-0100.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run03/step-0020.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run03/step-0040.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run03/candidate.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run03/step-0160.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run03/step-0080.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/moshi-text-native-start-real-probe/candidate.safetensors",
+      "bytes": 25286793
+    },
+    {
+      "path": "adapters/moshi-text-real-probe/candidate.safetensors",
+      "bytes": 25286793
+    },
+    {
+      "path": "adapters/run05/0000160_adapters.safetensors",
+      "bytes": 49725476
+    },
+    {
+      "path": "adapters/run05/adapters.safetensors",
+      "bytes": 49725476
+    },
+    {
+      "path": "adapters/run05/0000080_adapters.safetensors",
+      "bytes": 49725476
+    },
+    {
+      "path": "adapters/run15-step0200/adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run02/0000160_adapters.safetensors",
+      "bytes": 49725476
+    },
+    {
+      "path": "adapters/run02/adapters.safetensors",
+      "bytes": 49725476
+    },
+    {
+      "path": "adapters/run02/0000080_adapters.safetensors",
+      "bytes": 49725476
+    },
+    {
+      "path": "adapters/run15-step0800/adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/run15-step0600/adapters.safetensors",
+      "bytes": 58744712
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06cache/0000002_adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06cache/adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/on-policy-runtime-probe06cache/0000001_adapters.safetensors",
+      "bytes": 142063861
+    },
+    {
+      "path": "adapters/run21-step0032/adapters.safetensors",
+      "bytes": 177566097
+    },
+    {
+      "path": "adapters/speech-run02/step-0060.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run02/step-0140.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run02/step-0120.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run02/step-0100.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run02/step-0020.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run02/step-0040.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run02/candidate.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run02/step-0160.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/speech-run02/step-0080.safetensors",
+      "bytes": 4171688
+    },
+    {
+      "path": "adapters/run03/0000160_adapters.safetensors",
+      "bytes": 49725476
+    },
+    {
+      "path": "adapters/run03/adapters.safetensors",
+      "bytes": 49725476
+    },
+    {
+      "path": "adapters/run03/0000320_adapters.safetensors",
+      "bytes": 49725476
+    },
+    {
+      "path": "adapters/run03/0000480_adapters.safetensors",
+      "bytes": 49725476
+    },
+    {
+      "path": "adapters/run03/0000640_adapters.safetensors",
+      "bytes": 49725476
+    },
+    {
+      "path": "adapters/run04/0000160_adapters.safetensors",
+      "bytes": 49725476
+    },
+    {
+      "path": "adapters/run04/adapters.safetensors",
+      "bytes": 49725476
+    },
+    {
+      "path": "adapters/run04/0000080_adapters.safetensors",
+      "bytes": 49725476
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/candidate.safetensors",
+      "bytes": 25286793
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/16.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/24.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/2.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/31.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/28.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/13.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/7.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/21.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/22.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/4.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/heads.safetensors",
+      "bytes": 2310598
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/10.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/19.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/8.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/1.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/27.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/15.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/20.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/6.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/12.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/29.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/30.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/3.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/25.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/17.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/14.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/26.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/0.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/9.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/18.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/11.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/5.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run08/step-0067/optimizer/23.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/candidate.safetensors",
+      "bytes": 25286793
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/16.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/24.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/2.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/31.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/28.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/13.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/7.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/21.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/22.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/4.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/heads.safetensors",
+      "bytes": 2310598
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/10.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/19.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/8.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/1.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/27.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/15.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/20.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/6.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/12.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/29.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/30.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/3.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/25.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/17.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/14.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/26.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/0.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/9.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/18.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/11.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/5.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-text/23.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/16.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/24.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/2.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/31.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/28.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/13.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/7.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/21.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/22.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/4.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/heads.safetensors",
+      "bytes": 2310598
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/10.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/19.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/8.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/1.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/27.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/15.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/20.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/6.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/12.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/29.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/30.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/3.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/25.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/17.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/14.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/26.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/0.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/9.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/18.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/11.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/5.safetensors",
+      "bytes": 1508222
+    },
+    {
+      "path": "adapters/speech-run09/step-0048/optimizer-audio/23.safetensors",
+      "bytes": 1508222
+    }
+  ],
+  "before_free_bytes": 11979657216,
+  "after_free_bytes": 19461836800,
+  "observed_free_space_gain_bytes": 7482179584
+}
