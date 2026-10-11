@@ -1,0 +1,257 @@
+{
+  "time": 1791734549.765352,
+  "status": "Wrap-up blocked by persistent system memory-pressure warnings; no complete run26 conversation capture. No training resumed.",
+  "goal": "Original research goal remains paused; user authorized evaluation/publication/cleanup only.",
+  "checkpoint": "adapters/run26-step0128/adapters.safetensors",
+  "sha256": "920c7a782a6c55406290fcc8404dcd9fa0a8d23997e7f09ce57dd2bcababa059",
+  "cleanup": "results/disk-cleanup-20261011-before-evaluation.json",
+  "staging": "release-staging/huggingface",
+  "staging_status": "Local draft only, README contains EVALUATION_PENDING. Do not publish until evaluation is resolved and manifest/results are finalized.",
+  "hf_account": "A-Martinez-2508",
+  "hf_auth": "Connector read-only repository access; existing Firefox login available. No CLI upload credential.",
+  "github_account": "TheOneWhoBurns",
+  "published": false,
+  "next_steps": [
+    "Restart/reduce active app RAM; keep Firefox tabs and all trained checkpoints.",
+    "Run saved export verification and both dev64/dev128 captures serially with existing guards; preserve all failed attempts.",
+    "Author-review all turns using frozen rubric. If dev-qualified, select checkpoint by registered rule and run frozen v3 final and pressure audits. Otherwise publish as rejected experimental research.",
+    "Finalize honest model card, release manifest and reproducible restore instructions; public HF model then public GitHub research/archival artifacts.",
+    "Verify remote bytes before deleting uploaded unique local artifacts."
+  ],
+  "runtime_policy_amendment": "Optional pressure_wait_seconds<=10 pauses at a synchronized cache-release boundary without issuing model work. Only resumes at normal pressure; critical pressure, swap growth, RSS and overall deadline still stop. Defaults retain immediate-stop policy. Seven new simulated guard tests pass.",
+  "attempts": [
+    {
+      "path": "results/run26-export0064-after-cleanup",
+      "last_event": {
+        "time": 1791734104.284702,
+        "phase": "runtime_exit",
+        "error": "Bounded runtime system memory pressure is not normal"
+      },
+      "guard_stops": [
+        {
+          "time": 1791734104.283423,
+          "phase": "resource_guard_stop",
+          "reason": "system memory pressure is not normal",
+          "elapsed_seconds": 2.500695374998031,
+          "peak_rss_bytes": 607879168,
+          "swap_bytes": 1418597498,
+          "memory_pressure_level": 2,
+          "mlx_peak_bytes": 1000722016,
+          "mlx_active_bytes": 241362040
+        }
+      ]
+    },
+    {
+      "path": "results/run26-export0064-load-settled",
+      "last_event": {
+        "time": 1791734220.4788852,
+        "phase": "runtime_exit",
+        "error": "Bounded runtime system memory pressure is not normal"
+      },
+      "guard_stops": [
+        {
+          "time": 1791734220.4786072,
+          "phase": "resource_guard_stop",
+          "reason": "system memory pressure is not normal",
+          "elapsed_seconds": 2.239683874999173,
+          "peak_rss_bytes": 445366272,
+          "swap_bytes": 1359877242,
+          "memory_pressure_level": 2,
+          "mlx_peak_bytes": 950575712,
+          "mlx_active_bytes": 241367160
+        }
+      ]
+    },
+    {
+      "path": "results/run26-export0064-other-work-paused",
+      "last_event": {
+        "time": 1791734183.46841,
+        "phase": "runtime_exit",
+        "error": "Bounded runtime system memory pressure is not normal"
+      },
+      "guard_stops": [
+        {
+          "time": 1791734183.467215,
+          "phase": "resource_guard_stop",
+          "reason": "system memory pressure is not normal",
+          "elapsed_seconds": 2.6595353329903446,
+          "peak_rss_bytes": 529678336,
+          "swap_bytes": 1368265850,
+          "memory_pressure_level": 2,
+          "mlx_peak_bytes": 1000722016,
+          "mlx_active_bytes": 241362040
+        }
+      ]
+    },
+    {
+      "path": "results/run26-export0064-pressure-pause",
+      "last_event": {
+        "time": 1791734407.324929,
+        "phase": "runtime_exit",
+        "error": "Bounded runtime system memory pressure is not normal"
+      },
+      "guard_stops": [
+        {
+          "time": 1791734407.320943,
+          "phase": "resource_guard_stop",
+          "reason": "system memory pressure is not normal",
+          "elapsed_seconds": 25.721911208005622,
+          "peak_rss_bytes": 579928064,
+          "swap_bytes": 1267602554,
+          "memory_pressure_level": 2,
+          "mlx_peak_bytes": 954655324,
+          "mlx_active_bytes": 263387256
+        }
+      ]
+    },
+    {
+      "path": "results/run26-export0064-query128",
+      "last_event": {
+        "time": 1791734247.161739,
+        "phase": "runtime_exit",
+        "error": "Bounded runtime system memory pressure is not normal"
+      },
+      "guard_stops": [
+        {
+          "time": 1791734247.161442,
+          "phase": "resource_guard_stop",
+          "reason": "system memory pressure is not normal",
+          "elapsed_seconds": 2.8178380420140456,
+          "peak_rss_bytes": 606945280,
+          "swap_bytes": 1343100026,
+          "memory_pressure_level": 2,
+          "mlx_peak_bytes": 979346016,
+          "mlx_active_bytes": 245037176
+        }
+      ]
+    },
+    {
+      "path": "results/run26-export0064-streamed",
+      "last_event": {
+        "time": 1791733881.365393,
+        "phase": "runtime_exit",
+        "error": "Bounded runtime system memory pressure is not normal"
+      },
+      "guard_stops": [
+        {
+          "time": 1791733881.363779,
+          "phase": "resource_guard_stop",
+          "reason": "system memory pressure is not normal",
+          "elapsed_seconds": 12.161772291990928,
+          "peak_rss_bytes": 293765120,
+          "swap_bytes": 1628312698,
+          "memory_pressure_level": 2,
+          "mlx_peak_bytes": 842517648,
+          "mlx_active_bytes": 298191992
+        }
+      ]
+    },
+    {
+      "path": "results/run26-export0064-streamed-resident0",
+      "last_event": {
+        "time": 1791734026.471308,
+        "phase": "runtime_exit",
+        "error": "Bounded runtime system memory pressure is not normal"
+      },
+      "guard_stops": [
+        {
+          "time": 1791734026.470916,
+          "phase": "resource_guard_stop",
+          "reason": "system memory pressure is not normal",
+          "elapsed_seconds": 2.278093375003664,
+          "peak_rss_bytes": 443744256,
+          "swap_bytes": 1426986106,
+          "memory_pressure_level": 2,
+          "mlx_peak_bytes": 1000722016,
+          "mlx_active_bytes": 241362040
+        }
+      ]
+    },
+    {
+      "path": "results/run26-export0064-streamed-retry01",
+      "last_event": {
+        "time": 1791733916.976971,
+        "phase": "runtime_exit",
+        "error": "Bounded runtime system memory pressure is not normal"
+      },
+      "guard_stops": [
+        {
+          "time": 1791733916.9761221,
+          "phase": "resource_guard_stop",
+          "reason": "system memory pressure is not normal",
+          "elapsed_seconds": 1.9615092920139432,
+          "peak_rss_bytes": 621314048,
+          "swap_bytes": 1611535482,
+          "memory_pressure_level": 2,
+          "mlx_peak_bytes": 1000721568,
+          "mlx_active_bytes": 358692472
+        }
+      ]
+    },
+    {
+      "path": "results/run26-export0064-streamed-retry02",
+      "last_event": {
+        "time": 1791733983.7123342,
+        "phase": "runtime_exit",
+        "error": "Bounded runtime system memory pressure is not normal"
+      },
+      "guard_stops": [
+        {
+          "time": 1791733983.7120168,
+          "phase": "resource_guard_stop",
+          "reason": "system memory pressure is not normal",
+          "elapsed_seconds": 2.430467290978413,
+          "peak_rss_bytes": 500531200,
+          "swap_bytes": 1519260794,
+          "memory_pressure_level": 2,
+          "mlx_peak_bytes": 1000721568,
+          "mlx_active_bytes": 298191992
+        }
+      ]
+    },
+    {
+      "path": "results/run26-step0064-pressure-pause-runtime",
+      "last_event": {
+        "time": 1791734484.676096,
+        "phase": "runtime_exit",
+        "error": "Bounded runtime system memory pressure is not normal"
+      },
+      "guard_stops": [
+        {
+          "time": 1791734484.675494,
+          "phase": "resource_guard_stop",
+          "reason": "system memory pressure is not normal",
+          "elapsed_seconds": 12.692054750019452,
+          "peak_rss_bytes": 571146240,
+          "swap_bytes": 1200493690,
+          "memory_pressure_level": 2,
+          "mlx_peak_bytes": 337655808,
+          "mlx_active_bytes": 251376156
+        }
+      ]
+    },
+    {
+      "path": "results/run26-step0064-runtime",
+      "last_event": {
+        "time": 1791734283.899585,
+        "phase": "runtime_exit",
+        "error": "Bounded runtime system memory pressure is not normal"
+      },
+      "guard_stops": [
+        {
+          "time": 1791734283.899095,
+          "phase": "resource_guard_stop",
+          "reason": "system memory pressure is not normal",
+          "elapsed_seconds": 2.9951364169828594,
+          "peak_rss_bytes": 623198208,
+          "swap_bytes": 1334711418,
+          "memory_pressure_level": 2,
+          "mlx_peak_bytes": 447756288,
+          "mlx_active_bytes": 361476636
+        }
+      ]
+    }
+  ],
+  "core_tests": "32 passed, 1 skipped in 3.69s",
+  "model_processes_remaining": false
+}

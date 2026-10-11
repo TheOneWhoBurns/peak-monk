@@ -1,0 +1,90 @@
+{
+  "started_at": 1791734083.326129,
+  "before_free_bytes": 4793540608,
+  "reason": "User requested disk cleanup before completing evaluation. Remove only reproducible caches and pinned public base downloads; preserve every trained checkpoint and active text base.",
+  "actions": [
+    {
+      "action": "remove_verified_redownloadable_base",
+      "path": "models/base/model.safetensors",
+      "size_bytes": 968080210,
+      "sha256": "0dfefefebd85dd75e4c42330e27da8b628f36c9198ca873b628710e9d4139db0",
+      "repo": "johnlakness/Qwen3-1.7B-Base-mlx-4Bit",
+      "revision": "ccbac499d70a93105c0e96618dd40564f577afa2",
+      "restore_url": "https://huggingface.co/johnlakness/Qwen3-1.7B-Base-mlx-4Bit/resolve/ccbac499d70a93105c0e96618dd40564f577afa2/model.safetensors",
+      "remote_hash_verified": true,
+      "state": "completed"
+    },
+    {
+      "action": "remove_verified_redownloadable_base",
+      "path": "models/reference/model.safetensors",
+      "size_bytes": 968080210,
+      "sha256": "0e86d9677e519323849eac1bc272caae88567a481ff188c431f70be543d9995f",
+      "repo": "mlx-community/Qwen3-1.7B-4bit",
+      "revision": "3b1b1768f8f8cf8351c712464f906e86c2b8269e",
+      "restore_url": "https://huggingface.co/mlx-community/Qwen3-1.7B-4bit/resolve/3b1b1768f8f8cf8351c712464f906e86c2b8269e/model.safetensors",
+      "remote_hash_verified": true,
+      "state": "completed"
+    },
+    {
+      "action": "remove_verified_redownloadable_base",
+      "path": "models/stronger/model.safetensors",
+      "size_bytes": 2263022417,
+      "sha256": "2a73c6c248601ab904e035548abd8e6abb65ea27dcb5f342fb0a8910eb44173f",
+      "repo": "mlx-community/Qwen3-4B-Instruct-2507-4bit",
+      "revision": "50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b",
+      "restore_url": "https://huggingface.co/mlx-community/Qwen3-4B-Instruct-2507-4bit/resolve/50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b/model.safetensors",
+      "remote_hash_verified": true,
+      "state": "completed"
+    },
+    {
+      "action": "remove_verified_redownloadable_base",
+      "path": "models/moshi/model.q4.safetensors",
+      "size_bytes": 4805545317,
+      "sha256": "7959d590e23c1ebc78cfa3501344a6ff331561aa0cadc4429b733b890bbc919c",
+      "repo": "kyutai/moshiko-mlx-q4",
+      "revision": "18e4df760a34d5977a34517d7d1580e07acbb2f1",
+      "restore_url": "https://huggingface.co/kyutai/moshiko-mlx-q4/resolve/18e4df760a34d5977a34517d7d1580e07acbb2f1/model.q4.safetensors",
+      "remote_hash_verified": true,
+      "state": "completed"
+    },
+    {
+      "action": "remove_recomputable_prefix_cache",
+      "path": "adapters/run26/frozen_prefix",
+      "size_bytes": 1073342236,
+      "files": 306,
+      "retained_manifest": "adapters/run26/frozen_prefix_manifest.json",
+      "manifest_sha256": "6f1b70df411207846b0a1e8d3ed2c57d1ab01262eb68d2a31a9097e5441eaaa8",
+      "state": "completed"
+    },
+    {
+      "action": "remove_recomputable_prefix_cache",
+      "path": "adapters/preference-deferred-parity/frozen_prefix",
+      "size_bytes": 43607663,
+      "files": 6,
+      "retained_manifest": "adapters/preference-deferred-parity/frozen_prefix_manifest.json",
+      "manifest_sha256": "9f1c6b12df4f7c3b398df49c6182decd9dbea00834a8e0eb442959e473c73c04",
+      "state": "completed"
+    },
+    {
+      "action": "remove_recomputable_prefix_cache",
+      "path": "adapters/preference-runtime-probe01/frozen_prefix",
+      "size_bytes": 43607663,
+      "files": 6,
+      "retained_manifest": "adapters/preference-runtime-probe01/frozen_prefix_manifest.json",
+      "manifest_sha256": "cfc94d51a34df7d82848dea203f97fa5cd4a772852844458e6edef9cba43b3c0",
+      "state": "completed"
+    },
+    {
+      "action": "remove_recomputable_prefix_cache",
+      "path": "adapters/preference-runtime-probe03/frozen_prefix",
+      "size_bytes": 57385584,
+      "files": 6,
+      "retained_manifest": "adapters/preference-runtime-probe03/frozen_prefix_manifest.json",
+      "manifest_sha256": "0de1e26c2f8538fdf31fd68a1c7645d0929bd7fb3eb13c8302d1015df1bf0565",
+      "state": "completed"
+    }
+  ],
+  "after_free_bytes": 15019184128,
+  "observed_free_space_gain_bytes": 10225643520,
+  "completed_at": 1791734091.929078
+}

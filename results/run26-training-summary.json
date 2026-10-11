@@ -1,0 +1,35 @@
+{
+  "status": "Training complete; evaluation blocked by macOS memory pressure. No conversation score or acceptance claim.",
+  "completion": {
+    "steps": 128,
+    "status": "Training complete; no acceptance claim",
+    "seconds": 1779.7727358750017
+  },
+  "updates": 128,
+  "unique_preferences": 95,
+  "unique_retention_rows": 38,
+  "all_finite": true,
+  "memory_pressure_levels": [
+    1
+  ],
+  "peak_mlx_bytes": 2735167573,
+  "peak_rss_bytes": 1035550720,
+  "wall_seconds": 2724.494150161743,
+  "training_seconds": 1776.6803077080003,
+  "exports": [
+    {
+      "step": 64,
+      "adapter_sha256": "dcba4ef7b905f87abd9db2c4f2f8cdf91ed60959e9c69fe44b78c224ac7183e7",
+      "frozen_adapter_unchanged": true,
+      "status": "Unreviewed research export"
+    },
+    {
+      "step": 128,
+      "adapter_sha256": "920c7a782a6c55406290fcc8404dcd9fa0a8d23997e7f09ce57dd2bcababa059",
+      "frozen_adapter_unchanged": true,
+      "status": "Unreviewed research export"
+    }
+  ],
+  "scope": "Matched run25 comparison: twelve rather than six upper adapter layers; same parent, data, schedule and objective. Quality determined separately by frozen conversation audits.",
+  "wrapup_handoff": "results/run26-wrapup-handoff-20261011.json"
+}

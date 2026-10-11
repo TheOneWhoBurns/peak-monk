@@ -1,0 +1,31 @@
+{
+  "arguments": [
+    "--model",
+    "models/base4b",
+    "--adapter",
+    "adapters/run26-step0064",
+    "--suite",
+    "evaluation/dev-roleplay-v2.json",
+    "--loss-version",
+    "assistant_eos_v2",
+    "--max-tokens",
+    "160",
+    "--temperature",
+    "0",
+    "--top-p",
+    "1",
+    "--output",
+    "results/run26-step0064.json"
+  ],
+  "adapter_sha256": "dcba4ef7b905f87abd9db2c4f2f8cdf91ed60959e9c69fe44b78c224ac7183e7",
+  "streamed_weights": true,
+  "resident_layers": 0,
+  "source_sha256": {
+    "evaluate_bounded.py": "41e206287d797d5fc9d080f8435701a8e9c02d4c668f626ab9951487ff730310",
+    "evaluate.py": "d9c65c513f885476e60c1199fb85d7de8188736a5f5fb8e080337a81bca5d643",
+    "assistant_objective.py": "fc4aee1150680542323a7d79d429a3d94bfa2abee2c6b28328888c88b2024785",
+    "bounded_text_runtime.py": "6051753060eeb560bb48ab38065515a1252914e1b0213fa7a76efef7980a5bb6",
+    "qwen_streamed_inference.py": "3dec064bfea6a4d3a48dedba591150751321c193fc7fd38e4d2c3b39d0bab4fc"
+  },
+  "scope": "Same loss, tokenization, sampling and prefill defaults; only resource lifecycle and checks change"
+}

@@ -37,3 +37,6 @@ results/moshi-baseline-offline-screen/**/*.wav
 results/personaplex-*/**/*.wav
 
 results/.text-model.lock
+
+# Local publication staging; uploaded separately to model hosting.
+release-staging/

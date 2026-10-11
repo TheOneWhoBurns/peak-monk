@@ -40,10 +40,13 @@ def swap_bytes():
 
 
 class BoundedTextRuntime:
-    def __init__(self, output, memory_limit=3_800_000_000, max_seconds=600):
+    def __init__(self, output, memory_limit=3_800_000_000, max_seconds=600, pressure_wait_seconds=0):
         self.output = Path(output)
         self.memory_limit = memory_limit
         self.max_seconds = max_seconds
+        self.pressure_wait_seconds = pressure_wait_seconds
+        if not 0 <= pressure_wait_seconds <= 10:
+            raise ValueError('Pressure wait must be between zero and ten seconds')
 
     def event(self, phase, **details):
         with (self.output / 'runtime.jsonl').open('a') as f:
@@ -58,6 +61,25 @@ class BoundedTextRuntime:
         swap = swap_bytes()
         pressure = int(subprocess.check_output(
             ['sysctl', '-n', 'kern.memorystatus_vm_pressure_level'], text=True).strip())
+        if (pressure == 2 and self.pressure_wait_seconds and elapsed <= self.max_seconds
+                and rss <= 4_600_000_000 and swap-self.initial_swap <= 512*1024**2):
+            self.event('pressure_pause_begin', memory_pressure_level=pressure)
+            self.mx.synchronize(self.generate.generation_stream)
+            self.mx.synchronize()
+            self.original_clear()
+            deadline = time.monotonic()+self.pressure_wait_seconds
+            while True:
+                elapsed = time.monotonic()-self.started
+                rss = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+                swap = swap_bytes()
+                pressure = int(subprocess.check_output(
+                    ['sysctl', '-n', 'kern.memorystatus_vm_pressure_level'], text=True))
+                if (pressure != 2 or time.monotonic() >= deadline or elapsed > self.max_seconds
+                        or rss > 4_600_000_000 or swap-self.initial_swap > 512*1024**2):
+                    break
+                time.sleep(.2)
+            self.event('pressure_pause_end', memory_pressure_level=pressure,
+                       resumed=pressure == 1, elapsed_seconds=elapsed)
         metrics = dict(elapsed_seconds=elapsed, peak_rss_bytes=rss, swap_bytes=swap,
                        memory_pressure_level=pressure, mlx_peak_bytes=self.mx.get_peak_memory(),
                        mlx_active_bytes=self.mx.get_active_memory())

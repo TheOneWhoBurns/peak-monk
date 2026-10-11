@@ -1,0 +1,14 @@
+{"time": 1791734381.5866518, "phase": "import_begin", "initial_swap_bytes": 1309545594}
+{"time": 1791734382.8511949, "phase": "runtime_ready", "memory_limit": 1800000000, "policy": "no wiring; deferred cache eviction; one process; bounded requests"}
+{"time": 1791734383.525735, "phase": "load_settled", "elapsed_seconds": 1.9367342079931404, "peak_rss_bytes": 554024960, "swap_bytes": 1309545594, "memory_pressure_level": 1, "mlx_peak_bytes": 228695304, "mlx_active_bytes": 228695304}
+{"time": 1791734383.538777, "phase": "full_model_score_begin", "tokens": 1756}
+{"time": 1791734383.9107351, "phase": "pressure_pause_begin", "memory_pressure_level": 2}
+{"time": 1791734385.5122318, "phase": "pressure_pause_end", "memory_pressure_level": 1, "resumed": true, "elapsed_seconds": 3.9073437080078293}
+{"time": 1791734386.2696488, "phase": "pressure_pause_begin", "memory_pressure_level": 2}
+{"time": 1791734394.813849, "phase": "pressure_pause_end", "memory_pressure_level": 1, "resumed": true, "elapsed_seconds": 13.222704874991905}
+{"time": 1791734395.163258, "phase": "pressure_pause_begin", "memory_pressure_level": 2}
+{"time": 1791734396.585641, "phase": "pressure_pause_end", "memory_pressure_level": 1, "resumed": true, "elapsed_seconds": 14.995772166003007}
+{"time": 1791734397.1300611, "phase": "pressure_pause_begin", "memory_pressure_level": 2}
+{"time": 1791734407.3206341, "phase": "pressure_pause_end", "memory_pressure_level": 2, "resumed": false, "elapsed_seconds": 25.721911208005622}
+{"time": 1791734407.320943, "phase": "resource_guard_stop", "reason": "system memory pressure is not normal", "elapsed_seconds": 25.721911208005622, "peak_rss_bytes": 579928064, "swap_bytes": 1267602554, "memory_pressure_level": 2, "mlx_peak_bytes": 954655324, "mlx_active_bytes": 263387256}
+{"time": 1791734407.324929, "phase": "runtime_exit", "error": "Bounded runtime system memory pressure is not normal"}

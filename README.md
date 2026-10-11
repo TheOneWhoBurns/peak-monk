@@ -6,12 +6,12 @@ Jun speaks as human within the fiction. Historical and fictional monks inform or
 
 ## Current experiments
 
-Autonomous research is paused at the user’s request on October 10. The already-running run26 may finish under its existing one-hour bound; no subsequent experiment or evaluation is scheduled. Inspect its actual runtime/completion files before resuming. Handoff: `results/pause-20261010.json`.
+Autonomous research remains paused at the user’s request. Run26 finished all 128 updates normally. On October 11 the user authorized a bounded wrap-up: complete conversation evaluation, publish the latest checkpoint and research publicly, then clean up local artifacts. No new training cycle is planned. Evaluation is currently encountering system memory-pressure guards; an incomplete capture is not a quality result. Handoff: `results/pause-20261010.json`; training evidence: `results/run26-training-summary.json`.
 
 | Track | Latest evidence | Decision |
 | --- | --- | --- |
 | Text run25 | Qwen3-4B-Base, 4-bit, no persona system message. 128 offline preference updates, 95 reviewed pairs, 116 retention examples. Step 64: 14/20, CE 2.57523. Step 128: 16/20, CE 2.60996. | Both rejected. Essential late-female-teacher lore still fails; step 64 also fails persona control. |
-| Text run26 | Registered comparison changing trainable adapter depth from 6 to 12, retaining run25's parent, data, objective, seed and schedule. | Preflight passed: two finite updates, normal pressure, 2.74 GB peak, both full-backbone exports exactly reproduce target scores. Full 128-update run launching with deferred suffix loading; quality remains unmeasured. |
+| Text run26 | Registered comparison changing trainable adapter depth from 6 to 12, retaining run25's parent, data, objective, seed and schedule. | All 128 updates completed in 45.41 minutes, with 2.735 GB peak MLX allocation and normal training pressure. Both preflight exports matched exactly; final saved-checkpoint verification and conversation quality remain pending. |
 | Native speech08 | Exact full-episode training over 67 clips. Selected step 67 reduced fixed two-clip joint CE from 1.89361 to 1.84231. | Rejected: full unforced introduction was awkward and repetitive. |
 | Native speech09 | Alternates 24 native-start prose updates and 24 native audio replay updates, with separate AdamW states on shared adapters. Tiny numerical proof and actual two-update preflight passed. | All 48 updates complete. Both checkpoints rejected by the preservation screen; no native generation escalation. |
 
@@ -45,7 +45,7 @@ Speech09 uses native initial text token 32000. A prior prose probe using Sentenc
 
 The 67 native training clips total 25.14 minutes; the longest is 36.16 seconds. Six original eight-exchange conversations are drafted in `data/speech-long-dialogues-v1.jsonl` to add longer coherent context and late questions. Their text is reviewed, but rendering, unprompted ASR/timestamp review, measured duration, and Mimi encoding are pending. They are not part of speech09. Stock Kokoro voices provide synthetic source audio, not Jun model-generated output. The current source audit is `results/speech-current-source-audit.json`; old aggregate render manifests contain archival examples replaced in the active encoded corpus.
 
-Speech10 is a registered audio-only control for speech09, removing prose updates while preserving all 24 audio episodes, their order, parent, objective and optimizer parameters. Its historical schedule proof and two focused tests passed; model execution remains queued behind text work (`results/speech10-plan.json`).
+Speech10 is a registered audio-only control for speech09, removing prose updates while preserving all 24 audio episodes, their order, parent, objective and optimizer parameters. Its historical schedule proof and two focused tests passed; model execution was never started and remains paused (`results/speech10-plan.json`).
 
 ## Acceptance and fresh audits
 
@@ -57,7 +57,9 @@ Fresh final and pressure suites are frozen in `evaluation/release-v3-frozen.json
 
 ## Local storage
 
-The October 10 cleanup reclaimed 13.79 GB of observed free disk space (5.89 → 19.69 GB). Unused downloaded PersonaPlex and Qwen3.5 weight files were removed; exact revisions, hashes and restore URLs remain in `results/disk-cleanup-20261010.json`. These historical experiments require restoring their weights before rerunning. Current Qwen3-4B-Base, Moshi, Mimi, speech render/ASR models and both environments remain installed.
+The October 10 cleanup reclaimed 13.79 GB of observed free disk space (5.89 → 19.69 GB). Unused downloaded PersonaPlex and Qwen3.5 weight files were removed; exact revisions, hashes and restore URLs remain in `results/disk-cleanup-20261010.json`.
+
+The October 11 pre-evaluation cleanup reclaimed another 10.23 GB (4.79 → 15.02 GB free at measurement). It removed the inactive 1.7B base/reference, 4B instruct teacher and Moshi backbone weights only after matching their local SHA256 to live pinned upstream metadata. Restore URLs and hashes are in `results/disk-cleanup-20261011-before-evaluation.json`. Completed run26/probe prefix caches were also removed, retaining their manifests. Historical text and native speech experiments need the recorded weights restored before rerunning. The active Qwen3-4B-Base, all trained checkpoints, Mimi, render/ASR models and both environments remain installed.
 
 Completed run23–25 and two old probe prefix tensors were removed; their manifests, training inputs, configurations, reference scores and results remain. Regenerate those caches for any future cache-dependent verification. All unique trained checkpoints remain at their existing paths. Byte-identical completed checkpoints now share hard links; treat these archival weights as immutable and write future experiments to fresh paths. The cleanup record distinguishes actual free-space gain from file-size estimates.
 
