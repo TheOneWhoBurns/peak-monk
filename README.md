@@ -1,5 +1,7 @@
 # Peak Monk — Jun
 
+**Paused after publication and cleanup.** Start the next session with [the continuation README](README-CONTINUE.md).
+
 An autoresearch laboratory for an original human mountain-monk character learned in model weights. **No checkpoint has passed release acceptance.** Text and native speech adapters have actually been trained, but reliable character continuity remains unresolved.
 
 Jun speaks as human within the fiction. Historical and fictional monks inform original synthetic material; these are not authentic transcripts, attributed quotations, or cloned voices. The character and source records are in `character/core.md` and `sources/manifest.json`. Behavioral consistency can be tested; subjective belief has not been established.

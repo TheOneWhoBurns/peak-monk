@@ -1,0 +1,49 @@
+{
+  "time": 1791738081.47282,
+  "reason": "User cancelled final-run restoration, requested README and cleanup; continue tomorrow. No model inference or training started.",
+  "before_free_bytes": 21009489920,
+  "removed": [
+    {
+      "path": ".venv",
+      "logical_bytes": 530337701
+    },
+    {
+      "path": "models/base4b",
+      "logical_bytes": 241178945
+    },
+    {
+      "path": "adapters/run26-step0064",
+      "logical_bytes": 0
+    },
+    {
+      "path": "adapters/run26-step0128",
+      "logical_bytes": 0
+    },
+    {
+      "path": "scripts/__pycache__",
+      "logical_bytes": 5709
+    },
+    {
+      "path": "tests/__pycache__",
+      "logical_bytes": 6313
+    },
+    {
+      "path": ".pytest_cache",
+      "logical_bytes": 597
+    },
+    {
+      "path": "/private/var/folders/4_/_71v2sd91dn5fhqmn72r7zr00000gn/T/jun-comparison-szzbk00b",
+      "logical_bytes": 13631488
+    },
+    {
+      "path": "/private/var/folders/4_/_71v2sd91dn5fhqmn72r7zr00000gn/T/jun-metadata-su77u5gt",
+      "logical_bytes": 15945828
+    },
+    {
+      "path": "/private/var/folders/4_/_71v2sd91dn5fhqmn72r7zr00000gn/T/jun-release-o5zsyq5p",
+      "logical_bytes": 146045005
+    }
+  ],
+  "after_free_bytes": 21438865408,
+  "source_and_public_backups_preserved": true
+}
